@@ -49,6 +49,13 @@ SITENAME = os.getenv("SITENAME", "t4msp")
 # Defines the directory that contains the settings file as the LOCAL_ROOT
 # It is used for relative settings elsewhere.
 LOCAL_ROOT = os.path.abspath(os.path.dirname(__file__))
+# /home/ilpise/gisdevio/t4msp/src/t4msp
+
+
+PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.basename(__file__))) # for geodatabuilders and casestudies
+# /home/ilpise/gisdevio/t4msp/src is the django project root
+
+# PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 WSGI_APPLICATION = "{}.wsgi.application".format(PROJECT_NAME)
 
@@ -62,11 +69,23 @@ if PROJECT_NAME not in INSTALLED_APPS:
 # Location of url mappings
 ROOT_URLCONF = os.getenv("ROOT_URLCONF", "{}.urls".format(PROJECT_NAME))
 
+
+# STATICFILES_FINDERS = [
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+# ]
 # Additional directories which hold static files
-# - Give priority to local geonode-project ones
+# - Give priority to local geonode-project ones - seems to be the destination folders for collectstatic
 STATICFILES_DIRS = [
     os.path.join(LOCAL_ROOT, "static"),
+    # os.path.join(PROJECT_ROOT, "frontend", "static"), # for geodatabuilders and casestudies
+    # os.path.join(PROJECT_ROOT, "static"),
+    # '/home/ilpise/gisdevio/.gpvenv/src/wagtail/wagtail/admin/static'
 ] + STATICFILES_DIRS
+
+#STATICFILES_DIRS is ['/home/ilpise/gisdevio/t4msp/src/t4msp/static',
+#                    '/home/ilpise/gisdevio/t4msp/src/static',
+#                    '/home/ilpise/gisdevio/.gpvenv/src/geonode/geonode/static']
 
 # Location of locale files
 LOCALE_PATHS = (os.path.join(LOCAL_ROOT, "locale"),) + LOCALE_PATHS
@@ -162,3 +181,43 @@ if LDAP_ENABLED and "geonode_ldap" not in INSTALLED_APPS:
 
 # Add your specific LDAP configuration after this comment:
 # https://docs.geonode.org/en/master/advanced/contrib/#configuration
+
+
+# Wagtail integration
+
+INSTALLED_APPS +=('wagtail.contrib.forms',
+                'wagtail.contrib.redirects',
+                'wagtail.embeds',
+                'wagtail.sites',
+                'wagtail.users',
+                'wagtail.snippets',
+                'wagtail.documents',
+                'wagtail.images',
+                'wagtail.search',
+                'wagtail.admin',
+                'wagtail',
+                'modelcluster',
+                # 'taggit' # error django.core.exceptions.ImproperlyConfigured: Application labels aren't unique, duplicates: taggit
+                )
+
+MIDDLEWARE += (#'allauth.account.middleware.AccountMiddleware', # django.core.exceptions.ImproperlyConfigured: allauth.account.middleware.AccountMiddleware must be added to settings.MIDDLEWARE
+              #'django.contrib.sessions.middleware.SessionMiddleware',
+              #'django.contrib.auth.middleware.AuthenticationMiddleware',
+              #'django.contrib.messages.middleware.MessageMiddleware',
+              'wagtail.contrib.redirects.middleware.RedirectMiddleware',)
+
+# Add a STATIC_ROOT setting, if your project doesn’t have one already
+# STATIC_ROOT is the destination of static files
+#
+# You have requested to collect static files at the destination
+# location as specified in your settings:
+# STATIC_ROOT is '/home/ilpise/gisdevio/.gpvenv/src/geonode/geonode/static_root'
+
+MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media')
+MEDIA_URL = '/media/'
+
+WAGTAIL_SITE_NAME = 'My Example Site'
+
+WAGTAILADMIN_BASE_URL = 'http://example.com'
+
+WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
