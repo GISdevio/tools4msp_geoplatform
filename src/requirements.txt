@@ -3,4 +3,4 @@
 -e git+https://github.com/GeoNode/geonode.git@4.4.x#egg=GeoNode
 # -e git+https://github.com/ilpise/geonode.git@wagtail#egg=GeoNode
 # -e git+https://github.com/ilpise/geonode.git@wagtail
-# -e git+https://github.com/ilpise/wagtail.git@geonode#egg=wagtail
+-e git+https://github.com/ilpise/wagtail.git@geonode#egg=wagtail
