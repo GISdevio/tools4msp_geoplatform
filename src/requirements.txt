@@ -4,3 +4,12 @@
 # -e git+https://github.com/ilpise/geonode.git@wagtail#egg=GeoNode
 # -e git+https://github.com/ilpise/geonode.git@wagtail
 -e git+https://github.com/ilpise/wagtail.git@geonode#egg=wagtail
+
+django-media-fixtures==1.0.0 # <-
+django-webpack-loader # <-
+coreapi==2.3.3 # <-
+pyparsing==3.0.9
+ordered-set # <-
+rasterio==1.3.2 # <-
+scipy
+matplotlib # <-

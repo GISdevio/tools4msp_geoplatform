@@ -21,8 +21,14 @@
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
+# from django.conf.urls import url, include
+from django.urls import path
+from django.views.generic import TemplateView
 
-from geonode.urls import urlpatterns
+from geonode.urls import urlpatterns as geonode_urlpatterns
+from geonode.base import register_url_event
+
+from .views import HomePageView
 
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail import urls as wagtail_urls
@@ -38,9 +44,22 @@ urlpatterns = [
 """
 
 urlpatterns = [
+    path('', include('casestudies.urls')),
+    path('', include('geodatabuilder.urls')),
+
+] + geonode_urlpatterns
+
+homepage = register_url_event()(HomePageView.as_view())
+
+urlpatterns = [
+    path('', homepage, name='home'),
+] + urlpatterns
+
+urlpatterns = [
     path('cms/', include(wagtailadmin_urls)),
     path('documents/', include(wagtaildocs_urls)),
     path('pages/', include(wagtail_urls)),
 ] + urlpatterns
 
-#+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

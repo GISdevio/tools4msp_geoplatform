@@ -44,18 +44,14 @@ PROJECT_NAME = "t4msp"
 if not SITEURL.endswith("/"):
     SITEURL = "{}/".format(SITEURL)
 
+CLIENTURL = os.getenv("CLIENTURL", SITEURL)
+
 SITENAME = os.getenv("SITENAME", "t4msp")
 
 # Defines the directory that contains the settings file as the LOCAL_ROOT
 # It is used for relative settings elsewhere.
 LOCAL_ROOT = os.path.abspath(os.path.dirname(__file__))
-# /home/ilpise/gisdevio/t4msp/src/t4msp
-
-
 PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.basename(__file__))) # for geodatabuilders and casestudies
-# /home/ilpise/gisdevio/t4msp/src is the django project root
-
-# PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 WSGI_APPLICATION = "{}.wsgi.application".format(PROJECT_NAME)
 
@@ -78,14 +74,10 @@ ROOT_URLCONF = os.getenv("ROOT_URLCONF", "{}.urls".format(PROJECT_NAME))
 # - Give priority to local geonode-project ones - seems to be the destination folders for collectstatic
 STATICFILES_DIRS = [
     os.path.join(LOCAL_ROOT, "static"),
-    # os.path.join(PROJECT_ROOT, "frontend", "static"), # for geodatabuilders and casestudies
+    os.path.join(PROJECT_ROOT, "frontend", "static"), # for geodatabuilders and casestudies
     # os.path.join(PROJECT_ROOT, "static"),
     # '/home/ilpise/gisdevio/.gpvenv/src/wagtail/wagtail/admin/static'
 ] + STATICFILES_DIRS
-
-#STATICFILES_DIRS is ['/home/ilpise/gisdevio/t4msp/src/t4msp/static',
-#                    '/home/ilpise/gisdevio/t4msp/src/static',
-#                    '/home/ilpise/gisdevio/.gpvenv/src/geonode/geonode/static']
 
 # Location of locale files
 LOCALE_PATHS = (os.path.join(LOCAL_ROOT, "locale"),) + LOCALE_PATHS
@@ -98,6 +90,7 @@ loaders = TEMPLATES[0]["OPTIONS"].get("loaders") or [
 # loaders.insert(0, 'apptemplates.Loader')
 TEMPLATES[0]["OPTIONS"]["loaders"] = loaders
 TEMPLATES[0].pop("APP_DIRS", None)
+TEMPLATES[0]['OPTIONS']['context_processors'].append('t4msp.context_processors.theme_configs')
 
 LOGGING = {
     "version": 1,
@@ -185,7 +178,9 @@ if LDAP_ENABLED and "geonode_ldap" not in INSTALLED_APPS:
 
 # Wagtail integration
 
-INSTALLED_APPS +=('wagtail.contrib.forms',
+INSTALLED_APPS +=(
+                'django_media_fixtures',
+                'wagtail.contrib.forms',
                 'wagtail.contrib.redirects',
                 'wagtail.embeds',
                 'wagtail.sites',
@@ -200,6 +195,207 @@ INSTALLED_APPS +=('wagtail.contrib.forms',
                 # 'taggit' # error django.core.exceptions.ImproperlyConfigured: Application labels aren't unique, duplicates: taggit
                 )
 
+# django-allauth
+# https://django-allauth.readthedocs.io/
+# https://docs.geonode.org/en/master/advanced/social/index.html
+
+INSTALLED_APPS += (
+    'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.facebook',
+)
+
+UPLOADER['SUPPORTED_CRS'] += [
+    'EPSG:32632',
+    'EPSG:3035',
+]
+
+UPLOADER['SUPPORTED_EXT'] += [
+    '.geotiff'
+]
+
+EPSG_CODE_MATCHES['EPSG:32632'] = '(32632) WGS 84 / UTM zone 32N'
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Install Casestudy apps
+INSTALLED_APPS += (
+    'frontend',
+    'casestudies',
+    'geodatabuilder',
+)
+
+DATABASES["default"]['TEST'] = {
+    'NAME': DATABASES['default']['NAME']
+}
+
+
+DATABASES["datastore"]['TEST'] = {
+    'NAME': DATABASES['datastore']['NAME']
+}
+
+EXPRESSIONLAYERS_URL = ''
+EXPRESSIONLAYERS_PATH = ''
+
+
+INSTALLED_APPS += (
+  'webpack_loader',
+)
+
+WEBPACK_LOADER = {
+  'DEFAULT': {
+    'STATS_FILE': os.path.join(PROJECT_ROOT, 'frontend', 'webpack-stats.json')
+  }
+}
+
+CODE_MAP = {
+    "LAYER-WEIGHTS": {
+        "x": "param",
+        "y": "layer",
+        "v": ['weight']
+    },
+    "WEIGHTS": {
+        "x": "p",
+        "y": "u",
+        "v": ['w', 'd']
+    },
+    "PRESSURE-WEIGHTS": {
+        "x": "use",
+        "y": "pressure",
+        "v": ['weight', 'distance']
+    },
+    "PCONFLICT": {
+        "x": "u1",
+        "y": "u2",
+        "v": ['score'],
+        "square": True,
+    },
+    "SENS": {
+        "x": "p",
+        "y": "e",
+        "v": ['s']
+    },
+    "SENSITIVITIES": {
+        "x": "env",
+        "y": "pressure",
+        "v": ['sensitivity', 'impact_level', 'recovery_time']
+    },
+    "PMAR-CONF": {
+        "y": "paramname",
+        "x": "paramtype",
+        "v": ['value']
+    },
+}
+
+ID_SEPARATORS = {
+    'main': '#',
+    'secondary': '$',
+}
+
+# Token of the "master" user of the application, this user should be able to create users
+TOOLS4MSP_ADMIN_TOKEN= os.getenv('TOOLS4MSP_ADMIN_TOKEN')
+TOOLS4MSP_API_URL= os.getenv('TOOLS4MSP_API_URL')
+# prefix for the username, this is necessary to ensure users created are unique
+TOOLS4MSP_USER_PREFIX= os.getenv('TOOLS4MSP_USER_PREFIX')
+
+LOGGING['handlers']['debugger'] = {
+    'level': 'DEBUG',
+    'class': 'logging.StreamHandler',
+    'formatter': 'simple'
+}
+
+LOGGING['loggers']['casestudies'] = {
+    "handlers": ["debugger"],
+    "level": "DEBUG",
+    "propagate": False,
+}
+
+SOCIALACCOUNT_LOGIN_ON_GET = True
+
+TINYMCE_DEFAULT_CONFIG = {
+    "theme": "silver",
+    "height": 500,
+    "menubar": True,
+    "plugins": "advlist,autolink,lists,link,image,charmap,print,preview,anchor,"
+    "searchreplace,visualblocks,code,fullscreen,insertdatetime,media,table,paste,"
+    "code,help,wordcount",
+    "toolbar": "undo redo | formatselect | "
+    "bold italic backcolor | alignleft aligncenter alignjustify"
+    "alignright alignjustify | bullist numlist outdent indent | "
+    "removeformat | help",
+}
+
+MAPSTORE_BASELAYERS = [
+    {
+        "type": "osm",
+        "title": "Open Street Map",
+        "name": "mapnik",
+        "source": "osm",
+        "group": "background",
+        "visibility": True
+    }, {
+        "type": "tileprovider",
+        "title": "OpenTopoMap",
+        "provider": "OpenTopoMap",
+        "name": "OpenTopoMap",
+        "source": "OpenTopoMap",
+        "group": "background",
+        "visibility": False
+    }, {
+        "type": "tileprovider",
+        "title": "Stamen Toner",
+        "provider": "Stamen.Toner",
+        "name": "StamenToner",
+        "group": "background",
+        "visibility": False
+    }, {
+        "type": "tileprovider",
+        "title": "Stamen Toner Lite",
+        "provider": "Stamen.TonerLite",
+        "name": "StamenToner",
+        "group": "background",
+        "visibility": False
+    }, {
+        "type": "wms",
+        "title": "Sentinel-2 cloudless - https://s2maps.eu",
+        "format": "image/jpeg",
+        "id": "s2cloudless",
+        "name": "s2cloudless:s2cloudless",
+        "url": "https://maps.geo-solutions.it/geoserver/wms",
+        "group": "background",
+        "thumbURL": "%sstatic/mapstorestyle/img/s2cloudless-s2cloudless.png" % SITEURL,
+        "visibility": False
+    }, {
+        "type": "tileprovider",
+        "title": "Open Sea Map",
+        "provider": "OpenSeaMap",
+        "name": "OpenSeaMap",
+        # "source": "OpenTopoMap",
+        "group": "background",
+        "visibility": False
+    }, {
+        "source": "ol",
+        "group": "background",
+        "id": "none",
+        "name": "empty",
+        "title": "Empty Background",
+        "type": "empty",
+        "visibility": False,
+        "args": ["Empty Background", {"visibility": False}]
+    }
+]
+
+GMAPS_TOKEN = os.getenv('GMAPS_TOKEN', default=None)
+
+if GMAPS_TOKEN:
+    MAPSTORE_BASELAYERS.append({
+            "type": "google",
+            "title": "Google HYBRID",
+            "name": "HYBRID",
+            "source": "google",
+            "group": "background",
+            "visibility": True
+        })
+
+# wagtail        
 MIDDLEWARE += (#'allauth.account.middleware.AccountMiddleware', # django.core.exceptions.ImproperlyConfigured: allauth.account.middleware.AccountMiddleware must be added to settings.MIDDLEWARE
               #'django.contrib.sessions.middleware.SessionMiddleware',
               #'django.contrib.auth.middleware.AuthenticationMiddleware',
