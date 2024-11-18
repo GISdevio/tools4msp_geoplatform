@@ -1,0 +1,27 @@
+{% extends 'page.html' %}
+
+{% load static %}
+{% load render_bundle from webpack_loader %}
+
+
+{% block extra_style %}
+  <script src="{% static "lib/js/moment-with-locales.js" %}"></script>
+{% endblock %}
+
+{% block container %}
+  <div class="gn-container">
+      <div class="gn-content">
+
+        <div id="app" style="position: relative; z-index:99; padding-bottom:50px"></div>
+        <div id="modals-portal-wrapper" class="bs5"></div>
+
+        <script>
+          window.SITE_URL = "{{ siteUrl }}";
+        </script>
+
+        {% render_bundle 'casestudies' %}
+        {% csrf_token %}
+
+      </div>
+  </div>
+{% endblock %}

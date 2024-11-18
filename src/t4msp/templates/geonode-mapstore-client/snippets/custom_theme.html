@@ -1,0 +1,117 @@
+
+<style>
+    {% block extra_css %}
+        {{ custom_theme.extra_css }}
+    {% endblock %}
+</style>
+
+<!-- See https://geonode.org/geonode-mapstore-client/master/tutorial-theme.html -->
+
+<style>
+    /* msgapi is the selector wrapper of the page */
+    :root {
+      --gn-font-family-base: 'Lato', sans-serif;
+    }
+
+
+    .btn.btn-menu:hover {
+        background-color: #fff;
+        color: #3a3a3a;
+    }
+    .dropdown-toggle.btn.btn-menu{
+      color: #fff;
+    }
+    .dropdown-toggle.btn.btn-menu:hover {
+      background-color: #fff;
+      color: #3a3a3a;
+    }
+    /* Chevron */
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+    }
+
+
+    /* User menu */
+    .gn-user-menu-dropdown > .btn.btn-menu:focus {
+      background-color: #3a3a3a !important;
+      border-color: #3a3a3a !important;
+      box-shadow: none !important;
+    }
+    .gn-user-menu-dropdown > .btn.btn-menu:hover {
+      background-color: #3a3a3a !important;
+      border-color: #3a3a3a !important;
+      box-shadow: none !important;
+    }
+
+    /* Left side menu */
+    gn-menu-content-side.gn-menu-content-left, .btn.btn-menu:focus {
+        background-color: #fff;
+        color: #3a3a3a !important;
+    }
+
+    /* .msgapi body {
+      font-family: var(--gn-font-family-base, 'Montserrat', san-serif);
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.42857143;
+    } */
+    /* [data-ms2-container] {
+      font-size: 1rem;
+    } */
+
+    [data-ms2-container] {
+      font-family: var(--gn-font-family-base, 'Montserrat', san-serif);
+      font-size: 16px;
+    }
+
+    .msgapi .gn-menu.gn-primary {
+      background-color: #3a3a3a !important;
+    }
+    .msgapi .dropdown-menu {
+      background-color: #3a3a3a !important;
+      border-color: var(--gn-ddmenu-border-color, #3a3a3a)
+    }
+    .msgapi .dropdown-menu>li>a {
+      color: #ffffff;
+      border: #3a3a3a;
+    }
+    .msgapi .btn-menu{
+      background-color: #3a3a3a;
+      border: #3a3a3a;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .msgapi .badge{
+      color: #ffffff !important;
+    }
+
+    .msgapi .btn-primary{
+      border-color: #0D6EFD !important;
+      background-color: #0D6EFD !important;
+    }
+
+    #gn-topbar {
+      min-height: 72px;
+    }
+
+    /* Search bar */
+    .msgapi .gn-search-bar {
+      min-width: 100px;
+      border: 1px solid #333333;
+      border-radius: 5px;
+    }
+    #gn-search-bar-apply {
+      border-radius: 5px;
+    }
+
+</style>

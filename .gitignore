@@ -69,4 +69,5 @@ local_settings.py
 .vscode/
 .vagrant/
 Vagrantfile
+/src/frontend/node_modules
 /.env
