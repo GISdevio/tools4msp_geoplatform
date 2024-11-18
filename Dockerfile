@@ -1,3 +1,11 @@
+FROM node:20 as frontend-build
+
+COPY ./src/frontend /usr/src
+WORKDIR /usr/src
+
+RUN npm install --legacy-peer-deps
+RUN npm run build
+
 FROM geonode/geonode-base:latest-ubuntu-22.04
 LABEL GeoNode development team
 
@@ -39,6 +47,10 @@ RUN chmod +x /usr/bin/celery-cmd
 
 RUN yes w | pip install --src /usr/src -r requirements.txt &&\
     yes w | pip install -e .
+
+# Copy the static files from previous layer
+COPY --from=frontend-build /usr/src/static /usr/src/t4msp/frontend/static
+COPY --from=frontend-build /usr/src/webpack-stats.json /usr/src/t4msp/frontend/webpack-stats.json
 
 # Cleanup apt update lists
 RUN apt-get autoremove --purge &&\
