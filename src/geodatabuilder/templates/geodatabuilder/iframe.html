@@ -1,0 +1,25 @@
+{% load render_bundle from webpack_loader %}
+{% load static %}
+<html>
+    <head>
+        <link href="{% static "lib/css/assets.min.css" %}" rel="stylesheet"/>
+        <link href="{% static "geonode/css/base.css" %}" rel="stylesheet" />
+        <style type="text/css">
+            /* Additional styles by custom themes */
+            {% if custom_theme.body_color %}
+            body {
+              background: {{ custom_theme.body_color }};
+              {% if custom_theme.body_text_color %}
+              color: {{ custom_theme.body_text_color }};
+              {% endif %}
+            }
+            {% endif %}
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <div id="modals-portal-wrapper" class="bs5"></div>
+        {% render_bundle 'geodatabuilder' %}
+        {% csrf_token %}
+    </body>
+</html>

@@ -1,0 +1,844 @@
+[
+    {
+        "model": "layers.style",
+        "pk": 1,
+        "fields": {
+            "name": "geonode_Distance_To_Harbour_P1qN6L4",
+            "sld_title": "A raster style",
+            "sld_body": "b'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<StyledLayerDescriptor xmlns=\"http://www.opengis.net/sld\" xmlns:ogc=\"http://www.opengis.net/ogc\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.opengis.net/sld\\nhttp://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd\" version=\"1.0.0\">\\n  <NamedLayer>\\n    <Name>geonode_Distance_To_Harbour_P1qN6L4</Name>\\n    <UserStyle>\\n      <Title>A raster style</Title>\\n      <FeatureTypeStyle>\\n        <Rule>\\n          <RasterSymbolizer>\\n            <Opacity>1.0</Opacity>\\n          </RasterSymbolizer>\\n        </Rule>\\n      </FeatureTypeStyle>\\n    </UserStyle>\\n  </NamedLayer>\\n</StyledLayerDescriptor>'",
+            "sld_version": null,
+            "sld_url": "http://geoserver:8080/geoserver/rest/workspaces/geonode/styles/geonode_Distance_To_Harbour_P1qN6L4.sld",
+            "workspace": "geonode"
+        }
+    },
+    {
+        "model": "layers.style",
+        "pk": 2,
+        "fields": {
+            "name": "geonode_Distance_To_Harbour_mussel_BERXGbY",
+            "sld_title": "A raster style",
+            "sld_body": "b'<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<StyledLayerDescriptor xmlns=\"http://www.opengis.net/sld\" xmlns:ogc=\"http://www.opengis.net/ogc\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.opengis.net/sld\\nhttp://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd\" version=\"1.0.0\">\\n  <NamedLayer>\\n    <Name>geonode_Distance_To_Harbour_mussel_BERXGbY</Name>\\n    <UserStyle>\\n      <Title>A raster style</Title>\\n      <FeatureTypeStyle>\\n        <Rule>\\n          <RasterSymbolizer>\\n            <Opacity>1.0</Opacity>\\n          </RasterSymbolizer>\\n        </Rule>\\n      </FeatureTypeStyle>\\n    </UserStyle>\\n  </NamedLayer>\\n</StyledLayerDescriptor>'",
+            "sld_version": null,
+            "sld_url": "http://geoserver:8080/geoserver/rest/workspaces/geonode/styles/geonode_Distance_To_Harbour_mussel_BERXGbY.sld",
+            "workspace": "geonode"
+        }
+    },
+    {
+        "model": "layers.style",
+        "pk": 3,
+        "fields": {
+            "name": "geonode_Concessioni_mitili_plg_DtbASez",
+            "sld_title": "A cyan polygon style",
+            "sld_body": "b'<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\\n<StyledLayerDescriptor version=\"1.0.0\"\\n  xsi:schemaLocation=\"http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd\"\\n  xmlns=\"http://www.opengis.net/sld\" xmlns:ogc=\"http://www.opengis.net/ogc\"\\n  xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\\n\\n  <NamedLayer>\\n    <Name>geonode_Concessioni_mitili_plg_DtbASez</Name>\\n    <UserStyle>\\n      <Title>A cyan polygon style</Title>\\n      <FeatureTypeStyle>\\n        <Rule>\\n          <Title>cyan polygon</Title>\\n          <PolygonSymbolizer>\\n            <Fill>\\n              <CssParameter name=\"fill\">#0099cc\\n              </CssParameter>\\n            </Fill>\\n            <Stroke>\\n              <CssParameter name=\"stroke\">#000000</CssParameter>\\n              <CssParameter name=\"stroke-width\">0.5</CssParameter>\\n            </Stroke>\\n          </PolygonSymbolizer>\\n\\n        </Rule>\\n\\n      </FeatureTypeStyle>\\n    </UserStyle>\\n  </NamedLayer>\\n</StyledLayerDescriptor>'",
+            "sld_version": null,
+            "sld_url": "http://geoserver:8080/geoserver/rest/workspaces/geonode/styles/geonode_Concessioni_mitili_plg_DtbASez.sld",
+            "workspace": "geonode"
+        }
+    },
+    {
+        "model": "layers.style",
+        "pk": 4,
+        "fields": {
+            "name": "geonode_concessioni_pesci_area_rH0TPrc",
+            "sld_title": "A teal polygon style",
+            "sld_body": "b'<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\\n<StyledLayerDescriptor version=\"1.0.0\"\\n  xsi:schemaLocation=\"http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd\"\\n  xmlns=\"http://www.opengis.net/sld\" xmlns:ogc=\"http://www.opengis.net/ogc\"\\n  xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\\n\\n  <NamedLayer>\\n    <Name>geonode_concessioni_pesci_area_rH0TPrc</Name>\\n    <UserStyle>\\n      <Title>A teal polygon style</Title>\\n      <FeatureTypeStyle>\\n        <Rule>\\n          <Title>teal polygon</Title>\\n          <PolygonSymbolizer>\\n            <Fill>\\n              <CssParameter name=\"fill\">#00cc33\\n              </CssParameter>\\n            </Fill>\\n            <Stroke>\\n              <CssParameter name=\"stroke\">#000000</CssParameter>\\n              <CssParameter name=\"stroke-width\">0.5</CssParameter>\\n            </Stroke>\\n          </PolygonSymbolizer>\\n\\n        </Rule>\\n\\n      </FeatureTypeStyle>\\n    </UserStyle>\\n  </NamedLayer>\\n</StyledLayerDescriptor>'",
+            "sld_version": null,
+            "sld_url": "http://geoserver:8080/geoserver/rest/workspaces/geonode/styles/geonode_concessioni_pesci_area_rH0TPrc.sld",
+            "workspace": "geonode"
+        }
+    },
+    {
+        "model": "layers.uploadsession",
+        "pk": 1,
+        "fields": {
+            "resource": 1,
+            "date": "2022-04-07T10:03:08.950Z",
+            "user": 1000,
+            "processed": true,
+            "error": null,
+            "traceback": null,
+            "context": null
+        }
+    },
+    {
+        "model": "layers.uploadsession",
+        "pk": 2,
+        "fields": {
+            "resource": 2,
+            "date": "2022-04-07T10:03:09.028Z",
+            "user": 1000,
+            "processed": true,
+            "error": null,
+            "traceback": null,
+            "context": null
+        }
+    },
+    {
+        "model": "layers.uploadsession",
+        "pk": 3,
+        "fields": {
+            "resource": 3,
+            "date": "2022-04-07T10:03:29.328Z",
+            "user": 1000,
+            "processed": true,
+            "error": null,
+            "traceback": null,
+            "context": null
+        }
+    },
+    {
+        "model": "layers.uploadsession",
+        "pk": 4,
+        "fields": {
+            "resource": 4,
+            "date": "2022-04-07T10:03:29.395Z",
+            "user": 1000,
+            "processed": true,
+            "error": null,
+            "traceback": null,
+            "context": null
+        }
+    },
+    {
+        "model": "layers.layer",
+        "pk": 1,
+        "fields": {
+            "title_en": "Distance_To_Harbour_mussel_BERXGbY",
+            "abstract_en": "No abstract provided",
+            "purpose_en": null,
+            "constraints_other_en": null,
+            "supplemental_information_en": "No information provided",
+            "data_quality_statement_en": null,
+            "workspace": "geonode",
+            "store": "Distance_To_Harbour_mussel_BERXGbY",
+            "storeType": "coverageStore",
+            "name": "Distance_To_Harbour_mussel_BERXGbY",
+            "typename": "geonode:Distance_To_Harbour_mussel_BERXGbY",
+            "is_mosaic": false,
+            "has_time": false,
+            "has_elevation": false,
+            "time_regex": "",
+            "elevation_regex": null,
+            "default_style": 2,
+            "remote_service": null,
+            "charset": "UTF-8",
+            "upload_session": 1,
+            "use_featureinfo_custom_template": false,
+            "featureinfo_custom_template": null,
+            "tkeywords": [],
+            "regions": [
+                1
+            ],
+            "users_geolimits": [],
+            "groups_geolimits": [],
+            "styles": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "layers.layer",
+        "pk": 2,
+        "fields": {
+            "title_en": "Distance_To_Harbour_P1qN6L4",
+            "abstract_en": "No abstract provided",
+            "purpose_en": null,
+            "constraints_other_en": null,
+            "supplemental_information_en": "No information provided",
+            "data_quality_statement_en": null,
+            "workspace": "geonode",
+            "store": "Distance_To_Harbour_P1qN6L4",
+            "storeType": "coverageStore",
+            "name": "Distance_To_Harbour_P1qN6L4",
+            "typename": "geonode:Distance_To_Harbour_P1qN6L4",
+            "is_mosaic": false,
+            "has_time": false,
+            "has_elevation": false,
+            "time_regex": "",
+            "elevation_regex": null,
+            "default_style": 1,
+            "remote_service": null,
+            "charset": "UTF-8",
+            "upload_session": 2,
+            "use_featureinfo_custom_template": false,
+            "featureinfo_custom_template": null,
+            "tkeywords": [],
+            "regions": [
+                1
+            ],
+            "users_geolimits": [],
+            "groups_geolimits": [],
+            "styles": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "layers.layer",
+        "pk": 3,
+        "fields": {
+            "title_en": "Concessioni_mitili_plg_DtbASez",
+            "abstract_en": "No abstract provided",
+            "purpose_en": null,
+            "constraints_other_en": null,
+            "supplemental_information_en": "No information provided",
+            "data_quality_statement_en": null,
+            "workspace": "geonode",
+            "store": "aza_geoportal_data",
+            "storeType": "dataStore",
+            "name": "Concessioni_mitili_plg_DtbASez",
+            "typename": "geonode:Concessioni_mitili_plg_DtbASez",
+            "is_mosaic": false,
+            "has_time": false,
+            "has_elevation": false,
+            "time_regex": "",
+            "elevation_regex": null,
+            "default_style": 3,
+            "remote_service": null,
+            "charset": "UTF-8",
+            "upload_session": 3,
+            "use_featureinfo_custom_template": false,
+            "featureinfo_custom_template": null,
+            "tkeywords": [],
+            "regions": [
+                1
+            ],
+            "users_geolimits": [],
+            "groups_geolimits": [],
+            "styles": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "layers.layer",
+        "pk": 4,
+        "fields": {
+            "title_en": "concessioni_pesci_area_rH0TPrc",
+            "abstract_en": "No abstract provided",
+            "purpose_en": null,
+            "constraints_other_en": null,
+            "supplemental_information_en": "No information provided",
+            "data_quality_statement_en": null,
+            "workspace": "geonode",
+            "store": "aza_geoportal_data",
+            "storeType": "dataStore",
+            "name": "concessioni_pesci_area_rH0TPrc",
+            "typename": "geonode:concessioni_pesci_area_rH0TPrc",
+            "is_mosaic": false,
+            "has_time": false,
+            "has_elevation": false,
+            "time_regex": "",
+            "elevation_regex": null,
+            "default_style": 4,
+            "remote_service": null,
+            "charset": "UTF-8",
+            "upload_session": 4,
+            "use_featureinfo_custom_template": false,
+            "featureinfo_custom_template": null,
+            "tkeywords": [],
+            "regions": [
+                1
+            ],
+            "users_geolimits": [],
+            "groups_geolimits": [],
+            "styles": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 1,
+        "fields": {
+            "upload_session": 1,
+            "name": "Distance_To_Harbour_mussel_BERXGbY",
+            "base": true,
+            "file": "layers/tests/Distance_To_Harbour_mussel_BERXGbY_sw1hzh0.tif"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 2,
+        "fields": {
+            "upload_session": 1,
+            "name": "Distance_To_Harbour_mussel",
+            "base": false,
+            "file": "layers/tests/Distance_To_Harbour_mussel_BERXGbY_sw1hzh0.sld"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 3,
+        "fields": {
+            "upload_session": 1,
+            "name": "Distance_To_Harbour_mussel_remote",
+            "base": false,
+            "file": "layers/tests/Distance_To_Harbour_mussel_BERXGbY_sw1hzh0_K9xRHqq.sld"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 4,
+        "fields": {
+            "upload_session": 2,
+            "name": "Distance_To_Harbour_P1qN6L4",
+            "base": true,
+            "file": "layers/tests/Distance_To_Harbour_P1qN6L4_Rlh5gkX.tif"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 5,
+        "fields": {
+            "upload_session": 2,
+            "name": "Distance_To_Harbour",
+            "base": false,
+            "file": "layers/tests/Distance_To_Harbour_P1qN6L4_Rlh5gkX.sld"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 6,
+        "fields": {
+            "upload_session": 2,
+            "name": "Distance_To_Harbour_remote",
+            "base": false,
+            "file": "layers/tests/Distance_To_Harbour_P1qN6L4_Rlh5gkX_rBVuUQb.sld"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 7,
+        "fields": {
+            "upload_session": 3,
+            "name": "Concessioni_mitili_plg_DtbASez",
+            "base": true,
+            "file": "layers/tests/Concessioni_mitili_plg_DtbASez_5Q3sdB6.shp"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 8,
+        "fields": {
+            "upload_session": 3,
+            "name": "Concessioni_mitili_plg_DtbASez",
+            "base": false,
+            "file": "layers/tests/Concessioni_mitili_plg_DtbASez_5Q3sdB6.prj"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 9,
+        "fields": {
+            "upload_session": 3,
+            "name": "Concessioni_mitili_plg_DtbASez",
+            "base": false,
+            "file": "layers/tests/Concessioni_mitili_plg_DtbASez_5Q3sdB6.shx"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 10,
+        "fields": {
+            "upload_session": 3,
+            "name": "Concessioni_mitili_plg_DtbASez",
+            "base": false,
+            "file": "layers/tests/Concessioni_mitili_plg_DtbASez_5Q3sdB6.dbf"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 11,
+        "fields": {
+            "upload_session": 3,
+            "name": "Concessioni_mitili_plg",
+            "base": false,
+            "file": "layers/tests/Concessioni_mitili_plg_DtbASez_5Q3sdB6.sld"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 12,
+        "fields": {
+            "upload_session": 3,
+            "name": "Concessioni_mitili_plg_remote",
+            "base": false,
+            "file": "layers/tests/Concessioni_mitili_plg_DtbASez_5Q3sdB6_gWmcJ1v.sld"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 13,
+        "fields": {
+            "upload_session": 4,
+            "name": "concessioni_pesci_area_rH0TPrc",
+            "base": true,
+            "file": "layers/tests/concessioni_pesci_area_rH0TPrc_0z1hIVU.shp"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 14,
+        "fields": {
+            "upload_session": 4,
+            "name": "concessioni_pesci_area_rH0TPrc",
+            "base": false,
+            "file": "layers/tests/concessioni_pesci_area_rH0TPrc_0z1hIVU.prj"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 15,
+        "fields": {
+            "upload_session": 4,
+            "name": "concessioni_pesci_area_rH0TPrc",
+            "base": false,
+            "file": "layers/tests/concessioni_pesci_area_rH0TPrc_0z1hIVU.dbf"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 16,
+        "fields": {
+            "upload_session": 4,
+            "name": "concessioni_pesci_area_rH0TPrc",
+            "base": false,
+            "file": "layers/tests/concessioni_pesci_area_rH0TPrc_0z1hIVU.shx"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 17,
+        "fields": {
+            "upload_session": 4,
+            "name": "concessioni_pesci_area",
+            "base": false,
+            "file": "layers/tests/concessioni_pesci_area_rH0TPrc_0z1hIVU.sld"
+        }
+    },
+    {
+        "model": "layers.layerfile",
+        "pk": 18,
+        "fields": {
+            "upload_session": 4,
+            "name": "concessioni_pesci_area_remote",
+            "base": false,
+            "file": "layers/tests/concessioni_pesci_area_rH0TPrc_0z1hIVU_Te65V5k.sld"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 1,
+        "fields": {
+            "layer": 2,
+            "attribute": "GRAY_INDEX",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "raster",
+            "visible": true,
+            "display_order": 1,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:14.819Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 2,
+        "fields": {
+            "layer": 1,
+            "attribute": "GRAY_INDEX",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "raster",
+            "visible": true,
+            "display_order": 1,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:14.843Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 3,
+        "fields": {
+            "layer": 4,
+            "attribute": "fid",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:int",
+            "visible": true,
+            "display_order": 1,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.699Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 4,
+        "fields": {
+            "layer": 4,
+            "attribute": "the_geom",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "gml:MultiPolygonPropertyType",
+            "visible": false,
+            "display_order": 2,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.721Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 5,
+        "fields": {
+            "layer": 3,
+            "attribute": "fid",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:int",
+            "visible": true,
+            "display_order": 1,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.724Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 6,
+        "fields": {
+            "layer": 4,
+            "attribute": "Azienda",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 3,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.741Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 7,
+        "fields": {
+            "layer": 3,
+            "attribute": "the_geom",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "gml:MultiPolygonPropertyType",
+            "visible": false,
+            "display_order": 2,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.743Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 8,
+        "fields": {
+            "layer": 4,
+            "attribute": "Area",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 4,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.766Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 9,
+        "fields": {
+            "layer": 3,
+            "attribute": "Azienda",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 3,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.767Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 10,
+        "fields": {
+            "layer": 4,
+            "attribute": "Lat",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:double",
+            "visible": true,
+            "display_order": 5,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.780Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 11,
+        "fields": {
+            "layer": 3,
+            "attribute": "Area",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 4,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.788Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 12,
+        "fields": {
+            "layer": 4,
+            "attribute": "Long",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:double",
+            "visible": true,
+            "display_order": 6,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.793Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 13,
+        "fields": {
+            "layer": 4,
+            "attribute": "Specie",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 7,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.821Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 14,
+        "fields": {
+            "layer": 3,
+            "attribute": "Lat",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:double",
+            "visible": true,
+            "display_order": 5,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.822Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 15,
+        "fields": {
+            "layer": 3,
+            "attribute": "Long",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:double",
+            "visible": true,
+            "display_order": 6,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.840Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 16,
+        "fields": {
+            "layer": 3,
+            "attribute": "Specie",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 7,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.863Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 17,
+        "fields": {
+            "layer": 3,
+            "attribute": "Classifica",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 8,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.878Z"
+        }
+    },
+    {
+        "model": "layers.attribute",
+        "pk": 18,
+        "fields": {
+            "layer": 3,
+            "attribute": "Determina",
+            "description": null,
+            "attribute_label": null,
+            "attribute_type": "xsd:string",
+            "visible": true,
+            "display_order": 9,
+            "featureinfo_type": "type_property",
+            "count": 1,
+            "min": "NA",
+            "max": "NA",
+            "average": "NA",
+            "median": "NA",
+            "stddev": "NA",
+            "sum": "NA",
+            "unique_values": "NA",
+            "last_stats_updated": "2022-04-07T10:03:32.894Z"
+        }
+    }
+]
