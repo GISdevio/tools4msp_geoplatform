@@ -1,0 +1,54 @@
+{
+  "status": "done",
+  "assets": {
+    "casestudies-6b2b9c1af11756084031.js": {
+      "name": "casestudies-6b2b9c1af11756084031.js",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/casestudies-6b2b9c1af11756084031.js",
+      "publicPath": "http://localhost:9091/casestudies-6b2b9c1af11756084031.js"
+    },
+    "7ea3a6d428136b87ab95.png": {
+      "name": "7ea3a6d428136b87ab95.png",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/7ea3a6d428136b87ab95.png",
+      "publicPath": "http://localhost:9091/7ea3a6d428136b87ab95.png"
+    },
+    "ef32ea2bdf63ba132b4c.png": {
+      "name": "ef32ea2bdf63ba132b4c.png",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/ef32ea2bdf63ba132b4c.png",
+      "publicPath": "http://localhost:9091/ef32ea2bdf63ba132b4c.png"
+    },
+    "a4e0eb7ad904a4858361.svg": {
+      "name": "a4e0eb7ad904a4858361.svg",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/a4e0eb7ad904a4858361.svg",
+      "publicPath": "http://localhost:9091/a4e0eb7ad904a4858361.svg"
+    },
+    "8f2c4d11474275fbc161.png": {
+      "name": "8f2c4d11474275fbc161.png",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/8f2c4d11474275fbc161.png",
+      "publicPath": "http://localhost:9091/8f2c4d11474275fbc161.png"
+    },
+    "416d91365b44e4b4f477.png": {
+      "name": "416d91365b44e4b4f477.png",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/416d91365b44e4b4f477.png",
+      "publicPath": "http://localhost:9091/416d91365b44e4b4f477.png"
+    },
+    "2b3e1faf89f94a483539.png": {
+      "name": "2b3e1faf89f94a483539.png",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/2b3e1faf89f94a483539.png",
+      "publicPath": "http://localhost:9091/2b3e1faf89f94a483539.png"
+    },
+    "geodatabuilder-6b2b9c1af11756084031.js": {
+      "name": "geodatabuilder-6b2b9c1af11756084031.js",
+      "path": "/home/ilpise/gisdevio/t4msp/src/frontend/static/frontend/geodatabuilder-6b2b9c1af11756084031.js",
+      "publicPath": "http://localhost:9091/geodatabuilder-6b2b9c1af11756084031.js"
+    }
+  },
+  "chunks": {
+    "casestudies": [
+      "casestudies-6b2b9c1af11756084031.js"
+    ],
+    "geodatabuilder": [
+      "geodatabuilder-6b2b9c1af11756084031.js"
+    ]
+  },
+  "publicPath": "http://localhost:9091/"
+}
