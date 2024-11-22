@@ -223,14 +223,14 @@ INSTALLED_APPS += (
     'geodatabuilder',
 )
 
-DATABASES["default"]['TEST'] = {
-    'NAME': DATABASES['default']['NAME']
-}
+# DATABASES["default"]['TEST'] = {
+#     'NAME': DATABASES['default']['NAME']
+# }
 
 
-DATABASES["datastore"]['TEST'] = {
-    'NAME': DATABASES['datastore']['NAME']
-}
+# DATABASES["datastore"]['TEST'] = {
+#     'NAME': DATABASES['datastore']['NAME']
+# }
 
 EXPRESSIONLAYERS_URL = ''
 EXPRESSIONLAYERS_PATH = ''
@@ -395,7 +395,7 @@ if GMAPS_TOKEN:
             "visibility": True
         })
 
-# wagtail        
+# wagtail
 MIDDLEWARE += (#'allauth.account.middleware.AccountMiddleware', # django.core.exceptions.ImproperlyConfigured: allauth.account.middleware.AccountMiddleware must be added to settings.MIDDLEWARE
               #'django.contrib.sessions.middleware.SessionMiddleware',
               #'django.contrib.auth.middleware.AuthenticationMiddleware',
