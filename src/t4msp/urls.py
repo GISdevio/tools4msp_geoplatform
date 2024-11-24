@@ -30,9 +30,9 @@ from geonode.base import register_url_event
 
 from .views import HomePageView
 
-from wagtail.admin import urls as wagtailadmin_urls
-from wagtail import urls as wagtail_urls
-from wagtail.documents import urls as wagtaildocs_urls
+# from wagtail.admin import urls as wagtailadmin_urls
+# from wagtail import urls as wagtail_urls
+# from wagtail.documents import urls as wagtaildocs_urls
 
 """
 # You can register your own urlpatterns here
@@ -55,11 +55,11 @@ urlpatterns = [
     path('', homepage, name='home'),
 ] + urlpatterns
 
-urlpatterns = [
-    path('cms/', include(wagtailadmin_urls)),
-    path('documents/', include(wagtaildocs_urls)),
-    path('pages/', include(wagtail_urls)),
-] + urlpatterns
+# urlpatterns = [
+#     path('cms/', include(wagtailadmin_urls)),
+#     path('documents/', include(wagtaildocs_urls)),
+#     path('pages/', include(wagtail_urls)),
+# ] + urlpatterns
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
