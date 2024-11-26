@@ -180,18 +180,18 @@ if LDAP_ENABLED and "geonode_ldap" not in INSTALLED_APPS:
 
 INSTALLED_APPS +=(
                 'django_media_fixtures',
-                # 'wagtail.contrib.forms',
-                # 'wagtail.contrib.redirects',
-                # 'wagtail.embeds',
-                # 'wagtail.sites',
-                # 'wagtail.users',
-                # 'wagtail.snippets',
-                # 'wagtail.documents',
-                # 'wagtail.images',
-                # 'wagtail.search',
-                # 'wagtail.admin',
-                # 'wagtail',
-                # 'modelcluster',
+                'wagtail.contrib.forms',
+                'wagtail.contrib.redirects',
+                'wagtail.embeds',
+                'wagtail.sites',
+                'wagtail.users',
+                'wagtail.snippets',
+                'wagtail.documents',
+                'wagtail.images',
+                'wagtail.search',
+                'wagtail.admin',
+                'wagtail',
+                'modelcluster',
                 # 'taggit' # error django.core.exceptions.ImproperlyConfigured: Application labels aren't unique, duplicates: taggit
                 )
 
@@ -395,25 +395,25 @@ if GMAPS_TOKEN:
             "visibility": True
         })
 
-# # wagtail
-# MIDDLEWARE += (#'allauth.account.middleware.AccountMiddleware', # django.core.exceptions.ImproperlyConfigured: allauth.account.middleware.AccountMiddleware must be added to settings.MIDDLEWARE
-#               #'django.contrib.sessions.middleware.SessionMiddleware',
-#               #'django.contrib.auth.middleware.AuthenticationMiddleware',
-#               #'django.contrib.messages.middleware.MessageMiddleware',
-#               'wagtail.contrib.redirects.middleware.RedirectMiddleware',)
+# wagtail
+MIDDLEWARE += (#'allauth.account.middleware.AccountMiddleware', # django.core.exceptions.ImproperlyConfigured: allauth.account.middleware.AccountMiddleware must be added to settings.MIDDLEWARE
+              #'django.contrib.sessions.middleware.SessionMiddleware',
+              #'django.contrib.auth.middleware.AuthenticationMiddleware',
+              #'django.contrib.messages.middleware.MessageMiddleware',
+              'wagtail.contrib.redirects.middleware.RedirectMiddleware',)
+
+# Add a STATIC_ROOT setting, if your project doesn’t have one already
+# STATIC_ROOT is the destination of static files
 #
-# # Add a STATIC_ROOT setting, if your project doesn’t have one already
-# # STATIC_ROOT is the destination of static files
-# #
-# # You have requested to collect static files at the destination
-# # location as specified in your settings:
-# # STATIC_ROOT is '/home/ilpise/gisdevio/.gpvenv/src/geonode/geonode/static_root'
-#
-# MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media')
-# MEDIA_URL = '/media/'
-#
-# WAGTAIL_SITE_NAME = 'My Example Site'
-#
-# WAGTAILADMIN_BASE_URL = 'http://example.com'
-#
-# WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
+# You have requested to collect static files at the destination
+# location as specified in your settings:
+# STATIC_ROOT is '/home/ilpise/gisdevio/.gpvenv/src/geonode/geonode/static_root'
+
+MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media')
+MEDIA_URL = '/media/'
+
+WAGTAIL_SITE_NAME = 'My Example Site'
+
+WAGTAILADMIN_BASE_URL = 'http://example.com'
+
+WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
