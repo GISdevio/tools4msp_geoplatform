@@ -25,7 +25,7 @@ export default function CasestudyPage() {
     return (
         <>
         <Container>
-            {isLoading && <Spinner animation="border" />}
+            {isLoading && <Spinner animation="border" size="sm"/>}
             {isError && <h1 className="text-danger">{error.data.error.message}</h1>}
             {isSuccess && (
                 <>

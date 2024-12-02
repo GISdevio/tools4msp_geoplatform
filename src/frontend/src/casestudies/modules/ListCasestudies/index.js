@@ -109,7 +109,7 @@ export default function ListCasestudies() {
                         <Button size="lg" as={Link} to="create/"><i className='fa fa-plus'></i></Button>
                     </div>
                     <div className='mt-3'>
-                        {isLoading && <Spinner animation="border" role="status" />}
+                        {isLoading && <Spinner animation="border" role="status" size="sm"/>}
                         {isError && <p className='text-danger'>{error ? error.data.error?.message : 'Error'}</p>}
                         <Row md={3}>
                             {isSuccess && data.data.results.map(obj => <Col key={obj.id}><CasestudyEntry {...obj} /></Col>)}

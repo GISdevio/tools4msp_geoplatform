@@ -3,7 +3,7 @@ import { Spinner } from "react-bootstrap";
 
 export const STATUS = (statusCode) => {
     switch(statusCode) {
-        case 0: return <Spinner animation="border" />;
+        case 0: return <Spinner animation="border" size="sm"/>;
         case 1: return 'Ready';
         case 2: return 'Error';
         default: return 'Unknown'

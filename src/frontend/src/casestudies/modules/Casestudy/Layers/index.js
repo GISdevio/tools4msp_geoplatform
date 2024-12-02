@@ -71,8 +71,7 @@ const COLUMNS = ({ casestudyId, handleDeleteClick, isDeleting, isOwner, setIndex
             <Button size="lg" className="me-2" href={row.file} download target="_blank" ><i className="fa fa-download"></i></Button>
             <Button size="lg" className="me-2" href={row.thumbnail} download target="_blank" ><i className="fa fa-image"></i></Button>
             {isOwner && <EditCasestudyLayer btnProps={{ className: 'me-2', size: 'lg' }} initialValues={{ ...(pick(row, ['id', 'description',])), casestudyId }} />}
-            {<Button variant="danger" size="lg" disabled={isDeleting || row.code === 'GRID'} onClick={() => handleDeleteClick(getIdFromUrl(row.url))}><i className="fa fa-trash-o"></i></Button>} 
-            {/* // remember to reset isOwner && */}
+            {isOwner && <Button variant="danger" size="lg" disabled={isDeleting || row.code === 'GRID'} onClick={() => handleDeleteClick(getIdFromUrl(row.url))}><i className="fa fa-trash-o"></i></Button>} 
         </div>),
     },
 ].filter(_ => _)
@@ -168,7 +167,7 @@ export default function CasestudyLayers() {
                 </Alert>
             )}
             <div className="mt-2">
-                {(isLoading || isFetching) && <Spinner animation="border" />}
+                {(isLoading || isFetching) && <Spinner animation="border" size="sm"/>}
                 {isError && <p className="text-danger">{response.error.message}</p>}
                 {(isSuccess && !isFetching) && (<>
                     <Viewer
@@ -205,7 +204,7 @@ export default function CasestudyLayers() {
                             size="lg"
                             onClick={handleClick}
                         >
-                            {isRunning && <Spinner animation="border" className="me-2" />}Run Casestudy ({selected.length}/{layers.length})
+                            {isRunning && <Spinner animation="border" className="me-2" size="sm"/>}Run Casestudy ({selected.length}/{layers.length})
                         </Button>
                         {(!isRunning && casestudy.customSubArea) && <div className="d-flex mt-2"><Form.Check checked={useCustom} onChange={() => setUseCustom(!useCustom)} type="checkbox" label="Use Custom Sub Area" /></div>}
                     </div>

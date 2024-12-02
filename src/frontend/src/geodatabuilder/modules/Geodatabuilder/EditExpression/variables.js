@@ -68,7 +68,7 @@ export default function Variables({ id, actions = true }) {
                 <Button variant="info" onClick={() => setPreview(!preview)}>{preview ? 'Hide' : 'Show'} Preview</Button>
             </div>
 
-            {(isLoading || isFetching) && <Spinner animation="border" />}
+            {(isLoading || isFetching) && <Spinner animation="border" size="sm"/>}
             {isError && <p className="text-danger">{response.error.message}</p>}
             {(isSuccess && !isFetching) && (<>
                 <BootstrapTable

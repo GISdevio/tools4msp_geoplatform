@@ -54,7 +54,7 @@ export default function CasestudyInput() {
 
     const fetchContent = useCallback((label) => {
         if (loadingLabels) {
-            return <Spinner />
+            return <Spinner size="sm"/>
         }
 
         return labels[label].label;
@@ -62,7 +62,7 @@ export default function CasestudyInput() {
 
     return (
         <div className="mt-4">
-            {(isLoading || isFetching || loadingLayers) && <Spinner animation="border" />}
+            {(isLoading || isFetching || loadingLayers) && <Spinner animation="border" size="sm"/>}
             {isError && <p className="text-danger">An error occurred</p>}
             {(!isLoading && !loadingLayers && !isFetching && isSuccess) && (
                 <>

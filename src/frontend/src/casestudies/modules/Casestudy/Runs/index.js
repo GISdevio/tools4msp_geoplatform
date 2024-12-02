@@ -22,7 +22,7 @@ export default function CasestudyRuns() {
 
     return (
         <div className="mt-4">
-            {isLoading && <Spinner animation="border" />}
+            {isLoading && <Spinner animation="border" size="sm"/>}
             {isError && <p className="text-danger">{data.error.message}</p>}
             {isSuccess && (
                 <>

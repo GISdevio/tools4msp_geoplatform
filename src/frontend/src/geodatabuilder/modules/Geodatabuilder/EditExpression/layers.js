@@ -83,7 +83,7 @@ export default function Layers({ id, actions = true }) {
                 </InputGroup>
             </div>
 
-            {(isLoading || isFetching) && <Spinner animation="border" />}
+            {(isLoading || isFetching) && <Spinner animation="border" size="sm"/>}
             {isError && <p className="text-danger">{response.error.message}</p>}
             {(isSuccess && !isFetching) && (<>
                 <BootstrapTable
@@ -116,7 +116,7 @@ export default function Layers({ id, actions = true }) {
                                 controlAs={Form.Select}
                             >
                                 <option value={null}>-- None --</option>
-                                <option key={selectedLayer.pk} value={selectedLayer.attribution}>{selectedLayer.attribution}</option>)}
+                                <option key={selectedLayer.pk} value={selectedLayer.attribution}>{selectedLayer.attribution}</option>
 
                             </FormTextField>
                             <FormTextField

@@ -90,7 +90,7 @@ export default function UploadLayer({ id, btnProps, label }) {
                                 options={values.layer ? values.layer.attribute_set: []}
                             />
                             <div className="mt-5">
-                                <Button size="lg" type="submit" className="ms-2" disabled={isLoading}>Upload{isLoading && <Spinner className="ms-1" />}</Button>
+                                <Button size="lg" type="submit" className="ms-2" disabled={isLoading}>Upload{isLoading && <Spinner className="ms-1" size="sm"/>}</Button>
                                 <Button size="lg" onClick={handleClose} variant="light" className="ms-2">Close</Button>
                             </div>
                         </Form>

@@ -22,7 +22,7 @@ export default function GeodatabuilderPage() {
     return (
         <>
         <Container>
-            {isLoading && <Spinner animation="border" />}
+            {isLoading && <Spinner animation="border" size="sm"/>}
             {isError && <h1 className="text-danger">An error occurred</h1>}
             {isSuccess && (
                 <>

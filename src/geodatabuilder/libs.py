@@ -303,10 +303,10 @@ def compute_expression(*args, geodatabuilder_id=None, grid=None, resolution=None
     print(f'writing to {result_tif}')
     output += result_tif
 
-    command = f'./gdal_calc.py {str_input} --outfile={output} --calc="{expression}"'
+    command = f'gdal_calc.py {str_input} --outfile={output} --calc="{expression}"'
     logger.error(command)
 
-    result = subprocess.check_output([command], shell=True)
+    result = subprocess.check_output(command, shell=True)
 
     # shutil.rmtree(base_dir)
 

@@ -92,7 +92,7 @@ export default function CreateGeodatabuilder({ id, btnProps, label }) {
                                     getOptionValue={v => v.code}
                                 />
                                 <div className="mt-5">
-                                    <Button size="lg" type="submit" className="ms-2" disabled={isLoading}>Upload{isLoading && <Spinner className="ms-1" />}</Button>
+                                    <Button size="lg" type="submit" className="ms-2" disabled={isLoading}>Upload{isLoading && <Spinner className="ms-1" size="sm"/>}</Button>
                                     <Button size="lg" onClick={() => setGeodatabuilder(null)} type="submit" className="ms-2" disabled={isLoading} variant="secondary">Reset</Button>
                                 </div>
                             </Form>

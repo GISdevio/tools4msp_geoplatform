@@ -128,7 +128,7 @@ export default function CasestudyRun() {
 
     return (
         <div className="mt-4">
-            {isLoading && !data  && <Spinner animation="border" />}
+            {isLoading && !data  && <Spinner animation="border" size="sm"/>}
             {isError && <p className="text-danger">{data.error.message}</p>}
             {isSuccess && (
                 <>
@@ -138,7 +138,7 @@ export default function CasestudyRun() {
                                     <h2><i className="fa fa-tasks me-2"></i>{data.data.label || `Run ${moment(data.data.created).format('DD/MM/YYYY HH:mm')}`}<Badge pill className="ms-1">{STATUS(data.data.runstatus)}</Badge></h2>
                                     <div className="d-flex">
                                         <Button className="mx-2" as={Link} to={`/casestudies/${id}/runs/`} variant="secondary">Back</Button>
-                                        {data.data.is_owner && <Button className="mx-2" onClick={createMap} disabled={uploadingLayers}>Upload layers to map{uploadingLayers && <Spinner animation="border" />}</Button>}
+                                        {data.data.is_owner && <Button className="mx-2" onClick={createMap} disabled={uploadingLayers}>Upload layers to map{uploadingLayers && <Spinner animation="border" size="sm"/>}</Button>}
                                         {data.data.is_owner && <UploadDocuments id={id} runId={runId} btnProps={{ className: 'mx-2' }} />}
                                         {data.data.is_owner && <EditCasestudyRun id={id} initialValues={data.data} runId={runId} btnProps={{ className: 'mx-2' }} />}
                                         {data.data.is_owner && <DeleteCasestudyRun id={id} runId={runId} btnProps={{ className: 'mx-2', variant: 'danger' }} />}
@@ -149,7 +149,7 @@ export default function CasestudyRun() {
                                     Uploads of layers was successful, but to create a map you need to save the following map <Button href={`/maps/new?${mapUrl}`} target="_blank">Open Map</Button>
                                   </Alert>
                                 )}
-                                <div className="fs-5 ps-4">
+                                <div className="new-fs-5 ps-4">
                                     <p>
                                         <i className="fa fa-user me-2"></i>{ownerRender(data.data.owner)}<br />
                                         <i className="fa fa-eye me-2"></i>{VISIBILITY(data.data.visibility)}<br />
@@ -159,7 +159,7 @@ export default function CasestudyRun() {
                                 </div>
 
                                 {data.data.description && (
-                                  <div className="fs-5 ps-4">
+                                  <div className="new-fs-5 ps-4">
                                     <LinkItUrl><p>{data.data.description}</p></LinkItUrl>
                                   </div>
                                 )}
@@ -200,7 +200,7 @@ export default function CasestudyRun() {
                                                             </Ratio>
                                                             <Card.Body>
                                                                 <div className="h3 card-title">{l.label}</div>
-                                                                <p className="fw-light fs-5">{l.description || 'No description provided'}</p>
+                                                                <p className="fw-light new-fs-5">{l.description || 'No description provided'}</p>
                                                                 <p><Badge bg="secondary">{l.code}</Badge></p>
                                                                 <Button as="a" href={l.file} target="_blank" download><i className="fa fa-download"></i> Download</Button>
                                                             </Card.Body>
@@ -226,7 +226,7 @@ export default function CasestudyRun() {
                                                             </Ratio>
                                                             <Card.Body>
                                                                 <div className="h3 card-title">{l.label}</div>
-                                                                <p className="fw-light fs-5">{l.description || 'No description provided'}</p>
+                                                                <p className="fw-light new-fs-5">{l.description || 'No description provided'}</p>
                                                                 <p><Badge bg="secondary">{l.code}</Badge></p>
                                                                 <Button as="a" href={l.file} target="_blank" download><i className="fa fa-download"></i> Download</Button>
                                                             </Card.Body>

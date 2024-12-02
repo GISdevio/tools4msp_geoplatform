@@ -88,7 +88,7 @@ function Toolbar({ isSubmitting, cols = [], rows = [], visibleColumns, setVisibl
                     </div>
                 </Dropdown.Menu>
             </Dropdown>
-            <Button type="submit" size="lg" className="mx-2" disabled={isSubmitting}>{isSubmitting && <Spinner animation="border" className="mr-2" />}Save</Button>
+            <Button type="submit" size="lg" className="mx-2" disabled={isSubmitting}>{isSubmitting && <Spinner animation="border" className="mr-2" size="sm"/>}Save</Button>
         </div>
     )
 }

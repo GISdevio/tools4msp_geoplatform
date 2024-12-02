@@ -55,7 +55,7 @@ export default function ListGeodatabuilder() {
                 <Col>
                     <h1 className=''>Explore Geodatabuilder {isSuccess && <Badge pill>{data.total}</Badge>} <Button size="lg" as={Link} to="/geodatabuilders/create/"><i className="fa fa-plus"></i> Add</Button></h1>
                     <div className='mt-3'>
-                        {isLoading && <Spinner animation="border" role="status" />}
+                        {isLoading && <Spinner animation="border" role="status" size="sm"/>}
                         {isError && <p className='text-danger'>An error occurred</p>}
                         <Row md={3}>
                             {isSuccess && data.geo_data_builders.map(obj => <Col key={obj.id}><GeodatabuilderEntry {...obj} /></Col>)}
