@@ -10,6 +10,7 @@ import operator
 import ntpath
 import json
 import traceback
+import requests
 from pathlib import Path
 from functools import reduce
 
@@ -183,17 +184,14 @@ def rasterize_layer_to_grid(layer_id, grid, res, attribute, where_condition='', 
     if not directory:
         directory, _ = build_temp_dir()
 
-
     logger.error(directory)
     logger.info(f"Dataset Files: {dir(layer)}")
-
 
     if (grid):
         grid_json = json.loads(grid) if isinstance(grid, str) else grid
         resolution = str(grid_json["resolution"])
         srs = f"EPSG:{str(grid_json['epsg'])}"
         json_bounds = f'{str(grid_json["bounds"][0])} {str(grid_json["bounds"][1])} {str(grid_json["bounds"][2])} {str(grid_json["bounds"][3])}'
-
     else:
         resolution = str(res)
         srs = None
@@ -202,20 +200,58 @@ def rasterize_layer_to_grid(layer_id, grid, res, attribute, where_condition='', 
     hd_factor = 3
     resolution_hd = str(int(float(resolution) / hd_factor))
 
-    # # Use get_base_file() to get the base file
+    # # Old approach using get_base_file()
     # base_file, list_col = layer.get_base_file()
-
     # if base_file is None:
-
     #     raise Exception("No base file found for this dataset.")
 
-    # Prepare a list of files to process
-    files_to_process = layer.files
+    # # Old approach using layer.files
+    # files_to_process = layer.files
 
+    files_to_process = []
+    if layer.is_vector():
+        _user, _password = ogc_server_settings.credentials
+        zipped_shapefile = tempfile.NamedTemporaryFile(suffix='.zip').name
+        execution = wps_dowload(
+            ogc_server_settings.internal_ows,
+            layer.name,  # e.g. 'geonode:newtest'
+            zipped_shapefile,
+            username=_user,
+            password=_password,
+            public_ows=ogc_server_settings.ows
+        )
+        files_to_process = [zipped_shapefile]
+        logger.debug(f"Downloaded shapefile for vector layer: {files_to_process}")
 
-    # upload_session = layer.get_upload_session()
-    # layer_files = models.ForeignKey(upload_session, on_delete=models.CASCADE).filter(ALLOWED_EXTENSIONS_FILTER)
-    # layer_files = LayerFile.objects.filter(upload_session=upload_session).filter(ALLOWED_EXTENSIONS_FILTER)
+    else:
+
+        coverage_name = layer.typename.replace(":", "__")  # e.g. 'geonode:test' -> 'geonode__test'
+        wcs_url = (
+            f"{layer.ows_url}"
+            f"?service=WCS"
+            f"&request=GetCoverage"
+            f"&coverageid={coverage_name}"
+            f"&format=image%2Ftiff"
+            f"&version=2.0.1"
+            f"&compression=DEFLATE"
+            f"&tileWidth=512"
+            f"&tileHeight=512"
+        )
+        logger.debug(f"WCS URL for raster layer {layer.name}: {wcs_url}")
+
+        response = requests.get(wcs_url)
+        if response.status_code != 200:
+            raise Exception(
+                f"Failed to download coverage from {wcs_url} "
+                f"(status code={response.status_code})."
+            )
+
+        tmp_tiff = tempfile.NamedTemporaryFile(suffix='.tiff', delete=False)
+        tmp_tiff.write(response.content)
+        tmp_tiff.close()
+        files_to_process = [tmp_tiff.name]
+        logger.debug(f"Downloaded GeoTIFF for raster layer: {files_to_process}")
+
     print(f'found files: {files_to_process}')
 
     for file_path in files_to_process:
@@ -225,34 +261,29 @@ def rasterize_layer_to_grid(layer_id, grid, res, attribute, where_condition='', 
 
         print(f'processing {filename} {extension}')
 
-        if layer.is_vector() and extension.lower() == '.shp':
-            _user, _password = ogc_server_settings.credentials
-            zipped_shapefile = tempfile.NamedTemporaryFile(suffix='.zip').name
-            execution = wps_dowload(ogc_server_settings.internal_ows,
-                                    layer.name,
-                                    zipped_shapefile,
-                                    username=_user,
-                                    password=_password, public_ows=ogc_server_settings.ows)
-
-            # use resolution_hd only for Polygon and MultiPolygon
+        if layer.is_vector():
             _resolution = resolution_hd if layer.gtype in ['Polygon', 'MultiPolygon'] else resolution
-            rasterized_layer_path = vector_to_raster(bounds=json_bounds,
-                                                     layer=layer,
-                                                     file_path=zipped_shapefile,
-                                      filename=filename,
-                                      resolution=_resolution,
-                                      srs=srs,
-                                      base_dir=directory,
-                                      attribute=attribute,
-                                      where_condition=where_condition
-                                      )
+            rasterized_layer_path = vector_to_raster(
+                bounds=json_bounds,
+                layer=layer,
+                file_path=file_path,  
+                filename=filename,
+                resolution=_resolution,
+                srs=srs,
+                base_dir=directory,
+                attribute=attribute,
+                where_condition=where_condition
+            )
 
+        # For raster data or after vector_to_raster is done, we do the warp
         if not layer.is_vector() or rasterized_layer_path:
-            raster_path =  raster_warp(bounds=json_bounds,
-                               directory=directory,
-                               filepath=rasterized_layer_path or file_path,
-                               resolution=resolution,
-                               srs=srs)
+            raster_path = raster_warp(
+                bounds=json_bounds,
+                directory=directory,
+                filepath=rasterized_layer_path or file_path,
+                resolution=resolution,
+                srs=srs
+            )
 
             # thumbnail = create_thumbnail(raster_path=raster_path)
             print(f'generated in {raster_path}')
@@ -260,8 +291,6 @@ def rasterize_layer_to_grid(layer_id, grid, res, attribute, where_condition='', 
             return raster_path
 
     return None
-
-
 
 def compute_expression(*args, geodatabuilder_id=None, grid=None, resolution=None, reporter=default_reporter, **kwargs):
     base_dir, output = build_temp_dir(with_output=True)
