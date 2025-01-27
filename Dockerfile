@@ -1,4 +1,6 @@
-FROM node:20 as frontend-build
+# syntax=docker/dockerfile:1
+
+FROM node:20 AS frontend-build
 
 COPY ./src/frontend /usr/src
 WORKDIR /usr/src
@@ -6,8 +8,11 @@ WORKDIR /usr/src
 RUN npm install --legacy-peer-deps
 RUN npm run build
 
+########################################################################################################################
+
 FROM geonode/geonode-base:latest-ubuntu-22.04
-LABEL GeoNode development team
+
+LABEL Tools4MSP Geoplatform
 
 RUN mkdir -p /usr/src/t4msp
 
