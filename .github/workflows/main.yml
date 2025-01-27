@@ -12,11 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Repository owner to lower-case
+        id: owner-lc
+        run: echo "::set-output name=repository-owner::${OWNER,,}"
+        env:
+          OWNER: '${{ github.repository_owner }}'
+
       - name: Prepare image
         id: prepare-image
         run: |
-          echo "OWNER=${GITHUB_REPOSITORY_OWNER@L}" >> "${GITHUB_ENV}"
-          DOCKER_IMAGE=ghcr.io/${OWNER}/tools4msp-geoplatform
+          DOCKER_IMAGE=ghcr.io/${{ steps.owner-lc.outputs.repository-owner }}/tools4msp-geoplatform
           VERSION=latest
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
