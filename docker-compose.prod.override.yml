@@ -1,0 +1,3 @@
+services:
+  django:
+    image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}

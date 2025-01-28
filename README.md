@@ -1,19 +1,49 @@
-# T4msp
+# Tools4MSP Geoplatform
+
+### Run with Docker Compose
+
+The project leverages Docker Compose to spin up the architecture.
+
+For development purposes you can use the `docker-compose.yml` file, which will build the `django` service from the local Dockerfile.
+
+In a production environment, the `django` service should use the remote image `ghcr.io/gisdevio/tools4msp-geoplatform`. This can be done applying the overrides contained in the `docker-compose.prod.override.yml` file with the following command:
+
+```sh
+docker compose -f docker-compose.yml -f docker-compose.prod.override.yml <command>
+```
+
+Keep in mind that the versions of the services can be controlled with the appropriate variables in the `.env` file.
+
+---
+---
 
 GeoNode template project. Generates a django project with GeoNode support.
 
 ## Table of Contents
 
--  [Quick Docker Start](#quick-docker-start)
--  [Developer Workshop](#developer-workshop)
--  [Create a custom project](#create-a-custom-project)
--  [Start your server using Docker](#start-your-server-using-docker)
--  [Run the instance in development mode](#run-the-instance-in-development-mode)
--  [Run the instance on a public site](#run-the-instance-on-a-public-site)
--  [Stop the Docker Images](#stop-the-docker-images)
--  [Backup and Restore from Docker Images](#backup-and-restore-the-docker-images)
--  [Recommended: Track your changes](#recommended-track-your-changes)
--  [Hints: Configuring `requirements.txt`](#hints-configuring-requirementstxt)
+- [Tools4MSP Geoplatform](#tools4msp-geoplatform)
+    - [Run with Docker Compose](#run-with-docker-compose)
+  - [Table of Contents](#table-of-contents)
+  - [Quick Docker Start](#quick-docker-start)
+  - [Developer Workshop](#developer-workshop)
+  - [Create a custom project](#create-a-custom-project)
+    - [Start your server](#start-your-server)
+    - [Start your server using Docker](#start-your-server-using-docker)
+  - [Run the instance in development mode](#run-the-instance-in-development-mode)
+    - [Use dedicated docker-compose files while developing](#use-dedicated-docker-compose-files-while-developing)
+  - [Run the instance on a public site](#run-the-instance-on-a-public-site)
+    - [Preparation of the image (First time only)](#preparation-of-the-image-first-time-only)
+    - [Startup the image](#startup-the-image)
+    - [Stop the Docker Images](#stop-the-docker-images)
+    - [Fully Wipe-out the Docker Images](#fully-wipe-out-the-docker-images)
+  - [Backup and Restore from Docker Images](#backup-and-restore-from-docker-images)
+    - [Run a Backup](#run-a-backup)
+    - [Run a Restore](#run-a-restore)
+  - [Recommended: Track your changes](#recommended-track-your-changes)
+  - [Hints: Configuring `requirements.txt`](#hints-configuring-requirementstxt)
+  - [Increasing PostgreSQL Max connections](#increasing-postgresql-max-connections)
+  - [Test project generation and docker-compose build Vagrant usage](#test-project-generation-and-docker-compose-build-vagrant-usage)
+  - [Test project generation and Docker swarm build on vagrant](#test-project-generation-and-docker-swarm-build-on-vagrant)
 
 ## Quick Docker Start
 
@@ -388,4 +418,3 @@ Starts a vm for test on plain docker service with docker-compose:
     - starts, reboots.
 
 [1] to achieve `docker-compose build --no-cache` just destroy vagrant boxes `vagrant destroy -f`
-
