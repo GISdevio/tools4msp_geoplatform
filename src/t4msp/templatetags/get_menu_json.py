@@ -32,6 +32,7 @@ def _is_mobile_device(context):
 @register.simple_tag(takes_context=True)
 def get_base_left_topbar_menu(context):
     is_mobile = _is_mobile_device(context)
+    user = _get_request_user(context)
 
     return [
         {
@@ -60,7 +61,17 @@ def get_base_left_topbar_menu(context):
                 }
                 if not is_mobile
                 else None,
-            ],
+            ]
+            + (
+                [
+                    {"type": "divider"},
+                    {"type": "link", "href": "/catalogue/#/upload/dataset", "label": "Upload Layer"},
+                    {"type": "link", "href": "/createlayer", "label": "Create Layer"},
+                    {"type": "link", "href": "/catalogue/#/upload/document", "label": "Upload Document"},
+                ]
+                if user and user.is_authenticated
+                else []
+            ),
         },
         {"type": "link", "href": "/catalogue/#/search/?f=map", "label": "Maps"},
         {
@@ -69,19 +80,22 @@ def get_base_left_topbar_menu(context):
             "label": "GeoStories",
         },
         {
-            "type": "link",
-            "href": "/catalogue/#/search/?f=dashboard",
-            "label": "Dashboards",
-        },
-        {
-            "type": "link",
-            "href": "/catalogue/#/search/?f=featured",
-            "label": "Featured",
-        },
-        {
-            "type": "link",
-            "href": "/casestudies",
             "label": "Case Studies",
+            "type": "dropdown",
+            "items": [
+                {"type": "link", "href": "/casestudies/?module=cea", "label": "Module CEA"},
+                {"type": "link", "href": "/casestudies/?module=muc", "label": "Module MUC"},
+                {"type": "link", "href": "/casestudies/?module=pmar", "label": "Module PMAR"},
+                {"type": "link", "href": "/casestudies/?module=geodatamaker", "label": "Module GeoDataMaker"},
+            ]
+            + (
+                [
+                    {"type": "divider"},
+                    {"type": "link", "href": "/casestudies/create", "label": "Create Casestudy"},
+                ]
+                if user and user.is_authenticated
+                else []
+            ),
         },
         {
             "label": "Profiles",
@@ -90,6 +104,23 @@ def get_base_left_topbar_menu(context):
                 {"type": "link", "href": "/people/", "label": "People"},
                 {"type": "link", "href": "/groups/", "label": "Groups"},
                 {"type": "link", "href": "/groups/categories", "label": "Groups categories"},
+            ] 
+            + (
+                [
+                    {"type": "divider"},
+                    {"type": "link", "href": "/invitations/geonode-send-invite", "label": "Invite users"},
+                ]
+                if user and user.is_authenticated
+                else []
+            ),
+        },
+        {
+            "label": "About Us",
+            "type": "dropdown",
+            "items": [
+                {"type": "link", "href": "/team/", "label": "Meet the team"},
+                {"type": "link", "href": "/projects/", "label": "Projects"},
+                {"type": "link", "href": "/pubblications/", "label": "Pubblications"},
             ],
         }
     ]

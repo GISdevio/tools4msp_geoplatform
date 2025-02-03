@@ -91,6 +91,8 @@ loaders = TEMPLATES[0]["OPTIONS"].get("loaders") or [
 TEMPLATES[0]["OPTIONS"]["loaders"] = loaders
 TEMPLATES[0].pop("APP_DIRS", None)
 TEMPLATES[0]['OPTIONS']['context_processors'].append('t4msp.context_processors.theme_configs')
+TEMPLATES[0]['OPTIONS']['context_processors'].append('django.contrib.auth.context_processors.auth')
+
 
 LOGGING = {
     "version": 1,

@@ -1,31 +1,97 @@
 {% load i18n %}
 
-<footer class="gn-footer">
-  <div class="container">
-        <div class="row">
+<style>
+  /* Example link styles for your dark footer */
+  .footer-link {
+    color: #fff !important; /* white text by default */
+    text-decoration: none;
+  }
+  .footer-link:hover {
+    color: #eb6b00 !important; /* lighter gray on hover */
+    cursor: pointer !important;
+    text-decoration: underline !important; 
+  }
+  /* Give the language dropdown a wider minimum width */
 
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-2">
-            </div>
-                <div class="col-md-6 text-right">
-                  {% if csrf_token != "NOTPROVIDED" %}
-                  {% get_current_language as LANGUAGE %}
-                  <form class="form-inline" action="/i18n/setlang/" method="post">
-                  {% csrf_token %}
-                    <select class="col-md-6 pull-right" name="language" onchange="javascript:form.submit()">
-                      {% for lang in LANGUAGES %}
-                      <option value="{{ lang.0 }}" {% if LANGUAGE_CODE == lang.0 %} selected="selected"{% endif %}>
-                        {{ lang.1 }}
-                      </option>
-                      {% endfor %}
-                    </select>
-                  </form>
-                  {% endif %}
+  .footer-language-select {
+    color: #333 !important;
+    min-width: 170px;
+    height: 2em;       /* adjust to your preferred size */
+    line-height: 2em; /* makes text centered vertically */
+  }
 
-                </div>
+  .list-unstyled {
+    font-size: 16px !important;
+  }
+</style>
+
+<footer>
+  <!-- Dark top row with columns -->
+  <div style="background-color: #333; color: #fff; padding: 20px 0;">
+    <div class="container">
+      <div class="row">
+        
+        <!-- First column -->
+        <div class="col-md-2">
+          <ul class="list-unstyled">
+            <li>Data</li>
+            <li><a class="footer-link" href="/catalogue/#/?f=dataset">Layers</a></li>
+            <li><a class="footer-link" href="/catalogue/#/?f=document">Documents</a></li>
+            <li><a class="footer-link" href="/services/">Remote Services</a></li>
+            {% if user.is_authenticated %}
+            <li><a class="footer-link" href="/catalogue/#/upload/dataset">Upload Layer</a></li>
+            <li><a class="footer-link" href="/createlayer">Create Layer</a></li>
+            <li><a class="footer-link" href="/catalogue/#/upload/document">Upload Document</a></li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <!-- Second column -->
+        <div class="col-md-2">
+          <ul class="list-unstyled">
+            <li>Maps</li>
+            <li><a class="footer-link" href="/catalogue/#/?f=map">Explore Maps</a></li>
+            {% if user.is_authenticated %}
+            <li><a class="footer-link" href="/catalogue/#/map/new">Create Map</a></li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <!-- Third column -->
+        <div class="col-md-2">
+          <ul class="list-unstyled">
+            <li>About</li>
+            <li><a class="footer-link" href="/people/">People</a></li>
+            <li><a class="footer-link" href="/groups/">Groups</a></li>
+            {% if user.is_authenticated %}
+            <li><a class="footer-link" href="/invitations/geonode-send-invite">Invite Users</a></li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <!-- Language selector on the right -->
+        <div class="col-md-6 text-right">
+          {% if csrf_token != "NOTPROVIDED" %}
+          {% get_current_language as LANGUAGE %}
+          <form class="form-inline" action="/i18n/setlang/" method="post">
+          {% csrf_token %}
+            <select class="col-md-6 pull-right footer-language-select" name="language" onchange="javascript:form.submit()">
+              {% for lang in LANGUAGES %}
+              <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
+                {{ lang.1 }}
+              </option>
+              {% endfor %}
+            </select>
+          </form>
+          {% endif %}
+
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Bright blue bottom row -->
+  <div style="background-color: #0275d8; color: #fff; padding: 10px 0; text-align: center;">
+    &copy; 2022 – TOOLS4MSP
+  </div>
 </footer>
