@@ -1,0 +1,61 @@
+{% load i18n %}
+
+<div class="container py-5 home-recap">
+    <div class="row text-center row-recap">
+        <!-- Layers -->
+        <div class="col-md-6 mb-4">
+            <a href="/catalogue/#/?f=dataset">
+                <i class="fa fa-square-o rotate fa-4x recap-icon"></i>
+            </a>
+            <h2 class="mt-2">
+                <a class="counter-recap" href="/catalogue/#/?f=dataset">{{ layers_count }} {% trans "Layers" %}</a>
+            </h2>
+            <p>
+                {% trans "Click to search for geospatial data published by other users, organizations and public sources. Download data in standard formats." %}
+            </p>
+            <p><a class="btn btn-default" href="/catalogue/#/?f=dataset">{% trans "Explore layers" %} »</a></p>
+        </div>
+
+        <!-- Maps -->
+        <div class="col-md-6 mb-4">
+            <a href="/catalogue/#/?f=map">
+                <i class="fa fa-map-marker fa-4x recap-icon"></i>
+            </a>
+            <h2 class="mt-2">
+                <a class="counter-recap" href="/catalogue/#/?f=map">{{ maps_count }} {% trans "Maps" %}</a>
+            </h2>
+            <p>
+                {% trans "Data is available for browsing, aggregating and styling to generate maps which can be saved, downloaded, shared publicly or restricted to specific users only." %}
+            </p>
+            <p><a class="btn btn-default" href="/catalogue/#/?f=map">{% trans "Explore maps" %} »</a></p>
+        </div>
+
+        <!-- Documents -->
+        <div class="col-md-6 mb-4">
+            <a href="/catalogue/#/?f=document">
+                <i class="fa fa-newspaper-o fa-4x recap-icon"></i>
+            </a>
+            <h2 class="mt-2">
+                <a class="counter-recap" href="/catalogue/#/?f=document">{{ documents_count }} {% trans "Documents" %}</a>
+            </h2>
+            <p>
+                {% trans "As for the layers and maps GeoNode allows to publish tabular and text data, manage their metadata and associated documents." %}
+            </p>
+            <p><a class="btn btn-default" href="/catalogue/#/?f=document">{% trans "Explore documents" %} »</a></p>
+        </div>
+
+        <!-- Users -->
+        <div class="col-md-6 mb-4">
+            <a href="/people/">
+                <i class="fa fa-user fa-4x recap-icon"></i>
+            </a>
+            <h2 class="mt-2">
+                <a class="counter-recap" href="/people/">{{ users_count }} {% trans "Users" %}</a>
+            </h2>
+            <p>
+                {% trans "GeoNode allows registered users to easily upload geospatial data and various documents in several formats." %}
+            </p>
+            <p><a class="btn btn-default" href="/people/">{% trans "See users" %} »</a></p>
+        </div>
+    </div>
+</div>
