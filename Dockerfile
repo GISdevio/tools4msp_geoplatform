@@ -14,7 +14,7 @@ FROM geonode/geonode-base:latest-ubuntu-22.04
 
 LABEL Tools4MSP Geoplatform
 
-RUN mkdir -p /usr/src/t4msp
+RUN mkdir -p /usr/src/tools4msp_geoplatform
 
 RUN apt-get update -y && apt-get install curl wget unzip gnupg2 locales -y
 
@@ -24,8 +24,8 @@ ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 
 # add bower and grunt command
-COPY src /usr/src/t4msp/
-WORKDIR /usr/src/t4msp
+COPY src /usr/src/tools4msp_geoplatform/
+WORKDIR /usr/src/tools4msp_geoplatform
 
 #COPY src/monitoring-cron /etc/cron.d/monitoring-cron
 #RUN chmod 0644 /etc/cron.d/monitoring-cron
@@ -35,8 +35,8 @@ WORKDIR /usr/src/t4msp
 
 COPY src/wait-for-databases.sh /usr/bin/wait-for-databases
 RUN chmod +x /usr/bin/wait-for-databases
-RUN chmod +x /usr/src/t4msp/tasks.py \
-    && chmod +x /usr/src/t4msp/entrypoint.sh
+RUN chmod +x /usr/src/tools4msp_geoplatform/tasks.py \
+    && chmod +x /usr/src/tools4msp_geoplatform/entrypoint.sh
 
 COPY src/celery.sh /usr/bin/celery-commands
 RUN chmod +x /usr/bin/celery-commands
@@ -54,8 +54,8 @@ RUN yes w | pip install --src /usr/src -r requirements.txt &&\
     yes w | pip install -e .
 
 # Copy the static files from previous layer
-COPY --from=frontend-build /usr/src/static /usr/src/t4msp/frontend/static
-COPY --from=frontend-build /usr/src/webpack-stats.json /usr/src/t4msp/frontend/webpack-stats.json
+COPY --from=frontend-build /usr/src/static /usr/src/tools4msp_geoplatform/frontend/static
+COPY --from=frontend-build /usr/src/webpack-stats.json /usr/src/tools4msp_geoplatform/frontend/webpack-stats.json
 
 # Cleanup apt update lists
 RUN apt-get autoremove --purge &&\
@@ -66,4 +66,4 @@ RUN apt-get autoremove --purge &&\
 EXPOSE 8000
 
 # We provide no command or entrypoint as this image can be used to serve the django project or run celery tasks
-# ENTRYPOINT /usr/src/t4msp/entrypoint.sh
+# ENTRYPOINT /usr/src/tools4msp_geoplatform/entrypoint.sh

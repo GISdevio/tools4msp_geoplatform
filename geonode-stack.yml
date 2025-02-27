@@ -7,7 +7,7 @@ x-common-django:
   env_file:
     - .env
   volumes:
-    # - '.:/usr/src/t4msp'
+    # - '.:/usr/src/tools4msp_geoplatform'
     - statics:/mnt/volumes/statics
     - geoserver-data-dir:/geoserver_data/data
     - backup-restore:/backup_restore
@@ -41,8 +41,8 @@ services:
       start_period: 60s
     environment:
       IS_CELERY: 'False'
-    entrypoint: ["/usr/src/t4msp/entrypoint.sh"]
-    command: "uwsgi --ini /usr/src/t4msp/uwsgi.ini"
+    entrypoint: ["/usr/src/tools4msp_geoplatform/entrypoint.sh"]
+    command: "uwsgi --ini /usr/src/tools4msp_geoplatform/uwsgi.ini"
 
   # Celery worker that executes celery tasks created by Django.
   celery:
@@ -52,7 +52,7 @@ services:
       - django
     environment:
       - IS_CELERY=True
-    entrypoint: ["/usr/src/t4msp/entrypoint.sh"]
+    entrypoint: ["/usr/src/tools4msp_geoplatform/entrypoint.sh"]
     command: "celery-cmd"
 
   # Nginx is serving django static and media files and proxies to django and geonode

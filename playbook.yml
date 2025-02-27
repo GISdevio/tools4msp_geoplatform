@@ -2,11 +2,11 @@
   hosts: production
   remote_user: ubuntu
   vars:
-    app_name: t4msp
+    app_name: tools4msp_geoplatform
     github_user: geonode
     server_name: 0.0.0.0
     deploy_user: ubuntu
-    code_repository: https://github.com/-----/t4msp.git" # e.g., "https://github.com/GeoNode/t4msp.git"
+    code_repository: https://github.com/-----/tools4msp_geoplatform.git" # e.g., "https://github.com/GeoNode/tools4msp_geoplatform.git"
     branch_name: master
     virtualenv_dir: "/home/ubuntu/.venvs"
     site_url: "http://localhost:8000/" # The public url of the GeoNode instance

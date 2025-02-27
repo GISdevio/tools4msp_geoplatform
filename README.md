@@ -49,7 +49,7 @@ GeoNode template project. Generates a django project with GeoNode support.
 
   ```bash
     python3.10 -m venv ~/.venvs/project_name
-    source ~/.venvs/t4msp/bin/activate
+    source ~/.venvs/tools4msp_geoplatform/bin/activate
 
     pip install Django==4.2.9
 
@@ -77,6 +77,7 @@ GeoNode template project. Generates a django project with GeoNode support.
 - `--geodbpwd`: GeoNode data DB user role's password. A random value is set if left empty
 - `--clientid`: Client id of Geoserver's GeoNode Oauth2 client. A random value is set if left empty
 - `--clientsecret`: Client secret of Geoserver's GeoNode Oauth2 client. A random value is set if left empty
+- `--tools4msp_admin_token`: Admin token of Tools4MSP APIs. A random value is set if left empty
 ```bash
   docker compose build
   docker compose up -d
@@ -92,7 +93,7 @@ Available at
 
 ## Create a custom project
 
-**NOTE**: *You can call your geonode project whatever you like **except 'geonode'**. Follow the naming conventions for python packages (generally lower case with underscores (``_``). In the examples below, replace ``t4msp`` with whatever you would like to name your project.*
+**NOTE**: *You can call your geonode project whatever you like **except 'geonode'**. Follow the naming conventions for python packages (generally lower case with underscores (``_``). In the examples below, replace ``tools4msp_geoplatform`` with whatever you would like to name your project.*
 
 To setup your project follow these instructions:
 
@@ -101,12 +102,12 @@ To setup your project follow these instructions:
     ```bash
     git clone https://github.com/GeoNode/geonode-project.git -b <your_branch>
     source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-    mkvirtualenv --python=/usr/bin/python3 t4msp
+    mkvirtualenv --python=/usr/bin/python3 tools4msp_geoplatform
     pip install Django==3.2.16
 
-    django-admin startproject --template=./geonode-project -e py,sh,md,rst,json,yml,ini,env,sample,properties -n monitoring-cron -n Dockerfile t4msp
+    django-admin startproject --template=./geonode-project -e py,sh,md,rst,json,yml,ini,env,sample,properties -n monitoring-cron -n Dockerfile tools4msp_geoplatform
 
-    cd t4msp
+    cd tools4msp_geoplatform
     ```
 
 2. Create the .env file
@@ -274,7 +275,7 @@ docker system prune -a
 ### Run a Backup
 
 ```bash
-SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/backup.sh $BKP_FOLDER_NAME
+SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./tools4msp_geoplatform/br/backup.sh $BKP_FOLDER_NAME
 ```
 
 - BKP_FOLDER_NAME:
@@ -291,13 +292,13 @@ SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/backup.sh $BKP_FOLDER_N
 e.g.:
 
 ```bash
-docker exec -it django4t4msp sh -c 'SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/backup.sh $BKP_FOLDER_NAME'
+docker exec -it django4tools4msp_geoplatform sh -c 'SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./tools4msp_geoplatform/br/backup.sh $BKP_FOLDER_NAME'
 ```
 
 ### Run a Restore
 
 ```bash
-SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/restore.sh $BKP_FOLDER_NAME
+SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./tools4msp_geoplatform/br/restore.sh $BKP_FOLDER_NAME
 ```
 
 - BKP_FOLDER_NAME:
@@ -314,7 +315,7 @@ SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/restore.sh $BKP_FOLDER_
 e.g.:
 
 ```bash
-docker exec -it django4t4msp sh -c 'SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/restore.sh $BKP_FOLDER_NAME'
+docker exec -it django4tools4msp_geoplatform sh -c 'SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./tools4msp_geoplatform/br/restore.sh $BKP_FOLDER_NAME'
 ```
 
 ## Recommended: Track your changes

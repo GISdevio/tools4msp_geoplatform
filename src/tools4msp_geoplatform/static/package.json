@@ -1,8 +1,8 @@
 {
-  "name": "t4msp",
+  "name": "tools4msp_geoplatform",
   "version": "0.0.1",
   "author": "GeoNode Developers",
-  "description": "Static code and assets for t4msp",
+  "description": "Static code and assets for tools4msp_geoplatform",
   "contributors": [
     {
     }

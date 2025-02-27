@@ -6,14 +6,14 @@ export SITEURL=http://localhost:8000/
 export ALLOWED_HOSTS="['localhost',]"
 
 export GEONODE_INSTANCE_NAME=geonode
-export DJANGO_SETTINGS_MODULE=t4msp.settings
-export GEONODE_DATABASE=t4msp
+export DJANGO_SETTINGS_MODULE=tools4msp_geoplatform.settings
+export GEONODE_DATABASE=tools4msp_geoplatform
 export GEONODE_DATABASE_PASSWORD=geonode
-export GEONODE_GEODATABASE=t4msp_data
+export GEONODE_GEODATABASE=tools4msp_geoplatform_data
 export GEONODE_GEODATABASE_PASSWORD=geonode
 
-export DATABASE_URL=postgis://t4msp:geonode@localhost:5432/t4msp
-export GEODATABASE_URL=postgis://t4msp_data:geonode@localhost:5432/t4msp_data
+export DATABASE_URL=postgis://tools4msp_geoplatform:geonode@localhost:5432/tools4msp_geoplatform
+export GEODATABASE_URL=postgis://tools4msp_geoplatform_data:geonode@localhost:5432/tools4msp_geoplatform_data
 export DEFAULT_BACKEND_DATASTORE=datastore
 
 export GEOSERVER_WEB_UI_LOCATION=http://localhost:8080/geoserver/
