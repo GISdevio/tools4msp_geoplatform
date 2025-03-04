@@ -83,7 +83,7 @@
             {% csrf_token %}
             <select class="col-md-6 pull-right footer-language-select" name="language" onchange="javascript:form.submit()">
               {% for lang in LANGUAGES %}
-              <option value="{{ lang.0 }}" {% if LANGUAGE_CODE==lang.0 %}selected="selected" {% endif %}>
+              <option value="{{ lang.0 }}" {% if LANGUAGE_CODE == lang.0 %}selected="selected" {% endif %}>
                 {{ lang.1 }}
               </option>
               {% endfor %}
