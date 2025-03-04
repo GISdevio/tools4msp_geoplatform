@@ -48,7 +48,7 @@ urlpatterns = [
     path('', include('geodatabuilder.urls')),
 
     # Needed to migrate data from old platform
-    path('', include('t4msp.upmigrate.urls')),
+    path('', include('tools4msp_geoplatform.upmigrate.urls')),
 ] + geonode_urlpatterns
 
 homepage = register_url_event()(HomePageView.as_view())

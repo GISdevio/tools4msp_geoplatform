@@ -1,7 +1,7 @@
 #!/bin/sh
 # ##########################################################
 # Run a restore
-#  SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/restore.sh $BKP_FOLDER_NAME
+#  SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./tools4msp_geoplatform/br/restore.sh $BKP_FOLDER_NAME
 #   - BKP_FOLDER_NAME:
 #     Default value = backup_restore
 #     Shared Backup Folder name.
@@ -14,14 +14,14 @@
 #     Target Server URL, the one which must be synched.
 #
 # e.g.:
-#  docker exec -it django4t4msp sh -c 'SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/restore.sh $BKP_FOLDER_NAME'
+#  docker exec -it django4tools4msp_geoplatform sh -c 'SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./tools4msp_geoplatform/br/restore.sh $BKP_FOLDER_NAME'
 # ##########################################################
 
 # Exit script in case of error
 set -e
 
 echo "-----------------------------------------------------"
-echo "STARTING t4msp RESTORE $(date)"
+echo "STARTING tools4msp_geoplatform RESTORE $(date)"
 echo "-----------------------------------------------------"
 
 if [ "$1" != "" ]; then
@@ -41,7 +41,7 @@ else
     echo "$SOURCE_URL --> $TARGET_URL"
 fi
 
-cd /usr/src/t4msp/
+cd /usr/src/tools4msp_geoplatform/
 
 echo "-----------------------------------------------------"
 echo " 1. BACKUP $TARGET_URL"
@@ -49,7 +49,7 @@ echo "-----------------------------------------------------"
 
 NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 mkdir /$BKP_FOLDER_NAME/$NEW_UUID/
-SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./t4msp/br/backup.sh $BKP_FOLDER_NAME/$NEW_UUID
+SOURCE_URL=$SOURCE_URL TARGET_URL=$TARGET_URL ./tools4msp_geoplatform/br/backup.sh $BKP_FOLDER_NAME/$NEW_UUID
 
 echo "-----------------------------------------------------"
 echo " 2. CHECK BACKUP.md5 $TARGET_URL"
@@ -94,5 +94,5 @@ fi
 
 echo "-----------------------------------------------------"
 echo " - Original Backup of $TARGET_URL --> /$BKP_FOLDER_NAME/$NEW_UUID/"
-echo "FINISHED t4msp RESTORE $(date)"
+echo "FINISHED tools4msp_geoplatform RESTORE $(date)"
 echo "-----------------------------------------------------"

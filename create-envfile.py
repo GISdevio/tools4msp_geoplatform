@@ -115,6 +115,9 @@ def generate_env_file(args):
             else True
         )
         _vals_to_replace["email"] = _jsfile.get("email", args.email)
+        _vals_to_replace["tools4msp_admin_token"] = _jsfile.get(
+            "tools4msp_admin_token", args.tools4msp_admin_token
+        ) or "".join(random.choice(_strong_chars) for _ in range(40))
 
         if tcp == "https" and not _vals_to_replace["email"]:
             raise Exception("With HTTPS enabled, the email parameter is required")
@@ -186,6 +189,7 @@ if __name__ == "__main__":
     parser.add_argument("--clientid", help="Oauth2 client id")
     parser.add_argument("--clientsecret", help="Oauth2 client secret")
     parser.add_argument("--secret_key", help="Django Secret Key")
+    parser.add_argument("--tools4msp_admin_token", help="Tools4MSP APIs admin token")
 
     parser.add_argument(
         "--env_type",

@@ -23,9 +23,9 @@ from __future__ import absolute_import
 import os
 from celery import Celery
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "t4msp.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tools4msp_geoplatform.settings")
 
-app = Celery("t4msp")
+app = Celery("tools4msp_geoplatform")
 
 # Using a string here means the worker will not have to
 # pickle the object when using Windows.
@@ -33,6 +33,6 @@ app.config_from_object("django.conf:settings", namespace="CELERY")
 app.autodiscover_tasks()
 
 
-@app.task(bind=True, name="t4msp.debug_task", queue="default")
+@app.task(bind=True, name="tools4msp_geoplatform.debug_task", queue="default")
 def debug_task(self):
     print("Request: {!r}".format(self.request))

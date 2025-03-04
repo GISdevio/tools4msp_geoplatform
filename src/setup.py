@@ -29,11 +29,11 @@ def read(*rnames):
 
 
 setup(
-    name="t4msp",
+    name="tools4msp_geoplatform",
     version="4.0.0",
     author="",
     author_email="",
-    description="t4msp, based on GeoNode",
+    description="tools4msp_geoplatform, based on GeoNode",
     long_description=(read("README.md")),
     # Full list of classifiers can be found at:
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -41,8 +41,8 @@ setup(
         "Development Status :: 1 - Planning",
     ],
     license="GPL",
-    keywords="t4msp geonode django",
-    url="https://github.com/t4msp/t4msp",
+    keywords="tools4msp_geoplatform geonode django",
+    url="https://github.com/GISdevio/tools4msp_geoplatform",
     packages=find_packages(),
     dependency_links=["git+https://github.com/GeoNode/geonode.git#egg=geonode"],
     include_package_data=True,

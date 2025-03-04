@@ -30,7 +30,7 @@ except ImportError:
     from urlparse import urlparse, urlunparse
 # Load more settings from a file called local_settings.py if it exists
 try:
-    from t4msp.local_settings import *
+    from tools4msp_geoplatform.local_settings import *
 #    from geonode.local_settings import *
 except ImportError:
     from geonode.settings import *
@@ -38,7 +38,7 @@ except ImportError:
 #
 # General Django development settings
 #
-PROJECT_NAME = "t4msp"
+PROJECT_NAME = "tools4msp_geoplatform"
 
 # add trailing slash to site url. geoserver url will be relative to this
 if not SITEURL.endswith("/"):
@@ -46,7 +46,7 @@ if not SITEURL.endswith("/"):
 
 CLIENTURL = os.getenv("CLIENTURL", SITEURL)
 
-SITENAME = os.getenv("SITENAME", "t4msp")
+SITENAME = os.getenv("SITENAME", "tools4msp_geoplatform")
 
 # Defines the directory that contains the settings file as the LOCAL_ROOT
 # It is used for relative settings elsewhere.
@@ -90,7 +90,7 @@ loaders = TEMPLATES[0]["OPTIONS"].get("loaders") or [
 # loaders.insert(0, 'apptemplates.Loader')
 TEMPLATES[0]["OPTIONS"]["loaders"] = loaders
 TEMPLATES[0].pop("APP_DIRS", None)
-TEMPLATES[0]['OPTIONS']['context_processors'].append('t4msp.context_processors.theme_configs')
+TEMPLATES[0]['OPTIONS']['context_processors'].append('tools4msp_geoplatform.context_processors.theme_configs')
 TEMPLATES[0]['OPTIONS']['context_processors'].append('django.contrib.auth.context_processors.auth')
 
 

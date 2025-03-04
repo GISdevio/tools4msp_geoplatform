@@ -54,9 +54,9 @@ from paver.easy import (
 from setuptools.command import easy_install
 
 try:
-    from t4msp.local_settings import *
+    from tools4msp_geoplatform.local_settings import *
 except ImportError:
-    from t4msp.settings import *
+    from tools4msp_geoplatform.settings import *
 
 try:
     from paver.path import pushd
@@ -975,8 +975,8 @@ def _reset():
 
     path = os.path.join(settings.PROJECT_ROOT, "development.db")
     sh(f"rm -rf {path}")
-    sh("rm -rf t4msp/development.db")
-    sh("rm -rf t4msp/uploaded/*")
+    sh("rm -rf tools4msp_geoplatform/development.db")
+    sh("rm -rf tools4msp_geoplatform/uploaded/*")
     _configure_data_dir()
 
 

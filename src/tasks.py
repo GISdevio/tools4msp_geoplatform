@@ -555,7 +555,7 @@ def _update_geodb_connstring():
 
 
 def _localsettings():
-    settings = os.getenv("DJANGO_SETTINGS_MODULE", "t4msp.settings")
+    settings = os.getenv("DJANGO_SETTINGS_MODULE", "tools4msp_geoplatform.settings")
     return settings
 
 
