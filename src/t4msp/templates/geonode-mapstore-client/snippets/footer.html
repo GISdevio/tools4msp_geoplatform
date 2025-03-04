@@ -3,21 +3,27 @@
 <style>
   /* Example link styles for your dark footer */
   .footer-link {
-    color: #fff !important; /* white text by default */
+    color: #fff !important;
+    /* white text by default */
     text-decoration: none;
   }
+
   .footer-link:hover {
-    color: #eb6b00 !important; /* lighter gray on hover */
+    color: #eb6b00 !important;
+    /* lighter gray on hover */
     cursor: pointer !important;
-    text-decoration: underline !important; 
+    text-decoration: underline !important;
   }
+
   /* Give the language dropdown a wider minimum width */
 
   .footer-language-select {
     color: #333 !important;
     min-width: 170px;
-    height: 2em;       /* adjust to your preferred size */
-    line-height: 2em; /* makes text centered vertically */
+    height: 2em;
+    /* adjust to your preferred size */
+    line-height: 2em;
+    /* makes text centered vertically */
   }
 
   .list-unstyled {
@@ -30,7 +36,7 @@
   <div style="background-color: #333; color: #fff; padding: 20px 0;">
     <div class="container">
       <div class="row">
-        
+
         <!-- First column -->
         <div class="col-md-2">
           <ul class="list-unstyled">
@@ -74,10 +80,10 @@
           {% if csrf_token != "NOTPROVIDED" %}
           {% get_current_language as LANGUAGE %}
           <form class="form-inline" action="/i18n/setlang/" method="post">
-          {% csrf_token %}
+            {% csrf_token %}
             <select class="col-md-6 pull-right footer-language-select" name="language" onchange="javascript:form.submit()">
               {% for lang in LANGUAGES %}
-              <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
+              <option value="{{ lang.0 }}" {% if LANGUAGE_CODE==lang.0 %}selected="selected" {% endif %}>
                 {{ lang.1 }}
               </option>
               {% endfor %}
