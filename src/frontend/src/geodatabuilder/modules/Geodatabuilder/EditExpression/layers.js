@@ -73,7 +73,7 @@ export default function Layers({ id, actions = true }) {
     return (
         <>
             <div className='d-flex align-items-center justify-content-between mt-4'>
-                <h3 className='fw-bold'>Layers</h3>
+                <h3 className='fw-bold'>Datasets</h3>
             </div>
 
             <div className='mb-3'>

@@ -47,10 +47,10 @@ export default function UploadLayer({ id, btnProps, label }) {
 
   return (
     <div>
-      <Button {...btnProps} onClick={handleShow}>Upload Layer</Button>
+      <Button {...btnProps} onClick={handleShow}>Upload Dataset</Button>
       <div ref={ref}></div>
       <Modal show={show} container={ref} animation={false} centered onHide={handleClose}>
-        <Modal.Header>Upload Layer</Modal.Header>
+        <Modal.Header>Upload Dataset</Modal.Header>
         <Modal.Body>
           <Formik
             initialValues={{}}
@@ -92,7 +92,7 @@ export default function UploadLayer({ id, btnProps, label }) {
                   />
                   <SelectField 
                     name="layer"
-                    label="Layer"
+                    label="Dataset"
                     loadOptions={loadLayers}
                     getOptionLabel={v => v.title || v.name}
                     getOptionValue={v => v.pk}
