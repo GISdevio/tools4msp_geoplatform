@@ -1,0 +1,9 @@
+<style>
+  <id>StyleInfoImpl-6eb55221:1795b0d8dab:-7f1f</id>
+  <name>zoning_elements_trasporto</name>
+  <format>sld</format>
+  <languageVersion>
+    <version>1.0.0</version>
+  </languageVersion>
+  <filename>zoning_elements_trasporto.sld</filename>
+</style>
