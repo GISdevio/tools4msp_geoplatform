@@ -120,7 +120,7 @@ def get_base_left_topbar_menu(context):
             "items": [
                 {"type": "link", "href": "/team/", "label": "Meet the team"},
                 {"type": "link", "href": "/projects/", "label": "Projects"},
-                {"type": "link", "href": "/pubblications/", "label": "Pubblications"},
+                {"type": "link", "href": "/publications/", "label": "Publications"},
             ],
         }
     ]

@@ -1,0 +1,79 @@
+.navbar .navbar-brand {
+  background: none;
+  color: #fff;
+  height: auto;
+  width: auto;
+  text-indent: unset;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-size: 24px;
+}
+.home .big-search {
+  background-color: #312258;
+}
+.home .big-search .btn-default {
+  background-color: #cf372c;
+  color: #ffffff;
+}
+.home .jumbotron {
+  margin-top: -11px;
+}
+.home .jumbotron .btn-default {
+  background-color: #312258;
+}
+.home .home-facets i {
+  color: #cf372c;
+}
+.home #partners .row {
+  display: flex;
+  justify-content: center;
+}
+.panel-heading [data-toggle="collapse"]:after {
+  color: #cf372c;
+}
+.msgapi .catalog-panel > .panel-body form .form-group:first-child, .msgapi .catalog-panel > .panel-body form .form-group:first-child + .form-group {
+  display: block !important;
+}
+
+.msgapi .ms-geostory-map-editor-toolbar .square-button-md:last-child {
+  display: block !important;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.msgapi .gn-main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100 !important;
+}
+
+.text-expand-more{
+    display: none;
+}
+.text-expand-button {
+    background-color: white;
+    border: none;
+    color: #3595f6 ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.gn-menu-content .input-group {
+  /* position: relative; */
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: baseline;
+  width: 100%;
+}

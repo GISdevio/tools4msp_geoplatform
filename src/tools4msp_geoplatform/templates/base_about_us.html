@@ -1,0 +1,97 @@
+{% load static %}
+{% load client_version %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/static/fonts/montserrat.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet" />
+    <link href="{% static 'mapstore/dist/themes/geonode.css' %}?{% client_version %}" rel="stylesheet" />
+
+    <title>{% block title %}Projects{% endblock %}</title>
+
+    <link rel="shortcut icon" href="{% static 'geonode/img/favicon.ico' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    {% include './geonode-mapstore-client/snippets/loader_style.html' %}
+
+    {% block custom_theme %}
+    {% include './geonode-mapstore-client/snippets/custom_theme.html' %}
+    {% endblock %}
+
+    {% block extra_style %}{% endblock %}
+    {% block extra_head %}{% endblock %}
+</head>
+
+<style type="text/css">
+    html {
+        font-size: 11px !important;
+    }
+
+    .msgapi * {
+        font-size: 16px !important;
+    }
+
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .no-underline a {
+        text-decoration: none;
+    }
+
+    .no-underline a:hover {
+        text-decoration: underline;
+    }
+
+    li.has-line-data {
+        min-height: 200px;
+    }
+
+    img.face {
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+    {% load i18n %}
+
+    {% block body_outer %}
+
+    <div class="msgapi">
+        {% include './geonode-mapstore-client/_geonode_config.html' %}
+        {% block header %}
+        {% include './geonode-mapstore-client/snippets/header.html' with show_hero=False %}
+        {% endblock header %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static "lib/js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript">
+        // enable dropdown functionalities
+        $('.dropdown-toggle').dropdown();
+    </script>
+    <script src="/static/js/tools4msp.js"></script>
+
+    {% block content %}
+
+    {% endblock content %}
+
+    {% endblock body_outer %}
+
+    {% block footer %}
+    {% include './geonode-mapstore-client/snippets/footer.html' %}
+    {% endblock footer %}
+
+</body>
+
+</html>
