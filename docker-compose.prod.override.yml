@@ -5,12 +5,3 @@ services:
 
   celery:
     image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}
-  
-  letsencrypt:
-    image: geonode/letsencrypt:${LETSENCRYPT_BASE_IMAGE_VERSION}
-    container_name: letsencrypt4${COMPOSE_PROJECT_NAME}
-    env_file:
-      - .env
-    volumes:
-      - nginx-certificates:/geonode-certificates
-    restart: unless-stopped
