@@ -5,3 +5,21 @@ services:
 
   celery:
     image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}
+
+  geonode:
+    labels:
+      traefik.enable: true
+      traefik.http.routers.tools4msp_geoplatform_geonode_router.rule: Host(`dev.geoplatform.tools4msp.eu`)
+      traefik.http.routers.tools4msp_geoplatform_geonode_router.tls.certresolver: le
+      traefik.http.routers.tools4msp_geoplatform_geonode_router.entrypoints: websecure
+    networks:
+      - web
+
+  geoserver:
+    ports: !reset []
+
+
+networks:
+  web:
+    external: true
+    name: traefik_tools4msp_geoplatform_webgateway
