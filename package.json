@@ -1,0 +1,42 @@
+{
+  "name": "@tools4msp_geoplatform/migration",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "start": "tsx --env-file=.env src/index.ts",
+    "check:types": "tsc --noEmit --skipLibCheck",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "csv": "^6.3.11",
+    "dayjs": "^1.11.13",
+    "glob": "^11.0.3",
+    "jsdom": "^26.1.0",
+    "mime": "^4.0.7",
+    "node-color-log": "^12.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@stylistic/eslint-plugin": "^4.4.1",
+    "@types/adm-zip": "^0.5.7",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^24.0.3",
+    "eslint": "^9.29.0",
+    "eslint-config-esnext": "^4.1.0",
+    "eslint-import-resolver-typescript": "^4.4.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.20.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.3.0",
+    "eslint-visitor-keys": "^4.2.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.1"
+  },
+  "engines": {
+    "node": ">=v24"
+  }
+}
