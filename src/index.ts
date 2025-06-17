@@ -1,7 +1,32 @@
 import logger from 'node-color-log'
 
+import categories from './categories'
+import documents from './documents'
+import groups from './groups'
+import rasterLayers from './raster-layers'
+import users from './users'
+import vectorLayers from './vector-layers'
+
+logger.setDate(() => '')
+
 const main = async () => {
-  logger.log('Hey!')
+  // await users.download()
+  // await users.upload()
+
+  // await groups.download()
+  // await groups.upload()
+
+  // await categories.download()
+  // await categories.upload()
+
+  // await documents.download()
+  // await documents.upload()
+
+  // await rasterLayers.download()
+  // await rasterLayers.upload()
+
+  // await vectorLayers.download()
+  // await vectorLayers.upload()
 }
 
 main().catch((err) => logger.error(err))

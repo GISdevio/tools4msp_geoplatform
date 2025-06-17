@@ -1,6 +1,68 @@
 # Tools4MSP Data Migration
 
-You are in an orphan branch dedicated to the migration of data from the legacy to the new platform. Refer to the [dedicated issue](https://github.com/GISdevio/tools4msp_geoplatform/issues/4) for more information on the process and the entities involved.
+You are in an orphan branch dedicated to the migration of data from the legacy to the new platform.
+
+As outlined in the [dedicated issue](https://github.com/GISdevio/tools4msp_geoplatform/issues/4), the entities that should be migrated are the following.
+
+> [!IMPORTANT]
+> The order of the list reflects the order in which entities should be imported in the new platform to ensure that any dependency is resolved correctly.
+
+- Users
+- Groups
+- Categories
+- Custom taxonomies
+- Licenses (*manually ported*)
+- Thesaurus (thesauri, thesaurus keyword labels, thesaurus keywords)*
+- Tags (*manually ported*)
+- Documents
+- Raster layers
+- Vector layers
+- Vector temporal series (*manually ported*)
+- Remote services (*manually ported*)
+- Remote layers (*manually ported*)
+- Maps (*manually ported*)
+- GeoDataBuilders (*manually ported*)
+- Geostories (*manually ported*)
+- Dashboards (*manually ported*)
+- Case studies
+
+For some of them, a set of [automatic migration scripts](#migration-scripts) is provided in this branch, while others require a manual migration (either because they are low in number, or because an automatic approach is too complicated, or even not feasible).
+
+Each automatically migratable entity has its own directory under `/src` with a `README.md` outlining the migration strategy as well as any useful information.
+
+## Migration scripts
+
+The migration scripts are written in Typescript and run on Node.js. To setup the project, you need to:
+
+- install [Node.js v24](https://nodejs.org/en/) on your machine
+- enable [Yarn](https://yarnpkg.com/) package manager running `corepack enable`
+- install the dependencies running `yarn install`
+- [setup the environment](#env-setup)
+
+The entrypoint of the service is in `/src/index.ts`. Here you will find a function called `main`, which in turn calls the various migration functions. Just comment/uncomment the functions you need to run, read the `README.md` file in the corresponding directory, and spin up the process with
+
+```sh
+yarn start
+```
+
+At the end of the script execution, you will most likely find a report or some generated data in the corresponding directory under `/data`.
+
+### Env setup
+
+The scripts need a `.env` file in the root of the repository containing information on how to authenticated to the platforms.
+
+The structure of the file is the following:
+
+```ini
+GEONODE_V3_CSRF_TOKEN=
+GEONODE_V3_SESSION_ID=
+
+GEONODE_V4_URL=
+GEONODE_V4_CSRF_TOKEN=
+GEONODE_V4_SESSION_ID=
+```
+
+While there are ways to recover auth information automatically, the easiest and most reliable way to do so is manually bt logging in from the web interface and copying the generated cookies.
 
 ## Raster layers migration report
 
