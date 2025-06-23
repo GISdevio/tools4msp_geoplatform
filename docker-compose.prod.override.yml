@@ -7,6 +7,7 @@ services:
     image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}
 
   geonode:
+    ports: !reset []
     labels:
       traefik.enable: true
       traefik.http.routers.tools4msp_geoplatform_geonode_router.rule: Host(`dev.geoplatform.tools4msp.eu`)
