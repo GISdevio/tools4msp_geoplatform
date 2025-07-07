@@ -1,0 +1,345 @@
+[
+  {
+    "description": "Aquaculture",
+    "gnDescription": "Aquaculture",
+    "icon": "fa-spinner",
+    "id": "aquaculture",
+    "pk": "21"
+  },
+  {
+    "description": "Biological characteristics",
+    "gnDescription": "Biological characteristics",
+    "icon": "fa-leaf",
+    "id": "biological_characteristics",
+    "pk": "22"
+  },
+  {
+    "description": "Flora and/or fauna in natural environment. Examples: wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat.",
+    "gnDescription": "[deprecated] Biota",
+    "icon": "fa-leaf",
+    "id": "biota",
+    "pk": "13"
+  },
+  {
+    "description": "Legal land descriptions. Examples: political and administrative boundaries.",
+    "gnDescription": "[deprecated] Boundaries",
+    "icon": "fa-ellipsis-h",
+    "id": "boundaries",
+    "pk": "6"
+  },
+  {
+    "description": "Submarine cable & pipeline routes",
+    "gnDescription": "Submarine cable & pipeline routes",
+    "icon": "fa-ils",
+    "id": "cables_and_pipelines",
+    "pk": "23"
+  },
+  {
+    "description": "Processes and phenomena of the atmosphere. Examples: cloud cover, weather, climate, atmospheric conditions, climate change, precipitation.",
+    "gnDescription": "[deprecated] Climatology Meteorology Atmosphere",
+    "icon": "fa-cloud",
+    "id": "climatologyMeteorologyAtmosphere",
+    "pk": "19"
+  },
+  {
+    "description": "Coastal defence",
+    "gnDescription": "Coastal defence",
+    "icon": "fa-cubes",
+    "id": "coastal_defence",
+    "pk": "25"
+  },
+  {
+    "description": "Coastal land uses/activities",
+    "gnDescription": "Coastal land uses/activities",
+    "icon": "fa-square-o",
+    "id": "coastal_land_uses_activities",
+    "pk": "24"
+  },
+  {
+    "description": "Underwater cultural heritage",
+    "gnDescription": "Underwater cultural heritage",
+    "icon": "fa-university",
+    "id": "cultural_heritage",
+    "pk": "26"
+  },
+  {
+    "description": "Economic indicators",
+    "gnDescription": "Economic indicators",
+    "icon": "fa-line-chart",
+    "id": "economic_indicators",
+    "pk": "27"
+  },
+  {
+    "description": "Economic activities, conditions and employment. Examples: production, labour, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas.",
+    "gnDescription": "[deprecated] Economy",
+    "icon": "fa-shopping-cart",
+    "id": "economy",
+    "pk": "11"
+  },
+  {
+    "description": "Height above or below sea level. Examples: altitude, bathymetry, digital elevation models, slope, derived products.",
+    "gnDescription": "[deprecated] Elevation",
+    "icon": "fa-flag",
+    "id": "elevation",
+    "pk": "3"
+  },
+  {
+    "description": "Environmental resources, protection and conservation. Examples: environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape.",
+    "gnDescription": "[deprecated] Environment",
+    "icon": "fa-tree",
+    "id": "environment",
+    "pk": "9"
+  },
+  {
+    "description": "Raw material extraction areas",
+    "gnDescription": "Raw material extraction areas",
+    "icon": "fa-diamond",
+    "id": "extraction_areas",
+    "pk": "28"
+  },
+  {
+    "description": "Rearing of animals and/or cultivation of plants. Examples: agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock.",
+    "gnDescription": "[deprecated] Farming",
+    "icon": "fa-lemon-o",
+    "id": "farming",
+    "pk": "2"
+  },
+  {
+    "description": "Fishing",
+    "gnDescription": "Fishing",
+    "icon": "fa-cogs",
+    "id": "fishing",
+    "pk": "29"
+  },
+  {
+    "description": "Information pertaining to earth sciences. Examples: geophysical features and processes, geology, minerals, sciences dealing with the composition, structure and origin of the earth s rocks, risks of earthquakes, volcanic activity, landslides, gravity information, soils, permafrost, hydrogeology, erosion.",
+    "gnDescription": "[deprecated] Geoscientific Information",
+    "icon": "fa-bullseye",
+    "id": "geoscientificInformation",
+    "pk": "1"
+  },
+  {
+    "description": "Health, health services, human ecology, and safety. Examples: disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services.",
+    "gnDescription": "[deprecated] Health",
+    "icon": "fa-stethoscope",
+    "id": "health",
+    "pk": "14"
+  },
+  {
+    "description": "Human population",
+    "gnDescription": "Human population",
+    "icon": "fa-users",
+    "id": "human_population",
+    "pk": "30"
+  },
+  {
+    "description": "Base maps. Examples: land cover, topographic maps, imagery, unclassified images, annotations.",
+    "gnDescription": "[deprecated] Imagery Base Maps Earth Cover",
+    "icon": "fa-globe",
+    "id": "imageryBaseMapsEarthCover",
+    "pk": "15"
+  },
+  {
+    "description": "Inland water features, drainage systems and their characteristics. Examples: rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrographic charts.",
+    "gnDescription": "[deprecated] Inland Waters",
+    "icon": "fa-tint",
+    "id": "inlandWaters",
+    "pk": "7"
+  },
+  {
+    "description": "Installations & infrastructure",
+    "gnDescription": "Installations & infrastructure",
+    "icon": "fa-building-o",
+    "id": "installations_and_infrastructure",
+    "pk": "31"
+  },
+  {
+    "description": "Military bases, structures, activities. Examples: barracks, training grounds, military transportation, information collection.",
+    "gnDescription": "[deprecated] Intelligence Military",
+    "icon": "fa-fighter-jet",
+    "id": "intelligenceMilitary",
+    "pk": "8"
+  },
+  {
+    "description": "Positional information and services. Examples: addresses, geodetic networks, control points, postal zones and services, place names.",
+    "gnDescription": "[deprecated] Location",
+    "icon": "fa-map-marker",
+    "id": "location",
+    "pk": "10"
+  },
+  {
+    "description": "Maritime boundaries",
+    "gnDescription": "Maritime boundaries",
+    "icon": "fa-ellipsis-h",
+    "id": "maritime_boundaries",
+    "pk": "32"
+  },
+  {
+    "description": "Maritime transport and traffic flows",
+    "gnDescription": "Maritime transport and traffic flows",
+    "icon": "fa-ship",
+    "id": "maritime_transport_and_traffic_flows",
+    "pk": "33"
+  },
+  {
+    "description": "Military",
+    "gnDescription": "Military",
+    "icon": "fa-fighter-jet",
+    "id": "military",
+    "pk": "34"
+  },
+  {
+    "description": "-",
+    "gnDescription": "msp_environmentalProtection",
+    "icon": "fa-times",
+    "id": "msp_environmentalProtection",
+    "pk": "47"
+  },
+  {
+    "description": "-",
+    "gnDescription": "msp_fisheriesAquaculture",
+    "icon": "fa-times",
+    "id": "msp_fisheriesAquaculture",
+    "pk": "49"
+  },
+  {
+    "description": "-",
+    "gnDescription": "msp_fisheriesAquaculture",
+    "icon": "fa-times",
+    "id": "msp_fisheriesAquaculture",
+    "pk": "48"
+  },
+  {
+    "description": "Features and characteristics of salt water bodies (excluding inland waters). Examples: tides, tidal waves, coastal information, reefs.",
+    "gnDescription": "[deprecated] Oceans",
+    "icon": "fa-anchor",
+    "id": "oceans",
+    "pk": "5"
+  },
+  {
+    "description": "Physical characteristics",
+    "gnDescription": "Physical characteristics",
+    "icon": "fa-tint",
+    "id": "physical_characteristics",
+    "pk": "35"
+  },
+  {
+    "description": "Information used for appropriate actions for future use of the land. Examples: land use maps, zoning maps, cadastral surveys, land ownership.",
+    "gnDescription": "[deprecated] Planning Cadastre",
+    "icon": "fa-home",
+    "id": "planningCadastre",
+    "pk": "12"
+  },
+  {
+    "description": "Settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information. Economic activities, conditions and employment.",
+    "gnDescription": "[deprecated] Population",
+    "icon": "fa-male",
+    "id": "population",
+    "pk": "20"
+  },
+  {
+    "description": "Ports",
+    "gnDescription": "Ports",
+    "icon": "fa-anchor",
+    "id": "ports",
+    "pk": "36"
+  },
+  {
+    "description": "Pressures and impacts",
+    "gnDescription": "Pressures and impacts",
+    "icon": "fa-tachometer",
+    "id": "pressures_impacts",
+    "pk": "37"
+  },
+  {
+    "description": "Nature and species conservation sites & protected areas",
+    "gnDescription": "Nature and species conservation sites & protected areas",
+    "icon": "fa-picture-o",
+    "id": "protected_areas",
+    "pk": "38"
+  },
+  {
+    "description": "Renewable energies",
+    "gnDescription": "Renewable energies",
+    "icon": "fa-sun-o",
+    "id": "renewable_energies",
+    "pk": "39"
+  },
+  {
+    "description": "Scientific research",
+    "gnDescription": "Scientific research",
+    "icon": "fa-flask",
+    "id": "scientific_research",
+    "pk": "40"
+  },
+  {
+    "description": "Social indicators",
+    "gnDescription": "Social indicators",
+    "icon": "fa-bar-chart",
+    "id": "social_indicators",
+    "pk": "41"
+  },
+  {
+    "description": "Characteristics of society and cultures. Examples: settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information.",
+    "gnDescription": "[deprecated] Society",
+    "icon": "fa-comments",
+    "id": "society",
+    "pk": "17"
+  },
+  {
+    "description": "Source of pollution",
+    "gnDescription": "Source of pollution",
+    "icon": "fa-industry",
+    "id": "source_of_pollution",
+    "pk": "42"
+  },
+  {
+    "description": "Spatial Policy",
+    "gnDescription": "Spatial Policy",
+    "icon": "fa-map-o",
+    "id": "spatial_policy",
+    "pk": "43"
+  },
+  {
+    "description": "Man-made construction. Examples: buildings, museums, churches, factories, housing, monuments, shops, towers.",
+    "gnDescription": "[deprecated] Structure",
+    "icon": "fa-building",
+    "id": "structure",
+    "pk": "18"
+  },
+  {
+    "description": "Terrestrial boundaries",
+    "gnDescription": "Terrestrial boundaries",
+    "icon": "fa-globe",
+    "id": "terrestrial_boundaries",
+    "pk": "44"
+  },
+  {
+    "description": "Tourism & recreation",
+    "gnDescription": "Tourism & recreation",
+    "icon": "fa-flag-o",
+    "id": "tourism",
+    "pk": "45"
+  },
+  {
+    "description": "Means and aids for conveying persons and/or goods. Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways.",
+    "gnDescription": "[deprecated] Transportation",
+    "icon": "fa-truck",
+    "id": "transportation",
+    "pk": "16"
+  },
+  {
+    "description": "Types of habitat",
+    "gnDescription": "Types of habitat",
+    "icon": "fa-pagelines",
+    "id": "types_of_habitat",
+    "pk": "46"
+  },
+  {
+    "description": "Energy, water and waste systems and communications infrastructure and services. Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks.",
+    "gnDescription": "[deprecated] Utilities Communication",
+    "icon": "fa-phone",
+    "id": "utilitiesCommunication",
+    "pk": "4"
+  }
+]
