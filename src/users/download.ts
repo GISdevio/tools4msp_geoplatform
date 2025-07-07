@@ -52,7 +52,7 @@ const downloadUsers = async () => {
   const emailsToRedact = buildEmailsToRedact(usersRes, ownersRes)
   logger.dim().log('Emails to redact:', emailsToRedact)
 
-  const changedUsers: {reason: string; username: string}[] = []
+  const changedUsers: { reason: string; username: string }[] = []
   const skippedUsers: string[] = []
 
   let processesCount = 0

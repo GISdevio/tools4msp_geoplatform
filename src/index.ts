@@ -13,7 +13,7 @@ const main = async () => {
   // await users.download()
   // await users.upload()
 
-  // await groups.download()
+  await groups.download()
   // await groups.upload()
 
   // await categories.download()

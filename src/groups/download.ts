@@ -7,7 +7,7 @@ import logger from 'node-color-log'
 
 import { dumpJson, dumpMd, readJson, saveFile } from '../lib/fs-client'
 import v3Client from '../lib/v3-client'
-import type { CreationStateMap } from '../users/types'
+// import type { CreationStateMap } from '../users/types'
 
 import type { DownloadState, GroupsResponse, GroupsV2Response, V3Group } from './types'
 
@@ -28,7 +28,7 @@ const downloadLogo = async (slug: string, logo?: string | null): Promise<[string
   }
 }
 
-const downloadManagers = async (slug: string, usersCreationStateMap: CreationStateMap): Promise<[string[], string | null]> => {
+const downloadManagers = async (slug: string /* , usersCreationStateMap: CreationStateMap*/): Promise<[string[], string | null]> => {
   const keys: string[] = []
   let errorReport = ''
 
@@ -44,13 +44,13 @@ const downloadManagers = async (slug: string, usersCreationStateMap: CreationSta
       const username = anchors?.[1]?.innerHTML
       if (!username) { return }
 
-      const newPk = usersCreationStateMap[username]?.newPk
-      if (!newPk) {
-        errorReport += `\n\nManager ${username} not found in users`
-        return
-      }
+      // const newPk = usersCreationStateMap[username]?.newPk
+      // if (!newPk) {
+      //   errorReport += `\n\nManager ${username} not found in users`
+      //   return
+      // }
 
-      keys.push(newPk)
+      keys.push(username)
     })
 
     return [keys, errorReport || null]
@@ -60,7 +60,7 @@ const downloadManagers = async (slug: string, usersCreationStateMap: CreationSta
   }
 }
 
-const downloadMembers = async (slug: string, usersCreationStateMap: CreationStateMap): Promise<[string[], string | null]> => {
+const downloadMembers = async (slug: string /* , usersCreationStateMap: CreationStateMap */): Promise<[string[], string | null]> => {
   type ProfilesRes = { objects: Array<{ id: number; username: string }> }
 
   const keys: string[] = []
@@ -69,15 +69,15 @@ const downloadMembers = async (slug: string, usersCreationStateMap: CreationStat
   try {
     const profilesRes = await v3Client.getJson<ProfilesRes>(`/api/profiles/?group=${slug}&limit=200&offset=0`)
 
-    profilesRes.objects.forEach(({ id, username }) => {
-      const newKey = usersCreationStateMap[username]?.newPk
+    profilesRes.objects.forEach(({ /* id, */ username }) => {
+      // const newKey = usersCreationStateMap[username]?.newPk
 
-      if (newKey) {
-        keys.push(newKey)
-        return
-      }
+      // if (!newKey) {
+      //   errorReport += `\n\nMember ${username} with v3 key ${id} not found`
+      //   return
+      // }
 
-      errorReport += `\n\nMember ${username} with v3 key ${id} not found`
+      keys.push(username)
     })
 
     return [keys, errorReport || null]
@@ -107,7 +107,7 @@ const downloadGroups = async () => {
   const groupsRes = await v3Client.getJson<GroupsResponse>('/api/groups/?page_size=1000')
   const groupsV2Res = await v3Client.getJson<GroupsV2Response>('/api/v2/groups/?page_size=1000')
 
-  const usersCreationStateMap = await readJson<CreationStateMap>('users/creation-state')
+  // const usersCreationStateMap = await readJson<CreationStateMap>('users/creation-state')
 
   let processesCount = 0
   let alreadyDownloadedCount = 0
@@ -187,14 +187,14 @@ ${errorReport}
       _errorReport += `\n${logoErrorReport}`
     }
 
-    const [managers, managersErrorReport] = await downloadManagers(group.group_profile.slug, usersCreationStateMap)
+    const [managers, managersErrorReport] = await downloadManagers(group.group_profile.slug /* , usersCreationStateMap */)
     groupData.managers = managers
     if (managersErrorReport) {
       hasError = true
       _errorReport += `\n${managersErrorReport}`
     }
 
-    const [members, membersErrorReport] = await downloadMembers(group.group_profile.slug, usersCreationStateMap)
+    const [members, membersErrorReport] = await downloadMembers(group.group_profile.slug /* , usersCreationStateMap */)
     groupData.members = members
     if (membersErrorReport) {
       hasError = true

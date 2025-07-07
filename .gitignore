@@ -10,15 +10,10 @@ yarn-debug.log*
 yarn-error.log*
 
 # data
-data/**/download/
-data/vector-layers/extra-styles
-
-# testing
-coverage/
+# data/**/download/
 
 # misc
 .DS_Store
 .env*
-!.env.example
 .idea
 .history

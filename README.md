@@ -64,6 +64,8 @@ GEONODE_V4_SESSION_ID=
 
 While there are ways to recover auth information automatically, the easiest and most reliable way to do so is manually bt logging in from the web interface and copying the generated cookies.
 
+## Notable information
+
 ## Raster layers migration report
 
 During the migration of raster layers we incurred in some problems downloading the original files. It follows the list of errors with the affected layers names.

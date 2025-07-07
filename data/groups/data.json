@@ -1,0 +1,430 @@
+[
+  {
+    "access": "private",
+    "description": "Basset med",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/basset-med.jpg",
+    "managers": [
+      "amefad",
+      "danilo.scannella",
+      "germana.garofalo@cnr.it"
+    ],
+    "members": [
+      "amefad",
+      "danilo.scannella",
+      "FedericoQuattrocchi",
+      "lizdema",
+      "germana.garofalo@cnr.it"
+    ],
+    "slug": "basset-med",
+    "title": "BASSET-MED"
+  },
+  {
+    "access": "public",
+    "description": "CNR-IRBIM Mazara del Vallo",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/cnr-irbim.png",
+    "managers": [
+      "danilo.scannella",
+      "germana.garofalo@cnr.it"
+    ],
+    "members": [
+      "admin",
+      "FedericoQuattrocchi",
+      "danilo.scannella",
+      "CNR-IRBIM",
+      "germana.garofalo@cnr.it"
+    ],
+    "slug": "cnr-irbim",
+    "title": "CNR-IRBIM"
+  },
+  {
+    "access": "public",
+    "description": "CNR-ISMAR Venezia",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/cnr-ismar.jpg",
+    "managers": [
+      "amefad",
+      "lizdema",
+      "laura",
+      "sbosi",
+      "ste.menegon",
+      "andrea",
+      "admin"
+    ],
+    "members": [
+      "admin",
+      "amefad",
+      "lizdema",
+      "sbosi",
+      "andrea",
+      "ste.menegon",
+      "laura"
+    ],
+    "slug": "cnr-ismar",
+    "title": "CNR-ISMAR"
+  },
+  {
+    "access": "public",
+    "description": "Admin users for manage resource for the HATCH project",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/hatch-admin.png",
+    "managers": [
+      "rosina-4545",
+      "admin"
+    ],
+    "members": [
+      "admin",
+      "rosina-4545",
+      "HATCH",
+      "dabala"
+    ],
+    "slug": "hatch-admin",
+    "title": "HATCH Admin"
+  },
+  {
+    "access": "public",
+    "description": "HATCH project. Hadriaticum DATA HUB. Data management, protocols harmonization, preparations of guidelines:  cross-border tools for maritime spatial planning decision-makers. \r\nhttps://www.italy-croatia.eu/web/hatch",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/hatch.png",
+    "managers": [
+      "HATCH",
+      "rosina-4545",
+      "admin"
+    ],
+    "members": [
+      "admin",
+      "rosina-4545",
+      "HATCH",
+      "dabala"
+    ],
+    "slug": "hatch",
+    "title": "HATCH"
+  },
+  {
+    "access": "public-invite",
+    "description": "MSP Italy group",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/msp_italy.png",
+    "managers": [
+      "amefad",
+      "ste.menegon",
+      "andrea"
+    ],
+    "members": [
+      "amefad",
+      "andrea",
+      "emiliano",
+      "martina",
+      "fabio",
+      "dbrigolin",
+      "coccon1984",
+      "francesca",
+      "ste.menegon"
+    ],
+    "slug": "msp_italy",
+    "title": "MSP Italy"
+  },
+  {
+    "access": "public",
+    "description": "BRIDGE-BS Project group",
+    "email": "tools4msp@ismar.cnr.it",
+    "keywords": "",
+    "logo": "groups/download/bridgebs.png",
+    "managers": [
+      "lizdema",
+      "ste.menegon"
+    ],
+    "members": [
+      "ste.menegon",
+      "lizdema"
+    ],
+    "slug": "bridgebs",
+    "title": "BRIDGE-BS"
+  },
+  {
+    "access": "public-invite",
+    "description": "Group to collect Slovenia MSP resources",
+    "email": null,
+    "keywords": "",
+    "logo": null,
+    "managers": [
+      "sabinacepus",
+      "pijalapajne"
+    ],
+    "members": [
+      "sabinacepus",
+      "pijalapajne"
+    ],
+    "slug": "slovenia-msp",
+    "title": "Slovenia MSP"
+  },
+  {
+    "access": "private",
+    "description": "Tools 4msp members",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/tools4msp.png",
+    "managers": [
+      "amefad",
+      "laura",
+      "ste.menegon",
+      "andrea",
+      "emiliano"
+    ],
+    "members": [
+      "amefad",
+      "andrea",
+      "emiliano",
+      "ste.menegon",
+      "laura"
+    ],
+    "slug": "tools4msp",
+    "title": "Tools4msp"
+  },
+  {
+    "access": "private",
+    "description": "Utenti del Corila per i progetti in corso",
+    "email": null,
+    "keywords": "",
+    "logo": null,
+    "managers": [
+      "amefad"
+    ],
+    "members": [
+      "amefad",
+      "coccon1984"
+    ],
+    "slug": "corila",
+    "title": "Corila"
+  },
+  {
+    "access": "public-invite",
+    "description": "Users",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/msp4biodiversity.png",
+    "managers": [
+      "isabella",
+      "admin"
+    ],
+    "members": [
+      "admin",
+      "emiliano",
+      "rosina-4545",
+      "donatacanu",
+      "coccon1984",
+      "SonarG",
+      "giulio.malorgio@unibo.it",
+      "andrea",
+      "aurelie.moulins",
+      "jacopo.riccardi@regione.liguria.it",
+      "mmagaldi",
+      "Chiantore",
+      "Beltrano",
+      "anna_maria",
+      "claudio.lugni@cnr.it",
+      "claudio",
+      "germana.garofalo@cnr.it",
+      "martina",
+      "tools4msp7",
+      "marco",
+      "erika",
+      "giulia",
+      "Perini_l",
+      "francesca",
+      "ampacifico",
+      "raschettisofia",
+      "danilo.scannella",
+      "fabio",
+      "dbrigolin",
+      "mfianchini",
+      "laura",
+      "mauro",
+      "MarcoBarra",
+      "isabella",
+      "andrea2",
+      "LuDeBenedetti",
+      "Monica",
+      "gambino",
+      "michol",
+      "marta.picciulin",
+      "ssottoriva",
+      "alessandro0"
+    ],
+    "slug": "msp4biodiversity",
+    "title": "MSP4Biodiversity"
+  },
+  {
+    "access": "public",
+    "description": "Administrative users for the MSP4Biodiversity",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/msp4biodiversity-admin.png",
+    "managers": [
+      "rosina-4545",
+      "sarretta",
+      "amedeo",
+      "admin",
+      "alessandro2"
+    ],
+    "members": [
+      "admin",
+      "rosina-4545",
+      "alessandro2",
+      "sarretta",
+      "amedeo",
+      "emiliano",
+      "raschettisofia",
+      "michol",
+      "marta.picciulin",
+      "ssottoriva"
+    ],
+    "slug": "msp4biodiversity-admin",
+    "title": "MSP4Biodiversity Admin"
+  },
+  {
+    "access": "public",
+    "description": "Working group for BRIDGE-BS PS3 Danuble Delta",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/bridge-bs-ps3.png",
+    "managers": [
+      "admin"
+    ],
+    "members": [
+      "admin",
+      "AlinaSpinu",
+      "dan.vasiliu@geoecomar.ro"
+    ],
+    "slug": "bridge-bs-ps3",
+    "title": "BRIDGE-BS PS3"
+  },
+  {
+    "access": "public",
+    "description": "Working group for BRIDGE-BS PS1 Bosporus",
+    "email": null,
+    "keywords": "",
+    "logo": null,
+    "managers": [
+      "admin"
+    ],
+    "members": [
+      "admin",
+      "Training_PS1"
+    ],
+    "slug": "bridge-bs-ps1",
+    "title": "BRIDGE-BS PS1"
+  },
+  {
+    "access": "public",
+    "description": "BRIDGE-BS Project - Pilot Site 6 Batumi working group",
+    "email": null,
+    "keywords": "",
+    "logo": null,
+    "managers": [
+      "vitali",
+      "admin"
+    ],
+    "members": [
+      "admin",
+      "vitali"
+    ],
+    "slug": "bridge-bs-ps6",
+    "title": "BRIDGE-BS PS6"
+  },
+  {
+    "access": "private",
+    "description": "CEREMA",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/cerema.jpg",
+    "managers": [
+      "AlexisEsquerre",
+      "Antonin.Gimard"
+    ],
+    "members": [
+      "Antonin.Gimard",
+      "AlexisEsquerre"
+    ],
+    "slug": "cerema",
+    "title": "CEREMA"
+  },
+  {
+    "access": "public",
+    "description": "ReMAP project",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/remap-admin.png",
+    "managers": [
+      "sarretta",
+      "admin",
+      "ssottoriva"
+    ],
+    "members": [
+      "admin",
+      "deborah.shinoda",
+      "ssottoriva",
+      "sarretta",
+      "isabel.m.moreno@cedex.es",
+      "Yannick",
+      "carla.murciano@cedex.es",
+      "bfouque",
+      "Kamil",
+      "andrej",
+      "jsantiago",
+      "dounia.khallouki",
+      "yaiza",
+      "luz",
+      "emiliedelaroche"
+    ],
+    "slug": "remap-admin",
+    "title": "ReMAP Admin"
+  },
+  {
+    "access": "public",
+    "description": "ISPRA GES4SEAS Team",
+    "email": null,
+    "keywords": "",
+    "logo": null,
+    "managers": [
+      "danilo.scannella",
+      "GiulioF",
+      "admin",
+      "tfortibuoni"
+    ],
+    "members": [
+      "admin",
+      "danilo.scannella",
+      "tfortibuoni",
+      "GiulioF"
+    ],
+    "slug": "ispra-ges4seas",
+    "title": "ISPRA-GES4SEAS"
+  },
+  {
+    "access": "public",
+    "description": "Working group for the MSP4BIO project",
+    "email": null,
+    "keywords": "",
+    "logo": "groups/download/msp4bio.png",
+    "managers": [
+      "admin",
+      "elena3",
+      "eleonore"
+    ],
+    "members": [
+      "admin",
+      "elena3",
+      "eleonore"
+    ],
+    "slug": "msp4bio",
+    "title": "MSP4BIO"
+  }
+]
