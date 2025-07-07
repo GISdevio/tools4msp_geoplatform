@@ -1,0 +1,1717 @@
+[
+  {
+    "id": "159",
+    "name": "2152972568",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "2152972568"
+  },
+  {
+    "id": "216",
+    "name": "AIS",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ais"
+  },
+  {
+    "id": "66",
+    "name": "Alien",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "alien"
+  },
+  {
+    "id": "167",
+    "name": "Alternate classification system of product",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "alternate-classification-system-of-product"
+  },
+  {
+    "id": "72",
+    "name": "Aquaculture",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "aquaculture"
+  },
+  {
+    "id": "35",
+    "name": "ArcGIS REST MapServer",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "arcgis-rest-mapserver"
+  },
+  {
+    "id": "62",
+    "name": "Area management/restriction/regulation zones and reporting units",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "area-managementrestrictionregulation-zones-and-reporting-units"
+  },
+  {
+    "id": "9",
+    "name": "BASSET-MED",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "basset-med"
+  },
+  {
+    "id": "12",
+    "name": "BASSET-MED Project",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "basset-med-project"
+  },
+  {
+    "id": "10",
+    "name": "BRIDGE-BS",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "bridge-bs"
+  },
+  {
+    "id": "11",
+    "name": "BRIDGE-BS Project",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "bridge-bs-project"
+  },
+  {
+    "id": "76",
+    "name": "Bathing sites",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "bathing-sites"
+  },
+  {
+    "id": "83",
+    "name": "CANARIAS",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "canarias"
+  },
+  {
+    "id": "71",
+    "name": "Canaries",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "canaries"
+  },
+  {
+    "id": "44",
+    "name": "Caretta",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "caretta_1"
+  },
+  {
+    "id": "207",
+    "name": "Chemical",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "chemical"
+  },
+  {
+    "id": "36",
+    "name": "Confini marittimi",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "confini-marittimi"
+  },
+  {
+    "id": "30",
+    "name": "Data",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "data"
+  },
+  {
+    "id": "64",
+    "name": "Demarcación Marina",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "demarcacion-marina"
+  },
+  {
+    "id": "57",
+    "name": "Directiva Marco sobre la Estrategia Marina (DMEM)",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "directiva-marco-sobre-la-estrategia-marina-dmem"
+  },
+  {
+    "id": "82",
+    "name": "Distribución de las especies",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "distribucion-de-las-especies"
+  },
+  {
+    "id": "73",
+    "name": "Diving",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "diving"
+  },
+  {
+    "id": "170",
+    "name": "Do not report",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "do-not-report_1"
+  },
+  {
+    "id": "65",
+    "name": "Dolphins",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "dolphins"
+  },
+  {
+    "id": "178",
+    "name": "Données marines",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "donnees-marines"
+  },
+  {
+    "id": "143",
+    "name": "EMODnet",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "emodnet"
+  },
+  {
+    "id": "53",
+    "name": "ES Marine subdivisions",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "es-marine-subdivisions"
+  },
+  {
+    "id": "34",
+    "name": "ESRI",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "esri"
+  },
+  {
+    "id": "77",
+    "name": "EcoPath-EcoSim",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ecopath-ecosim"
+  },
+  {
+    "id": "185",
+    "name": "Emodnet",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "emodnet_1"
+  },
+  {
+    "id": "61",
+    "name": "España",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "espana"
+  },
+  {
+    "id": "150",
+    "name": "External",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "external"
+  },
+  {
+    "id": "91",
+    "name": "FRA",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "fra"
+  },
+  {
+    "id": "246",
+    "name": "FRAs",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "fras"
+  },
+  {
+    "id": "146",
+    "name": "False",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "false"
+  },
+  {
+    "id": "217",
+    "name": "Fishing Effort",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "fishing-effort"
+  },
+  {
+    "id": "3",
+    "name": "GEOSERVER",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "geoserver"
+  },
+  {
+    "id": "22",
+    "name": "GeoTIFF",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "geotiff"
+  },
+  {
+    "id": "145",
+    "name": "Geoserver",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "geoserver_1"
+  },
+  {
+    "id": "121",
+    "name": "Global Fishing Watch",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "global-fishing-watch"
+  },
+  {
+    "id": "13",
+    "name": "HATCH Project",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "hatch-project"
+  },
+  {
+    "id": "58",
+    "name": "HIDROSFERA (agua dulce, agua marina, aguas)",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "hidrosfera-agua-dulce-agua-marina-aguas"
+  },
+  {
+    "id": "118",
+    "name": "Habitat e biotopi",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "habitat-e-biotopi"
+  },
+  {
+    "id": "160",
+    "name": "Habitats - seabed habitats (including coastal wetlands) - broad-scale mapping",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "habitats-seabed-habitats-including-coastal-wetlands-broad-scale-mapping"
+  },
+  {
+    "id": "79",
+    "name": "Hábitats y biotopos",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "habitats-y-biotopos"
+  },
+  {
+    "id": "187",
+    "name": "ISO",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "iso"
+  },
+  {
+    "id": "14",
+    "name": "ISPRA_itmar_art17_habitats_distribution_OK",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_itmar_art17_habitats_distribution_ok"
+  },
+  {
+    "id": "166",
+    "name": "ISPRA_itmar_art17_species_distribution_INVERTEBRATI",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_itmar_art17_species_distribution_invertebrati"
+  },
+  {
+    "id": "25",
+    "name": "ISPRA_itmar_art17_species_distribution_MAMMIFERI",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_itmar_art17_species_distribution_mammiferi"
+  },
+  {
+    "id": "157",
+    "name": "ISPRA_itmar_art17_species_distribution_RETTILI",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_itmar_art17_species_distribution_rettili"
+  },
+  {
+    "id": "188",
+    "name": "ISPRA_wfd_swb_line_stato_chimico",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_wfd_swb_line_stato_chimico"
+  },
+  {
+    "id": "190",
+    "name": "ISPRA_wfd_swb_line_stato_ecologico",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_wfd_swb_line_stato_ecologico"
+  },
+  {
+    "id": "189",
+    "name": "ISPRA_wfd_swb_status_chimico",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_wfd_swb_status_chimico"
+  },
+  {
+    "id": "191",
+    "name": "ISPRA_wfd_swb_status_ecologico",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ispra_wfd_swb_status_ecologico"
+  },
+  {
+    "id": "92",
+    "name": "ISRA",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "isra"
+  },
+  {
+    "id": "86",
+    "name": "ISTAT",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "istat"
+  },
+  {
+    "id": "181",
+    "name": "Ifremer",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ifremer"
+  },
+  {
+    "id": "127",
+    "name": "ImageMosaic",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "imagemosaic"
+  },
+  {
+    "id": "205",
+    "name": "ImagePyramid",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "imagepyramid"
+  },
+  {
+    "id": "179",
+    "name": "Inspire",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "inspire"
+  },
+  {
+    "id": "161",
+    "name": "Internal",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "internal"
+  },
+  {
+    "id": "16",
+    "name": "Italy",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "italy"
+  },
+  {
+    "id": "38",
+    "name": "LEK",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "lek"
+  },
+  {
+    "id": "201",
+    "name": "LNG",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "lng"
+  },
+  {
+    "id": "33",
+    "name": "Linea di base Italia – puntuale",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "linea-di-base-italia-puntuale"
+  },
+  {
+    "id": "223",
+    "name": "MISE_piattaforme",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mise_piattaforme"
+  },
+  {
+    "id": "96",
+    "name": "MPA",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mpa"
+  },
+  {
+    "id": "17",
+    "name": "MSP",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp"
+  },
+  {
+    "id": "140",
+    "name": "MSP - Coastal - Land use and planning",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-coastal-land-use-and-planning"
+  },
+  {
+    "id": "134",
+    "name": "MSP - Conservation",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-conservation"
+  },
+  {
+    "id": "139",
+    "name": "MSP - Ecosystem Services",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-ecosystem-services"
+  },
+  {
+    "id": "89",
+    "name": "MSP - Environment",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-environment_1"
+  },
+  {
+    "id": "142",
+    "name": "MSP - Environment - Ecosystems",
+    "position": "sorted-child",
+    "relativeTo": "89",
+    "slug": "msp-environment_ecosystems"
+  },
+  {
+    "id": "141",
+    "name": "MSP - Legal - Governance - Planning",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-legal-governance-planning"
+  },
+  {
+    "id": "136",
+    "name": "MSP - Maritime activities",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-maritime-activities"
+  },
+  {
+    "id": "133",
+    "name": "MSP - Oceanographic and CC",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-oceanographic-and-cc"
+  },
+  {
+    "id": "137",
+    "name": "MSP - Socio-economic",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-socio-economic"
+  },
+  {
+    "id": "29",
+    "name": "MSP Italy",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp-italy"
+  },
+  {
+    "id": "28",
+    "name": "MSP_Italy",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "msp_italy"
+  },
+  {
+    "id": "75",
+    "name": "Macaronesia",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "macaronesia"
+  },
+  {
+    "id": "31",
+    "name": "Map",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "map"
+  },
+  {
+    "id": "56",
+    "name": "Marine Strategy Framework Directive (MSFD)",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "marine-strategy-framework-directive-msfd"
+  },
+  {
+    "id": "49",
+    "name": "Mytilus galloprovincialis",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mytilus-galloprovincialis"
+  },
+  {
+    "id": "67",
+    "name": "NIS",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "nis"
+  },
+  {
+    "id": "177",
+    "name": "OGC",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ogc"
+  },
+  {
+    "id": "84",
+    "name": "OGC (Open Geospatial Consortium)",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ogc-open-geospatial-consortium"
+  },
+  {
+    "id": "149",
+    "name": "Overview layer",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "overview-layer"
+  },
+  {
+    "id": "245",
+    "name": "PHAROS4MPAs",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "pharos4mpas"
+  },
+  {
+    "id": "19",
+    "name": "PSM",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "psm"
+  },
+  {
+    "id": "32",
+    "name": "Query",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "query"
+  },
+  {
+    "id": "99",
+    "name": "REQUIRED: Common-use word or phrase used to describe the subject of the data set.",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "required-common-use-word-or-phrase-used-to-describe-the-subject-of-the-data-set"
+  },
+  {
+    "id": "37",
+    "name": "REQUIRED: National border.",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "required-national-border"
+  },
+  {
+    "id": "124",
+    "name": "Regionale",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "regionale"
+  },
+  {
+    "id": "54",
+    "name": "Regiones marinas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "regiones-marinas"
+  },
+  {
+    "id": "163",
+    "name": "Regioni marine",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "regioni-marine"
+  },
+  {
+    "id": "18",
+    "name": "SID",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "sid"
+  },
+  {
+    "id": "39",
+    "name": "SSF",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ssf"
+  },
+  {
+    "id": "198",
+    "name": "Scenarios",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "scenarios"
+  },
+  {
+    "id": "63",
+    "name": "Sea regions",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "sea-regions"
+  },
+  {
+    "id": "210",
+    "name": "SeaDataNet",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "seadatanet"
+  },
+  {
+    "id": "180",
+    "name": "Sextant",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "sextant"
+  },
+  {
+    "id": "48",
+    "name": "Sicily",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "sicily"
+  },
+  {
+    "id": "172",
+    "name": "Simplification layer",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "simplification-layer"
+  },
+  {
+    "id": "243",
+    "name": "Siti protetti",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "siti-protetti"
+  },
+  {
+    "id": "85",
+    "name": "Slovenia",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "slovenia"
+  },
+  {
+    "id": "78",
+    "name": "Species distribution",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "species-distribution"
+  },
+  {
+    "id": "47",
+    "name": "Thyrrenian Sea",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "thyrrenian-sea"
+  },
+  {
+    "id": "70",
+    "name": "Tremaglio",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "tremaglio"
+  },
+  {
+    "id": "21",
+    "name": "WCS",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wcs"
+  },
+  {
+    "id": "2",
+    "name": "WFS",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wfs"
+  },
+  {
+    "id": "1",
+    "name": "WMS",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wms"
+  },
+  {
+    "id": "74",
+    "name": "Water sports",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "water-sports"
+  },
+  {
+    "id": "52",
+    "name": "Zonas sujetas a ordenación, a restricciones o reglamentaciones y unidades de notificación",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "zonas-sujetas-a-ordenacion-a-restricciones-o-reglamentaciones-y-unidades-de-notificacion"
+  },
+  {
+    "id": "151",
+    "name": "[Do not report]",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "do-not-report"
+  },
+  {
+    "id": "231",
+    "name": "activelicenses",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "activelicenses"
+  },
+  {
+    "id": "27",
+    "name": "ale-l21",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ale-l21"
+  },
+  {
+    "id": "165",
+    "name": "aquaculture",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "aquaculture_1"
+  },
+  {
+    "id": "81",
+    "name": "areas naturales, paisaje, ecosistemas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "areas-naturales-paisaje-ecosistemas"
+  },
+  {
+    "id": "122",
+    "name": "aree protette",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "aree-protette"
+  },
+  {
+    "id": "225",
+    "name": "aree_giacimenti_unione",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "aree_giacimenti_unione"
+  },
+  {
+    "id": "221",
+    "name": "aree_idonee_no_cat_19_1",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "aree_idonee_no_cat_19_1"
+  },
+  {
+    "id": "7",
+    "name": "atmosphere",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "atmosphere"
+  },
+  {
+    "id": "51",
+    "name": "bathing waters",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "bathing-waters"
+  },
+  {
+    "id": "103",
+    "name": "bathymetry",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "bathymetry"
+  },
+  {
+    "id": "132",
+    "name": "batimetriche_100_emodnet_2022_simp001",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "batimetriche_100_emodnet_2022_simp001"
+  },
+  {
+    "id": "147",
+    "name": "benthic",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "benthic"
+  },
+  {
+    "id": "116",
+    "name": "biologia",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "biologia"
+  },
+  {
+    "id": "148",
+    "name": "biotope",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "biotope"
+  },
+  {
+    "id": "107",
+    "name": "bird",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "bird"
+  },
+  {
+    "id": "252",
+    "name": "boundary",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "boundary"
+  },
+  {
+    "id": "42",
+    "name": "caretta",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "caretta"
+  },
+  {
+    "id": "117",
+    "name": "carte tematiche",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "carte-tematiche"
+  },
+  {
+    "id": "248",
+    "name": "cch",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "cch"
+  },
+  {
+    "id": "193",
+    "name": "cddaareas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "cddaareas"
+  },
+  {
+    "id": "192",
+    "name": "cddalocations",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "cddalocations"
+  },
+  {
+    "id": "249",
+    "name": "cetaceans",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "cetaceans"
+  },
+  {
+    "id": "182",
+    "name": "chemistry",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "chemistry"
+  },
+  {
+    "id": "4",
+    "name": "climate",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "climate"
+  },
+  {
+    "id": "208",
+    "name": "climatology",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "climatology"
+  },
+  {
+    "id": "104",
+    "name": "coastal defence",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "coastal-defence"
+  },
+  {
+    "id": "222",
+    "name": "concessioni_mare_region",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "concessioni_mare_region"
+  },
+  {
+    "id": "130",
+    "name": "contours",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "contours"
+  },
+  {
+    "id": "253",
+    "name": "convention",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "convention"
+  },
+  {
+    "id": "114",
+    "name": "depth",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "depth"
+  },
+  {
+    "id": "232",
+    "name": "desalination",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "desalination"
+  },
+  {
+    "id": "238",
+    "name": "dischargepoints",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "dischargepoints"
+  },
+  {
+    "id": "209",
+    "name": "diva",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "diva"
+  },
+  {
+    "id": "220",
+    "name": "divisioncatches",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "divisioncatches"
+  },
+  {
+    "id": "41",
+    "name": "dolphin",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "dolphin"
+  },
+  {
+    "id": "109",
+    "name": "drift",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "drift"
+  },
+  {
+    "id": "5",
+    "name": "earth science",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "earth-science"
+  },
+  {
+    "id": "80",
+    "name": "ecosistemas marinos",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ecosistemas-marinos"
+  },
+  {
+    "id": "255",
+    "name": "efh_vector_maps_full",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "efh_vector_maps_full"
+  },
+  {
+    "id": "50",
+    "name": "elasmobranchi",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "elasmobranchi"
+  },
+  {
+    "id": "131",
+    "name": "emodnet_v10_mean",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "emodnet_v10_mean"
+  },
+  {
+    "id": "204",
+    "name": "emodnet_v11_mean_multicolour",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "emodnet_v11_mean_multicolour"
+  },
+  {
+    "id": "206",
+    "name": "emodnet_v11_mean_rainbowcolour",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "emodnet_v11_mean_rainbowcolour"
+  },
+  {
+    "id": "93",
+    "name": "energy",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "energy"
+  },
+  {
+    "id": "153",
+    "name": "eunis",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eunis"
+  },
+  {
+    "id": "152",
+    "name": "eunis2019Maps_full",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eunis2019maps_full"
+  },
+  {
+    "id": "156",
+    "name": "eunisMaps_full",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eunismaps_full"
+  },
+  {
+    "id": "155",
+    "name": "eunismaps",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eunismaps"
+  },
+  {
+    "id": "158",
+    "name": "eusm_2023_eunis2007_full",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eusm_2023_eunis2007_full"
+  },
+  {
+    "id": "173",
+    "name": "eusm_2023_eunis2019_200",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eusm_2023_eunis2019_200"
+  },
+  {
+    "id": "174",
+    "name": "eusm_2023_eunis2019_400",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eusm_2023_eunis2019_400"
+  },
+  {
+    "id": "171",
+    "name": "eusm_2023_eunis2019_800",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eusm_2023_eunis2019_800"
+  },
+  {
+    "id": "168",
+    "name": "eusm_2023_eunis2019_full",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "eusm_2023_eunis2019_full"
+  },
+  {
+    "id": "15",
+    "name": "features",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "features"
+  },
+  {
+    "id": "213",
+    "name": "finfish",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "finfish"
+  },
+  {
+    "id": "212",
+    "name": "finfishnew",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "finfishnew"
+  },
+  {
+    "id": "256",
+    "name": "fish",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "fish"
+  },
+  {
+    "id": "247",
+    "name": "fisheries",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "fisheries"
+  },
+  {
+    "id": "97",
+    "name": "fishing",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "fishing"
+  },
+  {
+    "id": "219",
+    "name": "fishsales",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "fishsales"
+  },
+  {
+    "id": "126",
+    "name": "forecasts",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "forecasts"
+  },
+  {
+    "id": "90",
+    "name": "gas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "gas"
+  },
+  {
+    "id": "112",
+    "name": "gear",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "gear"
+  },
+  {
+    "id": "108",
+    "name": "gfw",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "gfw"
+  },
+  {
+    "id": "154",
+    "name": "habitat",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "habitat"
+  },
+  {
+    "id": "26",
+    "name": "huawei",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "huawei"
+  },
+  {
+    "id": "214",
+    "name": "impianti_acquacoltura",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "impianti_acquacoltura"
+  },
+  {
+    "id": "162",
+    "name": "lavori in corso",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "lavori-in-corso"
+  },
+  {
+    "id": "183",
+    "name": "litter",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "litter"
+  },
+  {
+    "id": "110",
+    "name": "longline",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "longline"
+  },
+  {
+    "id": "199",
+    "name": "m2004j19c",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "m2004j19c"
+  },
+  {
+    "id": "40",
+    "name": "mammals",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mammals"
+  },
+  {
+    "id": "59",
+    "name": "mares",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mares"
+  },
+  {
+    "id": "123",
+    "name": "maricoltura",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "maricoltura"
+  },
+  {
+    "id": "241",
+    "name": "marineprotectedareas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "marineprotectedareas"
+  },
+  {
+    "id": "186",
+    "name": "mer",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mer"
+  },
+  {
+    "id": "8",
+    "name": "meteorology",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "meteorology"
+  },
+  {
+    "id": "125",
+    "name": "models",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "models"
+  },
+  {
+    "id": "68",
+    "name": "monitoring",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "monitoring"
+  },
+  {
+    "id": "202",
+    "name": "mspspatialplan",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mspspatialplan"
+  },
+  {
+    "id": "203",
+    "name": "mspzoningpoly",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "mspzoningpoly"
+  },
+  {
+    "id": "194",
+    "name": "natura2000areas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "natura2000areas"
+  },
+  {
+    "id": "226",
+    "name": "nuclear",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "nuclear"
+  },
+  {
+    "id": "6",
+    "name": "ocean",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ocean"
+  },
+  {
+    "id": "176",
+    "name": "océan",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ocean_1"
+  },
+  {
+    "id": "230",
+    "name": "oenergytests",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "oenergytests"
+  },
+  {
+    "id": "94",
+    "name": "oil&amp;gas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "oilampgas"
+  },
+  {
+    "id": "46",
+    "name": "otb",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "otb"
+  },
+  {
+    "id": "224",
+    "name": "permessi_mare_region",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "permessi_mare_region"
+  },
+  {
+    "id": "45",
+    "name": "pesca a strascico",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "pesca-a-strascico"
+  },
+  {
+    "id": "23",
+    "name": "pesca_mipaaf_gsa_unione",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "pesca_mipaaf_gsa_unione"
+  },
+  {
+    "id": "242",
+    "name": "pianificazione del territorio e catasto",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "pianificazione-del-territorio-e-catasto"
+  },
+  {
+    "id": "98",
+    "name": "pipeline",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "pipeline"
+  },
+  {
+    "id": "237",
+    "name": "pipelines",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "pipelines"
+  },
+  {
+    "id": "233",
+    "name": "portgoods",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "portgoods"
+  },
+  {
+    "id": "234",
+    "name": "portpassengers",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "portpassengers"
+  },
+  {
+    "id": "215",
+    "name": "ports",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "ports"
+  },
+  {
+    "id": "55",
+    "name": "protección de agua marina",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "proteccion-de-agua-marina"
+  },
+  {
+    "id": "60",
+    "name": "protección de la naturaleza",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "proteccion-de-la-naturaleza"
+  },
+  {
+    "id": "250",
+    "name": "protected areas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "protected-areas"
+  },
+  {
+    "id": "244",
+    "name": "pssas_wgs84",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "pssas_wgs84"
+  },
+  {
+    "id": "128",
+    "name": "routedensity_01avg",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "routedensity_01avg"
+  },
+  {
+    "id": "218",
+    "name": "routedensity_02avg",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "routedensity_02avg"
+  },
+  {
+    "id": "129",
+    "name": "routedensity_03avg",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "routedensity_03avg"
+  },
+  {
+    "id": "195",
+    "name": "routedensity_04avg",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "routedensity_04avg"
+  },
+  {
+    "id": "196",
+    "name": "routedensity_05avg",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "routedensity_05avg"
+  },
+  {
+    "id": "254",
+    "name": "routedensity_all",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "routedensity_all"
+  },
+  {
+    "id": "236",
+    "name": "routedensity_allavg",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "routedensity_allavg"
+  },
+  {
+    "id": "113",
+    "name": "seine",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "seine"
+  },
+  {
+    "id": "211",
+    "name": "shellfish",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "shellfish"
+  },
+  {
+    "id": "227",
+    "name": "testoenergy",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "testoenergy"
+  },
+  {
+    "id": "69",
+    "name": "time series",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "time-series"
+  },
+  {
+    "id": "95",
+    "name": "tourism",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "tourism"
+  },
+  {
+    "id": "111",
+    "name": "trawling",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "trawling"
+  },
+  {
+    "id": "239",
+    "name": "treatmentplants",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "treatmentplants"
+  },
+  {
+    "id": "115",
+    "name": "tuna",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "tuna"
+  },
+  {
+    "id": "100",
+    "name": "turtle",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "turtle"
+  },
+  {
+    "id": "251",
+    "name": "u2018_clc2018_v2020_20u1",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "u2018_clc2018_v2020_20u1"
+  },
+  {
+    "id": "240",
+    "name": "variazioni_linea_costa_pcn",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "variazioni_linea_costa_pcn"
+  },
+  {
+    "id": "235",
+    "name": "vesseldensity_allavg",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "vesseldensity_allavg"
+  },
+  {
+    "id": "106",
+    "name": "vme",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "vme"
+  },
+  {
+    "id": "101",
+    "name": "whale",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "whale"
+  },
+  {
+    "id": "24",
+    "name": "wid5-cargo-all_europe-yearly-20190101000000_20191231235959-tdm-grid",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wid5-cargo-all_europe-yearly-20190101000000_20191231235959-tdm-grid"
+  },
+  {
+    "id": "20",
+    "name": "wid5-fishing-all_europe-yearly-20190101000000_20191231235959-tdm-grid",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wid5-fishing-all_europe-yearly-20190101000000_20191231235959-tdm-grid"
+  },
+  {
+    "id": "102",
+    "name": "wind",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wind"
+  },
+  {
+    "id": "197",
+    "name": "windfarm",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "windfarm"
+  },
+  {
+    "id": "228",
+    "name": "windfarms",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "windfarms"
+  },
+  {
+    "id": "229",
+    "name": "windfarmspoly",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "windfarmspoly"
+  },
+  {
+    "id": "120",
+    "name": "wms",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wms_1"
+  },
+  {
+    "id": "105",
+    "name": "wwf",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "wwf"
+  },
+  {
+    "id": "200",
+    "name": "xiaomi",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "xiaomi"
+  }
+]

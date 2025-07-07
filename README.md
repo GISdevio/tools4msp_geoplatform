@@ -10,7 +10,7 @@ As outlined in the [dedicated issue](https://github.com/GISdevio/tools4msp_geopl
 - Users
 - Groups
 - Categories
-- Custom taxonomies
+- Keywords
 - Licenses (*manually ported*)
 - Thesaurus (thesauri, thesaurus keyword labels, thesaurus keywords)*
 - Tags (*manually ported*)
