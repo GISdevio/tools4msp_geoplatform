@@ -1,8 +1,8 @@
 import logger from 'node-color-log'
 
-const createCategories = () => {
-  logger.info('Creating categories...')
+const createKeywords = () => {
+  logger.info('Creating keywords...')
   logger.warn('Not yet implemented!')
 }
 
-export default createCategories
+export default createKeywords

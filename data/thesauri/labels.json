@@ -1,0 +1,5192 @@
+[
+  {
+    "id": "1",
+    "keyword": "1",
+    "label": "MSP_italy",
+    "lang": "IT"
+  },
+  {
+    "id": "198",
+    "keyword": "197",
+    "label": "Coastline - Geomorphology",
+    "lang": "en"
+  },
+  {
+    "id": "844",
+    "keyword": "197",
+    "label": "Coastline - Geomorphology",
+    "lang": "it"
+  },
+  {
+    "id": "199",
+    "keyword": "198",
+    "label": "Coastline - Trends",
+    "lang": "en"
+  },
+  {
+    "id": "845",
+    "keyword": "198",
+    "label": "Coastline - Trends",
+    "lang": "it"
+  },
+  {
+    "id": "190",
+    "keyword": "189",
+    "label": "Land use / Land cover - Coastline",
+    "lang": "en"
+  },
+  {
+    "id": "836",
+    "keyword": "189",
+    "label": "Land use / Land cover - Coastline",
+    "lang": "it"
+  },
+  {
+    "id": "188",
+    "keyword": "187",
+    "label": "Land use / Land cover - Land cover - Coast characteristics",
+    "lang": "en"
+  },
+  {
+    "id": "834",
+    "keyword": "187",
+    "label": "Land use / Land cover - Land cover - Coast characteristics",
+    "lang": "it"
+  },
+  {
+    "id": "186",
+    "keyword": "185",
+    "label": "Land use / Land cover - Land cover - Corine Land Cover",
+    "lang": "en"
+  },
+  {
+    "id": "832",
+    "keyword": "185",
+    "label": "Land use / Land cover - Land cover - Corine Land Cover",
+    "lang": "it"
+  },
+  {
+    "id": "187",
+    "keyword": "186",
+    "label": "Land use / Land cover - Land cover - High Resolution Layer",
+    "lang": "en"
+  },
+  {
+    "id": "833",
+    "keyword": "186",
+    "label": "Land use / Land cover - Land cover - High Resolution Layer",
+    "lang": "it"
+  },
+  {
+    "id": "189",
+    "keyword": "188",
+    "label": "Land use / Land cover - LC/LU-Coastal Zone hotspot thematic mapping",
+    "lang": "en"
+  },
+  {
+    "id": "835",
+    "keyword": "188",
+    "label": "Land use / Land cover - LC/LU-Coastal Zone hotspot thematic mapping",
+    "lang": "it"
+  },
+  {
+    "id": "184",
+    "keyword": "183",
+    "label": "Land use / Land cover - Soil sealing-area",
+    "lang": "en"
+  },
+  {
+    "id": "830",
+    "keyword": "183",
+    "label": "Land use / Land cover - Soil sealing-area",
+    "lang": "it"
+  },
+  {
+    "id": "185",
+    "keyword": "184",
+    "label": "Land use / Land cover - Soil sealing-trend",
+    "lang": "en"
+  },
+  {
+    "id": "831",
+    "keyword": "184",
+    "label": "Land use / Land cover - Soil sealing-trend",
+    "lang": "it"
+  },
+  {
+    "id": "195",
+    "keyword": "194",
+    "label": "Planning - Coordination - Sub-national",
+    "lang": "en"
+  },
+  {
+    "id": "841",
+    "keyword": "194",
+    "label": "Planning - Coordination - Sub-national",
+    "lang": "it"
+  },
+  {
+    "id": "197",
+    "keyword": "196",
+    "label": "Planning - Operational-Local",
+    "lang": "en"
+  },
+  {
+    "id": "843",
+    "keyword": "196",
+    "label": "Planning - Operational-Local",
+    "lang": "it"
+  },
+  {
+    "id": "196",
+    "keyword": "195",
+    "label": "Planning - Operational-Sub-National",
+    "lang": "en"
+  },
+  {
+    "id": "842",
+    "keyword": "195",
+    "label": "Planning - Operational-Sub-National",
+    "lang": "it"
+  },
+  {
+    "id": "194",
+    "keyword": "193",
+    "label": "Planning - Strategic - Local",
+    "lang": "en"
+  },
+  {
+    "id": "840",
+    "keyword": "193",
+    "label": "Planning - Strategic - Local",
+    "lang": "it"
+  },
+  {
+    "id": "191",
+    "keyword": "190",
+    "label": "Planning - Strategic - National (EU regulated)",
+    "lang": "en"
+  },
+  {
+    "id": "837",
+    "keyword": "190",
+    "label": "Planning - Strategic - National (EU regulated)",
+    "lang": "it"
+  },
+  {
+    "id": "192",
+    "keyword": "191",
+    "label": "Planning - Strategic - National (others)",
+    "lang": "en"
+  },
+  {
+    "id": "838",
+    "keyword": "191",
+    "label": "Planning - Strategic - National (others)",
+    "lang": "it"
+  },
+  {
+    "id": "193",
+    "keyword": "192",
+    "label": "Planning - Strategic - Subnational",
+    "lang": "en"
+  },
+  {
+    "id": "839",
+    "keyword": "192",
+    "label": "Planning - Strategic - Subnational",
+    "lang": "it"
+  },
+  {
+    "id": "129",
+    "keyword": "128",
+    "label": "Internationally designated  Protected Areas (marine and coastal)",
+    "lang": "en"
+  },
+  {
+    "id": "797",
+    "keyword": "128",
+    "label": "Internationally designated  Protected Areas (marine and coastal)",
+    "lang": "it"
+  },
+  {
+    "id": "131",
+    "keyword": "130",
+    "label": "Nationally designated Protected Areas (marine and coastal)",
+    "lang": "en"
+  },
+  {
+    "id": "799",
+    "keyword": "130",
+    "label": "Nationally designated Protected Areas (marine and coastal)",
+    "lang": "it"
+  },
+  {
+    "id": "132",
+    "keyword": "131",
+    "label": "Potential Other Effective area-based Conservation Measures (OECMs)",
+    "lang": "en"
+  },
+  {
+    "id": "800",
+    "keyword": "131",
+    "label": "Potential Other Effective area-based Conservation Measures (OECMs)",
+    "lang": "it"
+  },
+  {
+    "id": "133",
+    "keyword": "132",
+    "label": "Recognised areas of protection/conservation value",
+    "lang": "en"
+  },
+  {
+    "id": "801",
+    "keyword": "132",
+    "label": "Recognised areas of protection/conservation value",
+    "lang": "it"
+  },
+  {
+    "id": "130",
+    "keyword": "129",
+    "label": "Regionally designated Protected Areas (marine and coastal)",
+    "lang": "en"
+  },
+  {
+    "id": "798",
+    "keyword": "129",
+    "label": "Regionally designated Protected Areas (marine and coastal)",
+    "lang": "it"
+  },
+  {
+    "id": "135",
+    "keyword": "134",
+    "label": "No",
+    "lang": "en"
+  },
+  {
+    "id": "803",
+    "keyword": "134",
+    "label": "No",
+    "lang": "it"
+  },
+  {
+    "id": "134",
+    "keyword": "133",
+    "label": "Yes",
+    "lang": "en"
+  },
+  {
+    "id": "802",
+    "keyword": "133",
+    "label": "Yes",
+    "lang": "it"
+  },
+  {
+    "id": "323",
+    "keyword": "322",
+    "label": "Cultural (Abiotic) - 6.1.1.1 Natural, abiotic characteristics of nature that enable active or passive physical and experiential interactions",
+    "lang": "en"
+  },
+  {
+    "id": "969",
+    "keyword": "322",
+    "label": "Cultural (Abiotic) - 6.1.1.1 Natural, abiotic characteristics of nature that enable active or passive physical and experiential interactions",
+    "lang": "it"
+  },
+  {
+    "id": "324",
+    "keyword": "323",
+    "label": "Cultural (Abiotic) - 6.1.2.1 Natural, abiotic characteristics of nature that enable intellectual interactions",
+    "lang": "en"
+  },
+  {
+    "id": "970",
+    "keyword": "323",
+    "label": "Cultural (Abiotic) - 6.1.2.1 Natural, abiotic characteristics of nature that enable intellectual interactions",
+    "lang": "it"
+  },
+  {
+    "id": "325",
+    "keyword": "324",
+    "label": "Cultural (Abiotic) - 6.2.1.1 Natural, abiotic characteristics of nature that enable spiritual, symbolic and other interactions",
+    "lang": "en"
+  },
+  {
+    "id": "971",
+    "keyword": "324",
+    "label": "Cultural (Abiotic) - 6.2.1.1 Natural, abiotic characteristics of nature that enable spiritual, symbolic and other interactions",
+    "lang": "it"
+  },
+  {
+    "id": "326",
+    "keyword": "325",
+    "label": "Cultural (Abiotic) - 6.2.2.1 Natural, abiotic characteristics or features of nature that have either an existence, option or bequest value",
+    "lang": "en"
+  },
+  {
+    "id": "972",
+    "keyword": "325",
+    "label": "Cultural (Abiotic) - 6.2.2.1 Natural, abiotic characteristics or features of nature that have either an existence, option or bequest value",
+    "lang": "it"
+  },
+  {
+    "id": "327",
+    "keyword": "326",
+    "label": "Cultural (Abiotic) - 6.3.X.X Other",
+    "lang": "en"
+  },
+  {
+    "id": "973",
+    "keyword": "326",
+    "label": "Cultural (Abiotic) - 6.3.X.X Other",
+    "lang": "it"
+  },
+  {
+    "id": "285",
+    "keyword": "284",
+    "label": "Cultural (Biotic) - 3.1.1.1 Characteristics of living systems that that enable activities promoting health, recuperation or enjoyment through active or immersive interactions",
+    "lang": "en"
+  },
+  {
+    "id": "931",
+    "keyword": "284",
+    "label": "Cultural (Biotic) - 3.1.1.1 Characteristics of living systems that that enable activities promoting health, recuperation or enjoyment through active or immersive interactions",
+    "lang": "it"
+  },
+  {
+    "id": "286",
+    "keyword": "285",
+    "label": "Cultural (Biotic) - 3.1.1.2 Characteristics of living systems that enable activities promoting health, recuperation or enjoyment through passive or observational interactions",
+    "lang": "en"
+  },
+  {
+    "id": "932",
+    "keyword": "285",
+    "label": "Cultural (Biotic) - 3.1.1.2 Characteristics of living systems that enable activities promoting health, recuperation or enjoyment through passive or observational interactions",
+    "lang": "it"
+  },
+  {
+    "id": "287",
+    "keyword": "286",
+    "label": "Cultural (Biotic) - 3.1.2.1 Characteristics of living systems that enable scientific investigation or the creation of traditional ecological knowledge",
+    "lang": "en"
+  },
+  {
+    "id": "933",
+    "keyword": "286",
+    "label": "Cultural (Biotic) - 3.1.2.1 Characteristics of living systems that enable scientific investigation or the creation of traditional ecological knowledge",
+    "lang": "it"
+  },
+  {
+    "id": "288",
+    "keyword": "287",
+    "label": "Cultural (Biotic) - 3.1.2.2 Characteristics of living systems that enable education and training",
+    "lang": "en"
+  },
+  {
+    "id": "934",
+    "keyword": "287",
+    "label": "Cultural (Biotic) - 3.1.2.2 Characteristics of living systems that enable education and training",
+    "lang": "it"
+  },
+  {
+    "id": "289",
+    "keyword": "288",
+    "label": "Cultural (Biotic) - 3.1.2.3 Characteristics of living systems that are resonant in terms of culture or heritage",
+    "lang": "en"
+  },
+  {
+    "id": "935",
+    "keyword": "288",
+    "label": "Cultural (Biotic) - 3.1.2.3 Characteristics of living systems that are resonant in terms of culture or heritage",
+    "lang": "it"
+  },
+  {
+    "id": "290",
+    "keyword": "289",
+    "label": "Cultural (Biotic) - 3.1.2.4 Characteristics of living systems that enable aesthetic experiences",
+    "lang": "en"
+  },
+  {
+    "id": "936",
+    "keyword": "289",
+    "label": "Cultural (Biotic) - 3.1.2.4 Characteristics of living systems that enable aesthetic experiences",
+    "lang": "it"
+  },
+  {
+    "id": "291",
+    "keyword": "290",
+    "label": "Cultural (Biotic) - 3.2.1.1 Elements of living systems that have symbolic meaning",
+    "lang": "en"
+  },
+  {
+    "id": "937",
+    "keyword": "290",
+    "label": "Cultural (Biotic) - 3.2.1.1 Elements of living systems that have symbolic meaning",
+    "lang": "it"
+  },
+  {
+    "id": "292",
+    "keyword": "291",
+    "label": "Cultural (Biotic) - 3.2.1.2 Elements of living systems that have sacred or religious meaning",
+    "lang": "en"
+  },
+  {
+    "id": "938",
+    "keyword": "291",
+    "label": "Cultural (Biotic) - 3.2.1.2 Elements of living systems that have sacred or religious meaning",
+    "lang": "it"
+  },
+  {
+    "id": "293",
+    "keyword": "292",
+    "label": "Cultural (Biotic) - 3.2.1.3 Elements of living systems used for entertainment or representation",
+    "lang": "en"
+  },
+  {
+    "id": "939",
+    "keyword": "292",
+    "label": "Cultural (Biotic) - 3.2.1.3 Elements of living systems used for entertainment or representation",
+    "lang": "it"
+  },
+  {
+    "id": "294",
+    "keyword": "293",
+    "label": "Cultural (Biotic) - 3.2.2.1 Characteristics or features of living systems that have an existence value",
+    "lang": "en"
+  },
+  {
+    "id": "940",
+    "keyword": "293",
+    "label": "Cultural (Biotic) - 3.2.2.1 Characteristics or features of living systems that have an existence value",
+    "lang": "it"
+  },
+  {
+    "id": "295",
+    "keyword": "294",
+    "label": "Cultural (Biotic) - 3.2.2.2 Characteristics or features of living systems that have an option or bequest value",
+    "lang": "en"
+  },
+  {
+    "id": "941",
+    "keyword": "294",
+    "label": "Cultural (Biotic) - 3.2.2.2 Characteristics or features of living systems that have an option or bequest value",
+    "lang": "it"
+  },
+  {
+    "id": "296",
+    "keyword": "295",
+    "label": "Cultural (Biotic) - 3.3.X.X Other",
+    "lang": "en"
+  },
+  {
+    "id": "942",
+    "keyword": "295",
+    "label": "Cultural (Biotic) - 3.3.X.X Other",
+    "lang": "it"
+  },
+  {
+    "id": "297",
+    "keyword": "296",
+    "label": "Provisioning (Abiotic) - 4.2.1.1 Surface water for drinking",
+    "lang": "en"
+  },
+  {
+    "id": "943",
+    "keyword": "296",
+    "label": "Provisioning (Abiotic) - 4.2.1.1 Surface water for drinking",
+    "lang": "it"
+  },
+  {
+    "id": "298",
+    "keyword": "297",
+    "label": "Provisioning (Abiotic) - 4.2.1.2 Surface water used as a material (non-drinking purposes)",
+    "lang": "en"
+  },
+  {
+    "id": "944",
+    "keyword": "297",
+    "label": "Provisioning (Abiotic) - 4.2.1.2 Surface water used as a material (non-drinking purposes)",
+    "lang": "it"
+  },
+  {
+    "id": "299",
+    "keyword": "298",
+    "label": "Provisioning (Abiotic) - 4.2.1.3 Freshwater surface water used as an energy source",
+    "lang": "en"
+  },
+  {
+    "id": "945",
+    "keyword": "298",
+    "label": "Provisioning (Abiotic) - 4.2.1.3 Freshwater surface water used as an energy source",
+    "lang": "it"
+  },
+  {
+    "id": "300",
+    "keyword": "299",
+    "label": "Provisioning (Abiotic) - 4.2.1.4 Coastal and marine water used as energy source",
+    "lang": "en"
+  },
+  {
+    "id": "946",
+    "keyword": "299",
+    "label": "Provisioning (Abiotic) - 4.2.1.4 Coastal and marine water used as energy source",
+    "lang": "it"
+  },
+  {
+    "id": "301",
+    "keyword": "300",
+    "label": "Provisioning (Abiotic) - 4.2.2.1 Ground (and subsurface) water for drinking",
+    "lang": "en"
+  },
+  {
+    "id": "947",
+    "keyword": "300",
+    "label": "Provisioning (Abiotic) - 4.2.2.1 Ground (and subsurface) water for drinking",
+    "lang": "it"
+  },
+  {
+    "id": "302",
+    "keyword": "301",
+    "label": "Provisioning (Abiotic) - 4.2.2.2 Ground water (and subsurface) used as a material (non-drinking purposes)",
+    "lang": "en"
+  },
+  {
+    "id": "948",
+    "keyword": "301",
+    "label": "Provisioning (Abiotic) - 4.2.2.2 Ground water (and subsurface) used as a material (non-drinking purposes)",
+    "lang": "it"
+  },
+  {
+    "id": "303",
+    "keyword": "302",
+    "label": "Provisioning (Abiotic) - 4.2.2.3 Ground water (and subsurface) used as an energy source",
+    "lang": "en"
+  },
+  {
+    "id": "949",
+    "keyword": "302",
+    "label": "Provisioning (Abiotic) - 4.2.2.3 Ground water (and subsurface) used as an energy source",
+    "lang": "it"
+  },
+  {
+    "id": "304",
+    "keyword": "303",
+    "label": "Provisioning (Abiotic) - 4.2.X.X Other",
+    "lang": "en"
+  },
+  {
+    "id": "950",
+    "keyword": "303",
+    "label": "Provisioning (Abiotic) - 4.2.X.X Other",
+    "lang": "it"
+  },
+  {
+    "id": "305",
+    "keyword": "304",
+    "label": "Provisioning (Abiotic) - 4.3.1.1 Mineral substances used for nutritional purposes",
+    "lang": "en"
+  },
+  {
+    "id": "951",
+    "keyword": "304",
+    "label": "Provisioning (Abiotic) - 4.3.1.1 Mineral substances used for nutritional purposes",
+    "lang": "it"
+  },
+  {
+    "id": "306",
+    "keyword": "305",
+    "label": "Provisioning (Abiotic) - 4.3.1.2 Mineral substances used for material purposes",
+    "lang": "en"
+  },
+  {
+    "id": "952",
+    "keyword": "305",
+    "label": "Provisioning (Abiotic) - 4.3.1.2 Mineral substances used for material purposes",
+    "lang": "it"
+  },
+  {
+    "id": "307",
+    "keyword": "306",
+    "label": "Provisioning (Abiotic) - 4.3.1.3 Mineral substances used for as an energy source",
+    "lang": "en"
+  },
+  {
+    "id": "953",
+    "keyword": "306",
+    "label": "Provisioning (Abiotic) - 4.3.1.3 Mineral substances used for as an energy source",
+    "lang": "it"
+  },
+  {
+    "id": "308",
+    "keyword": "307",
+    "label": "Provisioning (Abiotic) - 4.3.2.1 Non-mineral substances or ecosystem properties used for nutritional purposes",
+    "lang": "en"
+  },
+  {
+    "id": "954",
+    "keyword": "307",
+    "label": "Provisioning (Abiotic) - 4.3.2.1 Non-mineral substances or ecosystem properties used for nutritional purposes",
+    "lang": "it"
+  },
+  {
+    "id": "309",
+    "keyword": "308",
+    "label": "Provisioning (Abiotic) - 4.3.2.2 Non-mineral substances used for materials",
+    "lang": "en"
+  },
+  {
+    "id": "955",
+    "keyword": "308",
+    "label": "Provisioning (Abiotic) - 4.3.2.2 Non-mineral substances used for materials",
+    "lang": "it"
+  },
+  {
+    "id": "310",
+    "keyword": "309",
+    "label": "Provisioning (Abiotic) - 4.3.2.3 Wind energy",
+    "lang": "en"
+  },
+  {
+    "id": "956",
+    "keyword": "309",
+    "label": "Provisioning (Abiotic) - 4.3.2.3 Wind energy",
+    "lang": "it"
+  },
+  {
+    "id": "311",
+    "keyword": "310",
+    "label": "Provisioning (Abiotic) - 4.3.2.4 Solar energy",
+    "lang": "en"
+  },
+  {
+    "id": "957",
+    "keyword": "310",
+    "label": "Provisioning (Abiotic) - 4.3.2.4 Solar energy",
+    "lang": "it"
+  },
+  {
+    "id": "312",
+    "keyword": "311",
+    "label": "Provisioning (Abiotic) - 4.3.2.5 Geothermal",
+    "lang": "en"
+  },
+  {
+    "id": "958",
+    "keyword": "311",
+    "label": "Provisioning (Abiotic) - 4.3.2.5 Geothermal",
+    "lang": "it"
+  },
+  {
+    "id": "313",
+    "keyword": "312",
+    "label": "Provisioning (Abiotic) - 4.3.2.6 Other",
+    "lang": "en"
+  },
+  {
+    "id": "959",
+    "keyword": "312",
+    "label": "Provisioning (Abiotic) - 4.3.2.6 Other",
+    "lang": "it"
+  },
+  {
+    "id": "239",
+    "keyword": "238",
+    "label": "Provisioning (Biotic) - 1.1.1.2 Fibres and other materials from cultivated plants, fungi, algae and bacteria for direct use or processing (excluding genetic materials)",
+    "lang": "en"
+  },
+  {
+    "id": "885",
+    "keyword": "238",
+    "label": "Provisioning (Biotic) - 1.1.1.2 Fibres and other materials from cultivated plants, fungi, algae and bacteria for direct use or processing (excluding genetic materials)",
+    "lang": "it"
+  },
+  {
+    "id": "240",
+    "keyword": "239",
+    "label": "Provisioning (Biotic) - 1.1.1.3 Cultivated plants (including fungi, algae) grown as a source of energy",
+    "lang": "en"
+  },
+  {
+    "id": "886",
+    "keyword": "239",
+    "label": "Provisioning (Biotic) - 1.1.1.3 Cultivated plants (including fungi, algae) grown as a source of energy",
+    "lang": "it"
+  },
+  {
+    "id": "241",
+    "keyword": "240",
+    "label": "Provisioning (Biotic) - 1.1.2.1 Plants cultivated by in- situ aquaculture grown for nutritional purposes",
+    "lang": "en"
+  },
+  {
+    "id": "887",
+    "keyword": "240",
+    "label": "Provisioning (Biotic) - 1.1.2.1 Plants cultivated by in- situ aquaculture grown for nutritional purposes",
+    "lang": "it"
+  },
+  {
+    "id": "242",
+    "keyword": "241",
+    "label": "Provisioning (Biotic) - 1.1.2.2 Fibres and other materials from in-situ aquaculture for direct use or processing (excluding genetic materials)",
+    "lang": "en"
+  },
+  {
+    "id": "888",
+    "keyword": "241",
+    "label": "Provisioning (Biotic) - 1.1.2.2 Fibres and other materials from in-situ aquaculture for direct use or processing (excluding genetic materials)",
+    "lang": "it"
+  },
+  {
+    "id": "243",
+    "keyword": "242",
+    "label": "Provisioning (Biotic) - 1.1.2.3 Plants cultivated by in- situ aquaculture grown as an energy source",
+    "lang": "en"
+  },
+  {
+    "id": "889",
+    "keyword": "242",
+    "label": "Provisioning (Biotic) - 1.1.2.3 Plants cultivated by in- situ aquaculture grown as an energy source",
+    "lang": "it"
+  },
+  {
+    "id": "244",
+    "keyword": "243",
+    "label": "Provisioning (Biotic) - 1.1.3.1 Animals reared for nutritional purposes",
+    "lang": "en"
+  },
+  {
+    "id": "890",
+    "keyword": "243",
+    "label": "Provisioning (Biotic) - 1.1.3.1 Animals reared for nutritional purposes",
+    "lang": "it"
+  },
+  {
+    "id": "245",
+    "keyword": "244",
+    "label": "Provisioning (Biotic) - 1.1.3.2 Fibres and other materials from reared animals for direct use or processing (excluding genetic materials)",
+    "lang": "en"
+  },
+  {
+    "id": "891",
+    "keyword": "244",
+    "label": "Provisioning (Biotic) - 1.1.3.2 Fibres and other materials from reared animals for direct use or processing (excluding genetic materials)",
+    "lang": "it"
+  },
+  {
+    "id": "246",
+    "keyword": "245",
+    "label": "Provisioning (Biotic) - 1.1.3.3 Animals reared to provide energy (including mechanical)",
+    "lang": "en"
+  },
+  {
+    "id": "892",
+    "keyword": "245",
+    "label": "Provisioning (Biotic) - 1.1.3.3 Animals reared to provide energy (including mechanical)",
+    "lang": "it"
+  },
+  {
+    "id": "247",
+    "keyword": "246",
+    "label": "Provisioning (Biotic) - 1.1.4.1 Animals reared by in-situ aquaculture for nutritional purposes",
+    "lang": "en"
+  },
+  {
+    "id": "893",
+    "keyword": "246",
+    "label": "Provisioning (Biotic) - 1.1.4.1 Animals reared by in-situ aquaculture for nutritional purposes",
+    "lang": "it"
+  },
+  {
+    "id": "248",
+    "keyword": "247",
+    "label": "Provisioning (Biotic) - 1.1.4.2 Fibres and other materials from animals grown by in-situ aquaculture for direct use or processing (excluding genetic materials)",
+    "lang": "en"
+  },
+  {
+    "id": "894",
+    "keyword": "247",
+    "label": "Provisioning (Biotic) - 1.1.4.2 Fibres and other materials from animals grown by in-situ aquaculture for direct use or processing (excluding genetic materials)",
+    "lang": "it"
+  },
+  {
+    "id": "249",
+    "keyword": "248",
+    "label": "Provisioning (Biotic) - 1.1.4.3 Animals reared by in-situ aquaculture as an energy source",
+    "lang": "en"
+  },
+  {
+    "id": "895",
+    "keyword": "248",
+    "label": "Provisioning (Biotic) - 1.1.4.3 Animals reared by in-situ aquaculture as an energy source",
+    "lang": "it"
+  },
+  {
+    "id": "250",
+    "keyword": "249",
+    "label": "Provisioning (Biotic) - 1.1.5.1 Wild plants (terrestrial and aquatic, including fungi, algae) used for nutrition",
+    "lang": "en"
+  },
+  {
+    "id": "896",
+    "keyword": "249",
+    "label": "Provisioning (Biotic) - 1.1.5.1 Wild plants (terrestrial and aquatic, including fungi, algae) used for nutrition",
+    "lang": "it"
+  },
+  {
+    "id": "251",
+    "keyword": "250",
+    "label": "Provisioning (Biotic) - 1.1.5.2 Fibres and other materials from wild plants for direct use or processing (excluding genetic materials)",
+    "lang": "en"
+  },
+  {
+    "id": "897",
+    "keyword": "250",
+    "label": "Provisioning (Biotic) - 1.1.5.2 Fibres and other materials from wild plants for direct use or processing (excluding genetic materials)",
+    "lang": "it"
+  },
+  {
+    "id": "252",
+    "keyword": "251",
+    "label": "Provisioning (Biotic) - 1.1.5.3 Wild plants (terrestrial and aquatic, including fungi, algae) used as a source of energy",
+    "lang": "en"
+  },
+  {
+    "id": "898",
+    "keyword": "251",
+    "label": "Provisioning (Biotic) - 1.1.5.3 Wild plants (terrestrial and aquatic, including fungi, algae) used as a source of energy",
+    "lang": "it"
+  },
+  {
+    "id": "253",
+    "keyword": "252",
+    "label": "Provisioning (Biotic) - 1.1.6.1 Wild animals (terrestrial and aquatic) used for nutritional purposes",
+    "lang": "en"
+  },
+  {
+    "id": "899",
+    "keyword": "252",
+    "label": "Provisioning (Biotic) - 1.1.6.1 Wild animals (terrestrial and aquatic) used for nutritional purposes",
+    "lang": "it"
+  },
+  {
+    "id": "254",
+    "keyword": "253",
+    "label": "Provisioning (Biotic) - 1.1.6.2 Fibres and other materials from wild animals for direct use or processing (excluding genetic materials)",
+    "lang": "en"
+  },
+  {
+    "id": "900",
+    "keyword": "253",
+    "label": "Provisioning (Biotic) - 1.1.6.2 Fibres and other materials from wild animals for direct use or processing (excluding genetic materials)",
+    "lang": "it"
+  },
+  {
+    "id": "255",
+    "keyword": "254",
+    "label": "Provisioning (Biotic) - 1.1.6.3 Wild animals (terrestrial and aquatic) used as a source of energy",
+    "lang": "en"
+  },
+  {
+    "id": "901",
+    "keyword": "254",
+    "label": "Provisioning (Biotic) - 1.1.6.3 Wild animals (terrestrial and aquatic) used as a source of energy",
+    "lang": "it"
+  },
+  {
+    "id": "256",
+    "keyword": "255",
+    "label": "Provisioning (Biotic) - 1.2.1.1 Seeds, spores and other plant materials collected for maintaining or establishing a population",
+    "lang": "en"
+  },
+  {
+    "id": "902",
+    "keyword": "255",
+    "label": "Provisioning (Biotic) - 1.2.1.1 Seeds, spores and other plant materials collected for maintaining or establishing a population",
+    "lang": "it"
+  },
+  {
+    "id": "257",
+    "keyword": "256",
+    "label": "Provisioning (Biotic) - 1.2.1.2 Higher and lower plants (whole organisms) used to breed new strains or varieties",
+    "lang": "en"
+  },
+  {
+    "id": "903",
+    "keyword": "256",
+    "label": "Provisioning (Biotic) - 1.2.1.2 Higher and lower plants (whole organisms) used to breed new strains or varieties",
+    "lang": "it"
+  },
+  {
+    "id": "258",
+    "keyword": "257",
+    "label": "Provisioning (Biotic) - 1.2.1.3 Individual genes extracted from higher and lower plants for the design and construction of new biological entities",
+    "lang": "en"
+  },
+  {
+    "id": "904",
+    "keyword": "257",
+    "label": "Provisioning (Biotic) - 1.2.1.3 Individual genes extracted from higher and lower plants for the design and construction of new biological entities",
+    "lang": "it"
+  },
+  {
+    "id": "259",
+    "keyword": "258",
+    "label": "Provisioning (Biotic) - 1.2.2.1 Animal material collected for the purposes of maintaining or establishing a population",
+    "lang": "en"
+  },
+  {
+    "id": "905",
+    "keyword": "258",
+    "label": "Provisioning (Biotic) - 1.2.2.1 Animal material collected for the purposes of maintaining or establishing a population",
+    "lang": "it"
+  },
+  {
+    "id": "260",
+    "keyword": "259",
+    "label": "Provisioning (Biotic) - 1.2.2.2 Wild animals (whole organisms) used to breed new strains or varieties",
+    "lang": "en"
+  },
+  {
+    "id": "906",
+    "keyword": "259",
+    "label": "Provisioning (Biotic) - 1.2.2.2 Wild animals (whole organisms) used to breed new strains or varieties",
+    "lang": "it"
+  },
+  {
+    "id": "261",
+    "keyword": "260",
+    "label": "Provisioning (Biotic) - 1.2.2.3 Individual genes extracted from organisms for the design and construction of new biological entities",
+    "lang": "en"
+  },
+  {
+    "id": "907",
+    "keyword": "260",
+    "label": "Provisioning (Biotic) - 1.2.2.3 Individual genes extracted from organisms for the design and construction of new biological entities",
+    "lang": "it"
+  },
+  {
+    "id": "262",
+    "keyword": "261",
+    "label": "Provisioning (Biotic) - 1.3.X.X Other",
+    "lang": "en"
+  },
+  {
+    "id": "908",
+    "keyword": "261",
+    "label": "Provisioning (Biotic) - 1.3.X.X Other",
+    "lang": "it"
+  },
+  {
+    "id": "314",
+    "keyword": "313",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.1.1 Dilution by freshwater and marine ecosystems",
+    "lang": "en"
+  },
+  {
+    "id": "960",
+    "keyword": "313",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.1.1 Dilution by freshwater and marine ecosystems",
+    "lang": "it"
+  },
+  {
+    "id": "315",
+    "keyword": "314",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.1.2 Dilution by atmosphere",
+    "lang": "en"
+  },
+  {
+    "id": "961",
+    "keyword": "314",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.1.2 Dilution by atmosphere",
+    "lang": "it"
+  },
+  {
+    "id": "316",
+    "keyword": "315",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.1.3 Mediation by other chemical or physical means (e.g. via Filtration, sequestration, storage or accumulation)",
+    "lang": "en"
+  },
+  {
+    "id": "962",
+    "keyword": "315",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.1.3 Mediation by other chemical or physical means (e.g. via Filtration, sequestration, storage or accumulation)",
+    "lang": "it"
+  },
+  {
+    "id": "317",
+    "keyword": "316",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.2.1 Mediation of nuisances by abiotic structures or processes",
+    "lang": "en"
+  },
+  {
+    "id": "963",
+    "keyword": "316",
+    "label": "Regulation & Maintenance (Abiotic) - 5.1.2.1 Mediation of nuisances by abiotic structures or processes",
+    "lang": "it"
+  },
+  {
+    "id": "318",
+    "keyword": "317",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.1.1 Mass flows",
+    "lang": "en"
+  },
+  {
+    "id": "964",
+    "keyword": "317",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.1.1 Mass flows",
+    "lang": "it"
+  },
+  {
+    "id": "319",
+    "keyword": "318",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.1.2 Liquid flows",
+    "lang": "en"
+  },
+  {
+    "id": "965",
+    "keyword": "318",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.1.2 Liquid flows",
+    "lang": "it"
+  },
+  {
+    "id": "320",
+    "keyword": "319",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.1.3 Gaseous flows",
+    "lang": "en"
+  },
+  {
+    "id": "966",
+    "keyword": "319",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.1.3 Gaseous flows",
+    "lang": "it"
+  },
+  {
+    "id": "321",
+    "keyword": "320",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.2.1 Maintenance and regulation by inorganic natural chemical and physical processes",
+    "lang": "en"
+  },
+  {
+    "id": "967",
+    "keyword": "320",
+    "label": "Regulation & Maintenance (Abiotic) - 5.2.2.1 Maintenance and regulation by inorganic natural chemical and physical processes",
+    "lang": "it"
+  },
+  {
+    "id": "322",
+    "keyword": "321",
+    "label": "Regulation & Maintenance (Abiotic) - 5.3.X.X Other",
+    "lang": "en"
+  },
+  {
+    "id": "968",
+    "keyword": "321",
+    "label": "Regulation & Maintenance (Abiotic) - 5.3.X.X Other",
+    "lang": "it"
+  },
+  {
+    "id": "263",
+    "keyword": "262",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.1.1 Bio-remediation by micro-organisms, algae, plants, and animals",
+    "lang": "en"
+  },
+  {
+    "id": "909",
+    "keyword": "262",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.1.1 Bio-remediation by micro-organisms, algae, plants, and animals",
+    "lang": "it"
+  },
+  {
+    "id": "264",
+    "keyword": "263",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.1.2 Filtration/sequestration/storage/accumulation by micro-organisms, algae, plants, and animals",
+    "lang": "en"
+  },
+  {
+    "id": "910",
+    "keyword": "263",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.1.2 Filtration/sequestration/storage/accumulation by micro-organisms, algae, plants, and animals",
+    "lang": "it"
+  },
+  {
+    "id": "265",
+    "keyword": "264",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.2.1 Smell reduction",
+    "lang": "en"
+  },
+  {
+    "id": "911",
+    "keyword": "264",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.2.1 Smell reduction",
+    "lang": "it"
+  },
+  {
+    "id": "266",
+    "keyword": "265",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.2.2 Noise attenuation",
+    "lang": "en"
+  },
+  {
+    "id": "912",
+    "keyword": "265",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.2.2 Noise attenuation",
+    "lang": "it"
+  },
+  {
+    "id": "267",
+    "keyword": "266",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.2.3 Visual screening",
+    "lang": "en"
+  },
+  {
+    "id": "913",
+    "keyword": "266",
+    "label": "Regulation & Maintenance (Biotic) - 2.1.2.3 Visual screening",
+    "lang": "it"
+  },
+  {
+    "id": "268",
+    "keyword": "267",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.1 Control of erosion rates",
+    "lang": "en"
+  },
+  {
+    "id": "914",
+    "keyword": "267",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.1 Control of erosion rates",
+    "lang": "it"
+  },
+  {
+    "id": "269",
+    "keyword": "268",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.2 Buffering and attenuation of mass movement",
+    "lang": "en"
+  },
+  {
+    "id": "915",
+    "keyword": "268",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.2 Buffering and attenuation of mass movement",
+    "lang": "it"
+  },
+  {
+    "id": "270",
+    "keyword": "269",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.3 Hydrological cycle and water flow regulation (Including flood control, and coastal protection)",
+    "lang": "en"
+  },
+  {
+    "id": "916",
+    "keyword": "269",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.3 Hydrological cycle and water flow regulation (Including flood control, and coastal protection)",
+    "lang": "it"
+  },
+  {
+    "id": "271",
+    "keyword": "270",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.4 Wind protection",
+    "lang": "en"
+  },
+  {
+    "id": "917",
+    "keyword": "270",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.4 Wind protection",
+    "lang": "it"
+  },
+  {
+    "id": "272",
+    "keyword": "271",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.5 Fire protection",
+    "lang": "en"
+  },
+  {
+    "id": "918",
+    "keyword": "271",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.1.5 Fire protection",
+    "lang": "it"
+  },
+  {
+    "id": "273",
+    "keyword": "272",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.2.1 Pollination (or 'gamete' dispersal in a marine context)",
+    "lang": "en"
+  },
+  {
+    "id": "919",
+    "keyword": "272",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.2.1 Pollination (or 'gamete' dispersal in a marine context)",
+    "lang": "it"
+  },
+  {
+    "id": "274",
+    "keyword": "273",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.2.2 Seed dispersal",
+    "lang": "en"
+  },
+  {
+    "id": "920",
+    "keyword": "273",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.2.2 Seed dispersal",
+    "lang": "it"
+  },
+  {
+    "id": "275",
+    "keyword": "274",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.2.3 Maintaining nursery populations and habitats (Including gene pool protection)",
+    "lang": "en"
+  },
+  {
+    "id": "921",
+    "keyword": "274",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.2.3 Maintaining nursery populations and habitats (Including gene pool protection)",
+    "lang": "it"
+  },
+  {
+    "id": "276",
+    "keyword": "275",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.3.1 Pest control (including invasive species)",
+    "lang": "en"
+  },
+  {
+    "id": "922",
+    "keyword": "275",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.3.1 Pest control (including invasive species)",
+    "lang": "it"
+  },
+  {
+    "id": "277",
+    "keyword": "276",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.3.2 Disease control",
+    "lang": "en"
+  },
+  {
+    "id": "923",
+    "keyword": "276",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.3.2 Disease control",
+    "lang": "it"
+  },
+  {
+    "id": "278",
+    "keyword": "277",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.4.1 Weathering processes and their effect on soil quality",
+    "lang": "en"
+  },
+  {
+    "id": "924",
+    "keyword": "277",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.4.1 Weathering processes and their effect on soil quality",
+    "lang": "it"
+  },
+  {
+    "id": "279",
+    "keyword": "278",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.4.2 Decomposition and fixing processes and their effect on soil quality",
+    "lang": "en"
+  },
+  {
+    "id": "925",
+    "keyword": "278",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.4.2 Decomposition and fixing processes and their effect on soil quality",
+    "lang": "it"
+  },
+  {
+    "id": "280",
+    "keyword": "279",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.5.1 Regulation of the chemical condition of freshwaters by living processes",
+    "lang": "en"
+  },
+  {
+    "id": "926",
+    "keyword": "279",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.5.1 Regulation of the chemical condition of freshwaters by living processes",
+    "lang": "it"
+  },
+  {
+    "id": "281",
+    "keyword": "280",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.5.2 Regulation of the chemical condition of salt waters by living processes",
+    "lang": "en"
+  },
+  {
+    "id": "927",
+    "keyword": "280",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.5.2 Regulation of the chemical condition of salt waters by living processes",
+    "lang": "it"
+  },
+  {
+    "id": "282",
+    "keyword": "281",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.6.1 Regulation of chemical composition of atmosphere and oceans",
+    "lang": "en"
+  },
+  {
+    "id": "928",
+    "keyword": "281",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.6.1 Regulation of chemical composition of atmosphere and oceans",
+    "lang": "it"
+  },
+  {
+    "id": "283",
+    "keyword": "282",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.6.2 Regulation of temperature and humidity, including ventilation and transpiration",
+    "lang": "en"
+  },
+  {
+    "id": "929",
+    "keyword": "282",
+    "label": "Regulation & Maintenance (Biotic) - 2.2.6.2 Regulation of temperature and humidity, including ventilation and transpiration",
+    "lang": "it"
+  },
+  {
+    "id": "284",
+    "keyword": "283",
+    "label": "Regulation & Maintenance (Biotic) - 2.3.X.X Other",
+    "lang": "en"
+  },
+  {
+    "id": "930",
+    "keyword": "283",
+    "label": "Regulation & Maintenance (Biotic) - 2.3.X.X Other",
+    "lang": "it"
+  },
+  {
+    "id": "48",
+    "keyword": "47",
+    "label": "Ecosystems, including food webs - Biological characteristics",
+    "lang": "en"
+  },
+  {
+    "id": "694",
+    "keyword": "47",
+    "label": "Ecosystems, including food webs - Biological characteristics",
+    "lang": "it"
+  },
+  {
+    "id": "47",
+    "keyword": "46",
+    "label": "Ecosystems, including food webs - Chemical characteristics",
+    "lang": "en"
+  },
+  {
+    "id": "693",
+    "keyword": "46",
+    "label": "Ecosystems, including food webs - Chemical characteristics",
+    "lang": "it"
+  },
+  {
+    "id": "49",
+    "keyword": "48",
+    "label": "Ecosystems, including food webs - Functions and processes ",
+    "lang": "en"
+  },
+  {
+    "id": "695",
+    "keyword": "48",
+    "label": "Ecosystems, including food webs - Functions and processes ",
+    "lang": "it"
+  },
+  {
+    "id": "46",
+    "keyword": "45",
+    "label": "Ecosystems, including food webs - Physical and hydrological characteristics",
+    "lang": "en"
+  },
+  {
+    "id": "692",
+    "keyword": "45",
+    "label": "Ecosystems, including food webs - Physical and hydrological characteristics",
+    "lang": "it"
+  },
+  {
+    "id": "45",
+    "keyword": "44",
+    "label": "Habitats - Seabed",
+    "lang": "en"
+  },
+  {
+    "id": "691",
+    "keyword": "44",
+    "label": "Habitats - Seabed",
+    "lang": "it"
+  },
+  {
+    "id": "44",
+    "keyword": "43",
+    "label": "Habitats - Water column",
+    "lang": "en"
+  },
+  {
+    "id": "690",
+    "keyword": "43",
+    "label": "Habitats - Water column",
+    "lang": "it"
+  },
+  {
+    "id": "53",
+    "keyword": "52",
+    "label": "Pressure: Biological - Disturbance of species due to human presence",
+    "lang": "en"
+  },
+  {
+    "id": "699",
+    "keyword": "52",
+    "label": "Pressure: Biological - Disturbance of species due to human presence",
+    "lang": "it"
+  },
+  {
+    "id": "54",
+    "keyword": "53",
+    "label": "Pressure: Biological - Extraction of, or mortality/injury to, wild species",
+    "lang": "en"
+  },
+  {
+    "id": "700",
+    "keyword": "53",
+    "label": "Pressure: Biological - Extraction of, or mortality/injury to, wild species",
+    "lang": "it"
+  },
+  {
+    "id": "52",
+    "keyword": "51",
+    "label": "Pressure: Biological - Input of genetically modified species and translocation of native species",
+    "lang": "en"
+  },
+  {
+    "id": "698",
+    "keyword": "51",
+    "label": "Pressure: Biological - Input of genetically modified species and translocation of native species",
+    "lang": "it"
+  },
+  {
+    "id": "51",
+    "keyword": "50",
+    "label": "Pressure: Biological - Input of microbial pathogens",
+    "lang": "en"
+  },
+  {
+    "id": "697",
+    "keyword": "50",
+    "label": "Pressure: Biological - Input of microbial pathogens",
+    "lang": "it"
+  },
+  {
+    "id": "50",
+    "keyword": "49",
+    "label": "Pressure: Biological - Input or spread of non-indigenous species",
+    "lang": "en"
+  },
+  {
+    "id": "696",
+    "keyword": "49",
+    "label": "Pressure: Biological - Input or spread of non-indigenous species",
+    "lang": "it"
+  },
+  {
+    "id": "57",
+    "keyword": "56",
+    "label": "Pressure: Physical - Changes to hydrological conditions",
+    "lang": "en"
+  },
+  {
+    "id": "703",
+    "keyword": "56",
+    "label": "Pressure: Physical - Changes to hydrological conditions",
+    "lang": "it"
+  },
+  {
+    "id": "55",
+    "keyword": "54",
+    "label": "Pressure: Physical - Physical disturbance to seabed",
+    "lang": "en"
+  },
+  {
+    "id": "701",
+    "keyword": "54",
+    "label": "Pressure: Physical - Physical disturbance to seabed",
+    "lang": "it"
+  },
+  {
+    "id": "56",
+    "keyword": "55",
+    "label": "Pressure: Physical - Physical loss",
+    "lang": "en"
+  },
+  {
+    "id": "702",
+    "keyword": "55",
+    "label": "Pressure: Physical - Physical loss",
+    "lang": "it"
+  },
+  {
+    "id": "62",
+    "keyword": "61",
+    "label": "Pressure: Substances, litter and energy - Input of anthropogenic sound",
+    "lang": "en"
+  },
+  {
+    "id": "708",
+    "keyword": "61",
+    "label": "Pressure: Substances, litter and energy - Input of anthropogenic sound",
+    "lang": "it"
+  },
+  {
+    "id": "61",
+    "keyword": "60",
+    "label": "Pressure: Substances, litter and energy - Input of litter",
+    "lang": "en"
+  },
+  {
+    "id": "707",
+    "keyword": "60",
+    "label": "Pressure: Substances, litter and energy - Input of litter",
+    "lang": "it"
+  },
+  {
+    "id": "58",
+    "keyword": "57",
+    "label": "Pressure: Substances, litter and energy - Input of nutrients - diffuse sources, point sources, atmospheric deposition",
+    "lang": "en"
+  },
+  {
+    "id": "704",
+    "keyword": "57",
+    "label": "Pressure: Substances, litter and energy - Input of nutrients - diffuse sources, point sources, atmospheric deposition",
+    "lang": "it"
+  },
+  {
+    "id": "59",
+    "keyword": "58",
+    "label": "Pressure: Substances, litter and energy - Input of organic matter - diffuse sources and point sources",
+    "lang": "en"
+  },
+  {
+    "id": "705",
+    "keyword": "58",
+    "label": "Pressure: Substances, litter and energy - Input of organic matter - diffuse sources and point sources",
+    "lang": "it"
+  },
+  {
+    "id": "63",
+    "keyword": "62",
+    "label": "Pressure: Substances, litter and energy - Input of other forms of energy ",
+    "lang": "en"
+  },
+  {
+    "id": "709",
+    "keyword": "62",
+    "label": "Pressure: Substances, litter and energy - Input of other forms of energy ",
+    "lang": "it"
+  },
+  {
+    "id": "60",
+    "keyword": "59",
+    "label": "Pressure: Substances, litter and energy - Input of other substances - diffuse sources, point sources, atmospheric deposition, acute events",
+    "lang": "en"
+  },
+  {
+    "id": "706",
+    "keyword": "59",
+    "label": "Pressure: Substances, litter and energy - Input of other substances - diffuse sources, point sources, atmospheric deposition, acute events",
+    "lang": "it"
+  },
+  {
+    "id": "64",
+    "keyword": "63",
+    "label": "Pressure: Substances, litter and energy - Input of water - point sources",
+    "lang": "en"
+  },
+  {
+    "id": "710",
+    "keyword": "63",
+    "label": "Pressure: Substances, litter and energy - Input of water - point sources",
+    "lang": "it"
+  },
+  {
+    "id": "41",
+    "keyword": "40",
+    "label": "Species - Cephalopods",
+    "lang": "en"
+  },
+  {
+    "id": "687",
+    "keyword": "40",
+    "label": "Species - Cephalopods",
+    "lang": "it"
+  },
+  {
+    "id": "43",
+    "keyword": "42",
+    "label": "Species - Fish",
+    "lang": "en"
+  },
+  {
+    "id": "689",
+    "keyword": "42",
+    "label": "Species - Fish",
+    "lang": "it"
+  },
+  {
+    "id": "40",
+    "keyword": "39",
+    "label": "Species - Mammals",
+    "lang": "en"
+  },
+  {
+    "id": "686",
+    "keyword": "39",
+    "label": "Species - Mammals",
+    "lang": "it"
+  },
+  {
+    "id": "39",
+    "keyword": "38",
+    "label": "Species - Marine birds",
+    "lang": "en"
+  },
+  {
+    "id": "685",
+    "keyword": "38",
+    "label": "Species - Marine birds",
+    "lang": "it"
+  },
+  {
+    "id": "42",
+    "keyword": "41",
+    "label": "Species - Reptiles",
+    "lang": "en"
+  },
+  {
+    "id": "688",
+    "keyword": "41",
+    "label": "Species - Reptiles",
+    "lang": "it"
+  },
+  {
+    "id": "65",
+    "keyword": "64",
+    "label": "D1 Biodiversity - birds",
+    "lang": "en"
+  },
+  {
+    "id": "711",
+    "keyword": "64",
+    "label": "D1 Biodiversity - birds",
+    "lang": "it"
+  },
+  {
+    "id": "69",
+    "keyword": "68",
+    "label": "D1 Biodiversity - cephalopods",
+    "lang": "en"
+  },
+  {
+    "id": "715",
+    "keyword": "68",
+    "label": "D1 Biodiversity - cephalopods",
+    "lang": "it"
+  },
+  {
+    "id": "68",
+    "keyword": "67",
+    "label": "D1 Biodiversity - fish",
+    "lang": "en"
+  },
+  {
+    "id": "714",
+    "keyword": "67",
+    "label": "D1 Biodiversity - fish",
+    "lang": "it"
+  },
+  {
+    "id": "66",
+    "keyword": "65",
+    "label": "D1 Biodiversity - mammals",
+    "lang": "en"
+  },
+  {
+    "id": "712",
+    "keyword": "65",
+    "label": "D1 Biodiversity - mammals",
+    "lang": "it"
+  },
+  {
+    "id": "70",
+    "keyword": "69",
+    "label": "D1 Biodiversity - pelagic habitats",
+    "lang": "en"
+  },
+  {
+    "id": "716",
+    "keyword": "69",
+    "label": "D1 Biodiversity - pelagic habitats",
+    "lang": "it"
+  },
+  {
+    "id": "67",
+    "keyword": "66",
+    "label": "D1 Biodiversity - reptiles",
+    "lang": "en"
+  },
+  {
+    "id": "713",
+    "keyword": "66",
+    "label": "D1 Biodiversity - reptiles",
+    "lang": "it"
+  },
+  {
+    "id": "79",
+    "keyword": "78",
+    "label": "D10 Marine litter",
+    "lang": "en"
+  },
+  {
+    "id": "725",
+    "keyword": "78",
+    "label": "D10 Marine litter",
+    "lang": "it"
+  },
+  {
+    "id": "117",
+    "keyword": "116",
+    "label": "D10C1 Litter (excluding micro-litter)",
+    "lang": "en"
+  },
+  {
+    "id": "763",
+    "keyword": "116",
+    "label": "D10C1 Litter (excluding micro-litter)",
+    "lang": "it"
+  },
+  {
+    "id": "118",
+    "keyword": "117",
+    "label": "D10C2 Micro-litter",
+    "lang": "en"
+  },
+  {
+    "id": "764",
+    "keyword": "117",
+    "label": "D10C2 Micro-litter",
+    "lang": "it"
+  },
+  {
+    "id": "119",
+    "keyword": "118",
+    "label": "D10C3 Litter ingested",
+    "lang": "en"
+  },
+  {
+    "id": "765",
+    "keyword": "118",
+    "label": "D10C3 Litter ingested",
+    "lang": "it"
+  },
+  {
+    "id": "120",
+    "keyword": "119",
+    "label": "D10C4 Adverse effects of litter",
+    "lang": "en"
+  },
+  {
+    "id": "766",
+    "keyword": "119",
+    "label": "D10C4 Adverse effects of litter",
+    "lang": "it"
+  },
+  {
+    "id": "80",
+    "keyword": "79",
+    "label": "D11 Energy, including underwater noise",
+    "lang": "en"
+  },
+  {
+    "id": "726",
+    "keyword": "79",
+    "label": "D11 Energy, including underwater noise",
+    "lang": "it"
+  },
+  {
+    "id": "121",
+    "keyword": "120",
+    "label": "D11C1 Anthropogenic impulsive sound",
+    "lang": "en"
+  },
+  {
+    "id": "767",
+    "keyword": "120",
+    "label": "D11C1 Anthropogenic impulsive sound",
+    "lang": "it"
+  },
+  {
+    "id": "122",
+    "keyword": "121",
+    "label": "D11C2 Anthropogenic continuous low-frequency sound",
+    "lang": "en"
+  },
+  {
+    "id": "768",
+    "keyword": "121",
+    "label": "D11C2 Anthropogenic continuous low-frequency sound",
+    "lang": "it"
+  },
+  {
+    "id": "81",
+    "keyword": "80",
+    "label": "D1C1 Mortality rate from incidental by-catch",
+    "lang": "en"
+  },
+  {
+    "id": "727",
+    "keyword": "80",
+    "label": "D1C1 Mortality rate from incidental by-catch",
+    "lang": "it"
+  },
+  {
+    "id": "82",
+    "keyword": "81",
+    "label": "D1C2 Population abundance",
+    "lang": "en"
+  },
+  {
+    "id": "728",
+    "keyword": "81",
+    "label": "D1C2 Population abundance",
+    "lang": "it"
+  },
+  {
+    "id": "83",
+    "keyword": "82",
+    "label": "D1C3 Population demographic characteristics",
+    "lang": "en"
+  },
+  {
+    "id": "729",
+    "keyword": "82",
+    "label": "D1C3 Population demographic characteristics",
+    "lang": "it"
+  },
+  {
+    "id": "84",
+    "keyword": "83",
+    "label": "D1C4 Population distributional range and pattern",
+    "lang": "en"
+  },
+  {
+    "id": "730",
+    "keyword": "83",
+    "label": "D1C4 Population distributional range and pattern",
+    "lang": "it"
+  },
+  {
+    "id": "85",
+    "keyword": "84",
+    "label": "D1C5 Habitat for the species",
+    "lang": "en"
+  },
+  {
+    "id": "731",
+    "keyword": "84",
+    "label": "D1C5 Habitat for the species",
+    "lang": "it"
+  },
+  {
+    "id": "86",
+    "keyword": "85",
+    "label": "D1C6 Pelagic habitat condition",
+    "lang": "en"
+  },
+  {
+    "id": "732",
+    "keyword": "85",
+    "label": "D1C6 Pelagic habitat condition",
+    "lang": "it"
+  },
+  {
+    "id": "71",
+    "keyword": "70",
+    "label": "D2 Non-indigenous species",
+    "lang": "en"
+  },
+  {
+    "id": "717",
+    "keyword": "70",
+    "label": "D2 Non-indigenous species",
+    "lang": "it"
+  },
+  {
+    "id": "87",
+    "keyword": "86",
+    "label": "D2C1 Newly-introduced NIS",
+    "lang": "en"
+  },
+  {
+    "id": "733",
+    "keyword": "86",
+    "label": "D2C1 Newly-introduced NIS",
+    "lang": "it"
+  },
+  {
+    "id": "88",
+    "keyword": "87",
+    "label": "D2C2 Established NIS",
+    "lang": "en"
+  },
+  {
+    "id": "734",
+    "keyword": "87",
+    "label": "D2C2 Established NIS",
+    "lang": "it"
+  },
+  {
+    "id": "89",
+    "keyword": "88",
+    "label": "D2C3 Adverse effects of NIS",
+    "lang": "en"
+  },
+  {
+    "id": "735",
+    "keyword": "88",
+    "label": "D2C3 Adverse effects of NIS",
+    "lang": "it"
+  },
+  {
+    "id": "72",
+    "keyword": "71",
+    "label": "D3 Commercial fish and shellfish",
+    "lang": "en"
+  },
+  {
+    "id": "718",
+    "keyword": "71",
+    "label": "D3 Commercial fish and shellfish",
+    "lang": "it"
+  },
+  {
+    "id": "90",
+    "keyword": "89",
+    "label": "D3C1 Fishing mortality rate (F)",
+    "lang": "en"
+  },
+  {
+    "id": "736",
+    "keyword": "89",
+    "label": "D3C1 Fishing mortality rate (F)",
+    "lang": "it"
+  },
+  {
+    "id": "91",
+    "keyword": "90",
+    "label": "D3C2 Spawning stock biomass (SSB)",
+    "lang": "en"
+  },
+  {
+    "id": "737",
+    "keyword": "90",
+    "label": "D3C2 Spawning stock biomass (SSB)",
+    "lang": "it"
+  },
+  {
+    "id": "92",
+    "keyword": "91",
+    "label": "D3C3 Population age/size distribution",
+    "lang": "en"
+  },
+  {
+    "id": "738",
+    "keyword": "91",
+    "label": "D3C3 Population age/size distribution",
+    "lang": "it"
+  },
+  {
+    "id": "73",
+    "keyword": "72",
+    "label": "D4 Food webs/D1 Biodiversity - ecosystems",
+    "lang": "en"
+  },
+  {
+    "id": "719",
+    "keyword": "72",
+    "label": "D4 Food webs/D1 Biodiversity - ecosystems",
+    "lang": "it"
+  },
+  {
+    "id": "93",
+    "keyword": "92",
+    "label": "D4C1 Trophic guild species diversity",
+    "lang": "en"
+  },
+  {
+    "id": "739",
+    "keyword": "92",
+    "label": "D4C1 Trophic guild species diversity",
+    "lang": "it"
+  },
+  {
+    "id": "94",
+    "keyword": "93",
+    "label": "D4C2 Abundance across trophic guilds",
+    "lang": "en"
+  },
+  {
+    "id": "740",
+    "keyword": "93",
+    "label": "D4C2 Abundance across trophic guilds",
+    "lang": "it"
+  },
+  {
+    "id": "95",
+    "keyword": "94",
+    "label": "D4C3 Trophic guild size distribution",
+    "lang": "en"
+  },
+  {
+    "id": "741",
+    "keyword": "94",
+    "label": "D4C3 Trophic guild size distribution",
+    "lang": "it"
+  },
+  {
+    "id": "96",
+    "keyword": "95",
+    "label": "D4C4 Trophic guild productivity",
+    "lang": "en"
+  },
+  {
+    "id": "742",
+    "keyword": "95",
+    "label": "D4C4 Trophic guild productivity",
+    "lang": "it"
+  },
+  {
+    "id": "74",
+    "keyword": "73",
+    "label": "D5 Eutrophication",
+    "lang": "en"
+  },
+  {
+    "id": "720",
+    "keyword": "73",
+    "label": "D5 Eutrophication",
+    "lang": "it"
+  },
+  {
+    "id": "97",
+    "keyword": "96",
+    "label": "D5C1 Nutrient concentrations",
+    "lang": "en"
+  },
+  {
+    "id": "743",
+    "keyword": "96",
+    "label": "D5C1 Nutrient concentrations",
+    "lang": "it"
+  },
+  {
+    "id": "98",
+    "keyword": "97",
+    "label": "D5C2 Chlorophyll-a concentration",
+    "lang": "en"
+  },
+  {
+    "id": "744",
+    "keyword": "97",
+    "label": "D5C2 Chlorophyll-a concentration",
+    "lang": "it"
+  },
+  {
+    "id": "99",
+    "keyword": "98",
+    "label": "D5C3 Harmful algal blooms",
+    "lang": "en"
+  },
+  {
+    "id": "745",
+    "keyword": "98",
+    "label": "D5C3 Harmful algal blooms",
+    "lang": "it"
+  },
+  {
+    "id": "100",
+    "keyword": "99",
+    "label": "D5C4 Photic limit",
+    "lang": "en"
+  },
+  {
+    "id": "746",
+    "keyword": "99",
+    "label": "D5C4 Photic limit",
+    "lang": "it"
+  },
+  {
+    "id": "101",
+    "keyword": "100",
+    "label": "D5C5 Dissolved oxygen concentration",
+    "lang": "en"
+  },
+  {
+    "id": "747",
+    "keyword": "100",
+    "label": "D5C5 Dissolved oxygen concentration",
+    "lang": "it"
+  },
+  {
+    "id": "102",
+    "keyword": "101",
+    "label": "D5C6 Opportunistic macroalgae of benthic habitats",
+    "lang": "en"
+  },
+  {
+    "id": "748",
+    "keyword": "101",
+    "label": "D5C6 Opportunistic macroalgae of benthic habitats",
+    "lang": "it"
+  },
+  {
+    "id": "103",
+    "keyword": "102",
+    "label": "D5C7 Macrophyte communities of benthic habitats",
+    "lang": "en"
+  },
+  {
+    "id": "749",
+    "keyword": "102",
+    "label": "D5C7 Macrophyte communities of benthic habitats",
+    "lang": "it"
+  },
+  {
+    "id": "104",
+    "keyword": "103",
+    "label": "D5C8 Macrofaunal communities of benthic habitats",
+    "lang": "en"
+  },
+  {
+    "id": "750",
+    "keyword": "103",
+    "label": "D5C8 Macrofaunal communities of benthic habitats",
+    "lang": "it"
+  },
+  {
+    "id": "75",
+    "keyword": "74",
+    "label": "D6 Sea-floor integrity/D1 Biodiversity - benthic habitats",
+    "lang": "en"
+  },
+  {
+    "id": "721",
+    "keyword": "74",
+    "label": "D6 Sea-floor integrity/D1 Biodiversity - benthic habitats",
+    "lang": "it"
+  },
+  {
+    "id": "105",
+    "keyword": "104",
+    "label": "D6C1 Physical loss of the seabed",
+    "lang": "en"
+  },
+  {
+    "id": "751",
+    "keyword": "104",
+    "label": "D6C1 Physical loss of the seabed",
+    "lang": "it"
+  },
+  {
+    "id": "106",
+    "keyword": "105",
+    "label": "D6C2 Physical disturbance to the seabed",
+    "lang": "en"
+  },
+  {
+    "id": "752",
+    "keyword": "105",
+    "label": "D6C2 Physical disturbance to the seabed",
+    "lang": "it"
+  },
+  {
+    "id": "107",
+    "keyword": "106",
+    "label": "D6C3 Adverse effects from physical disturbance",
+    "lang": "en"
+  },
+  {
+    "id": "753",
+    "keyword": "106",
+    "label": "D6C3 Adverse effects from physical disturbance",
+    "lang": "it"
+  },
+  {
+    "id": "108",
+    "keyword": "107",
+    "label": "D6C4 Benthic habitat extent",
+    "lang": "en"
+  },
+  {
+    "id": "754",
+    "keyword": "107",
+    "label": "D6C4 Benthic habitat extent",
+    "lang": "it"
+  },
+  {
+    "id": "109",
+    "keyword": "108",
+    "label": "D6C5 Benthic habitat condition",
+    "lang": "en"
+  },
+  {
+    "id": "755",
+    "keyword": "108",
+    "label": "D6C5 Benthic habitat condition",
+    "lang": "it"
+  },
+  {
+    "id": "76",
+    "keyword": "75",
+    "label": "D7 Hydrographical changes",
+    "lang": "en"
+  },
+  {
+    "id": "722",
+    "keyword": "75",
+    "label": "D7 Hydrographical changes",
+    "lang": "it"
+  },
+  {
+    "id": "110",
+    "keyword": "109",
+    "label": "D7C1 Permanent alteration of hydrographical conditions",
+    "lang": "en"
+  },
+  {
+    "id": "756",
+    "keyword": "109",
+    "label": "D7C1 Permanent alteration of hydrographical conditions",
+    "lang": "it"
+  },
+  {
+    "id": "111",
+    "keyword": "110",
+    "label": "D7C2 Adverse effects from permanent alteration of hydrographical conditions",
+    "lang": "en"
+  },
+  {
+    "id": "757",
+    "keyword": "110",
+    "label": "D7C2 Adverse effects from permanent alteration of hydrographical conditions",
+    "lang": "it"
+  },
+  {
+    "id": "77",
+    "keyword": "76",
+    "label": "D8 Contaminants",
+    "lang": "en"
+  },
+  {
+    "id": "723",
+    "keyword": "76",
+    "label": "D8 Contaminants",
+    "lang": "it"
+  },
+  {
+    "id": "112",
+    "keyword": "111",
+    "label": "D8C1 Contaminant in environment",
+    "lang": "en"
+  },
+  {
+    "id": "758",
+    "keyword": "111",
+    "label": "D8C1 Contaminant in environment",
+    "lang": "it"
+  },
+  {
+    "id": "113",
+    "keyword": "112",
+    "label": "D8C2 Adverse effects of contaminants",
+    "lang": "en"
+  },
+  {
+    "id": "759",
+    "keyword": "112",
+    "label": "D8C2 Adverse effects of contaminants",
+    "lang": "it"
+  },
+  {
+    "id": "114",
+    "keyword": "113",
+    "label": "D8C3 Significant acute pollution events",
+    "lang": "en"
+  },
+  {
+    "id": "760",
+    "keyword": "113",
+    "label": "D8C3 Significant acute pollution events",
+    "lang": "it"
+  },
+  {
+    "id": "115",
+    "keyword": "114",
+    "label": "D8C4 Adverse effects of significant acute pollution events",
+    "lang": "en"
+  },
+  {
+    "id": "761",
+    "keyword": "114",
+    "label": "D8C4 Adverse effects of significant acute pollution events",
+    "lang": "it"
+  },
+  {
+    "id": "78",
+    "keyword": "77",
+    "label": "D9 Contaminants in seafood",
+    "lang": "en"
+  },
+  {
+    "id": "724",
+    "keyword": "77",
+    "label": "D9 Contaminants in seafood",
+    "lang": "it"
+  },
+  {
+    "id": "116",
+    "keyword": "115",
+    "label": "D9C1 Contaminants in seafood",
+    "lang": "en"
+  },
+  {
+    "id": "762",
+    "keyword": "115",
+    "label": "D9C1 Contaminants in seafood",
+    "lang": "it"
+  },
+  {
+    "id": "124",
+    "keyword": "123",
+    "label": "Habitats",
+    "lang": "en"
+  },
+  {
+    "id": "770",
+    "keyword": "123",
+    "label": "Habitats",
+    "lang": "it"
+  },
+  {
+    "id": "125",
+    "keyword": "124",
+    "label": "Physiography & Geology",
+    "lang": "en"
+  },
+  {
+    "id": "771",
+    "keyword": "124",
+    "label": "Physiography & Geology",
+    "lang": "it"
+  },
+  {
+    "id": "126",
+    "keyword": "125",
+    "label": "Pressures",
+    "lang": "en"
+  },
+  {
+    "id": "772",
+    "keyword": "125",
+    "label": "Pressures",
+    "lang": "it"
+  },
+  {
+    "id": "123",
+    "keyword": "122",
+    "label": "Species",
+    "lang": "en"
+  },
+  {
+    "id": "769",
+    "keyword": "122",
+    "label": "Species",
+    "lang": "it"
+  },
+  {
+    "id": "128",
+    "keyword": "127",
+    "label": "Chemical status",
+    "lang": "en"
+  },
+  {
+    "id": "774",
+    "keyword": "127",
+    "label": "Chemical status",
+    "lang": "it"
+  },
+  {
+    "id": "127",
+    "keyword": "126",
+    "label": "Ecological status",
+    "lang": "en"
+  },
+  {
+    "id": "773",
+    "keyword": "126",
+    "label": "Ecological status",
+    "lang": "it"
+  },
+  {
+    "id": "356",
+    "keyword": "355",
+    "label": "Administrative - National",
+    "lang": "en"
+  },
+  {
+    "id": "1002",
+    "keyword": "355",
+    "label": "Administrative - National",
+    "lang": "it"
+  },
+  {
+    "id": "357",
+    "keyword": "356",
+    "label": "Administrative - Regional",
+    "lang": "en"
+  },
+  {
+    "id": "1003",
+    "keyword": "356",
+    "label": "Administrative - Regional",
+    "lang": "it"
+  },
+  {
+    "id": "359",
+    "keyword": "358",
+    "label": "Enforcement - Control",
+    "lang": "en"
+  },
+  {
+    "id": "1005",
+    "keyword": "358",
+    "label": "Enforcement - Control",
+    "lang": "it"
+  },
+  {
+    "id": "358",
+    "keyword": "357",
+    "label": "Enforcement - Motoring",
+    "lang": "en"
+  },
+  {
+    "id": "1004",
+    "keyword": "357",
+    "label": "Enforcement - Motoring",
+    "lang": "it"
+  },
+  {
+    "id": "361",
+    "keyword": "360",
+    "label": "Judicial application - EU",
+    "lang": "en"
+  },
+  {
+    "id": "1007",
+    "keyword": "360",
+    "label": "Judicial application - EU",
+    "lang": "it"
+  },
+  {
+    "id": "360",
+    "keyword": "359",
+    "label": "Judicial application - International",
+    "lang": "en"
+  },
+  {
+    "id": "1006",
+    "keyword": "359",
+    "label": "Judicial application - International",
+    "lang": "it"
+  },
+  {
+    "id": "362",
+    "keyword": "361",
+    "label": "Judicial application - National",
+    "lang": "en"
+  },
+  {
+    "id": "1008",
+    "keyword": "361",
+    "label": "Judicial application - National",
+    "lang": "it"
+  },
+  {
+    "id": "349",
+    "keyword": "348",
+    "label": "Legislation - EU",
+    "lang": "en"
+  },
+  {
+    "id": "995",
+    "keyword": "348",
+    "label": "Legislation - EU",
+    "lang": "it"
+  },
+  {
+    "id": "348",
+    "keyword": "347",
+    "label": "Legislation - International",
+    "lang": "en"
+  },
+  {
+    "id": "994",
+    "keyword": "347",
+    "label": "Legislation - International",
+    "lang": "it"
+  },
+  {
+    "id": "350",
+    "keyword": "349",
+    "label": "Legislation - National",
+    "lang": "en"
+  },
+  {
+    "id": "996",
+    "keyword": "349",
+    "label": "Legislation - National",
+    "lang": "it"
+  },
+  {
+    "id": "351",
+    "keyword": "350",
+    "label": "Legislation - Regional",
+    "lang": "en"
+  },
+  {
+    "id": "997",
+    "keyword": "350",
+    "label": "Legislation - Regional",
+    "lang": "it"
+  },
+  {
+    "id": "353",
+    "keyword": "352",
+    "label": "Planning - EU",
+    "lang": "en"
+  },
+  {
+    "id": "999",
+    "keyword": "352",
+    "label": "Planning - EU",
+    "lang": "it"
+  },
+  {
+    "id": "352",
+    "keyword": "351",
+    "label": "Planning - International",
+    "lang": "en"
+  },
+  {
+    "id": "998",
+    "keyword": "351",
+    "label": "Planning - International",
+    "lang": "it"
+  },
+  {
+    "id": "354",
+    "keyword": "353",
+    "label": "Planning - National",
+    "lang": "en"
+  },
+  {
+    "id": "1000",
+    "keyword": "353",
+    "label": "Planning - National",
+    "lang": "it"
+  },
+  {
+    "id": "355",
+    "keyword": "354",
+    "label": "Planning - Regional",
+    "lang": "en"
+  },
+  {
+    "id": "1001",
+    "keyword": "354",
+    "label": "Planning - Regional",
+    "lang": "it"
+  },
+  {
+    "id": "345",
+    "keyword": "344",
+    "label": "Strategic - EU",
+    "lang": "en"
+  },
+  {
+    "id": "991",
+    "keyword": "344",
+    "label": "Strategic - EU",
+    "lang": "it"
+  },
+  {
+    "id": "344",
+    "keyword": "343",
+    "label": "Strategic - International",
+    "lang": "en"
+  },
+  {
+    "id": "990",
+    "keyword": "343",
+    "label": "Strategic - International",
+    "lang": "it"
+  },
+  {
+    "id": "346",
+    "keyword": "345",
+    "label": "Strategic - National",
+    "lang": "en"
+  },
+  {
+    "id": "992",
+    "keyword": "345",
+    "label": "Strategic - National",
+    "lang": "it"
+  },
+  {
+    "id": "347",
+    "keyword": "346",
+    "label": "Strategic - Regional",
+    "lang": "en"
+  },
+  {
+    "id": "993",
+    "keyword": "346",
+    "label": "Strategic - Regional",
+    "lang": "it"
+  },
+  {
+    "id": "330",
+    "keyword": "329",
+    "label": "Aquaculture",
+    "lang": "en"
+  },
+  {
+    "id": "976",
+    "keyword": "329",
+    "label": "Aquaculture",
+    "lang": "it"
+  },
+  {
+    "id": "336",
+    "keyword": "335",
+    "label": "Coastal defence",
+    "lang": "en"
+  },
+  {
+    "id": "982",
+    "keyword": "335",
+    "label": "Coastal defence",
+    "lang": "it"
+  },
+  {
+    "id": "338",
+    "keyword": "337",
+    "label": "Coastal tourism",
+    "lang": "en"
+  },
+  {
+    "id": "984",
+    "keyword": "337",
+    "label": "Coastal tourism",
+    "lang": "it"
+  },
+  {
+    "id": "343",
+    "keyword": "342",
+    "label": "Conservation (i.e. Protected areas)",
+    "lang": "en"
+  },
+  {
+    "id": "989",
+    "keyword": "342",
+    "label": "Conservation (i.e. Protected areas)",
+    "lang": "it"
+  },
+  {
+    "id": "337",
+    "keyword": "336",
+    "label": "Desalination",
+    "lang": "en"
+  },
+  {
+    "id": "983",
+    "keyword": "336",
+    "label": "Desalination",
+    "lang": "it"
+  },
+  {
+    "id": "335",
+    "keyword": "334",
+    "label": "Dredging and dumping of dredged materials",
+    "lang": "en"
+  },
+  {
+    "id": "981",
+    "keyword": "334",
+    "label": "Dredging and dumping of dredged materials",
+    "lang": "it"
+  },
+  {
+    "id": "342",
+    "keyword": "341",
+    "label": "Environment (e.g. pollution and biodiversity)",
+    "lang": "en"
+  },
+  {
+    "id": "988",
+    "keyword": "341",
+    "label": "Environment (e.g. pollution and biodiversity)",
+    "lang": "it"
+  },
+  {
+    "id": "329",
+    "keyword": "328",
+    "label": "Fisheries",
+    "lang": "en"
+  },
+  {
+    "id": "975",
+    "keyword": "328",
+    "label": "Fisheries",
+    "lang": "it"
+  },
+  {
+    "id": "328",
+    "keyword": "327",
+    "label": "Legal status / Maritime zones",
+    "lang": "en"
+  },
+  {
+    "id": "974",
+    "keyword": "327",
+    "label": "Legal status / Maritime zones",
+    "lang": "it"
+  },
+  {
+    "id": "333",
+    "keyword": "332",
+    "label": "Maritime Transport and Ports",
+    "lang": "en"
+  },
+  {
+    "id": "979",
+    "keyword": "332",
+    "label": "Maritime Transport and Ports",
+    "lang": "it"
+  },
+  {
+    "id": "334",
+    "keyword": "333",
+    "label": "Military uses",
+    "lang": "en"
+  },
+  {
+    "id": "980",
+    "keyword": "333",
+    "label": "Military uses",
+    "lang": "it"
+  },
+  {
+    "id": "339",
+    "keyword": "338",
+    "label": "Nautical sports, leisure boating and marinas",
+    "lang": "en"
+  },
+  {
+    "id": "985",
+    "keyword": "338",
+    "label": "Nautical sports, leisure boating and marinas",
+    "lang": "it"
+  },
+  {
+    "id": "332",
+    "keyword": "331",
+    "label": "Offshore Renewable Energy",
+    "lang": "en"
+  },
+  {
+    "id": "978",
+    "keyword": "331",
+    "label": "Offshore Renewable Energy",
+    "lang": "it"
+  },
+  {
+    "id": "331",
+    "keyword": "330",
+    "label": "Oil & Gas",
+    "lang": "en"
+  },
+  {
+    "id": "977",
+    "keyword": "330",
+    "label": "Oil & Gas",
+    "lang": "it"
+  },
+  {
+    "id": "341",
+    "keyword": "340",
+    "label": "Safety and Surveillance",
+    "lang": "en"
+  },
+  {
+    "id": "987",
+    "keyword": "340",
+    "label": "Safety and Surveillance",
+    "lang": "it"
+  },
+  {
+    "id": "340",
+    "keyword": "339",
+    "label": "Underwater cultural heritage",
+    "lang": "en"
+  },
+  {
+    "id": "986",
+    "keyword": "339",
+    "label": "Underwater cultural heritage",
+    "lang": "it"
+  },
+  {
+    "id": "363",
+    "keyword": "362",
+    "label": "Who is in charge?",
+    "lang": "en"
+  },
+  {
+    "id": "1009",
+    "keyword": "362",
+    "label": "Who is in charge?",
+    "lang": "it"
+  },
+  {
+    "id": "136",
+    "keyword": "135",
+    "label": "Aquaculture - Finfish",
+    "lang": "en"
+  },
+  {
+    "id": "804",
+    "keyword": "135",
+    "label": "Aquaculture - Finfish",
+    "lang": "it"
+  },
+  {
+    "id": "137",
+    "keyword": "136",
+    "label": "Aquaculture - Shellfish",
+    "lang": "en"
+  },
+  {
+    "id": "805",
+    "keyword": "136",
+    "label": "Aquaculture - Shellfish",
+    "lang": "it"
+  },
+  {
+    "id": "159",
+    "keyword": "158",
+    "label": "Coastal infrastructures - Coastal defence works",
+    "lang": "en"
+  },
+  {
+    "id": "827",
+    "keyword": "158",
+    "label": "Coastal infrastructures - Coastal defence works",
+    "lang": "it"
+  },
+  {
+    "id": "146",
+    "keyword": "145",
+    "label": "Cultural entertainment and recreational services - Beaches",
+    "lang": "en"
+  },
+  {
+    "id": "814",
+    "keyword": "145",
+    "label": "Cultural entertainment and recreational services - Beaches",
+    "lang": "it"
+  },
+  {
+    "id": "147",
+    "keyword": "146",
+    "label": "Cultural entertainment and recreational services - Coastal tourism",
+    "lang": "en"
+  },
+  {
+    "id": "815",
+    "keyword": "146",
+    "label": "Cultural entertainment and recreational services - Coastal tourism",
+    "lang": "it"
+  },
+  {
+    "id": "145",
+    "keyword": "144",
+    "label": "Cultural entertainment and recreational services - Nautical sports",
+    "lang": "en"
+  },
+  {
+    "id": "813",
+    "keyword": "144",
+    "label": "Cultural entertainment and recreational services - Nautical sports",
+    "lang": "it"
+  },
+  {
+    "id": "148",
+    "keyword": "147",
+    "label": "Cultural entertainment and recreational services - Underwater cultural heritage",
+    "lang": "en"
+  },
+  {
+    "id": "816",
+    "keyword": "147",
+    "label": "Cultural entertainment and recreational services - Underwater cultural heritage",
+    "lang": "it"
+  },
+  {
+    "id": "143",
+    "keyword": "142",
+    "label": "Energy production - Renewable energy",
+    "lang": "en"
+  },
+  {
+    "id": "811",
+    "keyword": "142",
+    "label": "Energy production - Renewable energy",
+    "lang": "it"
+  },
+  {
+    "id": "153",
+    "keyword": "152",
+    "label": "Logistic and storage services - Offshore supply",
+    "lang": "en"
+  },
+  {
+    "id": "821",
+    "keyword": "152",
+    "label": "Logistic and storage services - Offshore supply",
+    "lang": "it"
+  },
+  {
+    "id": "161",
+    "keyword": "160",
+    "label": "Military areas",
+    "lang": "en"
+  },
+  {
+    "id": "829",
+    "keyword": "160",
+    "label": "Military areas",
+    "lang": "it"
+  },
+  {
+    "id": "139",
+    "keyword": "138",
+    "label": "Mining and quarrying - Dredging",
+    "lang": "en"
+  },
+  {
+    "id": "807",
+    "keyword": "138",
+    "label": "Mining and quarrying - Dredging",
+    "lang": "it"
+  },
+  {
+    "id": "140",
+    "keyword": "139",
+    "label": "Mining and quarrying - Dumping",
+    "lang": "en"
+  },
+  {
+    "id": "808",
+    "keyword": "139",
+    "label": "Mining and quarrying - Dumping",
+    "lang": "it"
+  },
+  {
+    "id": "138",
+    "keyword": "137",
+    "label": "Mining and quarrying - Oil & Gas",
+    "lang": "en"
+  },
+  {
+    "id": "806",
+    "keyword": "137",
+    "label": "Mining and quarrying - Oil & Gas",
+    "lang": "it"
+  },
+  {
+    "id": "144",
+    "keyword": "143",
+    "label": "Other industries - Desalination",
+    "lang": "en"
+  },
+  {
+    "id": "812",
+    "keyword": "143",
+    "label": "Other industries - Desalination",
+    "lang": "it"
+  },
+  {
+    "id": "141",
+    "keyword": "140",
+    "label": "Professional fishing",
+    "lang": "en"
+  },
+  {
+    "id": "809",
+    "keyword": "140",
+    "label": "Professional fishing",
+    "lang": "it"
+  },
+  {
+    "id": "160",
+    "keyword": "159",
+    "label": "Protected areas",
+    "lang": "en"
+  },
+  {
+    "id": "828",
+    "keyword": "159",
+    "label": "Protected areas",
+    "lang": "it"
+  },
+  {
+    "id": "142",
+    "keyword": "141",
+    "label": "Recreational fishing",
+    "lang": "en"
+  },
+  {
+    "id": "810",
+    "keyword": "141",
+    "label": "Recreational fishing",
+    "lang": "it"
+  },
+  {
+    "id": "150",
+    "keyword": "149",
+    "label": "Transport - Anchorage area",
+    "lang": "en"
+  },
+  {
+    "id": "818",
+    "keyword": "149",
+    "label": "Transport - Anchorage area",
+    "lang": "it"
+  },
+  {
+    "id": "149",
+    "keyword": "148",
+    "label": "Transport - Harbours",
+    "lang": "en"
+  },
+  {
+    "id": "817",
+    "keyword": "148",
+    "label": "Transport - Harbours",
+    "lang": "it"
+  },
+  {
+    "id": "151",
+    "keyword": "150",
+    "label": "Transport - Maritime traffic",
+    "lang": "en"
+  },
+  {
+    "id": "819",
+    "keyword": "150",
+    "label": "Transport - Maritime traffic",
+    "lang": "it"
+  },
+  {
+    "id": "152",
+    "keyword": "151",
+    "label": "Transport - Transport trends",
+    "lang": "en"
+  },
+  {
+    "id": "820",
+    "keyword": "151",
+    "label": "Transport - Transport trends",
+    "lang": "it"
+  },
+  {
+    "id": "154",
+    "keyword": "153",
+    "label": "Utilities - Electricity gas and thermal power distribution services",
+    "lang": "en"
+  },
+  {
+    "id": "822",
+    "keyword": "153",
+    "label": "Utilities - Electricity gas and thermal power distribution services",
+    "lang": "it"
+  },
+  {
+    "id": "158",
+    "keyword": "157",
+    "label": "Utilities - Submarine cables",
+    "lang": "en"
+  },
+  {
+    "id": "826",
+    "keyword": "157",
+    "label": "Utilities - Submarine cables",
+    "lang": "it"
+  },
+  {
+    "id": "157",
+    "keyword": "156",
+    "label": "Utilities - Submarine outfall",
+    "lang": "en"
+  },
+  {
+    "id": "825",
+    "keyword": "156",
+    "label": "Utilities - Submarine outfall",
+    "lang": "it"
+  },
+  {
+    "id": "155",
+    "keyword": "154",
+    "label": "Utilities - Waste treatment",
+    "lang": "en"
+  },
+  {
+    "id": "823",
+    "keyword": "154",
+    "label": "Utilities - Waste treatment",
+    "lang": "it"
+  },
+  {
+    "id": "156",
+    "keyword": "155",
+    "label": "Utilities - Water and sewage infrastructure",
+    "lang": "en"
+  },
+  {
+    "id": "824",
+    "keyword": "155",
+    "label": "Utilities - Water and sewage infrastructure",
+    "lang": "it"
+  },
+  {
+    "id": "180",
+    "keyword": "179",
+    "label": "Biochemistry - Ammonium",
+    "lang": "en"
+  },
+  {
+    "id": "793",
+    "keyword": "179",
+    "label": "Biochemistry - Ammonium",
+    "lang": "it"
+  },
+  {
+    "id": "183",
+    "keyword": "182",
+    "label": "Biochemistry - Chlorophyll-a",
+    "lang": "en"
+  },
+  {
+    "id": "796",
+    "keyword": "182",
+    "label": "Biochemistry - Chlorophyll-a",
+    "lang": "it"
+  },
+  {
+    "id": "177",
+    "keyword": "176",
+    "label": "Biochemistry - Inorganic carbon",
+    "lang": "en"
+  },
+  {
+    "id": "790",
+    "keyword": "176",
+    "label": "Biochemistry - Inorganic carbon",
+    "lang": "it"
+  },
+  {
+    "id": "181",
+    "keyword": "180",
+    "label": "Biochemistry - Nitrate",
+    "lang": "en"
+  },
+  {
+    "id": "794",
+    "keyword": "180",
+    "label": "Biochemistry - Nitrate",
+    "lang": "it"
+  },
+  {
+    "id": "176",
+    "keyword": "175",
+    "label": "Biochemistry - Nutrients",
+    "lang": "en"
+  },
+  {
+    "id": "789",
+    "keyword": "175",
+    "label": "Biochemistry - Nutrients",
+    "lang": "it"
+  },
+  {
+    "id": "175",
+    "keyword": "174",
+    "label": "Biochemistry - Oxygen",
+    "lang": "en"
+  },
+  {
+    "id": "788",
+    "keyword": "174",
+    "label": "Biochemistry - Oxygen",
+    "lang": "it"
+  },
+  {
+    "id": "179",
+    "keyword": "178",
+    "label": "Biochemistry - Particulate matter",
+    "lang": "en"
+  },
+  {
+    "id": "792",
+    "keyword": "178",
+    "label": "Biochemistry - Particulate matter",
+    "lang": "it"
+  },
+  {
+    "id": "182",
+    "keyword": "181",
+    "label": "Biochemistry - Stable carbon isotopes",
+    "lang": "en"
+  },
+  {
+    "id": "795",
+    "keyword": "181",
+    "label": "Biochemistry - Stable carbon isotopes",
+    "lang": "it"
+  },
+  {
+    "id": "178",
+    "keyword": "177",
+    "label": "Biochemistry - Transient tracers",
+    "lang": "en"
+  },
+  {
+    "id": "791",
+    "keyword": "177",
+    "label": "Biochemistry - Transient tracers",
+    "lang": "it"
+  },
+  {
+    "id": "164",
+    "keyword": "163",
+    "label": "Physics - Bathymetry",
+    "lang": "en"
+  },
+  {
+    "id": "777",
+    "keyword": "163",
+    "label": "Physics - Bathymetry",
+    "lang": "it"
+  },
+  {
+    "id": "173",
+    "keyword": "172",
+    "label": "Physics - Ocean surface heat flux",
+    "lang": "en"
+  },
+  {
+    "id": "786",
+    "keyword": "172",
+    "label": "Physics - Ocean surface heat flux",
+    "lang": "it"
+  },
+  {
+    "id": "163",
+    "keyword": "162",
+    "label": "Physics - Ocean surface stress",
+    "lang": "en"
+  },
+  {
+    "id": "776",
+    "keyword": "162",
+    "label": "Physics - Ocean surface stress",
+    "lang": "it"
+  },
+  {
+    "id": "165",
+    "keyword": "164",
+    "label": "Physics - Sea ice",
+    "lang": "en"
+  },
+  {
+    "id": "778",
+    "keyword": "164",
+    "label": "Physics - Sea ice",
+    "lang": "it"
+  },
+  {
+    "id": "162",
+    "keyword": "161",
+    "label": "Physics - Sea state",
+    "lang": "en"
+  },
+  {
+    "id": "775",
+    "keyword": "161",
+    "label": "Physics - Sea state",
+    "lang": "it"
+  },
+  {
+    "id": "166",
+    "keyword": "165",
+    "label": "Physics - Sea surface height",
+    "lang": "en"
+  },
+  {
+    "id": "779",
+    "keyword": "165",
+    "label": "Physics - Sea surface height",
+    "lang": "it"
+  },
+  {
+    "id": "171",
+    "keyword": "170",
+    "label": "Physics - Sea surface salinity",
+    "lang": "en"
+  },
+  {
+    "id": "784",
+    "keyword": "170",
+    "label": "Physics - Sea surface salinity",
+    "lang": "it"
+  },
+  {
+    "id": "167",
+    "keyword": "166",
+    "label": "Physics - Sea surface temperature",
+    "lang": "en"
+  },
+  {
+    "id": "780",
+    "keyword": "166",
+    "label": "Physics - Sea surface temperature",
+    "lang": "it"
+  },
+  {
+    "id": "170",
+    "keyword": "169",
+    "label": "Physics - Subsurface currents",
+    "lang": "en"
+  },
+  {
+    "id": "783",
+    "keyword": "169",
+    "label": "Physics - Subsurface currents",
+    "lang": "it"
+  },
+  {
+    "id": "172",
+    "keyword": "171",
+    "label": "Physics - Subsurface salinity",
+    "lang": "en"
+  },
+  {
+    "id": "785",
+    "keyword": "171",
+    "label": "Physics - Subsurface salinity",
+    "lang": "it"
+  },
+  {
+    "id": "168",
+    "keyword": "167",
+    "label": "Physics - Subsurface temperature",
+    "lang": "en"
+  },
+  {
+    "id": "781",
+    "keyword": "167",
+    "label": "Physics - Subsurface temperature",
+    "lang": "it"
+  },
+  {
+    "id": "169",
+    "keyword": "168",
+    "label": "Physics - Surface currents",
+    "lang": "en"
+  },
+  {
+    "id": "782",
+    "keyword": "168",
+    "label": "Physics - Surface currents",
+    "lang": "it"
+  },
+  {
+    "id": "174",
+    "keyword": "173",
+    "label": "Physics - Waves",
+    "lang": "en"
+  },
+  {
+    "id": "787",
+    "keyword": "173",
+    "label": "Physics - Waves",
+    "lang": "it"
+  },
+  {
+    "id": "223",
+    "keyword": "222",
+    "label": "Coastal Tourism - Accommodation - I55",
+    "lang": "en"
+  },
+  {
+    "id": "869",
+    "keyword": "222",
+    "label": "Coastal Tourism - Accommodation - I55",
+    "lang": "it"
+  },
+  {
+    "id": "222",
+    "keyword": "221",
+    "label": "Coastal Tourism - Air transport - H51",
+    "lang": "en"
+  },
+  {
+    "id": "868",
+    "keyword": "221",
+    "label": "Coastal Tourism - Air transport - H51",
+    "lang": "it"
+  },
+  {
+    "id": "227",
+    "keyword": "226",
+    "label": "Coastal Tourism - Culture and entertainment - R90-92",
+    "lang": "en"
+  },
+  {
+    "id": "873",
+    "keyword": "226",
+    "label": "Coastal Tourism - Culture and entertainment - R90-92",
+    "lang": "it"
+  },
+  {
+    "id": "224",
+    "keyword": "223",
+    "label": "Coastal Tourism - Food and beverage service activities - I56",
+    "lang": "en"
+  },
+  {
+    "id": "870",
+    "keyword": "223",
+    "label": "Coastal Tourism - Food and beverage service activities - I56",
+    "lang": "it"
+  },
+  {
+    "id": "220",
+    "keyword": "219",
+    "label": "Coastal Tourism - Land transport - H49",
+    "lang": "en"
+  },
+  {
+    "id": "866",
+    "keyword": "219",
+    "label": "Coastal Tourism - Land transport - H49",
+    "lang": "it"
+  },
+  {
+    "id": "225",
+    "keyword": "224",
+    "label": "Coastal Tourism - Renting and leasing of motor vehicles, recreational and sports gods - N77",
+    "lang": "en"
+  },
+  {
+    "id": "871",
+    "keyword": "224",
+    "label": "Coastal Tourism - Renting and leasing of motor vehicles, recreational and sports gods - N77",
+    "lang": "it"
+  },
+  {
+    "id": "226",
+    "keyword": "225",
+    "label": "Coastal Tourism - Travel agency, tour operator reservation service and related activities - N79",
+    "lang": "en"
+  },
+  {
+    "id": "872",
+    "keyword": "225",
+    "label": "Coastal Tourism - Travel agency, tour operator reservation service and related activities - N79",
+    "lang": "it"
+  },
+  {
+    "id": "221",
+    "keyword": "220",
+    "label": "Coastal Tourism - Water transport - H50",
+    "lang": "en"
+  },
+  {
+    "id": "867",
+    "keyword": "220",
+    "label": "Coastal Tourism - Water transport - H50",
+    "lang": "it"
+  },
+  {
+    "id": "230",
+    "keyword": "229",
+    "label": "Construction - Construction of water project - F4291",
+    "lang": "en"
+  },
+  {
+    "id": "876",
+    "keyword": "229",
+    "label": "Construction - Construction of water project - F4291",
+    "lang": "it"
+  },
+  {
+    "id": "228",
+    "keyword": "227",
+    "label": "Energy - Production of electricity - D3511",
+    "lang": "en"
+  },
+  {
+    "id": "874",
+    "keyword": "227",
+    "label": "Energy - Production of electricity - D3511",
+    "lang": "it"
+  },
+  {
+    "id": "208",
+    "keyword": "207",
+    "label": "Extraction of aggregates - Operation of gravel and sand pits; mining of clays and kaolin - B0812",
+    "lang": "en"
+  },
+  {
+    "id": "854",
+    "keyword": "207",
+    "label": "Extraction of aggregates - Operation of gravel and sand pits; mining of clays and kaolin - B0812",
+    "lang": "it"
+  },
+  {
+    "id": "209",
+    "keyword": "208",
+    "label": "Extraction of aggregates - Other mining and quarrying - B0899",
+    "lang": "en"
+  },
+  {
+    "id": "855",
+    "keyword": "208",
+    "label": "Extraction of aggregates - Other mining and quarrying - B0899",
+    "lang": "it"
+  },
+  {
+    "id": "207",
+    "keyword": "206",
+    "label": "Extraction of aggregates - Quarrying of ornamental and building stone, limestone, gypsum, chalk and slate - B0811",
+    "lang": "en"
+  },
+  {
+    "id": "853",
+    "keyword": "206",
+    "label": "Extraction of aggregates - Quarrying of ornamental and building stone, limestone, gypsum, chalk and slate - B0811",
+    "lang": "it"
+  },
+  {
+    "id": "204",
+    "keyword": "203",
+    "label": "Extraction of oil and gas - Extraction of crude petroleum - B0610",
+    "lang": "en"
+  },
+  {
+    "id": "850",
+    "keyword": "203",
+    "label": "Extraction of oil and gas - Extraction of crude petroleum - B0610",
+    "lang": "it"
+  },
+  {
+    "id": "205",
+    "keyword": "204",
+    "label": "Extraction of oil and gas - Extraction of natural gas - B0620",
+    "lang": "en"
+  },
+  {
+    "id": "851",
+    "keyword": "204",
+    "label": "Extraction of oil and gas - Extraction of natural gas - B0620",
+    "lang": "it"
+  },
+  {
+    "id": "206",
+    "keyword": "205",
+    "label": "Extraction of oil and gas - Support activities for petroleum and natural gas extraction - B0910",
+    "lang": "en"
+  },
+  {
+    "id": "852",
+    "keyword": "205",
+    "label": "Extraction of oil and gas - Support activities for petroleum and natural gas extraction - B0910",
+    "lang": "it"
+  },
+  {
+    "id": "201",
+    "keyword": "200",
+    "label": "Fisheries and Aquaculture - Marine aquaculture - A0321",
+    "lang": "en"
+  },
+  {
+    "id": "847",
+    "keyword": "200",
+    "label": "Fisheries and Aquaculture - Marine aquaculture - A0321",
+    "lang": "it"
+  },
+  {
+    "id": "200",
+    "keyword": "199",
+    "label": "Fisheries and Aquaculture - Marine fishing - A0311",
+    "lang": "en"
+  },
+  {
+    "id": "846",
+    "keyword": "199",
+    "label": "Fisheries and Aquaculture - Marine fishing - A0311",
+    "lang": "it"
+  },
+  {
+    "id": "203",
+    "keyword": "202",
+    "label": "Fisheries and Aquaculture - Processing and preserving of fish, crustaceans and molluscs - C1020",
+    "lang": "en"
+  },
+  {
+    "id": "849",
+    "keyword": "202",
+    "label": "Fisheries and Aquaculture - Processing and preserving of fish, crustaceans and molluscs - C1020",
+    "lang": "it"
+  },
+  {
+    "id": "202",
+    "keyword": "201",
+    "label": "Fisheries and Aquaculture - Wholesale of other food, including fish, crustaceans and molluscs - G4638",
+    "lang": "en"
+  },
+  {
+    "id": "848",
+    "keyword": "201",
+    "label": "Fisheries and Aquaculture - Wholesale of other food, including fish, crustaceans and molluscs - G4638",
+    "lang": "it"
+  },
+  {
+    "id": "216",
+    "keyword": "215",
+    "label": "Maritime Transport - Other transportation support activities - H5229",
+    "lang": "en"
+  },
+  {
+    "id": "862",
+    "keyword": "215",
+    "label": "Maritime Transport - Other transportation support activities - H5229",
+    "lang": "it"
+  },
+  {
+    "id": "217",
+    "keyword": "216",
+    "label": "Maritime Transport - Rental and leasing services of water transport equipment - N7734",
+    "lang": "en"
+  },
+  {
+    "id": "863",
+    "keyword": "216",
+    "label": "Maritime Transport - Rental and leasing services of water transport equipment - N7734",
+    "lang": "it"
+  },
+  {
+    "id": "215",
+    "keyword": "214",
+    "label": "Maritime Transport - Sea and coastal freight water transport - H5020",
+    "lang": "en"
+  },
+  {
+    "id": "861",
+    "keyword": "214",
+    "label": "Maritime Transport - Sea and coastal freight water transport - H5020",
+    "lang": "it"
+  },
+  {
+    "id": "214",
+    "keyword": "213",
+    "label": "Maritime Transport - Sea and coastal passenger water transport - H5010",
+    "lang": "en"
+  },
+  {
+    "id": "860",
+    "keyword": "213",
+    "label": "Maritime Transport - Sea and coastal passenger water transport - H5010",
+    "lang": "it"
+  },
+  {
+    "id": "229",
+    "keyword": "228",
+    "label": "Military - Defence activities - O8422",
+    "lang": "en"
+  },
+  {
+    "id": "875",
+    "keyword": "228",
+    "label": "Military - Defence activities - O8422",
+    "lang": "it"
+  },
+  {
+    "id": "219",
+    "keyword": "218",
+    "label": "Ports - Service activities incidental to water transportation - H5222",
+    "lang": "en"
+  },
+  {
+    "id": "865",
+    "keyword": "218",
+    "label": "Ports - Service activities incidental to water transportation - H5222",
+    "lang": "it"
+  },
+  {
+    "id": "218",
+    "keyword": "217",
+    "label": "Ports - Warehousing and storage services - H5210",
+    "lang": "en"
+  },
+  {
+    "id": "864",
+    "keyword": "217",
+    "label": "Ports - Warehousing and storage services - H5210",
+    "lang": "it"
+  },
+  {
+    "id": "210",
+    "keyword": "209",
+    "label": "Seabed mining - Mining of iron ores - B0710",
+    "lang": "en"
+  },
+  {
+    "id": "856",
+    "keyword": "209",
+    "label": "Seabed mining - Mining of iron ores - B0710",
+    "lang": "it"
+  },
+  {
+    "id": "212",
+    "keyword": "211",
+    "label": "Seabed mining - Mining of other non-ferrous metal ores - B0729",
+    "lang": "en"
+  },
+  {
+    "id": "858",
+    "keyword": "211",
+    "label": "Seabed mining - Mining of other non-ferrous metal ores - B0729",
+    "lang": "it"
+  },
+  {
+    "id": "211",
+    "keyword": "210",
+    "label": "Seabed mining - Mining of uranium and thorium ores - B0721",
+    "lang": "en"
+  },
+  {
+    "id": "857",
+    "keyword": "210",
+    "label": "Seabed mining - Mining of uranium and thorium ores - B0721",
+    "lang": "it"
+  },
+  {
+    "id": "213",
+    "keyword": "212",
+    "label": "Seabed mining - Support services to other mining and quarrying - B0990",
+    "lang": "en"
+  },
+  {
+    "id": "859",
+    "keyword": "212",
+    "label": "Seabed mining - Support services to other mining and quarrying - B0990",
+    "lang": "it"
+  },
+  {
+    "id": "236",
+    "keyword": "235",
+    "label": "Employment rate",
+    "lang": "en"
+  },
+  {
+    "id": "882",
+    "keyword": "235",
+    "label": "Employment rate",
+    "lang": "it"
+  },
+  {
+    "id": "237",
+    "keyword": "236",
+    "label": "Income distribution",
+    "lang": "en"
+  },
+  {
+    "id": "883",
+    "keyword": "236",
+    "label": "Income distribution",
+    "lang": "it"
+  },
+  {
+    "id": "238",
+    "keyword": "237",
+    "label": "Migration patterns",
+    "lang": "en"
+  },
+  {
+    "id": "884",
+    "keyword": "237",
+    "label": "Migration patterns",
+    "lang": "it"
+  },
+  {
+    "id": "234",
+    "keyword": "233",
+    "label": "Population density",
+    "lang": "en"
+  },
+  {
+    "id": "880",
+    "keyword": "233",
+    "label": "Population density",
+    "lang": "it"
+  },
+  {
+    "id": "233",
+    "keyword": "232",
+    "label": "Population growth",
+    "lang": "en"
+  },
+  {
+    "id": "879",
+    "keyword": "232",
+    "label": "Population growth",
+    "lang": "it"
+  },
+  {
+    "id": "235",
+    "keyword": "234",
+    "label": "Unemployment in coastal areas",
+    "lang": "en"
+  },
+  {
+    "id": "881",
+    "keyword": "234",
+    "label": "Unemployment in coastal areas",
+    "lang": "it"
+  },
+  {
+    "id": "231",
+    "keyword": "230",
+    "label": "Economic",
+    "lang": "en"
+  },
+  {
+    "id": "877",
+    "keyword": "230",
+    "label": "Economic",
+    "lang": "it"
+  },
+  {
+    "id": "232",
+    "keyword": "231",
+    "label": "Social",
+    "lang": "en"
+  },
+  {
+    "id": "878",
+    "keyword": "231",
+    "label": "Social",
+    "lang": "it"
+  },
+  {
+    "id": "364",
+    "keyword": "363",
+    "label": "Abruzzo marine area",
+    "lang": "en"
+  },
+  {
+    "id": "471",
+    "keyword": "363",
+    "label": "Abruzzo marine area",
+    "lang": "it"
+  },
+  {
+    "id": "365",
+    "keyword": "364",
+    "label": "Abruzzo terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "472",
+    "keyword": "364",
+    "label": "Abruzzo terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "366",
+    "keyword": "365",
+    "label": "Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "473",
+    "keyword": "365",
+    "label": "Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "367",
+    "keyword": "366",
+    "label": "Aegean Sea",
+    "lang": "en"
+  },
+  {
+    "id": "474",
+    "keyword": "366",
+    "label": "Aegean Sea",
+    "lang": "it"
+  },
+  {
+    "id": "368",
+    "keyword": "367",
+    "label": "Albania marine area",
+    "lang": "en"
+  },
+  {
+    "id": "475",
+    "keyword": "367",
+    "label": "Albania marine area",
+    "lang": "it"
+  },
+  {
+    "id": "369",
+    "keyword": "368",
+    "label": "Albania terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "476",
+    "keyword": "368",
+    "label": "Albania terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "370",
+    "keyword": "369",
+    "label": "Algeria terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "477",
+    "keyword": "369",
+    "label": "Algeria terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "371",
+    "keyword": "370",
+    "label": "Apulia marine area",
+    "lang": "en"
+  },
+  {
+    "id": "478",
+    "keyword": "370",
+    "label": "Apulia marine area",
+    "lang": "it"
+  },
+  {
+    "id": "372",
+    "keyword": "371",
+    "label": "Apulia terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "479",
+    "keyword": "371",
+    "label": "Apulia terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "373",
+    "keyword": "372",
+    "label": "Atlantic - Canary waters - case study",
+    "lang": "en"
+  },
+  {
+    "id": "480",
+    "keyword": "372",
+    "label": "Atlantic - Canary waters - case study",
+    "lang": "it"
+  },
+  {
+    "id": "374",
+    "keyword": "373",
+    "label": "Baltic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "481",
+    "keyword": "373",
+    "label": "Baltic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "375",
+    "keyword": "374",
+    "label": "BassetMed Project study area SoS",
+    "lang": "en"
+  },
+  {
+    "id": "482",
+    "keyword": "374",
+    "label": "BassetMed Project study area SoS",
+    "lang": "it"
+  },
+  {
+    "id": "376",
+    "keyword": "375",
+    "label": "Black Sea",
+    "lang": "en"
+  },
+  {
+    "id": "483",
+    "keyword": "375",
+    "label": "Black Sea",
+    "lang": "it"
+  },
+  {
+    "id": "377",
+    "keyword": "376",
+    "label": "Black Sea - Bosphorus Site (BRIDGE-BS Project)",
+    "lang": "en"
+  },
+  {
+    "id": "484",
+    "keyword": "376",
+    "label": "Black Sea - Bosphorus Site (BRIDGE-BS Project)",
+    "lang": "it"
+  },
+  {
+    "id": "378",
+    "keyword": "377",
+    "label": "Black Sea - Danube Delta Site (BRIDGE-BS Project)",
+    "lang": "en"
+  },
+  {
+    "id": "485",
+    "keyword": "377",
+    "label": "Black Sea - Danube Delta Site (BRIDGE-BS Project)",
+    "lang": "it"
+  },
+  {
+    "id": "379",
+    "keyword": "378",
+    "label": "Black Sea - Varna & Burgas Site (BRIDGE-BS Project)",
+    "lang": "en"
+  },
+  {
+    "id": "486",
+    "keyword": "378",
+    "label": "Black Sea - Varna & Burgas Site (BRIDGE-BS Project)",
+    "lang": "it"
+  },
+  {
+    "id": "380",
+    "keyword": "379",
+    "label": "Black Sea West (BRIDGE-BS Project)",
+    "lang": "en"
+  },
+  {
+    "id": "487",
+    "keyword": "379",
+    "label": "Black Sea West (BRIDGE-BS Project)",
+    "lang": "it"
+  },
+  {
+    "id": "381",
+    "keyword": "380",
+    "label": "Bosnia & Herzegovina terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "488",
+    "keyword": "380",
+    "label": "Bosnia & Herzegovina terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "382",
+    "keyword": "381",
+    "label": "Bosnian and Herzegovinian part of the Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "489",
+    "keyword": "381",
+    "label": "Bosnian and Herzegovinian part of the Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "384",
+    "keyword": "383",
+    "label": "Croatia terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "491",
+    "keyword": "383",
+    "label": "Croatia terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "383",
+    "keyword": "382",
+    "label": "Croatian part of the Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "490",
+    "keyword": "382",
+    "label": "Croatian part of the Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "385",
+    "keyword": "384",
+    "label": "Cypriote part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "492",
+    "keyword": "384",
+    "label": "Cypriote part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "386",
+    "keyword": "385",
+    "label": "Cyprus terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "493",
+    "keyword": "385",
+    "label": "Cyprus terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "387",
+    "keyword": "386",
+    "label": "Dubrovnik-Neretva terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "494",
+    "keyword": "386",
+    "label": "Dubrovnik-Neretva terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "389",
+    "keyword": "388",
+    "label": "Egypt terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "496",
+    "keyword": "388",
+    "label": "Egypt terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "388",
+    "keyword": "387",
+    "label": "Egyptian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "495",
+    "keyword": "387",
+    "label": "Egyptian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "390",
+    "keyword": "389",
+    "label": "Emilia Romagna marine area",
+    "lang": "en"
+  },
+  {
+    "id": "497",
+    "keyword": "389",
+    "label": "Emilia Romagna marine area",
+    "lang": "it"
+  },
+  {
+    "id": "391",
+    "keyword": "390",
+    "label": "Emilia Romagna terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "498",
+    "keyword": "390",
+    "label": "Emilia Romagna terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "392",
+    "keyword": "391",
+    "label": "European Seas",
+    "lang": "en"
+  },
+  {
+    "id": "499",
+    "keyword": "391",
+    "label": "European Seas",
+    "lang": "it"
+  },
+  {
+    "id": "393",
+    "keyword": "392",
+    "label": "European Seas Extended",
+    "lang": "en"
+  },
+  {
+    "id": "500",
+    "keyword": "392",
+    "label": "European Seas Extended",
+    "lang": "it"
+  },
+  {
+    "id": "394",
+    "keyword": "393",
+    "label": "European terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "501",
+    "keyword": "393",
+    "label": "European terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "395",
+    "keyword": "394",
+    "label": "France marine areas",
+    "lang": "en"
+  },
+  {
+    "id": "502",
+    "keyword": "394",
+    "label": "France marine areas",
+    "lang": "it"
+  },
+  {
+    "id": "396",
+    "keyword": "395",
+    "label": "France terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "503",
+    "keyword": "395",
+    "label": "France terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "397",
+    "keyword": "396",
+    "label": "French part of the Mediterranean Sea",
+    "lang": "en"
+  },
+  {
+    "id": "504",
+    "keyword": "396",
+    "label": "French part of the Mediterranean Sea",
+    "lang": "it"
+  },
+  {
+    "id": "398",
+    "keyword": "397",
+    "label": "Friuli Venezia Giulia marine area",
+    "lang": "en"
+  },
+  {
+    "id": "505",
+    "keyword": "397",
+    "label": "Friuli Venezia Giulia marine area",
+    "lang": "it"
+  },
+  {
+    "id": "399",
+    "keyword": "398",
+    "label": "Friuli Venezia Giulia terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "506",
+    "keyword": "398",
+    "label": "Friuli Venezia Giulia terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "400",
+    "keyword": "399",
+    "label": "Gaza Strip terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "507",
+    "keyword": "399",
+    "label": "Gaza Strip terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "401",
+    "keyword": "400",
+    "label": "Greece marine area",
+    "lang": "en"
+  },
+  {
+    "id": "508",
+    "keyword": "400",
+    "label": "Greece marine area",
+    "lang": "it"
+  },
+  {
+    "id": "402",
+    "keyword": "401",
+    "label": "Greece terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "509",
+    "keyword": "401",
+    "label": "Greece terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "403",
+    "keyword": "402",
+    "label": "Greek part of the Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "510",
+    "keyword": "402",
+    "label": "Greek part of the Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "404",
+    "keyword": "403",
+    "label": "Greek part of the Aegean Sea",
+    "lang": "en"
+  },
+  {
+    "id": "511",
+    "keyword": "403",
+    "label": "Greek part of the Aegean Sea",
+    "lang": "it"
+  },
+  {
+    "id": "405",
+    "keyword": "404",
+    "label": "Greek part of the Ionian Sea",
+    "lang": "en"
+  },
+  {
+    "id": "512",
+    "keyword": "404",
+    "label": "Greek part of the Ionian Sea",
+    "lang": "it"
+  },
+  {
+    "id": "406",
+    "keyword": "405",
+    "label": "Greek part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "513",
+    "keyword": "405",
+    "label": "Greek part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "407",
+    "keyword": "406",
+    "label": "Ionian Sea",
+    "lang": "en"
+  },
+  {
+    "id": "514",
+    "keyword": "406",
+    "label": "Ionian Sea",
+    "lang": "it"
+  },
+  {
+    "id": "409",
+    "keyword": "408",
+    "label": "Israel terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "516",
+    "keyword": "408",
+    "label": "Israel terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "408",
+    "keyword": "407",
+    "label": "Israeli part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "515",
+    "keyword": "407",
+    "label": "Israeli part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "410",
+    "keyword": "409",
+    "label": "Istria County marine area",
+    "lang": "en"
+  },
+  {
+    "id": "517",
+    "keyword": "409",
+    "label": "Istria County marine area",
+    "lang": "it"
+  },
+  {
+    "id": "411",
+    "keyword": "410",
+    "label": "Istria County terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "518",
+    "keyword": "410",
+    "label": "Istria County terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "412",
+    "keyword": "411",
+    "label": "Italian part of the Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "519",
+    "keyword": "411",
+    "label": "Italian part of the Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "413",
+    "keyword": "412",
+    "label": "Italian part of the Ionian Sea",
+    "lang": "en"
+  },
+  {
+    "id": "520",
+    "keyword": "412",
+    "label": "Italian part of the Ionian Sea",
+    "lang": "it"
+  },
+  {
+    "id": "414",
+    "keyword": "413",
+    "label": "Italian part of the Ligurian Sea",
+    "lang": "en"
+  },
+  {
+    "id": "521",
+    "keyword": "413",
+    "label": "Italian part of the Ligurian Sea",
+    "lang": "it"
+  },
+  {
+    "id": "415",
+    "keyword": "414",
+    "label": "Italian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "522",
+    "keyword": "414",
+    "label": "Italian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "416",
+    "keyword": "415",
+    "label": "Italian part of the Mediterranean Sea - Western Basin",
+    "lang": "en"
+  },
+  {
+    "id": "523",
+    "keyword": "415",
+    "label": "Italian part of the Mediterranean Sea - Western Basin",
+    "lang": "it"
+  },
+  {
+    "id": "417",
+    "keyword": "416",
+    "label": "Italian part of the Tyrrhenian Sea",
+    "lang": "en"
+  },
+  {
+    "id": "524",
+    "keyword": "416",
+    "label": "Italian part of the Tyrrhenian Sea",
+    "lang": "it"
+  },
+  {
+    "id": "418",
+    "keyword": "417",
+    "label": "Italy marine areas",
+    "lang": "en"
+  },
+  {
+    "id": "525",
+    "keyword": "417",
+    "label": "Italy marine areas",
+    "lang": "it"
+  },
+  {
+    "id": "419",
+    "keyword": "418",
+    "label": "Italy terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "526",
+    "keyword": "418",
+    "label": "Italy terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "420",
+    "keyword": "419",
+    "label": "Joint regime area Croatia / Slovenia part of the Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "527",
+    "keyword": "419",
+    "label": "Joint regime area Croatia / Slovenia part of the Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "421",
+    "keyword": "420",
+    "label": "LA SPEZIA test area",
+    "lang": "en"
+  },
+  {
+    "id": "528",
+    "keyword": "420",
+    "label": "LA SPEZIA test area",
+    "lang": "it"
+  },
+  {
+    "id": "422",
+    "keyword": "421",
+    "label": "Lebanese part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "529",
+    "keyword": "421",
+    "label": "Lebanese part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "423",
+    "keyword": "422",
+    "label": "Lebanon terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "530",
+    "keyword": "422",
+    "label": "Lebanon terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "425",
+    "keyword": "424",
+    "label": "Libya terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "532",
+    "keyword": "424",
+    "label": "Libya terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "424",
+    "keyword": "423",
+    "label": "Libyan part of the Mediterranean Sea - Eastern",
+    "lang": "en"
+  },
+  {
+    "id": "531",
+    "keyword": "423",
+    "label": "Libyan part of the Mediterranean Sea - Eastern",
+    "lang": "it"
+  },
+  {
+    "id": "426",
+    "keyword": "425",
+    "label": "Malta marine area",
+    "lang": "en"
+  },
+  {
+    "id": "533",
+    "keyword": "425",
+    "label": "Malta marine area",
+    "lang": "it"
+  },
+  {
+    "id": "427",
+    "keyword": "426",
+    "label": "Malta terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "534",
+    "keyword": "426",
+    "label": "Malta terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "428",
+    "keyword": "427",
+    "label": "Marche marine area",
+    "lang": "en"
+  },
+  {
+    "id": "535",
+    "keyword": "427",
+    "label": "Marche marine area",
+    "lang": "it"
+  },
+  {
+    "id": "429",
+    "keyword": "428",
+    "label": "Marche terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "536",
+    "keyword": "428",
+    "label": "Marche terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "430",
+    "keyword": "429",
+    "label": "Mediterranean Sea",
+    "lang": "en"
+  },
+  {
+    "id": "537",
+    "keyword": "429",
+    "label": "Mediterranean Sea",
+    "lang": "it"
+  },
+  {
+    "id": "431",
+    "keyword": "430",
+    "label": "Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "538",
+    "keyword": "430",
+    "label": "Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "432",
+    "keyword": "431",
+    "label": "Mediterranean Sea - EU part of the Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "539",
+    "keyword": "431",
+    "label": "Mediterranean Sea - EU part of the Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "433",
+    "keyword": "432",
+    "label": "Mediterranean Sea - non EU part of the Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "540",
+    "keyword": "432",
+    "label": "Mediterranean Sea - non EU part of the Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "434",
+    "keyword": "433",
+    "label": "Molise marine area",
+    "lang": "en"
+  },
+  {
+    "id": "541",
+    "keyword": "433",
+    "label": "Molise marine area",
+    "lang": "it"
+  },
+  {
+    "id": "435",
+    "keyword": "434",
+    "label": "Molise terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "542",
+    "keyword": "434",
+    "label": "Molise terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "436",
+    "keyword": "435",
+    "label": "Montenegrin part of the Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "543",
+    "keyword": "435",
+    "label": "Montenegrin part of the Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "437",
+    "keyword": "436",
+    "label": "Montenegro terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "544",
+    "keyword": "436",
+    "label": "Montenegro terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "438",
+    "keyword": "437",
+    "label": "Morocco terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "545",
+    "keyword": "437",
+    "label": "Morocco terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "439",
+    "keyword": "438",
+    "label": "MSP4Biodiversity - NAS Buffered area",
+    "lang": "en"
+  },
+  {
+    "id": "546",
+    "keyword": "438",
+    "label": "MSP4Biodiversity - NAS Buffered area",
+    "lang": "it"
+  },
+  {
+    "id": "440",
+    "keyword": "439",
+    "label": "MSP4Biodiversity - NAS Pilot area",
+    "lang": "en"
+  },
+  {
+    "id": "547",
+    "keyword": "439",
+    "label": "MSP4Biodiversity - NAS Pilot area",
+    "lang": "it"
+  },
+  {
+    "id": "441",
+    "keyword": "440",
+    "label": "MSP4Biodiversity - NTS Buffered area",
+    "lang": "en"
+  },
+  {
+    "id": "548",
+    "keyword": "440",
+    "label": "MSP4Biodiversity - NTS Buffered area",
+    "lang": "it"
+  },
+  {
+    "id": "442",
+    "keyword": "441",
+    "label": "MSP4Biodiversity - NTS Pilot area",
+    "lang": "en"
+  },
+  {
+    "id": "549",
+    "keyword": "441",
+    "label": "MSP4Biodiversity - NTS Pilot area",
+    "lang": "it"
+  },
+  {
+    "id": "443",
+    "keyword": "442",
+    "label": "MSP4Biodiversity - SoS Buffered area",
+    "lang": "en"
+  },
+  {
+    "id": "550",
+    "keyword": "442",
+    "label": "MSP4Biodiversity - SoS Buffered area",
+    "lang": "it"
+  },
+  {
+    "id": "444",
+    "keyword": "443",
+    "label": "MSP4Biodiversity - SoS Pilot area",
+    "lang": "en"
+  },
+  {
+    "id": "551",
+    "keyword": "443",
+    "label": "MSP4Biodiversity - SoS Pilot area",
+    "lang": "it"
+  },
+  {
+    "id": "445",
+    "keyword": "444",
+    "label": "Northen Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "552",
+    "keyword": "444",
+    "label": "Northen Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "446",
+    "keyword": "445",
+    "label": "Northern Adriatic Sea (SOUNDSCAPE-SATURN Projects)",
+    "lang": "en"
+  },
+  {
+    "id": "553",
+    "keyword": "445",
+    "label": "Northern Adriatic Sea (SOUNDSCAPE-SATURN Projects)",
+    "lang": "it"
+  },
+  {
+    "id": "447",
+    "keyword": "446",
+    "label": "Palestinian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "554",
+    "keyword": "446",
+    "label": "Palestinian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "448",
+    "keyword": "447",
+    "label": "Romanian and Bulgarian part of the Black Sea",
+    "lang": "en"
+  },
+  {
+    "id": "555",
+    "keyword": "447",
+    "label": "Romanian and Bulgarian part of the Black Sea",
+    "lang": "it"
+  },
+  {
+    "id": "449",
+    "keyword": "448",
+    "label": "Sardinia territorial waters",
+    "lang": "en"
+  },
+  {
+    "id": "556",
+    "keyword": "448",
+    "label": "Sardinia territorial waters",
+    "lang": "it"
+  },
+  {
+    "id": "450",
+    "keyword": "449",
+    "label": "Sea of Azov",
+    "lang": "en"
+  },
+  {
+    "id": "557",
+    "keyword": "449",
+    "label": "Sea of Azov",
+    "lang": "it"
+  },
+  {
+    "id": "451",
+    "keyword": "450",
+    "label": "Slovenia MSP area",
+    "lang": "en"
+  },
+  {
+    "id": "558",
+    "keyword": "450",
+    "label": "Slovenia MSP area",
+    "lang": "it"
+  },
+  {
+    "id": "452",
+    "keyword": "451",
+    "label": "Slovenia MSP Transboundary Study",
+    "lang": "en"
+  },
+  {
+    "id": "559",
+    "keyword": "451",
+    "label": "Slovenia MSP Transboundary Study",
+    "lang": "it"
+  },
+  {
+    "id": "454",
+    "keyword": "453",
+    "label": "Slovenia  terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "561",
+    "keyword": "453",
+    "label": "Slovenia  terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "453",
+    "keyword": "452",
+    "label": "Slovenian part of the Adriatic Sea",
+    "lang": "en"
+  },
+  {
+    "id": "560",
+    "keyword": "452",
+    "label": "Slovenian part of the Adriatic Sea",
+    "lang": "it"
+  },
+  {
+    "id": "455",
+    "keyword": "454",
+    "label": "South of Sicily marine area - GSA 16",
+    "lang": "en"
+  },
+  {
+    "id": "562",
+    "keyword": "454",
+    "label": "South of Sicily marine area - GSA 16",
+    "lang": "it"
+  },
+  {
+    "id": "456",
+    "keyword": "455",
+    "label": "Spain marine area",
+    "lang": "en"
+  },
+  {
+    "id": "563",
+    "keyword": "455",
+    "label": "Spain marine area",
+    "lang": "it"
+  },
+  {
+    "id": "457",
+    "keyword": "456",
+    "label": "Spain  terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "564",
+    "keyword": "456",
+    "label": "Spain  terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "458",
+    "keyword": "457",
+    "label": "Spanish part of the Mediterranean Sea",
+    "lang": "en"
+  },
+  {
+    "id": "565",
+    "keyword": "457",
+    "label": "Spanish part of the Mediterranean Sea",
+    "lang": "it"
+  },
+  {
+    "id": "459",
+    "keyword": "458",
+    "label": "Strait of Sicily",
+    "lang": "en"
+  },
+  {
+    "id": "566",
+    "keyword": "458",
+    "label": "Strait of Sicily",
+    "lang": "it"
+  },
+  {
+    "id": "460",
+    "keyword": "459",
+    "label": "Strait of Sicily Case Study",
+    "lang": "en"
+  },
+  {
+    "id": "567",
+    "keyword": "459",
+    "label": "Strait of Sicily Case Study",
+    "lang": "it"
+  },
+  {
+    "id": "462",
+    "keyword": "461",
+    "label": "Syria terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "569",
+    "keyword": "461",
+    "label": "Syria terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "461",
+    "keyword": "460",
+    "label": "Syrian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "568",
+    "keyword": "460",
+    "label": "Syrian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "464",
+    "keyword": "463",
+    "label": "Tunisia terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "571",
+    "keyword": "463",
+    "label": "Tunisia terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "463",
+    "keyword": "462",
+    "label": "Tunisian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "570",
+    "keyword": "462",
+    "label": "Tunisian part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "465",
+    "keyword": "464",
+    "label": "Turkish part of the Aegean Sea",
+    "lang": "en"
+  },
+  {
+    "id": "572",
+    "keyword": "464",
+    "label": "Turkish part of the Aegean Sea",
+    "lang": "it"
+  },
+  {
+    "id": "466",
+    "keyword": "465",
+    "label": "Turkish part of the Mediterranean Sea - Eastern Basin",
+    "lang": "en"
+  },
+  {
+    "id": "573",
+    "keyword": "465",
+    "label": "Turkish part of the Mediterranean Sea - Eastern Basin",
+    "lang": "it"
+  },
+  {
+    "id": "467",
+    "keyword": "466",
+    "label": "Turkish part of the Sea of Marmara",
+    "lang": "en"
+  },
+  {
+    "id": "574",
+    "keyword": "466",
+    "label": "Turkish part of the Sea of Marmara",
+    "lang": "it"
+  },
+  {
+    "id": "468",
+    "keyword": "467",
+    "label": "Veneto marine area",
+    "lang": "en"
+  },
+  {
+    "id": "575",
+    "keyword": "467",
+    "label": "Veneto marine area",
+    "lang": "it"
+  },
+  {
+    "id": "469",
+    "keyword": "468",
+    "label": "Veneto terrestrial area",
+    "lang": "en"
+  },
+  {
+    "id": "576",
+    "keyword": "468",
+    "label": "Veneto terrestrial area",
+    "lang": "it"
+  },
+  {
+    "id": "470",
+    "keyword": "469",
+    "label": "Worldwide",
+    "lang": "en"
+  },
+  {
+    "id": "577",
+    "keyword": "469",
+    "label": "Worldwide",
+    "lang": "it"
+  }
+]

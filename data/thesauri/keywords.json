@@ -1,0 +1,2606 @@
+[
+  {
+    "about": "MSP_Italy",
+    "altLabel": "MSP_Italy",
+    "id": "1",
+    "thesaurus": "1"
+  },
+  {
+    "about": "ReMAP",
+    "altLabel": "ReMAP",
+    "id": "470",
+    "thesaurus": "1"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-coastline-geomorphology",
+    "altLabel": "mspdf-coastal-land-use-and-planning-coastline-geomorphology",
+    "id": "197",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-coastline-trends",
+    "altLabel": "mspdf-coastal-land-use-and-planning-coastline-trends",
+    "id": "198",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-land-use-land-cover-coastline",
+    "altLabel": "mspdf-coastal-land-use-and-planning-land-use-land-cover-coastline",
+    "id": "189",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-land-use-land-cover-land-cover-coast-characteristics",
+    "altLabel": "mspdf-coastal-land-use-and-planning-land-use-land-cover-land-cover-coast-characteristics",
+    "id": "187",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-land-use-land-cover-land-cover-corine-land-cover",
+    "altLabel": "mspdf-coastal-land-use-and-planning-land-use-land-cover-land-cover-corine-land-cover",
+    "id": "185",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-land-use-land-cover-land-cover-high-resolution-layer",
+    "altLabel": "mspdf-coastal-land-use-and-planning-land-use-land-cover-land-cover-high-resolution-layer",
+    "id": "186",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-land-use-land-cover-lclu-coastal-zone-hotspot-thematic-mapping",
+    "altLabel": "mspdf-coastal-land-use-and-planning-land-use-land-cover-lclu-coastal-zone-hotspot-thematic-mapping",
+    "id": "188",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-land-use-land-cover-soil-sealing-area",
+    "altLabel": "mspdf-coastal-land-use-and-planning-land-use-land-cover-soil-sealing-area",
+    "id": "183",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-land-use-land-cover-soil-sealing-trend",
+    "altLabel": "mspdf-coastal-land-use-and-planning-land-use-land-cover-soil-sealing-trend",
+    "id": "184",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-planning-coordination-sub-national",
+    "altLabel": "mspdf-coastal-land-use-and-planning-planning-coordination-sub-national",
+    "id": "194",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-planning-operational-local",
+    "altLabel": "mspdf-coastal-land-use-and-planning-planning-operational-local",
+    "id": "196",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-planning-operational-sub-national",
+    "altLabel": "mspdf-coastal-land-use-and-planning-planning-operational-sub-national",
+    "id": "195",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-planning-strategic-local",
+    "altLabel": "mspdf-coastal-land-use-and-planning-planning-strategic-local",
+    "id": "193",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-planning-strategic-national-eu-regulated",
+    "altLabel": "mspdf-coastal-land-use-and-planning-planning-strategic-national-eu-regulated",
+    "id": "190",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-planning-strategic-national-others",
+    "altLabel": "mspdf-coastal-land-use-and-planning-planning-strategic-national-others",
+    "id": "191",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/coastal-land-use-and-planning/types-planning-strategic-subnational",
+    "altLabel": "mspdf-coastal-land-use-and-planning-planning-strategic-subnational",
+    "id": "192",
+    "thesaurus": "7"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/conservation/types-internationally-designated-protected-areas-marine-and-coastal",
+    "altLabel": "mspdf-conservation-types-internationally-designated-protected-areas-marine-and-coastal",
+    "id": "128",
+    "thesaurus": "5"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/conservation/types-nationally-designated-protected-areas-marine-and-coastal",
+    "altLabel": "mspdf-conservation-types-nationally-designated-protected-areas-marine-and-coastal",
+    "id": "130",
+    "thesaurus": "5"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/conservation/types-potential-other-effective-area-based-conservation-measures-oecms",
+    "altLabel": "mspdf-conservation-types-potential-other-effective-area-based-conservation-measures-oecms",
+    "id": "131",
+    "thesaurus": "5"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/conservation/types-recognised-areas-of-protectionconservation-value",
+    "altLabel": "mspdf-conservation-types-recognised-areas-of-protectionconservation-value",
+    "id": "132",
+    "thesaurus": "5"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/conservation/types-regionally-designated-protected-areas-marine-and-coastal",
+    "altLabel": "mspdf-conservation-types-regionally-designated-protected-areas-marine-and-coastal",
+    "id": "129",
+    "thesaurus": "5"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/conservation/zonation-no",
+    "altLabel": "mspdf-conservation-zonation-no",
+    "id": "134",
+    "thesaurus": "5"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/conservation/zonation-yes",
+    "altLabel": "mspdf-conservation-zonation-yes",
+    "id": "133",
+    "thesaurus": "5"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-abiotic-6111-natural-abiotic-characteristics-of-nature-that-enable-active-or-passive-physical-and-experiential-interactions",
+    "altLabel": "mspdf-ecosystem-services-cultural-abiotic-6111-natural-abiotic-characteristics-of-nature-that-enable-active-or-passive-physical-and-experiential-interactions",
+    "id": "322",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-abiotic-6121-natural-abiotic-characteristics-of-nature-that-enable-intellectual-interactions",
+    "altLabel": "mspdf-ecosystem-services-cultural-abiotic-6121-natural-abiotic-characteristics-of-nature-that-enable-intellectual-interactions",
+    "id": "323",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-abiotic-6211-natural-abiotic-characteristics-of-nature-that-enable-spiritual-symbolic-and-other-interactions",
+    "altLabel": "mspdf-ecosystem-services-cultural-abiotic-6211-natural-abiotic-characteristics-of-nature-that-enable-spiritual-symbolic-and-other-interactions",
+    "id": "324",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-abiotic-6221-natural-abiotic-characteristics-or-features-of-nature-that-have-either-an-existence-option-or-bequest-value",
+    "altLabel": "mspdf-ecosystem-services-cultural-abiotic-6221-natural-abiotic-characteristics-or-features-of-nature-that-have-either-an-existence-option-or-bequest-value",
+    "id": "325",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-abiotic-63xx-other",
+    "altLabel": "mspdf-ecosystem-services-cultural-abiotic-63xx-other",
+    "id": "326",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3111-characteristics-of-living-systems-that-that-enable-activities-promoting-health-recuperation-or-enjoyment-through-active-or-immersive-interactions",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3111-characteristics-of-living-systems-that-that-enable-activities-promoting-health-recuperation-or-enjoyment-through-active-or-immersive-interactions",
+    "id": "284",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3112-characteristics-of-living-systems-that-enable-activities-promoting-health-recuperation-or-enjoyment-through-passive-or-observational-interactions",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3112-characteristics-of-living-systems-that-enable-activities-promoting-health-recuperation-or-enjoyment-through-passive-or-observational-interactions",
+    "id": "285",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3121-characteristics-of-living-systems-that-enable-scientific-investigation-or-the-creation-of-traditional-ecological-knowledge",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3121-characteristics-of-living-systems-that-enable-scientific-investigation-or-the-creation-of-traditional-ecological-knowledge",
+    "id": "286",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3122-characteristics-of-living-systems-that-enable-education-and-training",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3122-characteristics-of-living-systems-that-enable-education-and-training",
+    "id": "287",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3123-characteristics-of-living-systems-that-are-resonant-in-terms-of-culture-or-heritage",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3123-characteristics-of-living-systems-that-are-resonant-in-terms-of-culture-or-heritage",
+    "id": "288",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3124-characteristics-of-living-systems-that-enable-aesthetic-experiences",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3124-characteristics-of-living-systems-that-enable-aesthetic-experiences",
+    "id": "289",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3211-elements-of-living-systems-that-have-symbolic-meaning",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3211-elements-of-living-systems-that-have-symbolic-meaning",
+    "id": "290",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3212-elements-of-living-systems-that-have-sacred-or-religious-meaning",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3212-elements-of-living-systems-that-have-sacred-or-religious-meaning",
+    "id": "291",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3213-elements-of-living-systems-used-for-entertainment-or-representation",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3213-elements-of-living-systems-used-for-entertainment-or-representation",
+    "id": "292",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3221-characteristics-or-features-of-living-systems-that-have-an-existence-value",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3221-characteristics-or-features-of-living-systems-that-have-an-existence-value",
+    "id": "293",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-3222-characteristics-or-features-of-living-systems-that-have-an-option-or-bequest-value",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-3222-characteristics-or-features-of-living-systems-that-have-an-option-or-bequest-value",
+    "id": "294",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-cultural-biotic-33xx-other",
+    "altLabel": "mspdf-ecosystem-services-cultural-biotic-33xx-other",
+    "id": "295",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4211-surface-water-for-drinking",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4211-surface-water-for-drinking",
+    "id": "296",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4212-surface-water-used-as-a-material-non-drinking-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4212-surface-water-used-as-a-material-non-drinking-purposes",
+    "id": "297",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4213-freshwater-surface-water-used-as-an-energy-source",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4213-freshwater-surface-water-used-as-an-energy-source",
+    "id": "298",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4214-coastal-and-marine-water-used-as-energy-source",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4214-coastal-and-marine-water-used-as-energy-source",
+    "id": "299",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4221-ground-and-subsurface-water-for-drinking",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4221-ground-and-subsurface-water-for-drinking",
+    "id": "300",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4222-ground-water-and-subsurface-used-as-a-material-non-drinking-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4222-ground-water-and-subsurface-used-as-a-material-non-drinking-purposes",
+    "id": "301",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4223-ground-water-and-subsurface-used-as-an-energy-source",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4223-ground-water-and-subsurface-used-as-an-energy-source",
+    "id": "302",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-42xx-other",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-42xx-other",
+    "id": "303",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4311-mineral-substances-used-for-nutritional-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4311-mineral-substances-used-for-nutritional-purposes",
+    "id": "304",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4312-mineral-substances-used-for-material-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4312-mineral-substances-used-for-material-purposes",
+    "id": "305",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4313-mineral-substances-used-for-as-an-energy-source",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4313-mineral-substances-used-for-as-an-energy-source",
+    "id": "306",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4321-non-mineral-substances-or-ecosystem-properties-used-for-nutritional-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4321-non-mineral-substances-or-ecosystem-properties-used-for-nutritional-purposes",
+    "id": "307",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4322-non-mineral-substances-used-for-materials",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4322-non-mineral-substances-used-for-materials",
+    "id": "308",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4323-wind-energy",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4323-wind-energy",
+    "id": "309",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4324-solar-energy",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4324-solar-energy",
+    "id": "310",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4325-geothermal",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4325-geothermal",
+    "id": "311",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-abiotic-4326-other",
+    "altLabel": "mspdf-ecosystem-services-provisioning-abiotic-4326-other",
+    "id": "312",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1112-fibres-and-other-materials-from-cultivated-plants-fungi-algae-and-bacteria-for-direct-use-or-processing-excluding-genetic-materials",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1112-fibres-and-other-materials-from-cultivated-plants-fungi-algae-and-bacteria-for-direct-use-or-processing-excluding-genetic-materials",
+    "id": "238",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1113-cultivated-plants-including-fungi-algae-grown-as-a-source-of-energy",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1113-cultivated-plants-including-fungi-algae-grown-as-a-source-of-energy",
+    "id": "239",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1121-plants-cultivated-by-in-situ-aquaculture-grown-for-nutritional-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1121-plants-cultivated-by-in-situ-aquaculture-grown-for-nutritional-purposes",
+    "id": "240",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1122-fibres-and-other-materials-from-in-situ-aquaculture-for-direct-use-or-processing-excluding-genetic-materials",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1122-fibres-and-other-materials-from-in-situ-aquaculture-for-direct-use-or-processing-excluding-genetic-materials",
+    "id": "241",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1123-plants-cultivated-by-in-situ-aquaculture-grown-as-an-energy-source",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1123-plants-cultivated-by-in-situ-aquaculture-grown-as-an-energy-source",
+    "id": "242",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1131-animals-reared-for-nutritional-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1131-animals-reared-for-nutritional-purposes",
+    "id": "243",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1132-fibres-and-other-materials-from-reared-animals-for-direct-use-or-processing-excluding-genetic-materials",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1132-fibres-and-other-materials-from-reared-animals-for-direct-use-or-processing-excluding-genetic-materials",
+    "id": "244",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1133-animals-reared-to-provide-energy-including-mechanical",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1133-animals-reared-to-provide-energy-including-mechanical",
+    "id": "245",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1141-animals-reared-by-in-situ-aquaculture-for-nutritional-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1141-animals-reared-by-in-situ-aquaculture-for-nutritional-purposes",
+    "id": "246",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1142-fibres-and-other-materials-from-animals-grown-by-in-situ-aquaculture-for-direct-use-or-processing-excluding-genetic-materials",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1142-fibres-and-other-materials-from-animals-grown-by-in-situ-aquaculture-for-direct-use-or-processing-excluding-genetic-materials",
+    "id": "247",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1143-animals-reared-by-in-situ-aquaculture-as-an-energy-source",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1143-animals-reared-by-in-situ-aquaculture-as-an-energy-source",
+    "id": "248",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1151-wild-plants-terrestrial-and-aquatic-including-fungi-algae-used-for-nutrition",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1151-wild-plants-terrestrial-and-aquatic-including-fungi-algae-used-for-nutrition",
+    "id": "249",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1152-fibres-and-other-materials-from-wild-plants-for-direct-use-or-processing-excluding-genetic-materials",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1152-fibres-and-other-materials-from-wild-plants-for-direct-use-or-processing-excluding-genetic-materials",
+    "id": "250",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1153-wild-plants-terrestrial-and-aquatic-including-fungi-algae-used-as-a-source-of-energy",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1153-wild-plants-terrestrial-and-aquatic-including-fungi-algae-used-as-a-source-of-energy",
+    "id": "251",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1161-wild-animals-terrestrial-and-aquatic-used-for-nutritional-purposes",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1161-wild-animals-terrestrial-and-aquatic-used-for-nutritional-purposes",
+    "id": "252",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1162-fibres-and-other-materials-from-wild-animals-for-direct-use-or-processing-excluding-genetic-materials",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1162-fibres-and-other-materials-from-wild-animals-for-direct-use-or-processing-excluding-genetic-materials",
+    "id": "253",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1163-wild-animals-terrestrial-and-aquatic-used-as-a-source-of-energy",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1163-wild-animals-terrestrial-and-aquatic-used-as-a-source-of-energy",
+    "id": "254",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1211-seeds-spores-and-other-plant-materials-collected-for-maintaining-or-establishing-a-population",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1211-seeds-spores-and-other-plant-materials-collected-for-maintaining-or-establishing-a-population",
+    "id": "255",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1212-higher-and-lower-plants-whole-organisms-used-to-breed-new-strains-or-varieties",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1212-higher-and-lower-plants-whole-organisms-used-to-breed-new-strains-or-varieties",
+    "id": "256",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1213-individual-genes-extracted-from-higher-and-lower-plants-for-the-design-and-construction-of-new-biological-entities",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1213-individual-genes-extracted-from-higher-and-lower-plants-for-the-design-and-construction-of-new-biological-entities",
+    "id": "257",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1221-animal-material-collected-for-the-purposes-of-maintaining-or-establishing-a-population",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1221-animal-material-collected-for-the-purposes-of-maintaining-or-establishing-a-population",
+    "id": "258",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1222-wild-animals-whole-organisms-used-to-breed-new-strains-or-varieties",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1222-wild-animals-whole-organisms-used-to-breed-new-strains-or-varieties",
+    "id": "259",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-1223-individual-genes-extracted-from-organisms-for-the-design-and-construction-of-new-biological-entities",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-1223-individual-genes-extracted-from-organisms-for-the-design-and-construction-of-new-biological-entities",
+    "id": "260",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-provisioning-biotic-13xx-other",
+    "altLabel": "mspdf-ecosystem-services-provisioning-biotic-13xx-other",
+    "id": "261",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5111-dilution-by-freshwater-and-marine-ecosystems",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5111-dilution-by-freshwater-and-marine-ecosystems",
+    "id": "313",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5112-dilution-by-atmosphere",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5112-dilution-by-atmosphere",
+    "id": "314",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5113-mediation-by-other-chemical-or-physical-means-eg-via-filtration-sequestration-storage-or-accumulation",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5113-mediation-by-other-chemical-or-physical-means-eg-via-filtration-sequestration-storage-or-accumulation",
+    "id": "315",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5121-mediation-of-nuisances-by-abiotic-structures-or-processes",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5121-mediation-of-nuisances-by-abiotic-structures-or-processes",
+    "id": "316",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5211-mass-flows",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5211-mass-flows",
+    "id": "317",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5212-liquid-flows",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5212-liquid-flows",
+    "id": "318",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5213-gaseous-flows",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5213-gaseous-flows",
+    "id": "319",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-5221-maintenance-and-regulation-by-inorganic-natural-chemical-and-physical-processes",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-5221-maintenance-and-regulation-by-inorganic-natural-chemical-and-physical-processes",
+    "id": "320",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-abiotic-53xx-other",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-abiotic-53xx-other",
+    "id": "321",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2111-bio-remediation-by-micro-organisms-algae-plants-and-animals",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2111-bio-remediation-by-micro-organisms-algae-plants-and-animals",
+    "id": "262",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2112-filtrationsequestrationstorageaccumulation-by-micro-organisms-algae-plants-and-animals",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2112-filtrationsequestrationstorageaccumulation-by-micro-organisms-algae-plants-and-animals",
+    "id": "263",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2121-smell-reduction",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2121-smell-reduction",
+    "id": "264",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2122-noise-attenuation",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2122-noise-attenuation",
+    "id": "265",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2123-visual-screening",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2123-visual-screening",
+    "id": "266",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2211-control-of-erosion-rates",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2211-control-of-erosion-rates",
+    "id": "267",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2212-buffering-and-attenuation-of-mass-movement",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2212-buffering-and-attenuation-of-mass-movement",
+    "id": "268",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2213-hydrological-cycle-and-water-flow-regulation-including-flood-control-and-coastal-protection",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2213-hydrological-cycle-and-water-flow-regulation-including-flood-control-and-coastal-protection",
+    "id": "269",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2214-wind-protection",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2214-wind-protection",
+    "id": "270",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2215-fire-protection",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2215-fire-protection",
+    "id": "271",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2221-pollination-or-gamete-dispersal-in-a-marine-context",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2221-pollination-or-gamete-dispersal-in-a-marine-context",
+    "id": "272",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2222-seed-dispersal",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2222-seed-dispersal",
+    "id": "273",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2223-maintaining-nursery-populations-and-habitats-including-gene-pool-protection",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2223-maintaining-nursery-populations-and-habitats-including-gene-pool-protection",
+    "id": "274",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2231-pest-control-including-invasive-species",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2231-pest-control-including-invasive-species",
+    "id": "275",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2232-disease-control",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2232-disease-control",
+    "id": "276",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2241-weathering-processes-and-their-effect-on-soil-quality",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2241-weathering-processes-and-their-effect-on-soil-quality",
+    "id": "277",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2242-decomposition-and-fixing-processes-and-their-effect-on-soil-quality",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2242-decomposition-and-fixing-processes-and-their-effect-on-soil-quality",
+    "id": "278",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2251-regulation-of-the-chemical-condition-of-freshwaters-by-living-processes",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2251-regulation-of-the-chemical-condition-of-freshwaters-by-living-processes",
+    "id": "279",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2252-regulation-of-the-chemical-condition-of-salt-waters-by-living-processes",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2252-regulation-of-the-chemical-condition-of-salt-waters-by-living-processes",
+    "id": "280",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2261-regulation-of-chemical-composition-of-atmosphere-and-oceans",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2261-regulation-of-chemical-composition-of-atmosphere-and-oceans",
+    "id": "281",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-2262-regulation-of-temperature-and-humidity-including-ventilation-and-transpiration",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-2262-regulation-of-temperature-and-humidity-including-ventilation-and-transpiration",
+    "id": "282",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/ecosystem-services/cices-classes-regulation-maintenance-biotic-23xx-other",
+    "altLabel": "mspdf-ecosystem-services-regulation-maintenance-biotic-23xx-other",
+    "id": "283",
+    "thesaurus": "9"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-ecosystems-including-food-webs-biological-characteristics",
+    "altLabel": "mspdf-environment-msfd-classes-ecosystems-including-food-webs-biological-characteristics",
+    "id": "47",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-ecosystems-including-food-webs-chemical-characteristics",
+    "altLabel": "mspdf-environment-msfd-classes-ecosystems-including-food-webs-chemical-characteristics",
+    "id": "46",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-ecosystems-including-food-webs-functions-and-processes",
+    "altLabel": "mspdf-environment-msfd-classes-ecosystems-including-food-webs-functions-and-processes",
+    "id": "48",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-ecosystems-including-food-webs-physical-and-hydrological-characteristics",
+    "altLabel": "mspdf-environment-msfd-classes-ecosystems-including-food-webs-physical-and-hydrological-characteristics",
+    "id": "45",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-habitats-seabed",
+    "altLabel": "mspdf-environment-msfd-classes-habitats-seabed",
+    "id": "44",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-habitats-water-column",
+    "altLabel": "mspdf-environment-msfd-classes-habitats-water-column",
+    "id": "43",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-biological-disturbance-of-species-due-to-human-presence",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-biological-disturbance-of-species-due-to-human-presence",
+    "id": "52",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-biological-extraction-of-or-mortalityinjury-to-wild-species",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-biological-extraction-of-or-mortalityinjury-to-wild-species",
+    "id": "53",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-biological-input-of-genetically-modified-species-and-translocation-of-native-species",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-biological-input-of-genetically-modified-species-and-translocation-of-native-species",
+    "id": "51",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-biological-input-of-microbial-pathogens",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-biological-input-of-microbial-pathogens",
+    "id": "50",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-biological-input-or-spread-of-non-indigenous-species",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-biological-input-or-spread-of-non-indigenous-species",
+    "id": "49",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-physical-changes-to-hydrological-conditions",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-physical-changes-to-hydrological-conditions",
+    "id": "56",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-physical-physical-disturbance-to-seabed",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-physical-physical-disturbance-to-seabed",
+    "id": "54",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-physical-physical-loss",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-physical-physical-loss",
+    "id": "55",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-substances-litter-and-energy-input-of-anthropogenic-sound",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-substances-litter-and-energy-input-of-anthropogenic-sound",
+    "id": "61",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-substances-litter-and-energy-input-of-litter",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-substances-litter-and-energy-input-of-litter",
+    "id": "60",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-substances-litter-and-energy-input-of-nutrients-diffuse-sources-point-sources-atmospheric-deposition",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-substances-litter-and-energy-input-of-nutrients-diffuse-sources-point-sources-atmospheric-deposition",
+    "id": "57",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-substances-litter-and-energy-input-of-organic-matter-diffuse-sources-and-point-sources",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-substances-litter-and-energy-input-of-organic-matter-diffuse-sources-and-point-sources",
+    "id": "58",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-substances-litter-and-energy-input-of-other-forms-of-energy",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-substances-litter-and-energy-input-of-other-forms-of-energy",
+    "id": "62",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-substances-litter-and-energy-input-of-other-substances-diffuse-sources-point-sources-atmospheric-deposition-acute-events",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-substances-litter-and-energy-input-of-other-substances-diffuse-sources-point-sources-atmospheric-deposition-acute-events",
+    "id": "59",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-pressure-substances-litter-and-energy-input-of-water-point-sources",
+    "altLabel": "mspdf-environment-msfd-classes-pressure-substances-litter-and-energy-input-of-water-point-sources",
+    "id": "63",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-species-cephalopods",
+    "altLabel": "mspdf-environment-msfd-classes-species-cephalopods",
+    "id": "40",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-species-fish",
+    "altLabel": "mspdf-environment-msfd-classes-species-fish",
+    "id": "42",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-species-mammals",
+    "altLabel": "mspdf-environment-msfd-classes-species-mammals",
+    "id": "39",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-species-marine-birds",
+    "altLabel": "mspdf-environment-msfd-classes-species-marine-birds",
+    "id": "38",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-classes-species-reptiles",
+    "altLabel": "mspdf-environment-msfd-classes-species-reptiles",
+    "id": "41",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1-biodiversity-birds",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1-biodiversity-birds",
+    "id": "64",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1-biodiversity-cephalopods",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1-biodiversity-cephalopods",
+    "id": "68",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1-biodiversity-fish",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1-biodiversity-fish",
+    "id": "67",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1-biodiversity-mammals",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1-biodiversity-mammals",
+    "id": "65",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1-biodiversity-pelagic-habitats",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1-biodiversity-pelagic-habitats",
+    "id": "69",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1-biodiversity-reptiles",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1-biodiversity-reptiles",
+    "id": "66",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d10-marine-litter",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d10-marine-litter",
+    "id": "78",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d10c1-litter-excluding-micro-litter",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d10c1-litter-excluding-micro-litter",
+    "id": "116",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d10c2-micro-litter",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d10c2-micro-litter",
+    "id": "117",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d10c3-litter-ingested",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d10c3-litter-ingested",
+    "id": "118",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d10c4-adverse-effects-of-litter",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d10c4-adverse-effects-of-litter",
+    "id": "119",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d11-energy-including-underwater-noise",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d11-energy-including-underwater-noise",
+    "id": "79",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d11c1-anthropogenic-impulsive-sound",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d11c1-anthropogenic-impulsive-sound",
+    "id": "120",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d11c2-anthropogenic-continuous-low-frequency-sound",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d11c2-anthropogenic-continuous-low-frequency-sound",
+    "id": "121",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1c1-mortality-rate-from-incidental-by-catch",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1c1-mortality-rate-from-incidental-by-catch",
+    "id": "80",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1c2-population-abundance",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1c2-population-abundance",
+    "id": "81",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1c3-population-demographic-characteristics",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1c3-population-demographic-characteristics",
+    "id": "82",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1c4-population-distributional-range-and-pattern",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1c4-population-distributional-range-and-pattern",
+    "id": "83",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1c5-habitat-for-the-species",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1c5-habitat-for-the-species",
+    "id": "84",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d1c6-pelagic-habitat-condition",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d1c6-pelagic-habitat-condition",
+    "id": "85",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d2-non-indigenous-species",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d2-non-indigenous-species",
+    "id": "70",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d2c1-newly-introduced-nis",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d2c1-newly-introduced-nis",
+    "id": "86",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d2c2-established-nis",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d2c2-established-nis",
+    "id": "87",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d2c3-adverse-effects-of-nis",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d2c3-adverse-effects-of-nis",
+    "id": "88",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d3-commercial-fish-and-shellfish",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d3-commercial-fish-and-shellfish",
+    "id": "71",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d3c1-fishing-mortality-rate-f",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d3c1-fishing-mortality-rate-f",
+    "id": "89",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d3c2-spawning-stock-biomass-ssb",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d3c2-spawning-stock-biomass-ssb",
+    "id": "90",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d3c3-population-agesize-distribution",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d3c3-population-agesize-distribution",
+    "id": "91",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d4-food-websd1-biodiversity-ecosystems",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d4-food-websd1-biodiversity-ecosystems",
+    "id": "72",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d4c1-trophic-guild-species-diversity",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d4c1-trophic-guild-species-diversity",
+    "id": "92",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d4c2-abundance-across-trophic-guilds",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d4c2-abundance-across-trophic-guilds",
+    "id": "93",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d4c3-trophic-guild-size-distribution",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d4c3-trophic-guild-size-distribution",
+    "id": "94",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d4c4-trophic-guild-productivity",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d4c4-trophic-guild-productivity",
+    "id": "95",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5-eutrophication",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5-eutrophication",
+    "id": "73",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c1-nutrient-concentrations",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c1-nutrient-concentrations",
+    "id": "96",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c2-chlorophyll-a-concentration",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c2-chlorophyll-a-concentration",
+    "id": "97",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c3-harmful-algal-blooms",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c3-harmful-algal-blooms",
+    "id": "98",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c4-photic-limit",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c4-photic-limit",
+    "id": "99",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c5-dissolved-oxygen-concentration",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c5-dissolved-oxygen-concentration",
+    "id": "100",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c6-opportunistic-macroalgae-of-benthic-habitats",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c6-opportunistic-macroalgae-of-benthic-habitats",
+    "id": "101",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c7-macrophyte-communities-of-benthic-habitats",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c7-macrophyte-communities-of-benthic-habitats",
+    "id": "102",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d5c8-macrofaunal-communities-of-benthic-habitats",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d5c8-macrofaunal-communities-of-benthic-habitats",
+    "id": "103",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d6-sea-floor-integrityd1-biodiversity-benthic-habitats",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d6-sea-floor-integrityd1-biodiversity-benthic-habitats",
+    "id": "74",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d6c1-physical-loss-of-the-seabed",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d6c1-physical-loss-of-the-seabed",
+    "id": "104",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d6c2-physical-disturbance-to-the-seabed",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d6c2-physical-disturbance-to-the-seabed",
+    "id": "105",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d6c3-adverse-effects-from-physical-disturbance",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d6c3-adverse-effects-from-physical-disturbance",
+    "id": "106",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d6c4-benthic-habitat-extent",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d6c4-benthic-habitat-extent",
+    "id": "107",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d6c5-benthic-habitat-condition",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d6c5-benthic-habitat-condition",
+    "id": "108",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d7-hydrographical-changes",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d7-hydrographical-changes",
+    "id": "75",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d7c1-permanent-alteration-of-hydrographical-conditions",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d7c1-permanent-alteration-of-hydrographical-conditions",
+    "id": "109",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d7c2-adverse-effects-from-permanent-alteration-of-hydrographical-conditions",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d7c2-adverse-effects-from-permanent-alteration-of-hydrographical-conditions",
+    "id": "110",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d8-contaminants",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d8-contaminants",
+    "id": "76",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d8c1-contaminant-in-environment",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d8c1-contaminant-in-environment",
+    "id": "111",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d8c2-adverse-effects-of-contaminants",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d8c2-adverse-effects-of-contaminants",
+    "id": "112",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d8c3-significant-acute-pollution-events",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d8c3-significant-acute-pollution-events",
+    "id": "113",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d8c4-adverse-effects-of-significant-acute-pollution-events",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d8c4-adverse-effects-of-significant-acute-pollution-events",
+    "id": "114",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d9-contaminants-in-seafood",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d9-contaminants-in-seafood",
+    "id": "77",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/msfd-descriptors-criteria-d9c1-contaminants-in-seafood",
+    "altLabel": "mspdf-environment-msfd-descriptors-criteria-d9c1-contaminants-in-seafood",
+    "id": "115",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/non-msfd-classes-habitats",
+    "altLabel": "mspdf-environment-non-msfd-classes-habitats",
+    "id": "123",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/non-msfd-classes-physiography-geology",
+    "altLabel": "mspdf-environment-non-msfd-classes-physiography-geology",
+    "id": "124",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/non-msfd-classes-pressures",
+    "altLabel": "mspdf-environment-non-msfd-classes-pressures",
+    "id": "125",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/non-msfd-classes-species",
+    "altLabel": "mspdf-environment-non-msfd-classes-species",
+    "id": "122",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/wfd-chemical-status",
+    "altLabel": "mspdf-environment-wfd-chemical-status",
+    "id": "127",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/environment/wfd-ecological-status",
+    "altLabel": "mspdf-environment-wfd-ecological-status",
+    "id": "126",
+    "thesaurus": "3"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-administrative-national",
+    "altLabel": "mspdf-legal-governance-planning-function-administrative-national",
+    "id": "355",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-administrative-regional",
+    "altLabel": "mspdf-legal-governance-planning-function-administrative-regional",
+    "id": "356",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-enforcement-control",
+    "altLabel": "mspdf-legal-governance-planning-function-enforcement-control",
+    "id": "358",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-enforcement-motoring",
+    "altLabel": "mspdf-legal-governance-planning-function-enforcement-motoring",
+    "id": "357",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-judicial-application-eu",
+    "altLabel": "mspdf-legal-governance-planning-function-judicial-application-eu",
+    "id": "360",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-judicial-application-international",
+    "altLabel": "mspdf-legal-governance-planning-function-judicial-application-international",
+    "id": "359",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-judicial-application-national",
+    "altLabel": "mspdf-legal-governance-planning-function-judicial-application-national",
+    "id": "361",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-legislation-eu",
+    "altLabel": "mspdf-legal-governance-planning-function-legislation-eu",
+    "id": "348",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-legislation-international",
+    "altLabel": "mspdf-legal-governance-planning-function-legislation-international",
+    "id": "347",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-legislation-national",
+    "altLabel": "mspdf-legal-governance-planning-function-legislation-national",
+    "id": "349",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-legislation-regional",
+    "altLabel": "mspdf-legal-governance-planning-function-legislation-regional",
+    "id": "350",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-planning-eu",
+    "altLabel": "mspdf-legal-governance-planning-function-planning-eu",
+    "id": "352",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-planning-international",
+    "altLabel": "mspdf-legal-governance-planning-function-planning-international",
+    "id": "351",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-planning-national",
+    "altLabel": "mspdf-legal-governance-planning-function-planning-national",
+    "id": "353",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-planning-regional",
+    "altLabel": "mspdf-legal-governance-planning-function-planning-regional",
+    "id": "354",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-strategic-eu",
+    "altLabel": "mspdf-legal-governance-planning-function-strategic-eu",
+    "id": "344",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-strategic-international",
+    "altLabel": "mspdf-legal-governance-planning-function-strategic-international",
+    "id": "343",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-strategic-national",
+    "altLabel": "mspdf-legal-governance-planning-function-strategic-national",
+    "id": "345",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/functions-strategic-regional",
+    "altLabel": "mspdf-legal-governance-planning-function-strategic-regional",
+    "id": "346",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-aquaculture",
+    "altLabel": "mspdf-legal-governance-planning-theme-aquaculture",
+    "id": "329",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-coastal-defence",
+    "altLabel": "mspdf-legal-governance-planning-theme-coastal-defence",
+    "id": "335",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-coastal-tourism",
+    "altLabel": "mspdf-legal-governance-planning-theme-coastal-tourism",
+    "id": "337",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-conservation-ie-protected-areas",
+    "altLabel": "mspdf-legal-governance-planning-theme-conservation-ie-protected-areas",
+    "id": "342",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-desalination",
+    "altLabel": "mspdf-legal-governance-planning-theme-desalination",
+    "id": "336",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-dredging-and-dumping-of-dredged-materials",
+    "altLabel": "mspdf-legal-governance-planning-theme-dredging-and-dumping-of-dredged-materials",
+    "id": "334",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-environment-eg-pollution-and-biodiversity",
+    "altLabel": "mspdf-legal-governance-planning-theme-environment-eg-pollution-and-biodiversity",
+    "id": "341",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-fisheries",
+    "altLabel": "mspdf-legal-governance-planning-theme-fisheries",
+    "id": "328",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-legal-status-maritime-zones",
+    "altLabel": "mspdf-legal-governance-planning-theme-legal-status-maritime-zones",
+    "id": "327",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-maritime-transport-and-ports",
+    "altLabel": "mspdf-legal-governance-planning-theme-maritime-transport-and-ports",
+    "id": "332",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-military-uses",
+    "altLabel": "mspdf-legal-governance-planning-theme-military-uses",
+    "id": "333",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-nautical-sports-leisure-boating-and-marinas",
+    "altLabel": "mspdf-legal-governance-planning-theme-nautical-sports-leisure-boating-and-marinas",
+    "id": "338",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-offshore-renewable-energy",
+    "altLabel": "mspdf-legal-governance-planning-theme-offshore-renewable-energy",
+    "id": "331",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-oil-gas",
+    "altLabel": "mspdf-legal-governance-planning-theme-oil-gas",
+    "id": "330",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-safety-and-surveillance",
+    "altLabel": "mspdf-legal-governance-planning-theme-safety-and-surveillance",
+    "id": "340",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/themes-underwater-cultural-heritage",
+    "altLabel": "mspdf-legal-governance-planning-theme-underwater-cultural-heritage",
+    "id": "339",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/legal-governance-planning/who-is-in-charge-who-is-in-charge",
+    "altLabel": "mspdf-legal-governance-planning-who-is-in-charge-who-is-in-charge",
+    "id": "362",
+    "thesaurus": "10"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-aquaculture-finfish",
+    "altLabel": "mspdf-maritime-activities-aquaculture-finfish",
+    "id": "135",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-aquaculture-shellfish",
+    "altLabel": "mspdf-maritime-activities-aquaculture-shellfish",
+    "id": "136",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-coastal-infrastructures-coastal-defence-works",
+    "altLabel": "mspdf-maritime-activities-coastal-infrastructures-coastal-defence-works",
+    "id": "158",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-cultural-entertainment-and-recreational-services-beaches",
+    "altLabel": "mspdf-maritime-activities-cultural-entertainment-and-recreational-services-beaches",
+    "id": "145",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-cultural-entertainment-and-recreational-services-coastal-tourism",
+    "altLabel": "mspdf-maritime-activities-cultural-entertainment-and-recreational-services-coastal-tourism",
+    "id": "146",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-cultural-entertainment-and-recreational-services-nautical-sports",
+    "altLabel": "mspdf-maritime-activities-cultural-entertainment-and-recreational-services-nautical-sports",
+    "id": "144",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-cultural-entertainment-and-recreational-services-underwater-cultural-heritage",
+    "altLabel": "mspdf-maritime-activities-cultural-entertainment-and-recreational-services-underwater-cultural-heritage",
+    "id": "147",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-energy-production-renewable-energy",
+    "altLabel": "mspdf-maritime-activities-energy-production-renewable-energy",
+    "id": "142",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-logistic-and-storage-services-offshore-supply",
+    "altLabel": "mspdf-maritime-activities-logistic-and-storage-services-offshore-supply",
+    "id": "152",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-military-areas",
+    "altLabel": "mspdf-maritime-activities-military-areas",
+    "id": "160",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-mining-and-quarrying-dredging",
+    "altLabel": "mspdf-maritime-activities-mining-and-quarrying-dredging",
+    "id": "138",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-mining-and-quarrying-dumping",
+    "altLabel": "mspdf-maritime-activities-mining-and-quarrying-dumping",
+    "id": "139",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-mining-and-quarrying-oil-gas",
+    "altLabel": "mspdf-maritime-activities-mining-and-quarrying-oil-gas",
+    "id": "137",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-other-industries-desalination",
+    "altLabel": "mspdf-maritime-activities-other-industries-desalination",
+    "id": "143",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-professional-fishing",
+    "altLabel": "mspdf-maritime-activities-professional-fishing",
+    "id": "140",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-protected-areas",
+    "altLabel": "mspdf-maritime-activities-protected-areas",
+    "id": "159",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-recreational-fishing",
+    "altLabel": "mspdf-maritime-activities-recreational-fishing",
+    "id": "141",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-transport-anchorage-area",
+    "altLabel": "mspdf-maritime-activities-transport-anchorage-area",
+    "id": "149",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-transport-harbours",
+    "altLabel": "mspdf-maritime-activities-transport-harbours",
+    "id": "148",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-transport-maritime-traffic",
+    "altLabel": "mspdf-maritime-activities-transport-maritime-traffic",
+    "id": "150",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-transport-transport-trends",
+    "altLabel": "mspdf-maritime-activities-transport-transport-trends",
+    "id": "151",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-utilities-electricity-gas-and-thermal-power-distribution-services",
+    "altLabel": "mspdf-maritime-activities-utilities-electricity-gas-and-thermal-power-distribution-services",
+    "id": "153",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-utilities-submarine-cables",
+    "altLabel": "mspdf-maritime-activities-utilities-submarine-cables",
+    "id": "157",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-utilities-submarine-outfall",
+    "altLabel": "mspdf-maritime-activities-utilities-submarine-outfall",
+    "id": "156",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-utilities-waste-treatment",
+    "altLabel": "mspdf-maritime-activities-utilities-waste-treatment",
+    "id": "154",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/maritime-activities/activity-types-utilities-water-and-sewage-infrastructure",
+    "altLabel": "mspdf-maritime-activities-utilities-water-and-sewage-infrastructure",
+    "id": "155",
+    "thesaurus": "4"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-ammonium",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-ammonium",
+    "id": "179",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-chlorophyll-a",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-chlorophyll-a",
+    "id": "182",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-inorganic-carbon",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-inorganic-carbon",
+    "id": "176",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-nitrate",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-nitrate",
+    "id": "180",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-nutrients",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-nutrients",
+    "id": "175",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-oxygen",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-oxygen",
+    "id": "174",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-particulate-matter",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-particulate-matter",
+    "id": "178",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-stable-carbon-isotopes",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-stable-carbon-isotopes",
+    "id": "181",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-biochemistry-transient-tracers",
+    "altLabel": "mspdf-oceanographic-variables-biochemistry-transient-tracers",
+    "id": "177",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-bathymetry",
+    "altLabel": "mspdf-oceanographic-variables-physics-bathymetry",
+    "id": "163",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-ocean-surface-heat-flux",
+    "altLabel": "mspdf-oceanographic-variables-physics-ocean-surface-heat-flux",
+    "id": "172",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-ocean-surface-stress",
+    "altLabel": "mspdf-oceanographic-variables-physics-ocean-surface-stress",
+    "id": "162",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-sea-ice",
+    "altLabel": "mspdf-oceanographic-variables-physics-sea-ice",
+    "id": "164",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-sea-state",
+    "altLabel": "mspdf-oceanographic-variables-physics-sea-state",
+    "id": "161",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-sea-surface-height",
+    "altLabel": "mspdf-oceanographic-variables-physics-sea-surface-height",
+    "id": "165",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-sea-surface-salinity",
+    "altLabel": "mspdf-oceanographic-variables-physics-sea-surface-salinity",
+    "id": "170",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-sea-surface-temperature",
+    "altLabel": "mspdf-oceanographic-variables-physics-sea-surface-temperature",
+    "id": "166",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-subsurface-currents",
+    "altLabel": "mspdf-oceanographic-variables-physics-subsurface-currents",
+    "id": "169",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-subsurface-salinity",
+    "altLabel": "mspdf-oceanographic-variables-physics-subsurface-salinity",
+    "id": "171",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-subsurface-temperature",
+    "altLabel": "mspdf-oceanographic-variables-physics-subsurface-temperature",
+    "id": "167",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-surface-currents",
+    "altLabel": "mspdf-oceanographic-variables-physics-surface-currents",
+    "id": "168",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/oceanographic-and-cc/variables-physics-waves",
+    "altLabel": "mspdf-oceanographic-variables-physics-waves",
+    "id": "173",
+    "thesaurus": "6"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-accommodation-i55",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-accommodation-i55",
+    "id": "222",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-air-transport-h51",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-air-transport-h51",
+    "id": "221",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-culture-and-entertainment-r90-92",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-culture-and-entertainment-r90-92",
+    "id": "226",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-food-and-beverage-service-activities-i56",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-food-and-beverage-service-activities-i56",
+    "id": "223",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-land-transport-h49",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-land-transport-h49",
+    "id": "219",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-renting-and-leasing-of-motor-vehicles-recreational-and-sports-gods-n77",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-renting-and-leasing-of-motor-vehicles-recreational-and-sports-gods-n77",
+    "id": "224",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-travel-agency-tour-operator-reservation-service-and-related-activities-n79",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-travel-agency-tour-operator-reservation-service-and-related-activities-n79",
+    "id": "225",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-coastal-tourism-water-transport-h50",
+    "altLabel": "mspdf-socio-economic-activities-coastal-tourism-water-transport-h50",
+    "id": "220",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-construction-construction-of-water-project-f4291",
+    "altLabel": "mspdf-socio-economic-activities-construction-construction-of-water-project-f4291",
+    "id": "229",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-energy-production-of-electricity-d3511",
+    "altLabel": "mspdf-socio-economic-activities-energy-production-of-electricity-d3511",
+    "id": "227",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-extraction-of-aggregates-operation-of-gravel-and-sand-pits-mining-of-clays-and-kaolin-b0812",
+    "altLabel": "mspdf-socio-economic-activities-extraction-of-aggregates-operation-of-gravel-and-sand-pits-mining-of-clays-and-kaolin-b0812",
+    "id": "207",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-extraction-of-aggregates-other-mining-and-quarrying-b0899",
+    "altLabel": "mspdf-socio-economic-activities-extraction-of-aggregates-other-mining-and-quarrying-b0899",
+    "id": "208",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-extraction-of-aggregates-quarrying-of-ornamental-and-building-stone-limestone-gypsum-chalk-and-slate-b0811",
+    "altLabel": "mspdf-socio-economic-activities-extraction-of-aggregates-quarrying-of-ornamental-and-building-stone-limestone-gypsum-chalk-and-slate-b0811",
+    "id": "206",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-extraction-of-oil-and-gas-extraction-of-crude-petroleum-b0610",
+    "altLabel": "mspdf-socio-economic-activities-extraction-of-oil-and-gas-extraction-of-crude-petroleum-b0610",
+    "id": "203",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-extraction-of-oil-and-gas-extraction-of-natural-gas-b0620",
+    "altLabel": "mspdf-socio-economic-activities-extraction-of-oil-and-gas-extraction-of-natural-gas-b0620",
+    "id": "204",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-extraction-of-oil-and-gas-support-activities-for-petroleum-and-natural-gas-extraction-b0910",
+    "altLabel": "mspdf-socio-economic-activities-extraction-of-oil-and-gas-support-activities-for-petroleum-and-natural-gas-extraction-b0910",
+    "id": "205",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-fisheries-and-aquaculture-marine-aquaculture-a0321",
+    "altLabel": "mspdf-socio-economic-activities-fisheries-and-aquaculture-marine-aquaculture-a0321",
+    "id": "200",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-fisheries-and-aquaculture-marine-fishing-a0311",
+    "altLabel": "mspdf-socio-economic-activities-fisheries-and-aquaculture-marine-fishing-a0311",
+    "id": "199",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-fisheries-and-aquaculture-processing-and-preserving-of-fish-crustaceans-and-molluscs-c1020",
+    "altLabel": "mspdf-socio-economic-activities-fisheries-and-aquaculture-processing-and-preserving-of-fish-crustaceans-and-molluscs-c1020",
+    "id": "202",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-fisheries-and-aquaculture-wholesale-of-other-food-including-fish-crustaceans-and-molluscs-g4638",
+    "altLabel": "mspdf-socio-economic-activities-fisheries-and-aquaculture-wholesale-of-other-food-including-fish-crustaceans-and-molluscs-g4638",
+    "id": "201",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-maritime-transport-other-transportation-support-activities-h5229",
+    "altLabel": "mspdf-socio-economic-activities-maritime-transport-other-transportation-support-activities-h5229",
+    "id": "215",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-maritime-transport-rental-and-leasing-services-of-water-transport-equipment-n7734",
+    "altLabel": "mspdf-socio-economic-activities-maritime-transport-rental-and-leasing-services-of-water-transport-equipment-n7734",
+    "id": "216",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-maritime-transport-sea-and-coastal-freight-water-transport-h5020",
+    "altLabel": "mspdf-socio-economic-activities-maritime-transport-sea-and-coastal-freight-water-transport-h5020",
+    "id": "214",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-maritime-transport-sea-and-coastal-passenger-water-transport-h5010",
+    "altLabel": "mspdf-socio-economic-activities-maritime-transport-sea-and-coastal-passenger-water-transport-h5010",
+    "id": "213",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-military-defence-activities-o8422",
+    "altLabel": "mspdf-socio-economic-activities-military-defence-activities-o8422",
+    "id": "228",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-ports-service-activities-incidental-to-water-transportation-h5222",
+    "altLabel": "mspdf-socio-economic-activities-ports-service-activities-incidental-to-water-transportation-h5222",
+    "id": "218",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-ports-warehousing-and-storage-services-h5210",
+    "altLabel": "mspdf-socio-economic-activities-ports-warehousing-and-storage-services-h5210",
+    "id": "217",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-seabed-mining-mining-of-iron-ores-b0710",
+    "altLabel": "mspdf-socio-economic-activities-seabed-mining-mining-of-iron-ores-b0710",
+    "id": "209",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-seabed-mining-mining-of-other-non-ferrous-metal-ores-b0729",
+    "altLabel": "mspdf-socio-economic-activities-seabed-mining-mining-of-other-non-ferrous-metal-ores-b0729",
+    "id": "211",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-seabed-mining-mining-of-uranium-and-thorium-ores-b0721",
+    "altLabel": "mspdf-socio-economic-activities-seabed-mining-mining-of-uranium-and-thorium-ores-b0721",
+    "id": "210",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/activity-types-seabed-mining-support-services-to-other-mining-and-quarrying-b0990",
+    "altLabel": "mspdf-socio-economic-activities-seabed-mining-support-services-to-other-mining-and-quarrying-b0990",
+    "id": "212",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/categories-employment-rate",
+    "altLabel": "mspdf-socio-economic-demography-employment-rate",
+    "id": "235",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/categories-income-distribution",
+    "altLabel": "mspdf-socio-economic-demography-income-distribution",
+    "id": "236",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/categories-migration-patterns",
+    "altLabel": "mspdf-socio-economic-demography-migration-patterns",
+    "id": "237",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/categories-population-density",
+    "altLabel": "mspdf-socio-economic-demography-population-density",
+    "id": "233",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/categories-population-growth",
+    "altLabel": "mspdf-socio-economic-demography-population-growth",
+    "id": "232",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/categories-unemployment-in-coastal-areas",
+    "altLabel": "mspdf-socio-economic-demography-unemployment-in-coastal-areas",
+    "id": "234",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/value-types-economic",
+    "altLabel": "mspdf-socio-economic-values-economic",
+    "id": "230",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://tools4msp.eu/mspdf/socio-economic/value-types-social",
+    "altLabel": "mspdf-socio-economic-values-social",
+    "id": "231",
+    "thesaurus": "8"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/140/",
+    "altLabel": "abruzzo-marine-area",
+    "id": "363",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/141/",
+    "altLabel": "abruzzo-terrestrial-area",
+    "id": "364",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/120/",
+    "altLabel": "adriatic-sea",
+    "id": "365",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/105/",
+    "altLabel": "aegean-sea",
+    "id": "366",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/80/",
+    "altLabel": "albania-marine-area",
+    "id": "367",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/147/",
+    "altLabel": "albania-terrestrial-area",
+    "id": "368",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/111/",
+    "altLabel": "algeria-terrestrial-area",
+    "id": "369",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/90/",
+    "altLabel": "apulia-marine-area",
+    "id": "370",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/85/",
+    "altLabel": "apulia-terrestrial-area",
+    "id": "371",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/177/",
+    "altLabel": "atlantic-canary-waters-case-study",
+    "id": "372",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/182/",
+    "altLabel": "baltic-sea",
+    "id": "373",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/188/",
+    "altLabel": "bassetmed-project-study-area-sos",
+    "id": "374",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/171/",
+    "altLabel": "black-sea",
+    "id": "375",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/175/",
+    "altLabel": "black-sea-bosphorus-site-bridge-bs-project",
+    "id": "376",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/174/",
+    "altLabel": "black-sea-danube-delta-site-bridge-bs-project",
+    "id": "377",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/173/",
+    "altLabel": "black-sea-varna-burgas-site-bridge-bs-project",
+    "id": "378",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/185/",
+    "altLabel": "black-sea-west-bridge-bs-project",
+    "id": "379",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/142/",
+    "altLabel": "bosnia-herzegovina-terrestrial-area",
+    "id": "380",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/104/",
+    "altLabel": "bosnian-and-herzegovinian-part-of-the-adriatic-sea",
+    "id": "381",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/87/",
+    "altLabel": "croatia-terrestrial-area",
+    "id": "383",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/130/",
+    "altLabel": "croatian-part-of-the-adriatic-sea",
+    "id": "382",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/101/",
+    "altLabel": "cypriote-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "384",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/83/",
+    "altLabel": "cyprus-terrestrial-area",
+    "id": "385",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/115/",
+    "altLabel": "dubrovnik-neretva-terrestrial-area",
+    "id": "386",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/95/",
+    "altLabel": "egypt-terrestrial-area",
+    "id": "388",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/96/",
+    "altLabel": "egyptian-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "387",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/98/",
+    "altLabel": "emilia-romagna-marine-area",
+    "id": "389",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/84/",
+    "altLabel": "emilia-romagna-terrestrial-area",
+    "id": "390",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/155/",
+    "altLabel": "european-seas",
+    "id": "391",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/153/",
+    "altLabel": "european-seas-extended",
+    "id": "392",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/82/",
+    "altLabel": "european-terrestrial-area",
+    "id": "393",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/163/",
+    "altLabel": "france-marine-areas",
+    "id": "394",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/151/",
+    "altLabel": "france-terrestrial-area",
+    "id": "395",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/179/",
+    "altLabel": "french-part-of-the-mediterranean-sea",
+    "id": "396",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/124/",
+    "altLabel": "friuli-venezia-giulia-marine-area",
+    "id": "397",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/109/",
+    "altLabel": "friuli-venezia-giulia-terrestrial-area",
+    "id": "398",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/139/",
+    "altLabel": "gaza-strip-terrestrial-area",
+    "id": "399",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/164/",
+    "altLabel": "greece-marine-area",
+    "id": "400",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/138/",
+    "altLabel": "greece-terrestrial-area",
+    "id": "401",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/146/",
+    "altLabel": "greek-part-of-the-adriatic-sea",
+    "id": "402",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/148/",
+    "altLabel": "greek-part-of-the-aegean-sea",
+    "id": "403",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/136/",
+    "altLabel": "greek-part-of-the-ionian-sea",
+    "id": "404",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/94/",
+    "altLabel": "greek-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "405",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/116/",
+    "altLabel": "ionian-sea",
+    "id": "406",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/125/",
+    "altLabel": "israel-terrestrial-area",
+    "id": "408",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/81/",
+    "altLabel": "israeli-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "407",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/159/",
+    "altLabel": "istria-county-marine-area",
+    "id": "409",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/161/",
+    "altLabel": "istria-county-terrestrial-area",
+    "id": "410",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/86/",
+    "altLabel": "italian-part-of-the-adriatic-sea",
+    "id": "411",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/89/",
+    "altLabel": "italian-part-of-the-ionian-sea",
+    "id": "412",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/128/",
+    "altLabel": "italian-part-of-the-ligurian-sea",
+    "id": "413",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/103/",
+    "altLabel": "italian-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "414",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/135/",
+    "altLabel": "italian-part-of-the-mediterranean-sea-western-basin",
+    "id": "415",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/131/",
+    "altLabel": "italian-part-of-the-tyrrhenian-sea",
+    "id": "416",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/123/",
+    "altLabel": "italy-marine-areas",
+    "id": "417",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/143/",
+    "altLabel": "italy-terrestrial-area",
+    "id": "418",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/118/",
+    "altLabel": "joint-regime-area-croatia-slovenia-part-of-the-adriatic-sea",
+    "id": "419",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/184/",
+    "altLabel": "la-spezia-test-area",
+    "id": "420",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/129/",
+    "altLabel": "lebanese-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "421",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/97/",
+    "altLabel": "lebanon-terrestrial-area",
+    "id": "422",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/122/",
+    "altLabel": "libya-terrestrial-area",
+    "id": "424",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/133/",
+    "altLabel": "libyan-part-of-the-mediterranean-sea-eastern",
+    "id": "423",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/119/",
+    "altLabel": "malta-marine-area",
+    "id": "425",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/165/",
+    "altLabel": "malta-terrestrial-area",
+    "id": "426",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/102/",
+    "altLabel": "marche-marine-area",
+    "id": "427",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/110/",
+    "altLabel": "marche-terrestrial-area",
+    "id": "428",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/106/",
+    "altLabel": "mediterranean-sea",
+    "id": "429",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/92/",
+    "altLabel": "mediterranean-sea-eastern-basin",
+    "id": "430",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/157/",
+    "altLabel": "mediterranean-sea-eu-part-of-the-eastern-basin",
+    "id": "431",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/158/",
+    "altLabel": "mediterranean-sea-non-eu-part-of-the-eastern-basin",
+    "id": "432",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/127/",
+    "altLabel": "molise-marine-area",
+    "id": "433",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/107/",
+    "altLabel": "molise-terrestrial-area",
+    "id": "434",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/99/",
+    "altLabel": "montenegrin-part-of-the-adriatic-sea",
+    "id": "435",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/126/",
+    "altLabel": "montenegro-terrestrial-area",
+    "id": "436",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/108/",
+    "altLabel": "morocco-terrestrial-area",
+    "id": "437",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/192/",
+    "altLabel": "msp4biodiversity-nas-buffered-area",
+    "id": "438",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/191/",
+    "altLabel": "msp4biodiversity-nas-pilot-area",
+    "id": "439",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/190/",
+    "altLabel": "msp4biodiversity-nts-buffered-area",
+    "id": "440",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/183/",
+    "altLabel": "msp4biodiversity-nts-pilot-area",
+    "id": "441",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/194/",
+    "altLabel": "msp4biodiversity-sos-buffered-area",
+    "id": "442",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/193/",
+    "altLabel": "msp4biodiversity-sos-pilot-area",
+    "id": "443",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/113/",
+    "altLabel": "northen-adriatic-sea",
+    "id": "444",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/189/",
+    "altLabel": "northern-adriatic-sea-soundscape-saturn-projects",
+    "id": "445",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/93/",
+    "altLabel": "palestinian-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "446",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/154/",
+    "altLabel": "romanian-and-bulgarian-part-of-the-black-sea",
+    "id": "447",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/181/",
+    "altLabel": "sardinia-territorial-waters",
+    "id": "448",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/170/",
+    "altLabel": "sea-of-azov",
+    "id": "449",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/178/",
+    "altLabel": "slovenia-msp-area",
+    "id": "450",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/187/",
+    "altLabel": "slovenia-msp-transboundary-study",
+    "id": "451",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/137/",
+    "altLabel": "slovenia-terrestrial-area",
+    "id": "453",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/88/",
+    "altLabel": "slovenian-part-of-the-adriatic-sea",
+    "id": "452",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/169/",
+    "altLabel": "south-of-sicily-marine-area-gsa-16",
+    "id": "454",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/166/",
+    "altLabel": "spain-marine-area",
+    "id": "455",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/134/",
+    "altLabel": "spain-terrestrial-area",
+    "id": "456",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/180/",
+    "altLabel": "spanish-part-of-the-mediterranean-sea",
+    "id": "457",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/168/",
+    "altLabel": "strait-of-sicily",
+    "id": "458",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/176/",
+    "altLabel": "strait-of-sicily-case-study",
+    "id": "459",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/112/",
+    "altLabel": "syria-terrestrial-area",
+    "id": "461",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/150/",
+    "altLabel": "syrian-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "460",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/145/",
+    "altLabel": "tunisia-terrestrial-area",
+    "id": "463",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/121/",
+    "altLabel": "tunisian-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "462",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/114/",
+    "altLabel": "turkish-part-of-the-aegean-sea",
+    "id": "464",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/91/",
+    "altLabel": "turkish-part-of-the-mediterranean-sea-eastern-basin",
+    "id": "465",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/144/",
+    "altLabel": "turkish-part-of-the-sea-of-marmara",
+    "id": "466",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/149/",
+    "altLabel": "veneto-marine-area",
+    "id": "467",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/132/",
+    "altLabel": "veneto-terrestrial-area",
+    "id": "468",
+    "thesaurus": "11"
+  },
+  {
+    "about": "https://api.tools4msp.eu/api/v2/domainareas/156/",
+    "altLabel": "worldwide",
+    "id": "469",
+    "thesaurus": "11"
+  }
+]

@@ -5,6 +5,7 @@ import documents from './documents'
 import groups from './groups'
 import keywords from './keywords'
 import rasterLayers from './raster-layers'
+import thesauri from './thesauri'
 import users from './users'
 import vectorLayers from './vector-layers'
 
@@ -20,8 +21,11 @@ const main = async () => {
   // await categories.download()
   // await categories.upload()
 
-  await keywords.download()
+  // await keywords.download()
   // await keywords.upload()
+
+  await thesauri.download()
+  // await thesauri.upload()
 
   // await documents.download()
   // await documents.upload()
