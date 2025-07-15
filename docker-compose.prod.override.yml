@@ -1,10 +1,21 @@
+# NOTE: all services use the `web` network in order to overcome mtu
+# limitations. The `web` network has mtu:1400
+#
+
+x-common-networks: &common-networks
+  networks:
+    - web
+
+
 services:
   django:
     image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}
     build: !reset null
+    <<: *common-networks
 
   celery:
     image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}
+    <<: *common-networks
 
   geonode:
     ports: !reset []
@@ -13,11 +24,23 @@ services:
       traefik.http.routers.tools4msp_geoplatform_geonode_router.rule: Host(`dev.geoplatform.tools4msp.eu`)
       traefik.http.routers.tools4msp_geoplatform_geonode_router.tls.certresolver: le
       traefik.http.routers.tools4msp_geoplatform_geonode_router.entrypoints: websecure
-    networks:
-      - web
+    <<: *common-networks
+
+  memcached:
+    <<: *common-networks
 
   geoserver:
     ports: !reset []
+    <<: *common-networks
+
+  data-dir-conf:
+    <<: *common-networks
+
+  db:
+    <<: *common-networks
+
+  rabbitmq:
+    <<: *common-networks
 
 
 networks:
