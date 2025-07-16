@@ -25,8 +25,12 @@ services:
       traefik.http.routers.tools4msp_geoplatform_geonode_router.tls.certresolver: le
       traefik.http.routers.tools4msp_geoplatform_geonode_router.entrypoints: websecure
     volumes:
+      # this volume refers to a geonode.conf.envsubst file as if it were in the same dir as the compose file
+      # because that follows the deployment procedure documented in the production env's README file. Succinctly,
+      # the procedure involves copying both the compose files and this nginx-related conf file into the deployment
+      # directory and then running `docker compose` from there
       - type: bind
-        source: $PWD/geonode.conf.envsubst
+        source: ./geonode.conf.envsubst
         target: /etc/nginx/sites-enabled/geonode.conf.envsubst
         read_only: true
     <<: *common-networks
