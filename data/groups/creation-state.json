@@ -1,0 +1,78 @@
+{
+  "basset-med": {
+    "lastCompletedStep": "add-members",
+    "name": "BASSET-MED"
+  },
+  "cnr-irbim": {
+    "lastCompletedStep": "add-members",
+    "name": "CNR-IRBIM"
+  },
+  "cnr-ismar": {
+    "lastCompletedStep": "add-members",
+    "name": "CNR-ISMAR"
+  },
+  "hatch-admin": {
+    "lastCompletedStep": "add-members",
+    "name": "HATCH Admin"
+  },
+  "hatch": {
+    "lastCompletedStep": "add-members",
+    "name": "HATCH"
+  },
+  "msp_italy": {
+    "lastCompletedStep": "add-members",
+    "name": "MSP Italy"
+  },
+  "bridgebs": {
+    "lastCompletedStep": "add-members",
+    "name": "BRIDGE-BS"
+  },
+  "slovenia-msp": {
+    "lastCompletedStep": "add-members",
+    "name": "Slovenia MSP"
+  },
+  "tools4msp": {
+    "lastCompletedStep": "add-members",
+    "name": "Tools4msp"
+  },
+  "corila": {
+    "lastCompletedStep": "add-members",
+    "name": "Corila"
+  },
+  "msp4biodiversity": {
+    "lastCompletedStep": "add-members",
+    "name": "MSP4Biodiversity"
+  },
+  "msp4biodiversity-admin": {
+    "lastCompletedStep": "add-members",
+    "name": "MSP4Biodiversity Admin"
+  },
+  "bridge-bs-ps3": {
+    "lastCompletedStep": "add-members",
+    "name": "BRIDGE-BS PS3"
+  },
+  "bridge-bs-ps1": {
+    "lastCompletedStep": "add-members",
+    "name": "BRIDGE-BS PS1"
+  },
+  "bridge-bs-ps6": {
+    "lastCompletedStep": "add-members",
+    "name": "BRIDGE-BS PS6"
+  },
+  "cerema": {
+    "lastCompletedStep": "add-members",
+    "name": "CEREMA"
+  },
+  "remap-admin": {
+    "lastCompletedStep": "add-members",
+    "name": "ReMAP Admin"
+  },
+  "ispra-ges4seas": {
+    "lastCompletedStep": "add-members",
+    "name": "ISPRA-GES4SEAS"
+  },
+  "msp4bio": {
+    "lastCompletedStep": "add-members",
+    "name": "MSP4BIO"
+  }
+}

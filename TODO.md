@@ -16,4 +16,4 @@
 - [ ] GeoDataBuilders (*manually ported*)
 - [ ] Geostories (*manually ported*)
 - [ ] Dashboards (*manually ported*)
-- [ ] Case studies
+- [x] Case studies

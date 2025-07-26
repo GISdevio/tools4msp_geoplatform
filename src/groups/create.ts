@@ -5,6 +5,7 @@ import logger from 'node-color-log'
 
 import { dumpJson, dumpMd, readFile, readJson } from '../lib/fs-client'
 import v4Client from '../lib/v4-client'
+import type { CreationStateMap as UsersCreationStateMap } from '../users/types'
 
 import type { V3Group, PostGroupPayload, CreationStateMap, CreationState } from './types'
 
@@ -37,7 +38,7 @@ const postGroup = async (group: V3Group) => {
   await v4Client.sendForm('groups/create/', formdata)
 }
 
-const addUsers = async (group: V3Group, type: 'members' | 'managers') => {
+const addUsers = async (group: V3Group, type: 'members' | 'managers', usersCreationStateMap: UsersCreationStateMap) => {
   const users = group[type]
   const slug = calcSlug(group.title)
 
@@ -48,7 +49,12 @@ const addUsers = async (group: V3Group, type: 'members' | 'managers') => {
   const urlencoded = new URLSearchParams()
   urlencoded.append('csrfmiddlewaretoken', middlewareToken)
 
-  users.forEach((pk) => { urlencoded.append('user_identifiers', pk) })
+  for (const username of users) {
+    const pk = usersCreationStateMap[username]?.newPk
+    if (!pk) { throw new Error(`User with username "${username}" not found in users creation map`) }
+
+    urlencoded.append('user_identifiers', pk)
+  }
 
   if (type === 'managers') { urlencoded.append('manager_role', 'on') }
 
@@ -66,6 +72,7 @@ const createGroups = async () => {
   }
 
   const groups = await readJson<V3Group[]>('groups/data')
+  const usersCreationStateMap = await readJson<UsersCreationStateMap>('users/creation-state')
 
   const reportPath = `groups/create-report/${dayjs().format('YYYY-MM-DD HH:mm:ss')}`
 
@@ -154,7 +161,7 @@ ${errorReport}
       try {
         logger.log('Adding managers...')
 
-        await addUsers(group, 'managers')
+        await addUsers(group, 'managers', usersCreationStateMap)
         logger.dim().color('green').log('Managers added')
 
         creationState.lastCompletedStep = 'add-managers'
@@ -178,7 +185,7 @@ ${errorReport}
       try {
         logger.log('Adding members...')
 
-        await addUsers(group, 'members')
+        await addUsers(group, 'members', usersCreationStateMap)
 
         logger.dim().color('green').log('members added')
 
