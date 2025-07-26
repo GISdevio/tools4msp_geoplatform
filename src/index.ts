@@ -13,7 +13,7 @@ logger.setDate(() => '')
 
 const main = async () => {
   // await users.download()
-  // await users.upload()
+  await users.upload()
 
   // await groups.download()
   // await groups.upload()

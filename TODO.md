@@ -1,12 +1,11 @@
 # To Do
 
-- [ ] Users
+- [x] Users
 - [ ] Groups
 - [x] Categories
 - [x] Keywords
 - [x] Licenses (*manually ported*)
-- [ ] Thesaurus (thesauri, thesaurus keyword labels, thesaurus keywords)*
-- [ ] Tags (*manually ported*)
+- [x] Thesaurus (thesauri, thesaurus keyword labels, thesaurus keywords)*
 - [ ] Documents
 - [ ] Raster layers
 - [ ] Vector layers

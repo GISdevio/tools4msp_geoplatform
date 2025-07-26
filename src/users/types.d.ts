@@ -26,7 +26,7 @@ export type OwnersResponse = {
 }
 
 export type UsersResponse = {
-  'total': 170
+  total: 170
   users: Array<{
     avatar: string
     first_name: string

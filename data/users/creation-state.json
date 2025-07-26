@@ -1,0 +1,782 @@
+{
+  "admin": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1000",
+    "oldPk": "1000"
+  },
+  "Alejandro": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1003",
+    "oldPk": "1062"
+  },
+  "Alessia": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1004",
+    "oldPk": "1154"
+  },
+  "AlexisEsquerre": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1005",
+    "oldPk": "1125"
+  },
+  "Alice": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1006",
+    "oldPk": "1194"
+  },
+  "AlinaSpinu": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1007",
+    "oldPk": "1043"
+  },
+  "Antonin.Gimard": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1008",
+    "oldPk": "1147"
+  },
+  "AquaMaps": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1139",
+    "oldPk": "1020"
+  },
+  "BASSET-MED": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1140",
+    "oldPk": "1009"
+  },
+  "BRIDGE-BS": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1141",
+    "oldPk": "1002"
+  },
+  "BRIDGEPS": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1009",
+    "oldPk": "1033"
+  },
+  "Beltrano": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1010",
+    "oldPk": "1072"
+  },
+  "CNR-IRBIM": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1142",
+    "oldPk": "1010"
+  },
+  "Chiantore": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1011",
+    "oldPk": "1092"
+  },
+  "ClémentD": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1012",
+    "oldPk": "1040"
+  },
+  "EMODnet": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1143",
+    "oldPk": "1013"
+  },
+  "Elena": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1013",
+    "oldPk": "1134"
+  },
+  "EmilieRSML": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1014",
+    "oldPk": "1046"
+  },
+  "FedericoQuattrocchi": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1015",
+    "oldPk": "1012"
+  },
+  "Geopath": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1016",
+    "oldPk": "1211"
+  },
+  "GiulioF": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1017",
+    "oldPk": "1066"
+  },
+  "Global-Fishing-Watch": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1144",
+    "oldPk": "1019"
+  },
+  "Grga": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1018",
+    "oldPk": "1038"
+  },
+  "HATCH": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1145",
+    "oldPk": "1005"
+  },
+  "HCRM": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1146",
+    "oldPk": "1026"
+  },
+  "Kamil": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1019",
+    "oldPk": "1184"
+  },
+  "LuDeBenedetti": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1020",
+    "oldPk": "1124"
+  },
+  "MSP4BioDemo": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1147",
+    "oldPk": "1144"
+  },
+  "MarcoBarra": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1021",
+    "oldPk": "1119"
+  },
+  "Matran": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1022",
+    "oldPk": "1032"
+  },
+  "Monica": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1023",
+    "oldPk": "1129"
+  },
+  "Perini_l": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1024",
+    "oldPk": "1100"
+  },
+  "ProtectedPlanet": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1148",
+    "oldPk": "1115"
+  },
+  "RV": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1025",
+    "oldPk": "1158"
+  },
+  "Schilibeck": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1026",
+    "oldPk": "1039"
+  },
+  "Sigovich": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1027",
+    "oldPk": "1111"
+  },
+  "SilviaPili87": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1028",
+    "oldPk": "1172"
+  },
+  "SonarG": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1029",
+    "oldPk": "1094"
+  },
+  "Sophievs": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1030",
+    "oldPk": "1135"
+  },
+  "Tom": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1031",
+    "oldPk": "1138"
+  },
+  "Tools4msp": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1149",
+    "oldPk": "1023"
+  },
+  "Training_PS1": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1150",
+    "oldPk": "1034"
+  },
+  "Training_PS2": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1151",
+    "oldPk": "1035"
+  },
+  "Training_PS3": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1152",
+    "oldPk": "1036"
+  },
+  "Valentina": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1032",
+    "oldPk": "1057"
+  },
+  "Yannick": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1033",
+    "oldPk": "1179"
+  },
+  "adminapiclient": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1153",
+    "oldPk": "1007"
+  },
+  "alessandro2": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1034",
+    "oldPk": "1071"
+  },
+  "amedeo": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1035",
+    "oldPk": "1063"
+  },
+  "amefad": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1036",
+    "oldPk": "1004"
+  },
+  "ampacifico": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1037",
+    "oldPk": "1106"
+  },
+  "andrea": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1038",
+    "oldPk": "1029"
+  },
+  "andrea.ziraldo@regione.fvg.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1039",
+    "oldPk": "1104"
+  },
+  "andrea2": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1040",
+    "oldPk": "1123"
+  },
+  "andrej": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1041",
+    "oldPk": "1185"
+  },
+  "angelo": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1042",
+    "oldPk": "1168"
+  },
+  "anmi": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1043",
+    "oldPk": "1008"
+  },
+  "anna_maria": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1044",
+    "oldPk": "1053"
+  },
+  "annarita_casaburi": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1045",
+    "oldPk": "1207"
+  },
+  "antobaro": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1046",
+    "oldPk": "1170"
+  },
+  "antobaro00@gmail.com": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1047",
+    "oldPk": "1169"
+  },
+  "aurelie.moulins": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1048",
+    "oldPk": "1052"
+  },
+  "bfouque": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1049",
+    "oldPk": "1182"
+  },
+  "c.podda@fondazioneimc.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1050",
+    "oldPk": "1132"
+  },
+  "carla.murciano@cedex.es": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1051",
+    "oldPk": "1181"
+  },
+  "cecivillanueva": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1052",
+    "oldPk": "1061"
+  },
+  "chiara": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1053",
+    "oldPk": "1024"
+  },
+  "claudio": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1054",
+    "oldPk": "1090"
+  },
+  "claudio.lugni@cnr.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1055",
+    "oldPk": "1088"
+  },
+  "claudio2": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1056",
+    "oldPk": "1102"
+  },
+  "coccon1984": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1057",
+    "oldPk": "1059"
+  },
+  "dabala": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1058",
+    "oldPk": "1018"
+  },
+  "dan.vasiliu@geoecomar.ro": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1059",
+    "oldPk": "1042"
+  },
+  "dani86g": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1060",
+    "oldPk": "1131"
+  },
+  "danilo.scannella": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1061",
+    "oldPk": "1011"
+  },
+  "dbrigolin": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1062",
+    "oldPk": "1114"
+  },
+  "deborah.shinoda": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1063",
+    "oldPk": "1120"
+  },
+  "donatacanu": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1064",
+    "oldPk": "1096"
+  },
+  "dounia.khallouki": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1065",
+    "oldPk": "1187"
+  },
+  "edelaroc": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1066",
+    "oldPk": "1086"
+  },
+  "edoardo": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1067",
+    "oldPk": "1165"
+  },
+  "ele.gioia": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1068",
+    "oldPk": "1055"
+  },
+  "elena3": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1069",
+    "oldPk": "1164"
+  },
+  "eleonora.barbaccia@polimi.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1070",
+    "oldPk": "1136"
+  },
+  "eleonore": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1071",
+    "oldPk": "1203"
+  },
+  "emeric.bidenbach@cerema.fr": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1072",
+    "oldPk": "1213"
+  },
+  "emiliano": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1073",
+    "oldPk": "1050"
+  },
+  "emilie8": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1074",
+    "oldPk": "1180"
+  },
+  "emiliedelaroche": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1075",
+    "oldPk": "1191"
+  },
+  "erika": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1076",
+    "oldPk": "1089"
+  },
+  "fabio": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1077",
+    "oldPk": "1108"
+  },
+  "fedegri": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1078",
+    "oldPk": "1021"
+  },
+  "federico": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1079",
+    "oldPk": "1022"
+  },
+  "francesca": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1080",
+    "oldPk": "1105"
+  },
+  "ftimofte@alpha.rmri.ro": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1081",
+    "oldPk": "1045"
+  },
+  "gambino": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1082",
+    "oldPk": "1133"
+  },
+  "germana.garofalo@cnr.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1083",
+    "oldPk": "1031"
+  },
+  "gisdevio": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1084",
+    "oldPk": "1141"
+  },
+  "giulia": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1085",
+    "oldPk": "1093"
+  },
+  "giulia.dapueto": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1086",
+    "oldPk": "1068"
+  },
+  "giulio.malorgio@unibo.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1087",
+    "oldPk": "1095"
+  },
+  "gius": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1002",
+    "oldPk": "1162"
+  },
+  "gmandiola": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1088",
+    "oldPk": "1196"
+  },
+  "h.s.putuhena@soton.ac.uk": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1089",
+    "oldPk": "1126"
+  },
+  "harry": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1090",
+    "oldPk": "1028"
+  },
+  "icelic@ogs.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1091",
+    "oldPk": "1199"
+  },
+  "isabel.m.moreno@cedex.es": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1092",
+    "oldPk": "1178"
+  },
+  "isabella": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1093",
+    "oldPk": "1112"
+  },
+  "jacopo.riccardi@regione.liguria.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1094",
+    "oldPk": "1056"
+  },
+  "jmillot": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1095",
+    "oldPk": "1209"
+  },
+  "jsantiago": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1096",
+    "oldPk": "1186"
+  },
+  "juan.cubillos": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1097",
+    "oldPk": "1195"
+  },
+  "laura": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1098",
+    "oldPk": "1025"
+  },
+  "lizdema": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1099",
+    "oldPk": "1001"
+  },
+  "luca.mulazzani@unibo.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1100",
+    "oldPk": "1099"
+  },
+  "ludovica": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1101",
+    "oldPk": "1157"
+  },
+  "luz": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1102",
+    "oldPk": "1190"
+  },
+  "malte": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1103",
+    "oldPk": "1127"
+  },
+  "marco": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1104",
+    "oldPk": "1091"
+  },
+  "marta.picciulin": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1105",
+    "oldPk": "1116"
+  },
+  "martina": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1106",
+    "oldPk": "1080"
+  },
+  "mauro": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1107",
+    "oldPk": "1118"
+  },
+  "mfianchini": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1108",
+    "oldPk": "1113"
+  },
+  "michol": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1109",
+    "oldPk": "1155"
+  },
+  "miqsal": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1110",
+    "oldPk": "1085"
+  },
+  "mloschi": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1111",
+    "oldPk": "1212"
+  },
+  "mmagaldi": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1112",
+    "oldPk": "1083"
+  },
+  "mperez": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1113",
+    "oldPk": "1044"
+  },
+  "msp4bio": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1154",
+    "oldPk": "1030"
+  },
+  "nadezhda": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1114",
+    "oldPk": "1041"
+  },
+  "nkaraman": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1115",
+    "oldPk": "1027"
+  },
+  "nkaraman@zzpudnz.hr": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1116",
+    "oldPk": "1037"
+  },
+  "omar": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1117",
+    "oldPk": "1076"
+  },
+  "owen.clarkin@dcu.ie": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1118",
+    "oldPk": "1074"
+  },
+  "paul": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1119",
+    "oldPk": "1128"
+  },
+  "pijalapajne": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1120",
+    "oldPk": "1048"
+  },
+  "pisewip": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1121",
+    "oldPk": "1153"
+  },
+  "raschettisofia": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1122",
+    "oldPk": "1107"
+  },
+  "remap": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1123",
+    "oldPk": "1183"
+  },
+  "ricardo": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1124",
+    "oldPk": "1205"
+  },
+  "roberta.sciascia": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1125",
+    "oldPk": "1097"
+  },
+  "rosina-4545": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1126",
+    "oldPk": "1006"
+  },
+  "sabinacepus": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1127",
+    "oldPk": "1049"
+  },
+  "sarretta": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1128",
+    "oldPk": "1082"
+  },
+  "sbosi": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1155",
+    "oldPk": "1003"
+  },
+  "slibralato": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1129",
+    "oldPk": "1198"
+  },
+  "sloveniamsp": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1156",
+    "oldPk": "1047"
+  },
+  "ssottoriva": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1130",
+    "oldPk": "1163"
+  },
+  "ste.menegon": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1131",
+    "oldPk": "1017"
+  },
+  "szunino@ogs.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1132",
+    "oldPk": "1103"
+  },
+  "tfortibuoni": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1133",
+    "oldPk": "1148"
+  },
+  "tommaso.russo@uniroma2.it": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1134",
+    "oldPk": "1193"
+  },
+  "tools4msp7": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1135",
+    "oldPk": "1098"
+  },
+  "victor": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1136",
+    "oldPk": "1060"
+  },
+  "vitali": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1137",
+    "oldPk": "1110"
+  },
+  "yaiza": {
+    "lastCompletedStep": "change-password",
+    "newPk": "1138",
+    "oldPk": "1188"
+  }
+}
