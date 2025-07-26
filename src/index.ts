@@ -22,9 +22,9 @@ const main = async () => {
   // await categories.upload()
 
   // await keywords.download()
-  // await keywords.upload()
+  await keywords.upload()
 
-  await thesauri.download()
+  // await thesauri.download()
   // await thesauri.upload()
 
   // await documents.download()
