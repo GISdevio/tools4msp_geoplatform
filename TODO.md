@@ -3,7 +3,7 @@
 - [ ] Users
 - [ ] Groups
 - [x] Categories
-- [ ] Keywords
+- [x] Keywords
 - [x] Licenses (*manually ported*)
 - [ ] Thesaurus (thesauri, thesaurus keyword labels, thesaurus keywords)*
 - [ ] Tags (*manually ported*)
