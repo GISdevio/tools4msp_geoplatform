@@ -11,9 +11,9 @@ import type { CreationStateMap as UsersCreationStateMap } from '../users/types'
 import type { CreationState, CreationStateMap, V3Document } from './types'
 
 const BATCH_SIZE = 50
-const BATCH_NUMBER = 3
+const BATCH_NUMBER = 5
 
-type Group = {group: { pk: number }; slug: string}
+type Group = { group: { pk: number }; slug: string }
 
 const uploadDoc = async (document: V3Document): Promise<string> => {
   const doc = await readFile(document.docPath) as Blob
@@ -22,7 +22,7 @@ const uploadDoc = async (document: V3Document): Promise<string> => {
   formdata.append('doc_file', doc, path.basename(document.docPath))
   formdata.append('title', document.title)
 
-  const res = await v4Client.sendForm<{success: boolean; url: string}>('documents/upload?no__redirect=true', formdata)
+  const res = await v4Client.sendForm<{ success: boolean; url: string }>('documents/upload?no__redirect=true', formdata)
   if (!res.success) {
     throw new Error('Error uploading document')
   }
@@ -60,10 +60,10 @@ const applyMetadata = async (
   document.regions.forEach((region) => {
     let code
     switch (region) {
-    case 'Europe': code = 5; break
-    case 'Global': code = 1; break
-    case 'Italy': code = 121; break
-    default: throw new Error(`Unrecognized region ${region}`)
+      case 'Europe': code = 5; break
+      case 'Global': code = 1; break
+      case 'Italy': code = 121; break
+      default: throw new Error(`Unrecognized region ${region}`)
     }
 
     urlencoded.append('resource-regions', code.toString())
@@ -80,9 +80,6 @@ const applyMetadata = async (
     if (!groupKey) { throw new Error(`Key not found for group ${document.group}`) }
     urlencoded.append('resource-group', groupKey)
   }
-
-  // resource-thumbnail_url: http://localhost/uploaded/thumbs/document-f30f72a4-b99c-4cda-8b5b-124c23be4203-thumb-3e0b49d5-4727-49dc-94a7-7b660964c1c8.jpg
-  // resource-thumbnail_path: thumbs/document-f30f72a4-b99c-4cda-8b5b-124c23be4203-thumb-3e0b49d5-4727-49dc-94a7-7b660964c1c8.jpg
 
   urlencoded.append('resource-purpose', '')
   urlencoded.append('resource-alternate', '')
@@ -157,7 +154,7 @@ const createDocuments = async () => {
   const documents = await readJson<V3Document[]>('documents/data')
   const categoriesKeysMap = await readJson<CategoriesKeysMap>('categories/keys-map')
   const usersCreationStateMap = await readJson<UsersCreationStateMap>('users/creation-state')
-  const groups = await v4Client.getJson<{group_profiles: Group[]}>('/api/v2/groups?page_size=200')
+  const groups = await v4Client.getJson<{ group_profiles: Group[] }>('/api/v2/groups?page_size=200')
 
 
   const reportPath = `documents/create-report/${dayjs().format('YYYY-MM-DD HH:mm:ss')}`

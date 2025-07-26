@@ -1,0 +1,3096 @@
+[
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_usecase_nwmediterranean.png",
+    "group": null,
+    "id": "2097",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T13:37:35.984017",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_UseCase_NWMediterranean"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_usecase_galicia.png",
+    "group": null,
+    "id": "2096",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T13:36:22.787363",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_UseCase_Galicia"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_denmark.png",
+    "group": null,
+    "id": "2094",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:47:47.804715",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Denmark"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_lithuania.png",
+    "group": null,
+    "id": "2093",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:47:18.164083",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Lithuania"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_estonia.png",
+    "group": null,
+    "id": "2092",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:46:42.227556",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Estonia"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_spain.png",
+    "group": null,
+    "id": "2091",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:46:04.134252",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Spain"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_netherlands.png",
+    "group": null,
+    "id": "2090",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:45:27.314896",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Netherlands"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_sweden.png",
+    "group": null,
+    "id": "2089",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:44:58.998394",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Sweden"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_poland.png",
+    "group": null,
+    "id": "2088",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:44:29.865457",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_DIagnosis_Poland"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_latvia.png",
+    "group": null,
+    "id": "2087",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:44:01.345866",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Latvia"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_finland.png",
+    "group": null,
+    "id": "2086",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:43:33.255736",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Finland"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_germany.png",
+    "group": null,
+    "id": "2085",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:43:05.510443",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Germany"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_france-med.png",
+    "group": null,
+    "id": "2084",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:42:44.913698",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_France-MED"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_italy.png",
+    "group": null,
+    "id": "2083",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:42:08.904633",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis_Italy"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis_belgium.png",
+    "group": null,
+    "id": "2082",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:41:32.514446",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_DIagnosis_Belgium"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_diagnosis.png",
+    "group": null,
+    "id": "2081",
+    "owner": "1163",
+    "publicationDate": "2025-07-03T10:34:42.506117",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Diagnosis"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_disjointindex.png",
+    "group": null,
+    "id": "2080",
+    "owner": "1163",
+    "publicationDate": "2025-07-02T19:31:52.856775",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_DisjointIndex"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_nr_zoningelements.png",
+    "group": null,
+    "id": "2079",
+    "owner": "1163",
+    "publicationDate": "2025-07-02T19:31:25.743153",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Nr_ZoningElements"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_msp-out_onlinetool.png",
+    "group": null,
+    "id": "2078",
+    "owner": "1163",
+    "publicationDate": "2025-07-02T19:14:25.020495",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_MSP-out_OnlineTool"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_seausefunctions.png",
+    "group": null,
+    "id": "2071",
+    "owner": "1163",
+    "publicationDate": "2025-06-30T15:36:14.946402",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_SeaUseFunctions"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_seauseanalysis2.png",
+    "group": null,
+    "id": "2070",
+    "owner": "1163",
+    "publicationDate": "2025-06-30T15:21:46.206779",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_SeaUseAnalysis2"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_seauseanalysis1.png",
+    "group": null,
+    "id": "2069",
+    "owner": "1163",
+    "publicationDate": "2025-06-30T15:20:40.868719",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_SeaUseAnalysis1"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_acquacoltura_2025.png",
+    "group": null,
+    "id": "1956",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:36:25.286217",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_ACQUACOLTURA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1955",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:36:04.331952",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_energia_2025.png",
+    "group": null,
+    "id": "1954",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:35:41.378159",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_ENERGIA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_pesca_2025.png",
+    "group": null,
+    "id": "1953",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:35:25.995667",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_protezione_2025.png",
+    "group": null,
+    "id": "1952",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:34:56.760239",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_ricerca_2025.png",
+    "group": null,
+    "id": "1951",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:34:24.057364",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_RICERCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_trasporto_2025.png",
+    "group": null,
+    "id": "1950",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:34:01.271763",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_nw_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1949",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:33:42.480081",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_NW_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_nw_energia_rinnovabile_2025.png",
+    "group": null,
+    "id": "1948",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:33:07.154627",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_NW_ENERGIA_RINNOVABILE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_nw_pesca_2025.png",
+    "group": null,
+    "id": "1947",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:32:49.364017",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_NW_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_nw_protezione_2025.png",
+    "group": null,
+    "id": "1946",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:32:22.513364",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_NW_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_nw_trasporto_2025.png",
+    "group": null,
+    "id": "1945",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:31:51.156637",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_NW_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1944",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:31:26.680988",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_energia_2025.png",
+    "group": null,
+    "id": "1943",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:30:55.355165",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_ENERGIA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_nw_bd_turismo_2025.png",
+    "group": null,
+    "id": "1942",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:30:24.295793",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_NW_BD_TURISMO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_nw_bd_paesaggio_2025.png",
+    "group": null,
+    "id": "1941",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:29:05.760168",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_NW_BD_PAESAGGIO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_pesca_2025.png",
+    "group": null,
+    "id": "1940",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:27:51.885014",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_protezione_2025.png",
+    "group": null,
+    "id": "1939",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:27:35.719669",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_trasporto_2025.png",
+    "group": null,
+    "id": "1937",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:25:18.709551",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_all_aree_2025.png",
+    "group": null,
+    "id": "1935",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:23:52.301999",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_all_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_bd_aree_2025.png",
+    "group": null,
+    "id": "1933",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:20:51.414438",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_BD_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_nw_aree_2025.png",
+    "group": null,
+    "id": "1932",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:20:34.210734",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_NW_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts_sp_aree_2025.png",
+    "group": null,
+    "id": "1931",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T18:20:05.350292",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS_SP_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1929",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T16:02:58.438412",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_acquacoltura_2025.png",
+    "group": null,
+    "id": "1928",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T15:57:16.583970",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_ACQUACOLTURA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_energia_rinnovabile_2025.png",
+    "group": null,
+    "id": "1927",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T15:49:40.667504",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_ENERGIA_RINNOVABILE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_sp_aree_2025.png",
+    "group": null,
+    "id": "1925",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T15:05:26.759428",
+    "regions": [
+      "Global"
+    ],
+    "title": "SoS_SP_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_aree_2025.png",
+    "group": null,
+    "id": "1924",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T15:05:13.243238",
+    "regions": [
+      "Global"
+    ],
+    "title": "SoS_BD_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_aree_2025.png",
+    "group": null,
+    "id": "1923",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T15:04:49.743233",
+    "regions": [
+      "Global"
+    ],
+    "title": "SoS_NW_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_all_aree_2025.png",
+    "group": null,
+    "id": "1922",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T15:04:10.885253",
+    "regions": [
+      "Global"
+    ],
+    "title": "SoS_all_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_pesca_2025.png",
+    "group": null,
+    "id": "1920",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:34:29.673011",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_protezione_2025.png",
+    "group": null,
+    "id": "1919",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:34:14.994735",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_ricerca_2025.png",
+    "group": null,
+    "id": "1918",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:33:55.581884",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_RICERCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_trasporto_2025.png",
+    "group": null,
+    "id": "1917",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:33:40.081576",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_bd_turismo_2025.png",
+    "group": null,
+    "id": "1916",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:33:26.796933",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_BD_TURISMO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1915",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:33:10.887550",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_NW_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_energia_rinnovabile_2025.png",
+    "group": null,
+    "id": "1913",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:27:44.011154",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_NW_ENERGIA_RINNOVABILE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_paesaggio_2025.png",
+    "group": null,
+    "id": "1912",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:27:29.776314",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_NW_PAESAGGIO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_pesca_2025.png",
+    "group": null,
+    "id": "1911",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:27:16.559917",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_NW_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_protezione_2025.png",
+    "group": null,
+    "id": "1910",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:27:00.764815",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_NW_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_trasporto_2025.png",
+    "group": null,
+    "id": "1909",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:26:47.220802",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_NW_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_nw_turismo_2025.png",
+    "group": null,
+    "id": "1908",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:26:23.598359",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_NW_TURISMO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_sp_energia_oilgas_2025.png",
+    "group": null,
+    "id": "1907",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:26:04.971090",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_SP_ENERGIA_OIL&GAS_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_sp_energia_rinnovabile_2025.png",
+    "group": null,
+    "id": "1906",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:25:50.857398",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_SP_ENERGIA_RINNOVABILE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_sp_paesaggio_2025.png",
+    "group": null,
+    "id": "1905",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:25:35.645431",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_SP_PAESAGGIO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_sp_pesca_2025.png",
+    "group": null,
+    "id": "1904",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:25:17.798118",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_SP_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_sp_protezione_2025.png",
+    "group": null,
+    "id": "1903",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T13:25:00.302384",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_SP_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos_sp_trasporto_2025.png",
+    "group": null,
+    "id": "1902",
+    "owner": "1071",
+    "publicationDate": "2025-03-04T12:03:21.621814",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS_SP_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_all_aree_2025.png",
+    "group": null,
+    "id": "1900",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T20:42:59.083668",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_all_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_turismo_2025.png",
+    "group": null,
+    "id": "1899",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:25:53.306328",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_TURISMO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_trasporto_2025.png",
+    "group": null,
+    "id": "1898",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:25:39.064050",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_protezione_2025.png",
+    "group": null,
+    "id": "1897",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:25:18.890514",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_pesca_2025.png",
+    "group": null,
+    "id": "1896",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:25:03.727967",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_paesaggio_2025.png",
+    "group": null,
+    "id": "1895",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:24:33.339966",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_PAESAGGIO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_energia_oilgas_2025.png",
+    "group": null,
+    "id": "1894",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:24:15.462331",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_ENERGIA_OIL&GAS_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1893",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:20:03.470853",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_acquacoltura_2025.png",
+    "group": null,
+    "id": "1892",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:19:28.563287",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_ACQUACOLTURA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_trasporto_2025.png",
+    "group": null,
+    "id": "1891",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T18:19:02.599657",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_ricerca_2025.png",
+    "group": null,
+    "id": "1890",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:44:55.930367",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_RICERCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_protezione_2025.png",
+    "group": null,
+    "id": "1889",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:44:35.265801",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_pesca_2025.png",
+    "group": null,
+    "id": "1888",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:44:02.557460",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_energia_rinnovabile_2025.png",
+    "group": null,
+    "id": "1887",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:43:46.101729",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_ENERGIA_RINNOVABILE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_energia_oilgas_2025.png",
+    "group": null,
+    "id": "1886",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:43:14.074894",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_ENERGIA_OIL&GAS_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1885",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:42:51.943959",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_acquacoltura_2025.png",
+    "group": null,
+    "id": "1884",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:42:30.022690",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_ACQUACOLTURA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_trasporto_2025.png",
+    "group": null,
+    "id": "1883",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:42:08.651363",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_TRASPORTO_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_ricerca_2025.png",
+    "group": null,
+    "id": "1882",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:41:52.335083",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_RICERCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_protezione_2025.png",
+    "group": null,
+    "id": "1881",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:41:29.470613",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_PROTEZIONE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_pesca_2025.png",
+    "group": null,
+    "id": "1880",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:41:10.415194",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_PESCA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_energia_oilgas_2025.png",
+    "group": null,
+    "id": "1879",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:38:56.757956",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_ENERGIA_OIL&GAS_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_energia_rinnovabile_2025.png",
+    "group": null,
+    "id": "1878",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:38:17.238727",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_ENERGIA_RINNOVABILE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_difesa_costiera_2025.png",
+    "group": null,
+    "id": "1877",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:37:47.823849",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_DIFESA_COSTIERA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_acquacoltura_2025.png",
+    "group": null,
+    "id": "1876",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:37:19.970553",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_ACQUACOLTURA_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_bd_aree_2025.png",
+    "group": null,
+    "id": "1875",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:04:30.289953",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_BD_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_nw_aree_2025.png",
+    "group": null,
+    "id": "1874",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:04:09.133107",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_NW_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_aree_2025.png",
+    "group": null,
+    "id": "1873",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T17:03:23.249389",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_AREE_2025.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas_sp_paesaggio.png",
+    "group": null,
+    "id": "1872",
+    "owner": "1071",
+    "publicationDate": "2025-03-03T11:21:09.205246",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS_SP_PAESAGGIO.png"
+  },
+  {
+    "abstract": "<p>The table was developed within the ReMAP project (Output tool). It shows, for each Member State (MS), the sea use names (from the EMODnet categories) that are present in their MSP.</p>",
+    "category": null,
+    "docPath": "documents/download/remap-output-sea-use-by-ms.png",
+    "group": null,
+    "id": "1772",
+    "owner": "1163",
+    "publicationDate": "2025-01-24T15:20:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP - Output - Sea Use by MS"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap-output-zes-coverage.png",
+    "group": null,
+    "id": "1751",
+    "owner": "1163",
+    "publicationDate": "2025-01-23T13:43:41.116600",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP - Output - ZEs coverage"
+  },
+  {
+    "abstract": "<p>Left: Number of Zoning Elements (ZEs) for each MS.&nbsp;</p>\r\n<p>Right: Disjoint Index for each MS. A Disjoint Index of 0&nbsp; indicates complete ZEs overlapping, while 1 indicates complete separation between ZEs.</p>",
+    "category": null,
+    "docPath": "documents/download/remap-output-nr-zes-disjoint-index.png",
+    "group": null,
+    "id": "1750",
+    "owner": "1163",
+    "publicationDate": "2025-01-22T13:58:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP - Output - Nr ZEs & Disjoint Index"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps1-scenario-thumbnail.png",
+    "group": null,
+    "id": "1597",
+    "owner": "1000",
+    "publicationDate": "2024-11-13T11:08:20.055395",
+    "regions": [
+      "Global"
+    ],
+    "title": "ps1-scenario-thumbnail.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_diagnostic.png",
+    "group": null,
+    "id": "1582",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T09:28:00.066027",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_Diagnostic"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"2pfii-0-0\">D6/D1 - Benthic broad habitats status in relation to Maritime Traffic</span></p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d6d1_benthic_maritimetraffic.png",
+    "group": null,
+    "id": "1580",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:18:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D6D1_Benthic_MaritimeTraffic"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"6thso-0-0\">D6/D1 - Benthic broad habitats status in relation to Wind Farms</span></p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d6d1_benthic_windfarms.png",
+    "group": null,
+    "id": "1581",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:18:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D6D1_Benthic_WindFarms"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"515uk-0-0\">D6/D1 - Benthic broad habitats status in relation to Nature Protection</span> Conservation</p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d6d1_benthic_natureprotection.png",
+    "group": null,
+    "id": "1579",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:17:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D6D1_Benthic_NatureProtection"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"9kr83-0-0\">D5 - Eutrophication status in relation to Wind Farms</span></p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d5_eutrophication_windfarms.png",
+    "group": null,
+    "id": "1578",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:16:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D5_Eutrophication_WindFarms"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"a36dh-0-0\">D5 - Eutrophication status in relation to Maritime Traffic</span></p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d5_eutrophication_maritimetraffic.png",
+    "group": null,
+    "id": "1577",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:15:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D5_Eutrophication_MaritimeTraffic"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"5kuee-0-0\">D5 - Eutrophication status in relation to Nature Protection Conservation<br /></span></p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d5_eutrophication_natureprotection.png",
+    "group": null,
+    "id": "1576",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:14:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D5_Eutrophication_NatureProtection"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"fg07m-0-0\">D1 Biodiversity - Seals status in relation to Wind Farms</span></p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d1_seals_windfarms.png",
+    "group": null,
+    "id": "1575",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:05:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D1_Seals_WindFarms"
+  },
+  {
+    "abstract": "<p>D1 Biodiversity - Seals status in relation to Nature Protection Conservation</p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d1_seals_natureprotection.png",
+    "group": null,
+    "id": "1574",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:04:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D1_Seals_NatureProtection"
+  },
+  {
+    "abstract": "<p><span data-offset-key=\"7pg84-0-0\">D1 Biodiversity - Seals status in relation to Maritime Traffic</span></p>",
+    "category": null,
+    "docPath": "documents/download/remap_demonstrator_d1_seals_maritimetraffic.png",
+    "group": null,
+    "id": "1573",
+    "owner": "1163",
+    "publicationDate": "2024-10-17T08:02:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_Demonstrator_D1_Seals_MaritimeTraffic"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_conceptualmodel_msfd-msp.png",
+    "group": null,
+    "id": "1571",
+    "owner": "1163",
+    "publicationDate": "2024-10-16T09:53:50.453768",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_ConceptualModel_MSFD-MSP"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/upset_sweden_remap_balticseademonstrator.png",
+    "group": null,
+    "id": "1567",
+    "owner": "1163",
+    "publicationDate": "2024-10-14T13:04:04.669979",
+    "regions": [
+      "Global"
+    ],
+    "title": "Upset_Sweden_ReMAP_BalticSeaDemonstrator"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/upset_germany_remap_balticseademonstrator.png",
+    "group": null,
+    "id": "1566",
+    "owner": "1163",
+    "publicationDate": "2024-10-14T13:02:51.749277",
+    "regions": [
+      "Global"
+    ],
+    "title": "Upset_Germany_ReMAP_BalticSeaDemonstrator"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/diagnostic_poland_remap_balticseademonstrator.png",
+    "group": null,
+    "id": "1565",
+    "owner": "1163",
+    "publicationDate": "2024-10-14T12:08:25.662036",
+    "regions": [
+      "Global"
+    ],
+    "title": "Diagnostic_Poland_ReMAP_BalticSeaDemonstrator"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/diagnostic_latvia_remap_balticseademonstrator.png",
+    "group": null,
+    "id": "1564",
+    "owner": "1163",
+    "publicationDate": "2024-10-14T12:07:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "Diagnostic_Latvia_ReMAP_BalticSeaDemonstrator"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/seausetype_remap_balticseademonstrator.png",
+    "group": null,
+    "id": "1563",
+    "owner": "1163",
+    "publicationDate": "2024-10-14T06:40:05.599430",
+    "regions": [
+      "Global"
+    ],
+    "title": "SeaUseType_ReMAP_BalticSeaDemonstrator"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/seauses_remap_balticseademonstrator.png",
+    "group": null,
+    "id": "1562",
+    "owner": "1163",
+    "publicationDate": "2024-10-14T06:35:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "SeaUses_ReMAP_BalticSeaDemonstrator"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/disjointindex_remap_balticseademonstrator.png",
+    "group": null,
+    "id": "1561",
+    "owner": "1163",
+    "publicationDate": "2024-10-11T14:45:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "DisjointIndex_ReMAP_BalticSeaDemonstrator"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/remap_conceptualmodel_outputmodule.png",
+    "group": null,
+    "id": "1560",
+    "owner": "1163",
+    "publicationDate": "2024-10-11T12:07:35.395831",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP_ConceptualModel_OutputModule.png"
+  },
+  {
+    "abstract": "Image shot on 2024-10-09 17:42:00",
+    "category": null,
+    "docPath": "documents/download/remap-banner-logo.jpg",
+    "group": null,
+    "id": "1559",
+    "owner": "1000",
+    "publicationDate": "2024-10-09T17:42:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "ReMAP Banner Logo"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/description-of-ses-and-drivers_sos_ba_250923.pdf",
+    "group": null,
+    "id": "1555",
+    "owner": "1071",
+    "publicationDate": "2024-10-08T16:23:00",
+    "regions": [
+      "Italy"
+    ],
+    "title": "Description of SES and Drivers_SOS_BA_250923.pdf"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/description-of-ses-and-drivers_nts_lg_250923.pdf",
+    "group": null,
+    "id": "1554",
+    "owner": "1071",
+    "publicationDate": "2024-10-08T16:22:00",
+    "regions": [
+      "Italy"
+    ],
+    "title": "Description of SES and Drivers_NTS_LG_250923.pdf"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/description-of-ses-and-drivers_nas_er_231017.pdf",
+    "group": null,
+    "id": "1553",
+    "owner": "1071",
+    "publicationDate": "2024-10-08T16:21:00",
+    "regions": [
+      "Italy"
+    ],
+    "title": "Description of SES and Drivers_NAS_ER_231017.pdf"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-bd-fish.png",
+    "group": null,
+    "id": "1144",
+    "owner": "1112",
+    "publicationDate": "2024-04-18T15:08:37.232474",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS BD FISH"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-ri.png",
+    "group": null,
+    "id": "1141",
+    "owner": "1112",
+    "publicationDate": "2024-04-18T12:55:49.992125",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS RI"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-turismo.png",
+    "group": null,
+    "id": "1140",
+    "owner": "1112",
+    "publicationDate": "2024-04-18T12:49:04.684418",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS turismo"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-sp-aquaculture.png",
+    "group": null,
+    "id": "1139",
+    "owner": "1112",
+    "publicationDate": "2024-04-18T12:44:21.795983",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS SP aquaculture"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-sp-fishing.png",
+    "group": null,
+    "id": "1138",
+    "owner": "1112",
+    "publicationDate": "2024-04-18T12:39:07.587989",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS SP fishing"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-sp-energy.png",
+    "group": null,
+    "id": "1137",
+    "owner": "1112",
+    "publicationDate": "2024-04-18T10:55:44.517698",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS SP energy"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-tabella-bd.png",
+    "group": null,
+    "id": "1136",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T12:46:39.515564",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS Tabella bd.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-tabella-nw.png",
+    "group": null,
+    "id": "1135",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T12:43:26.205126",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS Tabella nw.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-tabella-sp.jpg",
+    "group": null,
+    "id": "1134",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T12:40:53.365056",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS tabella sp.jpg"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-tabella-full.jpg",
+    "group": null,
+    "id": "1133",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T12:40:02.832330",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS Tabella full.jpg"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-bd-owf.png",
+    "group": null,
+    "id": "1131",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T09:03:43.900417",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS BD owf.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-ns-bd-difesa.png",
+    "group": null,
+    "id": "1130",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T09:01:45.840939",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NS BD difesa.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-bd-aquculture.png",
+    "group": null,
+    "id": "1129",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:58:19.562477",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS BD aquculture.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-bd-conservation.png",
+    "group": null,
+    "id": "1128",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:52:52.593774",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS BD conservation.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-bd-conservation.png",
+    "group": null,
+    "id": "1127",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:52:43.259950",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS BD conservation.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-nw-transport.png",
+    "group": null,
+    "id": "1126",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:48:26.434348",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS NW transport.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-bd-transport.png",
+    "group": null,
+    "id": "1125",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:45:10.417003",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS BD transport.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-nw-og.png",
+    "group": null,
+    "id": "1124",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:40:35.994818",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS NW OG.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-nw-owf.png",
+    "group": null,
+    "id": "1123",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:22:39.951428",
+    "regions": [
+      "Global"
+    ],
+    "title": "nbfc nas nw owf.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-nw-difesa.png",
+    "group": null,
+    "id": "1122",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:14:03.332755",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS NW difesa.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-nw-fishing.png",
+    "group": null,
+    "id": "1121",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:10:28.013899",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS NW fishing.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-nw-conservation.png",
+    "group": null,
+    "id": "1120",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T08:06:29.700615",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS NW Conservation.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-sp-protezione.png",
+    "group": null,
+    "id": "1119",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T07:59:51.074668",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS SP protezione.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-sp-difesa-costiera.png",
+    "group": null,
+    "id": "1118",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T07:55:15.580614",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS SP difesa costiera.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nbfc-nas-transport.png",
+    "group": null,
+    "id": "1117",
+    "owner": "1112",
+    "publicationDate": "2024-04-17T07:49:39.683186",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC NAS transport.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas-nbfc-contours.png",
+    "group": null,
+    "id": "1090",
+    "owner": "1112",
+    "publicationDate": "2024-04-10T13:44:27.324823",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS NBFC contours"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nas-pilot-site-nbfc.png",
+    "group": null,
+    "id": "1089",
+    "owner": "1112",
+    "publicationDate": "2024-04-10T09:34:16.185507",
+    "regions": [
+      "Global"
+    ],
+    "title": "NAS Pilot site NBFC"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps3-mind-map-romanian.jpg",
+    "group": null,
+    "id": "1087",
+    "owner": "1112",
+    "publicationDate": "2024-04-08T14:39:33.871112",
+    "regions": [
+      "Global"
+    ],
+    "title": "PS3 Mind map ROMANIAN"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps2-scenario-mind-map-bg.jpg",
+    "group": null,
+    "id": "1085",
+    "owner": "1112",
+    "publicationDate": "2024-04-08T14:29:25.612324",
+    "regions": [
+      "Global"
+    ],
+    "title": "PS2 scenario mind map - BG.jpg"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-bd-protezione.png",
+    "group": null,
+    "id": "1083",
+    "owner": "1112",
+    "publicationDate": "2024-04-08T13:52:32.031430",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC BD protezione"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-nw-conservazione.png",
+    "group": null,
+    "id": "1082",
+    "owner": "1112",
+    "publicationDate": "2024-04-08T08:31:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC NW Conservazione"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-sp-conservazione.png",
+    "group": null,
+    "id": "1081",
+    "owner": "1112",
+    "publicationDate": "2024-04-08T08:29:43.482732",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC SP Conservazione"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-bd-ri.png",
+    "group": null,
+    "id": "1079",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T14:11:48.995065",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC BD RI"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-bd-tourism.png",
+    "group": null,
+    "id": "1078",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T14:07:22.549468",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC BD Tourism"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-bd-aquaculture.png",
+    "group": null,
+    "id": "1077",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T13:56:19.315750",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC BD aquaculture"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-bd-fishing.png",
+    "group": null,
+    "id": "1076",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T13:53:32.915518",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC BD Fishing"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-transport-bd-nw.png",
+    "group": null,
+    "id": "1075",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T13:50:11.247976",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC transport BD NW"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-bd-energia.png",
+    "group": null,
+    "id": "1074",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T13:47:27.993648",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC BD Energia"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-cultura.png",
+    "group": null,
+    "id": "1073",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T13:21:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC Cultura"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-nw-fishing.png",
+    "group": null,
+    "id": "1072",
+    "owner": "1112",
+    "publicationDate": "2024-04-05T13:17:07.446564",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC NW fishing"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-bd-tabella.png",
+    "group": null,
+    "id": "1053",
+    "owner": "1112",
+    "publicationDate": "2024-04-04T13:41:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC BD tabella"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nw-tabella.png",
+    "group": null,
+    "id": "1052",
+    "owner": "1112",
+    "publicationDate": "2024-04-04T13:40:13.234288",
+    "regions": [
+      "Global"
+    ],
+    "title": "NW Tabella.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-sp-tabella.png",
+    "group": null,
+    "id": "1051",
+    "owner": "1112",
+    "publicationDate": "2024-04-04T13:34:03.137671",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC SP tabella"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nbfc-tabella-full.png",
+    "group": null,
+    "id": "1050",
+    "owner": "1112",
+    "publicationDate": "2024-04-04T13:22:19.467408",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NBFC Tabella Full"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/msp4biodiversity-drivers-ses-conceptual-scheme-sos.jpg",
+    "group": null,
+    "id": "1049",
+    "owner": "1112",
+    "publicationDate": "2024-04-04T12:05:36.715826",
+    "regions": [
+      "Global"
+    ],
+    "title": "MSP4BIODIVERSITY Drivers-SES conceptual scheme SOS"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nw-energy.png",
+    "group": null,
+    "id": "1030",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T16:10:18.882735",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NW Energy"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nw-ri.png",
+    "group": null,
+    "id": "1029",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T16:05:54.965583",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NW RI"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nw-turismo.png",
+    "group": null,
+    "id": "1028",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T15:59:40.205782",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NW Turismo"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nw-difesa.png",
+    "group": null,
+    "id": "1027",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T15:55:11.618341",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NW Difesa"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nw-trasporto.png",
+    "group": null,
+    "id": "1026",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T14:26:00.662820",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NW trasporto"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-nw-protezione.png",
+    "group": null,
+    "id": "1025",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T14:22:02.194734",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS NW protezione"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-sp-cultural.png",
+    "group": null,
+    "id": "1024",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T14:02:56.230847",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS SP cultural"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-sp-owf.png",
+    "group": null,
+    "id": "1023",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T13:57:54.228451",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS SP OWF.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-sp-og.png",
+    "group": null,
+    "id": "1022",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T13:49:15.682092",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS SP OG.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-sp-fishing.png",
+    "group": null,
+    "id": "1021",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T13:37:28.655509",
+    "regions": [
+      "Global"
+    ],
+    "title": "SOS SP fishing.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-protezione.png",
+    "group": null,
+    "id": "1020",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T13:29:55.742706",
+    "regions": [
+      "Global"
+    ],
+    "title": "sos protezione.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-transport.png",
+    "group": null,
+    "id": "1019",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T13:25:49.955729",
+    "regions": [
+      "Global"
+    ],
+    "title": "sos Transport.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-study-area.png",
+    "group": null,
+    "id": "1018",
+    "owner": "1112",
+    "publicationDate": "2024-03-27T13:18:12.894234",
+    "regions": [
+      "Global"
+    ],
+    "title": "sos Study Area.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sos-satellite.png",
+    "group": null,
+    "id": "1013",
+    "owner": "1112",
+    "publicationDate": "2024-03-22T12:04:36.979154",
+    "regions": [
+      "Global"
+    ],
+    "title": "sos satellite"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sfondo-base-nbfc.png",
+    "group": null,
+    "id": "1010",
+    "owner": "1112",
+    "publicationDate": "2024-03-19T09:45:36.899435",
+    "regions": [
+      "Global"
+    ],
+    "title": "sfondo base NBFC.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/patrimonio-culturale.png",
+    "group": null,
+    "id": "1008",
+    "owner": "1112",
+    "publicationDate": "2024-03-19T09:34:12.025751",
+    "regions": [
+      "Global"
+    ],
+    "title": "Patrimonio culturale"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nw-fishing.png",
+    "group": null,
+    "id": "1007",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T15:47:01.236169",
+    "regions": [
+      "Global"
+    ],
+    "title": "NW fishing.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sp-fishing.png",
+    "group": null,
+    "id": "1006",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T15:37:08.761981",
+    "regions": [
+      "Global"
+    ],
+    "title": "SP fishing"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/tabella-full.jpg",
+    "group": null,
+    "id": "1005",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T15:31:02.095352",
+    "regions": [
+      "Global"
+    ],
+    "title": "Tabella full"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-tabella.jpg",
+    "group": null,
+    "id": "1004",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T15:26:14.693156",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD tabella"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-ri.png",
+    "group": null,
+    "id": "1003",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T15:08:55.774128",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD RI.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-turismo.png",
+    "group": null,
+    "id": "1002",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T15:02:47.444169",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD turismo.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-difesa.png",
+    "group": null,
+    "id": "1000",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T14:52:04.337477",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD difesa.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-acqua.png",
+    "group": null,
+    "id": "999",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T14:47:35.466846",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD acqua.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-fishing.png",
+    "group": null,
+    "id": "998",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T14:41:47.378056",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD fishing.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-protezione.png",
+    "group": null,
+    "id": "997",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T14:28:32.792134",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD protezione"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/trasporto-bd.png",
+    "group": null,
+    "id": "996",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T14:16:49.418026",
+    "regions": [
+      "Global"
+    ],
+    "title": "trasporto BD"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bd-energy.png",
+    "group": null,
+    "id": "992",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T12:07:10.497185",
+    "regions": [
+      "Global"
+    ],
+    "title": "BD energy"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sfondo-bd.png",
+    "group": null,
+    "id": "991",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T12:02:27.504225",
+    "regions": [
+      "Global"
+    ],
+    "title": "sfondo BD.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/tabella-nw.jpg",
+    "group": null,
+    "id": "990",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T11:53:49.918906",
+    "regions": [
+      "Global"
+    ],
+    "title": "Tabella NW"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nw-energy.png",
+    "group": null,
+    "id": "989",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T11:43:48.579348",
+    "regions": [
+      "Global"
+    ],
+    "title": "NW energy"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nw-ri.png",
+    "group": null,
+    "id": "988",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T11:36:12.120300",
+    "regions": [
+      "Global"
+    ],
+    "title": "NW RI"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nw-protezione.png",
+    "group": null,
+    "id": "987",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T11:20:14.459958",
+    "regions": [
+      "Global"
+    ],
+    "title": "NW protezione"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nw-trasporto.png",
+    "group": null,
+    "id": "986",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T11:05:38.963973",
+    "regions": [
+      "Global"
+    ],
+    "title": "NW trasporto"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sfondo-nw.png",
+    "group": null,
+    "id": "985",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T10:57:35.241594",
+    "regions": [
+      "Global"
+    ],
+    "title": "sfondo NW"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts-baseline-intro.png",
+    "group": null,
+    "id": "984",
+    "owner": "1112",
+    "publicationDate": "2024-03-18T10:41:37.925365",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS  baseline Intro"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sfondo-sp.png",
+    "group": null,
+    "id": "983",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T16:52:33.854709",
+    "regions": [
+      "Global"
+    ],
+    "title": "Sfondo SP"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/drivers-nts.png",
+    "group": null,
+    "id": "982",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T16:35:33.090334",
+    "regions": [
+      "Global"
+    ],
+    "title": "drivers NTS"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sp-energy.png",
+    "group": null,
+    "id": "981",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T16:04:02.811404",
+    "regions": [
+      "Global"
+    ],
+    "title": "SP Energy"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sp-turismo.png",
+    "group": null,
+    "id": "980",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T15:58:06.942123",
+    "regions": [
+      "Global"
+    ],
+    "title": "SP Turismo"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sp-difesa.png",
+    "group": null,
+    "id": "979",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T15:52:48.444898",
+    "regions": [
+      "Global"
+    ],
+    "title": "SP difesa"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sp-protezione-ambientale.png",
+    "group": null,
+    "id": "978",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T15:39:11.294399",
+    "regions": [
+      "Global"
+    ],
+    "title": "SP Protezione Ambientale"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sp-trasporto.png",
+    "group": null,
+    "id": "977",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T15:21:02.940673",
+    "regions": [
+      "Global"
+    ],
+    "title": "SP trasporto"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/sfondo-sp.png",
+    "group": null,
+    "id": "973",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T14:54:46.276937",
+    "regions": [
+      "Global"
+    ],
+    "title": "sfondo SP"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/tabella-sp.jpg",
+    "group": null,
+    "id": "972",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T14:47:02.346533",
+    "regions": [
+      "Global"
+    ],
+    "title": "tabella sp"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/scenario-workflow.jpg",
+    "group": null,
+    "id": "971",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T13:49:04.956797",
+    "regions": [
+      "Global"
+    ],
+    "title": "Scenario workflow"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": null,
+    "docPath": "documents/download/nbfc-ses.jpg",
+    "group": null,
+    "id": "970",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T13:36:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "NBFC SeS"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/concept-msp4biodiversity.jpg",
+    "group": null,
+    "id": "968",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T13:34:45.784551",
+    "regions": [
+      "Global"
+    ],
+    "title": "Concept MSP4Biodiversity"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/scenari-map.jpg",
+    "group": null,
+    "id": "967",
+    "owner": "1112",
+    "publicationDate": "2024-03-15T13:33:15.773288",
+    "regions": [
+      "Global"
+    ],
+    "title": "Scenari Map"
+  },
+  {
+    "abstract": "Image shot by M2004J19C on 2024-03-13 16:55:00",
+    "category": null,
+    "docPath": "documents/download/img_20240313_165516.jpg",
+    "group": null,
+    "id": "1733",
+    "owner": "1071",
+    "publicationDate": "2024-03-13T16:55:00",
+    "regions": [
+      "Global"
+    ],
+    "title": "IMG_20240313_165516.jpg"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/slide1up.jpg",
+    "group": null,
+    "id": "966",
+    "owner": "1112",
+    "publicationDate": "2024-03-06T15:13:33.439028",
+    "regions": [
+      "Global"
+    ],
+    "title": "Slide1UP.jpg"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/nts-ps.png",
+    "group": null,
+    "id": "962",
+    "owner": "1112",
+    "publicationDate": "2024-03-06T14:24:54.303769",
+    "regions": [
+      "Global"
+    ],
+    "title": "NTS PS.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps3-scenario-mind-map.jpg",
+    "group": null,
+    "id": "904",
+    "owner": "1000",
+    "publicationDate": "2024-02-08T10:31:48.267463",
+    "regions": [
+      "Global"
+    ],
+    "title": "PS3 scenario mind map"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/owfs.jpg",
+    "group": null,
+    "id": "797",
+    "owner": "1000",
+    "publicationDate": "2024-01-21T21:25:58.435357",
+    "regions": [
+      "Global"
+    ],
+    "title": "OWFs"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps1-scenario-mind-map.jpg",
+    "group": null,
+    "id": "796",
+    "owner": "1000",
+    "publicationDate": "2024-01-21T21:18:35.218409",
+    "regions": [
+      "Global"
+    ],
+    "title": "PS1 scenario mind map"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps1-map.png",
+    "group": null,
+    "id": "786",
+    "owner": "1000",
+    "publicationDate": "2024-01-18T12:43:46.048348",
+    "regions": [
+      "Global"
+    ],
+    "title": "PS1-map"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps3-map.png",
+    "group": null,
+    "id": "776",
+    "owner": "1000",
+    "publicationDate": "2024-01-17T17:06:27.780905",
+    "regions": [
+      "Global"
+    ],
+    "title": "PS3-map.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/ps2-scenario-mind-map.jpg",
+    "group": null,
+    "id": "760",
+    "owner": "1003",
+    "publicationDate": "2024-01-11T15:39:45.017535",
+    "regions": [
+      "Global"
+    ],
+    "title": "PS2 scenario mind map"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bulgaria-aquaculture.jpg",
+    "group": null,
+    "id": "758",
+    "owner": "1003",
+    "publicationDate": "2024-01-11T15:16:13.497521",
+    "regions": [
+      "Global"
+    ],
+    "title": "Bulgaria-aquaculture"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bulgaria-lba.jpg",
+    "group": null,
+    "id": "757",
+    "owner": "1003",
+    "publicationDate": "2024-01-11T15:09:15.986064",
+    "regions": [
+      "Global"
+    ],
+    "title": "Bulgaria-lba"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bulgaria-tourism.jpg",
+    "group": null,
+    "id": "756",
+    "owner": "1003",
+    "publicationDate": "2024-01-11T15:07:43.005310",
+    "regions": [
+      "Global"
+    ],
+    "title": "Bulgaria-tourism"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bulgaria-beach.jpg",
+    "group": null,
+    "id": "755",
+    "owner": "1003",
+    "publicationDate": "2024-01-11T14:47:14.709167",
+    "regions": [
+      "Global"
+    ],
+    "title": "Bulgaria-beach"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/varna_burgas.png",
+    "group": null,
+    "id": "734",
+    "owner": "1000",
+    "publicationDate": "2023-12-14T22:58:42.230120",
+    "regions": [
+      "Global"
+    ],
+    "title": "varna_burgas.png"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/bridge-bs_pilot_sites.png",
+    "group": null,
+    "id": "733",
+    "owner": "1000",
+    "publicationDate": "2023-12-14T22:25:34.990692",
+    "regions": [
+      "Global"
+    ],
+    "title": "bridge-bs_pilot_sites.png"
+  },
+  {
+    "abstract": "<p>No abstract provided</p>",
+    "category": "43",
+    "docPath": "documents/download/hatc-guide-geostory.jpg",
+    "group": "hatch",
+    "id": "594",
+    "owner": "1006",
+    "publicationDate": "2023-07-24T11:51:00",
+    "regions": [
+      "Europe"
+    ],
+    "title": "HATC guide - Geostory"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/immagine-2023-07-05-145416.jpg",
+    "group": null,
+    "id": "590",
+    "owner": "1006",
+    "publicationDate": "2023-07-05T12:55:21.894398",
+    "regions": [
+      "Global"
+    ],
+    "title": "Immagine 2023-07-05 145416.jpg"
+  },
+  {
+    "abstract": "No abstract provided",
+    "category": null,
+    "docPath": "documents/download/immagine-2023-07-05-143701.jpg",
+    "group": null,
+    "id": "589",
+    "owner": "1006",
+    "publicationDate": "2023-07-05T12:51:11.502054",
+    "regions": [
+      "Global"
+    ],
+    "title": "Immagine 2023-07-05 143701.jpg"
+  }
+]

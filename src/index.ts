@@ -16,7 +16,7 @@ const main = async () => {
   // await users.upload()
 
   // await groups.download()
-  await groups.upload()
+  // await groups.upload()
 
   // await categories.download()
   // await categories.upload()
@@ -28,7 +28,7 @@ const main = async () => {
   // await thesauri.upload()
 
   // await documents.download()
-  // await documents.upload()
+  await documents.upload()
 
   // await rasterLayers.download()
   // await rasterLayers.upload()
