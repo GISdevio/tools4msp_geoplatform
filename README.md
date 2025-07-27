@@ -72,29 +72,58 @@ During the migration of raster layers we incurred in some problems downloading t
 
 ### No details
 
-These are layers for which details cannot be opened (they miss the `detail_url` property and clicking on the layer title from UI does not trigger a navigation).
+These are layers for which details cannot be opened (they miss the `detail_url` property and clicking on the layer title from UI does not trigger a navigation). It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`.
 
-- MC651_or_MC451_or_MC35__Bio_Med_circalittoral_coastal_terrigenous_muds_or_Bio_Med_muddy_detritic_bottoms_or_Med_circalittoral_coarse_sediment0 (uploaded by `danilo.scannella`)
-- MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge (uploaded by `danilo.scannella`)
-- MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge0 (uploaded by `danilo.scannella`)
-- MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge1 (uploaded by `danilo.scannella`)
+- `[1388] MC651_or_MC451_or_MC35__Bio_Med_circalittoral_coastal_terrigenous_muds_or_Bio_Med_muddy_detritic_bottoms_or_Med_circalittoral_coarse_sediment0` uploaded by `danilo.scannella`
+- `[1392] MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge` uploaded by `danilo.scannella`
+- `[1393] MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge0` uploaded by `danilo.scannella`
+- `[1394] MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge1` uploaded by `danilo.scannella`
 
 ### No original files
 
-There are layers whose original files cannot be downloaded (they miss the "Download original files" link in the UI under `Download Layer > Data`).
+There are layers whose original files cannot be downloaded (they miss the "Download original files" link in the UI under `Download Layer > Data`). It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`.
 
-- MB55__Mediterranean_infralittoral_sand0 (uploaded by `danilo.scannella`)
-- a__550_4240_MLITTER (uploaded by `Training_PS3`)
-- RAJACLA_spawners_persistence1 (uploaded by `danilo.scannella`)
-- a__550_4240_MLITTER (uploaded by `Training_PS3`)
-- a__582_4587_CEASCORE (uploaded by `BRIDGEPS`)
-- a__911_5208_CEASCORE (uploaded by `danilo.scannella`)
-- a__911_5208_MAPCEA_IMPACT_LEVEL (uploaded by `danilo.scannella`)
-- a__911_5208_MAPCEA_IMPACT_LEVEL (uploaded by `danilo.scannella`)
-- a__911_5208_MAPCEA_MSFDSUB (uploaded by `danilo.scannella`)
-- a__911_5208_MAP_EFFECT_POTENTIAL (uploaded by `danilo.scannella`)
-- a__911_5208_MAP_SENS_POTENTIAL (uploaded by `danilo.scannella`)
-- a__911_5208_MAP_VULNERABILITY (uploaded by `danilo.scannella`)
+- `[629] 2010 average of surface macroplastic distribution at 1/20º (HCMR)` uploaded by `HCRM`
+- `[35] AquaMaps - Merlangius merlangus (2020)` uploaded by `AquaMaps`
+- `[24] AquaMaps - Pomatomus saltatrix (2020)` uploaded by `AquaMaps`
+- `[30] AquaMaps - Sarda sarda (2020)` uploaded by `AquaMaps`
+- `[34] AquaMaps - Scophthalmus maximus (2020)` uploaded by `AquaMaps`
+- `[33] AquaMaps - Squalus acanthias (2020)` uploaded by `AquaMaps`
+- `[23] AquaMaps - Trachurus trachurus (2020)` uploaded by `AquaMaps`
+- `[545] BRIDGE-BS - Pilot Site 1 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
+- `[544] BRIDGE-BS - Pilot Site 1 - MSFDSUB CEASCORE - Current condition` uploaded by `admin`
+- `[529] BRIDGE-BS - Pilot Site 2 - CEASCORE - Current condition` uploaded by `admin`
+- `[531] BRIDGE-BS - Pilot Site 2 - MSFDBIO CEASCORE - Current condition` uploaded by `admin`
+- `[533] BRIDGE-BS - Pilot Site 2 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
+- `[532] BRIDGE-BS - Pilot Site 2 - MSFDSUB CEASCORE - Current condition` uploaded by `admin`
+- `[551] BRIDGE-BS - Pilot Site 3 - CEASCORE - Current condition` uploaded by `admin`
+- `[552] BRIDGE-BS - Pilot Site 3 - MSFDBIO CEASCORE - Current condition` uploaded by `admin`
+- `[549] BRIDGE-BS - Pilot Site 3 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
+- `[1484] MB55 Mediterranean infralittoral sand SoS` uploaded by `danilo.scannella`
+- `[472] Marine litter` uploaded by `Training_PS3`
+- `[1522] Spawning Habitat of Thornback ray Raja clavata (RJC) SoS` uploaded by `danilo.scannella`
+- `[471] a__550_4240_MLITTER` uploaded by `Training_PS3`
+- `[617] a__582_4587_CEASCORE` uploaded by `BRIDGEPS`
+- `[1547] a__911_5208_CEASCORE` uploaded by `danilo.scannella`
+- `[1538] a__911_5208_MAPCEA_IMPACT_LEVEL` uploaded by `danilo.scannella`
+- `[1539] a__911_5208_MAPCEA_IMPACT_LEVEL` uploaded by `danilo.scannella`
+- `[1543] a__911_5208_MAPCEA_MSFDSUB` uploaded by `danilo.scannella`
+- `[1544] a__911_5208_MAP_EFFECT_POTENTIAL` uploaded by `danilo.scannella`
+- `[1545] a__911_5208_MAP_SENS_POTENTIAL` uploaded by `danilo.scannella`
+- `[1546] a__911_5208_MAP_VULNERABILITY` uploaded by `danilo.scannella`
+
+### Multiple styles
+
+During the migration of raster layers we found some layers with multiple styles. The support for multiple styles [has been dropped](https://github.com/GeoNode/geonode/discussions/12840) with Geonode 4, therefore we choose to keep only the *default style* in the migration process.
+
+It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`. The extra styles (i.e., the non-default ones) are collected in the `/data/raster-layers-extra-styles` folder of this repo and are organized in folders named as the corresponding layer id.
+
+- `[2004] NTS_seagrass_habitat_binary` uploaded by `szunino@ogs.it`
+- `[2006] LBA Synt & Litter` uploaded by `Tools4msp`
+- `[2007] LBA Plume nonsynth` uploaded by `GiulioF`
+- `[2008] LBA Fert` uploaded by `Tools4msp`
+- `[2010] SoS_seagrass_habitat_binary` uploaded by `szunino@ogs.it`
+- `[2012] NAS_seagrass_habitat_binary` uploaded by `szunino@ogs.it`
 
 ## Vector layers migration report
 

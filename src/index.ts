@@ -28,10 +28,10 @@ const main = async () => {
   // await thesauri.upload()
 
   // await documents.download()
-  await documents.upload()
+  // await documents.upload()
 
   // await rasterLayers.download()
-  // await rasterLayers.upload()
+  await rasterLayers.upload()
 
   // await vectorLayers.download()
   // await vectorLayers.upload()

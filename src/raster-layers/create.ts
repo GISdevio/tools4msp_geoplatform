@@ -10,7 +10,7 @@ import v4Client from '../lib/v4-client'
 import type { CreationState, CreationStateMap, V3Layer } from './types'
 
 const BATCH_SIZE = 50
-const BATCH_NUMBER = 1
+const BATCH_NUMBER = 4
 
 const waitForUpload = async <R>(url: string): Promise<R> => {
   const maxIterations = 10
@@ -19,7 +19,7 @@ const waitForUpload = async <R>(url: string): Promise<R> => {
   while (true) {
     iterations += 1
 
-    const res = await v4Client.getJson<{request: { status: 'running' | 'finished' | 'failed' }}>(url)
+    const res = await v4Client.getJson<{ request: { status: 'running' | 'finished' | 'failed' } }>(url)
 
     if (res.request.status === 'finished') { return res as R }
 
@@ -48,7 +48,7 @@ const uploadDataset = async (layer: V3Layer): Promise<{ id: string; title: strin
   formdata.append('time', 'false')
   formdata.append('tif_file', tifFile, path.basename(tifFilePath[0]!))
 
-  const { execution_id: execId } = await v4Client.sendForm<{execution_id: string}>('/api/v2/uploads/upload', formdata)
+  const { execution_id: execId } = await v4Client.sendForm<{ execution_id: string }>('/api/v2/uploads/upload', formdata)
 
   type UploadResponse = { request: { output_params: { resources: [{ id: number }] } } }
   const uploadResponse = await waitForUpload<UploadResponse>(`/api/v2/executionrequest/${execId}`)
@@ -73,7 +73,7 @@ const uploadStyle = async (layer: V3Layer, datasetTitle: string) => {
   formdata.append('style_upload_form', 'true')
   formdata.append('dataset_title', datasetTitle)
 
-  const { execution_id: execId } = await v4Client.sendForm<{execution_id: string}>('/upload/uploads/upload', formdata)
+  const { execution_id: execId } = await v4Client.sendForm<{ execution_id: string }>('/upload/uploads/upload', formdata)
 
   await waitForUpload(`/api/v2/executionrequest/${execId}`)
 }
@@ -94,7 +94,7 @@ const uploadMetadata = async (layer: V3Layer, datasetTitle: string) => {
   formdata.append('metadata_upload_form', 'true')
   formdata.append('dataset_title', datasetTitle)
 
-  const { execution_id: execId } = await v4Client.sendForm<{execution_id: string}>('/upload/uploads/upload', formdata)
+  const { execution_id: execId } = await v4Client.sendForm<{ execution_id: string }>('/upload/uploads/upload', formdata)
 
   await waitForUpload(`/api/v2/executionrequest/${execId}`)
 }

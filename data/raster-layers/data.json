@@ -1,0 +1,1960 @@
+[
+  {
+    "filesState": "no-original-files",
+    "id": "629",
+    "license": 8,
+    "name": "macro203",
+    "ownerUsername": "HCRM",
+    "title": "2010 average of surface macroplastic distribution at 1/20º (HCMR)",
+    "uuid": "50367da8-89e0-4347-a2d2-a1ff2df43e27"
+  },
+  {
+    "filesState": "ok",
+    "id": "630",
+    "license": 8,
+    "name": "micro203",
+    "ownerUsername": "HCRM",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/630/geonode_micro204_remote.sld",
+    "title": "2010 average of surface microplastic distribution at 1/20º (HCMR)",
+    "uuid": "36a89b62-1d27-45fb-abac-2dc58008c653"
+  },
+  {
+    "filesState": "ok",
+    "id": "459",
+    "license": 1,
+    "name": "a__550_4240_ABR",
+    "ownerUsername": "Training_PS3",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/459/geonode__550_4240_ABR_remote.sld",
+    "title": "Abrasion (surface, light, heavy)",
+    "uuid": "be705224-4237-41c6-8e0e-8f0e1aa393a7"
+  },
+  {
+    "filesState": "ok",
+    "id": "1987",
+    "license": 1,
+    "name": "a__1089_5852_ABR",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1987/geonode__1089_5852_ABR_remote.sld",
+    "title": "Abrasion (surface, light, heavy)",
+    "uuid": "ece4833c-102e-495f-8e36-c8bc44ed2b84"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "35",
+    "license": 9,
+    "name": "bridge_bs_ps3_merlangius",
+    "ownerUsername": "AquaMaps",
+    "title": "AquaMaps - Merlangius merlangus (2020)",
+    "uuid": "8d4b4c08-2ac8-11ed-b748-0242ac140008"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "24",
+    "license": 9,
+    "name": "bridge_bs_pomatomus_saltatrix",
+    "ownerUsername": "AquaMaps",
+    "title": "AquaMaps - Pomatomus saltatrix (2020)",
+    "uuid": "ce4b3b84-2aa8-11ed-b0d3-0242ac140008"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "30",
+    "license": 9,
+    "name": "bridge_bs_sarda_sarda",
+    "ownerUsername": "AquaMaps",
+    "title": "AquaMaps - Sarda sarda (2020)",
+    "uuid": "8e2a7eb2-2ac5-11ed-92d0-0242ac140008"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "34",
+    "license": 9,
+    "name": "bridge_bs_ps3_scophtalmus",
+    "ownerUsername": "AquaMaps",
+    "title": "AquaMaps - Scophthalmus maximus (2020)",
+    "uuid": "f924d6a2-2ac7-11ed-9f14-0242ac140008"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "33",
+    "license": 9,
+    "name": "geonode_aquamaps_squalus_acanthias",
+    "ownerUsername": "AquaMaps",
+    "title": "AquaMaps - Squalus acanthias (2020)",
+    "uuid": "51758a46-2ac7-11ed-b177-0242ac140008"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "23",
+    "license": 9,
+    "name": "bridge_bs_trachurus_trachurus",
+    "ownerUsername": "AquaMaps",
+    "title": "AquaMaps - Trachurus trachurus (2020)",
+    "uuid": "fdf93832-2aa7-11ed-8d5b-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "548",
+    "license": 1,
+    "name": "PS1_cea_CEASCORE",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/548/PS1_cea_CEASCORE_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 1 - CEASCORE - Current condition",
+    "uuid": "76804c10-b8a3-44fb-ac4a-98329c36b7f6"
+  },
+  {
+    "filesState": "ok",
+    "id": "546",
+    "license": 1,
+    "name": "PS1_cea_MAPCEA_MSFDBIO",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/546/PS1_cea_MAPCEA_MSFDBIO_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 1 - MSFDBIO CEASCORE - Current condition",
+    "uuid": "aefe02dd-f8dd-423c-968c-1b52fb5c2668"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "545",
+    "license": 1,
+    "name": "PS1_cea_MAPCEA_MSFDPHY",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 1 - MSFDPHY CEASCORE - Current condition",
+    "uuid": "66f93c8f-9636-4325-8c2c-059d609eb5e5"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "544",
+    "license": 1,
+    "name": "PS1_cea_MAPCEA_MSFDSUB",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 1 - MSFDSUB CEASCORE - Current condition",
+    "uuid": "4fc36d88-14a3-4b15-ae48-3ea0f573cc07"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "529",
+    "license": 1,
+    "name": "cea_CEASCORE_ps2",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 2 - CEASCORE - Current condition",
+    "uuid": "c16c9088-de59-42eb-8fd1-f699ac93cdba"
+  },
+  {
+    "filesState": "ok",
+    "id": "577",
+    "license": 1,
+    "name": "cea_CEASCORE_6_",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/577/cea_CEASCORE_6__remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 2 - CEASCORE from LBA - Current condition",
+    "uuid": "9aa72796-5f51-4c03-a1f3-b6fa0f9a8d40"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "531",
+    "license": 1,
+    "name": "cea_MAPCEA_MSFDBIO",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 2 - MSFDBIO CEASCORE - Current condition",
+    "uuid": "85a81e4a-c0b5-4970-9712-415ec0292632"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "533",
+    "license": 1,
+    "name": "cea_MAPCEA_MSFDPHY",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 2 - MSFDPHY CEASCORE - Current condition",
+    "uuid": "0d8ed7ee-57a4-47f0-9fc3-ea2c488518b0"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "532",
+    "license": 1,
+    "name": "cea_MAPCEA_MSFDSUB",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 2 - MSFDSUB CEASCORE - Current condition",
+    "uuid": "e8427a02-01f6-43f7-abbc-3a1167d9a9c6"
+  },
+  {
+    "filesState": "ok",
+    "id": "450",
+    "license": 1,
+    "name": "a__589_4152_FISHING",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/450/geonode__589_4152_FISHING_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 2 - Marine litter from Fishing vessel density",
+    "uuid": "26967186-e2e0-439e-b7c9-0fd3ab113a0f"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "551",
+    "license": 1,
+    "name": "PS3_cea_CEASCORE",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 3 - CEASCORE - Current condition",
+    "uuid": "847c3d73-aef9-4e40-8d35-d3d63d670fea"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "552",
+    "license": 1,
+    "name": "PS3_cea_MAPCEA_MSFDBIO",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 3 - MSFDBIO CEASCORE - Current condition",
+    "uuid": "81cd64bf-24ff-4b92-8ea1-3d6679ff7e1e"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "549",
+    "license": 1,
+    "name": "PS3_cea_MAPCEA_MSFDPHY",
+    "ownerUsername": "admin",
+    "title": "BRIDGE-BS - Pilot Site 3 - MSFDPHY CEASCORE - Current condition",
+    "uuid": "01ab215c-d5b7-4478-a0c3-6a02bbb2ed84"
+  },
+  {
+    "filesState": "ok",
+    "id": "550",
+    "license": 1,
+    "name": "PS3_cea_MAPCEA_MSFDSUB",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/550/PS3_cea_MAPCEA_MSFDSUB_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 3 - MSFDSUB CEASCORE - Current condition",
+    "uuid": "ff93ff26-4457-419a-8d96-36128fcbee78"
+  },
+  {
+    "filesState": "ok",
+    "id": "249",
+    "license": 1,
+    "name": "bs_bathymetry",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/249/bathymetry___3a86b560-d9dd-11ed-9cd3-91ab99007cce_remote.sld",
+    "title": "BRIDGE-BS Black Sea Bathymetry",
+    "uuid": "c418b9d7-c47a-423c-853a-1d41bd9a6f82"
+  },
+  {
+    "filesState": "ok",
+    "id": "2099",
+    "license": 1,
+    "name": "BSII",
+    "ownerUsername": "Juuso",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2099/BSII_remote.sld",
+    "title": "BSII",
+    "uuid": "e3d7164a-0484-467c-870d-2f94dc6aa551"
+  },
+  {
+    "filesState": "ok",
+    "id": "619",
+    "license": 1,
+    "name": "a__582_4587_MAPCEA_MSFDBIO",
+    "ownerUsername": "BRIDGEPS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/619/geonode__582_4587_MAPCEA_MSFDBIO_remote.sld",
+    "title": "CEA score from biological pressures",
+    "uuid": "57119487-746c-496d-a094-77ee78851144"
+  },
+  {
+    "filesState": "ok",
+    "id": "1975",
+    "license": 1,
+    "name": "a__1089_5852_MAPCEA_MSFDBIO",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1975/geonode__1089_5852_MAPCEA_MSFDBIO_remote.sld",
+    "title": "CEA score from biological pressures",
+    "uuid": "b35e0048-cd1b-401e-8ef7-cae7ca1cbc81"
+  },
+  {
+    "filesState": "ok",
+    "id": "620",
+    "license": 1,
+    "name": "a__582_4587_MAPCEA_MSFDPHY",
+    "ownerUsername": "BRIDGEPS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/620/geonode__582_4587_MAPCEA_MSFDPHY_remote.sld",
+    "title": "CEA score from physical pressures",
+    "uuid": "ded5909e-7a69-40ba-a334-0b4b18707c78"
+  },
+  {
+    "filesState": "ok",
+    "id": "1974",
+    "license": 1,
+    "name": "a__1089_5852_MAPCEA_MSFDPHY",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1974/geonode__1089_5852_MAPCEA_MSFDPHY_remote.sld",
+    "title": "CEA score from physical pressures",
+    "uuid": "1b5be73f-aa76-4a1f-bbaf-58fa42dff49e"
+  },
+  {
+    "filesState": "ok",
+    "id": "615",
+    "license": 1,
+    "name": "a__582_4587_MAPCEA_MSFDSUB",
+    "ownerUsername": "BRIDGEPS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/615/geonode__582_4587_MAPCEA_MSFDSUB_remote.sld",
+    "title": "CEA score from substances, litter and energy pressures",
+    "uuid": "69eeae0a-f573-4a75-95f3-a2e2ae840538"
+  },
+  {
+    "filesState": "ok",
+    "id": "1967",
+    "license": 1,
+    "name": "a__1089_5852_MAPCEA_MSFDSUB",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1967/geonode__1089_5852_MAPCEA_MSFDSUB_remote.sld",
+    "title": "CEA score from substances, litter and energy pressures",
+    "uuid": "e34763b8-9677-4c7f-9838-d42d95d95bad"
+  },
+  {
+    "filesState": "ok",
+    "id": "575",
+    "license": 1,
+    "name": "Map_DI_Hake",
+    "ownerUsername": "germana.garofalo@cnr.it",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/575/Map_DI_Hake_remote.sld",
+    "title": "CNR-IRBIM Predicted Density Index of European hake",
+    "uuid": "9f9f1ef9-6ad1-4a88-8282-1518f3c592fd"
+  },
+  {
+    "filesState": "ok",
+    "id": "1685",
+    "license": 1,
+    "name": "a__2024_12_28_00_00_2024_12_28_23_59_Sentinel_2_L2A_Highlight_Optimized_Natural_Color",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1685/a__2024_12_28_00_00_2024_12_28_23_59_Sentinel_2_L2A_Highlight_Optimized_Natural_Color_remote.sld",
+    "title": "Cantiere rigassificatore offshore di Ravenna",
+    "uuid": "99943c43-138a-4479-915b-a39b8eaea419"
+  },
+  {
+    "filesState": "ok",
+    "id": "1985",
+    "license": 1,
+    "name": "a__1089_5852_CSILT",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1985/a__1089_5852_CSILT_remote.sld",
+    "title": "Changes in siltation",
+    "uuid": "1571ba69-39c8-4d26-adc3-c7c3cce9e69b"
+  },
+  {
+    "filesState": "ok",
+    "id": "125",
+    "license": 1,
+    "name": "COCONET_BS_OWF_Suitability_areas",
+    "ownerUsername": "Tools4msp",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/125/COCONET_BS_OWF_Suitability_areas_remote.sld",
+    "title": "CoCoNet - Black Sea offshore wind farm suitability areas",
+    "uuid": "6c17987b-7ac0-440f-8c77-9c8cd483550d"
+  },
+  {
+    "filesState": "ok",
+    "id": "536",
+    "license": 1,
+    "name": "pleasure_craft_and_sailing_2019_EMODnet_vesseldens_04_05_1_",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/536/pleasure_craft_and_sailing_2019_EMODnet_vesseldens_04_05_1__remote.sld",
+    "title": "BRIDGE-BS - Black Sea - Leisure boating (2019)",
+    "uuid": "fce5029a-f5ef-40ab-83a4-4755e450e462"
+  },
+  {
+    "filesState": "ok",
+    "id": "1171",
+    "license": 8,
+    "name": "a__892d4061bab938ab99dbbd3782a19f67",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1171/a__892d4061bab938ab99dbbd3782a19f67_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 2 - Marine litter from fishing vessels",
+    "uuid": "121e21fc-a9af-497d-ab37-4db5a344693b"
+  },
+  {
+    "filesState": "ok",
+    "id": "1203",
+    "license": 8,
+    "name": "VMS_2020_PointToRaster3km_v3",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1203/VMS_2020_PointToRaster3km_v3_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 3 -  Small Scale Fishery (VMS) 2020",
+    "uuid": "039510da-e2d0-4ca8-81eb-6504e4f7fd91"
+  },
+  {
+    "filesState": "ok",
+    "id": "435",
+    "license": 1,
+    "name": "chl_a_2020MEAN_cmems_obs_oc_blk_bgc_tur_spm_chl_nrt_l4_hr_mosaic_P1D_m",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/435/chl_a_2020MEAN_cmems_obs_oc_blk_bgc_tur_spm_chl_nrt_l4_hr_mosaic_P1D_m_remote.sld",
+    "title": "CMEMS - Black Sea  - Chlorophyll-a concentration from MSI L2R (2020)",
+    "uuid": "9432a11a-6e0f-4998-8061-17ac0ef82814"
+  },
+  {
+    "filesState": "ok",
+    "id": "434",
+    "license": 1,
+    "name": "shelf_bottom_dissolved_mol_oxy_2022MEAN_mmolm_3_cmems_mod_blk_bgc_bio_anfc_3km_P1D_m",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/434/shelf_bottom_dissolved_mol_oxy_2022MEAN_mmolm_3_cmems_mod_blk_bgc_bio_anfc_3km_P1D_m_remote.sld",
+    "title": "CMEMS - Black Sea  - Mole concentration of Dissolved Molecular Oxygen in sea water on the shelf bottom (2022)",
+    "uuid": "19d7b651-a854-4451-995e-fa3980d13239"
+  },
+  {
+    "filesState": "ok",
+    "id": "429",
+    "license": 1,
+    "name": "nitrate_mmol_m_3_2022mean_cmems_mod_blk_bgc_nut_anfc_3km_P1D_m",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/429/nitrate_mmol_m_3_2022mean_cmems_mod_blk_bgc_nut_anfc_3km_P1D_m_remote.sld",
+    "title": "CMEMS - Black Sea  - Mole concentration of Nitrate at sea surface (2022)",
+    "uuid": "26ba5c59-1d66-4fdc-b80a-57b4ead7d7b2"
+  },
+  {
+    "filesState": "ok",
+    "id": "431",
+    "license": 1,
+    "name": "phosphate_mmol_m_3_2022mean_cmems_mod_blk_bgc_nut_anfc_3km_P1D_m",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/431/phosphate_mmol_m_3_2022mean_cmems_mod_blk_bgc_nut_anfc_3km_P1D_m_remote.sld",
+    "title": "CMEMS - Black Sea  - Mole concentration of Phosphate at sea surface (2022)",
+    "uuid": "41ab5025-d555-4441-92a9-9612ac48bdb1"
+  },
+  {
+    "filesState": "ok",
+    "id": "433",
+    "license": 1,
+    "name": "dissolved_mol_oxy_2022MEAN_mmolm_3_cmems_mod_blk_bgc_bio_anfc_3km_P1D_m",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/433/dissolved_mol_oxy_2022MEAN_mmolm_3_cmems_mod_blk_bgc_bio_anfc_3km_P1D_m_remote.sld",
+    "title": "CMEMS - Black Sea  - Mole concentration of dissolved oxygen at sea surface (2022)",
+    "uuid": "8a6c67c9-52c6-41fd-a1cf-fd2ed0a08b0f"
+  },
+  {
+    "filesState": "ok",
+    "id": "432",
+    "license": 1,
+    "name": "netprimprod_2022MEAN_mg_carbon_perm3_perday_cmems_mod_blk_bgc_bio_anfc_3km_P1D_m",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/432/netprimprod_2022MEAN_mg_carbon_perm3_perday_cmems_mod_blk_bgc_bio_anfc_3km_P1D_m_remote.sld",
+    "title": "CMEMS - Black Sea  - Net primary production at sea surface (2022)",
+    "uuid": "6a8a024b-0ff5-4536-a9d2-383442d43982"
+  },
+  {
+    "filesState": "ok",
+    "id": "430",
+    "license": 1,
+    "name": "copernicus_chla_concentration_mg_2017mean",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/430/copernicus_chla_concentration_mg_2017mean_remote.sld",
+    "title": "CMEMS - Black Sea - Chlorophyll-a sea surface concentration (2017)",
+    "uuid": "507c1a87-01b8-42b3-89a5-e0b32160ffb0"
+  },
+  {
+    "filesState": "ok",
+    "id": "437",
+    "license": 1,
+    "name": "surface_salinity_2020MEAN_cmems_mod_blk_phy_sal_my_2_5km_P1M_m",
+    "ownerUsername": "BRIDGE-BS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/437/surface_salinity_2020MEAN_cmems_mod_blk_phy_sal_my_2_5km_P1M_m_remote.sld",
+    "title": "CMEMS - Black Sea - Surface Salinity (2020)",
+    "uuid": "7933ecb1-f4ee-49a5-b6ab-3231cb24034e"
+  },
+  {
+    "filesState": "ok",
+    "id": "446",
+    "license": 1,
+    "name": "wid6_cargo_all_europe_yearly_20190101000000_20191231235959_tdm_grid",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/446/geonode_wid6_cargo_all_europe_yearly_20190101000000_20191231235959_tdm_grid_remote.sld",
+    "title": "Cargo vessel density map - EMODnet Human Activities (2019)",
+    "uuid": "2af2fb13-1ed0-463e-a10f-550b2c896e79"
+  },
+  {
+    "filesState": "ok",
+    "id": "126",
+    "license": 1,
+    "name": "COCONET_BS_OWF_Restricted_areas",
+    "ownerUsername": "Tools4msp",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/126/COCONET_BS_OWF_Restricted_areas_remote.sld",
+    "title": "CoCoNet - Black Sea offshore wind farm  restricted areas",
+    "uuid": "59cc2da3-5059-4150-a63c-7295e67336ed"
+  },
+  {
+    "filesState": "ok",
+    "id": "124",
+    "license": 1,
+    "name": "COCONET_BS_OWF_nogoareas",
+    "ownerUsername": "Tools4msp",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/124/COCONET_BS_OWF_nogoareas_remote.sld",
+    "title": "CoCoNet - Black Sea offshore wind farm no go areas",
+    "uuid": "b5cf9891-6814-45a9-87fd-0edee14af05b"
+  },
+  {
+    "filesState": "ok",
+    "id": "695",
+    "license": 1,
+    "name": "bottomt_mean_2000_2010",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/695/bottomt_mean_2000_2010_remote.sld",
+    "title": "Coastal Bottom Mean Temperature  Mediterranean Sea 2000-2010",
+    "uuid": "64ed8115-dded-4aab-a71d-647eebdcfe2d"
+  },
+  {
+    "filesState": "ok",
+    "id": "616",
+    "license": 1,
+    "name": "a__582_4587_MAPINDEX_EDIV",
+    "ownerUsername": "BRIDGEPS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/616/a__582_4587_MAPINDEX_EDIV_remote.sld",
+    "title": "Ecological diversity index",
+    "uuid": "f7c70e23-c5bc-4b9d-bcfd-84fecb95c798"
+  },
+  {
+    "filesState": "ok",
+    "id": "1969",
+    "license": 1,
+    "name": "a__1089_5852_MAPINDEX_EDIV",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1969/geonode__1089_5852_MAPINDEX_EDIV_remote.sld",
+    "title": "Ecological diversity index",
+    "uuid": "85bfb016-1a8f-47be-8500-4c991c9c6f72"
+  },
+  {
+    "filesState": "ok",
+    "id": "1973",
+    "license": 1,
+    "name": "a__1089_5852_MAP_EFFECT_POTENTIAL",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1973/a__1089_5852_MAP_EFFECT_POTENTIAL_remote.sld",
+    "title": "Effect potential",
+    "uuid": "2884487c-78c5-4f77-9c3d-03666c662de7"
+  },
+  {
+    "filesState": "ok",
+    "id": "1506",
+    "license": 1,
+    "name": "Fishing_effort_Dominio_UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1506/Fishing_effort_Dominio_UTM_remote.sld",
+    "title": "Fishing effort Bottom Trawling OTB SoS",
+    "uuid": "afee2a21-9f12-4aa2-8574-71472a327116"
+  },
+  {
+    "filesState": "ok",
+    "id": "1510",
+    "license": 1,
+    "name": "SSF_LEK_VMS_dom_UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1510/SSF_LEK_VMS_dom_UTM_remote.sld",
+    "title": "Fishing effort SSF  in SoS",
+    "uuid": "92f13095-70e5-47ef-a0dd-8274750fbb40"
+  },
+  {
+    "filesState": "ok",
+    "id": "449",
+    "license": 1,
+    "name": "wid6_fishing_all_europe_yearly_20190101000000_20191231235959_tdm_grid",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/449/geonode_wid6_fishing_all_europe_yearly_20190101000000_20191231235959_tdm_grid_remote.sld",
+    "title": "Fishing vessel density map - EMODnet Human Activities (2019)",
+    "uuid": "3f06ed27-7c55-46fd-93b2-ad1f95bce62f"
+  },
+  {
+    "filesState": "ok",
+    "id": "444",
+    "license": 1,
+    "name": "a__585_4143_FISHING",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/444/a__585_4143_FISHING_remote.sld",
+    "title": "Floating litter from EMODnet Route Density (2019)",
+    "uuid": "ec4a1438-1479-425e-afe6-356145df0422"
+  },
+  {
+    "filesState": "ok",
+    "id": "440",
+    "license": 1,
+    "name": "a__585_4129_SHIPDENS",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/440/a__585_4129_SHIPDENS_remote.sld",
+    "title": "Floating litter from EMODnet Vessel Density (2019)",
+    "uuid": "be62f065-9edd-4174-97f0-8b302ed8bf36"
+  },
+  {
+    "filesState": "ok",
+    "id": "1206",
+    "license": 8,
+    "name": "litter_from_vessel_dens_2019_PMAR24_v30",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1206/litter_from_vessel_dens_2019_PMAR24_v30_remote.sld",
+    "title": "Floating litter from EMODnet Vessel Density (2019) - V2",
+    "uuid": "7c03db3c-a1a4-48f8-973e-603fc274f24d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1718",
+    "license": 1,
+    "name": "Funiculina_SoS",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1718/geonode_Funiculina_SoS_remote.sld",
+    "title": "Funiculina_SoS",
+    "uuid": "839b2e80-d9fa-4009-aaf3-debc653a5ea7"
+  },
+  {
+    "filesState": "ok",
+    "id": "960",
+    "license": 1,
+    "name": "drift0",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/960/drift0_remote.sld",
+    "title": "GFW Drift net fishing effort 2023 AIS",
+    "uuid": "9c1cf994-44b1-4bd5-8ea5-9b29f12aeeb3"
+  },
+  {
+    "filesState": "ok",
+    "id": "928",
+    "license": 1,
+    "name": "public_global_fishing_effort_v20231026",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/928/public_global_fishing_effort_v20231026_remote.sld",
+    "title": "GFW Fishing Effort Total 2023",
+    "uuid": "63f2228d-b513-4c22-a957-d4abd37a2023"
+  },
+  {
+    "filesState": "ok",
+    "id": "944",
+    "license": 1,
+    "name": "other_purse_seines",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/944/other_purse_seines_remote.sld",
+    "title": "GFW Fishing Effort for Other Purse Seines AIS",
+    "uuid": "9886b1dd-9cab-4fe1-a15d-ae8e0a2fb9f8"
+  },
+  {
+    "filesState": "ok",
+    "id": "941",
+    "license": 1,
+    "name": "longlines",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/941/longlines_remote.sld",
+    "title": "GFW Longlines Fishing Effort AIS 2023",
+    "uuid": "baeaff7b-2e20-4fe8-981c-7d5a4dd33705"
+  },
+  {
+    "filesState": "ok",
+    "id": "942",
+    "license": 1,
+    "name": "trawlers",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/942/trawlers_remote.sld",
+    "title": "GFW Trawlers fishing effort AIS",
+    "uuid": "bf89889f-930f-4432-a48c-ab056dd5f98d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1017",
+    "license": 1,
+    "name": "tuna_seine1",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1017/tuna_seine1_remote.sld",
+    "title": "GFW Tuna Seine fishing effort 2023",
+    "uuid": "b2496146-4bac-4e1a-aec6-e907d695ccd2"
+  },
+  {
+    "filesState": "ok",
+    "id": "1968",
+    "license": 1,
+    "name": "a__1089_5852_CEASCORE",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1968/a__1089_5852_CEASCORE_remote.sld",
+    "title": "Geospatial distribution of CEA score",
+    "uuid": "30b0b844-fada-478c-8265-756929a3f4b7"
+  },
+  {
+    "filesState": "ok",
+    "id": "36",
+    "license": 8,
+    "name": "geonode_public_global_fishing_effort_v20201001",
+    "ownerUsername": "Global-Fishing-Watch",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/36/geonode_public_global_fishing_effort_v20201001_remote.sld",
+    "title": "Global Fishing Watch - Fishing effort for the Black Sea (2020)",
+    "uuid": "1626b7ce-2ac9-11ed-94fe-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "623",
+    "license": 1,
+    "name": "a__582_4587_MAPINDEX_UDIV",
+    "ownerUsername": "BRIDGEPS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/623/geonode__582_4587_MAPINDEX_UDIV_remote.sld",
+    "title": "Human uses diversity index",
+    "uuid": "8c1252c9-1494-483b-95af-fe92fd103dec"
+  },
+  {
+    "filesState": "ok",
+    "id": "1976",
+    "license": 1,
+    "name": "a__1089_5852_MAPINDEX_UDIV",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1976/geonode__1089_5852_MAPINDEX_UDIV_remote.sld",
+    "title": "Human uses diversity index",
+    "uuid": "5c8036f6-9a83-4e21-831e-17847a59b6f6"
+  },
+  {
+    "filesState": "ok",
+    "id": "622",
+    "license": 1,
+    "name": "a__582_4587_MAPCEA_IMPACT_LEVEL",
+    "ownerUsername": "BRIDGEPS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/622/geonode__582_4587_MAPCEA_IMPACT_LEVEL_remote.sld",
+    "title": "Impact level",
+    "uuid": "dcfe82fb-6583-4e44-a03a-1c541a701bbd"
+  },
+  {
+    "filesState": "ok",
+    "id": "1970",
+    "license": 1,
+    "name": "a__1089_5852_MAPCEA_IMPACT_LEVEL",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1970/a__1089_5852_MAPCEA_IMPACT_LEVEL_remote.sld",
+    "title": "Impact level",
+    "uuid": "bec6d870-8e71-4486-98e2-d4b1cfa22e4e"
+  },
+  {
+    "filesState": "ok",
+    "id": "1983",
+    "license": 1,
+    "name": "a__1089_5852_FERT",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1983/geonode__1089_5852_FERT_remote.sld",
+    "title": "Inputs of fertilisers and other nitrogen and phosphorus-rich substances",
+    "uuid": "85315caa-4da4-4370-8531-8b614c1bf9b0"
+  },
+  {
+    "filesState": "ok",
+    "id": "1984",
+    "license": 1,
+    "name": "a__1089_5852_ORGMAT",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1984/geonode__1089_5852_ORGMAT_remote.sld",
+    "title": "Inputs of organic matter",
+    "uuid": "e96d6a19-1786-4a45-b4a4-c77b44c91bd0"
+  },
+  {
+    "filesState": "ok",
+    "id": "465",
+    "license": 1,
+    "name": "a__550_4240_INPNIS",
+    "ownerUsername": "Training_PS3",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/465/a__550_4240_INPNIS_remote.sld",
+    "title": "Introduction of non-indigenous species and translocations",
+    "uuid": "65cb0603-5153-4ca6-85c4-ae42d63cfcaa"
+  },
+  {
+    "filesState": "ok",
+    "id": "1990",
+    "license": 1,
+    "name": "a__1089_5852_INPNIS",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1990/geonode__1089_5852_INPNIS_remote.sld",
+    "title": "Introduction of non-indigenous species and translocations",
+    "uuid": "8979f8b8-762a-41db-8bb0-92ba5c6d923f"
+  },
+  {
+    "filesState": "ok",
+    "id": "1989",
+    "license": 1,
+    "name": "a__1089_5852_NONSYNTH",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1989/geonode__1089_5852_NONSYNTH_remote.sld",
+    "title": "Introduction of non-synthetic substances and compounds",
+    "uuid": "c42f99d8-a2d5-486c-9e1f-184677644a48"
+  },
+  {
+    "filesState": "ok",
+    "id": "467",
+    "license": 1,
+    "name": "a__550_4240_OTHERS",
+    "ownerUsername": "Training_PS3",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/467/geonode__550_4240_OTHERS_remote.sld",
+    "title": "Introduction of other substances",
+    "uuid": "07634032-1b0e-4709-8ca2-ec22a800d138"
+  },
+  {
+    "filesState": "ok",
+    "id": "1980",
+    "license": 1,
+    "name": "a__1089_5852_SYNTH",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1980/geonode__1089_5852_SYNTH_remote.sld",
+    "title": "Introduction of synthetic compounds",
+    "uuid": "60e37e1e-507b-41a2-81ba-1d2464e8c148"
+  },
+  {
+    "filesState": "ok",
+    "id": "1719",
+    "license": 1,
+    "name": "Isidella_SoS",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1719/Isidella_SoS_remote.sld",
+    "title": "Isidella_SoS",
+    "uuid": "0b7ae634-abd7-4dab-b860-5cb1feea20ae"
+  },
+  {
+    "filesState": "ok",
+    "id": "2008",
+    "license": 1,
+    "name": "u94p15",
+    "ownerUsername": "Tools4msp",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2008/base_sld___6c5182d0-0af2-11f0-87db-63b3f9e44710_remote.sld",
+    "title": "LBA Fert",
+    "uuid": "035f1772-44cd-4b62-af74-4119d2ca3192"
+  },
+  {
+    "filesState": "ok",
+    "id": "2009",
+    "license": 1,
+    "name": "u94p19",
+    "ownerUsername": "Tools4msp",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2009/u94p19_remote.sld",
+    "title": "LBA Org",
+    "uuid": "590fac20-e4fc-489a-aba4-6a1e7cb91e07"
+  },
+  {
+    "filesState": "ok",
+    "id": "2007",
+    "license": 1,
+    "name": "u94p12",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2007/base_sld___b22540a0-0af0-11f0-a17d-11660fb08cbf_remote.sld",
+    "title": "LBA Plume nonsynth",
+    "uuid": "e3f9fea8-353f-4113-b7b4-831ebbb21b0f"
+  },
+  {
+    "filesState": "ok",
+    "id": "2006",
+    "license": 1,
+    "name": "u94p11",
+    "ownerUsername": "Tools4msp",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2006/base_sld___92e28ba0-0aee-11f0-b78b-ebc0ffddd349_remote.sld",
+    "title": "LBA Synt & Litter",
+    "uuid": "2a2e18af-c34b-4ba4-affe-c8aa10a2980d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1716",
+    "license": 1,
+    "name": "Leptometra_HS",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1716/Leptometra_HS_remote.sld",
+    "title": "Leptometra phalangium SoS Millot et al 2024",
+    "uuid": "7fd4a5c1-d4b9-4390-9157-0e8554156911"
+  },
+  {
+    "filesState": "ok",
+    "id": "1483",
+    "license": 1,
+    "name": "MB15__Mediterranean_infralittoral_rock",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1483/MB15__Mediterranean_infralittoral_rock_remote.sld",
+    "title": "MB15 Mediterranean infralittoral rock SoS",
+    "uuid": "526b2583-02de-4c28-ab57-61a2e18af46f"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1484",
+    "license": 1,
+    "name": "MB55__Mediterranean_infralittoral_sand0",
+    "ownerUsername": "danilo.scannella",
+    "title": "MB55 Mediterranean infralittoral sand SoS",
+    "uuid": "cdde4835-0b37-42b0-bee0-d3851f82879d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1380",
+    "license": 1,
+    "name": "MB65__Mediterranean_infralittoral_mud",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1380/MB65__Mediterranean_infralittoral_mud_remote.sld",
+    "title": "MB65 Mediterranean infralittoral mud SoS",
+    "uuid": "d5ded481-fe89-4e08-9b8d-388cef776246"
+  },
+  {
+    "filesState": "ok",
+    "id": "1488",
+    "license": 1,
+    "name": "MC151__Coralligenous_biocenosis",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1488/MC151__Coralligenous_biocenosis_remote.sld",
+    "title": "MC151 Coralligenous biocenosis SoS",
+    "uuid": "ef534185-b334-4a6b-8942-6d564819b076"
+  },
+  {
+    "filesState": "ok",
+    "id": "1486",
+    "license": 1,
+    "name": "MC35__Mediterranean_circalittoral_coarse_sediment",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1486/MC35__Mediterranean_circalittoral_coarse_sediment_remote.sld",
+    "title": "MC35 Mediterranean circalittoral coarse sediment SoS",
+    "uuid": "4f6994d2-687e-488a-82ec-9ebab2b8d689"
+  },
+  {
+    "filesState": "ok",
+    "id": "1487",
+    "license": 1,
+    "name": "MC45__Mediterranean_circalittoral_mixed_sediment",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1487/MC45__Mediterranean_circalittoral_mixed_sediment_remote.sld",
+    "title": "MC45 Mediterranean circalittoral mixed sediment SoS",
+    "uuid": "fefc8a2e-549e-4c33-92d2-d50776037062"
+  },
+  {
+    "filesState": "ok",
+    "id": "1489",
+    "license": 1,
+    "name": "MC451__Biocenosis_of_Mediterranean_muddy_detritic_bottoms",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1489/MC451__Biocenosis_of_Mediterranean_muddy_detritic_bottoms_remote.sld",
+    "title": "MC451 Biocenosis of Mediterranean muddy detritic bottoms SoS",
+    "uuid": "f2d805ac-37b8-4fed-8dd5-a581fc570ebe"
+  },
+  {
+    "filesState": "ok",
+    "id": "1389",
+    "license": 1,
+    "name": "MC651__Biocenosis_of_Mediterranean_circalittoral_coastal_terrigenous_muds",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1389/MC651__Biocenosis_of_Mediterranean_circalittoral_coastal_terrigenous_muds_remote.sld",
+    "title": "MC651 Biocenosis of Mediterranean circalittoral coastal terrigenous muds SoS",
+    "uuid": "86bf9d58-cd4a-4813-80cf-c232c72e4fd1"
+  },
+  {
+    "filesState": "ok",
+    "id": "1495",
+    "license": 1,
+    "name": "MC651_or_MC451_or_MC35",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1495/MC651_or_MC451_or_MC35_remote.sld",
+    "title": "MC651 or MC451 or MC35 Bio Med circalittoral coastal terrigenous muds or Bio Med muddy detritic bottoms or Med circalittoral coarse sediment SoS",
+    "uuid": "2cb05e60-db2f-4751-af1e-07050b64c176"
+  },
+  {
+    "filesState": "no-details",
+    "id": "1388",
+    "license": null,
+    "name": "MC651_or_MC451_or_MC35__Bio_Med_circalittoral_coastal_terrigenous_muds_or_Bio_Med_muddy_detritic_bottoms_or_Med_circalittoral_coarse_sediment0",
+    "ownerUsername": "danilo.scannella",
+    "title": "MC651_or_MC451_or_MC35__Bio_Med_circalittoral_coastal_terrigenous_muds_or_Bio_Med_muddy_detritic_bottoms_or_Med_circalittoral_coarse_sediment0",
+    "uuid": "82abb89a-bfec-432e-b995-7635e505480f"
+  },
+  {
+    "filesState": "ok",
+    "id": "1390",
+    "license": 1,
+    "name": "MD151__Biocenosis_of_Mediterranean_shelf_edge_rock",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1390/MD151__Biocenosis_of_Mediterranean_shelf_edge_rock_remote.sld",
+    "title": "MD151 Biocenosis of Mediterranean shelf edge rock SoS",
+    "uuid": "e9a0f029-b5c3-4515-b37e-3cc9e6fa9f8c"
+  },
+  {
+    "filesState": "ok",
+    "id": "1391",
+    "license": 1,
+    "name": "MD451__Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1391/MD451__Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge_remote.sld",
+    "title": "MD451 Biocenosis of Mediterranean open sea detritic bottoms on shelf edge SoS",
+    "uuid": "daa76025-c17d-49a5-94fe-bd8f24cf779b"
+  },
+  {
+    "filesState": "ok",
+    "id": "1395",
+    "license": 1,
+    "name": "MD651__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1395/MD651__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_remote.sld",
+    "title": "MD651 Biocenosis of Mediterranean offshore circalittoral coastal terrigenous muds SoS",
+    "uuid": "7b2efbb4-2348-4226-b053-5f0ce106c8d7"
+  },
+  {
+    "filesState": "ok",
+    "id": "1494",
+    "license": 1,
+    "name": "MD651_or_MD45",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1494/MD651_or_MD45_remote.sld",
+    "title": "MD651 or MD451 Biocenosis of Mediterranean offshore circalittoral coastal terrigenous muds or Biocenosis of Mediterranean open-sea detritic bottoms on shelf-edge SoS",
+    "uuid": "10775a51-85a4-4ebe-87eb-f64d3c3fed2d"
+  },
+  {
+    "filesState": "no-details",
+    "id": "1392",
+    "license": null,
+    "name": "MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge",
+    "ownerUsername": "danilo.scannella",
+    "title": "MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge",
+    "uuid": "d537458a-6694-43ea-a638-5ceb72d40da1"
+  },
+  {
+    "filesState": "no-details",
+    "id": "1393",
+    "license": null,
+    "name": "MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge0",
+    "ownerUsername": "danilo.scannella",
+    "title": "MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge0",
+    "uuid": "2c40534c-cb07-4854-81a6-71696032adca"
+  },
+  {
+    "filesState": "no-details",
+    "id": "1394",
+    "license": null,
+    "name": "MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge1",
+    "ownerUsername": "danilo.scannella",
+    "title": "MD651_or_MD451__Biocenosis_of_Mediterranean_offshore_circalittoral_coastal_terrigenous_muds_or_Biocenosis_of_Mediterranean_open_sea_detritic_bottoms_on_shelf_edge1",
+    "uuid": "f9a5d800-01c1-42c0-bfe8-c50f84519795"
+  },
+  {
+    "filesState": "ok",
+    "id": "1396",
+    "license": 1,
+    "name": "ME15__Mediterranean_upper_bathyal_rock",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1396/ME15__Mediterranean_upper_bathyal_rock_remote.sld",
+    "title": "ME15 Mediterranean upper bathyal rock SoS",
+    "uuid": "8c31bac9-e357-458b-8c4f-f41b44d8e9ca"
+  },
+  {
+    "filesState": "ok",
+    "id": "1397",
+    "license": 1,
+    "name": "ME35__Mediterranean_upper_bathyal_coarse_sediment",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1397/ME35__Mediterranean_upper_bathyal_coarse_sediment_remote.sld",
+    "title": "ME35 Mediterranean upper bathyal coarse sediment SoS",
+    "uuid": "f1c6fca6-1584-40b9-976c-d9afde951624"
+  },
+  {
+    "filesState": "ok",
+    "id": "1398",
+    "license": 1,
+    "name": "ME45__Mediterranean_upper_bathyal_mixed_sediment",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1398/ME45__Mediterranean_upper_bathyal_mixed_sediment_remote.sld",
+    "title": "ME45 Mediterranean upper bathyal mixed sediment SoS",
+    "uuid": "0a7ecb2a-840e-42ac-abb5-442e6f2e580b"
+  },
+  {
+    "filesState": "ok",
+    "id": "1399",
+    "license": 1,
+    "name": "ME55__Mediterranean_upper_bathyal_sand",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1399/ME55__Mediterranean_upper_bathyal_sand_remote.sld",
+    "title": "ME55 Mediterranean upper bathyal sand SoS",
+    "uuid": "498859b8-fe35-444a-8031-a6d40c6b155e"
+  },
+  {
+    "filesState": "ok",
+    "id": "1493",
+    "license": 1,
+    "name": "ME65__Mediterranean_upper_bathyal_mud",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1493/ME65__Mediterranean_upper_bathyal_mud_remote.sld",
+    "title": "ME65 Mediterranean upper bathyal mud SoS",
+    "uuid": "a75515ca-73bb-4119-9d8b-a1598198c837"
+  },
+  {
+    "filesState": "ok",
+    "id": "1400",
+    "license": 1,
+    "name": "ME65_or_ME55__Mediterranean_upper_bathyal_mud_or_Mediterranean_upper_bathyal_sand",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1400/ME65_or_ME55__Mediterranean_upper_bathyal_mud_or_Mediterranean_upper_bathyal_sand_remote.sld",
+    "title": "ME65 or ME55 Mediterranean upper bathyal mud or Mediterranean upper bathyal sand SoS",
+    "uuid": "9e71089a-fae4-4b09-981f-eef5d514e16c"
+  },
+  {
+    "filesState": "ok",
+    "id": "1402",
+    "license": 1,
+    "name": "MF15__Mediterranean_lower_bathyal_rock",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1402/MF15__Mediterranean_lower_bathyal_rock_remote.sld",
+    "title": "MF15 Mediterranean lower bathyal rock SoS",
+    "uuid": "e7d86437-7077-4269-826f-4622362a9e2f"
+  },
+  {
+    "filesState": "ok",
+    "id": "1404",
+    "license": 1,
+    "name": "MF45__Mediterranean_lower_bathyal_mixed_sediment",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1404/MF45__Mediterranean_lower_bathyal_mixed_sediment_remote.sld",
+    "title": "MF45 Mediterranean lower bathyal mixed sediment SoS",
+    "uuid": "456871c9-b7b3-4ec6-a337-40f8f9695b12"
+  },
+  {
+    "filesState": "ok",
+    "id": "1405",
+    "license": 1,
+    "name": "MF55__Mediterranean_lower_bathyal_sand",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1405/MF55__Mediterranean_lower_bathyal_sand_remote.sld",
+    "title": "MF55 Mediterranean lower bathyal sand SoS",
+    "uuid": "78e297a2-41f8-400f-8e80-8d57953d0b11"
+  },
+  {
+    "filesState": "ok",
+    "id": "1492",
+    "license": 1,
+    "name": "MF65__Mediterranean_lower_bathyal_mud",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1492/MF65__Mediterranean_lower_bathyal_mud_remote.sld",
+    "title": "MF65 Mediterranean lower bathyal mud SoS",
+    "uuid": "451bdd9a-5d03-459f-a998-8959b3571594"
+  },
+  {
+    "filesState": "ok",
+    "id": "1406",
+    "license": 1,
+    "name": "MF65_or_MF55__Mediterranean_lower_bathyal_mud_or_Mediterranean_lower_bathyal_sand",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1406/MF65_or_MF55__Mediterranean_lower_bathyal_mud_or_Mediterranean_lower_bathyal_sand_remote.sld",
+    "title": "MF65 or MF55 Mediterranean lower bathyal mud or Mediterranean lower bathyal sand SoS",
+    "uuid": "be2300a2-53ff-43d7-866f-dde1e57ddac6"
+  },
+  {
+    "filesState": "ok",
+    "id": "1491",
+    "license": 1,
+    "name": "MG65__Mediterranean_abyssal_mud",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1491/MG65__Mediterranean_abyssal_mud_remote.sld",
+    "title": "MG65 Mediterranean abyssal mud SoS",
+    "uuid": "7d2e23bd-6272-49fb-8859-3d055cddc21f"
+  },
+  {
+    "filesState": "ok",
+    "id": "1764",
+    "license": 1,
+    "name": "MRE_PS3",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1764/MRE_PS3_remote.sld",
+    "title": "MRE_PS3",
+    "uuid": "f3785ed1-f76b-418f-a2aa-9a28b57bf967"
+  },
+  {
+    "filesState": "ok",
+    "id": "493",
+    "license": 1,
+    "name": "M_galloprovincialis_Maxent_2017_PS2",
+    "ownerUsername": "Training_PS2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/493/M_galloprovincialis_Maxent_2017_PS2_remote.sld",
+    "title": "M_galloprovincialis_Maxent_2017_PS2",
+    "uuid": "815f80c6-7f0d-4069-8f7f-ebaf93ca9592"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "472",
+    "license": 1,
+    "name": "a__550_4240_MLITTER",
+    "ownerUsername": "Training_PS3",
+    "title": "Marine litter",
+    "uuid": "615fef62-84e8-424d-9695-be63c6033663"
+  },
+  {
+    "filesState": "ok",
+    "id": "1981",
+    "license": 1,
+    "name": "a__1089_5852_MLITTER",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1981/geonode__1089_5852_MLITTER_remote.sld",
+    "title": "Marine litter",
+    "uuid": "fdf48f54-a629-45ba-b86d-e457a0eb3d9e"
+  },
+  {
+    "filesState": "ok",
+    "id": "2012",
+    "license": 8,
+    "name": "NAS_seagrass_habitat_binary",
+    "ownerUsername": "szunino@ogs.it",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2012/posidonia__baseline_remote.sld",
+    "title": "NAS_seagrass_habitat_binary",
+    "uuid": "532a7113-3133-46e2-9e66-c76be379ea55"
+  },
+  {
+    "filesState": "ok",
+    "id": "2004",
+    "license": 8,
+    "name": "NTS_seagrass_habitat_binary",
+    "ownerUsername": "szunino@ogs.it",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2004/posidonia__baseline_remote.sld",
+    "title": "NTS_seagrass_habitat_binary",
+    "uuid": "77567bbb-eb89-4928-afcc-02b635c36506"
+  },
+  {
+    "filesState": "ok",
+    "id": "1523",
+    "license": 1,
+    "name": "MERLMER_recruits_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1523/MERLMER_recruits_persistence1_remote.sld",
+    "title": "Nursery Habitat of European hake Merluccius merluccius (HKE) SoS",
+    "uuid": "407ac2e8-0f46-433a-bf09-ff99f89c1348"
+  },
+  {
+    "filesState": "ok",
+    "id": "1512",
+    "license": 1,
+    "name": "RAJACLA_recruits_persistence_UTM0",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1512/RAJACLA_recruits_persistence_UTM0_remote.sld",
+    "title": "Nursery Habitat of Thornback ray Raja clavata (RJC) SoS",
+    "uuid": "3d220cfd-dc74-4e7d-8687-6423c6ceff9b"
+  },
+  {
+    "filesState": "ok",
+    "id": "1524",
+    "license": 1,
+    "name": "Multispecies_nursery_60",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1524/Multispecies_nursery_60_remote.sld",
+    "title": "Nursery Habitat of multiple species SoS",
+    "uuid": "31894ac5-0044-454f-9fcc-d21bc1c64da4"
+  },
+  {
+    "filesState": "ok",
+    "id": "447",
+    "license": 1,
+    "name": "wid6_passenger_all_europe_yearly_20190101000000_20191231235959_tdm_grid",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/447/wid6_passenger_all_europe_yearly_20190101000000_20191231235959_tdm_grid_remote.sld",
+    "title": "Passenger - Vessel density map - EMODnet Human Activities (2019)",
+    "uuid": "264fe0d8-1b6b-46e2-b968-a366d4eee9c3"
+  },
+  {
+    "filesState": "ok",
+    "id": "454",
+    "license": 1,
+    "name": "a__2019_st_05_avg",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/454/a__2019_st_05_avg_remote.sld",
+    "title": "Pleasure craft - Vessel density EMODnet (2019)",
+    "uuid": "3d7117d3-1b58-4f77-99c1-8192aa6e2422"
+  },
+  {
+    "filesState": "ok",
+    "id": "1535",
+    "license": 1,
+    "name": "Pockmark_fields_UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1535/Pockmark_fields_UTM_remote.sld",
+    "title": "Pockmark fields SoS",
+    "uuid": "ec8554cc-ffec-4d3b-b7af-e24dfb3aa770"
+  },
+  {
+    "filesState": "ok",
+    "id": "621",
+    "license": 1,
+    "name": "a__582_4587_MAPINDEX_CEARANKING",
+    "ownerUsername": "BRIDGEPS",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/621/geonode__582_4587_MAPINDEX_CEARANKING_remote.sld",
+    "title": "Ranking of CEASCORE",
+    "uuid": "8d16d141-5358-4a30-ab8e-2863380c0711"
+  },
+  {
+    "filesState": "ok",
+    "id": "1972",
+    "license": 1,
+    "name": "a__1089_5852_MAPINDEX_CEARANKING",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1972/geonode__1089_5852_MAPINDEX_CEARANKING_remote.sld",
+    "title": "Ranking of CEASCORE",
+    "uuid": "1ef7c3b7-62e5-44ae-b598-f6b47dd11115"
+  },
+  {
+    "filesState": "ok",
+    "id": "1971",
+    "license": 1,
+    "name": "a__1089_5852_MAPCEA_RECOVERY_TIME",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1971/geonode__1089_5852_MAPCEA_RECOVERY_TIME_remote.sld",
+    "title": "Recovery time",
+    "uuid": "a046dad2-4a91-45dc-a3d5-46fdd0fc8894"
+  },
+  {
+    "filesState": "ok",
+    "id": "1868",
+    "license": 1,
+    "name": "wid1000012_all_traffic_all_europe_yearly_2024",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1868/Routes%20per%20Square%20Km%20per%20Year_remote.sld",
+    "title": "Route Density - All traffic 2024 - EMODnet",
+    "uuid": "4f5e9858-6e1b-4b9e-8366-8cf65ecff26c"
+  },
+  {
+    "filesState": "ok",
+    "id": "439",
+    "license": 1,
+    "name": "wid6_all_traffic_all_europe_yearly_20190101000000_20191231235959_tdm_grid",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/439/wid6_all_traffic_all_europe_yearly_20190101000000_20191231235959_tdm_grid_remote.sld",
+    "title": "Route density (all vessels) - EMODnet Human Activities (2019)",
+    "uuid": "0fb965c9-1678-4ced-85c3-a5d356cf15e2"
+  },
+  {
+    "filesState": "ok",
+    "id": "609",
+    "license": 8,
+    "name": "wid1000006_all_traffic_all_europe_yearly_20220101000000_20221231235959_tdm_grid",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/609/wid1000006_all_traffic_all_europe_yearly_20220101000000_20221231235959_tdm_grid_remote.sld",
+    "title": "Route density (all vessels) - EMODnet Human Activities (2022)",
+    "uuid": "04e1f456-cddf-41c7-ba5d-036b99857df7"
+  },
+  {
+    "filesState": "ok",
+    "id": "601",
+    "license": 8,
+    "name": "wid1000006_cargo_all_europe_yearly_20220101000000_20221231235959_tdm_grid",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/601/wid1000006_cargo_all_europe_yearly_20220101000000_20221231235959_tdm_grid_remote.sld",
+    "title": "Route density (cargo) - EMODnet Human Activities (2022)",
+    "uuid": "e7db8199-6192-4e69-b739-78b054758930"
+  },
+  {
+    "filesState": "ok",
+    "id": "604",
+    "license": 8,
+    "name": "wid1000006_fishing_all_europe_yearly_20220101000000_20221231235959_tdm_grid",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/604/geonode_wid1000006_fishing_all_europe_yearly_20220101000000_20221231235959_tdm_grid_remote.sld",
+    "title": "Route density (fishing) - EMODnet Human Activities (2022)",
+    "uuid": "bc6e5768-adae-427e-ac2b-6fa198e91e26"
+  },
+  {
+    "filesState": "ok",
+    "id": "603",
+    "license": 8,
+    "name": "wid1000006_passenger_all_europe_yearly_20220101000000_20221231235959_tdm_grid",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/603/geonode_wid1000006_passenger_all_europe_yearly_20220101000000_20221231235959_tdm_grid_remote.sld",
+    "title": "Route density (passenger) - EMODnet Human Activities (2022)",
+    "uuid": "d6f783e4-c122-4fad-9332-18bda0f4e6f0"
+  },
+  {
+    "filesState": "ok",
+    "id": "602",
+    "license": 8,
+    "name": "wid1000006_tanker_all_europe_yearly_20220101000000_20221231235959_tdm_grid",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/602/wid1000006_tanker_all_europe_yearly_20220101000000_20221231235959_tdm_grid_remote.sld",
+    "title": "Route density (tanker) - EMODnet Human Activities (2022)",
+    "uuid": "94e6d745-839a-4be3-9ee1-1a4bdb14cb73"
+  },
+  {
+    "filesState": "ok",
+    "id": "1507",
+    "license": 1,
+    "name": "SAR_OTB_Dominio_UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1507/SAR_OTB_Dominio_UTM_remote.sld",
+    "title": "SAR Swept Area Ratio OTB Trawl SoS",
+    "uuid": "e60b3c4b-29cf-474a-8eae-013121039bf0"
+  },
+  {
+    "filesState": "ok",
+    "id": "1799",
+    "license": 1,
+    "name": "Sar_OTB_2022_1k",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1799/Sar_OTB_2022_1k_remote.sld",
+    "title": "SAR Trawling OTB  Italy - Adriatic Sea 2022 - TIFF",
+    "uuid": "a0b5322a-fdca-47d6-8bd3-36a09dbeb191"
+  },
+  {
+    "filesState": "ok",
+    "id": "1588",
+    "license": 1,
+    "name": "B_TRAWL",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1588/B_TRAWL_remote.sld",
+    "title": "SLO MSP_Bottom Trawling_Adriatic Sea",
+    "uuid": "4aa374d5-563d-4b2d-badd-ecd28eaddacd"
+  },
+  {
+    "filesState": "ok",
+    "id": "1306",
+    "license": 1,
+    "name": "Kocarjanje",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1306/Kocarjanje_remote.sld",
+    "title": "SLO MSP_Bottom trawling",
+    "uuid": "36d4536d-305a-4511-9a45-55cb4ae9c107"
+  },
+  {
+    "filesState": "ok",
+    "id": "1307",
+    "license": 1,
+    "name": "RibolovMreze_MP0",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1307/RibolovMreze_MP0_remote.sld",
+    "title": "SLO MSP_Fishing with nets and smaller vessels",
+    "uuid": "f14e1438-5eaf-491b-83be-a6c108916f46"
+  },
+  {
+    "filesState": "ok",
+    "id": "1279",
+    "license": 1,
+    "name": "Promet_VP0",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1279/Promet_VP0_remote.sld",
+    "title": "SLO MSP_Traffic of larger vessels",
+    "uuid": "79349095-5529-47cd-82ef-a13e7b89a4a1"
+  },
+  {
+    "filesState": "ok",
+    "id": "1587",
+    "license": 1,
+    "name": "SHIPLV_J0",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1587/SHIPLV_J0_remote.sld",
+    "title": "SLO MSP_Traffic of larger vessels_Adriatic sea",
+    "uuid": "b7d36ce2-70e1-4a5b-86e3-b5566d0e2750"
+  },
+  {
+    "filesState": "ok",
+    "id": "1304",
+    "license": 1,
+    "name": "Promet_MP",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1304/Promet_MP_remote.sld",
+    "title": "SLO MSP_Traffic of smaller vessels",
+    "uuid": "cb652852-27e4-421e-8a1f-3ace63b257bf"
+  },
+  {
+    "filesState": "ok",
+    "id": "1586",
+    "license": 1,
+    "name": "SHIPSV_J",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1586/SHIPSV_J_remote.sld",
+    "title": "SLO MSP_Traffic of smaller vessels_Adriatic sea",
+    "uuid": "9931f20e-2034-44a4-b137-06da4a37a28d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1247",
+    "license": 1,
+    "name": "Sardinia_Raster0",
+    "ownerUsername": "c.podda@fondazioneimc.it",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1247/Sardinia_Raster0_remote.sld",
+    "title": "Sardinia_Raster0",
+    "uuid": "1c40e6cb-d796-4936-93bb-cb9d91cdabff"
+  },
+  {
+    "filesState": "ok",
+    "id": "468",
+    "license": 1,
+    "name": "a__550_4240_SEAL",
+    "ownerUsername": "Training_PS3",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/468/geonode__550_4240_SEAL_remote.sld",
+    "title": "Sealing",
+    "uuid": "954c926b-5ffd-4ab7-adfb-dee212c9ba7f"
+  },
+  {
+    "filesState": "ok",
+    "id": "1982",
+    "license": 1,
+    "name": "a__1089_5852_SEAL",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1982/geonode__1089_5852_SEAL_remote.sld",
+    "title": "Sealing",
+    "uuid": "820ef0e2-a91b-43b1-a794-f346807d3d2d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1988",
+    "license": 1,
+    "name": "a__1089_5852_SELEXTR_SEABED",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1988/geonode__1089_5852_SELEXTR_SEABED_remote.sld",
+    "title": "Selective extraction of seabed habitats",
+    "uuid": "195b3815-e67b-44d7-9da9-c8c4faf27039"
+  },
+  {
+    "filesState": "ok",
+    "id": "1979",
+    "license": 1,
+    "name": "a__1089_5852_SELEXTR",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1979/geonode__1089_5852_SELEXTR_remote.sld",
+    "title": "Selective extraction of species, including incidental non-target catches",
+    "uuid": "b6c7f686-1dde-423d-a6e0-1736742193fc"
+  },
+  {
+    "filesState": "ok",
+    "id": "1977",
+    "license": 1,
+    "name": "a__1089_5852_MAP_SENS_POTENTIAL",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1977/a__1089_5852_MAP_SENS_POTENTIAL_remote.sld",
+    "title": "Sensitivity potential",
+    "uuid": "525620b9-4d31-4615-8182-22bc4e526d7e"
+  },
+  {
+    "filesState": "ok",
+    "id": "2005",
+    "license": 1,
+    "name": "Grati_et_al_GSA17_18",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2005/Grati_et_al_GSA17_18_remote.sld",
+    "title": "Small Scale Fisheries ADRIATIC",
+    "uuid": "7143cc85-dcbb-4559-8779-31cd4604ec4f"
+  },
+  {
+    "filesState": "ok",
+    "id": "2010",
+    "license": 8,
+    "name": "SoS_seagrass_habitat_binary",
+    "ownerUsername": "szunino@ogs.it",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2010/posidonia__baseline_remote.sld",
+    "title": "SoS_seagrass_habitat_binary",
+    "uuid": "5185c4b7-9d87-483d-bd39-8ab76226c0f2"
+  },
+  {
+    "filesState": "ok",
+    "id": "1515",
+    "license": 1,
+    "name": "GALUMEL_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1515/GALUMEL_spawners_persistence1_remote.sld",
+    "title": "Spawner Habitat of Blackmouth catshark Galeus melastomus (SHO) SoS",
+    "uuid": "77a0aade-7df1-41cc-ba23-9b190aa70bef"
+  },
+  {
+    "filesState": "ok",
+    "id": "1514",
+    "license": 1,
+    "name": "ARITANT_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1514/ARITANT_spawners_persistence1_remote.sld",
+    "title": "Spawner Habitat of Blue and red shrimp Aristeus antennatus (ARA) SoS",
+    "uuid": "ae4ea5bc-eae3-43c6-912e-195cf5ecac3d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1516",
+    "license": 1,
+    "name": "ILLECOI_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1516/ILLECOI_spawners_persistence1_remote.sld",
+    "title": "Spawner Habitat of Broadtail shortfin squid Illex coindetii (SQM) SoS",
+    "uuid": "85277f50-fa3e-4f1c-bcb4-800ae771614d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1517",
+    "license": 1,
+    "name": "MERLMER_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1517/MERLMER_spawners_persistence1_remote.sld",
+    "title": "Spawner Habitat of European hake Merluccius merluccius (HKE) SoS",
+    "uuid": "7fa83afe-af02-4534-94f7-39165834176e"
+  },
+  {
+    "filesState": "ok",
+    "id": "1525",
+    "license": 1,
+    "name": "Multispecies_spawning_60",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1525/Multispecies_spawning_60_remote.sld",
+    "title": "Spawnig Habitat of multiple species SoS",
+    "uuid": "956a2a4b-4164-4f27-914f-e19924aa2bd2"
+  },
+  {
+    "filesState": "ok",
+    "id": "1520",
+    "license": 1,
+    "name": "PAGEERY_spawners_persistence_UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1520/PAGEERY_spawners_persistence_UTM_remote.sld",
+    "title": "Spawning Habitat of Blackspot seabream Pagellus erythrinus (PAC) SoS",
+    "uuid": "6fea9b7b-8018-4572-8a8f-b5565fc440ec"
+  },
+  {
+    "filesState": "ok",
+    "id": "1513",
+    "license": 1,
+    "name": "ARISFOL_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1513/ARISFOL_spawners_persistence1_remote.sld",
+    "title": "Spawning Habitat of Giant red shrimp Aristaeomorpha foliacea (ARS) SoS",
+    "uuid": "6fc648da-7255-4e5a-868b-8e9db02bcf27"
+  },
+  {
+    "filesState": "ok",
+    "id": "1519",
+    "license": 1,
+    "name": "NEPRNOR_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1519/NEPRNOR_spawners_persistence1_remote.sld",
+    "title": "Spawning Habitat of Norway Lobster Nephrops norvegicus (NEP) SoS",
+    "uuid": "a2b5affb-466f-4554-bf0a-ebe4260185ff"
+  },
+  {
+    "filesState": "ok",
+    "id": "1518",
+    "license": 1,
+    "name": "MULLSUR_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1518/MULLSUR_spawners_persistence1_remote.sld",
+    "title": "Spawning Habitat of Surmullet  Mullus surmuletus (MUR) SoS",
+    "uuid": "47228a38-4983-4117-9715-64016ff0a400"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1522",
+    "license": 1,
+    "name": "RAJACLA_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "title": "Spawning Habitat of Thornback ray Raja clavata (RJC) SoS",
+    "uuid": "6b728f97-3d5c-4bc9-9964-b40cb5399ca2"
+  },
+  {
+    "filesState": "ok",
+    "id": "1521",
+    "license": 1,
+    "name": "PAPELON_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1521/PAPELON_spawners_persistence1_remote.sld",
+    "title": "Spawning Habitat of deep water rose Parapenaeus longirostris (DPS) SoS",
+    "uuid": "e7eb3d98-c374-428f-88ad-38276108b802"
+  },
+  {
+    "filesState": "ok",
+    "id": "188",
+    "license": 1,
+    "name": "macro",
+    "ownerUsername": "HCRM",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/188/macro_remote.sld",
+    "title": "Surface macroplastics distribution in the Black Sea - Plastics dispersion model (HCMR)",
+    "uuid": "61f29c26-b52a-4996-85b1-9b728f5c68e3"
+  },
+  {
+    "filesState": "ok",
+    "id": "187",
+    "license": 1,
+    "name": "micro",
+    "ownerUsername": "HCRM",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/187/micro_remote.sld",
+    "title": "Surface microplastics distribution in the Black Sea - Plastics dispersion model (HCMR)",
+    "uuid": "e783227c-9eb8-4f43-83c0-9b06a33a6cdb"
+  },
+  {
+    "filesState": "ok",
+    "id": "448",
+    "license": 1,
+    "name": "wid6_tanker_all_europe_yearly_20190101000000_20191231235959_tdm_grid",
+    "ownerUsername": "sbosi",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/448/geonode_wid6_tanker_all_europe_yearly_20190101000000_20191231235959_tdm_grid_remote.sld",
+    "title": "Tanker - Vessel density map - EMODnet Human Activities (2019)",
+    "uuid": "f2625503-f4bd-4699-8c12-59f2db3e1f9f"
+  },
+  {
+    "filesState": "ok",
+    "id": "1243",
+    "license": 1,
+    "name": "casestudy_GRID_7_",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1243/casestudy_GRID_7__remote.sld",
+    "title": "Test layer for CEREMA",
+    "uuid": "c5f19876-eaf5-4848-8e11-55e29d9a8ce7"
+  },
+  {
+    "filesState": "ok",
+    "id": "1508",
+    "license": 1,
+    "name": "OTB_Tot_Landings_UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1508/OTB_Tot_Landings_UTM_remote.sld",
+    "title": "Total Landings Italian OTB SoS",
+    "uuid": "f2731d8e-7370-4b12-95e0-218d118cad47"
+  },
+  {
+    "filesState": "ok",
+    "id": "1796",
+    "license": 1,
+    "name": "OTB_2022_1k",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1796/OTB_2022_1k_remote.sld",
+    "title": "Trawling OTB Italy - Adriatic Sea 2022 - TIFF",
+    "uuid": "2fff7479-4c29-41dd-9a48-569ec9150433"
+  },
+  {
+    "filesState": "ok",
+    "id": "1798",
+    "license": 1,
+    "name": "PTM_2022_1k",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1798/PTM_2022_1k_remote.sld",
+    "title": "Trawling PTM Italy - Adriatic Sea 2022 - TIFF",
+    "uuid": "82f7b160-ce13-4cd9-ab40-d130b56cbf9d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1797",
+    "license": 1,
+    "name": "TBB_2022_1k",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1797/TBB_2022_1k_remote.sld",
+    "title": "Trawling TBB Italy - Adriatic Sea 2022 - TIFF",
+    "uuid": "48150e77-d2e5-44be-9922-3b86a54eba41"
+  },
+  {
+    "filesState": "ok",
+    "id": "1986",
+    "license": 1,
+    "name": "a__1089_5852_NOISE",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1986/geonode__1089_5852_NOISE_remote.sld",
+    "title": "Underwater noise",
+    "uuid": "530f4f4f-9482-4be5-b26c-8512ad8ad983"
+  },
+  {
+    "filesState": "ok",
+    "id": "1501",
+    "license": 1,
+    "name": "VesselDeep_WGS84UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1501/VesselDeep_WGS84UTM_remote.sld",
+    "title": "Vessel Density Deep Waters SoS",
+    "uuid": "50ba981b-0a92-4f4a-b6af-940bbd9d2593"
+  },
+  {
+    "filesState": "ok",
+    "id": "1502",
+    "license": 1,
+    "name": "VesselShallow_WGS84UTM",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1502/VesselShallow_WGS84UTM_remote.sld",
+    "title": "Vessel Density Shallow Waters SoS",
+    "uuid": "0c155061-55d4-45ad-9aac-47881012ef43"
+  },
+  {
+    "filesState": "ok",
+    "id": "185",
+    "license": 8,
+    "name": "a__2019_st_All_avg",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/185/a__2019_st_All_avg_remote.sld",
+    "title": "Vessel density (all vessels)  - EMODnet Human Activities (2019)",
+    "uuid": "afa4f961-b796-4a8f-97ec-510c172e26c4"
+  },
+  {
+    "filesState": "ok",
+    "id": "610",
+    "license": 8,
+    "name": "vesseldensity_all_2022",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/610/vesseldensity_all_2022_remote.sld",
+    "title": "Vessel density (all vessels) - EMODnet Human Activities (2022)",
+    "uuid": "99a4c95d-5c76-4e8f-9349-378eca743329"
+  },
+  {
+    "filesState": "ok",
+    "id": "605",
+    "license": 8,
+    "name": "vesseldensity_09_2022",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/605/vesseldensity_09_2022_remote.sld",
+    "title": "Vessel density (cargo) - EMODnet Human Activities (2022)",
+    "uuid": "9987ca8b-a958-46fc-80b4-fcf9509c572a"
+  },
+  {
+    "filesState": "ok",
+    "id": "607",
+    "license": 8,
+    "name": "vesseldensity_01_2022",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/607/geonode_vesseldensity_01_2022_remote.sld",
+    "title": "Vessel density (fishing) - EMODnet Human Activities (2022)",
+    "uuid": "99b4827a-9b48-4e81-9856-6bb7d00a3b30"
+  },
+  {
+    "filesState": "ok",
+    "id": "606",
+    "license": 8,
+    "name": "vesseldensity_08_2022",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/606/vesseldensity_08_2022_remote.sld",
+    "title": "Vessel density (passenger)  - EMODnet Human Activities (2022)",
+    "uuid": "004c54bd-1953-49c5-b12b-4ef9cc71d4b6"
+  },
+  {
+    "filesState": "ok",
+    "id": "608",
+    "license": 8,
+    "name": "vesseldensity_10_2022",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/608/vesseldensity_10_2022_remote.sld",
+    "title": "Vessel density (tanker) - EMODnet Human Activities (2022)",
+    "uuid": "569aff49-9738-4d03-81f4-ca60d45942df"
+  },
+  {
+    "filesState": "ok",
+    "id": "1965",
+    "license": 1,
+    "name": "Vessel_traffic_all_deep_2022",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1965/Vessel_traffic_all_deep_2022_remote.sld",
+    "title": "Vessel traffic -  all vessels - deep waters [2022]",
+    "uuid": "8d0355d6-db94-4c5a-b2b7-8dad032d0974"
+  },
+  {
+    "filesState": "ok",
+    "id": "1966",
+    "license": 1,
+    "name": "Vessel_traffic_all_shallow_2022",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1966/Vessel_traffic_all_shallow_2022_remote.sld",
+    "title": "Vessel traffic - all vessels - shallow waters [2022]",
+    "uuid": "fc665f70-0ebb-4748-85ac-a05fe8560b39"
+  },
+  {
+    "filesState": "ok",
+    "id": "1978",
+    "license": 1,
+    "name": "a__1089_5852_MAP_VULNERABILITY",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1978/geonode__1089_5852_MAP_VULNERABILITY_remote.sld",
+    "title": "Vulnerability map",
+    "uuid": "49a48f91-7ebb-4b29-add7-132ae8dd03f7"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "471",
+    "license": 1,
+    "name": "a__550_4240_MLITTER",
+    "ownerUsername": "Training_PS3",
+    "title": "a__550_4240_MLITTER",
+    "uuid": "5902acbd-5dee-4d82-b76e-debe07a3b4ee"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "617",
+    "license": 1,
+    "name": "a__582_4587_CEASCORE",
+    "ownerUsername": "BRIDGEPS",
+    "title": "a__582_4587_CEASCORE",
+    "uuid": "6dd7efd4-fe7b-49bc-bfa7-10533b17ac89"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1547",
+    "license": 1,
+    "name": "a__911_5208_CEASCORE",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_CEASCORE",
+    "uuid": "4b7992f7-d228-486d-977b-c3946ef36ce8"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1538",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "uuid": "68f4830f-79de-4337-98a6-98f96c439661"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1539",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "uuid": "5645c4ef-fba0-496a-9206-81071219b42a"
+  },
+  {
+    "filesState": "ok",
+    "id": "1548",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_MSFDBIO",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1548/geonode__911_5208_MAPCEA_MSFDBIO_remote.sld",
+    "title": "a__911_5208_MAPCEA_MSFDBIO",
+    "uuid": "dab8905d-f5ef-4ada-9f03-da75a70e2ffb"
+  },
+  {
+    "filesState": "ok",
+    "id": "1542",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_MSFDPHY",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1542/geonode__911_5208_MAPCEA_MSFDPHY_remote.sld",
+    "title": "a__911_5208_MAPCEA_MSFDPHY",
+    "uuid": "9cf58a6d-8945-4649-81e7-6e7728ccf184"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1543",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_MSFDSUB",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAPCEA_MSFDSUB",
+    "uuid": "abf877df-9a15-4642-85de-221731edb1d4"
+  },
+  {
+    "filesState": "ok",
+    "id": "1541",
+    "license": 1,
+    "name": "a__911_5208_MAPINDEX_CEARANKING",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1541/a__911_5208_MAPINDEX_CEARANKING_remote.sld",
+    "title": "a__911_5208_MAPINDEX_CEARANKING",
+    "uuid": "bb27ced6-489b-451c-addd-9dfa471b9006"
+  },
+  {
+    "filesState": "ok",
+    "id": "1549",
+    "license": 1,
+    "name": "a__911_5208_MAPINDEX_EDIV",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1549/a__911_5208_MAPINDEX_EDIV_remote.sld",
+    "title": "a__911_5208_MAPINDEX_EDIV",
+    "uuid": "2f2c1c10-d4e5-4010-af73-7d808aafd5f7"
+  },
+  {
+    "filesState": "ok",
+    "id": "1540",
+    "license": 1,
+    "name": "a__911_5208_MAPINDEX_UDIV",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1540/geonode__911_5208_MAPINDEX_UDIV_remote.sld",
+    "title": "a__911_5208_MAPINDEX_UDIV",
+    "uuid": "45305b1f-3d21-410e-ab50-93d2eaa09727"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1544",
+    "license": 1,
+    "name": "a__911_5208_MAP_EFFECT_POTENTIAL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAP_EFFECT_POTENTIAL",
+    "uuid": "5ca3ab42-f23c-4ca5-9753-67b65786022e"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1545",
+    "license": 1,
+    "name": "a__911_5208_MAP_SENS_POTENTIAL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAP_SENS_POTENTIAL",
+    "uuid": "7a71b7be-4a2a-4896-a307-2e05c0089bd1"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1546",
+    "license": 1,
+    "name": "a__911_5208_MAP_VULNERABILITY",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAP_VULNERABILITY",
+    "uuid": "49c56f1a-4d44-403f-bf61-77f6f0ac4e68"
+  }
+]
