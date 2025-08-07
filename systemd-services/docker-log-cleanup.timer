@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Docker Container Log Cleanup Daily
+Requires=docker-log-cleanup.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=30min
+
+[Install]
+WantedBy=timers.target
