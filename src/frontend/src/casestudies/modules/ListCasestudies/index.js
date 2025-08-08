@@ -62,6 +62,7 @@ export default function ListCasestudies() {
                                     <InputGroup>
                                         <InputGroup.Text id="btnGroupAddon"><i className='fa fa-search'></i></InputGroup.Text>
                                         <Form.Control
+                                            className={"search-bar-with-icon"}
                                             type="text"
                                             placeholder="Search by Casestudy name"
                                             aria-label="Search by Casestudy name"

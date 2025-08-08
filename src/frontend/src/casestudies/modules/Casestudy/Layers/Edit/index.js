@@ -35,7 +35,7 @@ export default function EditCasestudyLayer({ id, casestudyId, btnProps, initialV
             <Button {...btnProps} size="lg" onClick={handleShow}><i className='fa fa-pencil' /></Button>
             <div ref={ref}></div>
             <Modal show={show} container={ref} animation={false} centered onHide={handleClose}>
-                <Modal.Header>Edit Layer description</Modal.Header>
+                <Modal.Header>Edit Dataset description</Modal.Header>
                 <Modal.Body>
                     {data && data.error && (
                         <Alert variant="danger" animation={false} show transition={false}>

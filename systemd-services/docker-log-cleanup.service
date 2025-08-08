@@ -1,0 +1,8 @@
+[Unit]
+Description=Docker Container Log Cleanup
+After=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'find /var/lib/docker/overlay2 -path "*/diff/var/log/*.log" -type f -size +100M -exec truncate -s0 {} \; -print | logger -t docker-log-cleanup'
+User=root

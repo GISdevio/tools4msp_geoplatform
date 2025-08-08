@@ -65,8 +65,8 @@ def get_base_left_topbar_menu(context):
             + (
                 [
                     {"type": "divider"},
-                    {"type": "link", "href": "/catalogue/#/upload/dataset", "label": "Upload Layer"},
-                    {"type": "link", "href": "/createlayer", "label": "Create Layer"},
+                    {"type": "link", "href": "/catalogue/#/upload/dataset", "label": "Upload Dataset"},
+                    {"type": "link", "href": "/createlayer", "label": "Create Dataset"},
                     {"type": "link", "href": "/catalogue/#/upload/document", "label": "Upload Document"},
                 ]
                 if user and user.is_authenticated
@@ -120,7 +120,7 @@ def get_base_left_topbar_menu(context):
             "items": [
                 {"type": "link", "href": "/team/", "label": "Meet the team"},
                 {"type": "link", "href": "/projects/", "label": "Projects"},
-                {"type": "link", "href": "/pubblications/", "label": "Pubblications"},
+                {"type": "link", "href": "/publications/", "label": "Publications"},
             ],
         }
     ]

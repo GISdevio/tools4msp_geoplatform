@@ -88,7 +88,7 @@ export default function CasestudyPage() {
                     </Row>
                     <Nav variant="tabs" activeKey={path}>
                         <Nav.Item>
-                            <Nav.Link as={Link} eventKey='' to={basePath}>Layers</Nav.Link>
+                            <Nav.Link as={Link} eventKey='' to={basePath}>Datasets</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link as={Link} eventKey="inputs" to={`${basePath}inputs/`}>Inputs</Nav.Link>

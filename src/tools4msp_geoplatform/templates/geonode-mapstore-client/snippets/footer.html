@@ -3,21 +3,27 @@
 <style>
   /* Example link styles for your dark footer */
   .footer-link {
-    color: #fff !important; /* white text by default */
+    color: #fff !important;
+    /* white text by default */
     text-decoration: none;
   }
+
   .footer-link:hover {
-    color: #eb6b00 !important; /* lighter gray on hover */
+    color: #eb6b00 !important;
+    /* lighter gray on hover */
     cursor: pointer !important;
-    text-decoration: underline !important; 
+    text-decoration: underline !important;
   }
+
   /* Give the language dropdown a wider minimum width */
 
   .footer-language-select {
     color: #333 !important;
     min-width: 170px;
-    height: 2em;       /* adjust to your preferred size */
-    line-height: 2em; /* makes text centered vertically */
+    height: 2em;
+    /* adjust to your preferred size */
+    line-height: 2em;
+    /* makes text centered vertically */
   }
 
   .list-unstyled {
@@ -30,18 +36,18 @@
   <div style="background-color: #333; color: #fff; padding: 20px 0;">
     <div class="container">
       <div class="row">
-        
+
         <!-- First column -->
         <div class="col-md-2">
           <ul class="list-unstyled">
-            <li>Data</li>
-            <li><a class="footer-link" href="/catalogue/#/?f=dataset">Layers</a></li>
-            <li><a class="footer-link" href="/catalogue/#/?f=document">Documents</a></li>
-            <li><a class="footer-link" href="/services/">Remote Services</a></li>
+            <li>{% trans "Data" %}</li>
+            <li><a class="footer-link" href="/catalogue/#/?f=dataset">{% trans "Datasets" %}</a></li>
+            <li><a class="footer-link" href="/catalogue/#/?f=document">{% trans "Documents" %}</a></li>
+            <li><a class="footer-link" href="/services/">{% trans "Remote Services" %}</a></li>
             {% if user.is_authenticated %}
-            <li><a class="footer-link" href="/catalogue/#/upload/dataset">Upload Layer</a></li>
-            <li><a class="footer-link" href="/createlayer">Create Layer</a></li>
-            <li><a class="footer-link" href="/catalogue/#/upload/document">Upload Document</a></li>
+            <li><a class="footer-link" href="/catalogue/#/upload/dataset">{% trans "Upload Dataset" %}</a></li>
+            <li><a class="footer-link" href="/createlayer">{% trans "Create Dataset" %}</a></li>
+            <li><a class="footer-link" href="/catalogue/#/upload/document">{% trans "Upload Document" %}</a></li>
             {% endif %}
           </ul>
         </div>
@@ -49,10 +55,10 @@
         <!-- Second column -->
         <div class="col-md-2">
           <ul class="list-unstyled">
-            <li>Maps</li>
-            <li><a class="footer-link" href="/catalogue/#/?f=map">Explore Maps</a></li>
+            <li>{% trans "Maps" %}</li>
+            <li><a class="footer-link" href="/catalogue/#/?f=map">{% trans "Explore Maps" %}</a></li>
             {% if user.is_authenticated %}
-            <li><a class="footer-link" href="/catalogue/#/map/new">Create Map</a></li>
+            <li><a class="footer-link" href="/catalogue/#/map/new">{% trans "Create Map" %}</a></li>
             {% endif %}
           </ul>
         </div>
@@ -60,11 +66,11 @@
         <!-- Third column -->
         <div class="col-md-2">
           <ul class="list-unstyled">
-            <li>About</li>
-            <li><a class="footer-link" href="/people/">People</a></li>
-            <li><a class="footer-link" href="/groups/">Groups</a></li>
+            <li>{% trans "About" %}</li>
+            <li><a class="footer-link" href="/people/">{% trans "People" %}</a></li>
+            <li><a class="footer-link" href="/groups/">{% trans "Groups" %}</a></li>
             {% if user.is_authenticated %}
-            <li><a class="footer-link" href="/invitations/geonode-send-invite">Invite Users</a></li>
+            <li><a class="footer-link" href="/invitations/geonode-send-invite">{% trans "Invite Users" %}</a></li>
             {% endif %}
           </ul>
         </div>
@@ -74,10 +80,10 @@
           {% if csrf_token != "NOTPROVIDED" %}
           {% get_current_language as LANGUAGE %}
           <form class="form-inline" action="/i18n/setlang/" method="post">
-          {% csrf_token %}
+            {% csrf_token %}
             <select class="col-md-6 pull-right footer-language-select" name="language" onchange="javascript:form.submit()">
               {% for lang in LANGUAGES %}
-              <option value="{{ lang.0 }}" {% if LANGUAGE_CODE == lang.0 %} selected="selected"{% endif %}>
+              <option value="{{ lang.0 }}" {% if LANGUAGE_CODE == lang.0 %}selected="selected" {% endif %}>
                 {{ lang.1 }}
               </option>
               {% endfor %}

@@ -1,21 +1,58 @@
+# NOTE: all services use the `web` network in order to overcome mtu
+# limitations. The `web` network has mtu:1400
+#
+
+x-common-networks: &common-networks
+  networks:
+    - web
+
+
 services:
   django:
     image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}
     build: !reset null
+    <<: *common-networks
 
   celery:
     image: ghcr.io/gisdevio/tools4msp-geoplatform:${GEOPLATFORM_IMAGE_VERSION}
-  
-  letsencrypt:
-    image: ${COMPOSE_PROJECT_NAME}/letsencrypt:${LETSENCRYPT_BASE_IMAGE_VERSION}
-    build:
-      context: ./docker/letsencrypt
-      dockerfile: Dockerfile
-      args:
-        - BASE_IMAGE_VERSION=${LETSENCRYPT_BASE_IMAGE_VERSION}
-    container_name: letsencrypt4${COMPOSE_PROJECT_NAME}
-    env_file:
-      - .env
+    <<: *common-networks
+
+  geonode:
+    ports: !reset []
+    labels:
+      traefik.enable: true
+      traefik.http.routers.tools4msp_geoplatform_geonode_router.rule: Host(`dev.geoplatform.tools4msp.eu`)
+      traefik.http.routers.tools4msp_geoplatform_geonode_router.tls.certresolver: le
+      traefik.http.routers.tools4msp_geoplatform_geonode_router.entrypoints: websecure
     volumes:
-      - nginx-certificates:/geonode-certificates
-    restart: unless-stopped
+      # this volume refers to a geonode.conf.envsubst file as if it were in the same dir as the compose file
+      # because that follows the deployment procedure documented in the production env's README file. Succinctly,
+      # the procedure involves copying both the compose files and this nginx-related conf file into the deployment
+      # directory and then running `docker compose` from there
+      - type: bind
+        source: ./geonode.conf.envsubst
+        target: /etc/nginx/sites-enabled/geonode.conf.envsubst
+        read_only: true
+    <<: *common-networks
+
+  memcached:
+    <<: *common-networks
+
+  geoserver:
+    ports: !reset []
+    <<: *common-networks
+
+  data-dir-conf:
+    <<: *common-networks
+
+  db:
+    <<: *common-networks
+
+  rabbitmq:
+    <<: *common-networks
+
+
+networks:
+  web:
+    external: true
+    name: traefik_tools4msp_geoplatform_webgateway
