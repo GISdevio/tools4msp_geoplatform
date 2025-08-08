@@ -9,8 +9,8 @@ import v4Client from '../lib/v4-client'
 
 import type { CreationState, CreationStateMap, V3Layer } from './types'
 
-const BATCH_SIZE = 50
-const BATCH_NUMBER = 1
+const BATCH_SIZE = 20
+const BATCH_NUMBER = 9
 
 const waitForUpload = async <R>(url: string): Promise<R> => {
   const maxIterations = 10
@@ -19,7 +19,7 @@ const waitForUpload = async <R>(url: string): Promise<R> => {
   while (true) {
     iterations += 1
 
-    const res = await v4Client.getJson<{request: { status: 'running' | 'finished' | 'failed' }}>(url)
+    const res = await v4Client.getJson<{ request: { status: 'running' | 'finished' | 'failed' } }>(url)
 
     if (res.request.status === 'finished') { return res as R }
 
@@ -63,7 +63,7 @@ const uploadDataset = async (layer: V3Layer): Promise<{ id: string; title: strin
   formdata.append('dbf_file', dbfFile, path.basename(dbfFilePath[0]!))
   formdata.append('shx_file', shxFile, path.basename(shxFilePath[0]!))
 
-  const { execution_id: execId } = await v4Client.sendForm<{execution_id: string}>('/api/v2/uploads/upload', formdata)
+  const { execution_id: execId } = await v4Client.sendForm<{ execution_id: string }>('/api/v2/uploads/upload', formdata)
 
   type UploadResponse = { request: { output_params: { resources: [{ id: number }] } } }
   const uploadResponse = await waitForUpload<UploadResponse>(`/api/v2/executionrequest/${execId}`)
@@ -76,7 +76,10 @@ const uploadDataset = async (layer: V3Layer): Promise<{ id: string; title: strin
 }
 
 const uploadStyle = async (layer: V3Layer, datasetTitle: string) => {
-  if (!layer.stylePath) { throw new Error('The layer has no style') }
+  if (!layer.stylePath) {
+    logger.warn('The layer has no style')
+    return
+  }
 
   const sldFile = await readFile(layer.stylePath) as Blob
 
@@ -88,7 +91,7 @@ const uploadStyle = async (layer: V3Layer, datasetTitle: string) => {
   formdata.append('style_upload_form', 'true')
   formdata.append('dataset_title', datasetTitle)
 
-  const { execution_id: execId } = await v4Client.sendForm<{execution_id: string}>('/upload/uploads/upload', formdata)
+  const { execution_id: execId } = await v4Client.sendForm<{ execution_id: string }>('/upload/uploads/upload', formdata)
 
   await waitForUpload(`/api/v2/executionrequest/${execId}`)
 }
@@ -109,7 +112,7 @@ const uploadMetadata = async (layer: V3Layer, datasetTitle: string) => {
   formdata.append('metadata_upload_form', 'true')
   formdata.append('dataset_title', datasetTitle)
 
-  const { execution_id: execId } = await v4Client.sendForm<{execution_id: string}>('/upload/uploads/upload', formdata)
+  const { execution_id: execId } = await v4Client.sendForm<{ execution_id: string }>('/upload/uploads/upload', formdata)
 
   await waitForUpload(`/api/v2/executionrequest/${execId}`)
 }

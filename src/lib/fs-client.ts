@@ -103,3 +103,15 @@ export const unzip = async (_path: string, data: ReadableStream | null) => {
 
   await fs.rm(archivePath, { force: true })
 }
+
+export const isDirFull = async (absPath: string): Promise<boolean> => {
+  try {
+    const stat = await fs.stat(absPath)
+    if (!stat.isDirectory()) { return false }
+
+    const files = await fs.readdir(absPath)
+    return files.length > 0
+  } catch {
+    return false
+  }
+}

@@ -1,0 +1,867 @@
+{
+  "06d3f600-8083-4011-8190-a343534dc47e": {
+    "datasetTitle": "geonode:accobams_predind_deldel_turtru_phopho_ym5ulpi",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "531"
+  },
+  "b614ebcf-f119-48ab-b58b-fb7a6c775c61": {
+    "datasetTitle": "geonode:asi_pred_ggr_final_w0q6ozx_nuundop",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "532"
+  },
+  "b72f132a-2a4d-4bc8-abd7-e5b62bc4c836": {
+    "datasetTitle": "geonode:asi_pred_ttr_final_nczbn7u_juprua0",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "533"
+  },
+  "31d725b0-fe87-4b14-9bad-a3b0ea4d5a15": {
+    "datasetTitle": "geonode:asi_pred_bph_yzmyn3e_ma2xmwo",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "534"
+  },
+  "ae6ec628-91e4-4780-a03c-2b3fb3fe5c24": {
+    "datasetTitle": "geonode:asi_pred_turtles_j0jtgb00_p53g193",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "535"
+  },
+  "5fd8d588-8f5f-4169-81d0-a4a408029e57": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "2dea04e2-9599-46bb-a79b-51172558a54a": {
+    "datasetTitle": "geonode:asi_pred_mobula_l13ze2j_su3vwds",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "537"
+  },
+  "ed07c0e4-c387-47c7-a1d2-0e9944222185": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "e3814fed-b66a-45cc-852c-bd5a924760a6": {
+    "datasetTitle": "geonode:asi_pred_swordfish_hi3vwy1_gzced6s",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "539"
+  },
+  "d78d4e8f-0c20-4876-b90c-3512ccf22995": {
+    "datasetTitle": "geonode:lng_1_bqcy0ry",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "540"
+  },
+  "71806d4a-6451-4d75-9081-c2fcab8ca9b2": {
+    "datasetTitle": "geonode:aguasterritoriales12millas_1tgmkld",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "541"
+  },
+  "3d278794-3edf-4970-b65c-71692a2b5352": {
+    "datasetTitle": "geonode:alien_species_occurrence_sqkgaxx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "542"
+  },
+  "cf1abc68-123d-4ad6-9d19-67d75a8362f4": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "b3af6854-d657-4e0c-b05d-7eb72388a7f1": {
+    "datasetTitle": "geonode:use_concesiones_acuicolas_vigentes20180_im4x9hz",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "543"
+  },
+  "3761b81a-9808-11ed-881b-005056bd28c9": {
+    "datasetTitle": "geonode:areereperimento_point_zilve46",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "544"
+  },
+  "145a1331-0b27-4e3f-a25a-6a6c26f06f6d": {
+    "datasetTitle": "geonode:aree_vocate_maricoltura_25833_jxekxsv",
+    "lastCompletedStep": "upload-style",
+    "newId": "545"
+  },
+  "51c2af2f-5279-4ca5-8837-29d43e05ca87": {
+    "datasetTitle": "geonode:aree_potenzialmente_idonee_itticoltura_buffer_scikuo2",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "546"
+  },
+  "a90de366-60ff-4ede-8137-5452d49fc2c4": {
+    "datasetTitle": "geonode:aree_potenzialmente_idonee_molluschicoltura_b_rtmb46k",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "547"
+  },
+  "53b6a6b6-92e8-4a5d-81e7-545b884afefa": {
+    "datasetTitle": "geonode:turismo_costiero_arrivi_2022_uhiazvb",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "548"
+  },
+  "0019e28e-2ac5-11ed-8a5e-0242ac140008": {
+    "datasetTitle": "geonode:marine_transportation_fixed_2x1epja",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "549"
+  },
+  "b72c0870-2ac1-11ed-91bb-0242ac140008": {
+    "datasetTitle": "geonode:administrative_units_c34o0vu",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "550"
+  },
+  "a63babbc-6733-4b4a-b81e-ec7b53913633": {
+    "datasetTitle": "geonode:ps1_anchorage_points_bk45jaw",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "551"
+  },
+  "164b14e2-2a02-11ed-85d3-0242ac140008": {
+    "datasetTitle": "geonode:bathing_water_areas_zvcreob",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "552"
+  },
+  "232b7e6c-29fe-11ed-9c63-0242ac140008": {
+    "datasetTitle": "geonode:ps1_3wkfpf5",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "553"
+  },
+  "f5d94682-8283-4d45-a242-75e12a95955c": {
+    "datasetTitle": "geonode:ps1_50kmsea_1kmland0_005tryz",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "554"
+  },
+  "570bb475-c8bc-4321-8438-7524982f2878": {
+    "datasetTitle": "geonode:ports_harbours_drhhbaq",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "555"
+  },
+  "976d9dcc-2ac2-11ed-954d-0242ac140008": {
+    "datasetTitle": "geonode:farm_fixed_ef7frkt",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "556"
+  },
+  "81a47ca3-8697-433f-9efe-faf822455a9d": {
+    "datasetTitle": "geonode:ps1_navy_training_areas_koqkdia",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "557"
+  },
+  "79d35c81-dfdc-44f7-a3fc-fa5e97c8617e": {
+    "datasetTitle": "geonode:noise_ps1_hhgryb9",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "558"
+  },
+  "4e93568b-fa0a-4464-bde6-0e96ece86b50": {
+    "datasetTitle": "geonode:harekategitim_ylpewpr",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "559"
+  },
+  "0d1a9931-ed4a-4c1e-b1be-a9e5d13c3aa4": {
+    "datasetTitle": "geonode:ps1_small_fisheries_ports_pvww3c2",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "560"
+  },
+  "b34d92c0-2ac4-11ed-baf0-0242ac140008": {
+    "datasetTitle": "geonode:solid_waste_dumping_site_fixed_hqz9sz2",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "561"
+  },
+  "8b316384-2a01-11ed-993f-0242ac140008": {
+    "datasetTitle": "geonode:urban_discharge_9vwcvzm",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "562"
+  },
+  "ede52e66-2c57-4a4a-859d-4185e5d8d058": {
+    "datasetTitle": "geonode:ps1_wwtps_withattrs0_nbcwl1c",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "563"
+  },
+  "698837be-4d9b-4096-973f-97d3ce492c7d": {
+    "datasetTitle": "geonode:ps1_bathing_waters_2_hr0lgxf",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "564"
+  },
+  "cedd286e-0925-4204-a5ff-26ec8f923c8b": {
+    "datasetTitle": "geonode:ps1_fisheries_restricted_areas_2_l2nyjdy",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "565"
+  },
+  "5bcf379e-18bc-4176-acac-266b406a793a": {
+    "datasetTitle": "geonode:a1_a6_u_fema0_bajjtt3",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "566"
+  },
+  "e6fa8c90-2aa6-11ed-90e3-0242ac140005": {
+    "datasetTitle": "geonode:aquacultures_bg_black_sea_verified_3vzctfv",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "567"
+  },
+  "0942c21a-304d-4f87-92b6-30569c1b7ff0": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "4d725250-af32-422e-bcb3-ee377bfec0d3": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "518535a4-851c-461d-8380-af564db7c4a0": {
+    "datasetTitle": "geonode:fish_catch_per_unit_effort_cpue_rbiq8t7",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "570"
+  },
+  "7e0c2248-2aa6-11ed-a7dc-0242ac140005": {
+    "datasetTitle": "geonode:gas_platforms_bg_black_sea_txncyi7",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "571"
+  },
+  "aa83831c-2aa5-11ed-abda-0242ac140008": {
+    "datasetTitle": "geonode:industrial_ports_bg_black_sea_zy9ljcx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "572"
+  },
+  "0c1ee40e-aca3-4394-98a2-66645e75c926": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "62bbf136-2aa5-11ed-85a0-0242ac140008": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "24190869-359a-4a1e-a8ea-d10bca01c7ef": {
+    "datasetTitle": "geonode:mpas_bg_protectedplanet0_hjbshfi",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "575"
+  },
+  "b7226b5a-2aa6-11ed-90e3-0242ac140005": {
+    "datasetTitle": "geonode:lau_rg_01m_2020_4326_bg_wllkyoj",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "576"
+  },
+  "2ed02238-2aa6-11ed-9e16-0242ac140005": {
+    "datasetTitle": "geonode:oil_gas_exploration_bg_black_sea_bvrzfm1",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "577"
+  },
+  "0b5a8d12-2ac3-11ed-a995-0242ac140008": {
+    "datasetTitle": "geonode:national_protected_areas_bg0_nydb2yv",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "578"
+  },
+  "10f558c4-2aa5-11ed-b118-0242ac140008": {
+    "datasetTitle": "geonode:bwd_assessmentresults_countrysheets_bg_bw2021_slvv22a",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "579"
+  },
+  "34fad004-29e3-11ed-ac0d-0242ac140008": {
+    "datasetTitle": "geonode:bridge_bs_ps2_rwyjnqp",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "580"
+  },
+  "b79446c6-e726-4af8-9ccc-8f24863daa42": {
+    "datasetTitle": "geonode:blacksea_waterbody_zolzdkm",
+    "lastCompletedStep": "upload-style",
+    "newId": "581"
+  },
+  "d018b74d-241a-4018-9669-d9e30777bcda": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "8370689c-2a02-11ed-9e03-0242ac140005": {
+    "datasetTitle": "geonode:zostera_bulgaria_iber_bas_v2_fwnmhmp",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "583"
+  },
+  "f705cb84-784d-43c3-8b68-0a3b7f20f294": {
+    "datasetTitle": "geonode:tourists_nights_2018_2021_wgs_e8dqvat",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "584"
+  },
+  "84f4302b-0040-4305-8b57-3d278b1f2c7d": {
+    "datasetTitle": "geonode:ps3_buffer_a5bjfdl",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "585"
+  },
+  "0cf7903c-65c0-4f9a-99c6-8d236ee23f6a": {
+    "datasetTitle": "geonode:coastalpas_protectedplanet_dpit0oe",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "586"
+  },
+  "4af541dd-a0f3-4366-8144-9a960d75861c": {
+    "datasetTitle": "geonode:commercial_industrial_ports0_eg28unv",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "587"
+  },
+  "67f64086-29fe-11ed-b9c8-0242ac140008": {
+    "datasetTitle": "geonode:bridge_bs_ps3_pda4irx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "588"
+  },
+  "8887aa12-be39-4122-836e-536254d2b9c6": {
+    "datasetTitle": "geonode:ps3_sea_only_n96bnfx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "589"
+  },
+  "ab6d821a-aef4-4317-8617-4660d1a1a541": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "c680b498-baf6-492a-8bbb-78705f3709ed": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "0b1cbbf5-dcd6-447a-a354-7d86bd613b7f": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "a382e6ba-896c-4d5b-ad49-f06e45cd6d3c": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "d198fc7d-cd2b-484c-8487-8b3aa94872cd": {
+    "datasetTitle": "geonode:marinas_wgs_uggxfmj",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "594"
+  },
+  "2d1284ed-32ab-4cd3-9ad9-4080daf5c050": {
+    "datasetTitle": "geonode:mpas_protectedplanet_x7laqm9",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "595"
+  },
+  "304d98b3-f404-4d48-94d4-4d8626176736": {
+    "datasetTitle": "geonode:oil_pipe_z6y6fpw",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "596"
+  },
+  "7ec10fb0-e663-4cdf-a4b3-2e83b4bb6505": {
+    "datasetTitle": "geonode:oil_gas_concessions_areas_wgs_yweqg4c",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "597"
+  },
+  "649bc98c-0342-47b3-8080-790c5203e487": {
+    "datasetTitle": "geonode:operational_oil_gas1_ouozbyd",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "598"
+  },
+  "0a1850bd-b5e8-4225-b6e3-44ea9322c061": {
+    "datasetTitle": "geonode:tourism_accomodation_beds_2018_2021_wgs0_39mwfub",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "599"
+  },
+  "438d4c15-9d7b-4d64-ac6a-6b13cdd94759": {
+    "datasetTitle": "geonode:tourists_arrivals_2018_2021_wgs0_ucj46s0",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "600"
+  },
+  "a42f468e-c67a-4136-adef-4470f73c3540": {
+    "datasetTitle": "geonode:tourists_arrivals_monthly_2021_wgs_gcfpsht",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "601"
+  },
+  "255286e7-44db-49fe-88f9-d9651bc1413b": {
+    "datasetTitle": "geonode:ps3_wwtps_mean_discharge_treat_type_piqgpzk",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "602"
+  },
+  "dbdf67eb-04e9-44fa-bd0b-90dcfa19afe1": {
+    "datasetTitle": "geonode:rec_routes_sb_yn5v7ob",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "603"
+  },
+  "92c38700-29ff-11ed-bc1e-0242ac140008": {
+    "datasetTitle": "geonode:bridge_bs_ps4_2qojy9s",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "604"
+  },
+  "dcb21778-29ff-11ed-b5d0-0242ac140008": {
+    "datasetTitle": "geonode:bridge_bs_ps6_oks4khm",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "605"
+  },
+  "c641398c-2a00-11ed-a12f-0242ac140008": {
+    "datasetTitle": "geonode:bridge_bs_ps7_sdxxhtq",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "606"
+  },
+  "f4aa1956-6df7-4f92-8d8b-da5ba3c5c9ae": {
+    "datasetTitle": "geonode:black_sea_domain_area_wu0dgwy",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "607"
+  },
+  "f2d24cba-b182-4625-a048-541b549e1d47": {
+    "datasetTitle": "geonode:black_sea_ports_8ultmxa",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "608"
+  },
+  "c82c1853-9139-4c14-b2ff-5cd347b949b1": {
+    "datasetTitle": "geonode:blacksea_fishing_ports_pde3u0v",
+    "lastCompletedStep": "upload-style",
+    "newId": "609"
+  },
+  "2c725023-d970-4c1c-9243-75b19b3123dc": {
+    "datasetTitle": "geonode:bsbd_suitable_areas_aquaculture_o7cqwzk",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "610"
+  },
+  "d691b919-419d-485a-9979-47a6dcea2aad": {
+    "datasetTitle": "geonode:ps6_salinity_lrvs6pi",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "611"
+  },
+  "0ab8409e-9b9b-44b4-95b3-dd4ffc47a8b1": {
+    "datasetTitle": "geonode:bs_study_area_6arfteg",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "612"
+  },
+  "29a35dfc-ca80-49d7-901e-57a14ca42da3": {
+    "datasetTitle": "geonode:baciniprincipali_cxitmeu",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "613"
+  },
+  "79e48985-b259-475f-9430-2c1d1b606381": {
+    "datasetTitle": "geonode:balenottera_comune_bi1xx9v",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "614"
+  },
+  "f9b4ff8d-1b85-4a51-9851-012b639cc969": {
+    "datasetTitle": "geonode:sos_banks_nqsuq5i",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "615"
+  },
+  "fe4f89c0-e03b-421b-8ab7-bb71ca0472c3": {
+    "datasetTitle": "geonode:dominio_sos_qo7mwut",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "616"
+  },
+  "be24bd08-0afc-4222-ade4-6b8c441836f1": {
+    "datasetTitle": "geonode:use_playas_canarias_rsqpbxl",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "617"
+  },
+  "a409b8a9-fae6-45d9-8054-fc4c713b209d": {
+    "datasetTitle": "geonode:bw_falc_maritt_xzxawwh",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "618"
+  },
+  "671a75d3-6f66-42b2-ad22-1179dc9ef920": {
+    "datasetTitle": "geonode:siti_monitoraggio_falc_maritt_v2g1rnz",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "619"
+  },
+  "8ecf38ee-fa4c-4583-a7dc-410e8bf7db30": {
+    "datasetTitle": "geonode:group1000_50_vmtph0f",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "620"
+  },
+  "a32f4524-487d-4210-acd4-0553e6a21e5c": {
+    "datasetTitle": "geonode:batimetrica_20m_emodnet_2022_ita_onjiyr0",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "621"
+  },
+  "66951072-8c1d-47e9-923a-7026756d2372": {
+    "datasetTitle": "geonode:black_sea_coastal_buffers0_qxewsqu",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "622"
+  },
+  "046b4083-d479-4ded-9119-213861af716b": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "7f069ffc-d0ac-4319-b287-85498ca54b3a": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "97b98e66-0a44-4424-ac0a-445002a7a084": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "d171bc0b-7ec1-426c-9853-ff01ef32aa14": {
+    "datasetTitle": "geonode:bridge_bs_domain_area_west_azpvd40",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "625"
+  },
+  "f6e9afc7-b41c-446a-aece-741cd88a8e8c": {
+    "datasetTitle": "geonode:buffer_50km_mare_1_km_terra_msp4biodiversity__x8r5ao3",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "626"
+  },
+  "11568b22-1bc2-49c1-9a81-8ec084c53c5c": {
+    "datasetTitle": "geonode:cpue_tot_grid_gfcm_w7kajbx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "627"
+  },
+  "14a3ba8e-6c48-45c1-b6c2-90ef0e1e86a9": {
+    "datasetTitle": "geonode:fras_sos_flc4cip",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "628"
+  },
+  "09bd993b-04b5-4176-afd8-770c72c624ac": {
+    "datasetTitle": "geonode:area_mammellone_kxwim4q",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "629"
+  },
+  "ffaade4f-8c13-42ab-93c1-8a104dc2f556": {
+    "datasetTitle": "geonode:cetaceancriticalhabitat_sos_uzrnjbb",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "630"
+  },
+  "f0177b9e-8ef4-4b71-8744-ae74fcecf2aa": {
+    "datasetTitle": "geonode:cumulative_noise_sos0_e01cr9n",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "631"
+  },
+  "ea057de8-eba0-462a-99e2-d8111389a702": {
+    "datasetTitle": "geonode:fads_sos_basset_imaqwbt",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "632"
+  },
+  "bc3a3af5-2b71-4cbf-8f22-8d4436f3bffb": {
+    "datasetTitle": "geonode:fra1000m_sos_pq34w66",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "633"
+  },
+  "cebfa80f-0098-48de-afea-bd0065baef64": {
+    "datasetTitle": "geonode:gsa_16__mcf69xt",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "634"
+  },
+  "c3c9d4e9-fa25-4a26-8b6f-ddbc30162bc1": {
+    "datasetTitle": "geonode:merl_mer_qcgrosw",
+    "lastCompletedStep": "upload-style",
+    "newId": "635"
+  },
+  "cf1c5969-6215-40c6-bdbd-7b5c397e5794": {
+    "datasetTitle": "geonode:casestudysos_iudzote",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "636"
+  },
+  "d1f94855-7cc6-46b0-818b-a9c7bbf7b4d4": {
+    "datasetTitle": "geonode:iucn_imma_sos_gfj1kzx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "637"
+  },
+  "846f99a3-b42a-4986-a264-ed4da29e4d59": {
+    "datasetTitle": "geonode:cables_wm0a0f0",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "638"
+  },
+  "cd1e45d3-b07f-431a-a7b2-7d1b492b39a5": {
+    "datasetTitle": "geonode:aerogeneratori_rev_02_sziiawb",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "639"
+  },
+  "f5d4dfa0-2703-46db-8ee9-18c27d219684": {
+    "datasetTitle": "geonode:localizzazione_geografica_7ap8utf",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "640"
+  },
+  "8a7a2dc0-f96a-11e8-89f4-005056bd28c9": {
+    "datasetTitle": "geonode:ccaretta_ihwpuks",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "641"
+  },
+  "3788085e-9de1-4abe-a22e-2c42b3128fc7": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "22d12b41-3670-4273-a4af-5142607d03c6": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "ddbc1cde-bf5b-40b9-8e31-e24e2519ff42": {
+    "datasetTitle": "geonode:coconet_bd_owf_potential_location_uecgjrv",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "642"
+  },
+  "e0c1f10f-a5da-433a-9242-7b4919dc25cd": {
+    "datasetTitle": "geonode:italian_coastalbathingwaters_2024_4uuwcdx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "643"
+  },
+  "0ea9e618-3aa2-4e0f-afbb-aa63a0eb2df4": {
+    "datasetTitle": "geonode:opere_difesa_20180_s70uhsb",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "644"
+  },
+  "1042d1ab-03e1-4fba-9a18-79203b12fcd5": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "0845cd49-5499-4b00-977f-67d8347eb1ba": {
+    "datasetTitle": "geonode:condotte_2020_hjcyjyp",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "645"
+  },
+  "2658b036-e872-41f4-a40d-86337028972a": {
+    "datasetTitle": "geonode:core_trawl_fishing_ground0_spfzgr2",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "646"
+  },
+  "1f874d7f-18a0-4148-a863-090e34aef9bd": {
+    "datasetTitle": "geonode:pred_med_zcav0_zrofu1m",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "648"
+  },
+  "3474a435-66ec-414c-b407-60f6a852891c": {
+    "datasetTitle": "geonode:pred_med_zcav_cuvier_beaked_whale_zwb4yi7",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "649"
+  },
+  "22660ceb-bc6d-46bd-9346-9b4408915092": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "f075677b-5c31-44bc-bede-7116d0fe7c70": {
+    "datasetTitle": "geonode:sighting_2gjdfnr",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "650"
+  },
+  "f92cc506-43bf-4ade-9dd4-5a9bd387efd7": {
+    "datasetTitle": "geonode:demarcacioncanaria_uoqstsp",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "651"
+  },
+  "31eda419-6cb3-4eeb-80d5-417752b79e4d": {
+    "datasetTitle": "geonode:sabbie_concessioni_sicilia_i9azy1q",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "652"
+  },
+  "3fdf6e39-e424-4c88-b379-dbef4c849141": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "69f9847f-efb2-4e55-b1a3-7a6cc977c73a": {
+    "datasetTitle": "geonode:use_diving_buceo_5vxsucg",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "653"
+  },
+  "5d9b6614-21ae-4cb8-a21a-aef2d9b774ec": {
+    "datasetTitle": "geonode:domain_areas_2024_02_160_ffleu1o",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "654"
+  },
+  "a20329e7-de11-4f06-90b7-c40824c32af4": {
+    "datasetTitle": "geonode:ebsa_black_sea_xqjldis",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "655"
+  },
+  "0e131aa7-8805-4d2b-be73-74246562aa25": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "fc7961d7-e7d0-4eb0-bfff-e92968eaa0ef": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "4ba9fc2e-549a-435a-8875-aec1c01e60a8": {
+    "datasetTitle": "geonode:emodnet_ha_msp_spatial_plan_20250312_fr_zxdqq0a",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "656"
+  },
+  "cbebcd45-4626-4880-91ee-3139db66b2f0": {
+    "datasetTitle": "geonode:emodnet_ha_msp_zoning_element_pg_20250312_fr_9wnexbw",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "657"
+  },
+  "c1d255b4-b86e-4403-ac2b-70f67091dc99": {
+    "datasetTitle": "geonode:emodnet_ha_msp_supplementary_regulation_italy_rwfklf5",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "658"
+  },
+  "0de72afd-8cac-4b33-a5b4-89bfa8fb2a0b": {
+    "datasetTitle": "geonode:emodnet_ha_msp_zoning_element_pg_italy_202505_fnrtnry",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "659"
+  },
+  "66eab5f4-2d5c-49d3-9925-a09f123deb84": {
+    "datasetTitle": "geonode:emodnet_ha_og_wells_active_p_lkylh4i",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "660"
+  },
+  "f4d04f02-d880-4c02-8fd2-751ec773803c": {
+    "datasetTitle": "geonode:emodnet_platforms_wbidesk",
+    "lastCompletedStep": "patch-metadata",
+    "newId": "661"
+  },
+  "f8f75ff6-5a46-40e3-84fd-083eaab8bfe5": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "d9116c4d-c6d5-4bd0-be67-30d682016372": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "f618f271-2f0f-492b-958b-b43842d83fe9": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "681cd754-0eb7-4a9a-8876-8f38abbe079a": {
+    "datasetTitle": "geonode:emodnet_ha_uwwtp_discharge_points_data_active_1hmcdgv",
+    "lastCompletedStep": "upload-metadata",
+    "newId": "662"
+  },
+  "3bdd022c-1788-46a1-b0a7-317e15393056": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "b7a9c4a5-0207-4a2f-91f0-235f9edc286b": {
+    "datasetTitle": "geonode:eunis2019c_mf25_upgqbgy",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "663"
+  },
+  "e38fc30a-27a4-4e53-9649-da2a0f1a5acf": {
+    "datasetTitle": "geonode:eunis2019c_mg65_jdgxtjg",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "664"
+  },
+  "d0142e30-deb5-4790-a1ec-41eaa9cf4c32": {
+    "datasetTitle": "geonode:eunis_code_a5_51_b0_spqn3ls",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "665"
+  },
+  "cc61ee7e-f5fc-4b52-99cf-953a1169c010": {
+    "datasetTitle": "geonode:me45_or_mf45_vx9gfw3",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "666"
+  },
+  "66386068-d4b7-42c4-bf6f-3e6d39da899d": {
+    "datasetTitle": "geonode:mb15_an8g3q1",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "667"
+  },
+  "5ffec532-a73d-4cca-aa12-7607017a6b43": {
+    "datasetTitle": "geonode:mb252_1eochwn",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "668"
+  },
+  "f9db76c7-1ce6-438b-989a-28bf07c2b9d6": {
+    "datasetTitle": "geonode:mb35_9lhpild",
+    "lastCompletedStep": "upload-style",
+    "newId": "669"
+  },
+  "9b1b37ca-de62-4b12-b3fd-4f6b79a8c02a": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "5e60e23c-020b-4602-aed1-1dd6f20ad89c": {
+    "datasetTitle": "geonode:mc35_omez9sh",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "671"
+  },
+  "1027a034-6d7b-46e6-aa5d-a784d297bd40": {
+    "datasetTitle": "geonode:me15_mf15_0tqxflm",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "672"
+  },
+  "beb7d3a6-fb18-45de-9885-16ffff2faff5": {
+    "datasetTitle": "geonode:me65_e_un_botto_di_roba_ber3kxm",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "673"
+  },
+  "46693579-4312-4cbe-ab89-86d0e0465f73": {
+    "datasetTitle": "geonode:mc641_r4ojfs0",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "674"
+  },
+  "0eec1a84-a548-41b8-95a8-2c1d0f49328c": {
+    "datasetTitle": "geonode:mb14_f5mjplq",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "675"
+  },
+  "1b89f914-42c3-47e6-96e3-f2ab778dd09f": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "2d7f5fb5-4acb-4bfa-bb3c-e5d60fdb8ff9": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "e7cf54b4-d2d4-4d52-bdb5-d61afe642d67": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "70c76b68-e8ac-46db-88ad-b850164644b7": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "6e6e6355-cfe2-4f20-a3ee-f29e17939944": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "691371c2-fcca-466c-82b0-ea238e8aecc1": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "37ee5e7c-64cd-4da3-84fe-a14adc751b86": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "35314751-a7fb-4f96-96d0-c91667a6b7aa": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "1424db89-c811-4aa9-b5ec-8b1ff6da66e6": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "c59256ec-8729-45f9-bdb6-96f6b8460e89": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "406ac85a-4978-49a0-abed-4f40756929b6": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "f32f529f-e5ae-491f-a99c-d20772892723": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "cc18886d-59b1-48df-8611-a82a7c1da152": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "dabe26fb-73af-4db0-bb47-92d0b05b2734": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "66a4e129-db3f-48ba-8785-0795d5fb2fc8": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "c5755c67-f750-437d-9e57-4589a09261db": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  }
+}

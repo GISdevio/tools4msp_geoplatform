@@ -6,13 +6,13 @@ import dayjs from 'dayjs'
 import jsdom from 'jsdom'
 import logger from 'node-color-log'
 
-import { dataDirPath, dumpJson, dumpMd, readJson, saveFile, unzip } from '../lib/fs-client'
+import { dataDirPath, dumpJson, dumpMd, isDirFull, readJson, saveFile, unzip } from '../lib/fs-client'
 import v3Client from '../lib/v3-client'
 
 import type { DownloadState, Layer, LayersResponse, V3Layer } from './types'
 
 const BATCH_SIZE = 50
-const BATCH_NUMBER = 12
+const BATCH_NUMBER = 10
 
 type DownloadFilesResult = {
   errorReport: string | null
@@ -42,28 +42,31 @@ const downloadFiles = async (layer: Layer): Promise<DownloadFilesResult> => {
   const filesPath = `vector-layers/download/${layer.id}`
   const fullPath = path.resolve(dataDirPath, filesPath)
 
-  await fs.rm(filesPath, { force: true, recursive: true })
+  // await fs.rm(filesPath, { force: true, recursive: true })
 
-  if (!layer.detail_url) {
-    return { errorReport: null, filesState: 'no-details', warningReport: null }
-  }
-
-  try {
-    const htmlText = await v3Client.getText(layer.detail_url)
-    const htmlDoc = new jsdom.JSDOM(htmlText)
-
-    const filesAnchor = htmlDoc.window.document.getElementById('original-layer')
-    const filesUrl = filesAnchor?.getAttribute('href')
-    if (!filesUrl) {
-      return { errorReport: null, filesState: 'no-original-files', warningReport: null }
+  const _isDirFull = await isDirFull(fullPath)
+  if (!_isDirFull) {
+    if (!layer.detail_url) {
+      return { errorReport: null, filesState: 'no-details', warningReport: null }
     }
 
-    const [filesBin] = await v3Client.getBinary(filesUrl)
+    try {
+      const htmlText = await v3Client.getText(layer.detail_url)
+      const htmlDoc = new jsdom.JSDOM(htmlText)
 
-    await unzip(filesPath, filesBin as ReadableStream | null)
-  } catch {
-    const errorReport = `Error downloading layers`
-    return { errorReport, filesState: null, warningReport: null }
+      const filesAnchor = htmlDoc.window.document.getElementById('original-layer')
+      const filesUrl = filesAnchor?.getAttribute('href')
+      if (!filesUrl) {
+        return { errorReport: null, filesState: 'no-original-files', warningReport: null }
+      }
+
+      const [filesBin] = await v3Client.getBinary(filesUrl)
+
+      await unzip(filesPath, filesBin as ReadableStream | null)
+    } catch {
+      const errorReport = `Error downloading layers`
+      return { errorReport, filesState: null, warningReport: null }
+    }
   }
 
   try {
