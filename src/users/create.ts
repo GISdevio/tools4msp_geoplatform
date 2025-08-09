@@ -69,7 +69,14 @@ const changePwd = async (data: V3User, newkey: string) => {
 const createUsers = async () => {
   logger.info('Creating users...\n')
 
-  let creationStateMap: CreationStateMap = {}
+  let creationStateMap: CreationStateMap = {
+    admin: {
+      lastCompletedStep: 'change-password',
+      newPk: '1000',
+      oldPk: '1000',
+    },
+  }
+
   try {
     creationStateMap = await readJson<CreationStateMap>('users/creation-state')
   } catch {

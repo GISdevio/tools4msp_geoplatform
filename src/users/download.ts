@@ -132,9 +132,14 @@ ${
     const owner = ownersRes.objects.find(({ username }) => username === user.username)
 
     let email = owner?.email || undefined
-    if (emailsToRedact.includes(email ?? '')) {
-      email = undefined
-      changedUsers.push({ reason: `Email ${email} is used by multiple users`, username: user.username })
+
+    if (!email) {
+      email = `tools4msp+${Math.floor(Math.random() * 1000)}@ismar.cnr.it`
+      changedUsers.push({ reason: 'Missing email', username: user.username })
+    } else if (emailsToRedact.includes(email ?? '')) {
+      const emailSegments = email?.split('@') as [string, string]
+      email = `${emailSegments[0]}+${Math.floor(Math.random() * 1000)}@${emailSegments[1]}`
+      changedUsers.push({ reason: `Email is used by multiple users`, username: user.username })
     }
 
     const userData: V3User = {

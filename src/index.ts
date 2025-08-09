@@ -34,7 +34,7 @@ const main = async () => {
   // await rasterLayers.upload()
 
   // await vectorLayers.download()
-  await vectorLayers.upload()
+  // await vectorLayers.upload()
 }
 
 main().catch((err) => logger.error(err))
