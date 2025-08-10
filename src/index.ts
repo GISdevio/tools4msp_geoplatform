@@ -16,7 +16,7 @@ const main = async () => {
   // await users.upload()
 
   // await groups.download()
-  await groups.upload()
+  // await groups.upload()
 
   // await categories.download()
   // await categories.upload()
