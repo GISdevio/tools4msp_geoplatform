@@ -4,7 +4,68 @@ import logger from 'node-color-log'
 import { dumpJson, dumpMd, readJson } from '../lib/fs-client'
 import v4Client from '../lib/v4-client'
 
-import type { ThesaurusKeyword, ThesaurusKeywordLabel } from './types'
+import type { Thesaurus, ThesaurusKeyword, ThesaurusKeywordLabel } from './types'
+
+const createThesauri = async () => {
+  logger.info('Creating thesauri...')
+
+  const v3Thesauri = await readJson<Thesaurus[]>('thesauri/thesauri')
+
+  let createCount = 0
+
+  let errorReport = `## Error`
+  let errorCount = 0
+
+  // Calculated by manually creating an entry, and adding 1 to its id
+  const idOffset = 2
+
+  const keysMap: Record<string, string> = {}
+
+  for (const [idx, v3Thesaurus] of v3Thesauri.entries()) {
+    logger.log(`Processing ${idx + 1}/${v3Thesauri.length} - ${v3Thesaurus.id}`)
+
+    try {
+      const middlewareToken = await v4Client.getMiddlewareToken('en-us/admin/base/thesaurus/add/')
+
+      const urlencoded = new URLSearchParams()
+      urlencoded.append('csrfmiddlewaretoken', middlewareToken)
+      urlencoded.append('identifier', v3Thesaurus.identifier)
+      urlencoded.append('title', v3Thesaurus.title)
+      urlencoded.append('date', v3Thesaurus.date)
+      urlencoded.append('description', v3Thesaurus.description)
+      urlencoded.append('slug', v3Thesaurus.slug)
+      urlencoded.append('about', v3Thesaurus.about)
+      urlencoded.append('card_min', v3Thesaurus.cardMin)
+      urlencoded.append('card_max', v3Thesaurus.cardMax)
+      urlencoded.append('facet', v3Thesaurus.facet ? 'on' : 'off')
+      urlencoded.append('order', v3Thesaurus.order)
+      urlencoded.append('_save', 'Save')
+
+      await v4Client.sendUrlEncodedForm('en-us/admin/base/thesaurus/add/', urlencoded)
+
+      const newEntityId = idx + idOffset
+      keysMap[v3Thesaurus.id] = newEntityId.toString()
+
+      createCount += 1
+    } catch (err) {
+      errorReport += `\n\n### ${v3Thesaurus.id}\n\nError creating thesaurus\n${err as string}`
+      errorCount += 1
+      continue
+    }
+  }
+
+  await dumpJson('thesauri/thesauri-key-map', keysMap)
+
+  const report = `# Created thesauri
+
+Created: ${createCount}
+Errors: ${errorCount}
+
+${errorReport}
+`
+
+  await dumpMd(`thesauri/create-report/thesauri-${dayjs().format('YYYY-MM-DD HH:mm:ss')}`, report)
+}
 
 const createThesaurusKeywords = async () => {
   logger.info('Creating thesaurus keywords...')
@@ -52,12 +113,12 @@ const createThesaurusKeywords = async () => {
   await dumpJson('thesauri/keywords-keys-map', keysMap)
 
   const report = `# Created keywords
-    
+
 Created: ${createCount}
 Errors: ${errorCount}
-    
+
 ${errorReport}
-    `
+`
 
   await dumpMd(`thesauri/create-report/keywords-${dayjs().format('YYYY-MM-DD HH:mm:ss')}`, report)
 }
@@ -107,17 +168,21 @@ const createThesaurusLabels = async () => {
   await dumpJson('thesauri/labels-keys-map', keysMap)
 
   const report = `# Created labels
-    
+
 Created: ${createCount}
 Errors: ${errorCount}
-    
+
 ${errorReport}
-    `
+`
 
   await dumpMd(`thesauri/create-report/labels-${dayjs().format('YYYY-MM-DD HH:mm:ss')}`, report)
 }
 
 const create = async () => {
+  await createThesauri()
+
+  console.log('\n')
+
   await createThesaurusKeywords()
 
   console.log('\n')
