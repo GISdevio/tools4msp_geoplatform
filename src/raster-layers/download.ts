@@ -12,8 +12,8 @@ import v3Client from '../lib/v3-client'
 
 import type { DownloadState, Layer, LayersResponse, V3Layer } from './types'
 
-const BATCH_SIZE = 50
-const BATCH_NUMBER = 4
+const BATCH_SIZE = 200
+const BATCH_NUMBER = 1
 
 type DownloadFilesResult = {
   errorReport: string | null

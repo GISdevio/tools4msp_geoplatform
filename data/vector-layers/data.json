@@ -5522,5 +5522,295 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1272/Litoralni_sediment_remote.sld",
     "title": "SLO MSP_Littoral sediment",
     "uuid": "537ef285-8596-41c6-b4cc-2f7724a6ef9e"
+  },
+  {
+    "filesState": "ok",
+    "id": "1286",
+    "license": 1,
+    "name": "N_carroyage_trafic_maritime_tt_nav_2022_S_fr_",
+    "ownerUsername": "AlexisEsquerre",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1286/N_carroyage_trafic_maritime_tt_nav_2022_S_fr__remote.sld",
+    "title": "N_carroyage_trafic_maritime_tt_nav_2022_S_fr_",
+    "uuid": "bf40caa6-7716-408b-b2f7-b0010aeafabd"
+  },
+  {
+    "filesState": "ok",
+    "id": "186",
+    "license": 8,
+    "name": "natura_2000_bs",
+    "ownerUsername": "EMODnet",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/186/natura_2000_bs_remote.sld",
+    "title": "Natura 2000 Black Sea Areas - EMODnet Human Activities - EEA  (2022)",
+    "uuid": "1202c34f-065c-4c4e-a888-33454fb1ab38"
+  },
+  {
+    "filesState": "ok",
+    "id": "223",
+    "license": 1,
+    "name": "soundscape_extra_noise_5km",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/223/soundscape_extra_noise_5km_remote.sld",
+    "title": "SOUNDSCAPE - Extra noise 2020 - 5km",
+    "uuid": "7c54d736-9435-4189-bda3-86cab5c958e7"
+  },
+  {
+    "filesState": "ok",
+    "id": "2065",
+    "license": 1,
+    "name": "SSF_Adriamed_GSA170",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/2065/SSF_Adriamed_GSA170_remote.sld",
+    "title": "SSF_Adriamed_GSA170",
+    "uuid": "0bfe5cfc-524b-4391-b1b5-ba23a270089f"
+  },
+  {
+    "filesState": "ok",
+    "id": "1655",
+    "license": 1,
+    "name": "BK_scenari_11_12_2024",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1655/BK_scenari_11_12_2024_remote.sld",
+    "title": "Scenari usi pre-workshop MareFuturo",
+    "uuid": "4df80736-333a-4e95-8f12-cdd02030007e"
+  },
+  {
+    "filesState": "ok",
+    "id": "1595",
+    "license": 1,
+    "name": "below_1000_EMODnet_2022",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1595/below_1000_EMODnet_2022_remote.sld",
+    "title": "Seabed below 1000 metres -Italy",
+    "uuid": "f591b218-8a80-4172-be59-54594624805d"
+  },
+  {
+    "filesState": "ok",
+    "id": "1596",
+    "license": 1,
+    "name": "below_800_EMODnet_2022",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1596/geonode_below_800_EMODnet_2022_remote.sld",
+    "title": "Seabed below 800 metres -Italy",
+    "uuid": "38223760-f64e-465d-958c-614313b199c2"
+  },
+  {
+    "filesState": "ok",
+    "id": "666",
+    "license": 1,
+    "name": "EUNIS_CODE_A5_531_allseagras",
+    "ownerUsername": "victor",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/666/EUNIS_CODE_A5_531_allseagras_remote.sld",
+    "title": "Seagrass beds in the Canary Islands",
+    "uuid": "f2ef80b5-5c4e-499c-87c8-9369d65f3022"
+  },
+  {
+    "filesState": "ok",
+    "id": "1708",
+    "license": 1,
+    "name": "SSF_Adriamed_GSA17",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1708/SSF_Adriamed_GSA17_remote.sld",
+    "title": "Small Scale Fishery Adriamed GSA17 -",
+    "uuid": "febb87df-f36c-44ac-a5dd-5a4fd1d8e325"
+  },
+  {
+    "filesState": "ok",
+    "id": "2061",
+    "license": 1,
+    "name": "PRED_Med_pmac0",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/2061/PRED_Med_pmac_sperm_whale_summer_remote.sld",
+    "title": "Sperm whale  (Physeter macrocephalus)- Predicted density-Pelagos agreement",
+    "uuid": "06ceaaeb-ad94-41f4-9c69-127212fb49a0"
+  },
+  {
+    "filesState": "ok",
+    "id": "2055",
+    "license": 1,
+    "name": "PRED_Med_scoe",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/2055/PRED_Med_scoe_striped_dolphin_summer_remote.sld",
+    "title": "Striped dolphin  (Stenella coeruleoalba)-Predicted density-Pelagos agreement",
+    "uuid": "987f4300-9c06-439c-86db-d08032294cec"
+  },
+  {
+    "filesState": "ok",
+    "id": "2054",
+    "license": 1,
+    "name": "PRED_Med_ggri",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/2054/PRED_Med_ggri_Rissos_dolphin_summer_remote.sld",
+    "title": "Striped dolphin (Grampus griseus)-Predicted density-Pelagos agreement",
+    "uuid": "013ba5e1-184e-4c6f-beb6-42afb75d3398"
+  },
+  {
+    "filesState": "ok",
+    "id": "1787",
+    "license": 1,
+    "name": "Grid_2022_OTB_SAR_ADRIATIC",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1787/Grid_2022_OTB_SAR_ADRIATIC_remote.sld",
+    "title": "Trawling  SAR OTB Italy - Adriatic Sea 2022",
+    "uuid": "a42c7061-90f6-42d1-835d-7b266508c127"
+  },
+  {
+    "filesState": "ok",
+    "id": "1788",
+    "license": 1,
+    "name": "Grid_2022_OTB",
+    "ownerUsername": "GiulioF",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1788/Grid_2022_OTB_remote.sld",
+    "title": "Trawling OTB Italy - Adriatic Sea 2022",
+    "uuid": "bd61026d-104a-470b-9836-89e44e45950b"
+  },
+  {
+    "filesState": "ok",
+    "id": "909",
+    "license": 1,
+    "name": "Sighiting_OBGis",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/909/Sighiting_OBGis_remote.sld",
+    "title": "Tursiops truncatus OBIS Sighting",
+    "uuid": "a263df77-eac6-4c13-8b13-aa92b6ea0cf7"
+  },
+  {
+    "filesState": "ok",
+    "id": "1707",
+    "license": 1,
+    "name": "MAB_TUSCAN_ISLANDS",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1707/MaB_tuscan_island_zones_remote.sld",
+    "title": "Tuscan Islands MaB Reserve",
+    "uuid": "f36fa5ab-6769-4a6c-9791-f51241e69c4b"
+  },
+  {
+    "filesState": "ok",
+    "id": "1481",
+    "license": 1,
+    "name": "Vessel_deep_WGS84",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1481/Vessel_deep_WGS84_remote.sld",
+    "title": "Vessel Density deep water SoS",
+    "uuid": "d61c1237-9b0b-4cff-8315-56e813cc4d15"
+  },
+  {
+    "filesState": "ok",
+    "id": "1479",
+    "license": 1,
+    "name": "Vessel_shallow_WGS84",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1479/Vessel_shallow_WGS84_remote.sld",
+    "title": "Vessel density shallow water SoS",
+    "uuid": "4709eea0-3fa2-4cb3-9883-691a7e6f7b3c"
+  },
+  {
+    "filesState": "ok",
+    "id": "657",
+    "license": 1,
+    "name": "Shrimps",
+    "ownerUsername": "victor",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/657/Shrimps_remote.sld",
+    "title": "WMS Biomasa de Gambas en costas de Islas Canarias. Resumen por grupos tróficos.",
+    "uuid": "9c0ada19-d9d4-4fe4-935d-69d551c45527"
+  },
+  {
+    "filesState": "ok",
+    "id": "946",
+    "license": 1,
+    "name": "WWF_Marxan_For_Portal1",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/946/WWF_Marxan_For_Portal1_remote.sld",
+    "title": "WWF Marxan 70 Output Fishing",
+    "uuid": "25663dd9-77e4-4ee9-b162-bb050007698f"
+  },
+  {
+    "filesState": "ok",
+    "id": "923",
+    "license": 1,
+    "name": "WWF_Marxan_For_Portal0",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/923/WWF_Marxan_For_Portal0_remote.sld",
+    "title": "WWF Marxan Output Fishing",
+    "uuid": "bbd50fe1-1c50-4e5b-8ea5-3cd0b6e18528"
+  },
+  {
+    "filesState": "ok",
+    "id": "759",
+    "license": 1,
+    "name": "black_sea_coastal_buffers",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/759/black_sea_coastal_buffers_remote.sld",
+    "title": "black_sea_coastal_buffers",
+    "uuid": "99bfa798-9cf2-45c7-92fb-ce4c871d1ff8"
+  },
+  {
+    "filesState": "ok",
+    "id": "1179",
+    "license": 1,
+    "name": "mediterranean_sea_coastal_buffers",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1179/mediterranean_sea_coastal_buffers_remote.sld",
+    "title": "mediterranean_sea_coastal_buffers",
+    "uuid": "a1c64304-65dc-49f4-b996-493ba8bc4a39"
+  },
+  {
+    "filesState": "ok",
+    "id": "1152",
+    "license": 1,
+    "name": "msp_italy_flat_areas_v1_4326",
+    "ownerUsername": "amefad",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1152/msp_italy_flat_areas_v1_4326_remote.sld",
+    "title": "msp_italy_flat_areas_v1_4326",
+    "uuid": "dd60f55d-cb24-4419-923b-582e73f6c3fe"
+  },
+  {
+    "filesState": "ok",
+    "id": "1151",
+    "license": 1,
+    "name": "msp_italy_flat_subareas_v1_4326",
+    "ownerUsername": "amefad",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1151/msp_italy_flat_subareas_v1_4326_remote.sld",
+    "title": "msp_italy_flat_subareas_v1_4326",
+    "uuid": "f5735d6b-a82c-4de1-81bc-9cb92651354a"
+  },
+  {
+    "filesState": "ok",
+    "id": "700",
+    "license": 1,
+    "name": "reticolo_idrografico_1ord",
+    "ownerUsername": "amefad",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/700/reticolo_idrografico_1ord_remote.sld",
+    "title": "reticolo_idrografico_1ord",
+    "uuid": "7914f8b6-14f4-4042-b028-0670ef29dbb4"
+  },
+  {
+    "filesState": "ok",
+    "id": "1302",
+    "license": 1,
+    "name": "scenari_MSP4Biodiversity",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1302/scenari_MSP4Biodiversity_remote.sld",
+    "title": "scenari_MSP4Biodiversity",
+    "uuid": "ea6e1ec7-646b-4448-b60c-1049a6857626"
+  },
+  {
+    "filesState": "ok",
+    "id": "586",
+    "license": 1,
+    "name": "singlebeam_bathymetry_adriaticsea",
+    "ownerUsername": "amefad",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/586/singlebeam_bathymetry_adriaticsea_remote.sld",
+    "title": "singlebeam_bathymetry_adriaticsea",
+    "uuid": "8c962f3c-43f9-4069-8b9a-0e54c626cb01"
+  },
+  {
+    "filesState": "ok",
+    "id": "131",
+    "license": 1,
+    "name": "soundscape_extra_noise_10km",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/131/soundscape_extra_noise_10km_remote.sld",
+    "title": "soundscape_extra_noise_10km",
+    "uuid": "07907af4-b0bf-4fb4-95df-51ee186192ea"
   }
 ]

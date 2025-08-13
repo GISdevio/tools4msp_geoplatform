@@ -1956,5 +1956,15 @@
     "ownerUsername": "danilo.scannella",
     "title": "a__911_5208_MAP_VULNERABILITY",
     "uuid": "49c56f1a-4d44-403f-bf61-77f6f0ac4e68"
+  },
+  {
+    "filesState": "ok",
+    "id": "2112",
+    "license": 1,
+    "name": "Merluccius_merluccius_MPA_Europe_Occur_MED",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2112/Merluccius_merluccius_MPA_Europe_Occur_MED_remote.sld",
+    "title": "Merluccius merluccius (MPA Europe SDMs)",
+    "uuid": "6be42b7b-9491-4472-b09b-26e469b90cf8"
   }
 ]

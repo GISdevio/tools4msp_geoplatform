@@ -11,8 +11,8 @@ import v3Client from '../lib/v3-client'
 
 import type { DownloadState, Layer, LayersResponse, V3Layer } from './types'
 
-const BATCH_SIZE = 50
-const BATCH_NUMBER = 10
+const BATCH_SIZE = 1000
+const BATCH_NUMBER = 1
 
 type DownloadFilesResult = {
   errorReport: string | null
@@ -42,7 +42,7 @@ const downloadFiles = async (layer: Layer): Promise<DownloadFilesResult> => {
   const filesPath = `vector-layers/download/${layer.id}`
   const fullPath = path.resolve(dataDirPath, filesPath)
 
-  // await fs.rm(filesPath, { force: true, recursive: true })
+  await fs.rm(fullPath, { force: true, recursive: true })
 
   const _isDirFull = await isDirFull(fullPath)
   if (!_isDirFull) {
