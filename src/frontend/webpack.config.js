@@ -31,6 +31,12 @@ module.exports = (env, argv) => {
       allowedHosts: 'all',
       headers: {
         "Access-Control-Allow-Origin": "*",
+      },
+      client: {
+        overlay: {
+          errors: true,   // Show errors
+          warnings: false // Hide warnings
+        }
       }
     },
     plugins: [

@@ -4,12 +4,12 @@ __pycache__/
 
 # C extensions
 *.so
-
 # Distribution / packaging
 .Python
 # env/
 build/
 develop-eggs/
+.t4mspvenv/
 dist/
 downloads/
 eggs/
@@ -22,6 +22,12 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Local environment configuration
+.override_dev_env
+
+# Generated webpack files
+src/frontend/webpack-stats.json
 
 # Virtual environment
 venv/

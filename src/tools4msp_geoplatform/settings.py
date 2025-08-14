@@ -77,10 +77,10 @@ STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "frontend", "static"), # for geodatabuilders and casestudies
     # os.path.join(PROJECT_ROOT, "static"),
     # '/home/ilpise/gisdevio/.gpvenv/src/wagtail/wagtail/admin/static'
-] + STATICFILES_DIRS
+] + list(STATICFILES_DIRS)
 
 # Location of locale files
-LOCALE_PATHS = (os.path.join(LOCAL_ROOT, "locale"),) + LOCALE_PATHS
+LOCALE_PATHS = [os.path.join(LOCAL_ROOT, "locale")] + list(LOCALE_PATHS)
 
 TEMPLATES[0]["DIRS"].insert(0, os.path.join(LOCAL_ROOT, "templates"))
 loaders = TEMPLATES[0]["OPTIONS"].get("loaders") or [
