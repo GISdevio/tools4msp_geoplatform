@@ -31,7 +31,7 @@ const main = async () => {
   // await documents.upload()
 
   // await rasterLayers.download()
-  await rasterLayers.upload()
+  // await rasterLayers.upload()
 
   // await vectorLayers.download()
   // await vectorLayers.upload()

@@ -9,8 +9,8 @@ import v4Client from '../lib/v4-client'
 
 import type { CreationState, CreationStateMap, V3Layer } from './types'
 
-const BATCH_SIZE = 20
-const BATCH_NUMBER = 9
+const BATCH_SIZE = 1000
+const BATCH_NUMBER = 1
 
 const waitForUpload = async <R>(url: string): Promise<R> => {
   const maxIterations = 10
