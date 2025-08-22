@@ -1,43 +1,51 @@
 # Errors
 
-## Batch #10
+- [1739] ReMAP - Sea Use Function Analysis (Grouped) -> Upload took too long
+- [2072] EMODnet - EU - Zoning Elements -> Upload took too long
+- [1859] EMODnet_HA_MSP_Zoning_Element_pg_20250124 -> Upload took too long
+- [1864] EU Zoning Element - polygons (EMODnet) -> Upload took too long
+- [1645] EUSeaMap 2023 - MB55: Mediterranean infralittoral sand -> Upload took too long
+- [1777] GFW Med & Black Sea Fishing Effort 2024-vector -> Upload took too long
+- [1770] ReMAP - Sea Use Function Analysis -> Upload took too long
+- [1286] N_carroyage_trafic_maritime_tt_nav_2022_S_fr_ -> Upload took too long
+- [1788] Trawling OTB Italy - Adriatic Sea 2022 -> Upload took too long
 
-- [1739] ReMAP - Sea Use Function Analysis (Grouped)
-- [696] Reg01012023_WGS84
-- [1267] SLO MSP_Infralittoral coarse sediment sand mud
-- [1265] SLO MSP_Infralittoral rocky seabed
-- [1266] SLO MSP_Littoral rocky shores
-- [1272] SLO MSP_Littoral sedimen
+- [995] Depth contour 800-1500m -> Non UFT-8 content found when writing feature -1 of layer
 
-## Batch #11
+- [2065] SSF_Adriamed_GSA170 -> Missing "prj" file
+- [1708] Small Scale Fishery Adriamed GSA17 - -> Missing "prj" file
 
-- [223] SOUNDSCAPE - Extra noise 2020 - 5km
-- [2065] SSF_Adriamed_GSA170
-- [1655] Scenari usi pre-workshop MareFuturo
-- [1595] Seabed below 1000 metres -Italy
-- [1596] Seabed below 800 metres -Italy
-- [666] Seagrass beds in the Canary Islands
-- [1708] Small Scale Fishery Adriamed GSA17 -
-- [2061] Sperm whale  (Physeter macrocephalus)- Predicted density-Pelagos agreement
-- [2055] Striped dolphin  (Stenella coeruleoalba)-Predicted density-Pelagos agreement
-- [2054] Striped dolphin (Grampus griseus)-Predicted density-Pelagos agreement
-- [1787] Trawling  SAR OTB Italy - Adriatic Sea 2022
-- [1788] Trawling OTB Italy - Adriatic Sea 2022
-- [909] Tursiops truncatus OBIS Sighting
-- [1707] Tuscan Islands MaB Reserve
-- [1481] Vessel Density deep water SoS
-
-## Batch 12
-
-- [1479] Vessel density shallow water SoS
-- [657] WMS Biomasa de Gambas en costas de Islas Canarias. Resumen por grupos tróficos.
-- [946] WWF Marxan 70 Output Fishing
-- [923] WWF Marxan Output Fishing
-- [759] black_sea_coastal_buffers
-- [1179] mediterranean_sea_coastal_buffers
-- [1152] msp_italy_flat_areas_v1_4326
-- [1151] msp_italy_flat_subareas_v1_4326
-- [700] reticolo_idrografico_1ord
-- [1302] scenari_MSP4Biodiversity
-- [586] singlebeam_bathymetry_adriaticsea
-- [131] soundscape_extra_noise_10km
+- [1475] Bridge_BS_Use_Scenarios -> Original layer did not have original files
+- [555] CaseStudySoS0 -> Original layer did not have original files
+- [864] Export_Output_103 -> Original layer did not have original files
+- [1689] Fishing grounds (core and marginal) SoS -> Original layer did not have original files
+- [1423] GFW Med Fishing Effort 2023-vector -> Original layer did not have original files
+- [669] Important Bird Areas - IBA - Italy - 2019 (GN) -> Original layer did not have original files
+- [1093] Key Biodiversity Areas (Mediterranean and Europe) -> Original layer did not have original files
+- [948] Liguria - Suitable Areas for fish farming -> Original layer did not have original files
+- [1097] NAS NBFC SP MaritimeTransport -> Original layer did not have original files
+- [1143] NBFC NAS 6NM -> Original layer did not have original files
+- [1109] NBFC NAS BD ZTB -> Original layer did not have original files
+- [1116] NBFC NAS NW OWF -> Original layer did not have original files
+- [1154] NBFC NAS PSSA -> Original layer did not have original files
+- [1095] NBFC NAS SP FSRU -> Original layer did not have original files
+- [1034] NTS NBFC ATBA -> Original layer did not have original files
+- [1045] NTS NBFC BD Acquacoltura -> Original layer did not have original files
+- [1044] NTS NBFC BD Conservazione -> Original layer did not have original files
+- [1042] NTS NBFC BD Difesa -> Original layer did not have original files
+- [1033] NTS NBFC Difesa SP NW -> Original layer did not have original files
+- [1048] NTS NBFC NW ZTB -> Original layer did not have original files
+- [1038] NTS NBFC Natura2000 Tursiope -> Original layer did not have original files
+- [1032] NTS NBFC SP Conservation -> Original layer did not have original files
+- [1037] NTS NBFC ZPS -> Original layer did not have original files
+- [886] Ordinanze Sicilia -> Original layer did not have original files
+- [1065] SOS NBFC BD Acquacoltura -> Original layer did not have original files
+- [1066] SOS NBFC BD FRA -> Original layer did not have original files
+- [1070] SOS NBFC BD RI -> Original layer did not have original files
+- [1069] SOS NBFC BD owf -> Original layer did not have original files
+- [1055] SOS NBFC Trasporto -> Original layer did not have original files
+- [910] Stenella coeruleoalba OBIS Sighting -> Original layer did not have original files
+- [924] WWF_Marxan_For_Portal -> Original layer did not have original files
+- [1132] pSIC_per_il_Tursiope -> Original layer did not have original files
+- [611] rt -> Original layer did not have original files
+- [1723] test -> Original layer did not have original files

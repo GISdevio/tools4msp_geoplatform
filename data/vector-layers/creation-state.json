@@ -60,9 +60,9 @@
     "newId": "499"
   },
   "cf1abc68-123d-4ad6-9d19-67d75a8362f4": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:phytoplankton_we95j0p",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1031"
   },
   "b3af6854-d657-4e0c-b05d-7eb72388a7f1": {
     "datasetTitle": "geonode:use_concesiones_acuicolas_vigentes20180_im4x9hz",
@@ -76,7 +76,7 @@
   },
   "145a1331-0b27-4e3f-a25a-6a6c26f06f6d": {
     "datasetTitle": "geonode:aree_vocate_maricoltura_25833_jxekxsv",
-    "lastCompletedStep": "upload-style",
+    "lastCompletedStep": "upload-thumbnail",
     "newId": "502"
   },
   "51c2af2f-5279-4ca5-8837-29d43e05ca87": {
@@ -711,7 +711,7 @@
   },
   "681cd754-0eb7-4a9a-8876-8f38abbe079a": {
     "datasetTitle": "geonode:emodnet_ha_uwwtp_discharge_points_data_active_1hmcdgv",
-    "lastCompletedStep": "upload-metadata",
+    "lastCompletedStep": "upload-thumbnail",
     "newId": "624"
   },
   "3bdd022c-1788-46a1-b0a7-317e15393056": {
@@ -1351,7 +1351,7 @@
   },
   "ddff888f-455f-4837-a644-87c40a760b69": {
     "datasetTitle": "geonode:gfw_2019_blacksea_trawlers0_hvgexve",
-    "lastCompletedStep": "patch-metadata",
+    "lastCompletedStep": "upload-thumbnail",
     "newId": "747"
   },
   "60a5ccb9-8fc4-4930-a45b-e8885179df56": {
@@ -1460,14 +1460,14 @@
     "newId": "765"
   },
   "56e06377-b587-4adb-ac6b-03a79062a1d4": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:fra_600_1000_sos_fmjvtko",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1029"
   },
   "9e292b6a-1ac5-43f2-a1ea-c11e796aa540": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:fra_800_1000_sos_takldk8",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1030"
   },
   "774dd83d-6377-4494-9795-47166ed4e131": {
     "datasetTitle": "geonode:pred_med_bphy_zcrsfr7",
@@ -1906,7 +1906,7 @@
   },
   "aaf59c98-73a9-11e8-8f6e-005056bd28c9": {
     "datasetTitle": "geonode:otb_evf_brik0lh",
-    "lastCompletedStep": "upload-style",
+    "lastCompletedStep": "upload-thumbnail",
     "newId": "838"
   },
   "0a824d7a-072c-4d08-92b9-8ffd0d13d320": {
@@ -2116,7 +2116,7 @@
   },
   "59bb9cb2-73ac-11e8-aeb5-005056bd28c9": {
     "datasetTitle": "geonode:ptm_evf_rbpfmm9",
-    "lastCompletedStep": "upload-style",
+    "lastCompletedStep": "upload-thumbnail",
     "newId": "877"
   },
   "a4277e74-5f18-497b-8354-5aaf5d12325f": {
@@ -2755,29 +2755,29 @@
     "newId": ""
   },
   "62b0ca11-dff2-4591-b5b9-c63541e32239": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:reg01012023_wgs84_mucql1p",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1021"
   },
   "a373652a-911a-43f9-8b9c-a70c38c6c6c1": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:infralitoralni_grobi_sediment_pesek_mulj_tzttjka",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1022"
   },
   "17d7a8b3-eda9-4508-bba1-87825b9fa2d7": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:infralitoralno_kamnito_dno_4oiiwuq",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1026"
   },
   "5a137e48-bd79-4e96-8eb2-e35b81ae7fc0": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:litoralno_skalovje0_muq1lel",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1027"
   },
   "537ef285-8596-41c6-b4cc-2f7724a6ef9e": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:litoralni_sediment_d2n6gjc",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1028"
   },
   "bf40caa6-7716-408b-b2f7-b0010aeafabd": {
     "datasetTitle": "",
@@ -2806,12 +2806,12 @@
   },
   "f591b218-8a80-4172-be59-54594624805d": {
     "datasetTitle": "geonode:below_1000_emodnet_2022_pitjp0e",
-    "lastCompletedStep": "patch-metadata",
+    "lastCompletedStep": "upload-thumbnail",
     "newId": "995"
   },
   "38223760-f64e-465d-958c-614313b199c2": {
     "datasetTitle": "geonode:below_800_emodnet_2022_9wvokky",
-    "lastCompletedStep": "patch-metadata",
+    "lastCompletedStep": "upload-thumbnail",
     "newId": "996"
   },
   "f2ef80b5-5c4e-499c-87c8-9369d65f3022": {

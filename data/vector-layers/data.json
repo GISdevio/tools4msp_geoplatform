@@ -5465,66 +5465,6 @@
   },
   {
     "filesState": "ok",
-    "id": "1739",
-    "license": 1,
-    "name": "coverage_stats",
-    "ownerUsername": "ssottoriva",
-    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1739/positive_functions___628e13e0-d801-11ef-9fab-47f5138be954_remote.sld",
-    "title": "ReMAP - Sea Use Function Analysis (Grouped)",
-    "uuid": "bab1b6ec-f2dc-49c5-8ac7-cb15b06ccd8d"
-  },
-  {
-    "filesState": "ok",
-    "id": "696",
-    "license": 8,
-    "name": "Reg01012023_WGS84",
-    "ownerUsername": "Tools4msp",
-    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/696/Reg01012023_WGS84_remote.sld",
-    "title": "Reg01012023_WGS84",
-    "uuid": "62b0ca11-dff2-4591-b5b9-c63541e32239"
-  },
-  {
-    "filesState": "ok",
-    "id": "1267",
-    "license": 1,
-    "name": "Infralitoralni_grobi_sediment_pesek_mulj",
-    "ownerUsername": "pijalapajne",
-    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1267/Infralitoralni_grobi_sediment_pesek_mulj_remote.sld",
-    "title": "SLO MSP_Infralittoral coarse sediment sand mud",
-    "uuid": "a373652a-911a-43f9-8b9c-a70c38c6c6c1"
-  },
-  {
-    "filesState": "ok",
-    "id": "1265",
-    "license": 1,
-    "name": "Infralitoralno_kamnito_dno",
-    "ownerUsername": "pijalapajne",
-    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1265/Infralitoralno_kamnito_dno_remote.sld",
-    "title": "SLO MSP_Infralittoral rocky seabed",
-    "uuid": "17d7a8b3-eda9-4508-bba1-87825b9fa2d7"
-  },
-  {
-    "filesState": "ok",
-    "id": "1266",
-    "license": 1,
-    "name": "Litoralno_skalovje0",
-    "ownerUsername": "pijalapajne",
-    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1266/Litoralno_skalovje0_remote.sld",
-    "title": "SLO MSP_Littoral rocky shores",
-    "uuid": "5a137e48-bd79-4e96-8eb2-e35b81ae7fc0"
-  },
-  {
-    "filesState": "ok",
-    "id": "1272",
-    "license": 1,
-    "name": "Litoralni_sediment",
-    "ownerUsername": "pijalapajne",
-    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1272/Litoralni_sediment_remote.sld",
-    "title": "SLO MSP_Littoral sediment",
-    "uuid": "537ef285-8596-41c6-b4cc-2f7724a6ef9e"
-  },
-  {
-    "filesState": "ok",
     "id": "1286",
     "license": 1,
     "name": "N_carroyage_trafic_maritime_tt_nav_2022_S_fr_",
@@ -5812,5 +5752,65 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/131/soundscape_extra_noise_10km_remote.sld",
     "title": "soundscape_extra_noise_10km",
     "uuid": "07907af4-b0bf-4fb4-95df-51ee186192ea"
+  },
+  {
+    "filesState": "ok",
+    "id": "1739",
+    "license": 1,
+    "name": "coverage_stats",
+    "ownerUsername": "ssottoriva",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1739/positive_functions___628e13e0-d801-11ef-9fab-47f5138be954_remote.sld",
+    "title": "ReMAP - Sea Use Function Analysis (Grouped)",
+    "uuid": "bab1b6ec-f2dc-49c5-8ac7-cb15b06ccd8d"
+  },
+  {
+    "filesState": "ok",
+    "id": "696",
+    "license": 8,
+    "name": "Reg01012023_WGS84",
+    "ownerUsername": "Tools4msp",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/696/Reg01012023_WGS84_remote.sld",
+    "title": "Reg01012023_WGS84",
+    "uuid": "62b0ca11-dff2-4591-b5b9-c63541e32239"
+  },
+  {
+    "filesState": "ok",
+    "id": "1267",
+    "license": 1,
+    "name": "Infralitoralni_grobi_sediment_pesek_mulj",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1267/Infralitoralni_grobi_sediment_pesek_mulj_remote.sld",
+    "title": "SLO MSP_Infralittoral coarse sediment sand mud",
+    "uuid": "a373652a-911a-43f9-8b9c-a70c38c6c6c1"
+  },
+  {
+    "filesState": "ok",
+    "id": "1265",
+    "license": 1,
+    "name": "Infralitoralno_kamnito_dno",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1265/Infralitoralno_kamnito_dno_remote.sld",
+    "title": "SLO MSP_Infralittoral rocky seabed",
+    "uuid": "17d7a8b3-eda9-4508-bba1-87825b9fa2d7"
+  },
+  {
+    "filesState": "ok",
+    "id": "1266",
+    "license": 1,
+    "name": "Litoralno_skalovje0",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1266/Litoralno_skalovje0_remote.sld",
+    "title": "SLO MSP_Littoral rocky shores",
+    "uuid": "5a137e48-bd79-4e96-8eb2-e35b81ae7fc0"
+  },
+  {
+    "filesState": "ok",
+    "id": "1272",
+    "license": 1,
+    "name": "Litoralni_sediment",
+    "ownerUsername": "pijalapajne",
+    "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1272/Litoralni_sediment_remote.sld",
+    "title": "SLO MSP_Littoral sediment",
+    "uuid": "537ef285-8596-41c6-b4cc-2f7724a6ef9e"
   }
 ]

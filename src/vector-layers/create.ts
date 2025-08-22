@@ -199,6 +199,9 @@ ${errorReport}
   }
 
   for (const [idx, layer] of layers.entries()) {
+    const layersToLoad: string[] = ['1739', '2072', '1859', '1864', '1645', '1777', '1770', '1286', '1788']
+    if (!layersToLoad.includes(layer.id)) { continue }
+
     if (idx < startIdx || idx >= endIdx) { continue }
 
     logger.log(`\nProcessing ${idx + 1}/${layers.length} - [${layer.id}] ${layer.title}`)
