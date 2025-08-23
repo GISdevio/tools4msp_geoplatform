@@ -68,7 +68,7 @@ While there are ways to recover auth information automatically, the easiest and 
 
 ## Raster layers migration report
 
-During the migration of raster layers we incurred in some problems downloading the original files. It follows the list of errors with the affected layers names.
+During the migration of raster layers we incurred in some problems downloading or uploading the datasets. It follows the list of errors with the affected layers names.
 
 ### No details
 
@@ -126,6 +126,58 @@ It follows a list of the layers involved in the form of `[<layer-id>] <layer-nam
 - `[2012] NAS_seagrass_habitat_binary` uploaded by `szunino@ogs.it`
 
 ## Vector layers migration report
+
+During the migration of vector layers we incurred in some problems downloading or uploading the datasets. It follows the list of errors with the affected layers names.
+
+### No original files
+
+There are layers whose original files cannot be downloaded (they miss the "Download original files" link in the UI under `Download Layer > Data`). It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`.
+
+- `[1475] Bridge_BS_Use_Scenarios` uploaded by `alessandro2`
+- `[555] CaseStudySoS0` uploaded by `germana.garofalo@cnr.it`
+- `[864] Export_Output_103` uploaded by `Beltrano`
+- `[1689] Fishing_Grounds_SoS` uploaded by `alessandro2`
+- `[1423] fishingeffort_2023_polygons` uploaded by `alessandro2`
+- `[669] IBA_GN` uploaded by `alessandro2`
+- `[1093] KBAsGlobal_2024_March_01_POL_b0_MED_EU` uploaded by `alessandro2`
+- `[948] a__4` uploaded by `isabella`
+- `[1097] SPMaritimeTransport` uploaded by `isabella`
+- `[1143] a__6nm` uploaded by `isabella`
+- `[1109] BDnewandextendedZTBFRA` uploaded by `isabella`
+- `[1116] NWOWF` uploaded by `isabella`
+- `[1154] NW_BD_PSSA0` uploaded by `isabella`
+- `[1095] SPFSRU` uploaded by `isabella`
+- `[1034] ATBA` uploaded by `isabella`
+- `[1045] Acquacoltura` uploaded by `isabella`
+- `[1044] AMP_ATBA` uploaded by `isabella`
+- `[1042] Difesa_costiera` uploaded by `isabella`
+- `[1033] difesa0` uploaded by `isabella`
+- `[1048] ZTB` uploaded by `isabella`
+- `[1038] Tursiope2nk` uploaded by `isabella`
+- `[1032] Protezione` uploaded by `isabella`
+- `[1037] ZPS` uploaded by `isabella`
+- `[886] ordinanze_sicilia_ag` uploaded by `Beltrano`
+- `[1065] Aquaculture` uploaded by `isabella`
+- `[1066] BAnuoveFRA` uploaded by `isabella`
+- `[1070] RI0` uploaded by `isabella`
+- `[1069] CLBAOffshoreWindAreaBD` uploaded by `isabella`
+- `[1055] NW_BAtraspmarit` uploaded by `isabella`
+- `[910] Stenella_OBIS2` uploaded by `isabella`
+- `[924] WWF_Marxan_For_Portal` uploaded by `isabella`
+- `[1132] pSIC_per_il_Tursiope` uploaded by `sarretta`
+- `[611] _55` uploaded by `omar`
+- `[1723] test` uploaded by `alessandro2`
+
+### Misc upload errors
+
+During the upload of some layers a series of miscellaneous errors occurred. It follows a list of the layers involved in the form of `[<layer-id>] <layer-name> -> <error-occurred>`.
+
+- `[995] buffer01` uploaded by `isabella` -> `Non UFT-8 content found when writing feature -1 of layer`
+- `[1770] emodent_planning_areas` uploaded by `admin` -> `Upload took too long`
+- `[2065] SSF_Adriamed_GSA170` uploaded by `alessandro2` -> `Missing "prj" file`
+- `[1708] SSF_Adriamed_GSA17` uploaded by `alessandro2` -> `Missing "prj" file`
+
+### Multiple styles
 
 During the migration of vector layers we found some layers with multiple styles. The support for multiple styles [has been dropped](https://github.com/GeoNode/geonode/discussions/12840) with Geonode 4, therefore we choose to keep only the *default style* in the migration process.
 

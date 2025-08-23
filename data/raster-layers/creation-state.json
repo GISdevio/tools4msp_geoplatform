@@ -625,9 +625,9 @@
     "newId": "415"
   },
   "3d7117d3-1b58-4f77-99c1-8192aa6e2422": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:a__2019_st_05_avg_99efhco",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1047"
   },
   "ec8554cc-ffec-4d3b-b7af-e24dfb3aa770": {
     "datasetTitle": "geonode:pockmark_fields_utm_irq485w",
@@ -880,34 +880,34 @@
     "newId": "465"
   },
   "afa4f961-b796-4a8f-97ec-510c172e26c4": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:a__2019_st_all_avg_wkyamta",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1048"
   },
   "99a4c95d-5c76-4e8f-9349-378eca743329": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:vesseldensity_all_2022_stktr9x",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1049"
   },
   "9987ca8b-a958-46fc-80b4-fcf9509c572a": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:vesseldensity_09_2022_egmonra",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1050"
   },
   "99b4827a-9b48-4e81-9856-6bb7d00a3b30": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:vesseldensity_01_2022_7ljqivn",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1051"
   },
   "004c54bd-1953-49c5-b12b-4ef9cc71d4b6": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:vesseldensity_08_2022_asxw69u",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1052"
   },
   "569aff49-9738-4d03-81f4-ca60d45942df": {
-    "datasetTitle": "",
-    "lastCompletedStep": null,
-    "newId": ""
+    "datasetTitle": "geonode:vesseldensity_10_2022_z8pxmwp",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1053"
   },
   "8d0355d6-db94-4c5a-b2b7-8dad032d0974": {
     "datasetTitle": "geonode:vessel_traffic_all_deep_2022_tcpx4gx",

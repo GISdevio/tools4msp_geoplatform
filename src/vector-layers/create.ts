@@ -13,7 +13,7 @@ const BATCH_SIZE = 1000
 const BATCH_NUMBER = 1
 
 const waitForUpload = async <R>(url: string): Promise<R> => {
-  const maxIterations = 10
+  const maxIterations = 30
   let iterations = 0
 
   while (true) {
@@ -27,9 +27,9 @@ const waitForUpload = async <R>(url: string): Promise<R> => {
 
     if (iterations > maxIterations) { throw new Error('Upload took too long') }
 
-    logger.dim().log('Upload not completed, waiting 5 seconds...')
+    logger.dim().log('Upload not completed, waiting 10 seconds...')
 
-    await new Promise<void>((resolve) => { setTimeout(() => resolve(), 5_000) })
+    await new Promise<void>((resolve) => { setTimeout(() => resolve(), 10 * 1000) })
   }
 }
 
@@ -199,9 +199,6 @@ ${errorReport}
   }
 
   for (const [idx, layer] of layers.entries()) {
-    const layersToLoad: string[] = ['1739', '2072', '1859', '1864', '1645', '1777', '1770', '1286', '1788']
-    if (!layersToLoad.includes(layer.id)) { continue }
-
     if (idx < startIdx || idx >= endIdx) { continue }
 
     logger.log(`\nProcessing ${idx + 1}/${layers.length} - [${layer.id}] ${layer.title}`)
