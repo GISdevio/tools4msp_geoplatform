@@ -226,4 +226,5 @@ It follows a list of the layers involved in the form of `[<layer-id>] <layer-nam
 - [1707] MAB_TUSCAN_ISLANDS (uploaded by `alessandro2`)
 - [782] Eolico (uploaded by `isabella`)
 - [690] piani_reg_portuali_4326 (uploaded by `amefad`)
-- [1302] scenari_MSP4Biodiversity (uploaded by `alessandro2`
+- [1302] scenari_MSP4Biodiversity (uploaded by `alessandro2`)
+- [1055] SOUNDSCAPE - Extra noise 2020 - 5km (uploaded by `admin`)
