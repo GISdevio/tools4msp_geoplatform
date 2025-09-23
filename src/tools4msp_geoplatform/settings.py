@@ -76,7 +76,6 @@ STATICFILES_DIRS = [
     os.path.join(LOCAL_ROOT, "static"),
     os.path.join(PROJECT_ROOT, "frontend", "static"), # for geodatabuilders and casestudies
     # os.path.join(PROJECT_ROOT, "static"),
-    # '/home/ilpise/gisdevio/.gpvenv/src/wagtail/wagtail/admin/static'
 ] + list(STATICFILES_DIRS)
 
 # Location of locale files
@@ -178,21 +177,8 @@ if LDAP_ENABLED and "geonode_ldap" not in INSTALLED_APPS:
 # https://docs.geonode.org/en/master/advanced/contrib/#configuration
 
 
-# Wagtail integration
-
 INSTALLED_APPS +=(
                 'django_media_fixtures',
-                # 'wagtail.contrib.forms',
-                # 'wagtail.contrib.redirects',
-                # 'wagtail.embeds',
-                # 'wagtail.sites',
-                # 'wagtail.users',
-                # 'wagtail.snippets',
-                # 'wagtail.documents',
-                # 'wagtail.images',
-                # 'wagtail.search',
-                # 'wagtail.admin',
-                # 'wagtail',
                 # 'modelcluster',
                 # 'taggit' # error django.core.exceptions.ImproperlyConfigured: Application labels aren't unique, duplicates: taggit
                 )
@@ -396,26 +382,3 @@ if GMAPS_TOKEN:
             "group": "background",
             "visibility": True
         })
-
-# # wagtail
-# MIDDLEWARE += (#'allauth.account.middleware.AccountMiddleware', # django.core.exceptions.ImproperlyConfigured: allauth.account.middleware.AccountMiddleware must be added to settings.MIDDLEWARE
-#               #'django.contrib.sessions.middleware.SessionMiddleware',
-#               #'django.contrib.auth.middleware.AuthenticationMiddleware',
-#               #'django.contrib.messages.middleware.MessageMiddleware',
-#               'wagtail.contrib.redirects.middleware.RedirectMiddleware',)
-#
-# # Add a STATIC_ROOT setting, if your project doesn’t have one already
-# # STATIC_ROOT is the destination of static files
-# #
-# # You have requested to collect static files at the destination
-# # location as specified in your settings:
-# # STATIC_ROOT is '/home/ilpise/gisdevio/.gpvenv/src/geonode/geonode/static_root'
-#
-# MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media')
-# MEDIA_URL = '/media/'
-#
-# WAGTAIL_SITE_NAME = 'My Example Site'
-#
-# WAGTAILADMIN_BASE_URL = 'http://example.com'
-#
-# WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
