@@ -1,26 +1,40 @@
-from django.http import HttpResponse
+import json
+import traceback
 from logging import getLogger
-import requests, json, traceback
-from casestudies.models import Tools4MSPOptions, RemoteProfile
-from geodatabuilder.libs import rasterize_layer_to_grid, compute_expression, GDALGenenericException
 
-from rest_framework.exceptions import ValidationError
+import requests
+from django.contrib.contenttypes.models import ContentType
+from django.db import transaction
+from django.http import HttpResponse
+from dynamic_rest.viewsets import DynamicModelViewSet
+from dynamic_rest.filters import DynamicFilterBackend, DynamicSortingFilter
+from geonode.people.models import Profile
+from geonode.maps.models import Map
+from geonode.documents.models import Document
+from rest_framework.exceptions import ValidationError, APIException
 from rest_framework.decorators import action
 from rest_framework import permissions
 from rest_framework.parsers import MultiPartParser
 
-from dynamic_rest.viewsets import DynamicModelViewSet
-from dynamic_rest.filters import DynamicFilterBackend, DynamicSortingFilter
-
 from casestudies.api import serializers
-from casestudies.libs import Matrix, randomString
-from core.libs import call_api
-from geonode.people.models import Profile
-from geonode.maps.models import Map
-from geonode.documents.models import Document
-from django.db import transaction
+from casestudies.libs import (
+    Matrix,
+    randomString,
+)
+from casestudies.models import (
+    RemoteProfile,
+    Tools4MSPOptions,
+)
+from core.libs import (
+    APIError,
+    call_api,
+)
 from core.views import RESTBaseViewSet
-from django.contrib.contenttypes.models import ContentType
+from geodatabuilder.libs import (
+    compute_expression,
+    GDALGenenericException,
+    rasterize_layer_to_grid,
+)
 
 
 logger = getLogger(__name__)
@@ -31,25 +45,31 @@ class CasestudyViewSet(RESTBaseViewSet):
         extra = {}
         if request.GET.get('search', ''):
             extra['search'] = request.GET.get('search', '')
-        result = call_api(
-            url="api/v2/casestudies/",
-            params = {
-                "cstype": request.GET.get('cstype', ''),
-                "module": request.GET.get('module', ''),
-                "page": request.GET.get('page', ''),
-                "owner": request.GET.get('owner', ''),
-                **extra,
-            },
-            user=request.user,
-        )
+        try:
+            result = call_api(
+                url="api/v2/casestudies/",
+                params = {
+                    "cstype": request.GET.get('cstype', ''),
+                    "module": request.GET.get('module', ''),
+                    "page": request.GET.get('page', ''),
+                    "owner": request.GET.get('owner', ''),
+                    **extra,
+                },
+                user=request.user,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         logger.debug(result)
         return self.build_response(data=result)
 
     def retrieve(self, request, pk = None, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudies/{pk}/",
-            user=request.user,
-        )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudies/{pk}/",
+                user=request.user,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         return self.build_response(data=result)
 
     def create(self, request, *args, **kwargs):
@@ -77,7 +97,9 @@ class CasestudyViewSet(RESTBaseViewSet):
             )
 
             return self.build_response(data=result)
-        except ValidationError as e:
+        except APIError as err:
+            return self.handle_exception(err)
+        except ValidationError:
             logger.debug(serializer.errors)
             return self.build_validation_error(validation_errors=serializer.errors)
 
@@ -97,17 +119,22 @@ class CasestudyViewSet(RESTBaseViewSet):
             )
             logger.debug(result)
             return self.build_response(data=result)
-        except ValidationError as e:
+        except APIError as err:
+            return self.handle_exception(err)
+        except ValidationError:
             logger.debug(serializer.errors)
             return self.build_validation_error(validation_errors=serializer.errors)
 
 
     def destroy(self, request, pk = None, *args, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudies/{pk}/",
-            method='DELETE',
-            user=request.user,
-            )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudies/{pk}/",
+                method='DELETE',
+                user=request.user,
+                )
+        except APIError as err:
+            return self.handle_exception(err)
 
         logger.debug(result)
         return self.build_response(data=result)
@@ -128,6 +155,8 @@ class CasestudyViewSet(RESTBaseViewSet):
                 )
             logger.debug(result)
             return self.build_response(data=result)
+        except APIError as err:
+            return self.handle_exception(err)
         except ValidationError:
             return self.build_validation_error(validation_errors=serializer.errors)
 
@@ -148,24 +177,36 @@ class CasestudyViewSet(RESTBaseViewSet):
             )
             logger.debug(result)
             return self.build_response(data=result)
+        except APIError as err:
+            return self.handle_exception(err)
         except ValidationError:
             return self.build_validation_error(validation_errors=serializer.errors)
 
 
 class CasestudyRunViewSet(RESTBaseViewSet):
     def list(self, request, *args, casestudy_id = None, **kwargs):
-        result = call_api(
-            url="api/v2/casestudyruns/", params={'casestudy': casestudy_id, 'page': request.GET.get('page', 1)},
-            user=request.user,
-        )
+        try:
+            result = call_api(
+                url="api/v2/casestudyruns/",
+                params={
+                    'casestudy': casestudy_id,
+                    'page': request.GET.get('page', 1)
+                },
+                user=request.user,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         logger.debug(result)
         return self.build_response(data=result)
 
     def retrieve(self, request, pk = None, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudyruns/{pk}/",
-            user=request.user,
-        )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudyruns/{pk}/",
+                user=request.user,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         logger.debug(result)
         return self.build_response(data=result)
 
@@ -185,26 +226,34 @@ class CasestudyRunViewSet(RESTBaseViewSet):
             )
             logger.debug(result)
             return self.build_response(data=result)
-        except ValidationError as e:
+        except APIError as err:
+            return self.handle_exception(err)
+        except ValidationError:
             logger.debug(serializer.errors)
             return self.build_validation_error(validation_errors=serializer.errors)
 
     def destroy(self, request, pk = None, *args, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudyruns/{pk}/",
-            method='DELETE',
-            user=request.user,
-            )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudyruns/{pk}/",
+                method='DELETE',
+                user=request.user,
+                )
+        except APIError as err:
+            return self.handle_exception(err)
 
         logger.debug(result)
         return self.build_response(data=result)
 
     @action(detail=True, methods=['POST'])
     def upload_to_geonode(self, request, pk = None, casestudy_id = None, *args, **kwargs):
-        res = call_api(
-            url=f"api/v2/casestudyruns/{pk}/",
-            user=request.user,
-        )
+        try:
+            res = call_api(
+                url=f"api/v2/casestudyruns/{pk}/",
+                user=request.user,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
 
         m = None
 
@@ -221,10 +270,13 @@ class CasestudyRunViewSet(RESTBaseViewSet):
 
 class CasestudyRunOutputLayerViewSet(RESTBaseViewSet):
     def retrieve(self, request, run_id = None, pk = None, *args, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudyruns/{run_id}/",
-            user=request.user,
-        )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudyruns/{run_id}/",
+                user=request.user,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         out = list(filter(lambda l: l.get('code') == pk, result.get('outputlayers')))
 
         response = requests.get(out[0].get('file')).content
@@ -233,10 +285,13 @@ class CasestudyRunOutputLayerViewSet(RESTBaseViewSet):
 
     @action(detail=True, methods=['GET'])
     def style(self, request, run_id = None, pk = None, *args, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudyruns/{run_id}/",
-            user=request.user,
-        )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudyruns/{run_id}/",
+                user=request.user,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         out = list(filter(lambda l: l.get('code') == pk, result.get('outputlayers')))
 
         response = requests.get(out[0].get('file').replace('tiff', 'sld')).content
@@ -245,38 +300,44 @@ class CasestudyRunOutputLayerViewSet(RESTBaseViewSet):
 
 class CasestudyInputsViewSet(RESTBaseViewSet):
     def list(self, request, casestudy_id, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudies/{casestudy_id}/inputs/",
-            user=request.user
-        )
-        return self.build_response(data=result)
+        try:
+            result = call_api(
+                url=f"api/v2/casestudies/{casestudy_id}/inputs/",
+                user=request.user
+            )
+            return self.build_response(data=result)
+        except APIError as err:
+            return self.handle_exception(err)
 
     def retrieve(self, request, casestudy_id, pk=None, *args, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudies/{casestudy_id}/inputs/{pk}/",
-            user=request.user
-        )
-
         try:
-            if result.get('file') and '.json' in result.get('file'):
-                content = call_api(full_url=result.get('file'), params={})
-                result["content"] = content
-            else:
-                result["content"] = None
-        except Exception as e:
-            logger.warn(f"Error while reading content of {result.get('code')} for casestudy {casestudy_id} {str(e)}")
-
-        if result["content"]:
+            result = call_api(
+                url=f"api/v2/casestudies/{casestudy_id}/inputs/{pk}/",
+                user=request.user
+            )
+        except APIError as err:
+            return self.handle_exception(err)
+        else:
             try:
-                result['matrix'] = Matrix.from_json_array(result)
-            except KeyError as e:
-                logger.error(traceback.format_exc())
-                logger.error(f"missing {result.get('code')} definition in CODE_MAP")
-            except Exception:
-                logger.error(traceback.format_exc())
+                if result.get('file') and '.json' in result.get('file'):
+                    content = call_api(full_url=result.get('file'), params={})
+                    result["content"] = content
+                else:
+                    result["content"] = None
+            except Exception as e:
+                logger.warn(f"Error while reading content of {result.get('code')} for casestudy {casestudy_id} {str(e)}")
 
-        logger.debug(result)
-        return self.build_response(data=result)
+            if result["content"]:
+                try:
+                    result['matrix'] = Matrix.from_json_array(result)
+                except KeyError as e:
+                    logger.error(traceback.format_exc())
+                    logger.error(f"missing {result.get('code')} definition in CODE_MAP")
+                except Exception:
+                    logger.error(traceback.format_exc())
+
+            logger.debug(result)
+            return self.build_response(data=result)
 
     @action(detail=True, methods=['POST'])
     def upload(self, request, casestudy_id, pk=None):
@@ -299,6 +360,8 @@ class CasestudyInputsViewSet(RESTBaseViewSet):
             r = requests.put(f"{result.get('url')}/upload/", headers=headers, files={'file': (filename, json.dumps(data))})
             logger.error(f"tools4msp responded with {r.status_code} - {r.text}")
             return self.build_response()
+        except APIError as err:
+            return self.handle_exception(err)
         except ValidationError:
             return self.build_validation_error(validation_errors=serializer.errors)
 
@@ -320,6 +383,8 @@ class CasestudyInputsViewSet(RESTBaseViewSet):
             r = requests.put(f"{result.get('url')}/tupload/", headers=headers, files={'file': (file.name, file)})
             logger.error(f"tools4msp responded with {r.status_code} - {r.text}")
             return self.build_response()
+        except APIError as err:
+            return self.handle_exception(err)
         except Exception as e:
             return self.build_response(data={
                 'success': False,
@@ -329,9 +394,13 @@ class CasestudyInputsViewSet(RESTBaseViewSet):
 
 class CasestudyLayersViewSet(RESTBaseViewSet):
     def list(self, request, casestudy_id, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudies/{casestudy_id}/layers/", user=request.user
-        )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudies/{casestudy_id}/layers/",
+                user=request.user
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         logger.debug(result)
         return self.build_response(data=result)
 
@@ -364,6 +433,8 @@ class CasestudyLayersViewSet(RESTBaseViewSet):
             return self.build_response(data={
                 'success': True,
             })
+        except APIError as err:
+            return self.handle_exception(err)
         except GDALGenenericException as e:
             return self.build_response(data={
                 'success': False,
@@ -397,6 +468,8 @@ class CasestudyLayersViewSet(RESTBaseViewSet):
             return self.build_response(data={
                 'success': True,
             })
+        except APIError as err:
+            return self.handle_exception(err)
         except GDALGenenericException as e:
             return self.build_response(data={
                 'success': False,
@@ -404,22 +477,28 @@ class CasestudyLayersViewSet(RESTBaseViewSet):
             })
 
     def update(self, request, casestudy_id, pk=None, *args, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudies/{casestudy_id}/layers/{pk}/",
-            user=request.user,
-            method='PATCH',
-            json=request.data,
-        )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudies/{casestudy_id}/layers/{pk}/",
+                user=request.user,
+                method='PATCH',
+                json=request.data,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         logger.debug(result)
         return self.build_response(data=result)
 
 
     def destroy(self, request, casestudy_id, pk = None, *args, **kwargs):
-        result = call_api(
-            url=f"api/v2/casestudies/{casestudy_id}/layers/{pk}/",
-            user=request.user,
-            method='DELETE'
-            )
+        try:
+            result = call_api(
+                url=f"api/v2/casestudies/{casestudy_id}/layers/{pk}/",
+                user=request.user,
+                method='DELETE'
+                )
+        except APIError as err:
+            return self.handle_exception(err)
 
         logger.debug(result)
         return self.build_response(data=result)
@@ -436,30 +515,39 @@ class CodedlabelsViewSet(RESTBaseViewSet):
         if request.GET.get('search'):
             params['search'] = request.GET.get('search')
 
-        result = call_api(
-            url="api/v2/codedlabels/", params=params,
-            user=request.user
-        )
+        try:
+            result = call_api(
+                url="api/v2/codedlabels/", params=params,
+                user=request.user
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         return self.build_response(data=result)
 
 
 class ContextsViewSet(RESTBaseViewSet):
     def list(self, request, **kwargs):
-        result = call_api(
-            url="api/v2/contexts/",
-            params=request.GET,
-            user=request.user
-        )
+        try:
+            result = call_api(
+                url="api/v2/contexts/",
+                params=request.GET,
+                user=request.user
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         return self.build_response(data=result)
 
 
 class DomainAreaViewSet(RESTBaseViewSet):
     def list(self, request, **kwargs):
-        result = call_api(
-            url="api/v2/domainareas/",
-            user=request.user,
-            params=request.GET,
-        )
+        try:
+            result = call_api(
+                url="api/v2/domainareas/",
+                user=request.user,
+                params=request.GET,
+            )
+        except APIError as err:
+            return self.handle_exception(err)
         return self.build_response(data=result)
 
 
