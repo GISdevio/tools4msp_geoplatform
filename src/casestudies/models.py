@@ -1,12 +1,7 @@
 import logging
-import traceback
 
 from django.db import models
-from django.db.models.signals import post_save
-from django.dispatch import receiver
 from django.contrib.auth import get_user_model
-
-from casestudies.libs import create_remote_user
 
 
 User = get_user_model()
@@ -55,19 +50,3 @@ class RemoteProfile(models.Model):
 
     def __str__(self):
         return str(self.remote_id)
-
-
-@receiver(post_save, sender=User)
-def populate_profile(sender, instance, **kwargs):
-    if not hasattr(instance, 'remote_profile'):
-        # invoke API to create a user on tools4msp
-        try:
-            result, status = create_remote_user(instance)
-            if result.get('user'):
-                RemoteProfile.objects.create(user=instance, remote_id=result.get('user'), token=result.get('token'))
-                logger.debug(f'added profile to user {instance} ')
-            else:
-                logger.error(f'response from remote profile not found for user {instance}')
-                logger.debug(f'{result}')
-        except:
-            logger.error(traceback.format_exc())
