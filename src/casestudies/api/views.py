@@ -275,9 +275,20 @@ class CasestudyRunOutputLayerViewSet(RESTBaseViewSet):
                 url=f"api/v2/casestudyruns/{run_id}/",
                 user=request.user,
             )
+        
         except APIError as err:
             return self.handle_exception(err)
-        out = list(filter(lambda l: l.get('code') == pk, result.get('outputlayers')))
+
+        # First try to find in outputlayers (for layers)
+        out = list(filter(lambda l: l.get('code') == pk, result.get('outputlayers', [])))
+        
+        # If not found in outputlayers, try outputs (for documents)
+        if not out:
+            out = list(filter(lambda l: l.get('code') == pk, result.get('outputs', [])))
+        
+        # If still not found, return 404
+        if not out:
+            return HttpResponse('File not found', status=404)
 
         response = requests.get(out[0].get('file')).content
         return HttpResponse(response, content_type='application/octet-stream')
