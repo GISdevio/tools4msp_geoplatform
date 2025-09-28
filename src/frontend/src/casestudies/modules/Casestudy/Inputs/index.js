@@ -1,34 +1,52 @@
-import React from "react"
+import React from "react";
 import { Nav, Spinner, Tab, Tabs } from "react-bootstrap";
-import { Link, Outlet, useLocation, useOutletContext, useParams } from "react-router-dom";
+import {
+  Link,
+  Outlet,
+  useLocation,
+  useOutletContext,
+  useParams,
+} from "react-router-dom";
 import { useGetCasestudyInputsQuery } from "../../../../services/casestudies";
 import getIdFromUrl from "../../../../libs/getIdFromUrl";
+import JsonUpload from "../Input/jsonupload";
 
 export default function CasestudyInputs() {
-    const { id } = useParams()
-    const { data, isLoading, isError, error, isSuccess } = useGetCasestudyInputsQuery(id);
-    let { pathname: path } = useLocation();
-    const basePath = `/casestudies/${id}/inputs/`
-    path = path.replace(basePath, '').split('/')[0];
-    const casestudy = useOutletContext();
+  const { id } = useParams();
+  const { data, isLoading, isError, error, isSuccess } =
+    useGetCasestudyInputsQuery(id);
+  let { pathname: path } = useLocation();
+  const basePath = `/casestudies/${id}/inputs/`;
+  path = path ? path.replace(basePath, "").split("/")[0] : "";
+  const casestudy = useOutletContext();
 
-
-    return (
-        <div className="mt-4">
-            {isLoading && <Spinner animation="border" size="sm"/>}
-            {isError && <p className="text-danger">{error.data.error.message}</p>}
-            {isSuccess && (
-                <>
-                    <Nav variant="tabs" activeKey={path} className="sticky">
-                        {data.data.map(input => (
-                            <Nav.Item key={input.code}>
-                                <Nav.Link as={Link} eventKey={getIdFromUrl(input.url)} to={`${basePath}${getIdFromUrl(input.url)}/`}>{input.code}</Nav.Link>
-                            </Nav.Item>
-                        ))}
-                    </Nav>
-                    <Outlet context={casestudy} />
-                </>
-            )}
-        </div>
-    )
+  return (
+    <div className="mt-4">
+      {isLoading && <Spinner animation="border" size="sm" />}
+      {isError && <p className="text-danger">{error.data.error.message}</p>}
+      {isSuccess && (
+        <>
+          {casestudy.is_owner && (
+            <div className="mb-4">
+              <JsonUpload id={id} inputId={path} data={data?.data || []} />
+            </div>
+          )}
+          <Nav variant="tabs" activeKey={path} className="sticky">
+            {(data?.data || []).map((input) => (
+              <Nav.Item key={input?.code || Math.random()}>
+                <Nav.Link
+                  as={Link}
+                  eventKey={getIdFromUrl(input?.url)}
+                  to={`${basePath}${getIdFromUrl(input?.url)}/`}
+                >
+                  {input?.code || "Unknown"}
+                </Nav.Link>
+              </Nav.Item>
+            ))}
+          </Nav>
+          <Outlet context={casestudy} />
+        </>
+      )}
+    </div>
+  );
 }

@@ -201,6 +201,10 @@ UPLOADER['SUPPORTED_EXT'] += [
     '.geotiff'
 ]
 
+# Add JSON support for documents
+if 'json' not in ALLOWED_DOCUMENT_TYPES:
+    ALLOWED_DOCUMENT_TYPES = list(ALLOWED_DOCUMENT_TYPES) + ['json']
+
 EPSG_CODE_MATCHES['EPSG:32632'] = '(32632) WGS 84 / UTM zone 32N'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
