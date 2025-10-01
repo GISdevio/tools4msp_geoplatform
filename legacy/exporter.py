@@ -170,7 +170,7 @@ class GeonodeResource:
 
 @dataclasses.dataclass(frozen=True)
 class GeonodeMap:
-    resource: Resource
+    resource: GeonodeResource
     zoom: int
     projection: str
     center_x: float
@@ -340,26 +340,42 @@ def gather_resources(
         owners: dict[int, GeonodeUser],
         tags: dict[int, HierarchicalTag],
         thesaurus_keywords: dict[int, ThesaurusKeyword],
-        spatia_l_regions: dict[int, SpatialRegion],
+        spatial_regions: dict[int, SpatialRegion],
         restriction_code_types: dict[int, RestrictionCodeType],
         licenses: dict[int, License],
         topic_categories: dict[int, TopicCategory],
         spatial_representation_types: dict[int, SpatialRepresentationType],
         groups: dict[int, GeonodeGroup],
 ) -> dict[int, GeonodeResource]:
-
-
     raw_related_keywords = {}
-    # m2m relationships
     cursor.execute(
-        "SELECT tci.content_object_id, tci_tag_id "
+        "SELECT tci.content_object_id, tci.tag_id "
         "FROM base_taggedcontentitem AS tci "
         "JOIN maps_map AS m ON m.resourcebase_ptr_id = tci.content_object_id;"
     )
     for record in cursor:
-        record_list = raw_related_keywords.setdefault(record[0], set())
-        record_list.add(tags[record[1]])
+        keyword_list = raw_related_keywords.setdefault(record[0], set())
+        keyword_list.add(tags[record[1]])
 
+    raw_thesaurus_keywords = {}
+    cursor.execute(
+        "SELECT tk.resourcebase_id, tk.thesauruskeyword_id "
+        "FROM base_resourcebase_tkeywords AS tk "
+        "JOIN maps_map AS m ON m.resourcebase_ptr_id = tk.resourcebase_id;"
+    )
+    for record in cursor:
+        keyword_list = raw_thesaurus_keywords.setdefault(record[0], set())
+        keyword_list.add(thesaurus_keywords[record[1]])
+
+    raw_related_regions = {}
+    cursor.execute(
+        "SELECT rr.resourcebase_id, rr.region_id "
+        "FROM base_resourcebase_regions AS rr "
+        "JOIN maps_map AS m ON m.resourcebase_ptr_id = rr.resourcebase_id;"
+    )
+    for record in cursor:
+        region_list = raw_related_regions.setdefault(record[0], set())
+        region_list.add(spatial_regions[record[1]])
 
     cursor.execute(
         "SELECT "
@@ -417,78 +433,76 @@ def gather_resources(
         "FROM base_resourcebase AS rb "
         "JOIN maps_map AS m ON rb.id = m.resourcebase_ptr_id "
     )
-    raw_resources = {}
+    result = {}
     for record in cursor:
         resource_id = record[0]
-        raw_resources[resource_id] = {
-            "id": resource_id,
-            "title": record[1],
-            "abstract": record[2],
-            "purpose": record[3],
-            "owner": owners[record[4]],
-            "alternate": record[5],
-            "date": record[6],
-            "date_type": record[7],
-            "edition": record[8],
-            "attribution": record[9],
-            "doi": record[10],
-            "maintenance_frequency": record[11],
-            "keywords": raw_related_keywords.get(resource_id, []),
-            "thesaurus_keywords": [],
-            "spatial_regions": [],
-            "restriction_code_type": restriction_code_types[record[12]],
-            "constraints_other": record[13],
-            "license": licenses[record[14]],
-            "language": record[15],
-            "category": topic_categories[record[16]],
-            "spatial_representation_type": spatial_representation_types[record[17]],
-            "temporal_extent_start": record[18],
-            "temporal_extent_end": record[19],
-            "supplemental_information": record[20],
-            "data_quality_statement": record[21],
-            "group": groups[record[22]],
-            "bbox_polygon": record[23],
-            "ll_bbox_polygon": record[24],
-            "srid": record[25],
-            "csw_typename": record[26],
-            "csw_schema": record[27],
-            "csw_mdsource": record[28],
-            "csw_insert_date": record[29],
-            "csw_type": record[30],
-            "csw_anytext": record[31],
-            "csw_wkt_geometry": record[32],
-            "metadata_uploaded": record[33],
-            "metadata_uploaded_preserve": record[34],
-            "metadata_xml": record[35],
-            "popular_count": record[36],
-            "share_count": record[37],
-            "featured": record[38],
-            "was_published": record[39],
-            "is_published": record[40],
-            "was_approved": record[41],
-            "is_approved": record[42],
-            "thumbnail_url": record[43],
-            "detail_url": record[44],
-            "rating": record[45],
-            "created": record[46],
-            "last_updated": record[47],
-            "dirty_state": record[48],
-            "resource_type": record[49],
-            "metadata_only": record[50],
-        }
+        result[resource_id] = GeonodeResource(
+            id=resource_id,
+            title=record[1],
+            abstract=record[2],
+            purpose=record[3],
+            owner=owners[record[4]],
+            alternate=record[5],
+            date=record[6],
+            date_type=record[7],
+            edition=record[8],
+            attribution=record[9],
+            doi=record[10],
+            maintenance_frequency=record[11],
+            keywords=raw_related_keywords.get(resource_id, []),
+            thesaurus_keywords=raw_thesaurus_keywords.get(resource_id, []),
+            spatial_regions=raw_related_regions.get(resource_id, []),
+            restriction_code_type=restriction_code_types[record[12]],
+            constraints_other=record[13],
+            license=licenses[record[14]],
+            language=record[15],
+            category=topic_categories[record[16]],
+            spatial_representation_type=spatial_representation_types[record[17]],
+            temporal_extent_start=record[18],
+            temporal_extent_end=record[19],
+            supplemental_information=record[20],
+            data_quality_statement=record[21],
+            group=groups[record[22]],
+            bbox_polygon=record[23],
+            ll_bbox_polygon=record[24],
+            srid=record[25],
+            csw_typename=record[26],
+            csw_schema=record[27],
+            csw_mdsource=record[28],
+            csw_insert_date=record[29],
+            csw_type=record[30],
+            csw_anytext=record[31],
+            csw_wkt_geometry=record[32],
+            metadata_uploaded=record[33],
+            metadata_uploaded_preserve=record[34],
+            metadata_xml=record[35],
+            popular_count=record[36],
+            share_count=record[37],
+            featured=record[38],
+            was_published=record[39],
+            is_published=record[40],
+            was_approved=record[41],
+            is_approved=record[42],
+            thumbnail_url=record[43],
+            detail_url=record[44],
+            rating=record[45],
+            created=record[46],
+            last_updated=record[47],
+            dirty_state=record[48],
+            resource_type=record[49],
+            metadata_only=record[50],
+        )
+    return result
 
 
 def gather_map_details(
         cursor: psycopg.Cursor,
-        map_owners: dict[int, GeonodeUser],
-        restriction_code_types: dict[int, RestrictionCodeType],
-        licenses: dict[int, License],
-        topic_categories: dict[int, TopicCategory],
-        spatial_representation_types: dict[int, SpatialRepresentationType],
-        groups: dict[int, GeonodeGroup],
+        resources: dict[int, GeonodeResource],
 ) -> dict[int, GeonodeMap]:
     cursor.execute(
-        "SELECT * FROM maps_map;"
+        "SELECT "
+        "m.resourcebase_ptr_id, "
+        "FROM maps_map AS m;"
     )
     result = {}
     for record in cursor:
