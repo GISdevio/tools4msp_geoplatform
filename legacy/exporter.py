@@ -107,6 +107,18 @@ class SpatialRegion:
 
 
 @dataclasses.dataclass(frozen=True)
+class UserPermission:
+    id: int
+    codename: str
+
+
+@dataclasses.dataclass(frozen=True)
+class GroupPermission:
+    id: int
+    codename: str
+
+
+@dataclasses.dataclass(frozen=True)
 class GeonodeResource:
     id: uuid.UUID
     title: str
@@ -166,6 +178,8 @@ class GeonodeResource:
     resource_type: str | None
     metadata_only: bool
     # skipping metadata - the entries do not belong to any map
+    user_permissions: list[tuple[GeonodeUser, UserPermission]]
+    group_permissions: list[tuple[GeonodeGroup, UserPermission]]
 
 
 @dataclasses.dataclass(frozen=True)
@@ -271,6 +285,20 @@ def gather_groups(
     }
 
 
+def gather_all_groups(
+        cursor: psycopg.Cursor) -> dict[int, GeonodeGroup]:
+    cursor.execute(
+        "SELECT g.id, g.name "
+        "FROM auth_group AS g;"
+    )
+    return {
+        record[0]: GeonodeGroup(
+            id=record[0],
+            name=record[1],
+        ) for record in cursor
+    }
+
+
 def gather_map_owners(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
     cursor.execute(
         "WITH map_owner AS "
@@ -282,6 +310,20 @@ def gather_map_owners(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
         "SELECT p.id, p.username, p.email "
         "FROM people_profile AS p "
         "JOIN map_owner AS m ON p.id = m.owner_id;"
+    )
+    return {
+        record[0]: GeonodeUser(
+            id=record[0],
+            username=record[1],
+            email=record[2]
+        ) for record in cursor
+    }
+
+
+def gather_all_users(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
+    cursor.execute(
+        "SELECT p.id, p.username, p.email "
+        "FROM people_profile AS p;"
     )
     return {
         record[0]: GeonodeUser(
@@ -335,9 +377,43 @@ def gather_spatial_regions(cursor: psycopg.Cursor) -> dict[int, SpatialRegion]:
         ) for record in cursor}
 
 
+def gather_user_permissions(cursor: psycopg.Cursor) -> dict[int, UserPermission]:
+    cursor.execute(
+        "SELECT DISTINCT p.id, p.codename "
+        "FROM guardian_userobjectpermission AS up "
+        "JOIN maps_map AS m ON m.resourcebase_ptr_id = cast(up.object_pk AS integer) "
+        "JOIN auth_permission AS p ON p.id = up.permission_id;"
+    )
+    return {
+        record[0]: UserPermission(
+            id=record[0],
+            codename=record[1]
+        )
+        for record in cursor
+    }
+
+
+def gather_group_permissions(cursor: psycopg.Cursor) -> dict[int, GroupPermission]:
+    cursor.execute(
+        "SELECT DISTINCT p.id, p.codename "
+        "FROM guardian_groupobjectpermission AS gp "
+        "JOIN maps_map AS m ON m.resourcebase_ptr_id = cast(gp.object_pk AS integer) "
+        "JOIN auth_permission AS p ON p.id = gp.permission_id;"
+    )
+    return {
+        record[0]: GroupPermission(
+            id=record[0],
+            codename=record[1]
+        )
+        for record in cursor
+    }
+
+
 def gather_resources(
         cursor: psycopg.Cursor,
         owners: dict[int, GeonodeUser],
+        all_users: dict[int, GeonodeUser],
+        all_groups: dict[int, GeonodeGroup],
         tags: dict[int, HierarchicalTag],
         thesaurus_keywords: dict[int, ThesaurusKeyword],
         spatial_regions: dict[int, SpatialRegion],
@@ -346,6 +422,8 @@ def gather_resources(
         topic_categories: dict[int, TopicCategory],
         spatial_representation_types: dict[int, SpatialRepresentationType],
         groups: dict[int, GeonodeGroup],
+        user_permissions: dict[int, UserPermission],
+        group_permissions: dict[int, GroupPermission],
 ) -> dict[int, GeonodeResource]:
     raw_related_keywords = {}
     cursor.execute(
@@ -354,8 +432,8 @@ def gather_resources(
         "JOIN maps_map AS m ON m.resourcebase_ptr_id = tci.content_object_id;"
     )
     for record in cursor:
-        keyword_list = raw_related_keywords.setdefault(record[0], set())
-        keyword_list.add(tags[record[1]])
+        keyword_set = raw_related_keywords.setdefault(record[0], set())
+        keyword_set.add(tags[record[1]])
 
     raw_thesaurus_keywords = {}
     cursor.execute(
@@ -364,8 +442,8 @@ def gather_resources(
         "JOIN maps_map AS m ON m.resourcebase_ptr_id = tk.resourcebase_id;"
     )
     for record in cursor:
-        keyword_list = raw_thesaurus_keywords.setdefault(record[0], set())
-        keyword_list.add(thesaurus_keywords[record[1]])
+        keyword_set = raw_thesaurus_keywords.setdefault(record[0], set())
+        keyword_set.add(thesaurus_keywords[record[1]])
 
     raw_related_regions = {}
     cursor.execute(
@@ -374,8 +452,33 @@ def gather_resources(
         "JOIN maps_map AS m ON m.resourcebase_ptr_id = rr.resourcebase_id;"
     )
     for record in cursor:
-        region_list = raw_related_regions.setdefault(record[0], set())
-        region_list.add(spatial_regions[record[1]])
+        region_set = raw_related_regions.setdefault(record[0], set())
+        region_set.add(spatial_regions[record[1]])
+
+    raw_related_user_permissions = {}
+    cursor.execute(
+        "SELECT CAST(up.object_pk AS INTEGER), up.permission_id, up.user_id "
+        "FROM guardian_userobjectpermission AS up "
+        "JOIN maps_map AS m ON m.resourcebase_ptr_id = CAST(up.object_pk AS INTEGER);"
+    )
+    for record in cursor:
+        user_permission_set = raw_related_user_permissions.setdefault(record[0], set())
+        user_permission_set.add(
+            (all_users[record[2]], user_permissions[record[1]])
+        )
+
+    raw_related_group_permissions = {}
+    cursor.execute(
+        "SELECT CAST(gp.object_pk AS INTEGER), gp.permission_id, gp.group_id "
+        "FROM guardian_groupobjectpermission AS gp "
+        "JOIN maps_map AS m ON m.resourcebase_ptr_id = CAST(gp.object_pk AS INTEGER);"
+    )
+    for record in cursor:
+        group_permission_set = raw_related_group_permissions.setdefault(record[0], set())
+        group_permission_set.add(
+            (all_groups[record[2]], group_permissions[record[1]])
+        )
+
 
     cursor.execute(
         "SELECT "
@@ -491,6 +594,8 @@ def gather_resources(
             dirty_state=record[48],
             resource_type=record[49],
             metadata_only=record[50],
+            user_permissions=raw_related_user_permissions.get(resource_id, []),
+            group_permissions=raw_related_group_permissions.get(resource_id, []),
         )
     return result
 
