@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Alert, Button, Form } from "react-bootstrap";
+import { Alert, Button, Form, Collapse, Card } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { useUploadInputMutation } from "../../../../services/casestudies";
 import getIdFromUrl from "../../../../libs/getIdFromUrl";
@@ -46,11 +46,18 @@ const CODE_MAP = {
   },
 };
 
-export default function JsonUpload({ id, inputId, data = [], matrixConfig }) {
+export default function JsonUpload({
+  id,
+  inputId,
+  data = [],
+  matrixConfig,
+  currentMatrix,
+}) {
   const [key, setKey] = useState(0);
   const [file, setFile] = useState(null);
   const [selectedInput, setSelectedInput] = useState("");
   const [validationError, setValidationError] = useState("");
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [upload, { isLoading }] = useUploadInputMutation();
 
   const handleFileChange = (e) => {
@@ -214,12 +221,20 @@ export default function JsonUpload({ id, inputId, data = [], matrixConfig }) {
     }
 
     try {
+      if (!data || !Array.isArray(data)) {
+        throw new Error("No input data available");
+      }
+
       // Get the selected input's code
-      const selectedInputData = data.find(
-        (input) => getIdFromUrl(input.url) === selectedInput
+      const selectedInputInfo = data.find(
+        (input) => input && getIdFromUrl(input.url) === selectedInput
       );
 
-      if (!selectedInputData?.code) {
+      if (!selectedInputInfo) {
+        throw new Error("Selected input not found");
+      }
+
+      if (!selectedInputInfo.code) {
         throw new Error("Could not determine input type");
       }
 
@@ -232,23 +247,172 @@ export default function JsonUpload({ id, inputId, data = [], matrixConfig }) {
       });
 
       // Process and validate JSON to matrix format
-      const matrixData = processJsonToMatrix(
+      const newMatrixData = processJsonToMatrix(
         fileContent,
-        selectedInputData.code
+        selectedInputInfo.code
       );
 
-      // Upload using existing mutation
-      const res = await upload({
+      // Validate that newMatrixData has required structure
+      if (!newMatrixData || typeof newMatrixData !== "object") {
+        throw new Error("Invalid matrix data generated from JSON");
+      }
+
+      // Get existing matrix data to merge with - use the current detailed matrix data
+      let existingMatrix = {};
+      try {
+        // Use currentMatrix if available (most up-to-date), otherwise fall back to finding in data
+        if (currentMatrix) {
+          existingMatrix = currentMatrix;
+        } else {
+          existingMatrix = selectedInputInfo?.matrix || {};
+        }
+      } catch (error) {
+        console.warn("Error accessing existing matrix:", error);
+        existingMatrix = {};
+      }
+
+      // Ensure we have proper structure even if matrix is empty/undefined
+      const safeExistingMatrix = {
+        index:
+          existingMatrix && existingMatrix.index ? existingMatrix.index : {},
+        extra:
+          existingMatrix && existingMatrix.extra ? existingMatrix.extra : {},
+        cols:
+          existingMatrix && Array.isArray(existingMatrix.cols)
+            ? existingMatrix.cols
+            : [],
+        rows:
+          existingMatrix && Array.isArray(existingMatrix.rows)
+            ? existingMatrix.rows
+            : [],
+        x:
+          existingMatrix && existingMatrix.x
+            ? existingMatrix.x
+            : newMatrixData && newMatrixData.x
+            ? newMatrixData.x
+            : "x",
+        y:
+          existingMatrix && existingMatrix.y
+            ? existingMatrix.y
+            : newMatrixData && newMatrixData.y
+            ? newMatrixData.y
+            : "y",
+        values:
+          existingMatrix && Array.isArray(existingMatrix.values)
+            ? existingMatrix.values
+            : newMatrixData && Array.isArray(newMatrixData.values)
+            ? newMatrixData.values
+            : [],
+        separators:
+          existingMatrix && existingMatrix.separators
+            ? existingMatrix.separators
+            : { main: "#", secondary: "$" },
+      };
+
+      // Merge the new data with existing data - update existing cells AND create new cells for existing coordinates
+      const mergedIndex = { ...safeExistingMatrix.index };
+
+      // Only update/create cells where BOTH the row and column already exist in the matrix
+      if (newMatrixData.index && typeof newMatrixData.index === "object") {
+        Object.keys(newMatrixData.index).forEach((cellId) => {
+          // Parse the cell ID to get the column and row values
+          // Cell ID format: "param$PARAM_VALUE#layer$LAYER_VALUE"
+          const parts = cellId.split("#");
+          if (parts.length === 2) {
+            const paramPart = parts[0]; // "param$PARAM_VALUE"
+            const layerPart = parts[1]; // "layer$LAYER_VALUE"
+
+            const paramValue = paramPart.split("$")[1]; // Extract PARAM_VALUE
+            const layerValue = layerPart.split("$")[1]; // Extract LAYER_VALUE
+
+            // Check if both the column (paramValue) and row (layerValue) exist in the existing matrix
+            const columnExists = safeExistingMatrix.cols.includes(paramValue);
+            const rowExists = safeExistingMatrix.rows.includes(layerValue);
+
+            if (columnExists && rowExists) {
+              // Either update existing cell or create new cell for existing coordinates
+              mergedIndex[cellId] = {
+                ...mergedIndex[cellId], // Keep existing values (empty object if cell didn't exist)
+                ...newMatrixData.index[cellId], // Add/override with new values
+              };
+            }
+          }
+        });
+      }
+
+      // Keep existing extra data, and add extra data for new cells with existing coordinates
+      const mergedExtra = { ...safeExistingMatrix.extra };
+      if (newMatrixData.extra && typeof newMatrixData.extra === "object") {
+        Object.keys(newMatrixData.extra).forEach((cellId) => {
+          // Parse the cell ID to check if coordinates exist
+          const parts = cellId.split("#");
+          if (parts.length === 2) {
+            const paramValue = parts[0].split("$")[1];
+            const layerValue = parts[1].split("$")[1];
+
+            const columnExists = safeExistingMatrix.cols.includes(paramValue);
+            const rowExists = safeExistingMatrix.rows.includes(layerValue);
+
+            if (columnExists && rowExists) {
+              // Add/update extra data for cells with existing coordinates
+              mergedExtra[cellId] = {
+                ...mergedExtra[cellId],
+                ...newMatrixData.extra[cellId],
+              };
+            }
+          }
+        });
+      }
+
+      // Keep existing structure - DO NOT add new columns or rows
+      const mergedCols = Array.isArray(safeExistingMatrix.cols)
+        ? safeExistingMatrix.cols
+        : [];
+      const mergedRows = Array.isArray(safeExistingMatrix.rows)
+        ? safeExistingMatrix.rows
+        : [];
+
+      // Prepare upload data with extra validation
+      const uploadData = {
         id,
         inputId: selectedInput,
-        ...matrixData,
-      });
+        x: safeExistingMatrix.x || "param",
+        y: safeExistingMatrix.y || "layer",
+        values:
+          Array.isArray(safeExistingMatrix.values) &&
+          safeExistingMatrix.values.length > 0
+            ? safeExistingMatrix.values
+            : ["weight"],
+        cols:
+          Array.isArray(mergedCols) && mergedCols.length > 0 ? mergedCols : [],
+        rows:
+          Array.isArray(mergedRows) && mergedRows.length > 0 ? mergedRows : [],
+        separators: safeExistingMatrix.separators || {
+          main: "#",
+          secondary: "$",
+        },
+        index: mergedIndex || {},
+        extra: mergedExtra || {},
+      };
+
+      // Final validation before upload
+      if (!Array.isArray(uploadData.cols)) {
+        uploadData.cols = [];
+      }
+      if (!Array.isArray(uploadData.rows)) {
+        uploadData.rows = [];
+      }
+      if (!Array.isArray(uploadData.values)) {
+        uploadData.values = ["weight"];
+      }
+
+      const res = await upload(uploadData);
 
       if (res.data) {
         setKey(key + 1);
         setFile(null);
         setSelectedInput("");
-        toast.success("JSON file uploaded successfully");
+        toast.success("JSON data uploaded successfully - cells updated");
       }
       if (res.error) {
         toast.error(
@@ -259,7 +423,18 @@ export default function JsonUpload({ id, inputId, data = [], matrixConfig }) {
         );
       }
     } catch (error) {
-      const errorMessage = error.message;
+      console.error("JSON Upload Error Details:", {
+        error: error,
+        message: error.message,
+        stack: error.stack,
+        selectedInput,
+        data,
+        file: file
+          ? { name: file.name, type: file.type, size: file.size }
+          : null,
+      });
+
+      const errorMessage = error.message || "Unknown error occurred";
       setValidationError(errorMessage);
       toast.error(`Error: ${errorMessage}`);
     }
@@ -267,96 +442,175 @@ export default function JsonUpload({ id, inputId, data = [], matrixConfig }) {
 
   try {
     return (
-      <div className="mb-4 p-3 border rounded bg-light">
-        <Form noValidate onSubmit={handleSubmit}>
-          <div className="row align-items-start">
-            <div className="col-md-8">
-              <Form.Label className="fw-bold mb-2">
-                Upload JSON Input Data
-              </Form.Label>
+      <div className="mb-4">
+        <Card>
+          <Card.Header
+            className="d-flex justify-content-between align-items-center"
+            style={{
+              cursor: "pointer",
+              outline: "none",
+              border: "none",
+            }}
+            onClick={() => setIsCollapsed(!isCollapsed)}
+            onFocus={(e) => e.target.blur()}
+          >
+            <h5 className="mb-0 fw-bold">Upload JSON Input Data</h5>
+            <Button
+              variant="link"
+              className="p-0 text-decoration-none"
+              style={{
+                outline: "none",
+                border: "none",
+                boxShadow: "none",
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                e.target.blur();
+                setIsCollapsed(!isCollapsed);
+              }}
+              onFocus={(e) => e.target.blur()}
+            >
+              {isCollapsed ? "▼" : "▲"}
+            </Button>
+          </Card.Header>
+          <Collapse in={!isCollapsed} timeout={300}>
+            <div>
+              <Card.Body>
+                <Form noValidate onSubmit={handleSubmit}>
+                  <div className="row align-items-start">
+                    <div className="col-md-8">
+                      {data && Array.isArray(data) && data.length > 0 && (
+                        <Form.Select
+                          value={selectedInput}
+                          onChange={(e) => {
+                            setSelectedInput(e.target.value);
+                            setValidationError(""); // Clear validation error when changing input
+                          }}
+                          className="mb-2"
+                          style={{
+                            outline: "none",
+                            boxShadow: "none",
+                          }}
+                          onFocus={(e) => {
+                            e.target.style.outline = "none";
+                            e.target.style.boxShadow =
+                              "0 0 0 0.2rem rgba(0,123,255,.25)";
+                          }}
+                          onBlur={(e) => {
+                            e.target.style.boxShadow = "none";
+                          }}
+                        >
+                          <option value="">
+                            Select an input to upload to...
+                          </option>
+                          {data
+                            .filter((input) => input?.code !== "CS-THUMB") // Filter out thumbnail
+                            .map((input, index) => {
+                              if (!input) return null;
 
-              {data && Array.isArray(data) && data.length > 0 && (
-                <Form.Select
-                  value={selectedInput}
-                  onChange={(e) => {
-                    setSelectedInput(e.target.value);
-                    setValidationError(""); // Clear validation error when changing input
-                  }}
-                  className="mb-2"
-                >
-                  <option value="">Select an input to upload to...</option>
-                  {data
-                    .filter((input) => input?.code !== "CS-THUMB") // Filter out thumbnail
-                    .map((input, index) => {
-                      if (!input) return null;
+                              const urlId = input.url
+                                ? getIdFromUrl(input.url)
+                                : input.code || "";
+                              const displayText =
+                                input.code || `Input ${index}`;
+                              const labelText = input?.label
+                                ? ` - ${input.label}`
+                                : "";
 
-                      const urlId = input.url
-                        ? getIdFromUrl(input.url)
-                        : input.code || "";
-                      const displayText = input.code || `Input ${index}`;
-                      const labelText = input?.label ? ` - ${input.label}` : "";
+                              return (
+                                <option key={input.code || index} value={urlId}>
+                                  {displayText}
+                                  {labelText}
+                                </option>
+                              );
+                            })
+                            .filter(Boolean)}
+                        </Form.Select>
+                      )}
 
-                      return (
-                        <option key={input.code || index} value={urlId}>
-                          {displayText}
-                          {labelText}
-                        </option>
-                      );
-                    })
-                    .filter(Boolean)}
-                </Form.Select>
-              )}
+                      <Form.Control
+                        key={key}
+                        type="file"
+                        accept=".json,application/json,text/json"
+                        onChange={handleFileChange}
+                        className="mb-2"
+                        style={{
+                          outline: "none",
+                          boxShadow: "none",
+                        }}
+                        onFocus={(e) => {
+                          e.target.style.outline = "none";
+                          e.target.style.boxShadow =
+                            "0 0 0 0.2rem rgba(0,123,255,.25)";
+                        }}
+                        onBlur={(e) => {
+                          e.target.style.boxShadow = "none";
+                        }}
+                      />
+                      <Form.Text className="text-muted d-block">
+                        Upload a JSON array with matrix data. Existing cells
+                        will be updated and new cells will be created for
+                        existing coordinates (param/layer combinations). No new
+                        rows or columns will be added. Use underscore-prefixed
+                        attributes (like _type, _options) for input
+                        customization.
+                      </Form.Text>
 
-              <Form.Control
-                key={key}
-                type="file"
-                accept=".json,application/json,text/json"
-                onChange={handleFileChange}
-                className="mb-2"
-              />
-              <Form.Text className="text-muted d-block">
-                Upload a JSON array with matrix data. Use underscore-prefixed
-                attributes (like _type, _options) for input customization.
-              </Form.Text>
+                      {file &&
+                        !VALID_TYPES.includes(file.type) &&
+                        !file.name.endsWith(".json") && (
+                          <Alert
+                            variant="warning"
+                            transition={null}
+                            className="mt-2"
+                          >
+                            <small>
+                              Unsupported file type, please upload a JSON file
+                            </small>
+                          </Alert>
+                        )}
 
-              {file &&
-                !VALID_TYPES.includes(file.type) &&
-                !file.name.endsWith(".json") && (
-                  <Alert variant="warning" transition={null} className="mt-2">
-                    <small>
-                      Unsupported file type, please upload a JSON file
-                    </small>
-                  </Alert>
-                )}
+                      {validationError && (
+                        <Alert
+                          variant="danger"
+                          transition={null}
+                          className="mt-2"
+                        >
+                          <small>
+                            <strong>Validation Error:</strong> {validationError}
+                          </small>
+                        </Alert>
+                      )}
+                    </div>
 
-              {validationError && (
-                <Alert variant="danger" transition={null} className="mt-2">
-                  <small>
-                    <strong>Validation Error:</strong> {validationError}
-                  </small>
-                </Alert>
-              )}
+                    <div className="col-md-4 d-flex align-items-center justify-content-end">
+                      <Button
+                        type="submit"
+                        size="lg"
+                        disabled={
+                          !file ||
+                          !selectedInput ||
+                          isLoading ||
+                          (file &&
+                            !VALID_TYPES.includes(file.type) &&
+                            !file.name.endsWith(".json"))
+                        }
+                        className="px-4"
+                        style={{
+                          outline: "none",
+                          boxShadow: "none",
+                        }}
+                        onFocus={(e) => e.target.blur()}
+                      >
+                        {isLoading ? "Uploading..." : "Upload JSON"}
+                      </Button>
+                    </div>
+                  </div>
+                </Form>
+              </Card.Body>
             </div>
-
-            <div className="col-md-4 d-flex align-items-center justify-content-end">
-              <Button
-                type="submit"
-                size="lg"
-                disabled={
-                  !file ||
-                  !selectedInput ||
-                  isLoading ||
-                  (file &&
-                    !VALID_TYPES.includes(file.type) &&
-                    !file.name.endsWith(".json"))
-                }
-                className="px-4"
-              >
-                {isLoading ? "Uploading..." : "Upload JSON"}
-              </Button>
-            </div>
-          </div>
-        </Form>
+          </Collapse>
+        </Card>
       </div>
     );
   } catch (error) {
