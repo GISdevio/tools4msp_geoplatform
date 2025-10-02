@@ -9,7 +9,6 @@ import {
 } from "react-router-dom";
 import { useGetCasestudyInputsQuery } from "../../../../services/casestudies";
 import getIdFromUrl from "../../../../libs/getIdFromUrl";
-import JsonUpload from "../Input/jsonupload";
 
 export default function CasestudyInputs() {
   const { id } = useParams();
@@ -26,11 +25,6 @@ export default function CasestudyInputs() {
       {isError && <p className="text-danger">{error.data.error.message}</p>}
       {isSuccess && (
         <>
-          {casestudy.is_owner && (
-            <div className="mb-4">
-              <JsonUpload id={id} inputId={path} data={data?.data || []} />
-            </div>
-          )}
           <Nav variant="tabs" activeKey={path} className="sticky">
             {(data?.data || []).map((input) => (
               <Nav.Item key={input?.code || Math.random()}>

@@ -425,7 +425,6 @@ export default function Matrix({
                   ))}
               </tbody>
             </Table>
-            {toolbar}
           </Form>
         )}
       </Formik>

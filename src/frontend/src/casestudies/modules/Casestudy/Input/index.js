@@ -5,11 +5,13 @@ import { LinkItUrl } from "react-linkify-it";
 import Matrix from "../../../../components/Matrix";
 import {
   useGetCasestudyInputQuery,
+  useGetCasestudyInputsQuery,
   useGetCasestudyLayersQuery,
   useGetCodedlabelsQuery,
   useUploadInputMutation,
 } from "../../../../services/casestudies";
 import ThumbnailUpload from "./thumbnail";
+import JsonUpload from "./jsonupload";
 
 export default function CasestudyInput() {
   const { id, inputId } = useParams();
@@ -22,6 +24,7 @@ export default function CasestudyInput() {
   );
   const { data, isLoading, isFetching, isError, isSuccess } =
     useGetCasestudyInputQuery(query);
+  const { data: inputs } = useGetCasestudyInputsQuery(id);
   const { data: layers, isLoading: loadingLayers } =
     useGetCasestudyLayersQuery(id);
   const { data: codedLabels, isLoading: loadingLabels } =
@@ -44,10 +47,11 @@ export default function CasestudyInput() {
   const casestudy = useOutletContext();
 
   const update = (values) => {
+    const matrixData = data?.data?.matrix || {};
     upload({
       id,
       inputId,
-      ...data.data.matrix,
+      ...matrixData,
       index: values,
     });
   };
@@ -62,12 +66,12 @@ export default function CasestudyInput() {
       isSuccess
     ) {
       if (data.data.vizmode === 1) {
-        return Array.from(
-          new Set([...data.data.matrix.cols, ...data.data.matrix.rows])
-        );
+        const matrixCols = data.data.matrix?.cols || [];
+        const matrixRows = data.data.matrix?.rows || [];
+        return Array.from(new Set([...matrixCols, ...matrixRows]));
       }
 
-      return layers.data.map((l) => l.code);
+      return layers?.data?.map((l) => l.code) || [];
     }
 
     return [];
@@ -115,13 +119,30 @@ export default function CasestudyInput() {
           )}
           {data.data.matrix && (
             <Matrix
-              {...data.data.matrix}
+              cols={data.data.matrix.cols || []}
+              rows={data.data.matrix.rows || []}
+              values={data.data.matrix.values || []}
+              index={data.data.matrix.index || {}}
+              x={data.data.matrix.x || "x"}
+              y={data.data.matrix.y || "y"}
+              extra={data.data.matrix.extra || {}}
+              separators={
+                data.data.matrix.separators || { main: "#", secondary: "$" }
+              }
               editable={casestudy.is_owner}
               visibleCodes={initialVisibleCodes}
               key={inputId}
               update={update}
               isUpdating={isUpdating}
               fetchContent={fetchContent}
+            />
+          )}
+          {casestudy.is_owner && (
+            <JsonUpload
+              id={id}
+              inputId={inputId}
+              data={inputs?.data || []}
+              currentMatrix={data?.data?.matrix}
             />
           )}
         </>
