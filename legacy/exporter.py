@@ -1,10 +1,13 @@
 """Export items from the legacy v3.3.4 GeoNode platform to a file system location."""
 
+import argparse
 import dataclasses
 import datetime as dt
+import json
 import logging
 import os
 import uuid
+from pathlib import Path
 
 import psycopg
 
@@ -125,7 +128,6 @@ class GeonodeResource:
     abstract: str
     purpose: str | None
     owner: GeonodeUser
-    # contacts comes from an m2m relationship
     alternate: str | None
     date: dt.datetime
     date_type: str
@@ -180,6 +182,25 @@ class GeonodeResource:
     # skipping metadata - the entries do not belong to any map
     user_permissions: list[tuple[GeonodeUser, UserPermission]]
     group_permissions: list[tuple[GeonodeGroup, UserPermission]]
+    contacts: list[tuple[GeonodeUser, str]]
+
+
+@dataclasses.dataclass(frozen=True)
+class GeonodeMapLayer:
+    stack_order: int
+    format_: str | None
+    name: str | None
+    store: str | None
+    opacity: float
+    styles: str | None
+    transparent: bool
+    fixed: bool
+    group: str | None
+    visibility: bool
+    ows_url: str | None
+    layer_params: str
+    source_params: str
+    local: bool
 
 
 @dataclasses.dataclass(frozen=True)
@@ -192,9 +213,10 @@ class GeonodeMap:
     last_modified: dt.datetime
     urlsuffix: str
     featuredurl: str
+    layers: list[GeonodeMapLayer]
 
 
-def gather_tags(cursor: psycopg.Cursor) -> dict[int, HierarchicalTag]:
+def _gather_tags(cursor: psycopg.Cursor) -> dict[int, HierarchicalTag]:
     cursor.execute(
         "SELECT DISTINCT tci.tag_id, hk.slug, hk.path "
         "FROM base_taggedcontentitem AS tci "
@@ -202,15 +224,22 @@ def gather_tags(cursor: psycopg.Cursor) -> dict[int, HierarchicalTag]:
         "JOIN maps_map AS m ON m.resourcebase_ptr_id = rb.id "
         "JOIN base_hierarchicalkeyword AS hk ON tci.tag_id = hk.id;"
     )
+    return {
+        record[0]: HierarchicalTag(
+            id=record[0],
+            slug=record[1],
+            path=record[2],
+        )
+        for record in cursor
+    }
 
 
-def gather_restriction_code_types(
+def _gather_restriction_code_types(
         cursor: psycopg.Cursor) -> dict[int, RestrictionCodeType]:
     cursor.execute(
         "SELECT DISTINCT rb.restriction_code_type_id, rc.identifier "
         "FROM base_resourcebase AS rb "
-        "JOIN maps_map AS m ON m.id = rb.resourcebase_ptr_id "
-        "JOIN base_restrictioncodetype AS rc ON rc.id = rb.resource_code_type_id;"
+        "JOIN base_restrictioncodetype AS rc ON rc.id = rb.restriction_code_type_id;"
     )
     return {
         record[0]: RestrictionCodeType(
@@ -220,7 +249,7 @@ def gather_restriction_code_types(
     }
 
 
-def gather_topic_categories(
+def _gather_topic_categories(
         cursor: psycopg.Cursor) -> dict[int, TopicCategory]:
     cursor.execute(
         "SELECT DISTINCT rb.category_id, tc.identifier "
@@ -236,7 +265,7 @@ def gather_topic_categories(
     }
 
 
-def gather_licenses(
+def _gather_licenses(
         cursor: psycopg.Cursor) -> dict[int, License]:
     cursor.execute(
         "SELECT DISTINCT rb.license_id, li.identifier, li.name "
@@ -253,7 +282,7 @@ def gather_licenses(
     }
 
 
-def gather_spatial_representation_types(
+def _gather_spatial_representation_types(
         cursor: psycopg.Cursor) -> dict[int, SpatialRepresentationType]:
     cursor.execute(
         "SELECT DISTINCT rb.spatial_representation_type_id, sr.identifier "
@@ -269,7 +298,7 @@ def gather_spatial_representation_types(
     }
 
 
-def gather_groups(
+def _gather_groups(
         cursor: psycopg.Cursor) -> dict[int, GeonodeGroup]:
     cursor.execute(
         "SELECT DISTINCT rb.group_id, g.name "
@@ -285,7 +314,7 @@ def gather_groups(
     }
 
 
-def gather_all_groups(
+def _gather_all_groups(
         cursor: psycopg.Cursor) -> dict[int, GeonodeGroup]:
     cursor.execute(
         "SELECT g.id, g.name "
@@ -299,7 +328,7 @@ def gather_all_groups(
     }
 
 
-def gather_map_owners(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
+def _gather_map_owners(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
     cursor.execute(
         "WITH map_owner AS "
         "("
@@ -320,7 +349,7 @@ def gather_map_owners(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
     }
 
 
-def gather_all_users(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
+def _gather_all_users(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
     cursor.execute(
         "SELECT p.id, p.username, p.email "
         "FROM people_profile AS p;"
@@ -334,9 +363,9 @@ def gather_all_users(cursor: psycopg.Cursor) -> dict[int, GeonodeUser]:
     }
 
 
-def gather_thesaurus_keywords(cursor: psycopg.Cursor) -> dict[int, ThesaurusKeyword]:
+def _gather_thesaurus_keywords(cursor: psycopg.Cursor) -> dict[int, ThesaurusKeyword]:
     cursor.execute(
-        "SELECT t.*, tk.* "
+        "SELECT t.id, t.identifier, t.slug, tk.id, tk.alt_label "
         "FROM base_resourcebase_tkeywords AS rbtk "
         "JOIN maps_map AS m ON m.resourcebase_ptr_id = rbtk.resourcebase_id "
         "JOIN base_thesauruskeyword AS tk ON tk.id = rbtk.thesauruskeyword_id "
@@ -358,7 +387,7 @@ def gather_thesaurus_keywords(cursor: psycopg.Cursor) -> dict[int, ThesaurusKeyw
     return result
 
 
-def gather_spatial_regions(cursor: psycopg.Cursor) -> dict[int, SpatialRegion]:
+def _gather_spatial_regions(cursor: psycopg.Cursor) -> dict[int, SpatialRegion]:
     cursor.execute(
         "WITH featured_region AS "
         "("
@@ -377,7 +406,7 @@ def gather_spatial_regions(cursor: psycopg.Cursor) -> dict[int, SpatialRegion]:
         ) for record in cursor}
 
 
-def gather_user_permissions(cursor: psycopg.Cursor) -> dict[int, UserPermission]:
+def _gather_user_permissions(cursor: psycopg.Cursor) -> dict[int, UserPermission]:
     cursor.execute(
         "SELECT DISTINCT p.id, p.codename "
         "FROM guardian_userobjectpermission AS up "
@@ -393,7 +422,7 @@ def gather_user_permissions(cursor: psycopg.Cursor) -> dict[int, UserPermission]
     }
 
 
-def gather_group_permissions(cursor: psycopg.Cursor) -> dict[int, GroupPermission]:
+def _gather_group_permissions(cursor: psycopg.Cursor) -> dict[int, GroupPermission]:
     cursor.execute(
         "SELECT DISTINCT p.id, p.codename "
         "FROM guardian_groupobjectpermission AS gp "
@@ -409,7 +438,7 @@ def gather_group_permissions(cursor: psycopg.Cursor) -> dict[int, GroupPermissio
     }
 
 
-def gather_resources(
+def _gather_map_related_resources(
         cursor: psycopg.Cursor,
         owners: dict[int, GeonodeUser],
         all_users: dict[int, GeonodeUser],
@@ -479,6 +508,17 @@ def gather_resources(
             (all_groups[record[2]], group_permissions[record[1]])
         )
 
+    raw_related_contacts = {}
+    cursor.execute(
+        "SELECT cr.role, cr.contact_id, cr.resource_id "
+        "FROM base_contactrole AS cr "
+        "JOIN maps_map AS m ON m.resourcebase_ptr_id = cr.resource_id;"
+    )
+    for record in cursor:
+        contact_set = raw_related_contacts.setdefault(record[2], set())
+        contact_set.add(
+            (all_users[record[1]], record[0])
+        )
 
     cursor.execute(
         "SELECT "
@@ -552,20 +592,20 @@ def gather_resources(
             attribution=record[9],
             doi=record[10],
             maintenance_frequency=record[11],
-            keywords=raw_related_keywords.get(resource_id, []),
+            keywords=list(raw_related_keywords.get(resource_id, [])),
             thesaurus_keywords=raw_thesaurus_keywords.get(resource_id, []),
-            spatial_regions=raw_related_regions.get(resource_id, []),
-            restriction_code_type=restriction_code_types[record[12]],
+            spatial_regions=list(raw_related_regions.get(resource_id, [])),
+            restriction_code_type=restriction_code_types[record[12]] if record[12] else None,
             constraints_other=record[13],
             license=licenses[record[14]],
             language=record[15],
-            category=topic_categories[record[16]],
-            spatial_representation_type=spatial_representation_types[record[17]],
+            category=topic_categories[record[16]] if record[16] else None,
+            spatial_representation_type=spatial_representation_types[record[17]] if record[17] else None,
             temporal_extent_start=record[18],
             temporal_extent_end=record[19],
             supplemental_information=record[20],
             data_quality_statement=record[21],
-            group=groups[record[22]],
+            group=groups[record[22]] if record[22] else None,
             bbox_polygon=record[23],
             ll_bbox_polygon=record[24],
             srid=record[25],
@@ -594,37 +634,153 @@ def gather_resources(
             dirty_state=record[48],
             resource_type=record[49],
             metadata_only=record[50],
-            user_permissions=raw_related_user_permissions.get(resource_id, []),
-            group_permissions=raw_related_group_permissions.get(resource_id, []),
+            user_permissions=list(raw_related_user_permissions.get(resource_id, [])),
+            group_permissions=list(raw_related_group_permissions.get(resource_id, [])),
+            contacts=list(raw_related_contacts.get(resource_id, []))
         )
     return result
 
 
-def gather_map_details(
+def gather_map_layers(
+        cursor: psycopg.Cursor,
+        map_id: int
+) -> list[GeonodeMapLayer]:
+    cursor.execute(
+        f"SELECT "
+        f"id, "  # 0
+        f"stack_order, "  # 1
+        f"format, "  # 2
+        f"name, "  # 3
+        f"opacity, "  # 4
+        f"styles, "  # 5
+        f"transparent, "  # 6
+        f"fixed, "  # 7
+        f"\"group\", "  # 8
+        f"visibility, "  # 9
+        f"ows_url, "  # 10
+        f"layer_params, "  # 11
+        f"source_params, "  # 12
+        f"local, "  # 13
+        f"store "  # 14
+        f"FROM maps_maplayer "
+        f"WHERE map_id = {map_id};"
+    )
+    return [
+        GeonodeMapLayer(
+            stack_order=record[1],
+            format_=record[2],
+            name=record[3],
+            opacity=record[4],
+            styles=record[5],
+            transparent=record[6],
+            fixed=record[7],
+            group=record[8],
+            visibility=record[9],
+            ows_url=record[10],
+            layer_params=record[11],
+            source_params=record[12],
+            local=record[13],
+            store=record[14],
+        )
+        for record in cursor
+    ]
+
+
+def _gather_map_details(
         cursor: psycopg.Cursor,
         resources: dict[int, GeonodeResource],
 ) -> dict[int, GeonodeMap]:
     cursor.execute(
         "SELECT "
         "m.resourcebase_ptr_id, "
+        "m.zoom, "
+        "m.projection, "
+        "m.center_x, "
+        "m.center_y, "
+        "m.last_modified, "
+        "m.urlsuffix, "
+        "m.featuredurl "
         "FROM maps_map AS m;"
     )
     result = {}
     for record in cursor:
         map_id = record[0]
         result[map_id] = GeonodeMap(
-
+            resource=resources[map_id],
+            zoom=record[1],
+            projection=record[2],
+            center_x=record[3],
+            center_y=record[4],
+            last_modified=record[5],
+            urlsuffix=record[6],
+            featuredurl=record[7],
+            layers=[],
         )
+    for map_id, geonode_map in result.items():
+        geonode_map.layers.extend(gather_map_layers(cursor, map_id))
+    return result
 
 
-def main(db_config: DbConfig):
+def export_geonode_maps(db_config: DbConfig):
     with psycopg.connect(db_config.connection_string) as conn:
         with conn.cursor() as cursor:
-            map_owners = gather_map_owners(cursor)
-            restriction_code_types = gather_restriction_code_types(cursor)
+            map_related_resources = _gather_map_related_resources(
+                cursor,
+                owners=_gather_map_owners(cursor),
+                all_users=_gather_all_users(cursor),
+                all_groups=_gather_all_groups(cursor),
+                tags=_gather_tags(cursor),
+                thesaurus_keywords=_gather_thesaurus_keywords(cursor),
+                spatial_regions=_gather_spatial_regions(cursor),
+                restriction_code_types=_gather_restriction_code_types(cursor),
+                licenses=_gather_licenses(cursor),
+                topic_categories=_gather_topic_categories(cursor),
+                spatial_representation_types=_gather_spatial_representation_types(cursor),
+                groups=_gather_groups(cursor),
+                user_permissions=_gather_user_permissions(cursor),
+                group_permissions=_gather_group_permissions(cursor),
+            )
+            maps = _gather_map_details(cursor, map_related_resources)
+    return maps
+
+
+class DateTimeJsonEncoder(json.JSONEncoder):
+
+    def default(self, obj):
+        if isinstance(obj, dt.datetime):
+            return obj.isoformat()
+        return super().default(obj)
+
+
+def serialize_exported_maps(maps: dict[int, GeonodeMap], target_dir: Path):
+    for geonode_map in maps.values():
+        target_path = target_dir / f"geonode-map-{geonode_map.resource.id}.json"
+        logger.info(f"Writing map {geonode_map.resource.id!r} to {target_path}...")
+        with open(target_path, "w", encoding="utf-8") as fh:
+            json.dump(
+                dataclasses.asdict(geonode_map),
+                fh,
+                default=str,
+                indent=2,
+                ensure_ascii=False,
+                cls=DateTimeJsonEncoder,
+            )
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description=(
+            "Export GeoNode maps from a legacy v3.3.4 instance onto a "
+            "bunch of JSON files."
+        )
+    )
+    parser.add_argument(
+        "output_dir", type=Path, help="Directory to write exported maps to."
+    )
+    args = parser.parse_args()
+    if not args.output_dir.is_dir():
+        raise FileNotFoundError(args.output_dir)
     logging.basicConfig(level=logging.DEBUG)
     db_config = DbConfig.from_env()
-    main(db_config)
+    geonode_maps = export_geonode_maps(db_config)
+    serialize_exported_maps(geonode_maps, args.output_dir)
