@@ -206,6 +206,139 @@ export default function JsonUpload({
     ? CODE_MAP[selectedInputData.code]
     : null;
 
+  // Convert current matrix back to JSON format for export
+  const convertMatrixToJson = (matrix, inputCode) => {
+    if (!matrix || !matrix.index || !inputCode) {
+      return [];
+    }
+
+    const expectedStructure = CODE_MAP[inputCode];
+    if (!expectedStructure) {
+      return [];
+    }
+
+    const { x, y, v: values } = expectedStructure;
+    const jsonArray = [];
+
+    // Iterate through the matrix index to reconstruct JSON objects
+    Object.keys(matrix.index).forEach((cellId) => {
+      const cellData = matrix.index[cellId];
+
+      // Parse the cell ID to extract x and y values
+      // Cell ID format: "param$PARAM_VALUE#layer$LAYER_VALUE"
+      const parts = cellId.split("#");
+      if (parts.length === 2) {
+        const xPart = parts[0]; // "param$PARAM_VALUE"
+        const yPart = parts[1]; // "layer$LAYER_VALUE"
+
+        const xValue = xPart.split("$")[1]; // Extract PARAM_VALUE
+        const yValue = yPart.split("$")[1]; // Extract LAYER_VALUE
+
+        if (xValue && yValue) {
+          const jsonObject = {
+            [x]: xValue,
+            [y]: yValue,
+          };
+
+          // Add value fields
+          values.forEach((valueField) => {
+            if (cellData[valueField] !== undefined) {
+              jsonObject[valueField] = cellData[valueField];
+            }
+          });
+
+          // Add extra properties (prefixed with _)
+          if (matrix.extra && matrix.extra[cellId]) {
+            Object.keys(matrix.extra[cellId]).forEach((extraKey) => {
+              jsonObject[`_${extraKey}`] = matrix.extra[cellId][extraKey];
+            });
+          }
+
+          // Only add objects that have at least one value field
+          const hasValues = values.some(
+            (valueField) =>
+              cellData[valueField] !== undefined &&
+              cellData[valueField] !== null &&
+              cellData[valueField] !== ""
+          );
+
+          if (hasValues) {
+            jsonArray.push(jsonObject);
+          }
+        }
+      }
+    });
+
+    return jsonArray;
+  };
+
+  // Handle export JSON functionality
+  const handleExportJson = () => {
+    if (!selectedInput) {
+      toast.error("Please select an input to export");
+      return;
+    }
+
+    try {
+      // Get the selected input's code and matrix data
+      const selectedInputInfo = data.find(
+        (input) => input && getIdFromUrl(input.url) === selectedInput
+      );
+
+      if (!selectedInputInfo) {
+        toast.error("Selected input not found");
+        return;
+      }
+
+      if (!selectedInputInfo.code) {
+        toast.error("Could not determine input type");
+        return;
+      }
+
+      // Use currentMatrix if available, otherwise fall back to selectedInputInfo.matrix
+      const matrixToExport = currentMatrix || selectedInputInfo.matrix;
+
+      if (!matrixToExport || !matrixToExport.index) {
+        toast.error("No matrix data available to export");
+        return;
+      }
+
+      // Convert matrix to JSON format
+      const jsonData = convertMatrixToJson(
+        matrixToExport,
+        selectedInputInfo.code
+      );
+
+      if (jsonData.length === 0) {
+        toast.warning("No data found to export");
+        return;
+      }
+
+      // Create and download the JSON file
+      const jsonString = JSON.stringify(jsonData, null, 2);
+      const blob = new Blob([jsonString], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+
+      // Create download link
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `${selectedInputInfo.code}_export_${
+        new Date().toISOString().split("T")[0]
+      }.json`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Clean up the URL object
+      URL.revokeObjectURL(url);
+
+      toast.success(`Exported ${jsonData.length} records to JSON file`);
+    } catch (error) {
+      console.error("Export JSON Error:", error);
+      toast.error(`Export failed: ${error.message}`);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setValidationError("");
@@ -411,8 +544,15 @@ export default function JsonUpload({
       if (res.data) {
         setKey(key + 1);
         setFile(null);
-        setSelectedInput("");
-        toast.success("JSON data uploaded successfully - cells updated");
+
+        // Check if we uploaded to the currently displayed input
+        if (selectedInput === inputId) {
+          toast.success("JSON data uploaded successfully - matrix updated");
+        } else {
+          toast.success(
+            "JSON data uploaded successfully - navigate to the uploaded input to see changes"
+          );
+        }
       }
       if (res.error) {
         toast.error(
@@ -553,7 +693,8 @@ export default function JsonUpload({
                         existing coordinates (param/layer combinations). No new
                         rows or columns will be added. Use underscore-prefixed
                         attributes (like _type, _options) for input
-                        customization.
+                        customization. Use "Export JSON" to download the current
+                        matrix data in the same format.
                       </Form.Text>
 
                       {file &&
@@ -583,7 +724,7 @@ export default function JsonUpload({
                       )}
                     </div>
 
-                    <div className="col-md-4 d-flex align-items-center justify-content-end">
+                    <div className="col-md-4 d-flex flex-column align-items-end gap-2">
                       <Button
                         type="submit"
                         size="lg"
@@ -599,10 +740,37 @@ export default function JsonUpload({
                         style={{
                           outline: "none",
                           boxShadow: "none",
+                          cursor:
+                            !file ||
+                            !selectedInput ||
+                            isLoading ||
+                            (file &&
+                              !VALID_TYPES.includes(file.type) &&
+                              !file.name.endsWith(".json"))
+                              ? "not-allowed"
+                              : "pointer",
+                          pointerEvents: "auto",
                         }}
                         onFocus={(e) => e.target.blur()}
                       >
                         {isLoading ? "Uploading..." : "Upload JSON"}
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="primary"
+                        size="lg"
+                        disabled={!selectedInput}
+                        className="px-4"
+                        style={{
+                          outline: "none",
+                          boxShadow: "none",
+                          cursor: !selectedInput ? "not-allowed" : "pointer",
+                          pointerEvents: "auto",
+                        }}
+                        onFocus={(e) => e.target.blur()}
+                        onClick={handleExportJson}
+                      >
+                        Export JSON
                       </Button>
                     </div>
                   </div>
