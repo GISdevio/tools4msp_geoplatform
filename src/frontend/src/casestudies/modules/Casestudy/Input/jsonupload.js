@@ -50,8 +50,8 @@ export default function JsonUpload({
   id,
   inputId,
   data = [],
-  matrixConfig,
   currentMatrix,
+  visibleColumns = [],
 }) {
   const [key, setKey] = useState(0);
   const [file, setFile] = useState(null);
@@ -220,12 +220,16 @@ export default function JsonUpload({
     const { x, y, v: values } = expectedStructure;
     const jsonArray = [];
 
-    // Iterate through the matrix index to reconstruct JSON objects
+    // Use the actual visible columns from the Matrix UI
+    // This ensures we only export what the user can currently see in the table
+    const visibleCols = visibleColumns || [];
+    const visibleRows = visibleColumns || []; // For square matrices, visible columns = visible rows
+
+    // Only iterate through cells that correspond to visible columns/rows
     Object.keys(matrix.index).forEach((cellId) => {
       const cellData = matrix.index[cellId];
 
       // Parse the cell ID to extract x and y values
-      // Cell ID format: "param$PARAM_VALUE#layer$LAYER_VALUE"
       const parts = cellId.split("#");
       if (parts.length === 2) {
         const xPart = parts[0]; // "param$PARAM_VALUE"
@@ -235,6 +239,26 @@ export default function JsonUpload({
         const yValue = yPart.split("$")[1]; // Extract LAYER_VALUE
 
         if (xValue && yValue) {
+          // Only include this cell if both its column and row are currently visible in the UI
+          const isColVisible = visibleCols.includes(xValue);
+          const isRowVisible = visibleRows.includes(yValue);
+
+          if (!isColVisible || !isRowVisible) {
+            return; // Skip this cell as it's not visible in the current matrix UI
+          }
+
+          // Check if this specific cell has meaningful data
+          const hasValues = values.some(
+            (valueField) =>
+              cellData[valueField] !== undefined &&
+              cellData[valueField] !== null &&
+              cellData[valueField] !== ""
+          );
+
+          if (!hasValues) {
+            return; // Skip cells with no actual data
+          }
+
           const jsonObject = {
             [x]: xValue,
             [y]: yValue,
@@ -254,17 +278,7 @@ export default function JsonUpload({
             });
           }
 
-          // Only add objects that have at least one value field
-          const hasValues = values.some(
-            (valueField) =>
-              cellData[valueField] !== undefined &&
-              cellData[valueField] !== null &&
-              cellData[valueField] !== ""
-          );
-
-          if (hasValues) {
-            jsonArray.push(jsonObject);
-          }
+          jsonArray.push(jsonObject);
         }
       }
     });

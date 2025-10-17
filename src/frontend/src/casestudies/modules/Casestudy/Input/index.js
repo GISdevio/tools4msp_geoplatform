@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useRef } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { Spinner, Tab, Button } from "react-bootstrap";
 import { useOutletContext, useParams } from "react-router-dom";
 import { LinkItUrl } from "react-linkify-it";
@@ -45,6 +45,8 @@ export default function CasestudyInput() {
 
   const [upload, { isLoading: isUpdating }] = useUploadInputMutation();
   const casestudy = useOutletContext();
+
+  const [currentVisibleColumns, setCurrentVisibleColumns] = useState([]);
 
   const update = (values) => {
     const matrixData = data?.data?.matrix || {};
@@ -135,6 +137,7 @@ export default function CasestudyInput() {
               update={update}
               isUpdating={isUpdating}
               fetchContent={fetchContent}
+              onVisibleColumnsChange={setCurrentVisibleColumns}
             />
           )}
           {casestudy.is_owner && (
@@ -143,6 +146,7 @@ export default function CasestudyInput() {
               inputId={inputId}
               data={inputs?.data || []}
               currentMatrix={data?.data?.matrix}
+              visibleColumns={currentVisibleColumns}
             />
           )}
         </>
