@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { Table, Form, Button, Spinner, Dropdown } from "react-bootstrap";
 import { ErrorBoundary } from "react-error-boundary";
 import { Formik } from "formik";
@@ -337,9 +337,17 @@ export default function Matrix({
   visibleCodes,
   editable,
   fetchContent,
+  onVisibleColumnsChange,
 }) {
   const [focusedKey, setFocusedKey] = useState([]);
   const [visibleColumns, setVisibleColumns] = useState(visibleCodes);
+
+  useEffect(() => {
+    if (onVisibleColumnsChange) {
+      onVisibleColumnsChange(visibleColumns);
+    }
+  }, [visibleColumns, onVisibleColumnsChange]);
+
   const toolbar = useMemo(
     () => (
       <Toolbar
