@@ -198,7 +198,8 @@ UPLOADER['SUPPORTED_CRS'] += [
 ]
 
 UPLOADER['SUPPORTED_EXT'] += [
-    '.geotiff'
+    '.geotiff',
+    '.json',
 ]
 
 # Add JSON support for documents
