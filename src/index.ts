@@ -35,6 +35,7 @@ const main = async () => {
 
   // await vectorLayers.download()
   // await vectorLayers.upload()
+  await vectorLayers.fixKeywords()
 }
 
 main().catch((err) => logger.error(err))
