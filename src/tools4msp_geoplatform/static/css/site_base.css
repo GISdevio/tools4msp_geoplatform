@@ -69,11 +69,33 @@
     display: inline-block;
 }
 
-
 .gn-menu-content .input-group {
-  /* position: relative; */
   display: flex !important;
   flex-wrap: nowrap !important;
   align-items: baseline;
   width: 100%;
+}
+
+.gn-menu-item-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.gn-menu-item-logo span {
+  margin-left: 10px;
+}
+
+#gn-hero {
+  background-image: url('/static/img/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home-search {
+  background-color: #f8f9fa;
+}
+
+.home-recap .recap-icon {
+  color: #007bff;
 }

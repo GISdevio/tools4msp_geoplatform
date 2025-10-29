@@ -12,44 +12,13 @@
         <div class="gn-menu-content">
             <div class="gn-menu-content-side gn-menu-content-left">
                 {% block left_menu %}
-                <div class="dropdown">
-                    <button
-                        class="btn btn-primary dropdown-toggle"
-                        type="button"
-                        id="gn-topbar-small-menu"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="true"
-                    >
-                        <i class="fa fa-bars"> </i>
-                    </button>
-                    <ul
-                        class="dropdown-menu"
-                        aria-labelledby="gn-topbar-small-menu"
-                    >
-                        {% for menu_item in BASE_TOPBAR_MENU_LEFT %}
-                            {% include './menu_item_compact.html' with menu_item=menu_item %}
-                        {% endfor %}
-                        {% for menu_item in TOPBAR_MENU %}
-                            {% include './menu_item_compact.html' with menu_item=menu_item variant='primary' %}
-                        {% endfor %}
-                        {% for menu_item in TOPBAR_MENU_LEFT %}
-                            {% include './menu_item_compact.html' with menu_item=menu_item %}
-                        {% endfor %}
-
-                    </ul>
-                </div>
                 <ul class="gn-menu-list">
-                    <li>
+                    <li class="gn-menu-item-logo">
                         <a href="/">
-                            {% if custom_theme.logo and custom_theme.logo.url %}
-                                <img src="{{ custom_theme.logo.url }}">
-                            {% else %}
-                                <img src="{% block logo_src %}/static/mapstore/img/geonode-logo.svg{% endblock %}">
-                            {% endif %}
+                            <img src="{% block logo_src %}/static/img/geonode-logo.svg{% endblock %}">
+                            <span>Geonode</span>
                         </a>
                     </li>
-
                     {% for menu_item in BASE_TOPBAR_MENU_LEFT %}
                         {% include './menu_item.html' with menu_item=menu_item variant='menu' %}
                     {% endfor %}
@@ -63,13 +32,14 @@
                 {% endblock %}
             </div>
             <div class="gn-menu-content-center">
-                {% block center_menu %}
-                  {% include './search_bar.html' with search_bar_id='gn-search-bar' %}
-                {% endblock %}
+                
             </div>
             <div class="gn-menu-content-right">
                 {% block right_menu %}
                 <ul class="gn-menu-list">
+                    {% block search_bar %}
+                      {% include './search_bar.html' with search_bar_id='gn-search-bar' %}
+                    {% endblock %}
                     {% block language_selector %}
                         {% include './language_selector.html' with variant='primary' align_right=True %}
                     {% endblock %}
@@ -94,16 +64,22 @@
             leftSideMenuList.style.transform = 'translateY(-50%)';
             const leftSideMenuDisplay = leftSideMenuList.style.display;
             const leftSideDropdown = menu.querySelector('.gn-menu-content-left > .dropdown');
-            leftSideDropdown.style.position = 'absolute';
-            leftSideDropdown.style.top = '50%';
-            leftSideDropdown.style.transform = 'translateY(-50%)';
+            if (leftSideDropdown) {
+              leftSideDropdown.style.position = 'absolute';
+              leftSideDropdown.style.top = '50%';
+              leftSideDropdown.style.transform = 'translateY(-50%)';
+            }
             function resize() {
                 if (leftSide.clientWidth < leftSideMenuList.clientWidth) {
                     leftSideMenuList.style.visibility = 'hidden';
-                    leftSideDropdown.style.visibility = 'visible';
+                    if (leftSideDropdown) {
+                      leftSideDropdown.style.visibility = 'visible';
+                    }
                 } else {
                     leftSideMenuList.style.visibility = 'visible';
-                    leftSideDropdown.style.visibility = 'hidden';
+                    if (leftSideDropdown) {
+                      leftSideDropdown.style.visibility = 'hidden';
+                    }
                 }
             }
 
