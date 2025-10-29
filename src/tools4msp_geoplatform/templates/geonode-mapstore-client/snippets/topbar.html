@@ -1,5 +1,4 @@
 {% load get_menu_json %}
-{# {% load catalogue_urls %} #}
 {% get_base_left_topbar_menu as BASE_TOPBAR_MENU_LEFT %}
 {% get_menu_json 'TOPBAR_MENU' as TOPBAR_MENU %}
 {% get_menu_json 'TOPBAR_MENU_LEFT' as TOPBAR_MENU_LEFT %}
@@ -15,8 +14,8 @@
                 <ul class="gn-menu-list">
                     <li class="gn-menu-item-logo">
                         <a href="/">
-                            <img src="{% block logo_src %}/static/img/geonode-logo.svg{% endblock %}">
-                            <span>Geonode</span>
+                            <img src="{% block logo_src %}/static/img/geonode-logo.svg{% endblock %}" style="height: 32px; width: 32px;">
+                            <span style="font-weight: bold; font-size: 20px;">Geonode</span>
                         </a>
                     </li>
                     {% for menu_item in BASE_TOPBAR_MENU_LEFT %}
@@ -53,45 +52,3 @@
         </div>
     </div>
 </nav>
-<script>
-    (function () {
-        function onResizeMenu(menu) {
-            const menuContent = menu.querySelector('.gn-menu-content');
-            const leftSide = menu.querySelector('.gn-menu-content-left');
-            const leftSideMenuList = menu.querySelector('.gn-menu-content-left > .gn-menu-list');
-            leftSideMenuList.style.position = 'absolute';
-            leftSideMenuList.style.top = '50%';
-            leftSideMenuList.style.transform = 'translateY(-50%)';
-            const leftSideMenuDisplay = leftSideMenuList.style.display;
-            const leftSideDropdown = menu.querySelector('.gn-menu-content-left > .dropdown');
-            if (leftSideDropdown) {
-              leftSideDropdown.style.position = 'absolute';
-              leftSideDropdown.style.top = '50%';
-              leftSideDropdown.style.transform = 'translateY(-50%)';
-            }
-            function resize() {
-                if (leftSide.clientWidth < leftSideMenuList.clientWidth) {
-                    leftSideMenuList.style.visibility = 'hidden';
-                    if (leftSideDropdown) {
-                      leftSideDropdown.style.visibility = 'visible';
-                    }
-                } else {
-                    leftSideMenuList.style.visibility = 'visible';
-                    if (leftSideDropdown) {
-                      leftSideDropdown.style.visibility = 'hidden';
-                    }
-                }
-            }
-
-            window.addEventListener('resize', resize);
-            window.addEventListener('DOMContentLoaded', resize);
-
-            resize();
-        }
-        const menus = document.querySelectorAll('[data-gn-menu-resize="true"]');
-        for (var i = 0; i < menus.length; i++) {
-            const menu = menus[i];
-            onResizeMenu(menu);
-        }
-    })();
-</script>

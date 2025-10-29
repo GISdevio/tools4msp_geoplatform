@@ -1,49 +1,59 @@
 {% load i18n %}
 
-<div class="container py-5 home-recap">
-    <div class="row text-center row-recap">
-        <!-- Datasets -->
-        <div class="col-md-3 mb-4">
-            <a href="/catalogue/#/?f=dataset">
-                <i class="fa fa-database fa-3x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/catalogue/#/?f=dataset">{% trans "Datasets" %}</a>
-            </h2>
-            <p>{{ layers_count }} {% trans "datasets" %}</p>
+<div class="container py-5">
+  <div class="row text-center">
+    <!-- Datasets -->
+    <div class="col-md-3 mb-4">
+      <a href="/catalogue/#/?f=dataset" class="text-decoration-none">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="fa fa-database fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">{% trans "Datasets" %}</h5>
+            <p class="card-text">{{ layers_count }} {% trans "datasets" %}</p>
+          </div>
         </div>
-
-        <!-- Maps -->
-        <div class="col-md-3 mb-4">
-            <a href="/catalogue/#/?f=map">
-                <i class="fa fa-map fa-3x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/catalogue/#/?f=map">{% trans "Maps" %}</a>
-            </h2>
-            <p>{{ maps_count }} {% trans "map" %}</p>
-        </div>
-
-        <!-- Documents -->
-        <div class="col-md-3 mb-4">
-            <a href="/catalogue/#/?f=document">
-                <i class="fa fa-file-text fa-3x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/catalogue/#/?f=document">{% trans "Documents" %}</a>
-            </h2>
-            <p>{{ documents_count }} {% trans "documents" %}</p>
-        </div>
-
-        <!-- Users -->
-        <div class="col-md-3 mb-4">
-            <a href="/people/">
-                <i class="fa fa-users fa-3x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/people/">{% trans "Users" %}</a>
-            </h2>
-            <p>{{ users_count }} {% trans "users" %}</p>
-        </div>
+      </a>
     </div>
+
+    <!-- Maps -->
+    <div class="col-md-3 mb-4">
+      <a href="/catalogue/#/?f=map" class="text-decoration-none">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="fa fa-map fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">{% trans "Maps" %}</h5>
+            <p class="card-text">{{ maps_count }} {% trans "map" %}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Documents -->
+    <div class="col-md-3 mb-4">
+      <a href="/catalogue/#/?f=document" class="text-decoration-none">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="fa fa-file-text fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">{% trans "Documents" %}</h5>
+            <p class="card-text">
+              {{ documents_count }} {% trans "documents" %}
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Users -->
+    <div class="col-md-3 mb-4">
+      <a href="/people/" class="text-decoration-none">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="fa fa-users fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">{% trans "Users" %}</h5>
+            <p class="card-text">{{ users_count }} {% trans "users" %}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>

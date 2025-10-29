@@ -1,15 +1,20 @@
 {% load i18n %}
 {% load base_tags %}
-{% load markdownify %}
+{% load static %}
 
-<div id="gn-hero" class="gn-hero">
-    <div class="jumbotron">
-        <div class="gn-hero-description">            
-            <h1>Tools4MSP Geoplatform</h1>
-            <p>A platform to manage, share, and visualize geospatial data</p>
-        </div>
-        <p class="gn-hero-tools">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Get started</a>
-        </p>
-    </div>
+<div
+  class="jumbotron text-center"
+  style="background-image: url(https://www.msp-brasil.ioc.unesco.org/wp-content/uploads/2022/12/homepage-banner-1-1536x461.jpg); background-color: #e9f5ff; background-size: cover; background-position: center; border-radius: 0;"
+>
+  <div class="container">
+    <h1 class="display-4">Tools4MSP Geoplatform</h1>
+    <p class="lead">
+      A platform to manage, share, and visualize geospatial data
+    </p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="{% url 'geocollections:index' %}" role="button"
+        >Get started</a
+      >
+    </p>
+  </div>
 </div>
