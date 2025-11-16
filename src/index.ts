@@ -5,6 +5,7 @@ import documents from './documents'
 import groups from './groups'
 import keywords from './keywords'
 import rasterLayers from './raster-layers'
+import remoteLayers from './remote-layers'
 import thesauri from './thesauri'
 import users from './users'
 import vectorLayers from './vector-layers'
@@ -32,10 +33,11 @@ const main = async () => {
 
   // await rasterLayers.download()
   // await rasterLayers.upload()
-  await rasterLayers.fixKeywords()
 
   // await vectorLayers.download()
   // await vectorLayers.upload()
+
+  await remoteLayers.fixKeywords()
 }
 
 main().catch((err) => logger.error(err))

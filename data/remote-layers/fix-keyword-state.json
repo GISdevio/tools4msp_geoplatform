@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "lastIssuedAt": "2025-11-16T19:53:30.144Z",
+    "platformDiffMeta": {
+      "newLayersDownloadDate": "2025-11-16T19:47:42.555Z",
+      "oldLayersDownloadDate": "2025-11-16T19:47:42.555Z"
+    }
+  },
+  "spec": [
+    {
+      "keywords": [],
+      "newLayerId": "24",
+      "oldLayerId": "2066",
+      "state": "done"
+    },
+    {
+      "keywords": [],
+      "newLayerId": "19",
+      "oldLayerId": "1871",
+      "state": "done"
+    },
+    {
+      "keywords": [],
+      "newLayerId": "14",
+      "oldLayerId": "1870",
+      "state": "done"
+    },
+    {
+      "keywords": [],
+      "newLayerId": "61",
+      "oldLayerId": "1826",
+      "state": "done"
+    },
+    {
+      "keywords": [
+        {
+          "newId": "1",
+          "oldId": "1"
+        },
+        {
+          "newId": "356",
+          "oldId": "391"
+        },
+        {
+          "newId": "119",
+          "oldId": "44"
+        }
+      ],
+      "newLayerId": "16",
+      "oldLayerId": "1704",
+      "state": "done"
+    },
+    {
+      "keywords": [
+        {
+          "newId": "1",
+          "oldId": "1"
+        },
+        {
+          "newId": "356",
+          "oldId": "391"
+        },
+        {
+          "newId": "119",
+          "oldId": "44"
+        }
+      ],
+      "newLayerId": "17",
+      "oldLayerId": "1705",
+      "state": "done"
+    },
+    {
+      "keywords": [
+        {
+          "newId": "1",
+          "oldId": "1"
+        },
+        {
+          "newId": "356",
+          "oldId": "391"
+        },
+        {
+          "newId": "119",
+          "oldId": "44"
+        }
+      ],
+      "newLayerId": "18",
+      "oldLayerId": "1703",
+      "state": "done"
+    },
+    {
+      "keywords": [
+        {
+          "newId": "1",
+          "oldId": "1"
+        },
+        {
+          "newId": "356",
+          "oldId": "391"
+        },
+        {
+          "newId": "119",
+          "oldId": "44"
+        }
+      ],
+      "newLayerId": "15",
+      "oldLayerId": "1702",
+      "state": "done"
+    },
+    {
+      "keywords": [
+        {
+          "newId": "1",
+          "oldId": "1"
+        },
+        {
+          "newId": "356",
+          "oldId": "391"
+        },
+        {
+          "newId": "119",
+          "oldId": "44"
+        }
+      ],
+      "newLayerId": "20",
+      "oldLayerId": "1695",
+      "state": "done"
+    },
+    {
+      "keywords": [],
+      "newLayerId": "13",
+      "oldLayerId": "1693",
+      "state": "done"
+    },
+    {
+      "keywords": [],
+      "newLayerId": "10",
+      "oldLayerId": "1257",
+      "state": "done"
+    },
+    {
+      "keywords": [],
+      "newLayerId": "11",
+      "oldLayerId": "1258",
+      "state": "done"
+    }
+  ]
+}

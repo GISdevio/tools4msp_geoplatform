@@ -1,0 +1,1288 @@
+{
+  "meta": {
+    "total_count": 32,
+    "downloadedAt": "2025-11-16T19:47:42.555Z"
+  },
+  "objects": [
+    {
+      "pk": "2",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1299,
+        "username": "ssottoriva",
+        "first_name": "",
+        "last_name": "",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "sara.sottoriva@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1299"
+      },
+      "title": "Aree marine protette",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/2",
+      "raw_abstract": "I limiti delle Aree Naturali Marine Protette Statali e delle Aree di Tutela Marina Regionali sono stati elaborati, da parte del Servizio Parchi e Aree Protette, rispettivamente sulla base dei dati del Ministero dell'Ambiente e del Servizio stesso. - Copertura: Zona Costiera del Mar Ligure - Origine: Localizzazione su Carta Tecnica",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-f8d8f6f1-1174-4309-bd5c-f85201488509-thumb-e3d0bf34-cee7-4fe1-a472-429090d05dd7.jpg"
+    },
+    {
+      "pk": "8",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1000,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "tools4msp@ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1000"
+      },
+      "title": "Atlante Habitat Marini 2020",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/8",
+      "raw_abstract": "L'atlante fornisce una base conoscitiva naturalistica dei fondali marino-costieri, dei loro principali popolamenti e delle praterie di Posidonia oceanica. Il rilevamento dei dati cartografati è integrato da materiale bibliografico scientifico di settore. Il riferimento cartografico a terra è la CTR 1:10000. Il livello è un aggiornamento della mappatura allegata alla pubblicazione Atlante degli Habitat Marini della Liguria (Diviacco/Coppo-2009), così come approvato con D.G.R.n.141 del 28/02/2020 - Copertura: Fascia costiera del litorale ligure - Origine:Localizzazione su Carte Tecniche e su ortofoto",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-6e8687d5-31a2-4815-a8ef-32cdf5e04196-thumb-d94295c0-a864-480f-adb2-f280a8600509.jpg"
+    },
+    {
+      "pk": "26",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Depth contours",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/26",
+      "raw_abstract": "Generalised bathymetric contour lines. (50, 100, 200, 500, 1000, 2000, 5000 meter interval)",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-77d0138e-1023-4642-b267-56b8a684ba15-thumb-0419721c-a1e7-43c5-800d-a47bd3c98132.jpg"
+    },
+    {
+      "pk": "13",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "EUNIS habitat maps - full detail",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/13",
+      "raw_abstract": "All EUNIS habitat maps collated by EMODnet Seabed Habitats.  Ownership of the individual maps is retained by the original owners, for more information please see the individual metadata record tied to the map, which can be seen in the query response.  This layer is for general viewing use of all available data. For access to individual maps, please use the emodnet_view_maplibrary and emodnet_open_maplibrary service endpoints for WMS and WFS respectively.  Maps have been standardised to the EMODnet Seabed Habitats Translated Habitat Data Exchange format.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": null
+    },
+    {
+      "pk": "20",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "EUSeaMap (2023) Broad-Scale Predictive Habitat Map - EUNIS 2007 classification",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/20",
+      "raw_abstract": "Output of the 2023 EUSeaMap broad-scale predictive model, produced by EMODnet Seabed Habitats in the EUNIS 2007 classification.  The extent of the mapped area includes the Mediterranean Sea, Black Sea, Baltic Sea, and areas of the North Eastern Atlantic extending from the Canary Islands in the south to the Barents Sea in the north.  The map was produced using a \"top-down\" modelling approach using classified habitat descriptors to determine a final output habitat.  Habitat descriptors differ per region but include: Biological zone Energy class Oxygen regime Salinity regime Seabed substrate Riverine input  Habitat descriptors (excepting Substrate) are calculated using underlying physical data and thresholds derived from statistical analyses or expert judgement on known conditions.  The model is produced using R and Arc Model Builder (10.1).  The model was created using raster input layers with a cell size of 0.00104dd (roughly 100 metres). The model includes the sublittoral zone only; due to the high variability of the littoral zone, a lack of detailed substrate data and the resolution of the model, it is difficult to predict littoral habitats at this scale.  Credit: Licensed under CC-BY 4.0 from the European Marine Observation and Data Network (EMODnet) Seabed Habitats initiative (www.emodnet-seabedhabitats.eu), funded by the European Commission.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": null
+    },
+    {
+      "pk": "15",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "EUSeaMap (2023) Broad-Scale Predictive Habitat Map - EUNIS 2019 classification",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/15",
+      "raw_abstract": "Output of the 2023 EUSeaMap broad-scale predictive model, produced by EMODnet Seabed Habitats in the EUNIS 2019 classification.  The extent of the mapped area includes the Mediterranean Sea, Black Sea, Baltic Sea, and areas of the North Eastern Atlantic extending from the Canary Islands in the south to the Barents Sea in the north.  The map was produced using a \"top-down\" modelling approach using classified habitat descriptors to determine a final output habitat.  Habitat descriptors differ per region but include: Biological zone Energy class Oxygen regime Salinity regime Seabed substrate Riverine input  Habitat descriptors (excepting Substrate) are calculated using underlying physical data and thresholds derived from statistical analyses or expert judgement on known conditions.  The model is produced using R and Arc Model Builder (10.1).  The model was created using raster input layers with a cell size of 0.00104dd (roughly 100 metres). The model includes the sublittoral zone only; due to the high variability of the littoral zone, a lack of detailed substrate data and the resolution of the model, it is difficult to predict littoral habitats at this scale.  Credit: Licensed under CC-BY 4.0 from the European Marine Observation and Data Network (EMODnet) Seabed Habitats initiative (www.emodnet-seabedhabitats.eu), funded by the European Commission.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": null
+    },
+    {
+      "pk": "16",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "EUSeaMap (2023) Broad-Scale Predictive Habitat Map - EUNIS 2019 classification 200m simplification",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/16",
+      "raw_abstract": "Output of the 2023 EUSeaMap broad-scale predictive model, produced by EMODnet Seabed Habitats. Layer has been simplified to 200m.  The extent of the mapped area includes the Mediterranean Sea, Black Sea, Baltic Sea, and areas of the North Eastern Atlantic extending from the Canary Islands in the south to the Barents Sea in the north.  The map was produced using a \"top-down\" modelling approach using classified habitat descriptors to determine a final output habitat.  Habitat descriptors differ per region but include: Biological zone Energy class Oxygen regime Salinity regime Seabed substrate Riverine input  Habitat descriptors (excepting Substrate) are calculated using underlying physical data and thresholds derived from statistical analyses or expert judgement on known conditions.  The model is produced using R and Arc Model Builder (10.1).  The model was created using raster input layers with a cell size of 0.00104dd (roughly 100 metres). The model includes the sublittoral zone only; due to the high variability of the littoral zone, a lack of detailed substrate data and the resolution of the model, it is difficult to predict littoral habitats at this scale.  Credit: Licensed under CC-BY 4.0 from the European Marine Observation and Data Network (EMODnet) Seabed Habitats initiative (www.emodnet-seabedhabitats.eu), funded by the European Commission.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": null
+    },
+    {
+      "pk": "17",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "EUSeaMap (2023) Broad-Scale Predictive Habitat Map - EUNIS 2019 classification 400m simplification",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/17",
+      "raw_abstract": "Output of the 2023 EUSeaMap broad-scale predictive model, produced by EMODnet Seabed Habitats. Layer has been simplified to 400m.  The extent of the mapped area includes the Mediterranean Sea, Black Sea, Baltic Sea, and areas of the North Eastern Atlantic extending from the Canary Islands in the south to the Barents Sea in the north.  The map was produced using a \"top-down\" modelling approach using classified habitat descriptors to determine a final output habitat.  Habitat descriptors differ per region but include: Biological zone Energy class Oxygen regime Salinity regime Seabed substrate Riverine input  Habitat descriptors (excepting Substrate) are calculated using underlying physical data and thresholds derived from statistical analyses or expert judgement on known conditions.  The model is produced using R and Arc Model Builder (10.1).  The model was created using raster input layers with a cell size of 0.00104dd (roughly 100 metres). The model includes the sublittoral zone only; due to the high variability of the littoral zone, a lack of detailed substrate data and the resolution of the model, it is difficult to predict littoral habitats at this scale.  Credit: Licensed under CC-BY 4.0 from the European Marine Observation and Data Network (EMODnet) Seabed Habitats initiative (www.emodnet-seabedhabitats.eu), funded by the European Commission.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": null
+    },
+    {
+      "pk": "18",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "EUSeaMap (2023) Broad-Scale Predictive Habitat Map - EUNIS 2019 classification 800m simplification",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/18",
+      "raw_abstract": "Output of the 2023 EUSeaMap broad-scale predictive model, produced by EMODnet Seabed Habitats simplified to 800m. Layer has been simplified to 800m.  The extent of the mapped area includes the Mediterranean Sea, Black Sea, Baltic Sea, and areas of the North Eastern Atlantic extending from the Canary Islands in the south to the Barents Sea in the north.  The map was produced using a \"top-down\" modelling approach using classified habitat descriptors to determine a final output habitat.  Habitat descriptors differ per region but include: Biological zone Energy class Oxygen regime Salinity regime Seabed substrate Riverine input  Habitat descriptors (excepting Substrate) are calculated using underlying physical data and thresholds derived from statistical analyses or expert judgement on known conditions.  The model is produced using R and Arc Model Builder (10.1).  The model was created using raster input layers with a cell size of 0.00104dd (roughly 100 metres). The model includes the sublittoral zone only; due to the high variability of the littoral zone, a lack of detailed substrate data and the resolution of the model, it is difficult to predict littoral habitats at this scale.  Credit: Licensed under CC-BY 4.0 from the European Marine Observation and Data Network (EMODnet) Seabed Habitats initiative (www.emodnet-seabedhabitats.eu), funded by the European Commission.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-6a4baab4-035a-4c1d-8483-c37fc4bc47a2-thumb-261e8509-7cb7-4f40-90c4-24890b216a7d.jpg"
+    },
+    {
+      "pk": "14",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Essential fish habitat maps - full detail",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/14",
+      "raw_abstract": "All Essential Fish habitat vector maps collated by EMODnet Seabed Habitats.  Ownership of the individual maps is retained by the original owners, for more information please see the individual metadata record tied to the map, which can be seen in the query response.  This layer is for general viewing use of all available data. For access to individual maps, please use the emodnet_view_maplibrary and emodnet_open_maplibrary service endpoints for WMS and WFS respectively.  Maps have been standardised to the EMODnet Seabed Habitats Essential Fish Habitat Data Exchange format, for more information see: https://www.emodnet-seabedhabitats.eu/contribute-data/essential-fish-habitat-map-submission-process/",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-91cb0639-cb24-4c15-a1c2-aeddd156f233-thumb-3dabe488-41e4-468c-829c-2f1a04bb115b.jpg"
+    },
+    {
+      "pk": "19",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Essential fish habitat vector maps",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/19",
+      "raw_abstract": "All Essential Fish habitat vector maps collated by EMODnet Seabed Habitats.  Ownership of the individual maps is retained by the original owners, for more information please see the individual metadata record tied to the map, which can be seen in the query response.  This layer is for general viewing use of all available data. For access to individual maps, please use the emodnet_view_maplibrary and emodnet_open_maplibrary service endpoints for WMS and WFS respectively.  Maps have been standardised to the EMODnet Seabed Habitats Essential Fish Habitat Data Exchange format, for more information see: https://www.emodnet-seabedhabitats.eu/contribute-data/essential-fish-habitat-map-submission-process/",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-92c4de7f-52a4-4cd9-8b6b-b88b11bb27f5-thumb-b3eb536f-6634-498f-9267-d1feb061ea8d.jpg"
+    },
+    {
+      "pk": "10",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Habitat areale Natura 2000 - ed. 2020",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/10",
+      "raw_abstract": "Elaborazione realizzata sulla base di indagini di campo, verifiche ortofotografiche e confronto rispetto ad altri strati cartografici regionali - l'attuale edizione è comprensiva sia degli habitat  terrestri che degli habitat marini armonizzati alla stessa struttura dati. La nuova edizione riporta le geometrie degli habitat  terrestri e marini armonizzati alla stessa struttura dati. Per quanto riguarda gli habitat terrestri la carta è stata prodotta nell'ambito della redazione del Piani di Gestione delle ZSC liguri, Progetto Regionale \"Rete Natura 2000\", (PSR 2007-2013, Misura 3.2.3- \"Tutela e riqualificazione del patrimonio rurale\"), mentre per gli habitat marini si è utilizzato il \"Nuovo Atlante degli Habitat Marini sc. 1:10000 - 2020\"- La copertura per la parte terrestre coincide con le \"Zone Speciali di Conservazione terrestri (Z.S.C.)\", mentre la parte marina è completa su tutta la costa ligure - Anno 2020 - sistema di proiezione EPSG: 32632",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-80ce0647-0f7a-46be-ae7f-64064735e625-thumb-417d9005-ff8c-4628-9ede-1649513673bc.jpg"
+    },
+    {
+      "pk": "11",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Habitat areale codifica Liguria - ed. 2020",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/11",
+      "raw_abstract": "Elaborazione realizzata sulla base di indagini di campo, verifiche ortofotografiche e confronto rispetto ad altri strati cartografici regionali - l'attuale edizione è comprensiva sia degli habitat  terrestri che degli habitat marini armonizzati alla stessa struttura dati. La nuova edizione riporta le geometrie degli habitat  terrestri e marini armonizzati alla stessa struttura dati. Per quanto riguarda gli habitat terrestri la carta è stata prodotta nell'ambito della redazione del Piani di Gestione delle ZSC liguri, Progetto Regionale \"Rete Natura 2000\", (PSR 2007-2013, Misura 3.2.3- \"Tutela e riqualificazione del patrimonio rurale\"), mentre per gli habitat marini si è utilizzato il \"Nuovo Atlante degli Habitat Marini sc. 1:10000 - 2020\"- La copertura per la parte terrestre coincide con le \"Zone Speciali di Conservazione terrestri (Z.S.C.)\", mentre la parte marina è completa su tutta la costa ligure - Anno 2020 - sistema di proiezione EPSG: 32632",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-9ad0885e-b357-4cc2-8f2d-66799c3544a5-thumb-4ccb1947-6479-4842-8484-1fd98bd35031.jpg"
+    },
+    {
+      "pk": "74",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_itmar_art17_habitats_distribution_OK",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/74",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-6e2f5581-8e94-4fb2-8a58-0188dc07556a-thumb-907beaf2-53ec-4589-9c85-12f67675a807.jpg"
+    },
+    {
+      "pk": "73",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_itmar_art17_species_distribution_INVERTEBRATI",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/73",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-fb7d8882-11c9-42e6-a27c-0b7eada9552f-thumb-7a1cbf61-79f2-4d80-a541-c34afd15ccf7.jpg"
+    },
+    {
+      "pk": "72",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_itmar_art17_species_distribution_MAMMIFERI",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/72",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-e4afd930-775e-4301-bee6-21f0f6f553c7-thumb-be80d953-a283-49a6-8423-79abe3a099b7.jpg"
+    },
+    {
+      "pk": "71",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_itmar_art17_species_distribution_RETTILI",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/71",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-3336d019-b4fc-4f44-ad31-d5463b32f135-thumb-007d3117-bf56-45d9-91b6-19d34ce8e172.jpg"
+    },
+    {
+      "pk": "70",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_wfd_swb_line_stato_chimico",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/70",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-2ea2f388-db0e-46d1-8870-5c1b1539e0fa-thumb-da983e5f-7a6a-49bd-8b2d-6d5006b72eba.jpg"
+    },
+    {
+      "pk": "69",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_wfd_swb_line_stato_ecologico",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/69",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-7649d639-0fdc-480e-9892-100e696b7ca4-thumb-0871e398-8b04-4b12-83bc-75e2df902613.jpg"
+    },
+    {
+      "pk": "68",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_wfd_swb_status_chimico",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/68",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-7a95399b-c750-46c3-87d9-7858bf0d7661-thumb-f1585a1e-e839-44e4-a9d5-387a3e768e6b.jpg"
+    },
+    {
+      "pk": "67",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "ISPRA_wfd_swb_status_ecologico",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/67",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-9a23693f-1cb7-495b-b947-934b03f1b67e-thumb-66a57290-c283-4b43-8a37-f0cbfaa30a47.jpg"
+    },
+    {
+      "pk": "66",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "MISE_piattaforme",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/66",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-47f69e51-0e49-4ce8-97cd-8a3ef96a4b4e-thumb-d71dabba-b0cc-45db-8e0b-8101ce80c79b.jpg"
+    },
+    {
+      "pk": "25",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Mean depth (DTM release 2020)",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/25",
+      "raw_abstract": "Mean depth based on source resolution of 1/16 arc minute (~125 meter). Ocean overlay without land cover.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-b90f0cca-b514-47ea-9409-c8853c40c908-thumb-5c4e3581-5383-4469-85c5-f949c7a580a2.jpg"
+    },
+    {
+      "pk": "24",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Mean depth full coverage with land coverage",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/24",
+      "raw_abstract": "Mean depth based on source resolution of 1/16 arc minute (~125 meter).  Full coverage ocean and land DTM in traditional atlas style colours.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-65933d64-10ce-4e73-b234-bdf138bc16d7-thumb-8ebb7c07-8c3a-44f9-85c7-93aa1d586c31.jpg"
+    },
+    {
+      "pk": "23",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Mean depth in multi colour",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/23",
+      "raw_abstract": "Mean depth based on source resolution of 1/16 arc minute (~125 meter). Ocean overlay without land cover in multi colour style.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-2eaa39ed-1ac0-49d2-a6e5-0fff9d606381-thumb-66d65ef5-1918-4405-a3b0-c2f49261a0c7.jpg"
+    },
+    {
+      "pk": "22",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1197,
+        "username": "alessandro2",
+        "first_name": "Alessandro",
+        "last_name": "Mulazzani",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "alessandro.mulazzani@gmail.com",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1197"
+      },
+      "title": "Mean depth rainbow colour ramp",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/22",
+      "raw_abstract": "Mean depth based on source resolution of 1/16 arc minute (~125 meter). Ocean overlay without land cover in rainbow (multi) colour ramp style.",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-aea0da0a-3434-4081-aa49-01d0ffc01b2b-thumb-68693788-74b9-4710-a949-b578f0d54626.jpg"
+    },
+    {
+      "pk": "65",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "aree_giacimenti_unione",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/65",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-b121db90-d038-4f33-b74f-d7e397015a60-thumb-2e7c1c32-dbc5-4026-ac98-616b1a90632e.jpg"
+    },
+    {
+      "pk": "64",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "concessioni_mare_region",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/64",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-232f8ab8-feb0-46b5-99d3-c113bacf93c8-thumb-16fe369c-6096-4915-9a95-ca4d9a4e4a46.jpg"
+    },
+    {
+      "pk": "63",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "impianti_acquacoltura",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/63",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-d4d936cf-7aa3-4242-ad9f-041276111501-thumb-f96433b8-60e7-4a03-a6ce-211afe4b3539.jpg"
+    },
+    {
+      "pk": "4",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1000,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "tools4msp@ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1000"
+      },
+      "title": "pSIC per il Tursiope",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/4",
+      "raw_abstract": "- Intera copertura regionale - sc. 1:5000 - Anno 2023 - Sistema di proiezione - Gauss Boaga - Fuso Ovest",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-e9595bef-7e8a-473f-bbf6-c30566336875-thumb-ef94938c-1698-4830-88c2-11a6695b7442.jpg"
+    },
+    {
+      "pk": "62",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "permessi_mare_region",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/62",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-c8cf433c-0bc9-440d-adad-0acb40fd366a-thumb-78918d36-e132-4670-b7ea-c8fe39cf8e83.jpg"
+    },
+    {
+      "pk": "61",
+      "resource_type": "dataset",
+      "perms": [
+        "change_resourcebase",
+        "download_resourcebase",
+        "publish_resourcebase",
+        "delete_resourcebase",
+        "change_resourcebase_permissions",
+        "view_resourcebase",
+        "change_resourcebase_metadata",
+        "feature_resourcebase",
+        "approve_resourcebase",
+        "publish_resourcebase"
+      ],
+      "owner": {
+        "pk": 1199,
+        "username": "amefad",
+        "first_name": "Amedeo",
+        "last_name": "Fadini",
+        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+        "perms": [
+          "add_resource"
+        ],
+        "is_superuser": true,
+        "is_staff": true,
+        "email": "amedeo.fadini@ve.ismar.cnr.it",
+        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1199"
+      },
+      "title": "variazioni_linea_costa_pcn",
+      "advertised": true,
+      "is_published": true,
+      "is_approved": true,
+      "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/61",
+      "raw_abstract": "",
+      "subtype": "remote",
+      "is_copyable": false,
+      "executions": [],
+      "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-d489cd71-521d-423e-9554-be98f4494f89-thumb-91a717d3-eff1-4958-85d0-31e99c566fa8.jpg"
+    }
+  ]
+}
