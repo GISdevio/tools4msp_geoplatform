@@ -1,118 +1,117 @@
-import { readJson } from '../lib/fs-client'
+/* eslint-disable require-atomic-updates */
+import { dumpJson, readJson } from '../lib/fs-client'
+import v3Client from '../lib/v3-client'
 import v4Client from '../lib/v4-client'
-import type { ThesaurusKeyword } from '../thesauri/types'
 
-type V4Layer = { pk: string; title: string }
+import type { PlatformsDiff } from './compare-platform-states'
 
-type V4LayerDetail = {
-  resource: {
-    alternate: string
-    keywords?: { name: string; slug: string }[]
-    pk: string
+type Report = {
+  meta: {
+    lastIssuedAt: string
+    platformDiffMeta: PlatformsDiff['meta']
   }
+  spec: Array<{
+    keywords: Array<{
+      newId: string
+      oldId: string
+    }>
+    newLayerId: string
+    oldLayerId: string
+    state: 'downloaded-keywords' | 'done' | null
+  }>
 }
 
-type Thesaurus = {
-  keywordsKeysMap: Record<string, string>
-  thesauriKeyMap: Record<string, string>
-  thesaurusKeywords: ThesaurusKeyword[]
-}
+const processLayer = async (oldId: string, newId: string, keywordsMap: Record<string, string>, report: Report['spec'][number]) => {
+  if (report.state !== 'downloaded-keywords') {
+    const oldLayer = await v3Client.getJson<{ tkeywords?: string[] }>(`/api/layers/${oldId}/`)
+    if (!oldLayer.tkeywords?.length) {
+      console.log('No thesaurus keywords found on old layer, skipping...')
+      report.state = 'done'
+      return
+    }
 
-const processLayer = async (layer: V4Layer, thesaurus: Thesaurus) => {
-  const { resource } = await v4Client.getJson<V4LayerDetail>(`/api/v2/resources/${layer.pk}?format=json`)
-  if (!resource.keywords?.length) {
-    console.log('No keywords found, skipping...\n')
-    return
+    for (const keywordUrl of oldLayer.tkeywords) {
+      const keywordId = keywordUrl.match(/\/(\d+)\//)?.[1]
+      if (!keywordId) {
+        console.log(`ERROR: Could not extract keyword id from keyword url ${keywordUrl}, skipping...`)
+        continue
+      }
+
+      const newKeywordId = keywordsMap[keywordId]
+      if (!keywordId) {
+        console.log(`ERROR: Could not find keyword with id ${keywordId} in new platform keywords, skipping...`)
+        continue
+      }
+
+      report.keywords.push({ newId: newKeywordId!, oldId: keywordId })
+    }
+
+    report.state = 'downloaded-keywords'
+  } else {
+    console.log('Keywords already downloaded')
   }
 
-  const keywordsToKeep: V4LayerDetail['resource']['keywords'] = [{
-    name: 'MSP_Italy',
-    slug: 'msp_italy',
-  },
-  // {
-  //   name: 'european-seas',
-  //   slug: 'european-seas',
-  // }, {
-  //   name: 'mspdf-legal-governance-planning-theme-legal-status-maritime-zones',
-  //   slug: 'mspdf-legal-governance-planning-theme-legal-status-maritime-zones',
-  // }
-  ]
-
-  // for (const keyword of resource.keywords) {
-  //   const thesaurusKeyword = thesaurus.thesaurusKeywords.filter(({ altLabel }) => altLabel === keyword.name)
-
-  //   if (thesaurusKeyword.length === 0) {
-  //     console.log(`${keyword.name} -> No correspondence in Thesaurus, keeping...`)
-  //     keywordsToKeep.push(keyword)
-  //     continue
-  //   }
-
-  //   if (thesaurusKeyword.length > 1) {
-  //     console.log(`${keyword.name} -> Multiple correspondences in Thesaurus, skipping layer...`)
-  //     return
-  //   }
-
-  //   console.log(`${keyword.name} -> Found correspondence in Thesaurus`)
-
-  //   const thesaurusKey = thesaurus.thesauriKeyMap[thesaurusKeyword[0]!.thesaurus]
-  //   if (!thesaurusKey) {
-  //     console.log(`Parent Thesaurus new key not found`)
-  //     continue
-  //   }
-
-  //   const keywordKey = thesaurus.keywordsKeysMap[thesaurusKeyword[0]!.id]
-  //   if (!keywordKey) {
-  //     console.log(`Keyword new key not found`)
-  //     continue
-  //   }
-
-  //   console.log(`Keyword is of thesaurus ${thesaurusKey} and has key ${keywordKey}`)
-  // }
-
-  try {
-    // const middlewareToken = await v4Client.getMiddlewareToken(`/datasets/tools4msp_geoplatform_data:${resource.alternate}/metadata`)
-
-    // const urlencoded = new URLSearchParams()
-    // urlencoded.append('csrfmiddlewaretoken', middlewareToken)
-
-    // keywordsToKeep.forEach((keyword) => urlencoded.append('resource-keywords', keyword))
-
-    // await v4Client.sendUrlEncodedForm(`/datasets/tools4msp_geoplatform_data:${resource.alternate}/metadata`, urlencoded)
-
-    // const res = await v4Client.sendJson(
-    //   `/api/v2/resources/${layer.pk}/`,
-    //   { keywords: keywordsToKeep },
-    //   'PATCH'
-    // )
-
-    await v4Client.sendJson(
-      `/api/v2/datasets/${layer.pk}/`,
-      { keywords: ['MSP_Italy'] },
-      'PATCH'
-    )
-
-    console.log('Metadata updated successfully')
-  } catch (error) {
-    console.log('Error updated metadata', error)
+  if (report.keywords.length) {
+    await v4Client.sendJson(`/api/v2/datasets/${newId}/`, { tkeywords: report.keywords.map(({ newId }) => newId) }, 'PATCH')
+    report.state = 'done'
+  } else {
+    console.log('No keywords to add, skipping...')
   }
 }
 
 const main = async () => {
-  const v4Layers = await readJson<V4Layer[]>('vector-layers/new-layers')
+  const platformsDiff = await readJson<PlatformsDiff>('vector-layers/platforms-diff')
+  const keywordsMap = await readJson<Record<string, string>>('thesauri/keywords-keys-map')
 
-  const thesaurusKeywords = await readJson<ThesaurusKeyword[]>('thesauri/keywords')
-  const thesauriKeyMap = await readJson<Record<string, string>>('thesauri/thesauri-key-map')
-  const keywordsKeysMap = await readJson<Record<string, string>>('thesauri/keywords-keys-map')
+  let report: Report = {
+    meta: {
+      lastIssuedAt: new Date().toISOString(),
+      platformDiffMeta: platformsDiff.meta,
+    },
+    spec: [],
+  }
 
-  for (const [idx, layer] of v4Layers.entries()) {
-    if (idx > 0) { continue }
+  try {
+    report = await readJson<Report>('vector-layers/fix-keyword-state')
+  } catch {
+    console.warn('No existing report')
+  }
 
-    console.log(`Processing ${idx + 1}/${v4Layers.length} - [${layer.pk}] ${layer.title}`)
+  for (const [idx, layersMap] of platformsDiff.layersInBothPlatforms.entries()) {
+    // if (idx > 2) { continue }
 
-    await processLayer(layer, { keywordsKeysMap, thesauriKeyMap, thesaurusKeywords })
+    console.log(`Processing ${idx + 1}/${platformsDiff.layersInBothPlatforms.length} - [old layer ${layersMap.oldId}]`)
 
-    console.log('\n')
+    let _report: Report['spec'][number]
+    if (report.spec.find(({ oldLayerId }) => oldLayerId === layersMap.oldId)) {
+      _report = report.spec.find(({ oldLayerId }) => oldLayerId === layersMap.oldId)!
+    } else {
+      _report = { keywords: [], newLayerId: layersMap.newId, oldLayerId: layersMap.oldId, state: null }
+      report.spec.push(_report)
+    }
+
+    if (_report.state === 'done') {
+      console.log('Layer already processed, skipping...')
+      continue
+    }
+
+    try {
+      await processLayer(layersMap.oldId, layersMap.newId, keywordsMap, _report)
+    } catch (error) {
+      console.log('ERROR: error processing layer')
+      console.log(error)
+    }
+
+    console.log('Done')
+
+    await dumpJson('vector-layers/fix-keyword-state', report)
   }
 }
 
-export default main
+export default async () => {
+  try {
+    await main()
+  } catch (error) {
+    console.log(error)
+  }
+}
