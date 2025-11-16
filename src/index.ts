@@ -32,10 +32,10 @@ const main = async () => {
 
   // await rasterLayers.download()
   // await rasterLayers.upload()
+  await rasterLayers.fixKeywords()
 
   // await vectorLayers.download()
   // await vectorLayers.upload()
-  await vectorLayers.fixKeywords()
 }
 
 main().catch((err) => logger.error(err))
