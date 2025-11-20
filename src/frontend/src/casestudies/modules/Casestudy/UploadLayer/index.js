@@ -69,7 +69,6 @@ export default function UploadLayer({ id, btnProps, label }) {
 
     let datasets = [...currentDatasets];
 
-    // Filter by search term if provided
     if (search) {
       datasets = datasets.filter((dataset) => {
         const title = dataset.title?.toLowerCase() || "";
@@ -84,17 +83,16 @@ export default function UploadLayer({ id, btnProps, label }) {
       });
     }
 
-    // Filter datasets by MSPDF keyword if filter is selected
     if (mspdfFilter) {
       const filteredDatasets = datasets.filter((dataset) => {
-        if (dataset.keywords && Array.isArray(dataset.keywords)) {
-          const hasMatch = dataset.keywords.some(
-            (keyword) =>
+        if (dataset.tkeywords && dataset.tkeywords.length > 0) {
+          return dataset.tkeywords.some((keyword) => {
+            return (
               keyword && keyword.name && keyword.name === mspdfFilter.value
-          );
-          return hasMatch;
+            );
+          });
         }
-        return false;
+        return false; 
       });
       datasets = filteredDatasets;
     }
@@ -106,31 +104,35 @@ export default function UploadLayer({ id, btnProps, label }) {
   const loadMspdfValues = async (search) => {
     const currentDatasets = await loadAllDatasets();
 
-    const mspdfValues = new Set();
+    const mspdfValuesMap = new Map();
 
     currentDatasets.forEach((dataset) => {
-      if (dataset.keywords && Array.isArray(dataset.keywords)) {
-        dataset.keywords.forEach((keyword) => {
+      if (dataset.tkeywords && dataset.tkeywords.length > 0) {
+        dataset.tkeywords.forEach((keyword) => {
           if (
             keyword &&
             keyword.name &&
-            keyword.name.toLowerCase().includes("mspdf")
+            (keyword.name.toLowerCase().includes("mspdf") ||
+              keyword.name.toLowerCase().startsWith("msp"))
           ) {
-            mspdfValues.add(keyword.name);
+            if (!mspdfValuesMap.has(keyword.name)) {
+              const mspdfValue = {
+                label: keyword.i18n?.en || keyword.i18n?.it || keyword.name,
+                value: keyword.name,
+              };
+              mspdfValuesMap.set(keyword.name, mspdfValue);
+            }
           }
         });
       }
     });
 
-    // Convert to array of objects with label and value
-    return Array.from(mspdfValues)
-      .filter((value) =>
-        search ? value.toLowerCase().includes(search.toLowerCase()) : true
-      )
-      .map((value) => ({
-        label: value,
-        value: value,
-      }));
+    const mspdfValues = Array.from(mspdfValuesMap.values());
+    return mspdfValues.filter((mspdfValue) =>
+      search
+        ? mspdfValue.label.toLowerCase().includes(search.toLowerCase())
+        : true
+    );
   };
 
   return (
