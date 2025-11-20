@@ -1,0 +1,234 @@
+/* ==============================
+   Topbar e menu principale
+   ============================== */
+
+/* Base topbar */
+.msgapi .gn-main-header,
+#gn-topbar,
+.msgapi .gn-menu.gn-primary {
+    background-color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+    min-height: 72px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Pulsanti menu principali */
+.msgapi .btn-menu,
+#gn-topbar .btn-menu,
+.msgapi .dropdown-toggle.btn.btn-menu {
+    background-color: transparent !important;
+    color: #001f3f !important;       
+    font-weight: 500 !important;     
+    font-size: 18px !important;      
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 40px !important;         
+    padding: 0 14px !important;
+}
+
+/* Hover pulsanti menu */
+.msgapi .btn-menu:hover,
+#gn-topbar .btn-menu:hover,
+.msgapi .dropdown-toggle.btn.btn-menu:hover {
+    background-color: rgba(13, 110, 253, 0.08) !important;
+    color: #001f3f !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+}
+
+/* Dropdown menu */
+.msgapi .dropdown-menu,
+#gn-topbar .dropdown-menu {
+    background-color: #ffffff !important;
+    /*border: 1px solid rgba(0,0,0,0.05) !important;*/
+    border-radius: 6px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
+    padding: 0 !important; /* compatto */
+}
+
+/* Voci dropdown */
+.msgapi .dropdown-menu > li > a,
+#gn-topbar .dropdown-menu > li > a {
+    color: #001f3f !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    padding: 6px 12px !important; /* compatto */
+    display: block !important;
+}
+
+/* Hover voci dropdown */
+.msgapi .dropdown-menu > li > a:hover,
+#gn-topbar .dropdown-menu > li > a:hover {
+    /*border: 1.5px solid rgba(13, 110, 253, 0.6) !important;*/ /* sottile bordino blu */
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+
+/* Linee solo sopra e sotto il dropdown 
+.msgapi .dropdown-menu::before,
+#gn-topbar .dropdown-menu::before,
+.msgapi .dropdown-menu::after,
+#gn-topbar .dropdown-menu::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: rgba(0,0,0,0.1);
+    margin: 0;
+}
+*/
+/* Logo ridimensionato */
+#gn-topbar .gn-menu-content-left li a img {
+    max-height: 48px;
+    height: auto;
+}
+
+/* Piccoli schermi */
+@media (max-width: 768px) {
+    .msgapi .btn-menu,
+    #gn-topbar .btn-menu {
+        font-size: 16px !important;
+        padding: 0 10px !important;
+    }
+
+    #gn-topbar .gn-menu-content-left li a img {
+        max-height: 36px;
+    }
+}
+
+/* Forza topbar chiara su tutte le pagine msgapi */
+.msgapi .gn-main-header,
+.msgapi .gn-main-header .gn-menu.gn-primary {
+    background-color: #ffffff !important;
+}
+
+.msgapi .gn-main-header .btn-menu,
+.msgapi .gn-main-header .dropdown-toggle.btn.btn-menu {
+    background-color: #ffffff !important;
+    color: #001f3f !important;
+    border-color: #ddd !important;
+}
+
+.msgapi #gn-topbar .gn-menu-container .dropdown-menu {
+    background-color: #ffffff !important;
+    border-color: #ddd !important;
+}
+
+.msgapi #gn-topbar .gn-menu-container .dropdown-menu > li > a {
+    color: #001f3f !important;
+}
+
+
+/* Hover e focus con bordino blu sottile */
+.msgapi .btn-menu:hover,
+#gn-topbar .btn-menu:hover,
+.msgapi .dropdown-toggle.btn.btn-menu:hover,
+.msgapi .btn-menu:focus,
+#gn-topbar .btn-menu:focus,
+.msgapi .dropdown-toggle.btn.btn-menu:focus,
+.msgapi .btn-menu:active,
+#gn-topbar .btn-menu:active,
+.msgapi .dropdown-toggle.btn.btn-menu:active {
+    background-color: transparent !important;
+    color: #001f3f !important;
+    border: 1.5px solid rgba(13, 110, 253, 0.6) !important; /* sottile bordino blu */
+    box-shadow: none !important;
+    border-radius: 4px !important;
+    outline: none !important;
+}
+
+/* Stato normale (senza bordo) */
+.msgapi .btn-menu,
+#gn-topbar .btn-menu,
+.msgapi .dropdown-toggle.btn.btn-menu {
+    border: 2px solid transparent !important; /* così non cambia dimensione al hover */
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+
+/* Dropdown con larghezza automatica basata sul contenuto */
+.msgapi .dropdown-menu,
+#gn-topbar .dropdown-menu {
+    width: auto !important;
+    min-width: fit-content !important;
+    max-width: none !important;
+    white-space: nowrap !important; /* evita l'andata a capo */
+}
+
+
+/* ==============================
+   Selettore lingua
+   ============================== */
+
+/* Contenitore del selettore lingua */
+#gn-language-selector-dropdown {
+    margin-left: 8px;
+}
+
+/* Bottone principale del selettore lingua */
+#gn-language-selector {
+    background-color: transparent !important;
+    color: #001f3f !important;
+    border: 1.5px solid transparent !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Hover e focus del bottone selettore lingua */
+#gn-language-selector:hover,
+#gn-language-selector:focus,
+#gn-language-selector:active {
+    border-color: rgba(13, 110, 253, 0.6) !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #001f3f !important;
+}
+
+/* Dropdown menu del selettore lingua */
+#gn-language-selector-dropdown .dropdown-menu {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
+    padding: 0 !important;
+    min-width: fit-content !important;
+}
+
+/* Voci del dropdown selettore lingua */
+#gn-language-selector-dropdown .dropdown-menu li a {
+    color: #001f3f !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    padding: 8px 14px !important;
+    display: block !important;
+    border: 1.5px solid transparent !important;
+}
+
+/* Hover delle voci selettore lingua */
+#gn-language-selector-dropdown .dropdown-menu li a:hover {
+    /*border: 1.5px solid rgba(13, 110, 253, 0.6) !important;*/
+    background-color: rgba(0,0,0,0.05) !important; /* sfondo grigio chiaro */
+    border-radius: 4px !important;
+    color: #001f3f !important;
+}
+
+/* Pulsante utente: bordo  */
+.msgapi .gn-menu .gn-user-menu-dropdown > button,
+.msgapi .gn-menu .gn-user-menu-dropdown > button:hover,
+.msgapi .gn-menu .gn-user-menu-dropdown > button:focus,
+.msgapi .gn-menu .gn-user-menu-dropdown > button:active {
+    background-color: transparent !important;
+    border-radius: 0.25rem !important; /* rettangolare smussato */
+    border: 1px solid #ccc !important; /* bordo sottile uniforme */
+    outline: none !important;           /* elimina outline */
+    box-shadow: none !important;        /* elimina box-shadow */
+    padding: 0 !important;
+}
+
+

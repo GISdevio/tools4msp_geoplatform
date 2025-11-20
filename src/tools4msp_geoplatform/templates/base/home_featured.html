@@ -1,0 +1,59 @@
+{% load i18n %}
+<section class="home-featured">
+  <div class="container text-center">
+    <h2>{% trans "Ultime novità" %}</h2>
+    <p>{% trans "Scopri i dataset, le mappe e le app più recenti sulla piattaforma" %}</p>
+
+    <div class="row g-4 justify-content-center">
+      {% if featured_items and featured_items|length > 0 %}
+        {% for item in featured_items %}
+        <div class="col-md-4">
+          <div class="card h-100 featured-card">
+            <a href="{{ item.url }}" class="featured-link" style="text-decoration:none; color:inherit;">
+
+              {% if item.thumbnail_url %}
+                <img src="{{ item.thumbnail_url }}" alt="{{ item.title }}">
+              {% else %}
+                <div class="no-thumb">
+                  <span>{% trans "Nessuna immagine disponibile" %}</span>
+                </div>
+              {% endif %}
+
+              <div class="card-body">
+                <h5>
+                  <span class="featured-icon" style="margin-right: 0.5rem;">
+                    <i class="fa {{ item.icon }}"></i>
+                  </span>
+                  {{ item.title }}
+                </h5>
+
+                <p>{{ item.description|default:_("Abstract non disponibile")|truncatewords:20 }}</p>
+
+                <span class="btn btn-outline-primary btn-sm">{% trans "Esplora" %}</span>
+              </div>
+
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+
+      {% else %}
+        {% for i in "123"|make_list %}
+        <div class="col-md-4">
+          <div class="card h-100 featured-card">
+            <div class="no-thumb">
+              <span>{% trans "Anteprima dataset/map/app" %}</span>
+            </div>
+            <div class="card-body">
+              <h5>{% trans "Titolo esempio" %}</h5>
+              <p>{% trans "Descrizione esempio per mostrare il layout quando non ci sono dati reali." %}</p>
+              <span class="btn btn-outline-primary btn-sm">{% trans "Esplora" %}</span>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+

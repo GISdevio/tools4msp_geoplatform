@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet" />
     <link href="{% static 'mapstore/dist/themes/geonode.css' %}?{% client_version %}" rel="stylesheet" />
+    <link href="{% static 'css/topbar_override.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/single_resource.css' %}" rel="stylesheet" />
     <title>{{ SITE_NAME }}</title>
     <link rel="shortcut icon" href="{% static 'geonode/img/favicon.ico' %}" />
     {% include './snippets/loader_style.html' %}
@@ -65,6 +67,7 @@
                 {% block scripts %}
                 <script src="{% static "lib/js/jquery.min.js" %}"></script>
                 <script src="{% static "lib/js/bootstrap.min.js" %}"></script>
+                <script src="{% static 'js/edit_override.js' %}"></script>
                 <script type="text/javascript">
                     // enable dropdown functionalities
                     $('.dropdown-toggle').dropdown();

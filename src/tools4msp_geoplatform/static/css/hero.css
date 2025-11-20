@@ -1,0 +1,106 @@
+/* ==============================
+   Hero con mappa statica e testo a sinistra
+   ============================== */
+.hero-fullmap {
+    position: relative;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none !important;
+}
+
+/* overlay trasparente per contrasto migliore */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15); /* leggero effetto di velatura */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* sposta a sinistra */
+    padding-left: 5rem;
+}
+
+/* contenitore testo */
+.hero-text-left {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* titolo principale */
+.hero-text-left h1 {
+    font-family: 'Lato', sans-serif;
+    color: #003366;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* descrizione sotto */
+.hero-text-left p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #003366;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+}
+
+/* bottoni */
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #0056b3 !important;
+    color: #0056b3 !important; /* testo blu */
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none !important;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    background-color: #ffffff !important; /* sfondo bianco */
+    backdrop-filter: blur(2px);
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active {
+    background-color: #0056b3 !important; /* sfondo blu */
+    color: #ffffff !important; /* testo bianco */
+    border-color: #0056b3 !important;
+    text-decoration: none !important;
+}
+
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .hero-fullmap {
+        height: 400px;
+    }
+
+    .hero-overlay {
+        padding-left: 2rem;
+    }
+
+    .hero-text-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text-left p {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        gap: 0.5rem;
+    }
+}
+

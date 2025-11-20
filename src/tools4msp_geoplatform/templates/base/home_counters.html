@@ -1,59 +1,91 @@
 {% load i18n %}
 
-<div class="container py-5">
-  <div class="row text-center">
-    <!-- Datasets -->
-    <div class="col-md-3 mb-4">
-      <a href="/catalogue/#/?f=dataset" class="text-decoration-none">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="fa fa-database fa-3x text-primary mb-3"></i>
-            <h5 class="card-title">{% trans "Datasets" %}</h5>
-            <p class="card-text">{{ layers_count }} {% trans "datasets" %}</p>
-          </div>
-        </div>
-      </a>
+<section class="home-counter-section py-5">
+  <div class="container text-center px-4">
+
+    <!-- Titolo e sottotitolo -->
+    <div class="mb-5">
+      <h2 style="font-size:36px; font-weight:700; color:#001f3f; font-family:'Lato', sans-serif; margin-bottom:1rem;">
+        {% trans "Statistiche" %}
+      </h2>
+      <p style="font-size:18px; font-weight:500; color:#003366; font-family:'Lato', sans-serif; margin-bottom:3rem;">
+        {% trans "Scopri i numeri chiave della piattaforma" %}
+      </p>
     </div>
 
-    <!-- Maps -->
-    <div class="col-md-3 mb-4">
-      <a href="/catalogue/#/?f=map" class="text-decoration-none">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="fa fa-map fa-3x text-primary mb-3"></i>
-            <h5 class="card-title">{% trans "Maps" %}</h5>
-            <p class="card-text">{{ maps_count }} {% trans "map" %}</p>
-          </div>
-        </div>
-      </a>
+    <!-- Icone e numeri -->
+    <div class="row justify-content-center g-5">
+      {% comment %} Assumiamo counters con 4 tuple: icon, value, label, url {% endcomment %}
+      {% for icon, value, label, url in counters %}
+      <div class="col-6 col-md-3 text-center">
+        <a href="{{ url }}">
+          <i class="fa {{ icon }} fa-5x mb-3" style="color:#004080;"></i>
+        </a>
+        <h3 class="counter" data-target="{{ value }}">0</h3>
+        <p>{% trans label %}</p>
+      </div>
+      {% endfor %}
     </div>
 
-    <!-- Documents -->
-    <div class="col-md-3 mb-4">
-      <a href="/catalogue/#/?f=document" class="text-decoration-none">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="fa fa-file-text fa-3x text-primary mb-3"></i>
-            <h5 class="card-title">{% trans "Documents" %}</h5>
-            <p class="card-text">
-              {{ documents_count }} {% trans "documents" %}
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Users -->
-    <div class="col-md-3 mb-4">
-      <a href="/people/" class="text-decoration-none">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="fa fa-users fa-3x text-primary mb-3"></i>
-            <h5 class="card-title">{% trans "Users" %}</h5>
-            <p class="card-text">{{ users_count }} {% trans "users" %}</p>
-          </div>
-        </div>
-      </a>
-    </div>
   </div>
-</div>
+</section>
+
+
+<style>
+.home-counter-section {
+  background: #f8f9fa;
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+}
+
+.counter {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.row .col-6.col-md-3 p {
+  font-family: 'Lato', sans-serif;
+  color: #001f3f;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.row .col-6.col-md-3 h3.counter {
+  font-family: 'Lato', sans-serif;
+  color: #001f3f;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.row .col-6.col-md-3 i {
+  transition: transform 0.6s ease;
+}
+
+.row .col-6.col-md-3:hover i {
+  transform: rotate(20deg);
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+  const targets = Array.from(counters).map(c => +c.getAttribute("data-target"));
+  const duration = 2000;
+  const start = performance.now();
+  const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+  const animate = (time) => {
+    const progress = Math.min((time - start) / duration, 1);
+    counters.forEach((counter, i) => {
+      counter.innerText = Math.floor(easeOutCubic(progress) * targets[i]).toLocaleString();
+    });
+    if (progress < 1) requestAnimationFrame(animate);
+  };
+  requestAnimationFrame(animate);
+});
+
+</script>
+

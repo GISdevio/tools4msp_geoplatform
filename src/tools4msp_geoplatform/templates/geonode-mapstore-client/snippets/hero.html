@@ -1,20 +1,40 @@
+{% load static %}
 {% load i18n %}
 {% load base_tags %}
-{% load static %}
 
-<div
-  class="jumbotron text-center"
-  style="background-image: url(https://www.msp-brasil.ioc.unesco.org/wp-content/uploads/2022/12/homepage-banner-1-1536x461.jpg); background-color: #e9f5ff; background-size: cover; background-position: center; border-radius: 0;"
->
-  <div class="container">
-    <h1 class="display-4">Tools4MSP Geoplatform</h1>
-    <p class="lead">
-      A platform to manage, share, and visualize geospatial data
-    </p>
-    <p>
-      <a class="btn btn-primary btn-lg" href="{% url 'geocollections:index' %}" role="button"
-        >Get started</a
-      >
-    </p>
-  </div>
+{% comment %}
+Hero section: mappa statica (da Django Admin), titolo e descrizione a sinistra, bottoni.
+CSS esterno in static/css/hero.css
+{% endcomment %}
+
+<link rel="stylesheet" href="{% static 'css/hero.css' %}">
+
+{% if custom_theme.jumbotron_bg and custom_theme.jumbotron_bg.url %}
+<div id="gn-hero" class="hero-fullmap" style="background-image: url('{{ custom_theme.jumbotron_bg.url }}');">
+{% else %}
+<div id="gn-hero" class="hero-fullmap" style="background-image: url('{% static "img/map-preview.png" %}');">
+{% endif %}
+    <div class="hero-overlay">
+        <div class="hero-text-left">
+            {% if not custom_theme.jumbotron_welcome_hide %}
+                <h1>
+                    {% with jumbotron_welcome_title=custom_theme.jumbotron_welcome_title|default:"Tools4MSP GeoPlatform"|template_trans %}
+                        {% trans jumbotron_welcome_title %}
+                    {% endwith %}
+                </h1>
+                <p>
+                    {% with jumbotron_welcome_content=custom_theme.jumbotron_welcome_content|default:"La piattaforma geospaziale per l’integrazione, analisi e condivisione dei dati marini e costieri."|template_trans %}
+                        {% trans jumbotron_welcome_content %}
+                    {% endwith %}
+                </p>
+            {% endif %}
+
+            <div class="hero-buttons">
+                <a href="/team/" class="hero-btn">{% trans "Team" %}</a>
+                <a href="/projects/" class="hero-btn">{% trans "Progetti" %}</a>
+                <a href="/publications/" class="hero-btn">{% trans "Pubblicazioni" %}</a>
+            </div>
+        </div>
+    </div>
 </div>
+

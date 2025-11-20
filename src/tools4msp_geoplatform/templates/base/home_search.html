@@ -1,33 +1,40 @@
 {% load i18n %}
-<div class="container py-5">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <h2 class="text-center mb-4">{% trans "Search for data" %}</h2>
-      <form onsubmit="return goToCatalog(event);">
-        <div class="input-group mb-3">
-          <input
-            id="search-input"
-            type="text"
-            class="form-control form-control-lg"
-            placeholder="{% trans 'Search datasets, maps, or documents...' %}"
-            aria-label="{% trans 'Search' %}"
-            aria-describedby="search-icon"
-          />
-          <button class="btn btn-primary" type="submit" id="search-icon">
-            <i class="fa fa-search"></i>
-          </button>
+<div class="container-fluid py-5 home-search">
+    <div class="row justify-content-center text-center">
+        <!-- Titolo -->
+        <div class="col-12">
+            <h1 class="search-title">{% trans "Ricerca Dati" %}</h1>
         </div>
-      </form>
+
+        <!-- Form ricerca -->
+        <div class="col-4 mt-3">
+            <form onsubmit="return goToCatalog(event);">
+                <div class="input-group">
+                    <input 
+                        id="search-input" 
+                        type="text" 
+                        class="form-control search-input" 
+                        placeholder="{% trans 'Cerca' %}" 
+                        aria-label="{% trans 'Cerca' %}" 
+                    />
+                    <div class="input-group-append">
+                        <button type="submit" class="search-btn">
+                            {% trans "Ricerca Avanzata" %}
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
 
 <script>
-  function goToCatalog(event) {
+function goToCatalog(event) {
     event.preventDefault();
     const query = document.getElementById("search-input").value || "";
     const url = "/catalogue/#/?q=" + encodeURIComponent(query);
     window.location.href = url;
     return false;
-  }
+}
 </script>
+

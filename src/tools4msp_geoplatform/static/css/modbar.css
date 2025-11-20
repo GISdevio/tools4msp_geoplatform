@@ -1,0 +1,40 @@
+/* --- Modifica topbar e container per catalogue e mapstore --- */
+
+/* Rende la topbar bianca con testi scuri */
+.gn-theme .gn-top-bar,
+.gn-menu-container {
+  background-color: #fff !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.gn-top-bar a,
+.gn-top-bar button,
+.gn-top-bar span {
+  color: #333 !important;
+}
+
+/* Pulsanti menu */
+.gn-menu-container .btn-primary {
+  background-color: #0066cc !important;
+  border-color: #0066cc !important;
+}
+
+/* --- Modalità EDIT: barra e container --- */
+
+/* Nasconde la topbar in modalità edit */
+.msgapi.ms2.page .gn-top-bar {
+  display: none !important;
+}
+
+/* Personalizza il container nero dei pulsanti edit */
+.msgapi.ms2.page .gn-menu-container {
+  background-color: #f6f6f6 !important;  /* grigio chiaro */
+  border-bottom: 1px solid #ddd;
+}
+
+.msgapi.ms2.page .gn-menu-container .btn-primary {
+  background-color: #0066cc !important;
+  border-color: #0066cc !important;
+  color: #fff !important;
+}
+
