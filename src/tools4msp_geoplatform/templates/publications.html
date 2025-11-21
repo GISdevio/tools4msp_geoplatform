@@ -7,335 +7,403 @@ Publications
 {% load i18n %}
 
 {% block content %}
-<div class="container">
-    <div class="page-header">
-        <h2 class="mb-5 mt-5">{% trans "Publications" %}</h2>
-        <hr style="height:5pt" />
+<div class="container my-5 d-flex align-items-start">
+
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <div class="flex-grow-1 me-4" style="min-width: 300px;">
+        <h2 class="publications-title">{% trans "Publications" %}</h2>
+        <p class="publications-subtitle">{% trans "Scientific publications & Reports" %}</p>
+
+        <div id="publicationsList">
+
+            <!-- 2023 -->
+            <div class="year-group mb-5" data-year="2023">
+              <h3>2023</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Depellegrin, D., Martí Llambrich, C., Roy, S., Anbleyth-Evans, J., Bongiorni, L., & Menegon, S. (2023). Risk-based analysis of recreational ecosystem services supply and demand in beach areas of the Adriatic Sea. Ocean & Coastal Management, 243, 106725. <a href="https://doi.org/10.1016/j.ocecoaman.2023.106725" target="_blank">https://doi.org/10.1016/j.ocecoaman.2023.106725</a></p>
+                </li>
+                <li>
+                  <p>Bosi, S., Ramieri, E., Picciulin, M., Menegon, S., Ghezzo, M., Petrizzo, A., Folegot, T., Madricardo, F., & Barbanti, A. (2023). Is Maritime Spatial Planning a tool to mitigate the impacts of underwater noise? A review of adopted and upcoming maritime spatial plans in Europe. Marine Policy, 155, 105725. <a href="https://doi.org/10.1016/j.marpol.2023.105725" target="_blank">https://doi.org/10.1016/j.marpol.2023.105725</a></p>
+                </li>
+                <li>
+                  <p>Menegon, S., Fadini, A., Perini, L., Sarretta, A., Depellegrin, D., De Maio, E., Farella, G., Landini, M., Fava, C., Ferrarin, C., Ghezzo, M., Manea, E., Porporato, E., Pastres, R., Sedioli, O., Politikos, D.V., Maina, I., Kavadas, S., Matarrese, R., & Barbanti, A. (2023). A geoportal of data and tools for supporting Maritime Spatial Planning in the Adriatic-Ionian Region. Environmental Modelling and Software, 160. <a href="https://doi.org/10.1016/j.envsoft.2022.105585" target="_blank">https://doi.org/10.1016/j.envsoft.2022.105585</a></p>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- 2022 -->
+            <div class="year-group mb-5" data-year="2022">
+              <h3>2022</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Frazão Santos, C., Agardy, T., Allison, E. H., Bennett, N. J., Blythe, J. L., Calado, H., Crowder, L., Day, J., Flannery, W., Gissi, E., Gjerde, K.M., Gobin, J.F., Mulalap, C. Y., Orbach, M., Pecl, G., Scherer, M., Shelton, A. J., Vieira da Silva, C., Villasante, S., Wedding, L. (2022). A sustainable ocean for all. npj Ocean Sustainability, 1(1), 1-2. <a href="https://doi.org/10.1038/s44183-022-00004-4" target="_blank">https://doi.org/10.1038/s44183-022-00004-4</a></p>
+                </li>
+                <li>
+                  <p>Fraschetti, S., Fabbrizzi, E., Tamburello, L., Uyarra, M.C., Micheli, F., Sala, E., Pipitone, C., Badalamenti, F., Bevilacqua, S., Boada, J., Cebrian, E., Ceccherelli, G., Chiantore, M., D’Anna, G., Di Franco, A., Farina, S., Giakoumi, S., Gissi, E., Guala, I., Guidetti, P., Katsanevakis, S., Manea, E., Montefalcone, M., Sini, M., Asnaghi, V., Calò, A., Di Lorenzo, M., Garrabou, J., Musco, L., Oprandi, A., Rilov, G., Borja, A. (2022). An integrated assessment of the Good Environmental Status of Mediterranean Marine Protected Areas. Journal of Environmental Management, 305, 114370. <a href="https://doi.org/10.1016/j.jenvman.2021.114370" target="_blank">https://doi.org/10.1016/j.jenvman.2021.114370</a></p>
+                </li>
+                <li>
+                  <p>Gissi, E., Maes, F., Kyriazi, Z., Ruiz-Frau, A., Frazão Santos, C., Neumann, B., Quintela, A., Alves, F.L., Borg, S., Cheng, W., da Luz Fernandez, M., Hadjimichael, M., Manea, E., Marquez, M., Platjouw, F.M., Portman, M.E., Sousa, L., Bolognini, L., Flannery, W., Grati, F., Pita, C., Văidianu, N., Stojanov, R., van Tatenhove, J., Micheli, F., Hornidge, K., Ungers, S. (2022). Data about marine area-based management tools to assess their contribution to the UN Sustainable Development Goals. Data in Brief, 40, 107704. <a href="https://doi.org/10.1016/j.dib.2021.107704" target="_blank">https://doi.org/10.1016/j.dib.2021.107704</a></p>
+                </li>
+                <li>
+                  <p>Gissi, E., Maes, F., Kyriazi, Z., Ruiz-Frau, A., Frazão Santos, C., Neumann, B., Quintela, A., Alves, F.L., Borg, S., Cheng, W., da Luz Fernandez, M., Hadjimichael, M., Manea, E., Marquez, M., Platjouw, F.M., Portman, M.E., Sousa, L., Bolognini, L., Flannery, W., Grati, F., Pita, C., Văidianu, N., Stojanov, R., van Tatenhove, J., Micheli, F., Hornidge, K., Ungers, S. (2022). Contributions of marine area-based management tools to achieve UN Sustainable Development Goals. Journal of Cleaner Production, 330, 129910. <a href="https://doi.org/10.1016/j.jclepro.2021.129910" target="_blank">https://doi.org/10.1016/j.jclepro.2021.129910</a></p>
+                </li>
+                <li>
+                  <p>Calliari, E., Castellari, S., Davis, M., Linnerooth-Bayer, J., Martin, J., Mysiak, J., Pastor, T., Ramieri, E., Scolobig, A., Sterk, M., et al. (2022). Building climate resilience through nature-based solutions in Europe: A review of enabling knowledge, finance and governance frameworks. Climate Risk Management, 37, 100450. <a href="https://doi.org/10.1016/j.crm.2022.100450" target="_blank">https://doi.org/10.1016/j.crm.2022.100450</a></p>
+                </li>
+                <li>
+                  <p>Stancheva, M., Stanchev, H., Zaucha, J., Ramieri, E., Roberts, T. (2022). Supporting multi-use of the sea with maritime spatial planning. The case of a multi-use opportunity development - Bulgaria, Black Sea. Marine Policy, 136, 104927. <a href="https://doi.org/10.1016/j.marpol.2021.104927" target="_blank">https://doi.org/10.1016/j.marpol.2021.104927</a></p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 2021 -->
+            <div class="year-group mb-5" data-year="2021">
+              <h3>2021</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Giakoumi, S., Pita, C., Coll, M., Fraschetti, S., Gissi, E., Katara, I., Lloret-Lloret, E., Rossi, F., Portman, M., Stelzenmuller, V., Micheli, F. (2021). Persistent gender bias in marine science and conservation calls for action to achieve equity. Biological Conservation, 257, 109134. <a href="https://doi.org/10.1016/j.biocon.2021.109134" target="_blank">https://doi.org/10.1016/j.biocon.2021.109134</a></p>
+                </li>
+                <li>
+                  <p>Galparsoro, I., Pinarbasi, K., Gissi, E., Culhane, F., Gacutan, J., Kotta, J., Cabana, D., Wanke, S., Aps, R., Bazzucchi, D., Cozzolino, G., Custodio, M., Fetissov, M., Inacio, M., Jernberg, S., Piazzi, A., Paudel, K.P., Ziemba, A., Depellegrin, D. (2021). Operationalisation of ecosystem services in support of ecosystem-based marine spatial planning: insights into needs and recommendations. Marine Policy, 131, 104609. <a href="https://doi.org/10.1016/j.marpol.2021.104609" target="_blank">https://doi.org/10.1016/j.marpol.2021.104609</a></p>
+                </li>
+                <li>
+                  <p>Carlucci, R., Manea, E., Ricci, P., Cipriano, G., Fanizza, C., Maglietta, R., Gissi, E. (2021). Managing multiple pressures for cetaceans’ conservation with an Ecosystem Based Marine Spatial Planning approach. Journal of Environmental Management, 287, 112240. <a href="https://doi.org/10.1016/j.jenvman.2021.112240" target="_blank">https://doi.org/10.1016/j.jenvman.2021.112240</a></p>
+                </li>
+                <li>
+                  <p>Gissi, E., Manea, E., Mazaris, A.D., Fraschetti, S., Almpanidou, V., Bevilacqua, S., Coll, M., Guarnieri, G., Lloret, E., Pascual, M., Petza, D., Rilov, G., Schonwald, M., Stelzenmüller, V., Katsanevakis, S. (2021). A review of the combined effects of climate change and other local human stressors on the marine environment. Science of The Total Environment, 755(1), 142564. <a href="https://doi.org/10.1016/j.scitotenv.2020.142564" target="_blank">https://doi.org/10.1016/j.scitotenv.2020.142564</a></p>
+                </li>
+                <li>
+                  <p>Venier, C., Menegon, S., Possingham, H.P., Gissi, E., Zanella, A., Depellegrin, D., Sarretta, A., Barbanti, A., McGowan, J. (2021). Multi-objective zoning for aquaculture and biodiversity. Science of The Total Environment, 785, 146997. <a href="https://doi.org/10.1016/j.scitotenv.2021.146997" target="_blank">https://doi.org/10.1016/j.scitotenv.2021.146997</a></p>
+                </li>
+                <li>
+                  <p>Sakib, N., Gissi, E., Backer, H. (2021). Addressing the pollution control potential of marine spatial planning for shipping activity. Marine Policy, 132, 104648. <a href="https://doi.org/10.1016/j.marpol.2021.104648" target="_blank">https://doi.org/10.1016/j.marpol.2021.104648</a></p>
+                </li>
+                <li>
+                  <p>Przedrzymirska, J., Zaucha, J., Calado, H., Lukic, I., Bocci, M., Ramieri, E., Cana Varona, M., Barbanti, A., Depellegrin, D., de Sousa Vergílio, M., Schultz-Zehden, A., Onyango, V., Papaioannou, E., Buck, B.H., Krause, G., Schupp, M.F., Läkamp, R., Szefler, K., Michałek, M., Maniopoulou, M., Vassilopoulou, V., Kyriazi, Z., Gawlikowska-Hueckel, K., Szultka, S., Orobello, C., Gee, K., Buchanan, B., Lazić, M. (2021). Multi-Use of the Sea as a Sustainable Development Instrument in Five EU Sea Basins. Sustainability, 13(15), 8159. <a href="https://doi.org/10.3390/su13158159" target="_blank">https://doi.org/10.3390/su13158159</a></p>
+                </li>
+                <li>
+                  <p>Cappelletto, M., Santoleri, R., Evangelista, L., Galgani, F., Garcés, E., Giorgetti, A., Fava, F., Herut, B., Hilmi, K., Kholeif, S., Lorito, S., Sammari, C., Campillos Lianos, M., Celussi, M., D’Alelio, D., Francocci, F., Giorgi, G., Melaku Canu, D., Organelli, O., Pomaro, A., Sannino, G., Segou, M., Simoncelli, S., Babeyko, A., Barbanti, A., Chang-Seng, D., Cardin, V., Casotti, R., Drago, A., El Asmi, S., Eparkhina, D., Fichaut, M., Hema, T., Procaccini, G., Santoro, F., Scoullos, M., Solidoro, C., Trincardi, F., Tunesi, L., Umgiesser, G., Zingone, A., Ballerini, T., Chaffai, A., Coppini, G., Gruber, S., Knezevic, J., Leone, G., Penca, J., Pinardi, N., Petihakis, G., Rio, M.H., Said, M., Siokouros, Z., Srour, A., Tintoré, J., Vassilopoulou, V., Zavatarelli, M. (2021). The Mediterranean Sea we want. Ocean and Coastal Research, v69(suppl):e21031. <a href="https://doi.org/10.1590/2675-2824069.21019mc" target="_blank">https://doi.org/10.1590/2675-2824069.21019mc</a></p>
+                </li>
+                <li>
+                  <p>Barbanti, A., Fadini, A., Farella, G., Manea, E., Menegon, S., Perini, L., Sarretta, A. Available at <a href="https://www.vglobale.it/2021/02/28/sos-clima-accelerare-lattenzione-sul-mare/" target="_blank">https://www.vglobale.it/2021/02/28/sos-clima-accelerare-lattenzione-sul-mare/</a> (accessed March 1, 2021)</p>
+                </li>
+                <li>
+                  <p>Farella, G., Tassetti, A. N., Menegon, S., Bocci, M., Ferrà, C., Grati, F., Fadini, A., Giovanardi, O., Fabi, G., Raicevich, S., Barbanti, A. (2021). Ecosystem-Based MSP for Enhanced Fisheries Sustainability: An Example from the Northern Adriatic (Chioggia—Venice and Rovigo, Italy). Sustainability, 13(3), 1211. <a href="https://doi.org/10.3390/su13031211" target="_blank">https://doi.org/10.3390/su13031211</a></p>
+                </li>
+                <li>
+                  <p>Minelli, A., Sarretta, A., Oggioni, A., Bergami, C., Bastianini, M., Bernardi Aubry, F., Camatti, E., Pugnetti, A. (2021). Opening Marine Long-Term Ecological Science: Lesson Learned From the LTER-Italy Site Northern Adriatic Sea. Frontiers in Marine Science, 8, 659522. <a href="https://doi.org/10.3389/fmars.2021.659522" target="_blank">https://doi.org/10.3389/fmars.2021.659522</a></p>
+                </li>
+                <li>
+                  <p>Depellegrin, D., Hansen, H. S., Schrøder, L., Bergström, L., Romagnoni, G., Steenbeek, J., Gonçalves, M., Carneiro, G., Hammar, L., Pålsson, J., Crona, J. S., Hume, D., Kotta, J., Fetissov, M., Miloš, A., Kaitaranta, J., Menegon, S. (2021). Current status, advancements and development needs of geospatial decision support tools for marine spatial planning in European seas. Ocean & Coastal Management, 209, 105644. <a href="https://doi.org/10.1016/j.ocecoaman.2021.105644" target="_blank">https://doi.org/10.1016/j.ocecoaman.2021.105644</a></p>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- 2020 -->
+            <div class="year-group mb-5" data-year="2020">
+              <h3>2020</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Depellegrin, D., Menegon, S., Gusatu, L., Roy, S., Misiunė, I. (2020). Assessing marine ecosystem services richness and exposure to anthropogenic threats in small sea areas: A case study for the Lithuanian sea space. Ecological Indicators, 108, 105730. <a href="http://dx.doi.org/10.1016/j.ecolind.2019.105730" target="_blank">http://dx.doi.org/10.1016/j.ecolind.2019.105730</a></p>
+                </li>
+                <li>
+                  <p>Ferrarin, C., Valentini, A., Vodopivec, M., Klaric, D., Massaro, G., Bajo, M., De Pascalis, F., Fadini, A., Ghezzo, M., Menegon, S., Bressan, L., Unguendoli, S., Fettich, A., Jerman, J., Ličer, M., Fustar, L., Papa, A., Carraro, E. (2020). Integrated sea storm management strategy: the 29 October 2018 event in the Adriatic Sea. Nat. Hazards Earth Syst. Sci., 20, 73–93. <a href="https://doi.org/10.5194/nhess-20-73-2020" target="_blank">https://doi.org/10.5194/nhess-20-73-2020</a></p>
+                </li>
+                <li>
+                  <p>Acri, F., Bastianini, M., Bernardi Aubry, F., Camatti, E., Boldrin, A., Bergami, C., Cassin, D., De Lazzari, A., Finotto, S., Minelli, A., Oggioni, A., Pansera, M., Sarretta, A., Socal, G., Pugnetti, A. (2020). A long-term (1965–2015) ecological marine database from the LTER-Italy Northern Adriatic Sea site: plankton and oceanographic observations. Earth System Science Data, 12(1), 215–230. <a href="https://doi.org/10.5194/essd-12-215-2020" target="_blank">https://doi.org/10.5194/essd-12-215-2020</a></p>
+                </li>
+                <li>
+                  <p>Farella, G., Menegon, S., Fadini, A., Depellegrin, D., Manea, E., Perini, L., Barbanti, A. (2020). Incorporating Ecosystem Services conservation into a scenario-based MSP framework: an Adriatic case study. Ocean and Coastal Management, 193, 105230. <a href="https://doi.org/10.1016/j.ocecoaman.2020.105230" target="_blank">https://doi.org/10.1016/j.ocecoaman.2020.105230</a></p>
+                </li>
+                <li>
+                  <p>Depellegrin, D., Bastianini, M., Fadini, A., Menegon, S. (2020). The effects of COVID-19 induced lockdown measures on maritime settings of a coastal region. Science of The Total Environment, 740, 140123. <a href="https://doi.org/10.1016/j.scitotenv.2020.140123" target="_blank">https://doi.org/10.1016/j.scitotenv.2020.140123</a></p>
+                </li>
+                <li>
+                  <p>van den Burg, S.W.K., Schupp, M.F., Depellegrin, D., Barbanti, A., Kerr, S. (2020). Development of multi-use platforms at sea: Barriers to realising Blue Growth. Ocean Engineering, 217, 107983. <a href="https://doi.org/10.1016/j.oceaneng.2020.107983" target="_blank">https://doi.org/10.1016/j.oceaneng.2020.107983</a></p>
+                </li>
+                <li>
+                  <p>Francocci, F., Trincardi, F., Barbanti, A., Zacchini, M., Sprovieri, M. (2020). Linking Bioeconomy to Redevelopment in Contaminated Sites: Potentials and Enabling Factors. Frontiers in Environmental Science, 8, 144. <a href="https://doi.org/10.3389/fenvs.2020.00144" target="_blank">https://doi.org/10.3389/fenvs.2020.00144</a></p>
+                </li>
+              </ul>
+            </div>
+
+            
+
+            <!-- 2019 -->
+            <div class="year-group mb-5" data-year="2019">
+              <h3>2019</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Bocci, M., Sangiuliano, S.J., Sarretta, A., Ansong, J.O., Buchanan, B., Kafas, A., et al. (2019). Multi-use of the sea: A wide array of opportunities from site-specific cases across Europe. PLoS ONE, 14(4), e0215010. <a href="https://doi.org/10.1371/journal.pone.0215010" target="_blank">https://doi.org/10.1371/journal.pone.0215010</a></p>
+                </li>
+                <li>
+                  <p>Drius, M., Bongiorni, L., Depellegrin, D., Menegon, S., Pugnetti, A., Stifter, S. (2019). Tackling challenges for Mediterranean sustainable coastal tourism: An ecosystem service perspective. Science of The Total Environment, 652, 1302–1317. <a href="https://doi.org/10.1016/j.scitotenv.2018.10.121" target="_blank">https://doi.org/10.1016/j.scitotenv.2018.10.121</a></p>
+                </li>
+                <li>
+                  <p>Depellegrin, D., Venier, C., Kyriazi, Z., Vassilopoulou, V., Castellani, C., Ramieri, E., Bocci, M., Fernandez, J., Barbanti, A. (2018). Exploring Multi-Use potentials in the Euro-Mediterranean sea space. Science of The Total Environment, 653, 612–629. <a href="https://doi.org/10.1016/j.scitotenv.2018.10.308" target="_blank">https://doi.org/10.1016/j.scitotenv.2018.10.308</a></p>
+                </li>
+                <li>
+                  <p>Francocci, F., Paifelman, E., Ciappi, E., Cedre, A., Le Corff, C., Ruel, C., Efstratiou, C., Falini, G., Giannakourou, A., Solano-Lopez, J.M., Strogyloudi, E., Raddadi, N., Pistocchi, R., Valentini, S., Barbanti, A. (2019). MISTRAL Blue Growth Book. State of the art assessment and overview on the most relevant drivers and opportunities in the Mediterranean Blue Economy. MISTRAL project, Deliverable D3.1.2.</p>
+                </li>
+                <li>
+                  <p>PHAROS4MPAs Project (2019). Promuovere la coesistenza fra Aree Marine Protette e Usi del Mare in Italia – Raccomandazioni dal progetto Interreg MED-PHAROS4MPAs. <a href="https://doi.org/10.5281/zenodo.3483186" target="_blank">https://doi.org/10.5281/zenodo.3483186</a></p>
+                </li>
+                <li>
+                  <p>Farella, G., Raicevich, S., Bocci, M., Tassetti, A.N., Menegon, S., Giovanardi, O., Ferrà, C., Grati, F., Fabi, G., Barbanti, A. (2019). Progetto NORA - Sviluppo di strumenti a sostegno della governance partecipata degli usi del mare nel Compartimento marittimo di Chioggia. PdA FLAG GAC Chioggia Delta del Po 2014-2020. Rapporto finale. <a href="http://doi.org/10.5281/zenodo.2643442" target="_blank">http://doi.org/10.5281/zenodo.2643442</a></p>
+                </li>
+                <li>
+                  <p>Manea, E., Di Carlo, D., Depellegrin, D., Agardy, T., Gissi, E. (2019). Multidimensional assessment of supporting ecosystem services for marine spatial planning of the Adriatic Sea. Ecological Indicators, 101, 821–837. <a href="https://doi.org/10.1016/j.ecolind.2018.12.017" target="_blank">https://doi.org/10.1016/j.ecolind.2018.12.017</a></p>
+                </li>
+                <li>
+                  <p>Minelli, A., Sarretta, A., Oggioni, A., Bergami, C., Pugnetti, A. (2019). A Practical Workflow for an Open Scientific Lifecycle Project: EcoNAOS. In: Manghi, P., Candela, L., Silvello, G. (eds.) Digital Libraries: Supporting Open Science. Cham: Springer International Publishing, 209–221. <a href="https://doi.org/10.1007/978-3-030-11226-4_17" target="_blank">https://doi.org/10.1007/978-3-030-11226-4_17</a></p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 2018 -->
+            <div class="year-group mb-5" data-year="2018">
+              <h3>2018</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Menegon, S., Depellegrin, D., Farella, G., Gissi, E., Ghezzo, M., Sarretta, A., Venier, C., Barbanti, A. (2018). A modelling framework for MSP-oriented cumulative effects assessment. Ecological Indicators, 91, 171–181. <a href="https://doi.org/10.5281/zenodo.3260758" target="_blank">https://doi.org/10.5281/zenodo.3260758</a></p>
+                </li>
+                <li>
+                  <p>Gissi, E., McGowan, J., Venier, C., Di Carlo, D., Musco, F., Menegon, S., Mackelworth, P., Agardy, T., Possingham, H. (2018). Addressing transboundary conservation challenges with marine spatial prioritization. Conservation Biology. <a href="http://dx.doi.org/10.1111/cobi.13134" target="_blank">http://dx.doi.org/10.1111/cobi.13134</a></p>
+                </li>
+                <li>
+                  <p>Menegon, S., Depellegrin, D., Farella, G., Sarretta, A., Venier, C., Barbanti, A. (2018). Addressing cumulative effects, maritime conflicts and ecosystem services threats through MSP-oriented geospatial webtools. Ocean & Coastal Management, 163, 417–436. <a href="https://doi.org/10.5281/zenodo.1220260" target="_blank">https://doi.org/10.5281/zenodo.1220260</a></p>
+                </li>
+                <li>
+                  <p>Burkhard, B., Maes, J., Potschin-Young, M., Santos-Martín, F., Geneletti, D., Stoev, P., Depellegrin, D., et al. (2018). Mapping and assessing ecosystem services in the EU - Lessons learned from the ESMERALDA approach of integration. One Ecosystem, 3, e29153. <a href="https://doi.org/10.3897/oneeco.3.e29153" target="_blank">https://doi.org/10.3897/oneeco.3.e29153</a></p>
+                </li>
+                <li>
+                  <p>Barbanti, A., Perini, L. (2018). Fra la terra e il mare: analisi e proposte per la Pianificazione dello Spazio Marittimo in Emilia-Romagna. Zenodo. <a href="https://zenodo.org/record/1184364#.XkvqEihKiUk" target="_blank">https://zenodo.org/record/1184364#.XkvqEihKiUk</a></p>
+                </li>
+                <li>
+                  <p>Menegon, S., Sarretta, A., Depellegrin, D., Farella, G., Venier, C., Barbanti, A. (2018). Tools4MSP: an open source software package to support Maritime Spatial Planning. PeerJ Comput Sci, 4, e165. <a href="https://doi.org/10.7717/peerj-cs.165" target="_blank">https://doi.org/10.7717/peerj-cs.165</a></p>
+                </li>
+                <li>
+                  <p>Cappelletto, M., Fava, F., Mazari Villanova, L., Trincardi, F., Barbanti, A., Bonanno, A., Buongiorno Nardelli, B., Ciappi, Palamà, D., Ribera d’Alcalà, M., Sarretta, A., Sprovieri, M. (2018). Codeveloping Research and Innovation Strategies for blue jobs and growth in the Mediterranean area. The BLUEMED Initiative. Environmental Engineering and Management Journal, 17(10), 2313–2327.</p>
+                </li>
+                <li>
+                  <p>Schultz-Zehden, A., Lukic, I., Ansong, J.O., Altvater, S., Bamlett, R., Barbanti, A., Bocci, M., Buck, B.H., Calado, H., Caña Varona, M., Castellani, C., Depellegrin, D., Schupp, M.F., Giannelos, I., Kafas, A., Kovacheva, A., Krause, G., Kyriazi, Z., Läkamp, R., Lazić, M., Mourmouris, A., Onyango, V., Papaioannou, E., Przedrzymirska, J., Ramieri, E., Sangiuliano, S., van de Velde, I., Vassilopoulou, V., Venier, C., Vergílio, M., Zaucha, J., Buchanan, B. (2018). Ocean Multi-Use Action Plan, MUSES project. <a href="https://doi.org/10.5281/zenodo.1306490" target="_blank">https://doi.org/10.5281/zenodo.1306490</a></p>
+                </li>
+                <li>
+                  <p>Bevilacqua, S., Guarnieri, G., Farella, G., Terlizzi, A., Fraschetti, S. (2018). A regional assessment of cumulative impact mapping on Mediterranean coralligenous outcrops. Scientific Reports, 8, 1757. <a href="https://doi.org/10.1038/s41598-018-20297-1" target="_blank">https://doi.org/10.1038/s41598-018-20297-1</a></p>
+                </li>
+                <li>
+                  <p>Ferrarin, C., Madricardo, F., Rizzetto, F., Kiver, W.M., Bellafiore, D., Umgiesser, G., Kruss, A., Zaggia, L., Foglini, F., Ceregato, A., Sarretta, A., Trincardi, F. (2018). Geomorphology of Scour Holes at Tidal Channel Confluences. Journal of Geophysical Research: Earth Surface, 123, 1386–1406. <a href="https://doi.org/10.1029/2017JF004489" target="_blank">https://doi.org/10.1029/2017JF004489</a></p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 2017 -->
+            <div class="year-group mb-5" data-year="2017">
+              <h3>2017</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Gissi, E., Menegon, S., Sarretta, A., Appiotti, F., Maragno, D., Vianello, A., Depellegrin, D., Venier, C., Barbanti, A. (2017). Addressing uncertainty in modelling cumulative impacts within maritime spatial planning in the Adriatic and Ionian region. PLOS ONE, 12: e0180501. <a href="https://doi.org/10.1371/journal.pone.0180501" target="_blank">https://doi.org/10.1371/journal.pone.0180501</a></p>
+                </li>
+                <li>
+                  <p>Drakou, E.G., Kermagoret, C., Liquete, C., Ruiz-Frau, A., Burkhard, K., Lillebø, A.I., Depellegrin, D., et al. (2017). Marine and coastal ecosystem services on the science–policy–practice nexus: challenges and opportunities from 11 European case studies. International Journal of Biodiversity Science, Ecosystem Services & Management, 13: 51–67. <a href="https://doi.org/10.1080/21513732.2017.1417330" target="_blank">https://doi.org/10.1080/21513732.2017.1417330</a></p>
+                </li>
+                <li>
+                  <p>Depellegrin, D., Menegon, S., Farella, G., Ghezzo, M., Gissi, E., Sarretta, A., Venier, C., Barbanti, A., et al. (2017). Multi-objective spatial tools to inform maritime spatial planning in the Adriatic Sea. Science of The Total Environment, 609: 1627–1639. <a href="https://doi.org/10.5281/zenodo.1115314" target="_blank">https://doi.org/10.5281/zenodo.1115314</a></p>
+                </li>
+                <li>
+                  <p>Barbanti, A., Gissi, E., Musco, F., Sarretta, A., Appiotti, F., Bianchi, F., Venier, C., Maragno, D., Innocenti, A., Morelli, M., Menegon, S., Cocossis, C., Campostrini, P. (2017). Towards MSP implementation in the Adriatic and Ionian Region. In: D. Kitsiou and M. Karydis Eds., Marine Spatial Planning: Methodologies, Environmental Issues and Current Trends, NOVA Books. ISBN: 978-1-53612-170-4.</p>
+                </li>
+                <li>
+                  <p>Madricardo, F., Foglini, F., Kruss, A., Ferrarin, C., Pizzeghello, N.M., Murri, C., Rossi, M., Bajo, M., Bellafiore, D., Campiani, E., Fogarin, S., Grande, V., Janowski, L., Keppel, E., Leidi, E., Lorenzetti, G., Maicu, F., Maselli, V., Mercorella, A., Montereale Gavazzi, G., Minuzzo, T., Pellegrini, C., Petrizzo, A., Prampolini, M., Remia, A., Rizzetto, F., Rovere, M., Sarretta, A., Sigovini, M., Sinapi, L., Umgiesser, G., Trincardi, F. (2017). High resolution multibeam and hydrodynamic datasets of tidal channels and inlets of the Venice Lagoon. Scientific Data, 4: 170121. <a href="https://doi.org/10.1038/sdata.2017.121" target="_blank">https://doi.org/10.1038/sdata.2017.121</a></p>
+                </li>
+              </ul>
+            </div>
+
+
+
+            <!-- 2016 -->
+            <div class="year-group mb-5" data-year="2016">
+              <h3>2016</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Pavesi, F., Basoni, A., Fugazza, C., Menegon, S., Oggioni, A., Pepe, M., et al. (2016). EDI – A Template-Driven Metadata Editor for Research Data. Journal of Open Research Software, 4. <a href="http://doi.org/10.5334/jors.106" target="_blank">http://doi.org/10.5334/jors.106</a></p>
+                </li>
+                <li>
+                  <p>Menegon, S., Gissi, E., Sarretta, A. (2016). Data for the paper "Addressing Uncertainties in Modelling Cumulative Impacts within Maritime Spatial Planning in the Adriatic and Ionian Region" [Data set]. Zenodo. <a href="http://doi.org/10.5281/zenodo.58222" target="_blank">http://doi.org/10.5281/zenodo.58222</a></p>
+                </li>
+                <li>
+                  <p>Menegon, S., Sarretta, A., Barbanti, A., Gissi, E., Venier, C. (2016). Open source tools to support Integrated Coastal Management and Maritime Spatial Planning. PeerJ Preprints, 4:e2245v2. <a href="https://doi.org/10.7287/peerj.preprints.2245v2" target="_blank">https://doi.org/10.7287/peerj.preprints.2245v2</a></p>
+                </li>
+                <li>
+                  <p>Trincardi, F., Barbanti, A., Bastianini, M., Benetazzo, A., Cavaleri, L., Chiggiato, J., Papa, A., Pomaro, A., Sclavo, M., Tosi, L., Umgiesser, G. (2016). The 1966 Flooding of Venice: What Time Taught Us for the Future. Oceanography, 29(4). <a href="https://doi.org/10.5670/oceanog.2016.87" target="_blank">https://doi.org/10.5670/oceanog.2016.87</a></p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 2015 -->
+            <div class="year-group mb-5" data-year="2015">
+              <h3>2015</h3>
+              <ul class="list-unstyled">
+                <li>
+                  <p>Barbanti, A., Campostrini, P., Musco, F., Sarretta, A., Gissi, E. (2015). Developing a Maritime Spatial Plan for the Adriatic Ionian Region. CNR-ISMAR, Venice, IT. ISBN 978-88-941335-4-7. Zenodo. <a href="http://doi.org/10.5281/zenodo.48231" target="_blank">http://doi.org/10.5281/zenodo.48231</a></p>
+                </li>
+                <li>
+                  <p>Barbanti, A., Campostrini, P., Musco, F., Sarretta, A., Gissi, E. (2015). ADRIPLAN Conclusions and Recommendations: A short manual for MSP implementation in the Adriatic-Ionian Region. CNR-ISMAR, Venice, IT. ISBN 978-88-941335-3-0. Zenodo. <a href="http://doi.org/10.5281/zenodo.49190" target="_blank">http://doi.org/10.5281/zenodo.49190</a></p>
+                </li>
+                <li>
+                  <p>Zucchetta, M., Venier, C., Taji, M.A., Mangin, A., Pastres, R. (2015). Modelling the spatial distribution of the seagrass Posidonia oceanica (L.) along the North African coast: implications for the assessment of Good Environmental Status. Ecological Indicators, 11/2015. <a href="https://doi.org/10.1016/j.ecolind.2015.10.059" target="_blank">https://doi.org/10.1016/j.ecolind.2015.10.059</a></p>
+                </li>
+              </ul>
+            </div>
+
+
+
+        </div>
     </div>
-    <p class="lead">{% trans "Scientific publications & Reports" %}</p>
 
-    <h2 class="code-line" data-line-start=0 data-line-end=1><a id="2021_0"></a>2023</h2>
-    <ul>
-        <li>
-            <p style="text-align:justify">Depellegrin, D., Martí Llambrich, C., Roy, S., Anbleyth-Evans, J., Bongiorni, L., & Menegon, S. (2023). Risk-based analysis of recreational ecosystem services supply and demand in beach areas of the Adriatic Sea. Ocean & Coastal Management, 243, 106725.
-                <a href="https://doi.org/10.1016/j.ocecoaman.2023.106725">https://doi.org/10.1016/j.ocecoaman.2023.106725</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Bosi, S., Ramieri, E., Picciulin, M., Menegon, S., Ghezzo, M., Petrizzo, A., Folegot, T., Madricardo, F., & Barbanti, A. (2023). Is Maritime Spatial Planning a tool to mitigate the impacts of underwater noise? A review of adopted and upcoming maritime spatial plans in Europe. Marine Policy, 155, 105725.
-                <a href="https://doi.org/10.1016/j.marpol.2023.105725">https://doi.org/10.1016/j.marpol.2023.105725</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Menegon S., A. Fadini, L. Perini, A. Sarretta, D. Depellegrin, E. De Maio, G. Farella, M. Landini, C. Fava, C. Ferrarin, M. Ghezzo, E. Manea, E. Porporato, R. Pastres, O. Sedioli, D.V. Politikos, I. Maina, S. Kavadas, R. Matarrese, A. Barbanti. 2023. A geoportal of data and tools for supporting Maritime Spatial Planning in the Adriatic-Ionian Region. Environmental Modelling and Software 160 (2023), <a href="https://doi.org/10.1016/j.envsoft.2022.105585">https://doi.org/10.1016/j.envsoft.2022.105585</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-    </ul>
+    <!-- FILTRO A DESTRA -->
+      <div style="min-width:200px;">
+          <div class="card shadow-sm filter-card">
+              <label for="yearSelect" class="form-label fw-semibold filter-label">{% trans "Filter by year" %}</label>
+              <select id="yearSelect" class="form-select filter-select" onchange="filterPublications()">
+                  <option value="all">{% trans "All years" %}</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+              </select>
+          </div>
+      </div>
 
-    <h2 class="code-line" data-line-start=0 data-line-end=1><a id="2021_0"></a>2022</h2>
-
-    <ul>
-        <li>
-            <p style="text-align:justify">
-                Frazão Santos, C., Agardy, T., Allison, E. H., Bennett, N. J., Blythe, J. L., Calado, H., Crowder, L., Day, J., Flannery, W., Gissi, E., Gjerde., K.M., Gobin, J.F., Mulalap, C. Y., Orbach, M., Pecl, G., Scherer, M., Shelton, A. J., Vieira da Silva, C., Villasante, S., Wedding, L. (2022). A sustainable ocean for all. npj Ocean Sustainability, 1(1), 1-2
-                <a href="https://doi.org/10.1038/s44183-022-00004-4"> https://doi.org/10.1038/s44183-022-00004-4 </a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">
-                Fraschetti S, Fabbrizzi E, Tamburello L, Uyarra MC, Micheli F, Sala E, Pipitone C, Badalamenti F, Bevilacqua S, Boada J, Cebrian E, Ceccherelli G, Chiantore M, D’Anna G, Di Franco A, Farina S, Giakoumi S, Gissi E, Guala I, Guidetti P, Katsanevakis S, Manea E, Montefalcone M, Sini M, Asnaghi V, Calò A, Di Lorenzo M, Garrabou J, Musco L, Oprandi A, Rilov G, Borja A, 2022. An integrated assessment of the Good Environmental Status of Mediterranean Marine Protected Areas. Journal of environmental management 305:114370
-                <a href="https://doi.org/10.1016/j.jenvman.2021.114370"> https://doi.org/10.1016/j.jenvman.2021.114370</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">
-                Gissi E, Maes F, Kyriazi Z, Ruiz-Frau A, Frazão Santos C, Neumann B, Quintela A, Alves FL, Borg S, Cheng W, da Luz Fernandez M, Hadjimichael M, Manea E, Marquez M, Platjouw FM, Portman ME, Sousa L, Bolognini L, Flannery W, Grati F, Pita C, Văidianu N, Stojanov R, van Tatenhove J, Micheli F, Hornidge K, Ungers S, 2022. Data about marine area-based management tools to assess their contribution to the UN sustainable development goals. Data in brief 40:10770, doi <a href="https://doi.org/10.1016/j.dib.2021.107704">https://doi.org/10.1016/j.dib.2021.107704 </a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Gissi E, Maes F, Kyriazi Z, Ruiz-Frau A, Frazão Santos C, Neumann B, Quintela A, Alves FL, Borg S, Cheng W, da Luz Fernandez M, Hadjimichael M, Manea E, Marquez M, Platjouw FM, Portman ME, Sousa L, Bolognini L, Flannery W, Grati F, Pita C, Văidianu N, Stojanov R, van Tatenhove J, Micheli F, Hornidge K, Ungers S, 2022. Contributions of marine area-based management tools to achieve UN Sustainable Development Goals, Journal of Cleaner Production 330:129910, <a href="https://doi.org/10.1016/j.jclepro.2021.129910">https://doi.org/10.1016/j.jclepro.2021.129910 </a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Calliari, E.; Castellari, S.; Davis, M.; Linnerooth-Bayer, J.; Martin, J.; Mysiak, J.; Pastor, T.; Ramieri, E.; Scolobig, A.; Sterk, M.; et al. Building climate resilience through nature-based solutions in Europe: A review of enabling knowledge, finance and governance frameworks. Clim. Risk Manag. 2022, 37, 100450. <a href="https://www.sciencedirect.com/science/article/pii/S2212096322000572?via%3Dihub">https://doi.org/10.1016/j.crm.2022.100450 </a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Stancheva, M., Stanchev, H., Zaucha, J., Ramieri, E., Roberts, T.: Supporting multi-use of the sea with maritime spatial planning. The case of a multi-use opportunity development - Bulgaria, Black Sea. Marine Policy 136, 104927 (2022).
-                <a href="https://www.sciencedirect.com/science/article/pii/S0308597X21005388?via%3Dihub">https://doi.org/10.1016/j.marpol.2021.104927 </a>
-            </p>
-        </li>
-
-
-    </ul>
-
-    <h2 class="code-line" data-line-start=0 data-line-end=1><a id="2021_0"></a>2021</h2>
-    <ul>
-        <li>
-            <p style="text-align:justify">
-                Giakoumi S, Pita C, Coll M, Fraschetti S, Gissi E, Katara I, Lloret-Lloret E, Rossi F, Portman M, Stelzenmuller V, Micheli F. 2021. Persistent gender bias in marine science and conservation calls for action to achieve equity. Biological Conservation 257:109134,
-                <a href="https://doi.org/10.1016/j.biocon.2021.109134"> https://doi.org/10.1016/j.biocon.2021.109134</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">
-                Galparsoro I, Pinarbasi K, Gissi E, Culhane F, Gacutan J, Kotta J, Cabana D, Wanke S, Aps R, Bazzucchi D, Cozzolino G, Custodio M, Fetissov M, Inacio M, Jernberg S, Piazzi A, Paudel KP, Ziemba A, Depellegrin D, 2021. Operationalisation of ecosystem services in support of ecosystem-based marine spatial planning: insights into needs and recommendations. Marine Policy 131:104609,
-                <a href="https://doi.org/10.1016/j.marpol.2021.104609">https://doi.org/10.1016/j.marpol.2021.104609</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">
-                Carlucci R, Manea E, Ricci P, Cipriano G, Fanizza C, Maglietta R, Gissi E, 2021. Managing multiple pressures for cetaceans’ conservation with an Ecosystem Based Marine Spatial Planning approach, Journal of environmental management 287:112240, doi:
-                <a href="10.1016/j.jenvman.2021.112240"> 10.1016/j.jenvman.2021.112240</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <p style="text-align:justify">
-            Gissi E, Manea E, Mazaris AD, Fraschetti S, Almpanidou V, Bevilacqua S, Coll M, Guarnieri G, Lloret E, Pascual M, Petza D, Rilov G, Schonwald M, Stelzenmüller V, Katsanevakis S, 2021. A review of the combined effects of climate change and other local human stressors on the marine environment, Science of the total environment 755(1):142564, doi:
-            <a href="0.1016/j.scitotenv.2020.142564"> 0.1016/j.scitotenv.2020.142564</a>
-        </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">
-                Venier C, Menegon S, Possingham HP, Gissi E, Zanella A, Depellegrin D, Sarretta A, Barbanti A, McGowan J. 2021. Multi-objective zoning for aquaculture and biodiversity. Science of The Total Environment
-                <a href="785:146997"> 785:146997</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">
-                Sakib N, Gissi, E, Backer H, 2021. Addressing the pollution control potential of marine spatial planning for shipping activity. Marine Policy 132:104648,
-                <a href=" https://doi.org/10.1016/j.marpol.2021.104648"> https://doi.org/10.1016/j.marpol.2021.104648</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">
-                Przedrzymirska J., Zaucha J., Calado H., Lukic I., Bocci M., Ramieri E., Cana Varona M., Barbanti A., Depellegrin D., de Sousa Vergílio M., Schultz-Zehden A.,Onyango V., Papaioannou E., Buck B.H., Krause G., Schupp M.F., Läkamp R., Szefler K., Michałek M., Maniopoulou M., Vassilopoulou V., Kyriazi Z., Gawlikowska-Hueckel K., Szultka S., Orobello C., Gee K., Buchanan B., Lazić M., 2021. Multi-Use of the Sea as a Sustainable Development Instrument in Five EU Sea Basins. Sustainability 2021, 13(15), 8159;
-                <a href="https://doi.org/10.3390/su13158159"> https://doi.org/10.3390/su13158159</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Cappelletto M., Santoleri R., Evangelista L., Galgani F., Garcés E., Giorgetti A. Fava F., Herut B., Hilmi K., Kholeif S., Lorito S., Sammari C., Campillos Lianos M., Celussi M., D’Alelio D., Francocci F., Giorgi G., Melaku Canu D., Organelli O., Pomaro A., Sannino G., Segou M., Simoncelli S., Babeyko A., Barbanti A., Chang-Seng D., Cardin V., Casotti R., Drago A., El Asmi S., Eparkhina D., Fichaut M., Hema T., Procaccini G., Santoro F., Scoullos M., Solidoro C., Trincardi F., Tunesi L., Umgiesser G., Zingone A., Ballerini T., Chaffai A., Coppini G., Gruber S., Knezevic J., Leone G., Penca J., Pinardi N., Petihakis G., Rio MH., Said M., Siokouros Z., Srour A., Snoussi M., Tintoré J., Vassilopoulou V., Zavatarelli M., 2021. The Mediterranean Sea we want. Ocean and Coastal Research, v69(suppl):e21031. <a href="https://www.scielo.br/j/ocr/a/zWVNJ8YdNrbsSb87yFZKGVC/?lang=en"> https://doi.org/10.1590/2675-2824069.21019mc</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Barbanti Andrea, Fadini Amedeo, Farella Giulio, Manea Elisabetta, Menegon Stefano, Perini Luisa, Sarretta Alessandro Available at <a href="https://www.vglobale.it/2021/02/28/sos-clima-accelerare-lattenzione-sul-mare/">https://www.vglobale.it/2021/02/28/sos-clima-accelerare-lattenzione-sul-mare/</a>(accessed March 1, 2021).</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Farella, G., Tassetti, A. N., Menegon, S., Bocci, M., Ferrà, C., Grati, F., Fadini, A., Giovanardi, O., Fabi, G., Raicevich, S., & Barbanti, A. (2021). Ecosystem-Based MSP for Enhanced Fisheries Sustainability: An Example from the Northern Adriatic (Chioggia—Venice and Rovigo, Italy). Sustainability, 13(3), 1211. Doi: <a href="https://doi.org/10.3390/su13031211">10.3390/su13031211</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Minelli, A., Sarretta, A., Oggioni, A., Bergami, C., Bastianini, M., Bernardi Aubry, F., Camatti, E., & Pugnetti, A. (2021). Opening Marine Long-Term Ecological Science: Lesson Learned From the LTER-Italy Site Northern Adriatic Sea. Frontiers in Marine Science, 8, 659522. Doi: <a href="https://doi.org/10.3389/fmars.2021.659522">10.3389/fmars.2021.659522</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Depellegrin, D., Hansen, H. S., Schrøder, L., Bergström, L., Romagnoni, G., Steenbeek, J., Gonçalves, M., Carneiro, G., Hammar, L., Pålsson, J., Crona, J. S., Hume, D., Kotta, J., Fetissov, M., Miloš, A., Kaitaranta, J., & Menegon, S. (2021). Current status, advancements and development needs of geospatial decision support tools for marine spatial planning in European seas. Ocean & Coastal Management, 209, 105644. Doi: <a href="https://doi.org/10.1016/j.ocecoaman.2021.105644">10.1016/j.ocecoaman.2021.105644</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Venier, C., Menegon, S., Possingham, H. P., Gissi, E., Zanella, A., Depellegrin, D., Sarretta, A., Barbanti, A., & McGowan, J. (2021). Multi-objective zoning for aquaculture and biodiversity. Science of The Total Environment, 785, 146997. Doi: <a href="https://doi.org/10.1016/j.scitotenv.2021.146997">10.1016/j.scitotenv.2021.146997</a></p>
-        </li>
-    </ul>
-    <hr style="height:5pt; visibility:hidden;" />
-
-    <h2 class="code-line" data-line-start=0 data-line-end=1><a id="2020_0"></a>2020</h2>
-    <ul>
-        <li>
-            <p style="text-align:justify">Depellegrin D., Menegon S. , Gusatu L.,Roy S. , Misiunė I.,2020. Assessing marine ecosystem services richness and exposure to anthropogenic threats in small sea areas: A case study for the Lithuanian sea space. Ecological Indicators 108 (105730) <a href="http://dx.doi.org/10.1016/j.ecolind.2019.105730">http://dx.doi.org/10.1016/j.ecolind.2019.105730</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Ferrarin C.,Valentini A.,Vodopivec M.,Klaric D.,Massaro G.,Bajo M., De Pascalis F.,Fadini A., Ghezzo M.,Menegon S., Bressan L.,Unguendoli S., Fettich A., Jerman J., Ličer M.,Fustar L., Papa A., and Carraro E. 2020. Integrated sea storm management strategy: the 29 October 2018 event in the Adriatic Sea. Nat. Hazards Earth Syst. Sci., 20, 73–93, 2020. <a href="https://doi.org/10.5194/nhess-20-73-2020">https://doi.org/10.5194/nhess-20-73-2020</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Acri, F., Bastianini, M., Bernardi Aubry, F., Camatti, E., Boldrin, A., Bergami, C., Cassin, D., De Lazzari, A., Finotto, S., Minelli, A., Oggioni, A., Pansera, M., Sarretta, A., Socal, G., & Pugnetti, A. (2020). A long-term (1965–2015) ecological marine database from the LTER-Italy Northern Adriatic Sea site: plankton and oceanographic observations. Earth System Science Data, 12(1), 215–230. Doi: <a href="https://doi.org/10.5194/essd-12-215-2020">10.5194/essd-12-215-2020</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Farella G., Menegon S., Fadini A., Depellegrin D., Manea E., Perini L., Barbanti A (2020). Incorporating Ecosystem Services conservation into a scenario-based MSP framework: an Adriatic case study. Ocean and Coastal Management 193:105230. Doi: <a href="https://doi.org/10.1016/j.ocecoaman.2020.105230">10.1016/j.ocecoaman.2020.105230</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Depellegrin, D., Bastianini, M., Fadini, A., & Menegon, S. (2020). The effects of COVID-19 induced lockdown measures on maritime settings of a coastal region. Science of The Total Environment, 740, 140123. Doi:<a href=" https://doi.org/10.1016/j.scitotenv.2020.140123"> 10.1016/j.scitotenv.2020.140123</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">van den Burg, S. W. K., Schupp, M. F., Depellegrin, D., Barbanti, A., & Kerr, S. (2020).
-                Development of multi-use platforms at sea: Barriers to realising Blue Growth.
-                Ocean Engineering, 217, 107983.
-                <a href="https://doi.org/10.1016/j.oceaneng.2020.107983">10.1016/j.oceaneng.2020.107983</a>
-            </p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Francocci, Fedra, Fabio Trincardi, Andrea Barbanti, Massimo Zacchini, and Mario Sprovieri. (2020).
-                Linking Bioeconomy to Redevelopment in Contaminated Sites: Potentials and Enabling Factors.
-                Frontiers in Environmental Science 8: 144.
-
-                <a href="https://doi.org/10.3389/fenvs.2020.00144">10.3389/fenvs.2020.00144</a>
-            </p>
-        </li>
-    </ul>
-    <hr style="height:5pt; visibility:hidden;" />
-
-    <h2 class="code-line" data-line-start=57 data-line-end=58><a id="2019_57"></a>2019</h2>
-    <ul>
-        <li>
-            <p style="text-align:justify">Bocci M., Sangiuliano S.J., Sarretta A., Ansong J.O., Buchanan B., Kafas A., et al., 2019. Multi-use of the sea: A wide array of opportunities from site-specific cases across Europe. PLoS ONE 14(4): e0215010. <a href="https://doi.org/10.1371/journal.pone.0215010">https://doi.org/10.1371/journal.pone.0215010</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Drius M., Bongiorni L., Depellegrin D., Menegon S., Pugnetti A., Stifter S., 2019. Tackling challenges for Mediterranean sustainable coastal tourism: An ecosystem service perspective. Science of the Total Environment 652 - 1302–1317. <a href="https://doi.org/10.1016/j.scitotenv.2018.10.121">https://doi.org/10.1016/j.scitotenv.2018.10.121</a>.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Depellegrin D., Venier C., Kyriazi Z., Vassilopoulou V., Castellani C., Ramieri E., Bocci M., Fernandez J., Barbanti A., 2018. Exploring Multi-Use potentials in the Euro-Mediterranean sea space. Science of the Total Environment 653 (2019) 612–629. <a href="https://doi.org/10.1016/j.scitotenv.2018.10.308">https://doi.org/10.1016/j.scitotenv.2018.10.308</a>.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Francocci F., Paifelman E., Ciappi E., Cedre A., Le Corff C., Ruel C., Efstratiou C., Falini G., Giannakourou A., Solano-Lopez J.M., Strogyloudi E., Raddadi N., Pistocchi R., Valentini S. and Barbanti A., 2019. MISTRAL Blue Growth Book. State of the art assessment and overview on the most relevant drivers and opportunities in the Mediterranean Blue Economy. MISTRAL project, Deliverable D3.1.2; <a href="https://interreg-med.eu/projects-results/our-project-results/detail/?tx_elibrary_pi1%5Blivrable%5D=7908&tx_elibrary_pi1%5Baction%5D=show&tx_elibrary_pi1%5Bcontroller%5D=Frontend%5CLivrable&cHash=60ce694569c0df7cd6a8be74846ef2ce">link</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">PHAROS4MPAs Project., 2019. Promuovere la coesistenza fra Aree Marine Protette e Usi del Mare in Italia – Raccomandazioni dal progetto Interreg MED-PHAROS4MPAs. Doi: 10.5281/zenodo.3483186.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Farella G., Raicevich S., Bocci M., Tassetti A.N., Menegon S., Giovanardi O., Ferrà C., Grati F., Fabi G., Barbanti A., 2019. Progetto NORA - Sviluppo di strumenti a sostegno della governance partecipata degli usi del mare nel Compartimento marittimo di Chioggia. PdA FLAG GAC Chioggia Delta del Po 2014-2020. Rapporto finale. 175 pp. <a href="http://doi.org/10.5281/zenodo.2643442">http://doi.org/10.5281/zenodo.2643442</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Manea E., Di Carlo D., Depellegrin D., Agardy T., Gissi E., 2019. Multidimensional assessment of supporting ecosystem services for marine spatial planning of the Adriatic Sea. Ecological Indicators 101, 821–837. <a href="https://doi.org/10.1016/j.ecolind.2018.12.017">https://doi.org/10.1016/j.ecolind.2018.12.017</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Minelli A., Sarretta A., Oggioni A., Bergami C., Pugnetti A., 2019. A Practical Workflow for an Open Scientific Lifecycle Project: EcoNAOS. In: Manghi P., Candela L., Silvello G. eds. Digital Libraries: Supporting Open Science. Cham: Springer International Publishing, 209–221. <a href="https://doi.org/10.1007/978-3-030-11226-4_17">https://doi.org/10.1007/978-3-030-11226-4_17</a> .</p>
-        </li>
-    </ul>
-    <hr style="height:5pt; visibility:hidden;" />
-
-
-
-    <h3 class="code-line" data-line-start=33 data-line-end=34><a id="2018_33"></a>2018</h3>
-    <ul>
-        <li>
-            <p style="text-align:justify">Menegon S., Depellegrin D., Farella G., Gissi E., Ghezzo M., Sarretta A., Venier C., Barbanti A., 2018. A modelling framework for MSP-oriented cumulative effects assessment. Ecological Indicators. 91: 171–181. doi:10.1016/j.ecolind.2018.03.060 (pre-print version <a href="https://doi.org/10.5281/zenodo.3260758">https://doi.org/10.5281/zenodo.3260758</a> open access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Gissi E., McGowan J., Venier C., Di Carlo D., Musco F., Menegon S., Mackelworth P., Agardy T., Possingham H., 2018. Addressing transboundary conservation challenges with marine spatial prioritization. Conservation Biology. <a href="http://dx.doi.org/10.1111/cobi.13134">http://dx.doi.org/10.1111/cobi.13134</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Menegon S., Depellegrin D., Farella G., Sarretta A., Venier C., Barbanti A., 2018. Addressing cumulative effects, maritime conflicts and ecosystem services threats through MSP-oriented geospatial webtools. Ocean &amp; Coastal Management. 163: 417–436. doi:10.1016/j.ocecoaman.2018.07.009 (pre-print version <a href="https://doi.org/10.5281/zenodo.1220260open">https://doi.org/10.5281/zenodo.1220260open</a> access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Burkhard B., Maes J., Potschin-Young M., Santos-Martín F., Geneletti D., Stoev P., Depellegrin D., et al., 2018. Mapping and assessing ecosystem services in the EU - Lessons learned from the ESMERALDA approach of integration. One Ecosystem. 3: e29153. <a href="https://doi.org/10.3897/oneeco.3.e29153">https://doi.org/10.3897/oneeco.3.e29153</a> (open access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Barbanti A., Perini L.,2018. Fra la terra e il mare: analisi e proposte per la Pianificazione dello Spazio Marittimo in Emilia-Romagna. ISBN 978-88-941335-0-9. [Internet] Zenodo; <a href="https://zenodo.org/record/1184364#.XkvqEihKiUk">https://zenodo.org/record/1184364#.XkvqEihKiUk</a> (open access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Menegon S., Sarretta A., Depellegrin D., Farella G., Venier C., Barbanti A.,2018. Tools4MSP: an open source software package to support Maritime Spatial Planning. PeerJ Comput Sci.4: e165. <a href="https://doi.org/10.7717/peerj-cs.165">https://doi.org/10.7717/peerj-cs.165</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Cappelletto M., Fava F., Mazari Villanova L., Trincardi F. , Barbanti A., Bonanno A., Buongiorno Nardelli B., Ciappi, Palamà D., Ribera d’Alcalà M., Sarretta A., Sprovieri M., 2018. Codeveloping Research and Innovation Strategies for blue jobs and growth in the Mediterranean area. The BLUEMED Initiative. Environmental Engineering and Management Journal, Vol.17, No.10: 2313-2327.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Schultz-Zehden A., Lukic I., Ansong J.O., Altvater S., Bamlett R., Barbanti A., Bocci M., Buck B.H., Calado H., Caña Varona M., Castellani C., Depellegrin D., Schupp M.F., Giannelos I., Kafas A., Kovacheva A., Krause G., Kyriazi Z., Läkamp R., Lazić M., Mourmouris A., Onyango V., Papaioannou E., Przedrzymirska J., Ramieri E., Sangiuliano S., van de Velde I., Vassilopoulou V., Venier C., Vergílio M., Zaucha J., Buchanan B., 2018. Ocean Multi-Use Action Plan, MUSES project. Edinburgh. BLUEMED Italian White Paper Working Group (2018). The BLUEMED Italian White Paper: an overview of relevance, obstacles and proposals of the key sectors for a Blue Growth. Roma: CNR Edizioni. <a href="https://doi.org/10.5281/zenodo.1306490">https://doi.org/10.5281/zenodo.1306490</a>.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Barbanti A., Cappelletto M., Ciappi E., De Lara Rey J., Herrouin G., Papandroulakis N., Trincardi F. (Eds.), 2018. BLUEMED Strategic Research and Innovation Agenda (SRIA), Updated version 2018. Realized by the BLUEMED Coordination and Support Action, Horizon 2020 - BG-13-2016, Grant Agreement 727453.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Gissi E., McGowan J., Venier C., Di Carlo D. , Musco F. , Menegon S. , Mackelworth P. , Agardy T. , Possingham H., 2018. Addressing transboundary conservation challenges through marine spatial prioritization.Society for Conservation Biology.(32),5. <a href="https://doi.org/10.1111/cobi.13134">https://doi.org/10.1111/cobi.13134</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Bevilacqua S., Guarnieri G., Farella G., Terlizzi A., Fraschetti S., 2018. A regional assessment of cumulative impact mapping on Mediterranean coralligenous outcrops. Scientific Reports 8:1757. Doi: 10.1038/s41598-018-20297-1 IF 4.011<br>
-                Ferrarin C., Madricardo F., Rizzetto F., Kiver W.M., Bellafiore D., Umgiesser G., Kruss A., Zaggia L., Foglini F., Ceregato A., Sarretta A., Trincardi F., 2018. Geomorphology of Scour Holes at Tidal Channel Confluences. Journal of Geophysical Research: Earth Surface 123:1386–1406. <a href="https://doi.org/10.1029/2017JF004489">https://doi.org/10.1029/2017JF004489</a></p>
-        </li>
-    </ul>
-    <hr style="height:5pt; visibility:hidden;" />
-
-
-    <h3 class="code-line" data-line-start=21 data-line-end=22><a id="2017_21"></a>2017</h3>
-    <ul>
-        <li>
-            <p style="text-align:justify">Gissi E., Menegon S., Sarretta A., Appiotti F., Maragno D., Vianello A., Depellegrin D., Venier C., Barbanti A., 2017. Addressing uncertainty in modelling cumulative impacts within maritime spatial planning in the Adriatic and Ionian region. Hewitt J, editor. PLOS ONE. 12: e0180501. <a href="https://doi.org/10.1371/journal.pone.0180501">https://doi.org/10.1371/journal.pone.0180501</a> (open access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Drakou E.G., Kermagoret C., Liquete C., Ruiz-Frau A., Burkhard K., Lillebø A.I., Depellegrin D., et al., 2017. Marine and coastal ecosystem services on the science–policy–practice nexus: challenges and opportunities from 11 European case studies. International Journal of Biodiversity Science, Ecosystem Services &amp; Management. 13: 51–67. <a href="https://doi.org/10.1080/21513732.2017.1417330">https://doi.org/10.1080/21513732.2017.1417330</a> (open access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Depellegrin D., Menegon S., Farella G., Ghezzo M., Gissi E., Sarretta A., Venier C., Barbanti A. et al., 2017. Multi-objective spatial tools to inform maritime spatial planning in the Adriatic Sea. Science of The Total Environment. 609: 1627–1639. doi:10.1016/j.scitotenv.2017.07.264 (pre-print version <a href="https://doi.org/10.5281/zenodo.1115314">https://doi.org/10.5281/zenodo.1115314</a> open access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Barbanti A., Gissi E., Musco F., Sarretta A., Appiotti F., Bianchi F., Venier C., Maragno D., Innocenti A., Morelli M., Menegon S., Cocossis C., Campostrini P. , 2017 . Towards MSP implementation in the Adriatic and Ionian Region. In: D. Kitsiou and M. Karydis Eds., Marine Spatial Planning: Methodologies, Environmental Issues and current trends, NOVA Books. ISBN: 978-1-53612-170-4.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Madricardo F. , Foglini F., Kruss A., Ferrarin C., Pizzeghello N.M., Murri C., Rossi M., Bajo M., Bellafiore D., Campiani E., Fogarin S., Grande V., Janowski L., Keppel E., Leidi E., Lorenzetti G., Maicu F., Maselli V., Mercorella A., Montereale Gavazzi G., Minuzzo T., Pellegrini C., Petrizzo A., Prampolini M., Remia A., Rizzetto F., Rovere M., Sarretta A., Sigovini M., Sinapi L., Umgiesser G., Trincardi F., 2017. High resolution multibeam and hydrodynamic datasets of tidal channels and inlets of the Venice Lagoon. Scientific Data 4:170121. <a href="https://doi.org/10.1038/sdata.2017.121">https://doi.org/10.1038/sdata.2017.121</a></p>
-        </li>
-    </ul>
-    <hr style="height:5pt; visibility:hidden;" />
-
-    <h3 class="code-line" data-line-start=11 data-line-end=12><a id="2016_11"></a>2016</h3>
-    <ul>
-        <li>
-            <p style="text-align:justify">Pavesi F., Basoni A., Fugazza C., Menegon S., Oggioni A., Pepe M., et al., 2016. EDI – A Template-Driven Metadata Editor for Research Data. Journal of Open Research Software. 4. <a href="http://doi.org/10.5334/jors.106">http://doi.org/10.5334/jors.106</a> (open access CC-BY 4.0)</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Menegon S., Gissi E., Sarretta, A., 2016. Data for the paper Addressing Uncertainties in Modelling Cumulative Impacts within Maritime Spatial Planning in the Adriatic and Ionian Region&quot; [Data set]. Zenodo. <a href="http://doi.org/10.5281/zenodo.58222">http://doi.org/10.5281/zenodo.58222</a></p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Menegon S., Sarretta A., Barbanti A., Gissi E., Venier C., 2016. Open source tools to support Integrated Coastal Management and Maritime Spatial Planning. PeerJ Preprints 4:e2245v2 <a href="https://doi.org/10.7287/peerj.preprints.2245v2">https://doi.org/10.7287/peerj.preprints.2245v2</a>.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Trincardi F., Barbanti A., Bastianini M., Benetazzo A., Cavaleri L., Chiggiato J., Papa A., Pomaro A., Sclavo M., Tosi L., and Umgiesser G., 2016. The 1966 Flooding of Venice: What Time Taught Us for the Future. Oceanography, Oceanography 29(4), <a href="https://doi.org/10.5670/oceanog.2016.87">https://doi.org/10.5670/oceanog.2016.87</a>.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-    </ul>
-
-    <h3 class="code-line" data-line-start=4 data-line-end=5><a id="2015_4"></a>2015</h3>
-    <ul>
-        <li>
-            <p style="text-align:justify">Barbanti A., Campostrini P., Musco F., Sarretta A., Gissi E., 2015. Developing a Maritime Spatial Plan for the Adriatic Ionian Region. CNR-ISMAR, Venice ,IT. ISBN 978-88-941335-4-7. Zenodo. <a href="http://doi.org/10.5281/zenodo.48231">http://doi.org/10.5281/zenodo.48231</a>.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Barbanti A., Campostrini P., Musco F., Sarretta A., Gissi E., 2015. ADRIPLAN Conclusions and Recommendations: A short manual for MSP implementation in the Adriatic-Ionian Region. CNR-ISMAR, Venice, IT. ISBN 978-88-941335-3-0. Zenodo. <a href="http://doi.org/10.5281/zenodo.49190">http://doi.org/10.5281/zenodo.49190</a>.</p>
-        </li>
-        <hr style="height:5pt; visibility:hidden;" />
-        <li>
-            <p style="text-align:justify">Zucchetta M., Venier C., Taji M.A., Mangin A., Pastres R., 2015. Modelling the spatial distribution of the seagrass Posidonia oceanica (L.) along the North African coast: implications for the assessment of Good Environmental Status. Ecological Indicators.11/2015. <a href="https://doi.org/10.1016/j.ecolind.2015.10.059">https://doi.org/10.1016/j.ecolind.2015.10.059</a></p>
-        </li>
-    </ul>
 </div>
 
+<script>
+function filterPublications() {
+    const year = document.getElementById("yearSelect").value;
+    const groups = document.querySelectorAll(".year-group");
+
+    groups.forEach(g => {
+        g.style.display = (year === "all" || g.dataset.year === year) ? "block" : "none";
+    });
+}
+</script>
+
+
+<style>
+/* Titolo principale Publications */
+.publications-title {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  color: #001f3f !important;
+  margin-bottom: 0.5rem;
+}
+
+/* Sottotitolo Scientific publications & Reports */
+.publications-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #003366;
+  margin-bottom: 2.5rem;
+}
+
+/* Spazio sopra ogni anno */
+.year-group {
+    margin-top: 3rem !important;
+}
+
+/* Titoli anni */
+.year-group h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0D6EFD;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #0D6EFD;
+    padding-bottom: 1.5rem;
+}
+
+/* Testo pubblicazioni */
+.year-group p {
+    color: #3A3A3A;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 0 !important;
+}
+
+.year-group a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.year-group li:hover a {
+    text-decoration: underline;
+}
+
+.year-group li {
+    margin-bottom: 3rem;
+}
+
+/* Card filtro */
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.filter-card {
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    padding: 1rem;
+    background-color: #ffffff;
+    margin-top: 1rem; /* distanza dalla topbar */
+    background-color: transparent !important; /* sfondo trasparente */
+    box-shadow: none !important; /* niente ombra */
+}
+
+.sticky-filter {
+    position: sticky;
+    top: 120px; /* distanza dalla topbar */
+    z-index: 1050; /* sopra la topbar */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-card {
+        margin-top: 1rem;
+    }
+}
+
+/* Label filtro più grande */
+.filter-label {
+    font-size: 1.5rem;
+    color: #001f3f;
+    margin-bottom: 0.75rem;
+}
+
+.filter-select {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.filter-select:focus {
+    border-color: #0D6EFD;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+</style>
+
 {% endblock content %}
+

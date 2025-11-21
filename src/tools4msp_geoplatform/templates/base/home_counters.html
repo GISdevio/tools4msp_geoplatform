@@ -1,61 +1,91 @@
 {% load i18n %}
 
-<div class="container py-5 home-recap">
-    <div class="row text-center row-recap">
-        <!-- Layers -->
-        <div class="col-md-6 mb-4">
-            <a href="/catalogue/#/?f=dataset">
-                <i class="fa fa-square-o rotate fa-4x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/catalogue/#/?f=dataset">{{ layers_count }} {% trans "Datasets" %}</a>
-            </h2>
-            <p>
-                {% trans "Click to search for geospatial data published by other users, organizations and public sources. Download data in standard formats." %}
-            </p>
-            <p><a class="btn btn-default" href="/catalogue/#/?f=dataset">{% trans "Explore Datasets" %} »</a></p>
-        </div>
+<section class="home-counter-section py-5">
+  <div class="container text-center px-4">
 
-        <!-- Maps -->
-        <div class="col-md-6 mb-4">
-            <a href="/catalogue/#/?f=map">
-                <i class="fa fa-map-marker fa-4x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/catalogue/#/?f=map">{{ maps_count }} {% trans "Maps" %}</a>
-            </h2>
-            <p>
-                {% trans "Data is available for browsing, aggregating and styling to generate maps which can be saved, downloaded, shared publicly or restricted to specify users only." %}
-            </p>
-            <p><a class="btn btn-default" href="/catalogue/#/?f=map">{% trans "Explore maps" %} »</a></p>
-        </div>
-
-        <!-- Documents -->
-        <div class="col-md-6 mb-4">
-            <a href="/catalogue/#/?f=document">
-                <i class="fa fa-newspaper-o fa-4x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/catalogue/#/?f=document">{{ documents_count }} {% trans "Documents" %}</a>
-            </h2>
-            <p>
-                {% trans "As for the layers and maps GeoNode allows to publish tabular and text data, manage their metadata and associated documents." %}
-            </p>
-            <p><a class="btn btn-default" href="/catalogue/#/?f=document">{% trans "Explore documents" %} »</a></p>
-        </div>
-
-        <!-- Users -->
-        <div class="col-md-6 mb-4">
-            <a href="/people/">
-                <i class="fa fa-user fa-4x recap-icon"></i>
-            </a>
-            <h2 class="mt-2">
-                <a class="counter-recap" href="/people/">{{ users_count }} {% trans "Users" %}</a>
-            </h2>
-            <p>
-                {% trans "Geonode allows registered users to easily upload geospatial data and various documents in several formats." %}
-            </p>
-            <p><a class="btn btn-default" href="/people/">{% trans "See users" %} »</a></p>
-        </div>
+    <!-- Titolo e sottotitolo -->
+    <div class="mb-5">
+      <h2 style="font-size:36px; font-weight:700; color:#001f3f; font-family:'Lato', sans-serif; margin-bottom:1rem;">
+        {% trans "Statistiche" %}
+      </h2>
+      <p style="font-size:18px; font-weight:500; color:#003366; font-family:'Lato', sans-serif; margin-bottom:3rem;">
+        {% trans "Scopri i numeri chiave della piattaforma" %}
+      </p>
     </div>
-</div>
+
+    <!-- Icone e numeri -->
+    <div class="row justify-content-center g-5">
+      {% comment %} Assumiamo counters con 4 tuple: icon, value, label, url {% endcomment %}
+      {% for icon, value, label, url in counters %}
+      <div class="col-6 col-md-3 text-center">
+        <a href="{{ url }}">
+          <i class="fa {{ icon }} fa-5x mb-3" style="color:#004080;"></i>
+        </a>
+        <h3 class="counter" data-target="{{ value }}">0</h3>
+        <p>{% trans label %}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+.home-counter-section {
+  background: #f8f9fa;
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+}
+
+.counter {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.row .col-6.col-md-3 p {
+  font-family: 'Lato', sans-serif;
+  color: #001f3f;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.row .col-6.col-md-3 h3.counter {
+  font-family: 'Lato', sans-serif;
+  color: #001f3f;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.row .col-6.col-md-3 i {
+  transition: transform 0.6s ease;
+}
+
+.row .col-6.col-md-3:hover i {
+  transform: rotate(20deg);
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+  const targets = Array.from(counters).map(c => +c.getAttribute("data-target"));
+  const duration = 2000;
+  const start = performance.now();
+  const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+  const animate = (time) => {
+    const progress = Math.min((time - start) / duration, 1);
+    counters.forEach((counter, i) => {
+      counter.innerText = Math.floor(easeOutCubic(progress) * targets[i]).toLocaleString();
+    });
+    if (progress < 1) requestAnimationFrame(animate);
+  };
+  requestAnimationFrame(animate);
+});
+
+</script>
+

@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet" />
     <link href="{% static 'mapstore/dist/themes/geonode.css' %}?{% client_version %}" rel="stylesheet" />
+    <link href="{% static 'css/topbar_override.css' %}" rel="stylesheet" />
     <title>{{ SITE_NAME }}</title>
     <link rel="shortcut icon" href="{% static 'geonode/img/favicon.ico' %}" />
     {% include './geonode-mapstore-client/snippets/loader_style.html' %}
@@ -26,6 +27,8 @@
     {% endblock %}
 
     {% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/home_search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home_featured.css' %}">
     {% endblock %}
 </head>
 
@@ -40,7 +43,8 @@
 
             {% load base_tags %}
             {% include "base/home_search.html" %}
-            {% show_resource_counters %}
+            {% include "base/home_featured.html" %}
+            {% include "base/home_counters.html" %}
             <!-- {% get_visibile_resources request.user %} -->
 
             {% block ms_scripts %}

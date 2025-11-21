@@ -15,6 +15,8 @@
 
     <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet" />
     <link href="{% static 'mapstore/dist/themes/geonode.css' %}?{% client_version %}" rel="stylesheet" />
+    <link href="{% static 'css/topbar_override.css' %}" rel="stylesheet" />
+
 
     <title>{% block title %}Projects{% endblock %}</title>
 
@@ -92,9 +94,13 @@
         width: 100%;
     }
 
-    .gn-menu-content img {
-        height: 3.7rem !important;
+    .msgapi .gn-menu-content-left {
+        padding-left: 2px; /* come la landing */
     }
+    
+    .gn-menu-content img {
+    height: 5rem !important;  /* uguale alla landing */
+}
 </style>
 
 <body>

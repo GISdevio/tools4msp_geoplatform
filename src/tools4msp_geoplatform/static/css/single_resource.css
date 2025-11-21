@@ -1,0 +1,55 @@
+/* ==============================
+   CSS per singole risorse (ID o NEW)
+   ============================== */
+
+/* Nasconde rettangolo bianco sopra topbar */
+body.hide-topbar header.gn-main-header {
+    display: none !important;
+}
+
+/* White toolbar background */
+body.hide-topbar .gn-menu.gn-primary {
+    background-color: #001f3f !important;
+    color: #001f3f !important;
+    border-bottom: 1px solid #e0e0e0;   /* subtle bottom border */
+}
+
+
+/* Fix Settings Panel dropdown width + prevent text from breaking */
+body.hide-topbar .ms-toc-toolbar-container .dropdown.open.btn-group ul.dropdown-menu.dropdown-menu-right {
+    min-width: 240px !important;      /* più largo */
+    width: auto !important;           /* si adatta al contenuto */
+    white-space: nowrap !important;   /* testo su una riga */
+}
+
+/* Fix dropdown item text breaking */
+body.hide-topbar .ms-toc-toolbar-container .dropdown.open.btn-group ul.dropdown-menu.dropdown-menu-right li a span {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    font-size: 13px !important;
+}
+
+
+
+/* ==============================
+   Align dropdown items (icons + text)
+   ============================== */
+
+body.hide-topbar .gn-menu.gn-primary .dropdown.open.btn-group ul.dropdown-menu li a,
+body.hide-topbar .gn-menu.gn-primary .dropdown.open.btn-group ul.dropdown-menu li button,
+body.hide-topbar .gn-menu.gn-primary .dropdown.open.btn-group ul.dropdown-menu [data-ms2-container] {
+    display: flex !important;          /* flex container */
+    align-items: center !important;    /* vertical alignment */
+    justify-content: flex-start !important; /* left-align text */
+    font-size: 14px !important;        /* uniform font size */
+    line-height: 1.4 !important;       /* consistent vertical spacing */
+    padding: 6px 12px !important;      /* uniform padding */
+    margin: 0 !important;              /* remove offsets */
+}
+
+/* Checkbox filtri risorse diventano blu */
+div.gn-filter-form input[type="checkbox"]:checked {
+    accent-color: #0d6efd !important; /* blu Bootstrap */
+}
+
+

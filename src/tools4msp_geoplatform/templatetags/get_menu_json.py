@@ -75,9 +75,20 @@ def get_base_left_topbar_menu(context):
         },
         {"type": "link", "href": "/catalogue/#/search/?f=map", "label": "Maps"},
         {
-            "type": "link",
-            "href": "/catalogue/#/search/?f=geostory",
-            "label": "GeoStories",
+            "label": "Apps",
+            "type": "dropdown",
+            "items": [
+                {
+                    "type": "link",
+                    "href": "/catalogue/#/search/?f=geostory",
+                    "label": "GeoStory",
+                },
+                {
+                    "type": "link",
+                    "href": "/catalogue/#/search/?f=dashboard",
+                    "label": "Dashboard",
+                },
+            ],
         },
         {
             "label": "Case Studies",

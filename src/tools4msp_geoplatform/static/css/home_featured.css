@@ -1,0 +1,92 @@
+/* ==============================
+   Sezione Novità
+   ============================== */
+
+.home-featured {
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.home-featured h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #001f3f;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.home-featured p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #003366;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+.featured-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(59,130,246,0.25);
+  transition: all 0.3s ease;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.featured-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(59,130,246,0.45);
+}
+
+.featured-card img,
+.featured-card .no-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.featured-card .no-thumb {
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.featured-card .card-body {
+  padding: 1.25rem 1.5rem;
+}
+
+.featured-card .card-body h5 {
+  color: #0056b3;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.featured-card .card-body p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Bottone "Esplora" */
+.home-featured .btn-outline-primary {
+  background-color: #ffffff;
+  color: #0056b3;
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid #0056b3;
+  border-radius: 6px;
+  padding: 0.45rem 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.home-featured .btn-outline-primary:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
