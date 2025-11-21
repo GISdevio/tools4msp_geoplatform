@@ -52,7 +52,7 @@ export default function UploadLayer({ id, btnProps, label }) {
   const loadAllDatasets = async () => {
     if (!datasetsLoaded) {
       const result = await searchLayer(
-        "?search_fields=title&search_fields=abstract&search="
+        "?search_fields=title&search_fields=abstract&search=&page_size=1000"
       );
       if (result.data && result.data.datasets) {
         setAllDatasets(result.data.datasets);
@@ -66,7 +66,6 @@ export default function UploadLayer({ id, btnProps, label }) {
 
   const loadLayers = async (search, mspdfFilter = null) => {
     const currentDatasets = await loadAllDatasets();
-
     let datasets = [...currentDatasets];
 
     if (search) {
@@ -84,7 +83,7 @@ export default function UploadLayer({ id, btnProps, label }) {
     }
 
     if (mspdfFilter) {
-      const filteredDatasets = datasets.filter((dataset) => {
+      datasets = datasets.filter((dataset) => {
         if (dataset.tkeywords && dataset.tkeywords.length > 0) {
           return dataset.tkeywords.some((keyword) => {
             return (
@@ -92,9 +91,12 @@ export default function UploadLayer({ id, btnProps, label }) {
             );
           });
         }
-        return false; 
+        return false;
       });
-      datasets = filteredDatasets;
+    }
+
+    if (!search && !mspdfFilter) {
+      return datasets.slice(0, 10);
     }
 
     return datasets;
