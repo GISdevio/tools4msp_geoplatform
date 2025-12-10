@@ -116,7 +116,6 @@ const downloadFiles = async (layer: Layer): Promise<DownloadFilesResult> => {
   return { errorReport: null, filesState: 'ok', stylePath, warningReport }
 }
 
-// TODO: add thesaurus keywords to `data.json`
 const downloadVectorLayers = async () => {
   logger.info('Downloading vector layers...\n')
 

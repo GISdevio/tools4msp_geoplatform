@@ -5812,5 +5812,145 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1272/Litoralni_sediment_remote.sld",
     "title": "SLO MSP_Littoral sediment",
     "uuid": "537ef285-8596-41c6-b4cc-2f7724a6ef9e"
+  },
+  {
+    "filesState": "ok",
+    "id": "2251",
+    "license": 1,
+    "name": "Baltic_MSP_MSFD_2018_Wind_Farms_Overall_statu",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2251/MSFD_Overall_assessment_remote.sld",
+    "title": "Baltic_MSP_MSFD_2018_Wind_Farms_Overall_statu",
+    "uuid": "808915f5-dc4c-47ff-a62c-fe967faf936a"
+  },
+  {
+    "filesState": "ok",
+    "id": "2253",
+    "license": 1,
+    "name": "EU_2018_Wind_Farms_Criteria_status_D1_birds",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2253/EU_2018_Wind_Farms_Criteria_status_D1_birds_remote.sld",
+    "title": "EU_2018_Wind_Farms_Criteria_status_D1_birds",
+    "uuid": "be6e212d-6454-4bfd-b7ca-0e68edb67424"
+  },
+  {
+    "filesState": "ok",
+    "id": "2149",
+    "license": 1,
+    "name": "MSP_Italy_3035",
+    "ownerUsername": "ssottoriva",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2149/MSP_Italy_3035_remote.sld",
+    "title": "MSP Italy per EMODnet",
+    "uuid": "53c85c7a-bfc5-4131-abb9-8d22ccb66465"
+  },
+  {
+    "filesState": "ok",
+    "id": "2250",
+    "license": 1,
+    "name": "MSP_MSFD_2018_Maritime_Traffic_flows_Overall_",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2250/MSFD_Overall_assessment_remote.sld",
+    "title": "MSP_MSFD_2018_Maritime_Traffic_flows_Overall_",
+    "uuid": "6e68d514-7010-477b-b3db-2542a6cd079f"
+  },
+  {
+    "filesState": "ok",
+    "id": "2249",
+    "license": 1,
+    "name": "MSP_MSFD_2018_Nature_Protection_Conservation_",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2249/MSFD_Overall_assessment_remote.sld",
+    "title": "MSP_MSFD_2018_Nature_Protection_Conservation_",
+    "uuid": "a38a7f2e-fb95-4be4-9ed5-7af925fdedc5"
+  },
+  {
+    "filesState": "ok",
+    "id": "2247",
+    "license": 1,
+    "name": "MSP_MSFD_2018_Wind_Farms_Overall_status__D1_B",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2247/MSFD_Overall_assessment_remote.sld",
+    "title": "MSP_MSFD_2018_Wind_Farms_Overall_status__D1_B",
+    "uuid": "7ca272fb-c2b1-4d1e-84ad-faa17f02deb9"
+  },
+  {
+    "filesState": "ok",
+    "id": "2201",
+    "license": 1,
+    "name": "nwd_navisafe",
+    "ownerUsername": "sarretta",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2201/nwd_navisafe_remote.sld",
+    "title": "NaviSafe study application in the North West Mediterranean",
+    "uuid": "7f059320-31c6-4f53-8ec7-fd47db0db01e"
+  },
+  {
+    "filesState": "ok",
+    "id": "2127",
+    "license": 1,
+    "name": "ReMAP_Case_Study_Galicia_AreaDelimitation",
+    "ownerUsername": "hregalado",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2127/ReMAP_Case_Study_Galicia_AreaDelimitation_remote.sld",
+    "title": "ReMAP_Case_Study_Galicia_AreaDelimitation",
+    "uuid": "d59d06da-5417-4bd1-bb36-2a0e929b3cb8"
+  },
+  {
+    "filesState": "ok",
+    "id": "2154",
+    "license": 1,
+    "name": "baltic_nature_D5_eutrophication",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2154/baltic_nature_D5_eutrophication_remote.sld",
+    "title": "baltic_nature_D5_eutrophication",
+    "uuid": "b466bab2-1090-4f68-9916-bf1e3b0490b3"
+  },
+  {
+    "filesState": "ok",
+    "id": "2152",
+    "license": 1,
+    "name": "baltic_owf_D1_birds_pelagic_surface_4326",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2152/baltic_owf_D1_birds_pelagic_surface_4326_remote.sld",
+    "title": "baltic_owf_D1_birds_pelagic_surface_4326",
+    "uuid": "9ef71b1f-c79a-4109-a5c6-28b373dbe00d"
+  },
+  {
+    "filesState": "ok",
+    "id": "2268",
+    "license": 1,
+    "name": "emodnet_msp_functions_count",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2268/positive_functions___314a7240-b665-11f0-8fd9-8997a4763f49_remote.sld",
+    "title": "emodnet_msp_functions_count",
+    "uuid": "53269ed4-cb09-4657-b163-4e514e612e76"
+  },
+  {
+    "filesState": "ok",
+    "id": "2143",
+    "license": 1,
+    "name": "msp_italy_flat_zoning_elements_v1",
+    "ownerUsername": "ssottoriva",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2143/msp_italy_flat_zoning_elements_v1_remote.sld",
+    "title": "msp_italy_flat_zoning_elements_v1",
+    "uuid": "42cc9e9b-3a51-4e4a-a5d6-d455a71bffb7"
+  },
+  {
+    "filesState": "ok",
+    "id": "2213",
+    "license": 1,
+    "name": "nwm_mpa",
+    "ownerUsername": "sarretta",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2213/nwm_mpa_remote.sld",
+    "title": "nwm_mpa",
+    "uuid": "986be9fc-dce7-4a4f-bf0b-a98f58105d9d"
+  },
+  {
+    "filesState": "ok",
+    "id": "2184",
+    "license": 1,
+    "name": "vessel_density_2023_cargo0",
+    "ownerUsername": "sarretta",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2184/vessel_density_2023_cargo0_remote.sld",
+    "title": "vessel_density_2023_cargo0",
+    "uuid": "a0f20c9c-f21b-494c-a8aa-db841962e14c"
   }
 ]

@@ -33,11 +33,15 @@ const main = async () => {
 
   // await rasterLayers.download()
   // await rasterLayers.upload()
+  // await rasterLayers.comparePlatformStates()
+  // await rasterLayers.fixKeywords()
 
   // await vectorLayers.download()
   // await vectorLayers.upload()
+  // await vectorLayers.comparePlatformStates()
+  // await vectorLayers.fixKeywords()
 
-  await remoteLayers.fixKeywords()
+  // await remoteLayers.fixKeywords()
 }
 
 main().catch((err) => logger.error(err))

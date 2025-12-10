@@ -9,8 +9,8 @@ import v3Client from '../lib/v3-client'
 
 import type { DocumentsResponse, DocumentResponse, V3Document, DownloadState } from './types'
 
-const BATCH_SIZE = 50
-const BATCH_NUMBER = 5
+const BATCH_SIZE = 500
+const BATCH_NUMBER = 1
 
 const downloadDoc = async (id: number): Promise<[string | null, string | null]> => {
   try {

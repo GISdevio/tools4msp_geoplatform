@@ -14,6 +14,13 @@
     "slug": "ais"
   },
   {
+    "id": "265",
+    "name": "Administrative units",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "administrative-units"
+  },
+  {
     "id": "66",
     "name": "Alien",
     "position": "sorted-child",
@@ -784,6 +791,13 @@
     "slug": "water-sports"
   },
   {
+    "id": "271",
+    "name": "World Oceans",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "world-oceans_1"
+  },
+  {
     "id": "52",
     "name": "Zonas sujetas a ordenación, a restricciones o reglamentaciones y unidades de notificación",
     "position": "sorted-child",
@@ -817,6 +831,13 @@
     "position": "sorted-child",
     "relativeTo": null,
     "slug": "aquaculture_1"
+  },
+  {
+    "id": "263",
+    "name": "archipelagic waters",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "archipelagic-waters"
   },
   {
     "id": "81",
@@ -903,11 +924,32 @@
     "slug": "bird"
   },
   {
+    "id": "268",
+    "name": "boundaries",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "boundaries"
+  },
+  {
     "id": "252",
     "name": "boundary",
     "position": "sorted-child",
     "relativeTo": null,
     "slug": "boundary"
+  },
+  {
+    "id": "258",
+    "name": "canon",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "canon"
+  },
+  {
+    "id": "257",
+    "name": "canon-eos-7d",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "canon-eos-7d"
   },
   {
     "id": "42",
@@ -985,6 +1027,13 @@
     "position": "sorted-child",
     "relativeTo": null,
     "slug": "concessioni_mare_region"
+  },
+  {
+    "id": "272",
+    "name": "contiguous zone",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "contiguous-zone"
   },
   {
     "id": "130",
@@ -1169,6 +1218,13 @@
     "slug": "eusm_2023_eunis2019_full"
   },
   {
+    "id": "261",
+    "name": "exclusive economic zones",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "exclusive-economic-zones"
+  },
+  {
     "id": "15",
     "name": "features",
     "position": "sorted-child",
@@ -1267,11 +1323,25 @@
     "slug": "impianti_acquacoltura"
   },
   {
+    "id": "266",
+    "name": "internal waters",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "internal-waters"
+  },
+  {
     "id": "162",
     "name": "lavori in corso",
     "position": "sorted-child",
     "relativeTo": null,
     "slug": "lavori-in-corso"
+  },
+  {
+    "id": "259",
+    "name": "law of the sea",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "law-of-the-sea"
   },
   {
     "id": "183",
@@ -1314,6 +1384,20 @@
     "position": "sorted-child",
     "relativeTo": null,
     "slug": "maricoltura"
+  },
+  {
+    "id": "269",
+    "name": "marine",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "marine"
+  },
+  {
+    "id": "260",
+    "name": "marine regions",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "marine-regions"
   },
   {
     "id": "241",
@@ -1568,6 +1652,20 @@
     "slug": "shellfish"
   },
   {
+    "id": "267",
+    "name": "territorial seas",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "territorial-seas"
+  },
+  {
+    "id": "264",
+    "name": "territorial waters",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "territorial-waters"
+  },
+  {
     "id": "227",
     "name": "testoenergy",
     "position": "sorted-child",
@@ -1699,6 +1797,13 @@
     "position": "sorted-child",
     "relativeTo": null,
     "slug": "wms_1"
+  },
+  {
+    "id": "262",
+    "name": "world oceans",
+    "position": "sorted-child",
+    "relativeTo": null,
+    "slug": "world-oceans"
   },
   {
     "id": "105",

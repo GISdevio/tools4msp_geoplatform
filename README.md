@@ -173,9 +173,10 @@ There are layers whose original files cannot be downloaded (they miss the "Downl
 During the upload of some layers a series of miscellaneous errors occurred. It follows a list of the layers involved in the form of `[<layer-id>] <layer-name> -> <error-occurred>`.
 
 - `[995] buffer01` uploaded by `isabella` -> `Non UFT-8 content found when writing feature -1 of layer`
-- `[1770] emodent_planning_areas` uploaded by `admin` -> `Upload took too long`
 - `[2065] SSF_Adriamed_GSA170` uploaded by `alessandro2` -> `Missing "prj" file`
 - `[1708] SSF_Adriamed_GSA17` uploaded by `alessandro2` -> `Missing "prj" file`
+- `[2253] EU_2018_Wind_Farms_Criteria_status_D1_birds` uploaded by `admin` -> `Non UFT-8 content found when writing feature -1 of layer`
+- `[2154] baltic_nature_D5_eutrophication` uploaded by `admin` -> `Non UFT-8 content found when writing feature -1 of layer`
 
 ### Multiple styles
 
@@ -228,3 +229,7 @@ It follows a list of the layers involved in the form of `[<layer-id>] <layer-nam
 - [690] piani_reg_portuali_4326 (uploaded by `amefad`)
 - [1302] scenari_MSP4Biodiversity (uploaded by `alessandro2`)
 - [1055] SOUNDSCAPE - Extra noise 2020 - 5km (uploaded by `admin`)
+- [2152] baltic_owf_D1_birds_pelagic_surface_4326 (uploaded by `admin`)
+- [2249] MSP_MSFD_2018_Nature_Protection_Conservation_ (uploaded by `admin`)
+- [2250] MSP_MSFD_2018_Maritime_Traffic_flows_Overall_ (uploaded by `admin`)
+- [2268] emodnet_msp_functions_count (uploaded by `admin`)

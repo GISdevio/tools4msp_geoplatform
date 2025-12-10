@@ -998,5 +998,95 @@
     "datasetTitle": "geonode:merluccius_merluccius_mpa_europe_occur_med_cvg2kry",
     "lastCompletedStep": "upload-thumbnail",
     "newId": "487"
+  },
+  "bfe49136-873b-4ed8-b6cc-9adbe705ba7e": {
+    "datasetTitle": "geonode:demersal_commercial_avg3y_wpogokr",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1174"
+  },
+  "b44127ab-a1cd-4da7-80d4-e5a37937f340": {
+    "datasetTitle": "geonode:elasmo_demersal_avg3y_sjea0vs",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1175"
+  },
+  "42c8da5b-0573-4c63-8490-fa6181224698": {
+    "datasetTitle": "geonode:elasm_extr_qmucvmv",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1176"
+  },
+  "83ae9f31-c242-4d3f-a16e-31d416f9e243": {
+    "datasetTitle": "geonode:leptometra_hs_rescaled_2etkyms",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1177"
+  },
+  "1e0ec0ef-4df8-44c5-8e63-a37133700efa": {
+    "datasetTitle": "geonode:duration_mhws_fnyebkx",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1178"
+  },
+  "c049534c-c030-45c8-aa79-b9cccb4ebee0": {
+    "datasetTitle": "geonode:multispecies_nursery_rescaled_qizifqo",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1179"
+  },
+  "f8579d1d-3e0a-4b61-b8f8-a7bbfe0272a0": {
+    "datasetTitle": "geonode:multispecies_spawning_rescaled0_nt4pfjn",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1180"
+  },
+  "8033ce26-b107-417f-a8cb-bd2716e48dff": {
+    "datasetTitle": "geonode:raster_10__percentile_mediana_temperatura_inverno_7n6qjdl",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1181"
+  },
+  "03e16fef-032c-433b-88f3-99ffc99064fc": {
+    "datasetTitle": "geonode:use_tboat_fgrjzin",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1182"
+  },
+  "862c6736-4472-4430-8a7b-03e29effdeb1": {
+    "datasetTitle": "geonode:bridgebs_ps1_2020_emkxcor",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1183"
+  },
+  "3bc3c73a-52bb-4b57-9b0a-e307364ebb5d": {
+    "datasetTitle": "geonode:bridgebs_ps1_2050_ighqytj",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1184"
+  },
+  "4235796e-c517-4e1e-a7fc-59e30b3060cf": {
+    "datasetTitle": "geonode:bridgebs_ps2_2020_gj7trkr",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1185"
+  },
+  "4aa212f7-f5ae-4b9a-9e2c-b5810a939bff": {
+    "datasetTitle": "geonode:bridgebs_ps2_2050_gk7r7fa",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1186"
+  },
+  "b48cb5a6-f093-4bf3-b867-b99e17094671": {
+    "datasetTitle": "geonode:bridgebs_ps3_2020_wpabb2a",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1187"
+  },
+  "28584dcf-307c-44a8-b13a-cda18a12e403": {
+    "datasetTitle": "geonode:bridgebs_ps3_2050_ahbplb3",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1188"
+  },
+  "9532f8b7-202f-4eae-ae86-6fd3920961f2": {
+    "datasetTitle": "geonode:bridgebs_basinwide_2020_ihqbidm",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1189"
+  },
+  "9c942d2e-9cd8-4cd8-b581-27e0228409cd": {
+    "datasetTitle": "geonode:bridgebs_basinwide_ecotopia_5pmi6mp",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1190"
+  },
+  "bfcda85e-790f-40bb-953d-02eb64421063": {
+    "datasetTitle": "geonode:bridgebs_basinwide_uia_rtufh66",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1191"
   }
 }

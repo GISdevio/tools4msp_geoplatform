@@ -2923,5 +2923,75 @@
     "datasetTitle": "geonode:soundscape_extra_noise_10km_psmwylw",
     "lastCompletedStep": "upload-thumbnail",
     "newId": "1016"
+  },
+  "808915f5-dc4c-47ff-a62c-fe967faf936a": {
+    "datasetTitle": "geonode:baltic_msp_msfd_2018_wind_farms_overall_statu_v95ebf8",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1192"
+  },
+  "be6e212d-6454-4bfd-b7ca-0e68edb67424": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "53c85c7a-bfc5-4131-abb9-8d22ccb66465": {
+    "datasetTitle": "geonode:msp_italy_3035_0jc64fb",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1193"
+  },
+  "6e68d514-7010-477b-b3db-2542a6cd079f": {
+    "datasetTitle": "geonode:msp_msfd_2018_maritime_traffic_flows_overall__ivddwuy",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1194"
+  },
+  "a38a7f2e-fb95-4be4-9ed5-7af925fdedc5": {
+    "datasetTitle": "geonode:msp_msfd_2018_nature_protection_conservation__7vnrtox",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1195"
+  },
+  "7ca272fb-c2b1-4d1e-84ad-faa17f02deb9": {
+    "datasetTitle": "geonode:msp_msfd_2018_wind_farms_overall_status__d1_b_wexscip",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1196"
+  },
+  "7f059320-31c6-4f53-8ec7-fd47db0db01e": {
+    "datasetTitle": "geonode:nwd_navisafe_avh0ygg",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1197"
+  },
+  "d59d06da-5417-4bd1-bb36-2a0e929b3cb8": {
+    "datasetTitle": "geonode:remap_case_study_galicia_areadelimitation_9tulvga",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1198"
+  },
+  "b466bab2-1090-4f68-9916-bf1e3b0490b3": {
+    "datasetTitle": "",
+    "lastCompletedStep": null,
+    "newId": ""
+  },
+  "9ef71b1f-c79a-4109-a5c6-28b373dbe00d": {
+    "datasetTitle": "geonode:baltic_owf_d1_birds_pelagic_surface_4326_kfdn3wb",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1199"
+  },
+  "53269ed4-cb09-4657-b163-4e514e612e76": {
+    "datasetTitle": "geonode:emodnet_msp_functions_count_8iuokux",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1200"
+  },
+  "42cc9e9b-3a51-4e4a-a5d6-d455a71bffb7": {
+    "datasetTitle": "geonode:msp_italy_flat_zoning_elements_v1_rip3ijd",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1201"
+  },
+  "986be9fc-dce7-4a4f-bf0b-a98f58105d9d": {
+    "datasetTitle": "geonode:nwm_mpa_n4yeyvv",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1202"
+  },
+  "a0f20c9c-f21b-494c-a8aa-db841962e14c": {
+    "datasetTitle": "geonode:vessel_density_2023_cargo0_dc6e0a1",
+    "lastCompletedStep": "upload-thumbnail",
+    "newId": "1203"
   }
 }

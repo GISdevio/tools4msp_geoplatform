@@ -10,8 +10,8 @@ import type { CreationStateMap as UsersCreationStateMap } from '../users/types'
 
 import type { CreationState, CreationStateMap, V3Document } from './types'
 
-const BATCH_SIZE = 50
-const BATCH_NUMBER = 5
+const BATCH_SIZE = 500
+const BATCH_NUMBER = 1
 
 type Group = { group: { pk: number }; slug: string }
 

@@ -1966,5 +1966,185 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/2112/Merluccius_merluccius_MPA_Europe_Occur_MED_remote.sld",
     "title": "Merluccius merluccius (MPA Europe SDMs)",
     "uuid": "6be42b7b-9491-4472-b09b-26e469b90cf8"
+  },
+  {
+    "filesState": "ok",
+    "id": "2122",
+    "license": 1,
+    "name": "Demersal_commercial_avg3y",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2122/Demersal_commercial_avg3y_remote.sld",
+    "title": "Demersal commercial species SoS",
+    "uuid": "bfe49136-873b-4ed8-b6cc-9adbe705ba7e"
+  },
+  {
+    "filesState": "ok",
+    "id": "2123",
+    "license": 1,
+    "name": "Elasmo_demersal_avg3y",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2123/Elasmo_demersal_avg3y_remote.sld",
+    "title": "Demersal elasmobranchs SoS",
+    "uuid": "b44127ab-a1cd-4da7-80d4-e5a37937f340"
+  },
+  {
+    "filesState": "ok",
+    "id": "2113",
+    "license": 1,
+    "name": "elasm_extr",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2113/elasm_extr_remote.sld",
+    "title": "Elasmobranches Total Landings Italian OTB SoS",
+    "uuid": "42c8da5b-0573-4c63-8490-fa6181224698"
+  },
+  {
+    "filesState": "ok",
+    "id": "2119",
+    "license": 1,
+    "name": "Leptometra_HS_rescaled",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2119/Leptometra_HS_rescaled_remote.sld",
+    "title": "Leptometra phalangium SoS rescaled",
+    "uuid": "83ae9f31-c242-4d3f-a16e-31d416f9e243"
+  },
+  {
+    "filesState": "ok",
+    "id": "2114",
+    "license": 1,
+    "name": "duration_MHWs",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2114/duration_MHWs_remote.sld",
+    "title": "MHW [Annual Marine Heat Wawe days] SoS",
+    "uuid": "1e0ec0ef-4df8-44c5-8e63-a37133700efa"
+  },
+  {
+    "filesState": "ok",
+    "id": "2118",
+    "license": 1,
+    "name": "Multispecies_nursery_rescaled",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2118/Multispecies_nursery_rescaled_remote.sld",
+    "title": "Multispecies Nursery SoS Rescaled",
+    "uuid": "c049534c-c030-45c8-aa79-b9cccb4ebee0"
+  },
+  {
+    "filesState": "ok",
+    "id": "2117",
+    "license": 1,
+    "name": "Multispecies_spawning_rescaled0",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2117/Multispecies_spawning_rescaled0_remote.sld",
+    "title": "Multispecies Spawning Rescaled SoS",
+    "uuid": "f8579d1d-3e0a-4b61-b8f8-a7bbfe0272a0"
+  },
+  {
+    "filesState": "ok",
+    "id": "2267",
+    "license": 1,
+    "name": "Raster_10__percentile_mediana_temperatura_inverno",
+    "ownerUsername": "ssottoriva",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2267/Raster_10__percentile_mediana_temperatura_inverno_remote.sld",
+    "title": "Raster_10__percentile_mediana_temperatura_inverno",
+    "uuid": "8033ce26-b107-417f-a8cb-bd2716e48dff"
+  },
+  {
+    "filesState": "ok",
+    "id": "2126",
+    "license": 1,
+    "name": "use_TBOAT",
+    "ownerUsername": "danilo.scannella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2126/use_TBOAT_remote.sld",
+    "title": "Tourism Boating Yachting SoS",
+    "uuid": "03e16fef-032c-433b-88f3-99ffc99064fc"
+  },
+  {
+    "filesState": "ok",
+    "id": "2261",
+    "license": 1,
+    "name": "bridgebs_PS1_2020",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2261/bridgebs_PS1_2020_remote.sld",
+    "title": "bridgebs_PS1_2020",
+    "uuid": "862c6736-4472-4430-8a7b-03e29effdeb1"
+  },
+  {
+    "filesState": "ok",
+    "id": "2262",
+    "license": 1,
+    "name": "bridgebs_PS1_2050",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2262/bridgebs_PS1_2050_remote.sld",
+    "title": "bridgebs_PS1_2050",
+    "uuid": "3bc3c73a-52bb-4b57-9b0a-e307364ebb5d"
+  },
+  {
+    "filesState": "ok",
+    "id": "2266",
+    "license": 1,
+    "name": "bridgebs_PS2_2020",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2266/bridgebs_PS2_2020_remote.sld",
+    "title": "bridgebs_PS2_2020",
+    "uuid": "4235796e-c517-4e1e-a7fc-59e30b3060cf"
+  },
+  {
+    "filesState": "ok",
+    "id": "2264",
+    "license": 1,
+    "name": "bridgebs_PS2_2050",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2264/bridgebs_PS2_2050_remote.sld",
+    "title": "bridgebs_PS2_2050",
+    "uuid": "4aa212f7-f5ae-4b9a-9e2c-b5810a939bff"
+  },
+  {
+    "filesState": "ok",
+    "id": "2265",
+    "license": 1,
+    "name": "bridgebs_PS3_2020",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2265/bridgebs_PS3_2020_remote.sld",
+    "title": "bridgebs_PS3_2020",
+    "uuid": "b48cb5a6-f093-4bf3-b867-b99e17094671"
+  },
+  {
+    "filesState": "ok",
+    "id": "2263",
+    "license": 1,
+    "name": "bridgebs_PS3_2050",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2263/bridgebs_PS3_2050_remote.sld",
+    "title": "bridgebs_PS3_2050",
+    "uuid": "28584dcf-307c-44a8-b13a-cda18a12e403"
+  },
+  {
+    "filesState": "ok",
+    "id": "2258",
+    "license": 1,
+    "name": "bridgebs_basinwide_2020",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2258/bridgebs_basinwide_2020_remote.sld",
+    "title": "bridgebs_basinwide_2020",
+    "uuid": "9532f8b7-202f-4eae-ae86-6fd3920961f2"
+  },
+  {
+    "filesState": "ok",
+    "id": "2259",
+    "license": 1,
+    "name": "bridgebs_basinwide_Ecotopia",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2259/bridgebs_basinwide_Ecotopia_remote.sld",
+    "title": "bridgebs_basinwide_Ecotopia",
+    "uuid": "9c942d2e-9cd8-4cd8-b581-27e0228409cd"
+  },
+  {
+    "filesState": "ok",
+    "id": "2260",
+    "license": 1,
+    "name": "bridgebs_basinwide_UiA",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2260/bridgebs_basinwide_UiA_remote.sld",
+    "title": "bridgebs_basinwide_UiA",
+    "uuid": "bfcda85e-790f-40bb-953d-02eb64421063"
   }
 ]
