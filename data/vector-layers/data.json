@@ -950,15 +950,6 @@
     "uuid": "7f069ffc-d0ac-4319-b287-85498ca54b3a"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1475",
-    "license": 1,
-    "name": "Bridge_BS_Use_Scenarios",
-    "ownerUsername": "alessandro2",
-    "title": "Bridge_BS_Use_Scenarios",
-    "uuid": "97b98e66-0a44-4424-ac0a-445002a7a084"
-  },
-  {
     "filesState": "ok",
     "id": "1511",
     "license": 1,
@@ -1137,15 +1128,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/905/CarettaCaretta_OBGis_Sighting_remote.sld",
     "title": "CarettaCaretta Sighting OBIS",
     "uuid": "3788085e-9de1-4abe-a22e-2c42b3128fc7"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "555",
-    "license": 1,
-    "name": "CaseStudySoS0",
-    "ownerUsername": "germana.garofalo@cnr.it",
-    "title": "CaseStudySoS0",
-    "uuid": "22d12b41-3670-4273-a4af-5142607d03c6"
   },
   {
     "filesState": "ok",
@@ -2327,15 +2309,6 @@
     "uuid": "55d98038-409f-4097-b5d7-5b5547696e26"
   },
   {
-    "filesState": "no-original-files",
-    "id": "864",
-    "license": 1,
-    "name": "Export_Output_103",
-    "ownerUsername": "Beltrano",
-    "title": "Export_Output_103",
-    "uuid": "b2ffb25c-6925-493c-a8e3-904fc47f2bfd"
-  },
-  {
     "filesState": "ok",
     "id": "819",
     "license": 1,
@@ -2616,15 +2589,6 @@
     "uuid": "79ea9889-554f-4e03-ab44-a9d9ad6e689f"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1689",
-    "license": 1,
-    "name": "Fishing_Grounds_SoS",
-    "ownerUsername": "alessandro2",
-    "title": "Fishing grounds (core and marginal) SoS",
-    "uuid": "a137e1fc-5af6-4a7c-99e2-d4694d4928db"
-  },
-  {
     "filesState": "ok",
     "id": "677",
     "license": 1,
@@ -2633,15 +2597,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/677/GSAs_simplified_remote.sld",
     "title": "GFCM Geographical Sub-Areas",
     "uuid": "ac134b8d-3f86-48b2-ae4c-e2f902d73827"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1423",
-    "license": 1,
-    "name": "fishingeffort_2023_polygons",
-    "ownerUsername": "alessandro2",
-    "title": "GFW Med Fishing Effort 2023-vector",
-    "uuid": "3f6f16ff-6c9f-480d-8c95-a9afc5aae0c6"
   },
   {
     "filesState": "ok",
@@ -2794,15 +2749,6 @@
     "uuid": "0d0711c5-5b15-47bb-9123-a2421ce20ee8"
   },
   {
-    "filesState": "no-original-files",
-    "id": "669",
-    "license": 9,
-    "name": "IBA_GN",
-    "ownerUsername": "alessandro2",
-    "title": "Important Bird Areas - IBA - Italy - 2019 (GN)",
-    "uuid": "a23290fd-e68a-497a-9529-2d39dc4cf39b"
-  },
-  {
     "filesState": "ok",
     "id": "766",
     "license": 9,
@@ -2823,15 +2769,6 @@
     "uuid": "92f6270d-38c7-4d84-8dbc-cffaaf302d30"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1093",
-    "license": 9,
-    "name": "KBAsGlobal_2024_March_01_POL_b0_MED_EU",
-    "ownerUsername": "alessandro2",
-    "title": "Key Biodiversity Areas (Mediterranean and Europe)",
-    "uuid": "c633402f-4de7-412a-b364-abca86cee316"
-  },
-  {
     "filesState": "ok",
     "id": "954",
     "license": 1,
@@ -2840,15 +2777,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/954/try0_remote.sld",
     "title": "Liguria - Aquaculture Sites and fish restocking barrier",
     "uuid": "9a9c55f9-9864-4f5e-b7ad-0d75204fee38"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "948",
-    "license": 1,
-    "name": "a__4",
-    "ownerUsername": "isabella",
-    "title": "Liguria - Suitable Areas for fish farming",
-    "uuid": "f1e4cf02-e759-4b18-b28f-f078821fa26d"
   },
   {
     "filesState": "ok",
@@ -3291,24 +3219,6 @@
     "uuid": "a9dee2dc-106f-4f23-bd37-3f934dd15d3e"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1097",
-    "license": 1,
-    "name": "SPMaritimeTransport",
-    "ownerUsername": "isabella",
-    "title": "NAS NBFC SP MaritimeTransport",
-    "uuid": "d95d59f6-7a2a-48b9-8ae5-e7c519f97ed2"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1143",
-    "license": 1,
-    "name": "a__6nm",
-    "ownerUsername": "isabella",
-    "title": "NBFC NAS 6NM",
-    "uuid": "33ade4d1-d227-425a-8671-97ff9c78075d"
-  },
-  {
     "filesState": "ok",
     "id": "1100",
     "license": 1,
@@ -3389,15 +3299,6 @@
     "uuid": "39bb8265-c673-4302-909b-80e85dc4d31a"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1109",
-    "license": 1,
-    "name": "BDnewandextendedZTBFRA",
-    "ownerUsername": "isabella",
-    "title": "NBFC NAS BD ZTB",
-    "uuid": "73c9e506-e759-4d0d-b95f-d0c9d59f9a86"
-  },
-  {
     "filesState": "ok",
     "id": "1094",
     "license": 1,
@@ -3426,15 +3327,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1115/NWNewN2Ksite_remote.sld",
     "title": "NBFC NAS NW N2K",
     "uuid": "28b54674-a8cd-47e3-b209-58f3f2cde012"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1116",
-    "license": 1,
-    "name": "NWOWF",
-    "ownerUsername": "isabella",
-    "title": "NBFC NAS NW OWF",
-    "uuid": "8731121d-7c44-40ef-a637-71251efb1be4"
   },
   {
     "filesState": "ok",
@@ -3467,15 +3359,6 @@
     "uuid": "61f79805-395a-40f6-946a-fd43cec809be"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1154",
-    "license": 1,
-    "name": "NW_BD_PSSA0",
-    "ownerUsername": "isabella",
-    "title": "NBFC NAS PSSA",
-    "uuid": "76d78835-1127-45d8-8796-cdfb771f9b94"
-  },
-  {
     "filesState": "ok",
     "id": "1155",
     "license": 1,
@@ -3484,15 +3367,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1155/NW_BD_PSSA130_remote.sld",
     "title": "NBFC NAS PSSA 13KN",
     "uuid": "34d74cd6-157e-46d3-88ce-da7cca1c7cdd"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1095",
-    "license": 1,
-    "name": "SPFSRU",
-    "ownerUsername": "isabella",
-    "title": "NBFC NAS SP FSRU",
-    "uuid": "c0261de5-c963-4312-bfdf-d0a017e96176"
   },
   {
     "filesState": "ok",
@@ -3525,42 +3399,6 @@
     "uuid": "0e52486f-1ba9-40e7-bc9f-c793278b2d43"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1034",
-    "license": 1,
-    "name": "ATBA",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC ATBA",
-    "uuid": "44ea1cda-655a-40c0-9c96-1db3390cee39"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1045",
-    "license": 1,
-    "name": "Acquacoltura",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC BD Acquacoltura",
-    "uuid": "7fce98ac-d270-4cd6-9e7e-9bb6265b5a64"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1044",
-    "license": 1,
-    "name": "AMP_ATBA",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC BD Conservazione",
-    "uuid": "af36d6b9-8efa-4c28-ae67-6014ea0346d9"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1042",
-    "license": 1,
-    "name": "Difesa_costiera",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC BD Difesa",
-    "uuid": "7b8ca9c1-6f79-436a-b1b6-54c63bc34a0c"
-  },
-  {
     "filesState": "ok",
     "id": "1036",
     "license": 1,
@@ -3569,15 +3407,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1036/ZTB_FRA_remote.sld",
     "title": "NTS NBFC BD FRA ZTB",
     "uuid": "45955f4f-e7c3-4f89-bf62-0a9ffbdd8d2c"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1033",
-    "license": 1,
-    "name": "difesa0",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC Difesa SP NW",
-    "uuid": "feb828e9-56b0-4eff-8080-da14816b1508"
   },
   {
     "filesState": "ok",
@@ -3600,24 +3429,6 @@
     "uuid": "89d89937-805b-4f71-bf7d-82c4576f9dfc"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1048",
-    "license": 1,
-    "name": "ZTB",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC NW ZTB",
-    "uuid": "3dfd9c7b-f4ec-4df4-ae52-a422ef7478bf"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1038",
-    "license": 1,
-    "name": "Tursiope2nk",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC Natura2000 Tursiope",
-    "uuid": "966eb3dc-2e9b-41c1-81c3-66a313a746b0"
-  },
-  {
     "filesState": "ok",
     "id": "1040",
     "license": 1,
@@ -3638,15 +3449,6 @@
     "uuid": "16d96a59-d041-43d0-8949-8b49be7ee2f5"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1032",
-    "license": 1,
-    "name": "Protezione",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC SP Conservation",
-    "uuid": "38521aec-8931-49fd-b80a-a5c2067132f6"
-  },
-  {
     "filesState": "ok",
     "id": "1031",
     "license": 1,
@@ -3665,15 +3467,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1039/turismo_remote.sld",
     "title": "NTS NBFC Turismo",
     "uuid": "2f6da743-1b30-452b-9ed4-769c6e9e2786"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1037",
-    "license": 1,
-    "name": "ZPS",
-    "ownerUsername": "isabella",
-    "title": "NTS NBFC ZPS",
-    "uuid": "863a781e-3f31-492d-8df8-bb44c2b89c25"
   },
   {
     "filesState": "ok",
@@ -4184,15 +3977,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/808/Export_Output1_remote.sld",
     "title": "Ordinanza_VENIERO_04_2010",
     "uuid": "3120b5fe-63cf-4029-940c-dcb05fc57b72"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "886",
-    "license": 1,
-    "name": "ordinanze_sicilia_ag",
-    "ownerUsername": "Beltrano",
-    "title": "Ordinanze Sicilia",
-    "uuid": "c93f1f55-e181-4453-bb6d-665fb1953b66"
   },
   {
     "filesState": "ok",
@@ -4875,33 +4659,6 @@
     "uuid": "6f3ab38a-bfca-44e0-8e96-59fab1ef0f43"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1065",
-    "license": 1,
-    "name": "Aquaculture",
-    "ownerUsername": "isabella",
-    "title": "SOS NBFC BD Acquacoltura",
-    "uuid": "c489f365-7e68-46cb-b932-91171b4db766"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1066",
-    "license": 1,
-    "name": "BAnuoveFRA",
-    "ownerUsername": "isabella",
-    "title": "SOS NBFC BD FRA",
-    "uuid": "ee38e465-3dce-41bb-a9d5-6c5fbbc47966"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1070",
-    "license": 1,
-    "name": "RI0",
-    "ownerUsername": "isabella",
-    "title": "SOS NBFC BD RI",
-    "uuid": "bcab58b8-dd8d-41b9-8bc8-77db2c37adae"
-  },
-  {
     "filesState": "ok",
     "id": "1067",
     "license": 1,
@@ -4910,15 +4667,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1067/BAtourismmarinas_remote.sld",
     "title": "SOS NBFC BD marinas",
     "uuid": "6158517d-823e-458a-aed6-05df31c24576"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1069",
-    "license": 1,
-    "name": "CLBAOffshoreWindAreaBD",
-    "ownerUsername": "isabella",
-    "title": "SOS NBFC BD owf",
-    "uuid": "25651384-b947-416d-ab57-994b6ae755c8"
   },
   {
     "filesState": "ok",
@@ -5009,15 +4757,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/1058/SP_OWF_remote.sld",
     "title": "SOS NBFC SP OWF",
     "uuid": "21c75a27-569b-43ff-9411-bc21f2689de6"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1055",
-    "license": 1,
-    "name": "NW_BAtraspmarit",
-    "ownerUsername": "isabella",
-    "title": "SOS NBFC Trasporto",
-    "uuid": "07375e3e-20cf-4f9b-97cc-43d44f9ea372"
   },
   {
     "filesState": "ok",
@@ -5120,15 +4859,6 @@
     "uuid": "efb4891c-f984-41f9-b038-07e2f29be59c"
   },
   {
-    "filesState": "no-original-files",
-    "id": "910",
-    "license": 1,
-    "name": "Stenella_OBIS2",
-    "ownerUsername": "isabella",
-    "title": "Stenella coeruleoalba OBIS Sighting",
-    "uuid": "fd68c26c-2b3c-43db-8000-430dd063b478"
-  },
-  {
     "filesState": "ok",
     "id": "614",
     "license": 8,
@@ -5196,15 +4926,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/925/PublicVMEncounters1974_20230_remote.sld",
     "title": "VME Encounters GFCM 1974-2023",
     "uuid": "7e5601ef-ade2-4698-8c62-d05928c26149"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "924",
-    "license": 1,
-    "name": "WWF_Marxan_For_Portal",
-    "ownerUsername": "isabella",
-    "title": "WWF_Marxan_For_Portal",
-    "uuid": "d742e34f-ee4d-4dfd-8242-c4b9e654a736"
   },
   {
     "filesState": "ok",
@@ -5377,15 +5098,6 @@
     "uuid": "56b5da86-c27c-11ed-9bb6-005056bd28c9"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1132",
-    "license": 1,
-    "name": "pSIC_per_il_Tursiope",
-    "ownerUsername": "sarretta",
-    "title": "pSIC_per_il_Tursiope",
-    "uuid": "dfdc2d03-495f-49cc-ab86-8f9f16fc8a16"
-  },
-  {
     "filesState": "ok",
     "id": "690",
     "license": 1,
@@ -5404,24 +5116,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/vector-layers/download/694/status_prp___c9f595c0-83ad-11ee-a7f7-8119a4207a89_remote.sld",
     "title": "porti_status_prp_4326",
     "uuid": "c4bb395a-2b58-4f24-94c1-197c8f96c702"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "611",
-    "license": 1,
-    "name": "_55",
-    "ownerUsername": "omar",
-    "title": "rt",
-    "uuid": "5b2f36da-6101-4aa3-be40-f6a0ac89c020"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1723",
-    "license": 1,
-    "name": "test",
-    "ownerUsername": "alessandro2",
-    "title": "test",
-    "uuid": "2559c892-f670-4339-ade9-3824f13452f8"
   },
   {
     "filesState": "ok",
@@ -5952,5 +5646,315 @@
     "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/2184/vessel_density_2023_cargo0_remote.sld",
     "title": "vessel_density_2023_cargo0",
     "uuid": "a0f20c9c-f21b-494c-a8aa-db841962e14c"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1475",
+    "license": 1,
+    "name": "Bridge_BS_Use_Scenarios",
+    "ownerUsername": "alessandro2",
+    "title": "Bridge_BS_Use_Scenarios",
+    "uuid": "97b98e66-0a44-4424-ac0a-445002a7a084"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "555",
+    "license": 1,
+    "name": "CaseStudySoS0",
+    "ownerUsername": "germana.garofalo@cnr.it",
+    "title": "CaseStudySoS0",
+    "uuid": "22d12b41-3670-4273-a4af-5142607d03c6"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "864",
+    "license": 1,
+    "name": "Export_Output_103",
+    "ownerUsername": "Beltrano",
+    "title": "Export_Output_103",
+    "uuid": "b2ffb25c-6925-493c-a8e3-904fc47f2bfd"
+  },
+  {
+    "filesState": "ok",
+    "id": "1689",
+    "license": 1,
+    "name": "Fishing_Grounds_SoS",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/1689/Fishing_Grounds_SoS_remote.sld",
+    "title": "Fishing grounds (core and marginal) SoS",
+    "uuid": "a137e1fc-5af6-4a7c-99e2-d4694d4928db"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1423",
+    "license": 1,
+    "name": "fishingeffort_2023_polygons",
+    "ownerUsername": "alessandro2",
+    "title": "GFW Med Fishing Effort 2023-vector",
+    "uuid": "3f6f16ff-6c9f-480d-8c95-a9afc5aae0c6"
+  },
+  {
+    "filesState": "ok",
+    "id": "669",
+    "license": 9,
+    "name": "IBA_GN",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/669/IBA_GN_remote.sld",
+    "title": "Important Bird Areas - IBA - Italy - 2019 (GN)",
+    "uuid": "a23290fd-e68a-497a-9529-2d39dc4cf39b"
+  },
+  {
+    "filesState": "ok",
+    "id": "1093",
+    "license": 9,
+    "name": "KBAsGlobal_2024_March_01_POL_b0_MED_EU",
+    "ownerUsername": "alessandro2",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/1093/KBAsGlobal_2024_March_01_POL_b0_MED_EU_remote.sld",
+    "title": "Key Biodiversity Areas (Mediterranean and Europe)",
+    "uuid": "c633402f-4de7-412a-b364-abca86cee316"
+  },
+  {
+    "filesState": "ok",
+    "id": "948",
+    "license": 1,
+    "name": "a__4",
+    "ownerUsername": "isabella",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/vector-layers/download/948/a__4_remote.sld",
+    "title": "Liguria - Suitable Areas for fish farming",
+    "uuid": "f1e4cf02-e759-4b18-b28f-f078821fa26d"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1097",
+    "license": 1,
+    "name": "SPMaritimeTransport",
+    "ownerUsername": "isabella",
+    "title": "NAS NBFC SP MaritimeTransport",
+    "uuid": "d95d59f6-7a2a-48b9-8ae5-e7c519f97ed2"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1143",
+    "license": 1,
+    "name": "a__6nm",
+    "ownerUsername": "isabella",
+    "title": "NBFC NAS 6NM",
+    "uuid": "33ade4d1-d227-425a-8671-97ff9c78075d"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1109",
+    "license": 1,
+    "name": "BDnewandextendedZTBFRA",
+    "ownerUsername": "isabella",
+    "title": "NBFC NAS BD ZTB",
+    "uuid": "73c9e506-e759-4d0d-b95f-d0c9d59f9a86"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1116",
+    "license": 1,
+    "name": "NWOWF",
+    "ownerUsername": "isabella",
+    "title": "NBFC NAS NW OWF",
+    "uuid": "8731121d-7c44-40ef-a637-71251efb1be4"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1154",
+    "license": 1,
+    "name": "NW_BD_PSSA0",
+    "ownerUsername": "isabella",
+    "title": "NBFC NAS PSSA",
+    "uuid": "76d78835-1127-45d8-8796-cdfb771f9b94"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1095",
+    "license": 1,
+    "name": "SPFSRU",
+    "ownerUsername": "isabella",
+    "title": "NBFC NAS SP FSRU",
+    "uuid": "c0261de5-c963-4312-bfdf-d0a017e96176"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1034",
+    "license": 1,
+    "name": "ATBA",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC ATBA",
+    "uuid": "44ea1cda-655a-40c0-9c96-1db3390cee39"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1045",
+    "license": 1,
+    "name": "Acquacoltura",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC BD Acquacoltura",
+    "uuid": "7fce98ac-d270-4cd6-9e7e-9bb6265b5a64"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1044",
+    "license": 1,
+    "name": "AMP_ATBA",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC BD Conservazione",
+    "uuid": "af36d6b9-8efa-4c28-ae67-6014ea0346d9"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1042",
+    "license": 1,
+    "name": "Difesa_costiera",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC BD Difesa",
+    "uuid": "7b8ca9c1-6f79-436a-b1b6-54c63bc34a0c"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1033",
+    "license": 1,
+    "name": "difesa0",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC Difesa SP NW",
+    "uuid": "feb828e9-56b0-4eff-8080-da14816b1508"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1048",
+    "license": 1,
+    "name": "ZTB",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC NW ZTB",
+    "uuid": "3dfd9c7b-f4ec-4df4-ae52-a422ef7478bf"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1038",
+    "license": 1,
+    "name": "Tursiope2nk",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC Natura2000 Tursiope",
+    "uuid": "966eb3dc-2e9b-41c1-81c3-66a313a746b0"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1032",
+    "license": 1,
+    "name": "Protezione",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC SP Conservation",
+    "uuid": "38521aec-8931-49fd-b80a-a5c2067132f6"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1037",
+    "license": 1,
+    "name": "ZPS",
+    "ownerUsername": "isabella",
+    "title": "NTS NBFC ZPS",
+    "uuid": "863a781e-3f31-492d-8df8-bb44c2b89c25"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "886",
+    "license": 1,
+    "name": "ordinanze_sicilia_ag",
+    "ownerUsername": "Beltrano",
+    "title": "Ordinanze Sicilia",
+    "uuid": "c93f1f55-e181-4453-bb6d-665fb1953b66"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1065",
+    "license": 1,
+    "name": "Aquaculture",
+    "ownerUsername": "isabella",
+    "title": "SOS NBFC BD Acquacoltura",
+    "uuid": "c489f365-7e68-46cb-b932-91171b4db766"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1066",
+    "license": 1,
+    "name": "BAnuoveFRA",
+    "ownerUsername": "isabella",
+    "title": "SOS NBFC BD FRA",
+    "uuid": "ee38e465-3dce-41bb-a9d5-6c5fbbc47966"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1070",
+    "license": 1,
+    "name": "RI0",
+    "ownerUsername": "isabella",
+    "title": "SOS NBFC BD RI",
+    "uuid": "bcab58b8-dd8d-41b9-8bc8-77db2c37adae"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1069",
+    "license": 1,
+    "name": "CLBAOffshoreWindAreaBD",
+    "ownerUsername": "isabella",
+    "title": "SOS NBFC BD owf",
+    "uuid": "25651384-b947-416d-ab57-994b6ae755c8"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1055",
+    "license": 1,
+    "name": "NW_BAtraspmarit",
+    "ownerUsername": "isabella",
+    "title": "SOS NBFC Trasporto",
+    "uuid": "07375e3e-20cf-4f9b-97cc-43d44f9ea372"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "910",
+    "license": 1,
+    "name": "Stenella_OBIS2",
+    "ownerUsername": "isabella",
+    "title": "Stenella coeruleoalba OBIS Sighting",
+    "uuid": "fd68c26c-2b3c-43db-8000-430dd063b478"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "924",
+    "license": 1,
+    "name": "WWF_Marxan_For_Portal",
+    "ownerUsername": "isabella",
+    "title": "WWF_Marxan_For_Portal",
+    "uuid": "d742e34f-ee4d-4dfd-8242-c4b9e654a736"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1132",
+    "license": 1,
+    "name": "pSIC_per_il_Tursiope",
+    "ownerUsername": "sarretta",
+    "title": "pSIC_per_il_Tursiope",
+    "uuid": "dfdc2d03-495f-49cc-ab86-8f9f16fc8a16"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "611",
+    "license": 1,
+    "name": "_55",
+    "ownerUsername": "omar",
+    "title": "rt",
+    "uuid": "5b2f36da-6101-4aa3-be40-f6a0ac89c020"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1723",
+    "license": 1,
+    "name": "test",
+    "ownerUsername": "alessandro2",
+    "title": "test",
+    "uuid": "2559c892-f670-4339-ade9-3824f13452f8"
   }
 ]

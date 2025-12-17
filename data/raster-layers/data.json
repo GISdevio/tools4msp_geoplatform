@@ -1,14 +1,5 @@
 [
   {
-    "filesState": "no-original-files",
-    "id": "629",
-    "license": 8,
-    "name": "macro203",
-    "ownerUsername": "HCRM",
-    "title": "2010 average of surface macroplastic distribution at 1/20º (HCMR)",
-    "uuid": "50367da8-89e0-4347-a2d2-a1ff2df43e27"
-  },
-  {
     "filesState": "ok",
     "id": "630",
     "license": 8,
@@ -39,60 +30,6 @@
     "uuid": "ece4833c-102e-495f-8e36-c8bc44ed2b84"
   },
   {
-    "filesState": "no-original-files",
-    "id": "35",
-    "license": 9,
-    "name": "bridge_bs_ps3_merlangius",
-    "ownerUsername": "AquaMaps",
-    "title": "AquaMaps - Merlangius merlangus (2020)",
-    "uuid": "8d4b4c08-2ac8-11ed-b748-0242ac140008"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "24",
-    "license": 9,
-    "name": "bridge_bs_pomatomus_saltatrix",
-    "ownerUsername": "AquaMaps",
-    "title": "AquaMaps - Pomatomus saltatrix (2020)",
-    "uuid": "ce4b3b84-2aa8-11ed-b0d3-0242ac140008"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "30",
-    "license": 9,
-    "name": "bridge_bs_sarda_sarda",
-    "ownerUsername": "AquaMaps",
-    "title": "AquaMaps - Sarda sarda (2020)",
-    "uuid": "8e2a7eb2-2ac5-11ed-92d0-0242ac140008"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "34",
-    "license": 9,
-    "name": "bridge_bs_ps3_scophtalmus",
-    "ownerUsername": "AquaMaps",
-    "title": "AquaMaps - Scophthalmus maximus (2020)",
-    "uuid": "f924d6a2-2ac7-11ed-9f14-0242ac140008"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "33",
-    "license": 9,
-    "name": "geonode_aquamaps_squalus_acanthias",
-    "ownerUsername": "AquaMaps",
-    "title": "AquaMaps - Squalus acanthias (2020)",
-    "uuid": "51758a46-2ac7-11ed-b177-0242ac140008"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "23",
-    "license": 9,
-    "name": "bridge_bs_trachurus_trachurus",
-    "ownerUsername": "AquaMaps",
-    "title": "AquaMaps - Trachurus trachurus (2020)",
-    "uuid": "fdf93832-2aa7-11ed-8d5b-0242ac140008"
-  },
-  {
     "filesState": "ok",
     "id": "548",
     "license": 1,
@@ -113,33 +50,6 @@
     "uuid": "aefe02dd-f8dd-423c-968c-1b52fb5c2668"
   },
   {
-    "filesState": "no-original-files",
-    "id": "545",
-    "license": 1,
-    "name": "PS1_cea_MAPCEA_MSFDPHY",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 1 - MSFDPHY CEASCORE - Current condition",
-    "uuid": "66f93c8f-9636-4325-8c2c-059d609eb5e5"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "544",
-    "license": 1,
-    "name": "PS1_cea_MAPCEA_MSFDSUB",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 1 - MSFDSUB CEASCORE - Current condition",
-    "uuid": "4fc36d88-14a3-4b15-ae48-3ea0f573cc07"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "529",
-    "license": 1,
-    "name": "cea_CEASCORE_ps2",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 2 - CEASCORE - Current condition",
-    "uuid": "c16c9088-de59-42eb-8fd1-f699ac93cdba"
-  },
-  {
     "filesState": "ok",
     "id": "577",
     "license": 1,
@@ -150,33 +60,6 @@
     "uuid": "9aa72796-5f51-4c03-a1f3-b6fa0f9a8d40"
   },
   {
-    "filesState": "no-original-files",
-    "id": "531",
-    "license": 1,
-    "name": "cea_MAPCEA_MSFDBIO",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 2 - MSFDBIO CEASCORE - Current condition",
-    "uuid": "85a81e4a-c0b5-4970-9712-415ec0292632"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "533",
-    "license": 1,
-    "name": "cea_MAPCEA_MSFDPHY",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 2 - MSFDPHY CEASCORE - Current condition",
-    "uuid": "0d8ed7ee-57a4-47f0-9fc3-ea2c488518b0"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "532",
-    "license": 1,
-    "name": "cea_MAPCEA_MSFDSUB",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 2 - MSFDSUB CEASCORE - Current condition",
-    "uuid": "e8427a02-01f6-43f7-abbc-3a1167d9a9c6"
-  },
-  {
     "filesState": "ok",
     "id": "450",
     "license": 1,
@@ -185,33 +68,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/450/geonode__589_4152_FISHING_remote.sld",
     "title": "BRIDGE-BS - Pilot Site 2 - Marine litter from Fishing vessel density",
     "uuid": "26967186-e2e0-439e-b7c9-0fd3ab113a0f"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "551",
-    "license": 1,
-    "name": "PS3_cea_CEASCORE",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 3 - CEASCORE - Current condition",
-    "uuid": "847c3d73-aef9-4e40-8d35-d3d63d670fea"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "552",
-    "license": 1,
-    "name": "PS3_cea_MAPCEA_MSFDBIO",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 3 - MSFDBIO CEASCORE - Current condition",
-    "uuid": "81cd64bf-24ff-4b92-8ea1-3d6679ff7e1e"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "549",
-    "license": 1,
-    "name": "PS3_cea_MAPCEA_MSFDPHY",
-    "ownerUsername": "admin",
-    "title": "BRIDGE-BS - Pilot Site 3 - MSFDPHY CEASCORE - Current condition",
-    "uuid": "01ab215c-d5b7-4478-a0c3-6a02bbb2ed84"
   },
   {
     "filesState": "ok",
@@ -854,15 +710,6 @@
     "uuid": "526b2583-02de-4c28-ab57-61a2e18af46f"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1484",
-    "license": 1,
-    "name": "MB55__Mediterranean_infralittoral_sand0",
-    "ownerUsername": "danilo.scannella",
-    "title": "MB55 Mediterranean infralittoral sand SoS",
-    "uuid": "cdde4835-0b37-42b0-bee0-d3851f82879d"
-  },
-  {
     "filesState": "ok",
     "id": "1380",
     "license": 1,
@@ -1147,15 +994,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/493/M_galloprovincialis_Maxent_2017_PS2_remote.sld",
     "title": "M_galloprovincialis_Maxent_2017_PS2",
     "uuid": "815f80c6-7f0d-4069-8f7f-ebaf93ca9592"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "472",
-    "license": 1,
-    "name": "a__550_4240_MLITTER",
-    "ownerUsername": "Training_PS3",
-    "title": "Marine litter",
-    "uuid": "615fef62-84e8-424d-9695-be63c6033663"
   },
   {
     "filesState": "ok",
@@ -1608,15 +1446,6 @@
     "uuid": "47228a38-4983-4117-9715-64016ff0a400"
   },
   {
-    "filesState": "no-original-files",
-    "id": "1522",
-    "license": 1,
-    "name": "RAJACLA_spawners_persistence1",
-    "ownerUsername": "danilo.scannella",
-    "title": "Spawning Habitat of Thornback ray Raja clavata (RJC) SoS",
-    "uuid": "6b728f97-3d5c-4bc9-9964-b40cb5399ca2"
-  },
-  {
     "filesState": "ok",
     "id": "1521",
     "license": 1,
@@ -1827,51 +1656,6 @@
     "uuid": "49a48f91-7ebb-4b29-add7-132ae8dd03f7"
   },
   {
-    "filesState": "no-original-files",
-    "id": "471",
-    "license": 1,
-    "name": "a__550_4240_MLITTER",
-    "ownerUsername": "Training_PS3",
-    "title": "a__550_4240_MLITTER",
-    "uuid": "5902acbd-5dee-4d82-b76e-debe07a3b4ee"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "617",
-    "license": 1,
-    "name": "a__582_4587_CEASCORE",
-    "ownerUsername": "BRIDGEPS",
-    "title": "a__582_4587_CEASCORE",
-    "uuid": "6dd7efd4-fe7b-49bc-bfa7-10533b17ac89"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1547",
-    "license": 1,
-    "name": "a__911_5208_CEASCORE",
-    "ownerUsername": "danilo.scannella",
-    "title": "a__911_5208_CEASCORE",
-    "uuid": "4b7992f7-d228-486d-977b-c3946ef36ce8"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1538",
-    "license": 1,
-    "name": "a__911_5208_MAPCEA_IMPACT_LEVEL",
-    "ownerUsername": "danilo.scannella",
-    "title": "a__911_5208_MAPCEA_IMPACT_LEVEL",
-    "uuid": "68f4830f-79de-4337-98a6-98f96c439661"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1539",
-    "license": 1,
-    "name": "a__911_5208_MAPCEA_IMPACT_LEVEL",
-    "ownerUsername": "danilo.scannella",
-    "title": "a__911_5208_MAPCEA_IMPACT_LEVEL",
-    "uuid": "5645c4ef-fba0-496a-9206-81071219b42a"
-  },
-  {
     "filesState": "ok",
     "id": "1548",
     "license": 1,
@@ -1890,15 +1674,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1542/geonode__911_5208_MAPCEA_MSFDPHY_remote.sld",
     "title": "a__911_5208_MAPCEA_MSFDPHY",
     "uuid": "9cf58a6d-8945-4649-81e7-6e7728ccf184"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1543",
-    "license": 1,
-    "name": "a__911_5208_MAPCEA_MSFDSUB",
-    "ownerUsername": "danilo.scannella",
-    "title": "a__911_5208_MAPCEA_MSFDSUB",
-    "uuid": "abf877df-9a15-4642-85de-221731edb1d4"
   },
   {
     "filesState": "ok",
@@ -1929,33 +1704,6 @@
     "stylePath": "/Users/edoardo/Documents/geonode/tools4msp_geoplatform/data/raster-layers/download/1540/geonode__911_5208_MAPINDEX_UDIV_remote.sld",
     "title": "a__911_5208_MAPINDEX_UDIV",
     "uuid": "45305b1f-3d21-410e-ab50-93d2eaa09727"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1544",
-    "license": 1,
-    "name": "a__911_5208_MAP_EFFECT_POTENTIAL",
-    "ownerUsername": "danilo.scannella",
-    "title": "a__911_5208_MAP_EFFECT_POTENTIAL",
-    "uuid": "5ca3ab42-f23c-4ca5-9753-67b65786022e"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1545",
-    "license": 1,
-    "name": "a__911_5208_MAP_SENS_POTENTIAL",
-    "ownerUsername": "danilo.scannella",
-    "title": "a__911_5208_MAP_SENS_POTENTIAL",
-    "uuid": "7a71b7be-4a2a-4896-a307-2e05c0089bd1"
-  },
-  {
-    "filesState": "no-original-files",
-    "id": "1546",
-    "license": 1,
-    "name": "a__911_5208_MAP_VULNERABILITY",
-    "ownerUsername": "danilo.scannella",
-    "title": "a__911_5208_MAP_VULNERABILITY",
-    "uuid": "49c56f1a-4d44-403f-bf61-77f6f0ac4e68"
   },
   {
     "filesState": "ok",
@@ -2146,5 +1894,273 @@
     "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/2260/bridgebs_basinwide_UiA_remote.sld",
     "title": "bridgebs_basinwide_UiA",
     "uuid": "bfcda85e-790f-40bb-953d-02eb64421063"
+  },
+  {
+    "filesState": "ok",
+    "id": "629",
+    "license": 8,
+    "name": "macro203",
+    "ownerUsername": "HCRM",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/629/macro203_remote.sld",
+    "title": "2010 average of surface macroplastic distribution at 1/20º (HCMR)",
+    "uuid": "50367da8-89e0-4347-a2d2-a1ff2df43e27"
+  },
+  {
+    "filesState": "ok",
+    "id": "35",
+    "license": 9,
+    "name": "bridge_bs_ps3_merlangius",
+    "ownerUsername": "AquaMaps",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/35/bridge_bs_ps3_merlangius_remote.sld",
+    "title": "AquaMaps - Merlangius merlangus (2020)",
+    "uuid": "8d4b4c08-2ac8-11ed-b748-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "24",
+    "license": 9,
+    "name": "bridge_bs_pomatomus_saltatrix",
+    "ownerUsername": "AquaMaps",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/24/bridge_bs_pomatomus_saltatrix_remote.sld",
+    "title": "AquaMaps - Pomatomus saltatrix (2020)",
+    "uuid": "ce4b3b84-2aa8-11ed-b0d3-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "30",
+    "license": 9,
+    "name": "bridge_bs_sarda_sarda",
+    "ownerUsername": "AquaMaps",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/30/bridge_bs_sarda_sarda_remote.sld",
+    "title": "AquaMaps - Sarda sarda (2020)",
+    "uuid": "8e2a7eb2-2ac5-11ed-92d0-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "34",
+    "license": 9,
+    "name": "bridge_bs_ps3_scophtalmus",
+    "ownerUsername": "AquaMaps",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/34/bridge_bs_ps3_scophtalmus_remote.sld",
+    "title": "AquaMaps - Scophthalmus maximus (2020)",
+    "uuid": "f924d6a2-2ac7-11ed-9f14-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "33",
+    "license": 9,
+    "name": "geonode_aquamaps_squalus_acanthias",
+    "ownerUsername": "AquaMaps",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/33/bridge_bs_sarda_sarda_remote.sld",
+    "title": "AquaMaps - Squalus acanthias (2020)",
+    "uuid": "51758a46-2ac7-11ed-b177-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "23",
+    "license": 9,
+    "name": "bridge_bs_trachurus_trachurus",
+    "ownerUsername": "AquaMaps",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/23/bridge_bs_trachurus_trachurus_remote.sld",
+    "title": "AquaMaps - Trachurus trachurus (2020)",
+    "uuid": "fdf93832-2aa7-11ed-8d5b-0242ac140008"
+  },
+  {
+    "filesState": "ok",
+    "id": "545",
+    "license": 1,
+    "name": "PS1_cea_MAPCEA_MSFDPHY",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/545/PS1_cea_MAPCEA_MSFDPHY_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 1 - MSFDPHY CEASCORE - Current condition",
+    "uuid": "66f93c8f-9636-4325-8c2c-059d609eb5e5"
+  },
+  {
+    "filesState": "ok",
+    "id": "544",
+    "license": 1,
+    "name": "PS1_cea_MAPCEA_MSFDSUB",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/544/PS1_cea_MAPCEA_MSFDSUB_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 1 - MSFDSUB CEASCORE - Current condition",
+    "uuid": "4fc36d88-14a3-4b15-ae48-3ea0f573cc07"
+  },
+  {
+    "filesState": "ok",
+    "id": "529",
+    "license": 1,
+    "name": "cea_CEASCORE_ps2",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/529/cea_CEASCORE_ps2_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 2 - CEASCORE - Current condition",
+    "uuid": "c16c9088-de59-42eb-8fd1-f699ac93cdba"
+  },
+  {
+    "filesState": "ok",
+    "id": "531",
+    "license": 1,
+    "name": "cea_MAPCEA_MSFDBIO",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/531/cea_MAPCEA_MSFDBIO_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 2 - MSFDBIO CEASCORE - Current condition",
+    "uuid": "85a81e4a-c0b5-4970-9712-415ec0292632"
+  },
+  {
+    "filesState": "ok",
+    "id": "533",
+    "license": 1,
+    "name": "cea_MAPCEA_MSFDPHY",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/533/cea_MAPCEA_MSFDPHY_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 2 - MSFDPHY CEASCORE - Current condition",
+    "uuid": "0d8ed7ee-57a4-47f0-9fc3-ea2c488518b0"
+  },
+  {
+    "filesState": "ok",
+    "id": "532",
+    "license": 1,
+    "name": "cea_MAPCEA_MSFDSUB",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/532/cea_MAPCEA_MSFDSUB_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 2 - MSFDSUB CEASCORE - Current condition",
+    "uuid": "e8427a02-01f6-43f7-abbc-3a1167d9a9c6"
+  },
+  {
+    "filesState": "ok",
+    "id": "551",
+    "license": 1,
+    "name": "PS3_cea_CEASCORE",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/551/PS3_cea_CEASCORE_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 3 - CEASCORE - Current condition",
+    "uuid": "847c3d73-aef9-4e40-8d35-d3d63d670fea"
+  },
+  {
+    "filesState": "ok",
+    "id": "552",
+    "license": 1,
+    "name": "PS3_cea_MAPCEA_MSFDBIO",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/552/PS3_cea_MAPCEA_MSFDBIO_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 3 - MSFDBIO CEASCORE - Current condition",
+    "uuid": "81cd64bf-24ff-4b92-8ea1-3d6679ff7e1e"
+  },
+  {
+    "filesState": "ok",
+    "id": "549",
+    "license": 1,
+    "name": "PS3_cea_MAPCEA_MSFDPHY",
+    "ownerUsername": "admin",
+    "stylePath": "/Users/nb198/Documents/github.com/gisdevio/tools4msp_geoplatform/data/raster-layers/download/549/PS3_cea_MAPCEA_MSFDPHY_remote.sld",
+    "title": "BRIDGE-BS - Pilot Site 3 - MSFDPHY CEASCORE - Current condition",
+    "uuid": "01ab215c-d5b7-4478-a0c3-6a02bbb2ed84"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1484",
+    "license": 1,
+    "name": "MB55__Mediterranean_infralittoral_sand0",
+    "ownerUsername": "danilo.scannella",
+    "title": "MB55 Mediterranean infralittoral sand SoS",
+    "uuid": "cdde4835-0b37-42b0-bee0-d3851f82879d"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "472",
+    "license": 1,
+    "name": "a__550_4240_MLITTER",
+    "ownerUsername": "Training_PS3",
+    "title": "Marine litter",
+    "uuid": "615fef62-84e8-424d-9695-be63c6033663"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1522",
+    "license": 1,
+    "name": "RAJACLA_spawners_persistence1",
+    "ownerUsername": "danilo.scannella",
+    "title": "Spawning Habitat of Thornback ray Raja clavata (RJC) SoS",
+    "uuid": "6b728f97-3d5c-4bc9-9964-b40cb5399ca2"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "471",
+    "license": 1,
+    "name": "a__550_4240_MLITTER",
+    "ownerUsername": "Training_PS3",
+    "title": "a__550_4240_MLITTER",
+    "uuid": "5902acbd-5dee-4d82-b76e-debe07a3b4ee"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "617",
+    "license": 1,
+    "name": "a__582_4587_CEASCORE",
+    "ownerUsername": "BRIDGEPS",
+    "title": "a__582_4587_CEASCORE",
+    "uuid": "6dd7efd4-fe7b-49bc-bfa7-10533b17ac89"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1547",
+    "license": 1,
+    "name": "a__911_5208_CEASCORE",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_CEASCORE",
+    "uuid": "4b7992f7-d228-486d-977b-c3946ef36ce8"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1538",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "uuid": "68f4830f-79de-4337-98a6-98f96c439661"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1539",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAPCEA_IMPACT_LEVEL",
+    "uuid": "5645c4ef-fba0-496a-9206-81071219b42a"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1543",
+    "license": 1,
+    "name": "a__911_5208_MAPCEA_MSFDSUB",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAPCEA_MSFDSUB",
+    "uuid": "abf877df-9a15-4642-85de-221731edb1d4"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1544",
+    "license": 1,
+    "name": "a__911_5208_MAP_EFFECT_POTENTIAL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAP_EFFECT_POTENTIAL",
+    "uuid": "5ca3ab42-f23c-4ca5-9753-67b65786022e"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1545",
+    "license": 1,
+    "name": "a__911_5208_MAP_SENS_POTENTIAL",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAP_SENS_POTENTIAL",
+    "uuid": "7a71b7be-4a2a-4896-a307-2e05c0089bd1"
+  },
+  {
+    "filesState": "no-original-files",
+    "id": "1546",
+    "license": 1,
+    "name": "a__911_5208_MAP_VULNERABILITY",
+    "ownerUsername": "danilo.scannella",
+    "title": "a__911_5208_MAP_VULNERABILITY",
+    "uuid": "49c56f1a-4d44-403f-bf61-77f6f0ac4e68"
   }
 ]

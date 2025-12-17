@@ -81,24 +81,12 @@ These are layers for which details cannot be opened (they miss the `detail_url` 
 
 ### No original files
 
-There are layers whose original files cannot be downloaded (they miss the "Download original files" link in the UI under `Download Layer > Data`). It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`.
+There are layers whose original files cannot be downloaded (they miss the "Download original files" link in the UI under `Download Layer > Data`). Trying to use the "Export Layer" function triggers a `DownloadEstimator error` with the following message:
 
-- `[629] 2010 average of surface macroplastic distribution at 1/20º (HCMR)` uploaded by `HCRM`
-- `[35] AquaMaps - Merlangius merlangus (2020)` uploaded by `AquaMaps`
-- `[24] AquaMaps - Pomatomus saltatrix (2020)` uploaded by `AquaMaps`
-- `[30] AquaMaps - Sarda sarda (2020)` uploaded by `AquaMaps`
-- `[34] AquaMaps - Scophthalmus maximus (2020)` uploaded by `AquaMaps`
-- `[33] AquaMaps - Squalus acanthias (2020)` uploaded by `AquaMaps`
-- `[23] AquaMaps - Trachurus trachurus (2020)` uploaded by `AquaMaps`
-- `[545] BRIDGE-BS - Pilot Site 1 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
-- `[544] BRIDGE-BS - Pilot Site 1 - MSFDSUB CEASCORE - Current condition` uploaded by `admin`
-- `[529] BRIDGE-BS - Pilot Site 2 - CEASCORE - Current condition` uploaded by `admin`
-- `[531] BRIDGE-BS - Pilot Site 2 - MSFDBIO CEASCORE - Current condition` uploaded by `admin`
-- `[533] BRIDGE-BS - Pilot Site 2 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
-- `[532] BRIDGE-BS - Pilot Site 2 - MSFDSUB CEASCORE - Current condition` uploaded by `admin`
-- `[551] BRIDGE-BS - Pilot Site 3 - CEASCORE - Current condition` uploaded by `admin`
-- `[552] BRIDGE-BS - Pilot Site 3 - MSFDBIO CEASCORE - Current condition` uploaded by `admin`
-- `[549] BRIDGE-BS - Pilot Site 3 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
+> DownloadEstimator request failed which means that exported files exceeds configured server limits. Try to change download options or add filter to your layer and try again.
+
+It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`.
+
 - `[1484] MB55 Mediterranean infralittoral sand SoS` uploaded by `danilo.scannella`
 - `[472] Marine litter` uploaded by `Training_PS3`
 - `[1522] Spawning Habitat of Thornback ray Raja clavata (RJC) SoS` uploaded by `danilo.scannella`
@@ -112,9 +100,23 @@ There are layers whose original files cannot be downloaded (they miss the "Downl
 - `[1545] a__911_5208_MAP_SENS_POTENTIAL` uploaded by `danilo.scannella`
 - `[1546] a__911_5208_MAP_VULNERABILITY` uploaded by `danilo.scannella`
 
+### Multiple TIF files
+
+There are layers with multiple TIF files in their original files. For these layers, we do not know which file to use. It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`.
+
+- `[545] BRIDGE-BS - Pilot Site 1 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
+- `[544] BRIDGE-BS - Pilot Site 1 - MSFDSUB CEASCORE - Current condition` uploaded by `admin`
+- `[529] BRIDGE-BS - Pilot Site 2 - CEASCORE - Current condition` uploaded by `admin`
+- `[531] BRIDGE-BS - Pilot Site 2 - MSFDBIO CEASCORE - Current condition` uploaded by `admin`
+- `[533] BRIDGE-BS - Pilot Site 2 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
+- `[532] BRIDGE-BS - Pilot Site 2 - MSFDSUB CEASCORE - Current condition` uploaded by `admin`
+- `[551] BRIDGE-BS - Pilot Site 3 - CEASCORE - Current condition` uploaded by `admin`
+- `[552] BRIDGE-BS - Pilot Site 3 - MSFDBIO CEASCORE - Current condition` uploaded by `admin`
+- `[549] BRIDGE-BS - Pilot Site 3 - MSFDPHY CEASCORE - Current condition` uploaded by `admin`
+
 ### Multiple styles
 
-During the migration of raster layers we found some layers with multiple styles. The support for multiple styles [has been dropped](https://github.com/GeoNode/geonode/discussions/12840) with Geonode 4, therefore we choose to keep only the *default style* in the migration process.
+During the migration of raster layers, we found some layers with multiple styles. The support for multiple styles [has been dropped](https://github.com/GeoNode/geonode/discussions/12840) with Geonode 4, therefore we choose to keep only the *default style* in the migration process.
 
 It follows a list of the layers involved in the form of `[<layer-id>] <layer-name>`. The extra styles (i.e., the non-default ones) are collected in the `/data/raster-layers-extra-styles` folder of this repo and are organized in folders named as the corresponding layer id.
 
@@ -136,11 +138,7 @@ There are layers whose original files cannot be downloaded (they miss the "Downl
 - `[1475] Bridge_BS_Use_Scenarios` uploaded by `alessandro2`
 - `[555] CaseStudySoS0` uploaded by `germana.garofalo@cnr.it`
 - `[864] Export_Output_103` uploaded by `Beltrano`
-- `[1689] Fishing_Grounds_SoS` uploaded by `alessandro2`
 - `[1423] fishingeffort_2023_polygons` uploaded by `alessandro2`
-- `[669] IBA_GN` uploaded by `alessandro2`
-- `[1093] KBAsGlobal_2024_March_01_POL_b0_MED_EU` uploaded by `alessandro2`
-- `[948] a__4` uploaded by `isabella`
 - `[1097] SPMaritimeTransport` uploaded by `isabella`
 - `[1143] a__6nm` uploaded by `isabella`
 - `[1109] BDnewandextendedZTBFRA` uploaded by `isabella`
@@ -172,11 +170,13 @@ There are layers whose original files cannot be downloaded (they miss the "Downl
 
 During the upload of some layers a series of miscellaneous errors occurred. It follows a list of the layers involved in the form of `[<layer-id>] <layer-name> -> <error-occurred>`.
 
-- `[995] buffer01` uploaded by `isabella` -> `Non UFT-8 content found when writing feature -1 of layer`
+- `[995] Depth contour 800-1500m` uploaded by `isabella` -> `Non UFT-8 content found when writing feature -1 of layer`
+- `[1770] ReMAP - Sea Use Function Analysis` uploaded by `admin` -> `Non UFT-8 content found when writing feature -1 of layer`
 - `[2065] SSF_Adriamed_GSA170` uploaded by `alessandro2` -> `Missing "prj" file`
 - `[1708] SSF_Adriamed_GSA17` uploaded by `alessandro2` -> `Missing "prj" file`
 - `[2253] EU_2018_Wind_Farms_Criteria_status_D1_birds` uploaded by `admin` -> `Non UFT-8 content found when writing feature -1 of layer`
 - `[2154] baltic_nature_D5_eutrophication` uploaded by `admin` -> `Non UFT-8 content found when writing feature -1 of layer`
+- `[1689] Fishing_Grounds_SoS` uploaded by `alessandro2` -> `Failed to publish feature type fishing_grounds_sos_ahifmik : 500, This is unexpected, the layer srs seems to be mis-configured.`
 
 ### Multiple styles
 
