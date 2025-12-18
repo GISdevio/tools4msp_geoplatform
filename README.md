@@ -138,32 +138,32 @@ There are layers whose original files cannot be downloaded (they miss the "Downl
 - `[1475] Bridge_BS_Use_Scenarios` uploaded by `alessandro2`
 - `[555] CaseStudySoS0` uploaded by `germana.garofalo@cnr.it`
 - `[864] Export_Output_103` uploaded by `Beltrano`
-- `[1423] fishingeffort_2023_polygons` uploaded by `alessandro2`
-- `[1097] SPMaritimeTransport` uploaded by `isabella`
-- `[1143] a__6nm` uploaded by `isabella`
-- `[1109] BDnewandextendedZTBFRA` uploaded by `isabella`
-- `[1116] NWOWF` uploaded by `isabella`
-- `[1154] NW_BD_PSSA0` uploaded by `isabella`
-- `[1095] SPFSRU` uploaded by `isabella`
-- `[1034] ATBA` uploaded by `isabella`
-- `[1045] Acquacoltura` uploaded by `isabella`
-- `[1044] AMP_ATBA` uploaded by `isabella`
-- `[1042] Difesa_costiera` uploaded by `isabella`
-- `[1033] difesa0` uploaded by `isabella`
-- `[1048] ZTB` uploaded by `isabella`
-- `[1038] Tursiope2nk` uploaded by `isabella`
-- `[1032] Protezione` uploaded by `isabella`
-- `[1037] ZPS` uploaded by `isabella`
-- `[886] ordinanze_sicilia_ag` uploaded by `Beltrano`
-- `[1065] Aquaculture` uploaded by `isabella`
-- `[1066] BAnuoveFRA` uploaded by `isabella`
-- `[1070] RI0` uploaded by `isabella`
-- `[1069] CLBAOffshoreWindAreaBD` uploaded by `isabella`
-- `[1055] NW_BAtraspmarit` uploaded by `isabella`
-- `[910] Stenella_OBIS2` uploaded by `isabella`
+- `[1423] GFW Med Fishing Effort 2023-vector` uploaded by `alessandro2`
+- `[1097] NAS NBFC SP MaritimeTransport` uploaded by `isabella`
+- `[1143] NBFC NAS 6NM` uploaded by `isabella`
+- `[1109] NBFC NAS BD ZTB` uploaded by `isabella`
+- `[1116] NBFC NAS NW OWF` uploaded by `isabella`
+- `[1154] NBFC NAS PSSA` uploaded by `isabella`
+- `[1095] NBFC NAS SP FSRU` uploaded by `isabella`
+- `[1034] NTS NBFC ATBA` uploaded by `isabella`
+- `[1045] NTS NBFC BD Acquacoltura` uploaded by `isabella`
+- `[1044] NTS NBFC BD Conservazione` uploaded by `isabella`
+- `[1042] NTS NBFC BD Difesa` uploaded by `isabella`
+- `[1033] NTS NBFC Difesa SP NW` uploaded by `isabella`
+- `[1048] NTS NBFC NW ZTB` uploaded by `isabella`
+- `[1038] NTS NBFC Natura2000 Tursiope` uploaded by `isabella`
+- `[1032] NTS NBFC SP Conservation` uploaded by `isabella`
+- `[1037] NTS NBFC ZPS` uploaded by `isabella`
+- `[886] Ordinanze Sicilia` uploaded by `Beltrano`
+- `[1065] SOS NBFC BD Acquacoltura` uploaded by `isabella`
+- `[1066] SOS NBFC BD FRA` uploaded by `isabella`
+- `[1070] SOS NBFC BD RI` uploaded by `isabella`
+- `[1069] SOS NBFC BD owf` uploaded by `isabella`
+- `[1055] SOS NBFC Trasporto` uploaded by `isabella`
+- `[910] Stenella coeruleoalba OBIS Sighting` uploaded by `isabella`
 - `[924] WWF_Marxan_For_Portal` uploaded by `isabella`
 - `[1132] pSIC_per_il_Tursiope` uploaded by `sarretta`
-- `[611] _55` uploaded by `omar`
+- `[611] rt` uploaded by `omar`
 - `[1723] test` uploaded by `alessandro2`
 
 ### Misc upload errors
