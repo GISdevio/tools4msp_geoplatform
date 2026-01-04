@@ -26,6 +26,8 @@
     {% endblock %}
 
     {% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/home_search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home_featured.css' %}">
     {% endblock %}
 </head>
 
@@ -40,7 +42,8 @@
 
             {% load base_tags %}
             {% include "base/home_search.html" %}
-            {% show_resource_counters %}
+            {% include "base/home_featured.html" %}
+            {% include "base/home_counters.html" %}
             <!-- {% get_visibile_resources request.user %} -->
 
             {% block ms_scripts %}

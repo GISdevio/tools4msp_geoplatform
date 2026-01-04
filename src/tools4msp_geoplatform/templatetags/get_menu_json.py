@@ -104,11 +104,14 @@ def get_base_left_topbar_menu(context):
                 {"type": "link", "href": "/people/", "label": "People"},
                 {"type": "link", "href": "/groups/", "label": "Groups"},
                 {"type": "link", "href": "/groups/categories", "label": "Groups categories"},
+                {"type": "link", "href": "/announcements/", "label": "Announcements"},
             ] 
             + (
                 [
                     {"type": "divider"},
                     {"type": "link", "href": "/invitations/geonode-send-invite", "label": "Invite users"},
+                    {"type": "link", "href": "/admin/people/profile/add/", "label": "Add user"},
+                    {"type": "link", "href": "/groups/create/", "label": "Create group"},
                 ]
                 if user and user.is_authenticated
                 else []

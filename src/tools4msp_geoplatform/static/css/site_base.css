@@ -77,3 +77,348 @@
   align-items: baseline;
   width: 100%;
 }
+
+/* NAVBAR STYLING */
+
+/* Nasconde il caret di Bootstrap per evitare doppie frecce (mantiene solo ::after custom) */
+.navbar .dropdown-toggle .caret,
+.gn-menu .dropdown-toggle .caret,
+.navbar .dropdown-toggle::before,
+.gn-menu .dropdown-toggle::before {
+    display: none !important;
+}
+
+/* Navbar bianca - background principale */
+.gn-main-header,
+.gn-main-header .gn-menu,
+.gn-main-header nav,
+.gn-menu-symmetric,
+.gn-menu-container,
+.gn-menu-content,
+.msgapi .gn-menu.gn-primary,
+.gn-menu.gn-primary {
+    background-color: #ffffff !important;
+}
+
+/* Testo e link della navbar scuri */
+.gn-menu .btn,
+.gn-menu a,
+.gn-menu .btn-default,
+.gn-menu-list .btn,
+.msgapi .gn-menu.gn-primary .btn,
+.gn-menu.gn-primary .btn,
+.gn-main-header .btn-primary {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #333333 !important;
+}
+
+/* Hover sui link e bottoni */
+.gn-menu .btn:hover,
+.gn-menu a:hover,
+.gn-menu .btn-default:hover,
+.gn-menu-list .btn:hover {
+    background-color: #f5f5f5 !important;
+    color: #000000 !important;
+}
+
+/* Dropdown menu bianchi */
+.dropdown-menu,
+.gn-menu .dropdown-menu,
+ul.dropdown-menu,
+.msgapi .dropdown-menu {
+    background-color: #ffffff !important;
+    border: 1px solid #dddddd !important;
+}
+
+.dropdown-menu li,
+.dropdown-menu li a {
+    background-color: #ffffff !important;
+}
+
+.dropdown-menu li:hover,
+.dropdown-menu li a:hover {
+    background-color: #f5f5f5 !important;
+}
+
+/* Action navbar nelle pagine catalogue/dataset (MapStore) */
+.msgapi .gn-action-navbar,
+.msgapi .gn-action-navbar .btn-primary {
+    background-color: #ffffff !important;
+    border-color: #dddddd !important;
+    color: #333333 !important;
+}
+
+.msgapi .gn-action-navbar .btn-primary:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.msgapi .dropdown-toggle.btn-primary {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #333333 !important;
+}
+
+.gn-menu .btn:hover,
+.gn-menu .dropdown-toggle:hover,
+.gn-menu .btn:focus,
+.gn-menu .dropdown-toggle:focus {
+    box-shadow: none !important;
+    outline: 2px solid #3595f6 !important;
+}
+
+/* FIX NAVBAR LEGACY (profiles, groups, announcements) */
+
+   .navbar .dropdown-toggle .caret,
+   .gn-menu .dropdown-toggle .caret,
+   .navbar .dropdown-toggle::before,
+   .gn-menu .dropdown-toggle::before {
+       display: none !important;
+   }
+
+/* Background bianco per navbar legacy - specificità massima */
+nav.navbar.navbar-inverse,
+nav.navbar-inverse .navbar-collapse,
+nav.navbar-inverse .navbar-header,
+.navbar.navbar-inverse {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border-color: #dddddd !important;
+}
+
+/* Vertical alignment e margin per menu container - matching gn-menu-container */
+nav.navbar-inverse .nav-container {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    padding-bottom: 12px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Navbar collapse - flexbox layout per distribuire lo spazio */
+nav.navbar-inverse .navbar-collapse {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+nav.navbar-inverse .navbar-nav,
+nav.navbar-inverse .toolbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar right - flex con gap per search e lingua */
+nav.navbar-inverse .navbar-nav.navbar-right {
+    margin-left: auto;
+}
+
+nav.navbar-inverse .navbar-nav > li,
+nav.navbar-inverse .toolbar > li {
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar-inverse .navbar-nav > li > a,
+nav.navbar-inverse .toolbar > li > a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 20px;
+}
+
+/* Navbar brand - rimuovi padding extra */
+nav.navbar-inverse .navbar-brand {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 0 !important;
+}
+
+/* Testo scuro per navbar legacy */
+nav.navbar-inverse .navbar-brand,
+nav.navbar-inverse .navbar-nav > li > a,
+nav.navbar-inverse .toolbar > li > a,
+.navbar.navbar-inverse .navbar-nav > li > a {
+    color: #333333 !important;
+    text-shadow: none !important;
+}
+
+/* Hover e focus per link navbar legacy - BORDINO BLU come MapStore */
+nav.navbar-inverse .navbar-nav > li > a:hover,
+nav.navbar-inverse .navbar-nav > li > a:focus,
+nav.navbar-inverse .toolbar > li > a:hover,
+.navbar.navbar-inverse .navbar-nav > li > a:hover,
+.navbar.navbar-inverse .navbar-nav > li > a:focus,
+nav.navbar-inverse .dropdown-toggle:hover,
+nav.navbar-inverse .dropdown-toggle:focus {
+    background-color: transparent !important;
+    color: #333333 !important;
+    outline: 2px solid #3595f6 !important;
+    box-shadow: none !important;
+    border-radius: 2px;
+}
+
+/* Dropdown nella navbar legacy */
+nav.navbar-inverse .dropdown-menu,
+.navbar.navbar-inverse .dropdown-menu {
+    background-color: #ffffff !important;
+    border: 1px solid #dddddd !important;
+}
+
+nav.navbar-inverse .dropdown-menu > li > a,
+.navbar.navbar-inverse .dropdown-menu > li > a {
+    color: #333333 !important;
+}
+
+nav.navbar-inverse .dropdown-menu > li > a:hover,
+.navbar.navbar-inverse .dropdown-menu > li > a:hover {
+    background-color: #f5f5f5 !important;
+    color: #000000 !important;
+}
+
+/* Icon hamburger menu mobile */
+nav.navbar-inverse .navbar-toggle,
+.navbar.navbar-inverse .navbar-toggle {
+    border-color: #dddddd !important;
+}
+
+nav.navbar-inverse .navbar-toggle .icon-bar,
+.navbar.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #333333 !important;
+}
+
+.container .dropdown-toggle .fa-angle-down,
+.panel .dropdown-toggle .fa-angle-down,
+.btn-group .dropdown-toggle .fa-angle-down {
+    display: none !important;
+}
+
+/* User avatar styling - circolare come MapStore */
+nav.navbar-inverse .avatar img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+/* Search bar nella navbar legacy - matching MapStore gn-search-bar */
+.navbar-search-container {
+    padding: 8px 8px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.gn-search-bar-legacy {
+    position: relative;
+    min-width: 100px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.gn-search-bar-legacy .input-group {
+    display: flex !important;
+    width: 100%;
+}
+
+.gn-search-bar-legacy .input-group-prepend {
+    display: flex;
+    align-items: center;
+}
+
+.gn-search-bar-legacy .form-control {
+    border: none !important;
+    height: 38px;
+    padding: 8px 8px;
+}
+
+.gn-search-bar-legacy .btn-default {
+    background-color: transparent !important;
+    border: none !important;
+    color: #333333 !important;
+    padding: 8px 8px;
+}
+
+.gn-search-bar-legacy .btn-default:hover {
+    background-color: #f5f5f5 !important;
+}
+/* Navbar brand logo styling */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* FOOTER STYLING */
+
+/* Footer background scuro */
+footer {
+    background-color: #001f3f !important;
+    color: #ffffff !important;
+}
+
+/* Footer link bianchi */
+footer .footer-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Footer titoli colonne */
+footer .list-unstyled li:first-child span {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Footer list styling */
+footer .list-unstyled {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px !important;
+    line-height: 1.8;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 8px;
+}
+
+/* Language selector nel footer */
+.footer-language-select {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    min-width: 170px;
+    height: 2.5em;
+    line-height: 2.5em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+/* Copyright bar in fondo */
+footer > div:last-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.profile-details p,
+.profile-details p small {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; 
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+  

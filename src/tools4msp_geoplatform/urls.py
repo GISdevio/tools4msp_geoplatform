@@ -39,15 +39,16 @@ urlpatterns = [
  ] + urlpatterns
 """
 
+homepage = register_url_event()(HomePageView.as_view())
+
 urlpatterns = [
+    path('', homepage, name='home'),
     path('', include('casestudies.urls')),
     path('', include('geodatabuilder.urls')),
 
     # Needed to migrate data from old platform
     path('', include('tools4msp_geoplatform.upmigrate.urls')),
 ] + geonode_urlpatterns
-
-homepage = register_url_event()(HomePageView.as_view())
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,0 +1,78 @@
+.home-search {
+    background-color: #f9f9f9; /* leggero contrasto con hero */
+    padding-top: 1rem;   /* riduci da 5rem a 2rem */
+    padding-bottom: 0rem; /* mantieni il padding inferiore */
+}
+
+/* Titolo: uguale a quello della sezione Hero */
+.home-search .search-title {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 2.3rem !important;
+    font-weight: 700 !important;
+    color: #001f3f !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Campo di ricerca */
+.search-input {
+    border-radius: 6px !important;
+    border: 1px solid #ccc;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Input e bottone in linea con maggiore spazio tra loro */
+.input-group .search-input {
+    border-radius: 6px !important;
+    margin-right: 0.5rem !important; /* distanza tra input e pulsante */
+}
+
+.search-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 1px rgba(0, 86, 179, 0.15);
+}
+
+/* Bottone ricerca avanzata (uguale agli hero-btn) */
+.search-btn {
+    border: 0.5px solid #0056b3 !important;
+    margin: 1.2rem auto 0 auto !important; /* <-- QUI AGGIUNGE SPAZIO SOPRA */
+    background-color: #ffffff !important;
+    color: #0056b3 !important;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    border-radius: 6px !important;
+    padding: 0.5rem 1.5rem !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #0056b3 !important;
+    color: #ffffff !important;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-title {
+        font-size: 2.2rem;
+    }
+
+    .search-input {
+        font-size: 0.9rem;
+    }
+
+    .search-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
