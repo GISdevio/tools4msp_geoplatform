@@ -1,0 +1,708 @@
+{
+    "title": "my-test-map",
+    "abstract": "this is my test map",
+    "data": {
+        "version": 2,
+        "catalogServices": {
+            "services": {}
+        },
+        "widgetsConfig": {
+            "layouts": {
+                "md": []
+            }
+        },
+        "mapInfoConfiguration": {
+            "trigger": "click"
+        },
+        "dimensionData": {},
+        "timelineData": {
+            "snapRadioButtonEnabled": false
+        },
+        "featureGrid": {},
+        "toc": {},
+        "playback": {
+            "settings": {
+                "timeStep": 1,
+                "stepUnit": "days",
+                "frameDuration": 2,
+                "following": true
+            }
+        },
+        "map": {
+            "center": {
+                "x": 9.479460448676566,
+                "y": 44.0891155671582,
+                "crs": "EPSG:4326"
+            },
+            "maxExtent": [
+                -20037508.34,
+                -20037508.34,
+                20037508.34,
+                20037508.34
+            ],
+            "projection": "EPSG:3857",
+            "units": "m",
+            "zoom": 9,
+            "mapOptions": {},
+            "layers": [
+                {
+                    "id": "mapnik__0",
+                    "group": "background",
+                    "source": "osm",
+                    "name": "mapnik",
+                    "title": "Open Street Map",
+                    "type": "osm",
+                    "visibility": true,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "useForElevation": false,
+                    "hidden": false,
+                    "expanded": false
+                },
+                {
+                    "id": "OpenTopoMap__1",
+                    "group": "background",
+                    "source": "OpenTopoMap",
+                    "name": "OpenTopoMap",
+                    "provider": "OpenTopoMap",
+                    "title": "OpenTopoMap",
+                    "type": "tileprovider",
+                    "visibility": false,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "useForElevation": false,
+                    "hidden": false,
+                    "expanded": false
+                },
+                {
+                    "id": "StamenToner__2",
+                    "group": "background",
+                    "name": "StamenToner",
+                    "provider": "Stamen.Toner",
+                    "title": "Stamen Toner",
+                    "type": "tileprovider",
+                    "visibility": false,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "useForElevation": false,
+                    "hidden": false,
+                    "expanded": false
+                },
+                {
+                    "id": "StamenToner__3",
+                    "group": "background",
+                    "name": "StamenToner",
+                    "provider": "Stamen.TonerLite",
+                    "title": "Stamen Toner Lite",
+                    "type": "tileprovider",
+                    "visibility": false,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "useForElevation": false,
+                    "hidden": false,
+                    "expanded": false
+                },
+                {
+                    "id": "s2cloudless",
+                    "format": "image/jpeg",
+                    "thumbURL": "https://dev.geoplatform.tools4msp.eu/static/mapstorestyle/img/s2cloudless-s2cloudless.png",
+                    "group": "background",
+                    "name": "s2cloudless:s2cloudless",
+                    "title": "Sentinel-2 cloudless - https://s2maps.eu",
+                    "type": "wms",
+                    "url": "https://maps.geo-solutions.it/geoserver/wms",
+                    "visibility": false,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "useForElevation": false,
+                    "hidden": false,
+                    "expanded": false
+                },
+                {
+                    "id": "OpenSeaMap__5",
+                    "group": "background",
+                    "name": "OpenSeaMap",
+                    "provider": "OpenSeaMap",
+                    "title": "Open Sea Map",
+                    "type": "tileprovider",
+                    "visibility": false,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "useForElevation": false,
+                    "hidden": false,
+                    "expanded": false
+                },
+                {
+                    "id": "none",
+                    "group": "background",
+                    "source": "ol",
+                    "name": "empty",
+                    "title": "Empty Background",
+                    "type": "empty",
+                    "visibility": false,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "useForElevation": false,
+                    "hidden": false,
+                    "expanded": false
+                },
+                {
+                    "id": "28134301-09d0-4f15-8059-6acd3c70d39b",
+                    "format": "image/png",
+                    "search": {
+                        "type": "wfs",
+                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows"
+                    },
+                    "fields": [
+                        {
+                            "name": "ogc_fid",
+                            "alias": null,
+                            "type": "xsd:int"
+                        },
+                        {
+                            "name": "id",
+                            "alias": null,
+                            "type": "xsd:long"
+                        },
+                        {
+                            "name": "area_ha",
+                            "alias": null,
+                            "type": "xsd:double"
+                        },
+                        {
+                            "name": "source",
+                            "alias": null,
+                            "type": "xsd:string"
+                        },
+                        {
+                            "name": "source_url",
+                            "alias": null,
+                            "type": "xsd:string"
+                        },
+                        {
+                            "name": "owner",
+                            "alias": null,
+                            "type": "xsd:string"
+                        }
+                    ],
+                    "name": "geonode:a__4_ccbnygc",
+                    "style": "geonode:a__4_ccbnygc",
+                    "title": "Liguria - Suitable Areas for fish farming",
+                    "type": "wms",
+                    "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows",
+                    "bbox": {
+                        "crs": "EPSG:4326",
+                        "bounds": {
+                            "minx": 7.588366275720992,
+                            "miny": 43.76879573482251,
+                            "maxx": 9.859934504444636,
+                            "maxy": 44.40771000991304
+                        }
+                    },
+                    "visibility": true,
+                    "singleTile": false,
+                    "dimensions": [],
+                    "hideLoading": false,
+                    "handleClickOnLayer": false,
+                    "featureInfo": {
+                        "format": "TEMPLATE",
+                        "template": "<div style=\"overflow-x:hidden\"><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">ogc_fid:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['ogc_fid']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">id:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['id']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">area_ha:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['area_ha']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">source:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['source']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">source_url:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['source_url']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">owner:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['owner']}</div></div></div>"
+                    },
+                    "useForElevation": false,
+                    "hidden": false,
+                    "tileSize": 512,
+                    "expanded": false,
+                    "params": {},
+                    "extendedParams": {
+                        "pk": "1213",
+                        "mapLayer": {
+                            "dataset": {
+                                "store": "tools4msp_geoplatform_data",
+                                "group": null,
+                                "dataset_ows_url": "https://dev.geoplatform.tools4msp.eu/geoserver/geonode/a__4_ccbnygc/ows",
+                                "owner": {
+                                    "pk": 1258,
+                                    "username": "isabella",
+                                    "first_name": "Isabella",
+                                    "last_name": "M",
+                                    "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+                                    "perms": [
+                                        "add_resource"
+                                    ],
+                                    "is_superuser": false,
+                                    "is_staff": false,
+                                    "email": "bellaisaatwork@gmail.com",
+                                    "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1258"
+                                },
+                                "uuid": "8b8ef291-24e4-4102-9f76-fa15d85d576c",
+                                "download_urls": [
+                                    {
+                                        "url": "/datasets/geonode:a__4_ccbnygc/dataset_download",
+                                        "ajax_safe": true,
+                                        "default": true
+                                    },
+                                    {
+                                        "url": "https://dev.geoplatform.tools4msp.eu/api/v2/assets/2699/download",
+                                        "ajax_safe": true,
+                                        "default": false
+                                    }
+                                ],
+                                "temporal_extent_start": "2024-03-01T11:55:00Z",
+                                "date": "2025-01-07T13:02:05Z",
+                                "keywords": [
+                                    {
+                                        "name": "Aquaculture",
+                                        "slug": "aquaculture"
+                                    },
+                                    {
+                                        "name": "Thyrrenian Sea",
+                                        "slug": "thyrrenian-sea"
+                                    },
+                                    {
+                                        "name": "MSP Italy",
+                                        "slug": "msp-italy"
+                                    },
+                                    {
+                                        "name": "MSP_Italy",
+                                        "slug": "msp_italy"
+                                    },
+                                    {
+                                        "name": "mspdf-maritime-activities-aquaculture-finfish",
+                                        "slug": "mspdf-maritime-activities-aquaculture-finfish"
+                                    },
+                                    {
+                                        "name": "italian-part-of-the-ligurian-sea",
+                                        "slug": "italian-part-of-the-ligurian-sea"
+                                    }
+                                ],
+                                "ptype": "gxp_wmscsource",
+                                "advertised": true,
+                                "attribution": null,
+                                "language": "eng",
+                                "subtype": "vector",
+                                "favorite": false,
+                                "abstract": "Suitable areas for aquaculture in Liguria from Dapueto et al., 2015.",
+                                "regions": [
+                                    {
+                                        "code": "ITA",
+                                        "name": "Italy"
+                                    }
+                                ],
+                                "links": [
+                                    {
+                                        "extension": "xml",
+                                        "link_type": "metadata",
+                                        "name": "Atom",
+                                        "mime": "text/xml",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/catalogue/csw?request=GetRecordById&service=CSW&version=2.0.2&id=8b8ef291-24e4-4102-9f76-fa15d85d576c&outputschema=http%3A%2F%2Fwww.w3.org%2F2005%2FAtom&elementsetname=full"
+                                    },
+                                    {
+                                        "extension": "xml",
+                                        "link_type": "metadata",
+                                        "name": "DIF",
+                                        "mime": "text/xml",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/catalogue/csw?request=GetRecordById&service=CSW&version=2.0.2&id=8b8ef291-24e4-4102-9f76-fa15d85d576c&outputschema=http%3A%2F%2Fgcmd.gsfc.nasa.gov%2FAboutus%2Fxml%2Fdif%2F&elementsetname=full"
+                                    },
+                                    {
+                                        "extension": "xml",
+                                        "link_type": "metadata",
+                                        "name": "Dublin Core",
+                                        "mime": "text/xml",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/catalogue/csw?request=GetRecordById&service=CSW&version=2.0.2&id=8b8ef291-24e4-4102-9f76-fa15d85d576c&outputschema=http%3A%2F%2Fwww.opengis.net%2Fcat%2Fcsw%2F2.0.2&elementsetname=full"
+                                    },
+                                    {
+                                        "extension": "xml",
+                                        "link_type": "metadata",
+                                        "name": "ebRIM",
+                                        "mime": "text/xml",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/catalogue/csw?request=GetRecordById&service=CSW&version=2.0.2&id=8b8ef291-24e4-4102-9f76-fa15d85d576c&outputschema=urn%3Aoasis%3Anames%3Atc%3Aebxml-regrep%3Axsd%3Arim%3A3.0&elementsetname=full"
+                                    },
+                                    {
+                                        "extension": "xml",
+                                        "link_type": "metadata",
+                                        "name": "FGDC",
+                                        "mime": "text/xml",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/catalogue/csw?request=GetRecordById&service=CSW&version=2.0.2&id=8b8ef291-24e4-4102-9f76-fa15d85d576c&outputschema=http%3A%2F%2Fwww.opengis.net%2Fcat%2Fcsw%2Fcsdgm&elementsetname=full"
+                                    },
+                                    {
+                                        "extension": "xml",
+                                        "link_type": "metadata",
+                                        "name": "ISO",
+                                        "mime": "text/xml",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/catalogue/csw?request=GetRecordById&service=CSW&version=2.0.2&id=8b8ef291-24e4-4102-9f76-fa15d85d576c&outputschema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementsetname=full"
+                                    },
+                                    {
+                                        "extension": "xml",
+                                        "link_type": "metadata",
+                                        "name": "ISO with XSL",
+                                        "mime": "text/xml",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/showmetadata/xsl/1213"
+                                    },
+                                    {
+                                        "extension": "shp",
+                                        "link_type": "data",
+                                        "name": "a__4_ccbnygc",
+                                        "mime": "",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/api/v2/assets/2699/link",
+                                        "extras": {
+                                            "type": "asset",
+                                            "content": {
+                                                "title": "Original",
+                                                "description": null,
+                                                "type": "shp",
+                                                "download_url": "https://dev.geoplatform.tools4msp.eu/api/v2/assets/2699/download"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "extension": "jpg",
+                                        "link_type": "image",
+                                        "name": "JPEG",
+                                        "mime": "image/jpeg",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WMS&request=GetMap&layers=geonode%3Aa__4_ccbnygc&format=image%2Fjpeg&height=550&width=550&srs=EPSG%3A4326&bbox=7.5883663%2C43.7687957%2C9.8599345%2C44.4077100"
+                                    },
+                                    {
+                                        "extension": "gml",
+                                        "link_type": "data",
+                                        "name": "GML 2.0",
+                                        "mime": "gml2",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Aa__4_ccbnygc&outputFormat=gml2&srs=EPSG%3A4326"
+                                    },
+                                    {
+                                        "extension": "csv",
+                                        "link_type": "data",
+                                        "name": "CSV",
+                                        "mime": "csv",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Aa__4_ccbnygc&outputFormat=csv&srs=EPSG%3A4326"
+                                    },
+                                    {
+                                        "extension": "gml",
+                                        "link_type": "data",
+                                        "name": "GML 3.1.1",
+                                        "mime": "text/xml; subtype=gml/3.1.1",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Aa__4_ccbnygc&outputFormat=text%2Fxml%3B+subtype%3Dgml%2F3.1.1&srs=EPSG%3A4326"
+                                    },
+                                    {
+                                        "extension": "excel",
+                                        "link_type": "data",
+                                        "name": "Excel",
+                                        "mime": "excel",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Aa__4_ccbnygc&outputFormat=excel&srs=EPSG%3A4326"
+                                    },
+                                    {
+                                        "extension": "json",
+                                        "link_type": "data",
+                                        "name": "GeoJSON",
+                                        "mime": "json",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Aa__4_ccbnygc&outputFormat=json&srs=EPSG%3A4326&srsName=EPSG%3A4326"
+                                    },
+                                    {
+                                        "extension": "html",
+                                        "link_type": "html",
+                                        "name": "geonode:a__4_ccbnygc",
+                                        "mime": "text/html",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/1213"
+                                    },
+                                    {
+                                        "extension": "png",
+                                        "link_type": "image",
+                                        "name": "Legend",
+                                        "mime": "image/png",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image/png&WIDTH=20&HEIGHT=20&LAYER=geonode:a__4_ccbnygc&STYLE=a__4_ccbnygc&version=1.3.0&sld_version=1.1.0&legend_options=fontAntiAliasing:true;fontSize:12;forceLabels:on"
+                                    },
+                                    {
+                                        "extension": "html",
+                                        "link_type": "OGC:WMS",
+                                        "name": "OGC WMS: geonode Service",
+                                        "mime": "text/html",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows"
+                                    },
+                                    {
+                                        "extension": "html",
+                                        "link_type": "OGC:WFS",
+                                        "name": "OGC WFS: geonode Service",
+                                        "mime": "text/html",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows"
+                                    },
+                                    {
+                                        "extension": "pdf",
+                                        "link_type": "image",
+                                        "name": "PDF",
+                                        "mime": "application/pdf",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WMS&request=GetMap&layers=geonode%3Aa__4_ccbnygc&format=application%2Fpdf&height=550&width=550&srs=EPSG%3A4326&bbox=7.5883663%2C43.7687957%2C9.8599345%2C44.4077100"
+                                    },
+                                    {
+                                        "extension": "png",
+                                        "link_type": "image",
+                                        "name": "PNG",
+                                        "mime": "image/png",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WMS&request=GetMap&layers=geonode%3Aa__4_ccbnygc&format=image%2Fpng&height=550&width=550&srs=EPSG%3A4326&bbox=7.5883663%2C43.7687957%2C9.8599345%2C44.4077100"
+                                    },
+                                    {
+                                        "extension": "zip",
+                                        "link_type": "data",
+                                        "name": "Zipped Shapefile",
+                                        "mime": "SHAPE-ZIP",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typename=geonode%3Aa__4_ccbnygc&outputFormat=SHAPE-ZIP&srs=EPSG%3A4326&format_options=charset%3AUTF-8"
+                                    },
+                                    {
+                                        "extension": "png",
+                                        "link_type": "image",
+                                        "name": "Thumbnail",
+                                        "mime": "image/png",
+                                        "url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-8b8ef291-24e4-4102-9f76-fa15d85d576c-thumb-520327d5-b3a1-40b1-947d-8db553ff6afe.jpg"
+                                    }
+                                ],
+                                "last_updated": "2025-12-17T07:18:57.730536Z",
+                                "is_copyable": true,
+                                "raw_abhttps://dev.geoplatform.tools4msp.eu/api/v2/mapsstract": "Suitable areas for aquaculture in Liguria from Dapueto et al., 2015.",
+                                "is_published": true,
+                                "created": "2025-12-17T07:14:49.008610Z",
+                                "pk": "1213",
+                                "temporal_extent_end": "2024-03-01T11:55:00Z",
+                                "is_approved": true,
+                                "resource_type": "dataset",
+                                "title": "Liguria - Suitable Areas for fish farming",
+                                "has_time": false,
+                                "alternate": "geonode:a__4_ccbnygc",
+                                "category": {
+                                    "identifier": "aquaculture",
+                                    "gn_description": "Aquaculture"
+                                },
+                                "sourcetype": "LOCAL",
+                                "attribute_set": [
+                                    {
+                                        "pk": 10327,
+                                        "attribute": "ogc_fid",
+                                        "description": null,
+                                        "attribute_label": null,
+                                        "attribute_type": "xsd:int",
+                                        "visible": true,
+                                        "display_order": 1,
+                                        "featureinfo_type": "type_property",
+                                        "count": 1,
+                                        "min": "NA",
+                                        "max": "NA",
+                                        "average": "NA",
+                                        "median": "NA",
+                                        "stddev": "NA",
+                                        "sum": "NA",
+                                        "unique_values": "NA",
+                                        "last_stats_updated": "2025-12-17T07:14:49.801140Z"
+                                    },
+                                    {
+                                        "pk": 10328,
+                                        "attribute": "id",
+                                        "description": null,
+                                        "attribute_label": null,
+                                        "attribute_type": "xsd:long",
+                                        "visible": true,
+                                        "display_order": 2,
+                                        "featureinfo_type": "type_property",
+                                        "count": 1,
+                                        "min": "NA",
+                                        "max": "NA",
+                                        "average": "NA",
+                                        "median": "NA",
+                                        "stddev": "NA",
+                                        "sum": "NA",
+                                        "unique_values": "NA",
+                                        "last_stats_updated": "2025-12-17T07:14:49.805115Z"
+                                    },
+                                    {
+                                        "pk": 10329,
+                                        "attribute": "area_ha",
+                                        "description": null,
+                                        "attribute_label": null,
+                                        "attribute_type": "xsd:double",
+                                        "visible": true,
+                                        "display_order": 3,
+                                        "featureinfo_type": "type_property",
+                                        "count": 1,
+                                        "min": "NA",
+                                        "max": "NA",
+                                        "average": "NA",
+                                        "median": "NA",
+                                        "stddev": "NA",
+                                        "sum": "NA",
+                                        "unique_values": "NA",
+                                        "last_stats_updated": "2025-12-17T07:14:49.808339Z"
+                                    },
+                                    {
+                                        "pk": 10330,
+                                        "attribute": "source",
+                                        "description": null,
+                                        "attribute_label": null,
+                                        "attribute_type": "xsd:string",
+                                        "visible": true,
+                                        "display_order": 4,
+                                        "featureinfo_type": "type_property",
+                                        "count": 1,
+                                        "min": "NA",
+                                        "max": "NA",
+                                        "average": "NA",
+                                        "median": "NA",
+                                        "stddev": "NA",
+                                        "sum": "NA",
+                                        "unique_values": "NA",
+                                        "last_stats_updated": "2025-12-17T07:14:49.811428Z"
+                                    },
+                                    {
+                                        "pk": 10331,
+                                        "attribute": "source_url",
+                                        "description": null,
+                                        "attribute_label": null,
+                                        "attribute_type": "xsd:string",
+                                        "visible": true,
+                                        "display_order": 5,
+                                        "featureinfo_type": "type_property",
+                                        "count": 1,
+                                        "min": "NA",
+                                        "max": "NA",
+                                        "average": "NA",
+                                        "median": "NA",
+                                        "stddev": "NA",
+                                        "sum": "NA",
+                                        "unique_values": "NA",
+                                        "last_stats_updated": "2025-12-17T07:14:49.814272Z"
+                                    },
+                                    {
+                                        "pk": 10332,
+                                        "attribute": "owner",
+                                        "description": null,
+                                        "attribute_label": null,
+                                        "attribute_type": "xsd:string",
+                                        "visible": true,
+                                        "display_order": 6,
+                                        "featureinfo_type": "type_property",
+                                        "count": 1,
+                                        "min": "NA",
+           https://dev.geoplatform.tools4msp.eu/api/v2/maps                             "max": "NA",
+                                        "average": "NA",
+                                        "median": "NA",
+                                        "stddev": "NA",
+                                        "sum": "NA",
+                                        "unique_values": "NA",
+                                        "last_stats_updated": "2025-12-17T07:14:49.817087Z"
+                                    },
+                                    {
+                                        "pk": 10333,
+                                        "attribute": "geometry",
+                                        "description": null,
+                                        "attribute_label": null,
+                                        "attribute_type": "gml:MultiPolygonPropertyType",
+                                        "visible": false,
+                                        "display_order": 7,
+                                        "featureinfo_type": "type_property",
+                                        "count": 1,
+                                        "min": "NA",
+                                        "max": "NA",
+                                        "average": "NA",
+                                        "median": "NA",
+                                        "stddev": "NA",
+                                        "sum": "NA",
+                                        "unique_values": "NA",
+                                        "last_stats_updated": "2025-12-17T07:14:49.819939Z"
+                                    }
+                                ],
+                                "embed_url": "https://dev.geoplatform.tools4msp.eu/datasets/geonode:a__4_ccbnygc/embed",
+                                "poc": [
+                                    {
+                                        "pk": 1258,
+                                        "username": "isabella",
+                                        "first_name": "Isabella",
+                                        "last_name": "M",
+                                        "avatar": "https://dev.geoplatform.tools4msp.eu/static/geonode/img/avatar.png",
+                                        "is_superuser": false,
+                                        "is_staff": false,
+                                        "email": "bellaisaatwork@gmail.com",
+                                        "link": "https://dev.geoplatform.tools4msp.eu/api/v2/users/1258"
+                                    }
+                                ],
+                                "thumbnail_url": "https://dev.geoplatform.tools4msp.eu/uploaded/thumbs/dataset-8b8ef291-24e4-4102-9f76-fa15d85d576c-thumb-520327d5-b3a1-40b1-947d-8db553ff6afe.jpg",
+                                "executions": [],
+                                "perms": [
+                                    "change_dataset_data",
+                                    "publish_resourcebase",
+                                    "download_resourcebase",
+                                    "change_resourcebase",
+                                    "change_resourcebase_metadata",
+                                    "delete_resourcebase",
+                                    "change_dataset_style",
+                                    "view_resourcebase",
+                                    "change_resourcebase_permissions",
+                                    "feature_resourcebase",
+                                    "approve_resourcebase",
+                                    "publish_resourcebase"
+                                ],
+                                "default_style": {
+                                    "pk": 810,
+                                    "name": "a__4_ccbnygc",
+                                    "workspace": "geonode",
+                                    "sld_title": "A dark orange polygon style",
+                                    "sld_url": "https://dev.geoplatform.tools4msp.eu/geoserver/rest/workspaces/geonode/styles/a__4_ccbnygc.sld"
+                                },
+                                "supplemental_information": "No information provided",
+                                "extent": {
+                                    "coords": [
+                                        7.588366275720992,
+                                        43.76879573482251,
+                                        9.859934504444636,
+                                        44.40771000991304
+                                    ],
+                                    "srid": "EPSG:4326"
+                                },
+                                "detail_url": "https://dev.geoplatform.tools4msp.eu/catalogue/#/dataset/1213",
+                                "linked_resources": {
+                                    "linked_to": [],
+                                    "linked_by": []
+                                },
+                                "date_type": "publication",
+                                "featureinfo_custom_template": "<div style=\"overflow-x:hidden\"><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">ogc_fid:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['ogc_fid']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">id:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['id']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">area_ha:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['area_ha']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">source:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['source']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">source_url:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['source_url']}</div></div><div class=\"row\"><div class=\"col-xs-6\" style=\"font-weight: bold; word-wrap: break-word;\">owner:</div>                             <div class=\"col-xs-6\" style=\"word-wrap: break-word;\">${properties['owner']}</div></div></div>"
+                            }
+                        },
+                        "defaultStyle": {
+                            "title": "A dark orange polygon style",
+                            "name": "geonode:a__4_ccbnygc"
+                        }
+                    }
+                }
+            ],
+            "groups": [
+                {
+                    "id": "Default",
+                    "title": "Default",
+                    "expanded": true,
+                    "visibility": true
+                }
+            ],
+            "backgrounds": []
+        }
+    },
+    "maplayers": [
+        {
+            "extra_params": {
+                "msId": "28134301-09d0-4f15-8059-6acd3c70d39b"
+            },
+            "current_style": "geonode:a__4_ccbnygc",
+            "name": "geonode:a__4_ccbnygc",
+            "order": 0,
+            "opacity": 1,
+            "visibility": true
+        }
+    ]
+}

@@ -16,11 +16,11 @@ logger = logging.getLogger(__name__)
 
 @dataclasses.dataclass(frozen=True)
 class DbConfig:
-    host: str
     port: int
     name: str
     user: str
     password: str
+    host: str = "localhost"
 
     @property
     def connection_string(self) -> str:
@@ -198,7 +198,7 @@ class GeonodeMapLayer:
     group: str | None
     visibility: bool
     ows_url: str | None
-    layer_params: str
+    layer_params: dict
     source_params: str
     local: bool
 
@@ -677,7 +677,7 @@ def gather_map_layers(
             group=record[8],
             visibility=record[9],
             ows_url=record[10],
-            layer_params=record[11],
+            layer_params=json.loads(record[11]),
             source_params=record[12],
             local=record[13],
             store=record[14],
