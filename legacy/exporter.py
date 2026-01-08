@@ -4,7 +4,10 @@ import json
 import logging
 import re
 from pathlib import Path
-from typing import Iterator
+from typing import (
+    Annotated,
+    Iterator,
+)
 
 import httpx
 import typer
@@ -14,15 +17,29 @@ logger = logging.getLogger(__name__)
 
 
 @app.command(name="store-legacy-map-data")
-def store_api_responses():
+def store_api_responses(
+        legacy_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_USERNAME")
+        ],
+        legacy_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_PASSWORD")
+        ],
+):
     http_client = httpx.Client()
-    base_target_dir = Path(__file__).parent / "exported"
+    base_target_dir = Path(__file__).parent / "legacy-data"
     base_target_dir.mkdir(parents=True, exist_ok=True)
     target_maps_dir = base_target_dir / "maps"
     target_maps_dir.mkdir(parents=True, exist_ok=True)
     target_layers_dir = base_target_dir / "layers"
     target_layers_dir.mkdir(parents=True, exist_ok=True)
-    detail_generator = gather_map_details_via_api(http_client, limit=10)
+    detail_generator = gather_map_details_via_api(
+        legacy_geonode_username,
+        legacy_geonode_password,
+        http_client,
+        limit=10
+    )
     for processed_maps, processed_layers, ignored_layers, ignored_styles in detail_generator:
         for map_id, map_details in processed_maps.items():
             target_map_details_file = target_maps_dir / f"{map_id}.json"
@@ -49,9 +66,19 @@ def store_api_responses():
 
 
 def gather_map_details_via_api(
+        geonode_admin_username: str,
+        geonode_admin_password: str,
         http_client: httpx.Client,
-        limit: int = 20
+        limit: int = 20,
 ) -> Iterator[tuple[dict, dict, list[tuple[int, int, str, str]], list[tuple[int, str]]]]:
+    basemap_layer_names = (
+        "mapnik",
+        "OpenTopoMap",
+        "StamenToner",
+        "s2cloudless:s2cloudless",
+        "OpenSeaMap",
+        "empty",
+    )
     base_url = "https://geoplatform.tools4msp.eu"
     current_offset = 0
     next_url = f"{base_url}/api/maps/?limit={limit}&offset={current_offset}"
@@ -61,7 +88,10 @@ def gather_map_details_via_api(
         layers_processed = {}
         layers_ignored = []
         styles_ignored = []
-        map_list_response = http_client.get(next_url)
+        map_list_response = http_client.get(
+            next_url,
+            auth=(geonode_admin_username, geonode_admin_password)
+        )
         logger.info(f"Processing response from URL: {map_list_response.request.url!r}")
         map_list_response.raise_for_status()
         response_repr = map_list_response.json()
@@ -70,40 +100,19 @@ def gather_map_details_via_api(
             logger.info(f"Processing map: {map_id!r}")
             maps_processed[map_id] = map_list_repr
             for map_layer_index, map_layer_repr in enumerate(map_list_repr["layers"]):
-                layer_params = json.loads(map_layer_repr["layer_params"])
-                logger.info(f"[{map_layer_index}] Processing layer {map_layer_repr['name']!r}")
-                try:
-                    catalog_url = layer_params["catalogURL"]
-                except KeyError:
-                    layers_ignored.append(
-                        (
-                            map_id, map_layer_index, map_layer_repr["name"],
-                            "Could not find a catalogURL property on layer params"
-                        )
-                    )
-                    continue
-                if catalog_url is None:
-                    layers_ignored.append(
-                        (
-                            map_id, map_layer_index, map_layer_repr["name"],
-                            "catalogURL property is empty"
-                        )
-                    )
-                    continue
-                try:
-                    layer_uuid = re.search(
-                        r"[a-f0-9]{8}-([a-f0-9]{4}-){3}[a-f0-9]{12}",
-                        layer_params["catalogURL"]
-                    ).group()
-                except TypeError:
-                    layers_ignored.append(
-                        (
-                            map_id, map_layer_index, map_layer_repr["name"],
-                            f"Could not extract layer UUID from catalogURL: {catalog_url!r}"
-                        )
-                    )
-                    continue
-                layer_list_response = http_client.get(f"{base_url}/api/layers/", params={"uuid": layer_uuid})
+
+                if map_layer_repr.get("group") == "background":
+                    continue  # base layer, which is configured in the settings, no need to store
+
+                if not map_layer_repr.get("local"):  # remote layer
+                    continue  # remote layer, the map layer already has relevant details
+
+                alternate_identifier = map_layer_repr["name"]
+                layer_list_response = http_client.get(
+                    f"{base_url}/api/layers/",
+                    params={"alternate": alternate_identifier},
+                    auth=(geonode_admin_username, geonode_admin_password)
+                )
                 layer_list_response.raise_for_status()
                 try:
                     layer_list_repr = layer_list_response.json()["objects"][0]
@@ -120,8 +129,10 @@ def gather_map_details_via_api(
                     logger.info(f"layer {layer_id} is already known - skipping...")
                     continue
                 seen_layers.append(layer_id)
-                layer_detail_response = http_client.get(f"{base_url}/api/layers/{layer_id}/")
-                layer_detail_response.raise_for_status()
+                layer_detail_response = http_client.get(
+                    f"{base_url}/api/layers/{layer_id}/",
+                    auth=(geonode_admin_username, geonode_admin_password)
+                )
                 layer_detail_repr = layer_detail_response.json()
                 layer_result = {
                     "raw_layer_result": layer_detail_repr,
@@ -131,7 +142,10 @@ def gather_map_details_via_api(
                     int(style_repr.split("/")[3]) for style_repr in layer_detail_repr["styles"]
                 ]
                 for style_id in layer_style_ids:
-                    style_detail_response = http_client.get(f"{base_url}/api/styles/{style_id}/")
+                    style_detail_response = http_client.get(
+                        f"{base_url}/api/styles/{style_id}/",
+                        auth=(geonode_admin_username, geonode_admin_password)
+                    )
                     try:
                         style_detail_response.raise_for_status()
                     except httpx.HTTPStatusError as err:
@@ -145,9 +159,8 @@ def gather_map_details_via_api(
         except TypeError:
             next_url = None
         yield maps_processed, layers_processed, layers_ignored, styles_ignored
-        next_url = None
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
     app()
