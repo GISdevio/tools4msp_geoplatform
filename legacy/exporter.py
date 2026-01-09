@@ -2,7 +2,6 @@
 
 import json
 import logging
-import re
 from pathlib import Path
 from typing import (
     Annotated,
@@ -16,6 +15,16 @@ app = typer.Typer()
 logger = logging.getLogger(__name__)
 
 
+BASEMAP_LAYER_NAMES = (
+    "mapnik",
+    "OpenTopoMap",
+    "StamenToner",
+    "s2cloudless:s2cloudless",
+    "OpenSeaMap",
+    "empty",
+)
+
+
 @app.command(name="store-legacy-map-data")
 def store_api_responses(
         legacy_geonode_username: Annotated[
@@ -26,6 +35,7 @@ def store_api_responses(
             str,
             typer.Argument(envvar="LEGACY_GEONODE_PASSWORD")
         ],
+        base_url: str = "https://geoplatform.tools4msp.eu",
 ):
     http_client = httpx.Client()
     base_target_dir = Path(__file__).parent / "legacy-data"
@@ -35,10 +45,11 @@ def store_api_responses(
     target_layers_dir = base_target_dir / "layers"
     target_layers_dir.mkdir(parents=True, exist_ok=True)
     detail_generator = gather_map_details_via_api(
-        legacy_geonode_username,
-        legacy_geonode_password,
-        http_client,
-        limit=10
+        http_client=http_client,
+        base_url=base_url,
+        limit=10,
+        geonode_admin_username=legacy_geonode_username,
+        geonode_admin_password=legacy_geonode_password,
     )
     for processed_maps, processed_layers, ignored_layers, ignored_styles in detail_generator:
         for map_id, map_details in processed_maps.items():
@@ -66,23 +77,20 @@ def store_api_responses(
 
 
 def gather_map_details_via_api(
-        geonode_admin_username: str,
-        geonode_admin_password: str,
+        *,
         http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
         limit: int = 20,
+        geonode_admin_username: str | None = None,
+        geonode_admin_password: str | None = None,
 ) -> Iterator[tuple[dict, dict, list[tuple[int, int, str, str]], list[tuple[int, str]]]]:
-    basemap_layer_names = (
-        "mapnik",
-        "OpenTopoMap",
-        "StamenToner",
-        "s2cloudless:s2cloudless",
-        "OpenSeaMap",
-        "empty",
-    )
-    base_url = "https://geoplatform.tools4msp.eu"
     current_offset = 0
     next_url = f"{base_url}/api/maps/?limit={limit}&offset={current_offset}"
     seen_layers = []
+    request_auth = (
+        (geonode_admin_username, geonode_admin_password)
+        if geonode_admin_username else None
+    )
     while next_url:
         maps_processed = {}
         layers_processed = {}
@@ -90,7 +98,7 @@ def gather_map_details_via_api(
         styles_ignored = []
         map_list_response = http_client.get(
             next_url,
-            auth=(geonode_admin_username, geonode_admin_password)
+            auth=request_auth
         )
         logger.info(f"Processing response from URL: {map_list_response.request.url!r}")
         map_list_response.raise_for_status()
@@ -102,16 +110,23 @@ def gather_map_details_via_api(
             for map_layer_index, map_layer_repr in enumerate(map_list_repr["layers"]):
 
                 if map_layer_repr.get("group") == "background":
-                    continue  # base layer, which is configured in the settings, no need to store
+                    # base layer, which is configured in the settings,
+                    # no need to store further details
+                    continue
 
-                if not map_layer_repr.get("local"):  # remote layer
-                    continue  # remote layer, the map layer already has relevant details
+                if not map_layer_repr.get("local"):
+                    # remote layer, the map layer already has relevant details
+                    continue
 
-                alternate_identifier = map_layer_repr["name"]
+                alternate_identifier = (
+                    alternate
+                    if (alternate:=map_layer_repr["name"]).startswith("geonode:")
+                    else f"geonode:{alternate}"
+                )
                 layer_list_response = http_client.get(
                     f"{base_url}/api/layers/",
                     params={"alternate": alternate_identifier},
-                    auth=(geonode_admin_username, geonode_admin_password)
+                    auth=request_auth
                 )
                 layer_list_response.raise_for_status()
                 try:
@@ -131,7 +146,7 @@ def gather_map_details_via_api(
                 seen_layers.append(layer_id)
                 layer_detail_response = http_client.get(
                     f"{base_url}/api/layers/{layer_id}/",
-                    auth=(geonode_admin_username, geonode_admin_password)
+                    auth=request_auth
                 )
                 layer_detail_repr = layer_detail_response.json()
                 layer_result = {
@@ -144,7 +159,7 @@ def gather_map_details_via_api(
                 for style_id in layer_style_ids:
                     style_detail_response = http_client.get(
                         f"{base_url}/api/styles/{style_id}/",
-                        auth=(geonode_admin_username, geonode_admin_password)
+                        auth=request_auth
                     )
                     try:
                         style_detail_response.raise_for_status()
@@ -163,4 +178,5 @@ def gather_map_details_via_api(
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
+    logging.getLogger("httpx").setLevel(logging.WARNING)
     app()
