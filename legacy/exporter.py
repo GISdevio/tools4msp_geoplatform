@@ -48,8 +48,7 @@ def store_api_responses(
         http_client=http_client,
         base_url=base_url,
         limit=10,
-        geonode_admin_username=legacy_geonode_username,
-        geonode_admin_password=legacy_geonode_password,
+        geonode_auth=(legacy_geonode_username, legacy_geonode_password)
     )
     for processed_maps, processed_layers, ignored_layers, ignored_styles in detail_generator:
         for map_id, map_details in processed_maps.items():
@@ -59,7 +58,7 @@ def store_api_responses(
             target_layers_file = target_layers_dir / f"{layer_id}.json"
             target_layers_file.write_text(json.dumps(layer_details, indent=2))
         if len(ignored_layers) > 0:
-            target_ignored_layers_file = target_layers_dir / "ignored_layers.txt"
+            target_ignored_layers_file = base_target_dir / "ignored_layers.txt"
             serialized_ignored_layers = ""
             for map_id, map_layer_index, layer_name, detail in ignored_layers:
                 serialized_line = f"{map_id}; {map_layer_index}; {layer_name}; {detail}\n"
@@ -67,10 +66,10 @@ def store_api_responses(
             with target_ignored_layers_file.open(mode="a", encoding="utf-8") as ignored_layers_fh:
                 ignored_layers_fh.write(serialized_ignored_layers + "\n")
         if len(ignored_styles) > 0:
-            target_ignored_styles_file = target_layers_dir / "ignored_styles.txt"
+            target_ignored_styles_file = base_target_dir / "ignored_styles.txt"
             serialized_ignored_styles = ""
-            for ignored_style_id, ignore_detail in ignored_styles:
-                serialized_line = f"{ignored_style_id}; {ignore_detail}\n"
+            for ignored_layer_id, ignored_style_id, ignore_detail in ignored_styles:
+                serialized_line = f"{ignored_layer_id}; {ignored_style_id}; {ignore_detail}\n"
                 serialized_ignored_styles += serialized_line
             with target_ignored_styles_file.open(mode="a", encoding="utf-8") as ignored_styles_fh:
                 ignored_styles_fh.write(serialized_ignored_styles + "\n")
@@ -81,16 +80,11 @@ def gather_map_details_via_api(
         http_client: httpx.Client,
         base_url: str = "https://geoplatform.tools4msp.eu",
         limit: int = 20,
-        geonode_admin_username: str | None = None,
-        geonode_admin_password: str | None = None,
+        geonode_auth: tuple[str, str] | None = None,
 ) -> Iterator[tuple[dict, dict, list[tuple[int, int, str, str]], list[tuple[int, str]]]]:
     current_offset = 0
     next_url = f"{base_url}/api/maps/?limit={limit}&offset={current_offset}"
     seen_layers = []
-    request_auth = (
-        (geonode_admin_username, geonode_admin_password)
-        if geonode_admin_username else None
-    )
     while next_url:
         maps_processed = {}
         layers_processed = {}
@@ -98,9 +92,8 @@ def gather_map_details_via_api(
         styles_ignored = []
         map_list_response = http_client.get(
             next_url,
-            auth=request_auth
+            auth=geonode_auth
         )
-        logger.info(f"Processing response from URL: {map_list_response.request.url!r}")
         map_list_response.raise_for_status()
         response_repr = map_list_response.json()
         for map_list_repr in response_repr["objects"]:
@@ -126,7 +119,7 @@ def gather_map_details_via_api(
                 layer_list_response = http_client.get(
                     f"{base_url}/api/layers/",
                     params={"alternate": alternate_identifier},
-                    auth=request_auth
+                    auth=geonode_auth
                 )
                 layer_list_response.raise_for_status()
                 try:
@@ -140,40 +133,92 @@ def gather_map_details_via_api(
                     )
                     continue
                 layer_id = int(layer_list_repr["resource_uri"].split("/")[3])
+                map_list_repr["layers"][map_layer_index]["geonode_internal_layer_id"] = layer_id
                 if layer_id in seen_layers:
-                    logger.info(f"layer {layer_id} is already known - skipping...")
+                    logger.debug(f"layer {layer_id} is already known - skipping...")
                     continue
                 seen_layers.append(layer_id)
                 layer_detail_response = http_client.get(
                     f"{base_url}/api/layers/{layer_id}/",
-                    auth=request_auth
+                    auth=geonode_auth
                 )
                 layer_detail_repr = layer_detail_response.json()
                 layer_result = {
                     "raw_layer_result": layer_detail_repr,
                     "styles": {}
                 }
-                layer_style_ids = [
-                    int(style_repr.split("/")[3]) for style_repr in layer_detail_repr["styles"]
-                ]
-                for style_id in layer_style_ids:
-                    style_detail_response = http_client.get(
-                        f"{base_url}/api/styles/{style_id}/",
-                        auth=request_auth
-                    )
-                    try:
-                        style_detail_response.raise_for_status()
-                    except httpx.HTTPStatusError as err:
-                        styles_ignored.append((style_id, str(err)))
-                        continue
-                    style_detail = style_detail_response.json()
-                    layer_result["styles"][style_detail["name"]] = style_detail
+                style_info, ignored_styles = _gather_layer_styles_via_api(
+                    layer_id,
+                    http_client=http_client,
+                    base_url=base_url,
+                    geonode_auth=geonode_auth
+                )
+                layer_result["styles"] = style_info
+                styles_ignored.extend(ignored_styles)
+                # layer_style_ids = [
+                #     int(style_repr.split("/")[3]) for style_repr in layer_detail_repr["styles"]
+                # ]
+                # for style_id in layer_style_ids:
+                #     style_detail_response = http_client.get(
+                #         f"{base_url}/api/styles/{style_id}/",
+                #         auth=geonode_auth
+                #     )
+                #     try:
+                #         style_detail_response.raise_for_status()
+                #     except httpx.HTTPStatusError as err:
+                #         styles_ignored.append((layer_id, style_id, str(err)))
+                #         continue
+                #     style_detail = style_detail_response.json()
+                #     layer_result["styles"][style_detail["name"]] = style_detail
                 layers_processed[layer_id] = layer_result
         try:
             next_url = f"{base_url}" + response_repr["meta"]["next"]
         except TypeError:
             next_url = None
         yield maps_processed, layers_processed, layers_ignored, styles_ignored
+
+
+def _gather_layer_styles_via_api(
+        layer_id: int,
+        *,
+        http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        geonode_auth: tuple[str, str] | None = None,
+) -> tuple[dict, list]:
+    """Uses API v2 to get styles for a layer.
+
+    Must visit the layer detail page and then get the geoserver url of each style
+    and visit that one.
+    """
+    layer_detail_response = http_client.get(
+        f"{base_url}/api/v2/layers/{layer_id}/", auth=geonode_auth
+    )
+    ignored_styles = []
+    try:
+        layer_detail_response.raise_for_status()
+    except httpx.HTTPStatusError as err:
+        ignored_styles.append((layer_id, None, err))
+        logger.info(f"failed to get API v2 layer detail response: {err}")
+        raise RuntimeError from err
+    layer_detail_repr = layer_detail_response.json()
+    styles_processed = {}
+    for style_item in layer_detail_repr["layer"]["styles"]:
+        style_id = style_item["pk"]
+        sld_url = style_item["sld_url"]
+        style_info = styles_processed.setdefault(style_id, {})
+        style_info.update({
+            "id": style_id,
+            "name": style_item["name"],
+            "sld_url": sld_url,
+        })
+        sld_url_response = http_client.get(sld_url)
+        try:
+            sld_url_response.raise_for_status()
+        except httpx.HTTPStatusError as err:
+            ignored_styles.append((layer_id, style_id, err))
+            continue
+        style_info["sld"] = sld_url_response.content.decode("utf-8")
+    return styles_processed, ignored_styles
 
 
 if __name__ == '__main__':
