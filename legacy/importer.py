@@ -32,15 +32,15 @@ def import_map():
 @app.command()
 def import_map(
         legacy_map_id: str,
-        geonode_username: Annotated[
-            str,
-            typer.Argument(envvar="GEONODE_USERNAME")
-        ],
-        geonode_password: Annotated[
-            str,
-            typer.Argument(envvar="GEONODE_PASSWORD")
-        ],
-        base_url: str = "https://dev.geoplatform.tools4msp.eu",
+        # geonode_username: Annotated[
+        #     str,
+        #     typer.Argument(envvar="GEONODE_USERNAME")
+        # ],
+        # geonode_password: Annotated[
+        #     str,
+        #     typer.Argument(envvar="GEONODE_PASSWORD")
+        # ],
+        # base_url: str = "https://dev.geoplatform.tools4msp.eu",
         legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
         current_base_dir: Path = Path(__file__).parent / "current-data",
         imported_prefix: str = "imported__"
@@ -56,71 +56,137 @@ def import_map(
         current_base_dir / "datasets"
     )
     legacy_map_details = json.loads(legacy_map_path.read_text())
-    new_map_layers_details = []
+
+    new_map_repr = _convert_legacy_map_representation_to_current(
+        legacy_map_details["ui_map_config"], matched_datasets
+    )
+    ms_ids = {}
+    for map_layer in new_map_repr["layers"]:
+        if map_layer.get("group") == "background" or map_layer.get("local"):
+            continue
+        ms_ids[map_layer["name"]] = map_layer["id"]
+
+
+    # new_map_layers_details = []
     new_extra_map_layers_details = []
     for legacy_map_layer in legacy_map_details["layers"]:
-        if legacy_map_layer.get("group", "background") == "background":
+        if legacy_map_layer.get("group") == "background":
             continue
         legacy_map_layer_name = legacy_map_layer["name"]
+        logger.info(f"Processing legacy map layer: {legacy_map_layer_name!r}...")
         if legacy_map_layer.get("local"):
-            logger.info(f"Processing legacy map layer: {legacy_map_layer_name!r}...")
             legacy_layer_id = legacy_map_layer["geonode_internal_layer_id"]
             matching_dataset_id = matched_datasets.get(legacy_layer_id)
             if matching_dataset_id is None:
                 if legacy_layer_id in not_matched:
                     logger.warning(f"ignoring not matched layer with id {legacy_layer_id!r}")
+                    continue
                 else:
                     raise RuntimeError(
                         f"Could not match legacy map layer {legacy_map_layer_name!r}({legacy_layer_id!r}) to an "
                         f"existing dataset"
                     )
-            map_layer_details = _translate_legacy_map_layer_to_current_map_layer(
-                legacy_map_layer, matching_dataset_id
-            )
-            new_map_layers_details.append(map_layer_details)
-            extra_map_layer_details = _get_extra_maplayers_key(map_layer_details)
-            new_extra_map_layers_details.append(extra_map_layer_details)
-        else:
-            logger.info(f"Ignoring remote layer {legacy_map_layer_name!r} for now...")
-
-    new_map_details = {
-        "abstract": legacy_map_details["abstract"],
-        "title": f'{imported_prefix}{legacy_map_details["title"]}',
-        "data": {
-            "map": {
-                "layers": new_map_layers_details
-            },
-        },
-        "maplayers": new_extra_map_layers_details
-    }
-    logger.info(json.dumps(new_map_details, indent=2))
-
-
-def _translate_legacy_map_layer_to_current_map_layer(
-        legacy_map_layer: dict,
-        matching_dataset_id: int
-):
-    mapstore_id = str(uuid.uuid4())
-    return {
-        "id": mapstore_id,
-        "name": legacy_map_layer["name"],
-        "extendedParams": {
-            "mapLayer": {
-                "dataset": {
-                    "pk": matching_dataset_id
+            # map_layer_details = _translate_legacy_local_map_layer_to_current_map_layer(
+            #     legacy_map_layer, matching_dataset_id
+            # )
+            # new_map_layers_details.append(map_layer_details)
+            # extra_map_layer_details = _get_extra_maplayers_key(legacy_map_layer_name, ms_ids[legacy_map_layer_name])
+            new_extra_map_layers_details.append(
+                {
+                    "pk": int(matching_dataset_id),
+                    "name": legacy_map_layer_name,
+                    "extra_params": {
+                        "msId": ms_ids[legacy_map_layer_name],
+                    },
                 }
+            )
+        else:
+            ...
+            # map_layer_details = _translate_legacy_remote_map_layer_to_current_map_layer(legacy_map_layer)
+
+    try:
+        new_map_details = {
+            "abstract": legacy_map_details["abstract"],
+            "title": f'{imported_prefix}{legacy_map_details["title"]}',
+            "data": {
+                "map": new_map_repr,
+                # "map": {
+                #     "layers": new_map_layers_details
+                # },
             },
-            "pk": matching_dataset_id,
+            "maplayers": new_extra_map_layers_details
         }
+        logger.info(json.dumps(new_map_details, indent=2))
+    except KeyError:
+        logger.exception(f"Got an error converting map {legacy_map_id}")
+
+
+def _convert_legacy_map_representation_to_current(
+        map_config: dict,
+        matched_layers: dict[str, int],
+        old_domain: str = "geoplatform.tools4msp.eu",
+        new_domain: str = "dev.geoplatform.tools4msp.eu"
+) -> dict:
+    serialized_map_config = json.dumps(map_config)
+    new_map_config = json.loads(
+        serialized_map_config.replace(old_domain, new_domain))
+    for layer_info in new_map_config.get("layers", []):
+        layer_name = layer_info.get("name")
+        if dataset_id := matched_layers.get(layer_name):
+            layer_info["extendedParams"] = {
+                "mapLayer": {
+                    "pk": str(dataset_id),
+                },
+            }
+    return new_map_config
+
+
+def _translate_legacy_remote_map_layer_to_current_map_layer(
+        legacy_map_layer: dict,
+) -> dict:
+    legacy_layer_params = json.loads(legacy_map_layer["layer_params"])
+    name = legacy_map_layer["name"]
+    mapstore_id = str(uuid.uuid4())
+    result = {
+        "id": "__".join((name, mapstore_id)),
+        "type": legacy_layer_params["type"],
+        "url": legacy_layer_params["url"],
+        "name": name,
+        "title": legacy_layer_params["title"],
+        "description": legacy_layer_params["description"],
+    }
+    if search_info := legacy_layer_params.get("search"):
+        result["search"] = search_info
+    return result
+
+
+def _translate_legacy_local_map_layer_to_current_map_layer(
+        legacy_map_layer: dict,
+        matching_dataset_id: int,
+        new_map_representation: dict,
+) -> dict:
+    for map_layer in new_map_representation["layers"]:
+        if legacy_map_layer["name"] == map_layer["name"]:
+            ms_id = map_layer["id"]
+            break
+    else:
+        ms_id = None
+        logger.warning(f"Could not find maplayer's mapstore id")
+    return {
+        "pk": matching_dataset_id,
+        "name": legacy_map_layer["name"],
+        "extraParams": {
+            "msId": ms_id,
+        },
     }
 
 
-def _get_extra_maplayers_key(primary_map_layer: dict) -> dict:
+def _get_extra_maplayers_key(id_: str, name: str) -> dict:
     return {
         "extra_params": {
-            "msId": primary_map_layer["id"],
+            "msId": id_,
         },
-        "name": primary_map_layer["name"]
+        "name": name
     }
 
 

@@ -10,6 +10,7 @@ from typing import (
 
 import httpx
 import typer
+from playwright.sync_api import sync_playwright
 
 app = typer.Typer()
 logger = logging.getLogger(__name__)
@@ -155,22 +156,16 @@ def gather_map_details_via_api(
                 )
                 layer_result["styles"] = style_info
                 styles_ignored.extend(ignored_styles)
-                # layer_style_ids = [
-                #     int(style_repr.split("/")[3]) for style_repr in layer_detail_repr["styles"]
-                # ]
-                # for style_id in layer_style_ids:
-                #     style_detail_response = http_client.get(
-                #         f"{base_url}/api/styles/{style_id}/",
-                #         auth=geonode_auth
-                #     )
-                #     try:
-                #         style_detail_response.raise_for_status()
-                #     except httpx.HTTPStatusError as err:
-                #         styles_ignored.append((layer_id, style_id, str(err)))
-                #         continue
-                #     style_detail = style_detail_response.json()
-                #     layer_result["styles"][style_detail["name"]] = style_detail
                 layers_processed[layer_id] = layer_result
+            # now access the map via the GeoNode UI and extract missing
+            # details, like groups
+            map_config_for_ui = _extract_map_details_from_ui(
+                map_id,
+                base_url=base_url,
+                username=geonode_auth[0],
+                password=geonode_auth[1]
+            )
+            maps_processed[map_id]["ui_map_config"] = map_config_for_ui
         try:
             next_url = f"{base_url}" + response_repr["meta"]["next"]
         except TypeError:
@@ -219,6 +214,51 @@ def _gather_layer_styles_via_api(
             continue
         style_info["sld"] = sld_url_response.content.decode("utf-8")
     return styles_processed, ignored_styles
+
+
+@app.command("get-map-config-from-ui")
+def export_map_details_from_ui(
+        map_id: int,
+        legacy_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_USERNAME")
+        ],
+        legacy_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_PASSWORD")
+        ],
+        base_url: str = "https://geoplatform.tools4msp.eu",
+):
+    map_config = _extract_map_details_from_ui(
+        map_id, base_url=base_url, username=legacy_geonode_username, password=legacy_geonode_password)
+    print(map_config)
+
+
+def _extract_map_details_from_ui(
+        map_id: int,
+        *,
+        username: str,
+        password: str,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+) -> dict | None:
+    """Uses playwright to emulate a browser session and extract map-related info."""
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        context = browser.new_context()
+        page = context.new_page()
+        page.goto(f"{base_url}/account/login/")
+        page.fill("input[name='login']", username)
+        page.fill("input[name='password']", password)
+        page.click("button[type='submit']")
+
+        page.goto(f"{base_url}/maps/{map_id}/edit#/")
+        geonode_config = page.evaluate("() => window.__GEONODE_CONFIG__")
+        try:
+            map_config = geonode_config["resourceConfig"]["map"]
+        except KeyError:
+            logger.warning("Could not extract map details from UI")
+            map_config = None
+        return map_config
 
 
 if __name__ == '__main__':
