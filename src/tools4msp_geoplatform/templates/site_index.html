@@ -76,12 +76,10 @@ This is where you can override the hero area block. You can simply modify the co
 {% endblock hero %}
 
 {% block partners %}
-    {% if custom_theme.partners.all %}
+    {% if partners or sponsors %}
     <section id="partners">
         <div class="container text-center">
-          {% with partners_title=custom_theme.partners_title|default:"Our partners"|template_trans %}
-          <h2>{% trans partners_title %}</h2>
-          {% endwith %}
+          <h2>{% trans "Our partners" %}</h2>
           <div class="row flex justify-content-center">
             {% for partner in partners %}
               <div class="col-md-2">

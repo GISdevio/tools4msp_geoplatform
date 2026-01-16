@@ -25,8 +25,9 @@ class HomePageView(TemplateView):
             cache.set(THEME_CACHE_KEY, theme)
 
         if theme:
-            context['partners'] = theme.partners.filter(name__contains='[partner]').order_by('name')
-            context['sponsors'] = theme.partners.filter(name__contains='[sponsor]').order_by('name')
+            # Partners feature removed in GeoNode 4.4.x
+            context['partners'] = []
+            context['sponsors'] = []
 
         # Featured items - latest resources
         featured_items = []
