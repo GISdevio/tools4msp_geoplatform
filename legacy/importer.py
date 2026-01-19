@@ -15,40 +15,22 @@ logger = logging.getLogger(__name__)
 app = typer.Typer()
 
 
-def import_map():
-    context = {
-        "title": None,
-        "abstract": None,
-        "map_center_x": None,
-        "map_center_y": None,
-        "map_center_crs": None,
-        "map_maxextent": [],  # not sure if needed
-        "layers": [],
-        "groups": [],
-        "maplayers": []
-    }
-
-
 @app.command()
 def import_map(
         legacy_map_id: str,
-        # geonode_username: Annotated[
-        #     str,
-        #     typer.Argument(envvar="GEONODE_USERNAME")
-        # ],
-        # geonode_password: Annotated[
-        #     str,
-        #     typer.Argument(envvar="GEONODE_PASSWORD")
-        # ],
-        # base_url: str = "https://dev.geoplatform.tools4msp.eu",
+        geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="GEONODE_USERNAME")
+        ],
+        geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="GEONODE_PASSWORD")
+        ],
+        base_url: str = "https://dev.geoplatform.tools4msp.eu",
         legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
         current_base_dir: Path = Path(__file__).parent / "current-data",
         imported_prefix: str = "imported__"
 ):
-    # http_client = _login_to_geonode(
-    #     geonode_username, geonode_password, base_url)
-    # access_token = _get_geoserver_access_token(http_client, base_url)
-    # logger.info(f"{access_token=}")
     legacy_maps_dir = legacy_base_dir / "maps"
     legacy_map_path = legacy_maps_dir / f"{legacy_map_id}.json"
     matched_datasets, not_matched = _get_matched_dataset_ids(
@@ -58,14 +40,11 @@ def import_map(
     legacy_map_details = json.loads(legacy_map_path.read_text())
 
     new_map_repr = _convert_legacy_map_representation_to_current(
-        legacy_map_details["ui_map_config"], matched_datasets
+        legacy_map_details, matched_datasets
     )
-    ms_ids = {}
     for map_layer in new_map_repr["layers"]:
         if map_layer.get("group") == "background" or map_layer.get("local"):
             continue
-        ms_ids[map_layer["name"]] = map_layer["id"]
-
 
     # new_map_layers_details = []
     new_extra_map_layers_details = []
@@ -86,6 +65,11 @@ def import_map(
                         f"Could not match legacy map layer {legacy_map_layer_name!r}({legacy_layer_id!r}) to an "
                         f"existing dataset"
                     )
+            try:
+                new_repr = [la for la in new_map_repr.get("layers", []) if la.get("name") == legacy_map_layer_name][0]
+            except IndexError:
+                logger.warning(f"Could not find this layer in the new set of layers - ignoring...")
+                continue
             # map_layer_details = _translate_legacy_local_map_layer_to_current_map_layer(
             #     legacy_map_layer, matching_dataset_id
             # )
@@ -93,10 +77,10 @@ def import_map(
             # extra_map_layer_details = _get_extra_maplayers_key(legacy_map_layer_name, ms_ids[legacy_map_layer_name])
             new_extra_map_layers_details.append(
                 {
-                    "pk": int(matching_dataset_id),
+                    "pk": matching_dataset_id,
                     "name": legacy_map_layer_name,
                     "extra_params": {
-                        "msId": ms_ids[legacy_map_layer_name],
+                        "msId": new_repr["id"],
                     },
                 }
             )
@@ -110,35 +94,78 @@ def import_map(
             "title": f'{imported_prefix}{legacy_map_details["title"]}',
             "data": {
                 "map": new_map_repr,
-                # "map": {
-                #     "layers": new_map_layers_details
-                # },
             },
             "maplayers": new_extra_map_layers_details
         }
-        logger.info(json.dumps(new_map_details, indent=2))
+        # print(json.dumps(new_map_details, indent=2))
     except KeyError:
         logger.exception(f"Got an error converting map {legacy_map_id}")
+        raise
+
+    http_client = _login_to_geonode(
+        geonode_username, geonode_password, base_url)
+    access_token = _get_geoserver_access_token(http_client, base_url)
+    logger.info(f"{access_token=}")
+    new_map_creation_result = http_client.post(
+        f"{base_url}/api/v2/maps/",
+        json=new_map_details,
+        headers={
+            "authorization": f"Bearer {access_token}",
+            "x-csrftoken": _get_csrf_token(http_client),
+            "referer": f"{base_url}/catalogue"
+        },
+        timeout=60.0
+    )
+    try:
+        new_map_creation_result.raise_for_status()
+    except httpx.HTTPStatusError as err:
+        print(f"Map creation failed with {new_map_creation_result.status_code} - {new_map_creation_result.content}")
+        print(err)
+    response_payload = new_map_creation_result.json()
+    print(response_payload)
+
+
+def _find_legacy_layer_id(map_config: dict, layer_name: str) -> int | None:
+    for idx, layer_config in enumerate(map_config.get("layers", [])):
+        if layer_config.get("name") == layer_name:
+            return layer_config.get("geonode_internal_layer_id")
+    else:
+        return None
 
 
 def _convert_legacy_map_representation_to_current(
-        map_config: dict,
+        full_map_config: dict,
         matched_layers: dict[str, int],
         old_domain: str = "geoplatform.tools4msp.eu",
         new_domain: str = "dev.geoplatform.tools4msp.eu"
-) -> dict:
-    serialized_map_config = json.dumps(map_config)
-    new_map_config = json.loads(
-        serialized_map_config.replace(old_domain, new_domain))
-    for layer_info in new_map_config.get("layers", []):
-        layer_name = layer_info.get("name")
-        if dataset_id := matched_layers.get(layer_name):
-            layer_info["extendedParams"] = {
-                "mapLayer": {
-                    "pk": str(dataset_id),
+) -> dict | None:
+    ui_map_config = full_map_config.get("ui_map_config", {})
+    serialized_ui_map_config = json.dumps(ui_map_config)
+    new_ui_map_config = json.loads(
+        serialized_ui_map_config.replace(old_domain, new_domain))
+    layer_msid = str(uuid.uuid4())
+    for layer_info in new_ui_map_config.get("layers", []):
+        if not (
+                internal_id := _find_legacy_layer_id(
+                    full_map_config, layer_info.get("name"))
+        ):
+            logger.info(f"Could not find internal id for layer {layer_info['name']!r} - skipping...")
+            continue
+        logger.debug(f"{internal_id=}")
+
+        if not (dataset_id := matched_layers.get(internal_id)):
+            logger.info(f"Could not find new dataset_id for layer_id {internal_id!r} - skipping...")
+            continue
+        layer_info["id"] = layer_msid
+        layer_info["extendedParams"] = {
+            "mapLayer": {
+                "pk": dataset_id,
+                "extraParams": {
+                    "msId": layer_msid,
                 },
-            }
-    return new_map_config
+            },
+        }
+    return new_ui_map_config
 
 
 def _translate_legacy_remote_map_layer_to_current_map_layer(
@@ -267,7 +294,7 @@ def _get_matched_dataset_ids(
     for legacy_id, legacy_title in legacy_layers.items():
         for current_id, current_title in current_datasets.items():
             if legacy_title == current_title:
-                match_found[legacy_id] = current_id
+                match_found[legacy_id] = int(current_id)
                 logger.debug(f"Found match for legacy layer {legacy_id} - current dataset {current_id}")
                 break
         else:
@@ -372,6 +399,16 @@ def _get_geoserver_access_token(
     return userinfo["access_token"]
 
 
+def _get_csrf_token(http_client: httpx.Client) -> str:
+    for cookie in http_client.cookies.jar:
+        if cookie.name == 'csrftoken':
+            csrf_token = cookie.value
+            break
+    else:
+        raise RuntimeError(f"Could not find CSRF token in response cookies")
+    return csrf_token
+
+
 def _login_to_geonode(
         username: str,
         password: str,
@@ -386,17 +423,9 @@ def _login_to_geonode(
     http_client = httpx.Client(follow_redirects=True)
     logger.info("Getting login page to extract CSRF token...")
     login_page_url = f"{base_url}/account/login/"
-    # visit login page in order to get the csrftoken
+    # now visiting the login page in order to get csrftoken
     http_client.get(login_page_url)
-    csrf_token = None
-    for cookie in http_client.cookies.jar:
-        if cookie.name == 'csrftoken':
-            csrf_token = cookie.value
-            logger.info(f"Found CSRF token in cookies: {csrf_token[:20]}...")
-            break
-    if not csrf_token:
-        raise RuntimeError(f"Could not find CSRF token in response cookies")
-
+    csrf_token = _get_csrf_token(http_client)
     login_response = http_client.post(
         login_page_url,
         data={
