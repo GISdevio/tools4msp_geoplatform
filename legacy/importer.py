@@ -26,6 +26,7 @@ def import_map(
             str,
             typer.Argument(envvar="GEONODE_PASSWORD")
         ],
+        perform_import: bool = False,
         base_url: str = "https://dev.geoplatform.tools4msp.eu",
         legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
         current_base_dir: Path = Path(__file__).parent / "current-data",
@@ -42,79 +43,47 @@ def import_map(
     new_map_repr = _convert_legacy_map_representation_to_current(
         legacy_map_details, matched_datasets
     )
-    for map_layer in new_map_repr["layers"]:
-        if map_layer.get("group") == "background" or map_layer.get("local"):
-            continue
 
-    # new_map_layers_details = []
-    new_extra_map_layers_details = []
-    for legacy_map_layer in legacy_map_details["layers"]:
-        if legacy_map_layer.get("group") == "background":
-            continue
-        legacy_map_layer_name = legacy_map_layer["name"]
-        logger.info(f"Processing legacy map layer: {legacy_map_layer_name!r}...")
-        if legacy_map_layer.get("local"):
-            legacy_layer_id = legacy_map_layer["geonode_internal_layer_id"]
-            matching_dataset_id = matched_datasets.get(legacy_layer_id)
-            if matching_dataset_id is None:
-                if legacy_layer_id in not_matched:
-                    logger.warning(f"ignoring not matched layer with id {legacy_layer_id!r}")
-                    continue
-                else:
-                    raise RuntimeError(
-                        f"Could not match legacy map layer {legacy_map_layer_name!r}({legacy_layer_id!r}) to an "
-                        f"existing dataset"
-                    )
-            try:
-                new_repr = [la for la in new_map_repr.get("layers", []) if la.get("name") == legacy_map_layer_name][0]
-            except IndexError:
-                logger.warning(f"Could not find this layer in the new set of layers - ignoring...")
-                continue
-            # map_layer_details = _translate_legacy_local_map_layer_to_current_map_layer(
-            #     legacy_map_layer, matching_dataset_id
-            # )
-            # new_map_layers_details.append(map_layer_details)
-            # extra_map_layer_details = _get_extra_maplayers_key(legacy_map_layer_name, ms_ids[legacy_map_layer_name])
-            new_extra_map_layers_details.append(
-                {
-                    "pk": matching_dataset_id,
-                    "name": legacy_map_layer_name,
-                    "extra_params": {
-                        "msId": new_repr["id"],
-                    },
-                }
-            )
-        else:
-            ...
-            # map_layer_details = _translate_legacy_remote_map_layer_to_current_map_layer(legacy_map_layer)
+    # TODO: remove this after testing
+    # new_map_repr["layers"] = new_map_repr["layers"][:7]
 
-    try:
-        new_map_details = {
-            "abstract": legacy_map_details["abstract"],
-            "title": f'{imported_prefix}{legacy_map_details["title"]}',
-            "data": {
-                "map": new_map_repr,
-            },
-            "maplayers": new_extra_map_layers_details
-        }
-        # print(json.dumps(new_map_details, indent=2))
-    except KeyError:
-        logger.exception(f"Got an error converting map {legacy_map_id}")
-        raise
+
+    new_extra_map_layers_details = generate_layers_representation(
+        new_map_repr["layers"],
+        legacy_map_details["layers"],
+        matched_datasets
+    )
+
+    map_title = f"{imported_prefix}{legacy_map_details['title']}"
+    new_map_details = {
+        "abstract": legacy_map_details.get("abstract") or map_title,
+        "title": map_title,
+        "data": {
+            "map": new_map_repr,
+        },
+        "maplayers": new_extra_map_layers_details
+    }
+    print(json.dumps(new_map_details, indent=2))
+
+    # TODO: remove me
+    if not perform_import:
+        return
 
     http_client = _login_to_geonode(
         geonode_username, geonode_password, base_url)
     access_token = _get_geoserver_access_token(http_client, base_url)
     logger.info(f"{access_token=}")
+    logger.info(json.dumps(new_map_details))
     new_map_creation_result = http_client.post(
         f"{base_url}/api/v2/maps/",
         json=new_map_details,
         headers={
+            "content-type": "application/json",
             "authorization": f"Bearer {access_token}",
             "x-csrftoken": _get_csrf_token(http_client),
             "referer": f"{base_url}/catalogue"
         },
-        timeout=60.0
+        timeout=3 * 60.0
     )
     try:
         new_map_creation_result.raise_for_status()
@@ -125,17 +94,59 @@ def import_map(
     print(response_payload)
 
 
-def _find_legacy_layer_id(map_config: dict, layer_name: str) -> int | None:
-    for idx, layer_config in enumerate(map_config.get("layers", [])):
+def _find_legacy_layer_id(map_layers_config: list[dict], layer_name: str) -> int | None:
+    for idx, layer_config in enumerate(map_layers_config):
         if layer_config.get("name") == layer_name:
             return layer_config.get("geonode_internal_layer_id")
     else:
         return None
 
 
+def generate_layers_representation(
+        new_map_layers: list[dict],
+        legacy_map_layers: list[dict],
+        matched: dict[int, int]
+):
+    result = []
+    for layer_repr in new_map_layers:
+        if layer_repr.get("group") == "background":
+            continue
+
+        try:
+            map_layer_details = [
+                la for la in legacy_map_layers if la["name"] == layer_repr["name"]
+            ][0]
+        except IndexError:
+            logger.warning(f"Could not find details for layer {layer_repr['name']!r}")
+            continue
+        if not map_layer_details.get("local"):
+            logger.info(f"layer {layer_repr['name']!r} is not a local layer, skipping...")
+            continue
+        try:
+            internal_id = map_layer_details["geonode_internal_layer_id"]
+        except KeyError:
+            logger.warning(
+                f"Could not determine internal id for local layer {layer_repr['name']} - ignoring this layer"
+            )
+            continue
+        if not (matching_dataset_id := matched.get(internal_id)):
+            logger.warning(f"Could not match legacy layer with id {internal_id!r} to a current dataset")
+            continue
+        result.append(
+            {
+                "pk": matching_dataset_id,
+                "name": layer_repr["name"],
+                "extra_params": {
+                    "msId": layer_repr["id"],
+                },
+            }
+        )
+    return result
+
+
 def _convert_legacy_map_representation_to_current(
         full_map_config: dict,
-        matched_layers: dict[str, int],
+        matched_layers: dict[int, int],
         old_domain: str = "geoplatform.tools4msp.eu",
         new_domain: str = "dev.geoplatform.tools4msp.eu"
 ) -> dict | None:
@@ -143,19 +154,41 @@ def _convert_legacy_map_representation_to_current(
     serialized_ui_map_config = json.dumps(ui_map_config)
     new_ui_map_config = json.loads(
         serialized_ui_map_config.replace(old_domain, new_domain))
-    layer_msid = str(uuid.uuid4())
-    for layer_info in new_ui_map_config.get("layers", []):
-        if not (
-                internal_id := _find_legacy_layer_id(
-                    full_map_config, layer_info.get("name"))
-        ):
-            logger.info(f"Could not find internal id for layer {layer_info['name']!r} - skipping...")
+
+    to_remove = []
+    for idx, layer_info in enumerate(new_ui_map_config.get("layers", [])):
+
+        if layer_info.get("group") == "background":
+            continue
+
+        try:
+            map_layer_details = [
+                la for la in full_map_config["layers"] if la["name"] == layer_info["name"]
+            ][0]
+        except IndexError:
+            logger.warning(f"Could not find details for layer {layer_info['name']!r}")
+            to_remove.append(idx)
+            continue
+
+        if not map_layer_details.get("local"):
+            logger.info(f"layer {layer_info['name']!r} is not a local layer, skipping...")
+            # to_remove.append(idx)
+            continue
+
+        try:
+            internal_id = map_layer_details["geonode_internal_layer_id"]
+        except KeyError:
+            logger.warning(
+                f"Could not determine internal id for local layer {layer_info['name']} - ignoring this layer"
+            )
+            to_remove.append(idx)
             continue
         logger.debug(f"{internal_id=}")
-
         if not (dataset_id := matched_layers.get(internal_id)):
             logger.info(f"Could not find new dataset_id for layer_id {internal_id!r} - skipping...")
+            to_remove.append(idx)
             continue
+        layer_msid = str(uuid.uuid4())
         layer_info["id"] = layer_msid
         layer_info["extendedParams"] = {
             "mapLayer": {
@@ -165,6 +198,8 @@ def _convert_legacy_map_representation_to_current(
                 },
             },
         }
+    new_layer_list = [la for index, la in enumerate(new_ui_map_config.get("layers", [])) if index not in to_remove]
+    new_ui_map_config["layers"] = new_layer_list
     return new_ui_map_config
 
 
