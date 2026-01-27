@@ -39,20 +39,12 @@ def import_map(
         legacy_base_dir / "layers",
         current_base_dir / "datasets"
     )
-    # logger.info(f"{matched_datasets=}")
-    # logger.info(f"{not_matched=}")
     legacy_map_details = json.loads(legacy_map_path.read_text())
 
     new_map_repr, new_extra_map_layers_details = _convert_legacy_map_representation_to_current(
         legacy_map_details, matched_datasets,
-        current_datasets_dir=current_base_dir / "datasets"
+        current_datasets_dir=current_base_dir / "datasets",
     )
-
-    # new_extra_map_layers_details = generate_layers_representation(
-    #     new_map_repr["layers"],
-    #     legacy_map_details["layers"],
-    #     matched_datasets
-    # )
 
     map_title = f"{imported_prefix}{legacy_map_details['title']}"
     new_map_details = {
@@ -198,8 +190,6 @@ def _convert_legacy_map_representation_to_current(
             dataset_id, current_datasets_dir)
         layer_info["name"] = current_dataset_details["name"]
 
-
-
         layer_msid = str(uuid.uuid4())
         layer_info["id"] = layer_msid
         layer_info["extendedParams"] = {
@@ -211,17 +201,60 @@ def _convert_legacy_map_representation_to_current(
             },
         }
 
-        new_map_layers.append({
+        new_layer = {
             "pk": dataset_id,
             "name": current_dataset_details["name"],
+            "title": layer_info["title"],
             "extra_params": {
                 "mdId": layer_msid,
             }
-        })
+        }
+        new_map_layers.append(new_layer)
+
 
     new_layer_list = [la for index, la in enumerate(new_ui_map_config.get("layers", [])) if index not in to_remove]
     new_ui_map_config["layers"] = new_layer_list
     return new_ui_map_config, new_map_layers
+
+
+def recreate_map_layer_style(
+        map_layer_title: str,
+        dataset_pk: int,
+        http_client: httpx.Client,
+        access_token: str,
+        legacy_layers_dir: Path,
+        current_datasets_dir: Path,
+        current_base_url: str,
+        perform_creation: bool = False,
+
+):
+    matches, non_matched = _get_matched_dataset_ids(legacy_layers_dir, current_datasets_dir)
+    legacy_layer_id = [k for k, v in matches.items() if v == dataset_pk][0]
+    legacy_style_name = map_layer_title
+    legacy_style_sld = _get_legacy_style(
+        legacy_layer_id, legacy_style_name, legacy_layers_dir
+    )
+    logger.info(f"{legacy_style_sld=}")
+    if perform_creation:
+        new_style_name = f"imported__{legacy_style_name}"
+        logger.info(f"About to create style {new_style_name!r}")
+        _create_geonode_style(
+            http_client,
+            access_token,
+            new_style_name,
+            legacy_style_sld,
+            current_base_url,
+        )
+
+
+def _get_legacy_style(legacy_layer_id: int, style_name: str, legacy_layers_dir: Path) -> str:
+    legacy_contents_path = legacy_layers_dir / f"{legacy_layer_id}.json"
+    legacy_contents = json.loads(legacy_contents_path.read_text())
+    style_info = [
+        s for s in legacy_contents.get("styles", [])
+        if s.get("name") == style_name
+    ][0]
+    return style_info["sld"]
 
 
 def _translate_legacy_remote_map_layer_to_current_map_layer(
