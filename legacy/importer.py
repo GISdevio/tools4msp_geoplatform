@@ -6,6 +6,7 @@ from typing import (
     Annotated,
     Iterator,
 )
+from xml.etree import ElementTree as etree
 
 import httpx
 import typer
@@ -13,6 +14,12 @@ import typer
 logger = logging.getLogger(__name__)
 
 app = typer.Typer()
+
+
+@app.callback()
+def main_callback(ctx: typer.Context, verbose: bool = False):
+    logging.basicConfig(level=logging.INFO if verbose else logging.WARNING)
+    logging.getLogger("httpx").setLevel(logging.WARNING)
 
 
 @app.command()
@@ -26,12 +33,15 @@ def import_map(
             str,
             typer.Argument(envvar="GEONODE_PASSWORD")
         ],
-        perform_import: bool = False,
+        perform_map_import: bool = False,
+        perform_styles_import: bool = False,
         base_url: str = "https://dev.geoplatform.tools4msp.eu",
         legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
         current_base_dir: Path = Path(__file__).parent / "current-data",
         imported_prefix: str = "imported__",
-        print_request_payload: str = False
+        print_request_payload: bool = False,
+        print_response_payload: bool = False
+
 ):
     legacy_maps_dir = legacy_base_dir / "maps"
     legacy_map_path = legacy_maps_dir / f"{legacy_map_id}.json"
@@ -58,32 +68,85 @@ def import_map(
     if print_request_payload:
         print(json.dumps(new_map_details, indent=2))
 
-    if not perform_import:
+    # gather styles that are used in this map, to be created
+    styles_to_create = []
+    for layer_repr in new_map_repr["layers"]:
+        if style_name := layer_repr.get("style"):
+            new_pk = layer_repr.get("extendedParams", {}).get("mapLayer", {}).get("pk")
+            style_name_fragment = style_name.replace("geonode:", "")
+            try:
+                legacy_pk = [k for k, v in matched_datasets.items() if v == new_pk][0]
+            except IndexError:
+                logger.warning(
+                    f"Could not map dataset {new_pk!r} to a corresponding "
+                    f"legacy layer - skipping..."
+                )
+                continue
+            logger.info(
+                f"need to create style {style_name_fragment!r} for dataset with "
+                f"id {new_pk!r}, which corresponds to a legacy layer with {legacy_pk!r}"
+            )
+            try:
+                legacy_style = _get_legacy_style(
+                    legacy_pk, style_name_fragment, legacy_base_dir / "layers")
+                logger.info(f"got legacy style: {bool(legacy_style)!r}")
+            except TypeError:
+                logger.warning(
+                    f"Could not retrieve legacy style {style_name!r} from layer "
+                    f"with pk {legacy_pk!r} - skipping ..."
+                )
+                continue
+
+            styles_to_create.append(
+                (
+                    style_name_fragment,
+                    _convert_style_properties_to_lowercase(legacy_style)
+                )
+            )
+
+    if not any((perform_map_import, perform_styles_import)):
         return
 
     http_client = _login_to_geonode(
         geonode_username, geonode_password, base_url)
     access_token = _get_geoserver_access_token(http_client, base_url)
     logger.info(f"{access_token=}")
-    logger.info(json.dumps(new_map_details))
-    new_map_creation_result = http_client.post(
-        f"{base_url}/api/v2/maps/",
-        json=new_map_details,
-        headers={
-            "content-type": "application/json",
-            "authorization": f"Bearer {access_token}",
-            "x-csrftoken": _get_csrf_token(http_client),
-            "referer": f"{base_url}/catalogue"
-        },
-        timeout=3 * 60.0
-    )
-    try:
-        new_map_creation_result.raise_for_status()
-    except httpx.HTTPStatusError as err:
-        print(f"Map creation failed with {new_map_creation_result.status_code} - {new_map_creation_result.content}")
-        print(err)
-    response_payload = new_map_creation_result.json()
-    print(response_payload)
+
+    if perform_map_import:
+        print("Importing map...")
+        new_map_creation_result = http_client.post(
+            f"{base_url}/api/v2/maps/",
+            json=new_map_details,
+            headers={
+                "content-type": "application/json",
+                "authorization": f"Bearer {access_token}",
+                "x-csrftoken": _get_csrf_token(http_client),
+                "referer": f"{base_url}/catalogue"
+            },
+            timeout=3 * 60.0
+        )
+        try:
+            new_map_creation_result.raise_for_status()
+        except httpx.HTTPStatusError as err:
+            print(f"Map creation failed with {new_map_creation_result.status_code} - {new_map_creation_result.content}")
+            print(err)
+        response_payload = new_map_creation_result.json()
+        if print_response_payload:
+            print(response_payload)
+
+    if perform_styles_import:
+        print(f"Importing styles...")
+        for style_name, style_sld in styles_to_create:
+            logger.info(f"Creating style {style_name!r}...")
+            _create_geonode_style(
+                http_client,
+                access_token,
+                style_name,
+                style_sld,
+                base_url
+            )
+
+    print("Done!")
 
 
 def _find_legacy_layer_id(map_layers_config: list[dict], layer_name: str) -> int | None:
@@ -206,10 +269,16 @@ def _convert_legacy_map_representation_to_current(
             "name": current_dataset_details["name"],
             "title": layer_info["title"],
             "extra_params": {
-                "mdId": layer_msid,
+                "msId": layer_msid,
             }
         }
         new_map_layers.append(new_layer)
+        if "osmose" in new_layer["name"].lower() and "bonito" in new_layer["title"].lower():
+            print(json.dumps(layer_info, indent=2))
+            print("-------------------")
+            print(new_layer)
+            print("-------------------")
+            print("-------------------")
 
 
     new_layer_list = [la for index, la in enumerate(new_ui_map_config.get("layers", [])) if index not in to_remove]
@@ -247,14 +316,18 @@ def recreate_map_layer_style(
         )
 
 
-def _get_legacy_style(legacy_layer_id: int, style_name: str, legacy_layers_dir: Path) -> str:
+def _get_legacy_style(
+        legacy_layer_id: int,
+        style_name: str,
+        legacy_layers_dir: Path
+) -> str | None:
     legacy_contents_path = legacy_layers_dir / f"{legacy_layer_id}.json"
     legacy_contents = json.loads(legacy_contents_path.read_text())
-    style_info = [
-        s for s in legacy_contents.get("styles", [])
-        if s.get("name") == style_name
-    ][0]
-    return style_info["sld"]
+    for style_pk, style_info in legacy_contents.get("styles", {}).items():
+        if style_info["name"] == style_name:
+            return style_info["sld"]
+    else:
+        return None
 
 
 def _translate_legacy_remote_map_layer_to_current_map_layer(
@@ -487,7 +560,7 @@ def _create_geonode_style(
         style_identifier: str,
         style_sld: str,
         base_url: str = "https://dev.geonode.tools4msp.eu",
-):
+) -> None:
     # style is created by POSTING the SLD contents with a specific content-type
     response = http_client.post(
         f"{base_url}/gs/rest/workspaces/geonode/styles/",
@@ -575,7 +648,15 @@ def _login_to_geonode(
     return http_client
 
 
+def _convert_style_properties_to_lowercase(sld_style: str) -> str:
+    """Converts dataset property names mentioned in SLD style to lower case."""
+    ogc_ns = "http://www.opengis.net/ogc"
+    root = etree.fromstring(sld_style)
+    for property_name_el in root.findall(f".//{{{ogc_ns}}}PropertyName"):
+        old_text = property_name_el.text
+        property_name_el.text = old_text.lower()
+    return etree.tostring(root).decode("utf-8")
+
+
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    logging.getLogger("httpx").setLevel(logging.WARNING)
     app()
