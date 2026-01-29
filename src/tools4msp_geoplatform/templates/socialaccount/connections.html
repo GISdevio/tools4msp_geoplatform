@@ -2,13 +2,13 @@
 
 {% load i18n %}
 {% load bootstrap_tags %}
-{% load socialaccount_extra %}
 
 {% block title %}{% trans "Account Connections" %}{% endblock %}
 
 {% block body_outer %}
 <h1>{% trans "Account Connections" %}</h1>
 
+{% if form.accounts %}
 <p>{% blocktrans %}You can sign in to your account using any of the following already connected third party accounts:{% endblocktrans %}</p>
 
 
@@ -34,19 +34,14 @@
 
 </form>
 
-
-{% get_number_unconnected_providers user as unconnected_providers %}
-
-{% if unconnected_providers > 0 %}
-
-<h3>{% trans 'Add a 3rd Party Account' %}</h3>
+{% else %}
+<p>{% trans 'You currently have no social network accounts connected to this account.' %}</p>
+{% endif %}
 
 <div class="row">
   {% include "socialaccount/snippets/remaining_providers_list.html" with process="connect" %}
 </div>
 
 {% include "socialaccount/snippets/login_extra.html" %}
-
-{% endif %}
 
 {% endblock %}

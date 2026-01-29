@@ -1,30 +1,24 @@
 {% load i18n %}
-{% load socialaccount %}
-{% load socialaccount_extra %}
+{% load social_tags %}
 
-{% get_other_social_providers user as other_providers %}
+{% get_social_providers_with_apps user as providers_with_apps %}
 
-{% for provider in other_providers %}
-    {% if provider.get_app %}
-        {% if provider.id == "openid" %}
-            {% for brand in provider.get_brands %}
-                <a class="list-group-item" title="{{brand.name}}" href="{% provider_login_url provider.id openid=brand.openid_url process=process %}">
-                    {{brand.name}}
-                </a>
-            {% endfor %}
-        {% endif %}
-        <div class="form-group text-left">
-            <a class="btn btn-default btn-xs social-btn" title="{{provider.name}}" href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">
-                <i class="fa fa-{{ provider.name|lower }}-square fa-2x" aria-hidden="true"></i>
-                {% if process == "login" %}
-                    {% trans "Sign in with" %}
-                {% elif process == "connect" %}
-                    {% trans "Connect with" %}
-                {% else %}
-                    {% trans "Sign up with" %}
-                {% endif %}
-                {{provider.name}}
-            </a>
-        </div>
-    {% endif %}
+{% if providers_with_apps %}
+<h3>{% trans 'Add a 3rd Party Account' %}</h3>
+{% endif %}
+
+{% for provider in providers_with_apps %}
+    <div class="form-group text-left">
+        <a class="btn btn-default btn-xs social-btn" title="{{ provider.name }}" href="{{ provider.login_url }}">
+            <i class="fa fa-{{ provider.name|lower }}-square fa-2x" aria-hidden="true"></i>
+            {% if process == "login" %}
+                {% trans "Sign in with" %}
+            {% elif process == "connect" %}
+                {% trans "Connect with" %}
+            {% else %}
+                {% trans "Sign up with" %}
+            {% endif %}
+            {{ provider.name }}
+        </a>
+    </div>
 {% endfor %}

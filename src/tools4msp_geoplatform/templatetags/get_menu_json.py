@@ -74,11 +74,26 @@ def get_base_left_topbar_menu(context):
             ),
         },
         {"type": "link", "href": "/catalogue/#/search/?f=map", "label": "Maps"},
+        (
+               {
+        "type": "dropdown",
+        "label": "Apps",
+        "items": [
+            {
+                "type": "link",
+                "href": "/catalogue/#/search/?f=geostory&f=dashboard",
+                "label": "Explore Apps"
+            }
+        ]
+    }
+        if user and user.is_authenticated
+        else
         {
             "type": "link",
-            "href": "/catalogue/#/search/?f=geostory",
-            "label": "GeoStories",
-        },
+            "href": "/catalogue/#/search/?f=geostory&f=dashboard",
+            "label": "Apps"
+        }
+    ),
         {
             "label": "Case Studies",
             "type": "dropdown",
@@ -109,9 +124,9 @@ def get_base_left_topbar_menu(context):
             + (
                 [
                     {"type": "divider"},
-                    {"type": "link", "href": "/invitations/geonode-send-invite", "label": "Invite users"},
-                    {"type": "link", "href": "/admin/people/profile/add/", "label": "Add user"},
-                    {"type": "link", "href": "/groups/create/", "label": "Create group"},
+                    {"type": "link", "href": "/invitations/geonode-send-invite", "label": "Invite Users"},
+                    {"type": "link", "href": "/admin/people/profile/add/", "label": "Add User"},
+                    {"type": "link", "href": "/groups/create/", "label": "Create Group"},
                 ]
                 if user and user.is_authenticated
                 else []
@@ -156,16 +171,16 @@ def get_base_right_topbar_menu(context):
                 {
                     "type": "link",
                     "href": "/invitations/geonode-send-invite/",
-                    "label": "Invite users",
+                    "label": "Invite Users",
                 },
                 {
                     "type": "link",
                     "href": "/admin/people/profile/add/",
-                    "label": "Add user",
+                    "label": "Add User",
                 }
                 if user.is_superuser
                 else None,
-                {"type": "link", "href": "/groups/create/", "label": "Create group"}
+                {"type": "link", "href": "/groups/create/", "label": "Create Group"}
                 if user.is_superuser
                 else None,
             ]

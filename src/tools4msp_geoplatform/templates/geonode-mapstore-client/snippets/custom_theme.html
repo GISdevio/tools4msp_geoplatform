@@ -254,4 +254,28 @@
     font-weight: 700;
     color: #3A3A3A;
   }
+
+  /* Fix: divider visibile nei dropdown - sovrascrive MapStore */
+  .dropdown-menu .divider,
+  .dropdown-menu>li.divider,
+  .gn-menu .dropdown-menu .divider,
+  .gn-menu .dropdown-menu>li.divider,
+  #gn-topbar .dropdown-menu .divider,
+  .msgapi .dropdown-menu .divider {
+    background-color: #e5e5e5 !important;
+    height: 1px !important;
+    margin: 9px 0 !important;
+    overflow: hidden;
+    padding: 0 !important;
+  }
+
+  /* Fix: dropdown menu items - testo leggibile */
+  #gn-topbar .gn-menu-container .dropdown-menu>li>a {
+    color: #333333 !important;
+  }
+
+  #gn-topbar .gn-menu-container .dropdown-menu>li>a:hover {
+    color: #000000 !important;
+    background-color: #f5f5f5 !important;
+  }
 </style>
