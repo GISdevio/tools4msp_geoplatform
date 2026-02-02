@@ -387,3 +387,13 @@ if GMAPS_TOKEN:
             "group": "background",
             "visibility": True
         })
+
+FACET_PROVIDERS = [
+    {"class": "geonode.facets.providers.baseinfo.ResourceTypeFacetProvider", "config": {"order": 0}},
+    {"class": "geonode.facets.providers.baseinfo.FeaturedFacetProvider", "config": {"order": 1}},
+    {"class": "tools4msp_geoplatform.facets.providers.CategoryFacetProvider", "config": {"order": 5, "type": "select"}},
+    {"class": "tools4msp_geoplatform.facets.providers.KeywordFacetProvider", "config": {"order": 6, "type": "select"}},
+    {"class": "geonode.facets.providers.region.RegionFacetProvider", "config": {"order": 7, "type": "select"}},
+    {"class": "geonode.facets.providers.users.OwnerFacetProvider", "config": {"order": 8, "type": "select"}},
+    {"class": "geonode.facets.providers.group.GroupFacetProvider", "config": {"order": 9, "type": "select"}},
+    {"class": "tools4msp_geoplatform.facets.providers.ThesaurusFacetProvider", "config": {"type": "select"}},]
