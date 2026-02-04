@@ -1,0 +1,1006 @@
+{
+  "meta": {
+    "lastIssuedAt": "2026-02-03T10:31:45.591Z",
+    "platformDiffMeta": {
+      "newLayersDownloadDate": "2025-12-09T06:59:46.753Z",
+      "oldLayersDownloadDate": "2025-11-16T18:27:03.392Z"
+    }
+  },
+  "spec": [
+    {
+      "newLayerId": "313",
+      "oldLayerId": "630",
+      "state": "done"
+    },
+    {
+      "newLayerId": "314",
+      "oldLayerId": "459",
+      "state": "done"
+    },
+    {
+      "newLayerId": "315",
+      "oldLayerId": "1987",
+      "state": "done"
+    },
+    {
+      "newLayerId": "333",
+      "oldLayerId": "536",
+      "state": "done"
+    },
+    {
+      "newLayerId": "316",
+      "oldLayerId": "548",
+      "state": "done"
+    },
+    {
+      "newLayerId": "317",
+      "oldLayerId": "546",
+      "state": "done"
+    },
+    {
+      "newLayerId": "318",
+      "oldLayerId": "577",
+      "state": "done"
+    },
+    {
+      "newLayerId": "319",
+      "oldLayerId": "450",
+      "state": "done"
+    },
+    {
+      "newLayerId": "334",
+      "oldLayerId": "1171",
+      "state": "done"
+    },
+    {
+      "newLayerId": "320",
+      "oldLayerId": "550",
+      "state": "done"
+    },
+    {
+      "newLayerId": "335",
+      "oldLayerId": "1203",
+      "state": "done"
+    },
+    {
+      "newLayerId": "321",
+      "oldLayerId": "249",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "322",
+      "oldLayerId": "2099",
+      "state": "done"
+    },
+    {
+      "newLayerId": "323",
+      "oldLayerId": "619",
+      "state": "done"
+    },
+    {
+      "newLayerId": "324",
+      "oldLayerId": "1975",
+      "state": "done"
+    },
+    {
+      "newLayerId": "325",
+      "oldLayerId": "620",
+      "state": "done"
+    },
+    {
+      "newLayerId": "326",
+      "oldLayerId": "1974",
+      "state": "done"
+    },
+    {
+      "newLayerId": "327",
+      "oldLayerId": "615",
+      "state": "done"
+    },
+    {
+      "newLayerId": "328",
+      "oldLayerId": "1967",
+      "state": "done"
+    },
+    {
+      "newLayerId": "336",
+      "oldLayerId": "435",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "337",
+      "oldLayerId": "434",
+      "state": "done"
+    },
+    {
+      "newLayerId": "338",
+      "oldLayerId": "429",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "339",
+      "oldLayerId": "431",
+      "state": "done"
+    },
+    {
+      "newLayerId": "340",
+      "oldLayerId": "433",
+      "state": "done"
+    },
+    {
+      "newLayerId": "341",
+      "oldLayerId": "432",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "342",
+      "oldLayerId": "430",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "343",
+      "oldLayerId": "437",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "329",
+      "oldLayerId": "575",
+      "state": "done"
+    },
+    {
+      "newLayerId": "330",
+      "oldLayerId": "1685",
+      "state": "done"
+    },
+    {
+      "newLayerId": "344",
+      "oldLayerId": "446",
+      "state": "done"
+    },
+    {
+      "newLayerId": "331",
+      "oldLayerId": "1985",
+      "state": "done"
+    },
+    {
+      "newLayerId": "345",
+      "oldLayerId": "126",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "346",
+      "oldLayerId": "124",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "332",
+      "oldLayerId": "125",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "347",
+      "oldLayerId": "695",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1174",
+      "oldLayerId": "2122",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1175",
+      "oldLayerId": "2123",
+      "state": "done"
+    },
+    {
+      "newLayerId": "348",
+      "oldLayerId": "616",
+      "state": "done"
+    },
+    {
+      "newLayerId": "349",
+      "oldLayerId": "1969",
+      "state": "done"
+    },
+    {
+      "newLayerId": "350",
+      "oldLayerId": "1973",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1176",
+      "oldLayerId": "2113",
+      "state": "done",
+      "oldGroupSlug": "cnr-irbim",
+      "newGroupId": 5
+    },
+    {
+      "newLayerId": "351",
+      "oldLayerId": "1506",
+      "state": "done"
+    },
+    {
+      "newLayerId": "352",
+      "oldLayerId": "1510",
+      "state": "done"
+    },
+    {
+      "newLayerId": "353",
+      "oldLayerId": "449",
+      "state": "done"
+    },
+    {
+      "newLayerId": "354",
+      "oldLayerId": "444",
+      "state": "done"
+    },
+    {
+      "newLayerId": "355",
+      "oldLayerId": "440",
+      "state": "done"
+    },
+    {
+      "newLayerId": "356",
+      "oldLayerId": "1206",
+      "state": "done"
+    },
+    {
+      "newLayerId": "357",
+      "oldLayerId": "1718",
+      "state": "done"
+    },
+    {
+      "newLayerId": "358",
+      "oldLayerId": "960",
+      "state": "done",
+      "oldGroupSlug": "cnr-ismar",
+      "newGroupId": 6
+    },
+    {
+      "newLayerId": "359",
+      "oldLayerId": "928",
+      "state": "done",
+      "oldGroupSlug": "cnr-ismar",
+      "newGroupId": 6
+    },
+    {
+      "newLayerId": "360",
+      "oldLayerId": "944",
+      "state": "done",
+      "oldGroupSlug": "cnr-ismar",
+      "newGroupId": 6
+    },
+    {
+      "newLayerId": "361",
+      "oldLayerId": "941",
+      "state": "done",
+      "oldGroupSlug": "cnr-ismar",
+      "newGroupId": 6
+    },
+    {
+      "newLayerId": "362",
+      "oldLayerId": "942",
+      "state": "done",
+      "oldGroupSlug": "cnr-ismar",
+      "newGroupId": 6
+    },
+    {
+      "newLayerId": "363",
+      "oldLayerId": "1017",
+      "state": "done",
+      "oldGroupSlug": "cnr-ismar",
+      "newGroupId": 6
+    },
+    {
+      "newLayerId": "364",
+      "oldLayerId": "1968",
+      "state": "done"
+    },
+    {
+      "newLayerId": "365",
+      "oldLayerId": "36",
+      "state": "done"
+    },
+    {
+      "newLayerId": "366",
+      "oldLayerId": "623",
+      "state": "done"
+    },
+    {
+      "newLayerId": "367",
+      "oldLayerId": "1976",
+      "state": "done"
+    },
+    {
+      "newLayerId": "368",
+      "oldLayerId": "622",
+      "state": "done"
+    },
+    {
+      "newLayerId": "369",
+      "oldLayerId": "1970",
+      "state": "done"
+    },
+    {
+      "newLayerId": "370",
+      "oldLayerId": "1983",
+      "state": "done"
+    },
+    {
+      "newLayerId": "371",
+      "oldLayerId": "1984",
+      "state": "done"
+    },
+    {
+      "newLayerId": "372",
+      "oldLayerId": "465",
+      "state": "done"
+    },
+    {
+      "newLayerId": "373",
+      "oldLayerId": "1990",
+      "state": "done"
+    },
+    {
+      "newLayerId": "374",
+      "oldLayerId": "1989",
+      "state": "done"
+    },
+    {
+      "newLayerId": "375",
+      "oldLayerId": "467",
+      "state": "done"
+    },
+    {
+      "newLayerId": "376",
+      "oldLayerId": "1980",
+      "state": "done"
+    },
+    {
+      "newLayerId": "377",
+      "oldLayerId": "1719",
+      "state": "done"
+    },
+    {
+      "newLayerId": "378",
+      "oldLayerId": "2008",
+      "state": "done",
+      "oldGroupSlug": "tools4msp",
+      "newGroupId": 12
+    },
+    {
+      "newLayerId": "379",
+      "oldLayerId": "2009",
+      "state": "done"
+    },
+    {
+      "newLayerId": "380",
+      "oldLayerId": "2007",
+      "state": "done"
+    },
+    {
+      "newLayerId": "381",
+      "oldLayerId": "2006",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1177",
+      "oldLayerId": "2119",
+      "state": "done"
+    },
+    {
+      "newLayerId": "382",
+      "oldLayerId": "1716",
+      "state": "done"
+    },
+    {
+      "newLayerId": "383",
+      "oldLayerId": "1483",
+      "state": "done"
+    },
+    {
+      "newLayerId": "384",
+      "oldLayerId": "1380",
+      "state": "done"
+    },
+    {
+      "newLayerId": "385",
+      "oldLayerId": "1488",
+      "state": "done"
+    },
+    {
+      "newLayerId": "386",
+      "oldLayerId": "1486",
+      "state": "done"
+    },
+    {
+      "newLayerId": "387",
+      "oldLayerId": "1487",
+      "state": "done"
+    },
+    {
+      "newLayerId": "388",
+      "oldLayerId": "1489",
+      "state": "done"
+    },
+    {
+      "newLayerId": "389",
+      "oldLayerId": "1389",
+      "state": "done"
+    },
+    {
+      "newLayerId": "390",
+      "oldLayerId": "1495",
+      "state": "done"
+    },
+    {
+      "newLayerId": "391",
+      "oldLayerId": "1390",
+      "state": "done"
+    },
+    {
+      "newLayerId": "392",
+      "oldLayerId": "1391",
+      "state": "done"
+    },
+    {
+      "newLayerId": "393",
+      "oldLayerId": "1395",
+      "state": "done"
+    },
+    {
+      "newLayerId": "394",
+      "oldLayerId": "1494",
+      "state": "done"
+    },
+    {
+      "newLayerId": "395",
+      "oldLayerId": "1396",
+      "state": "done"
+    },
+    {
+      "newLayerId": "396",
+      "oldLayerId": "1397",
+      "state": "done"
+    },
+    {
+      "newLayerId": "397",
+      "oldLayerId": "1398",
+      "state": "done"
+    },
+    {
+      "newLayerId": "398",
+      "oldLayerId": "1399",
+      "state": "done"
+    },
+    {
+      "newLayerId": "399",
+      "oldLayerId": "1493",
+      "state": "done"
+    },
+    {
+      "newLayerId": "400",
+      "oldLayerId": "1400",
+      "state": "done"
+    },
+    {
+      "newLayerId": "401",
+      "oldLayerId": "1402",
+      "state": "done"
+    },
+    {
+      "newLayerId": "402",
+      "oldLayerId": "1404",
+      "state": "done"
+    },
+    {
+      "newLayerId": "403",
+      "oldLayerId": "1405",
+      "state": "done"
+    },
+    {
+      "newLayerId": "404",
+      "oldLayerId": "1492",
+      "state": "done"
+    },
+    {
+      "newLayerId": "405",
+      "oldLayerId": "1406",
+      "state": "done"
+    },
+    {
+      "newLayerId": "406",
+      "oldLayerId": "1491",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1178",
+      "oldLayerId": "2114",
+      "state": "done"
+    },
+    {
+      "newLayerId": "407",
+      "oldLayerId": "1764",
+      "state": "done"
+    },
+    {
+      "newLayerId": "408",
+      "oldLayerId": "493",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "409",
+      "oldLayerId": "472",
+      "state": "done"
+    },
+    {
+      "newLayerId": "409",
+      "oldLayerId": "1981",
+      "state": "done"
+    },
+    {
+      "newLayerId": "487",
+      "oldLayerId": "2112",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1179",
+      "oldLayerId": "2118",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1180",
+      "oldLayerId": "2117",
+      "state": "done"
+    },
+    {
+      "newLayerId": "410",
+      "oldLayerId": "2012",
+      "state": "done"
+    },
+    {
+      "newLayerId": "411",
+      "oldLayerId": "2004",
+      "state": "done"
+    },
+    {
+      "newLayerId": "412",
+      "oldLayerId": "1523",
+      "state": "done"
+    },
+    {
+      "newLayerId": "413",
+      "oldLayerId": "1512",
+      "state": "done"
+    },
+    {
+      "newLayerId": "414",
+      "oldLayerId": "1524",
+      "state": "done"
+    },
+    {
+      "newLayerId": "415",
+      "oldLayerId": "447",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1047",
+      "oldLayerId": "454",
+      "state": "done"
+    },
+    {
+      "newLayerId": "417",
+      "oldLayerId": "1535",
+      "state": "done"
+    },
+    {
+      "newLayerId": "418",
+      "oldLayerId": "621",
+      "state": "done"
+    },
+    {
+      "newLayerId": "419",
+      "oldLayerId": "1972",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1181",
+      "oldLayerId": "2267",
+      "state": "done"
+    },
+    {
+      "newLayerId": "420",
+      "oldLayerId": "1971",
+      "state": "done"
+    },
+    {
+      "newLayerId": "421",
+      "oldLayerId": "1868",
+      "state": "done"
+    },
+    {
+      "newLayerId": "422",
+      "oldLayerId": "439",
+      "state": "done"
+    },
+    {
+      "newLayerId": "423",
+      "oldLayerId": "609",
+      "state": "done"
+    },
+    {
+      "newLayerId": "424",
+      "oldLayerId": "601",
+      "state": "done"
+    },
+    {
+      "newLayerId": "425",
+      "oldLayerId": "604",
+      "state": "done"
+    },
+    {
+      "newLayerId": "426",
+      "oldLayerId": "603",
+      "state": "done"
+    },
+    {
+      "newLayerId": "427",
+      "oldLayerId": "602",
+      "state": "done"
+    },
+    {
+      "newLayerId": "428",
+      "oldLayerId": "1507",
+      "state": "done"
+    },
+    {
+      "newLayerId": "429",
+      "oldLayerId": "1799",
+      "state": "done"
+    },
+    {
+      "newLayerId": "430",
+      "oldLayerId": "1588",
+      "state": "done",
+      "oldGroupSlug": "slovenia-msp",
+      "newGroupId": 11
+    },
+    {
+      "newLayerId": "431",
+      "oldLayerId": "1306",
+      "state": "done",
+      "oldGroupSlug": "slovenia-msp",
+      "newGroupId": 11
+    },
+    {
+      "newLayerId": "432",
+      "oldLayerId": "1307",
+      "state": "done",
+      "oldGroupSlug": "slovenia-msp",
+      "newGroupId": 11
+    },
+    {
+      "newLayerId": "433",
+      "oldLayerId": "1279",
+      "state": "done",
+      "oldGroupSlug": "slovenia-msp",
+      "newGroupId": 11
+    },
+    {
+      "newLayerId": "434",
+      "oldLayerId": "1587",
+      "state": "done",
+      "oldGroupSlug": "slovenia-msp",
+      "newGroupId": 11
+    },
+    {
+      "newLayerId": "435",
+      "oldLayerId": "1304",
+      "state": "done",
+      "oldGroupSlug": "slovenia-msp",
+      "newGroupId": 11
+    },
+    {
+      "newLayerId": "436",
+      "oldLayerId": "1586",
+      "state": "done",
+      "oldGroupSlug": "slovenia-msp",
+      "newGroupId": 11
+    },
+    {
+      "newLayerId": "437",
+      "oldLayerId": "1247",
+      "state": "done"
+    },
+    {
+      "newLayerId": "438",
+      "oldLayerId": "468",
+      "state": "done"
+    },
+    {
+      "newLayerId": "439",
+      "oldLayerId": "1982",
+      "state": "done"
+    },
+    {
+      "newLayerId": "440",
+      "oldLayerId": "1988",
+      "state": "done"
+    },
+    {
+      "newLayerId": "441",
+      "oldLayerId": "1979",
+      "state": "done"
+    },
+    {
+      "newLayerId": "442",
+      "oldLayerId": "1977",
+      "state": "done"
+    },
+    {
+      "newLayerId": "443",
+      "oldLayerId": "2005",
+      "state": "done"
+    },
+    {
+      "newLayerId": "444",
+      "oldLayerId": "2010",
+      "state": "done"
+    },
+    {
+      "newLayerId": "445",
+      "oldLayerId": "1515",
+      "state": "done"
+    },
+    {
+      "newLayerId": "446",
+      "oldLayerId": "1514",
+      "state": "done"
+    },
+    {
+      "newLayerId": "447",
+      "oldLayerId": "1516",
+      "state": "done"
+    },
+    {
+      "newLayerId": "448",
+      "oldLayerId": "1517",
+      "state": "done"
+    },
+    {
+      "newLayerId": "449",
+      "oldLayerId": "1525",
+      "state": "done"
+    },
+    {
+      "newLayerId": "450",
+      "oldLayerId": "1520",
+      "state": "done"
+    },
+    {
+      "newLayerId": "451",
+      "oldLayerId": "1513",
+      "state": "done"
+    },
+    {
+      "newLayerId": "452",
+      "oldLayerId": "1519",
+      "state": "done"
+    },
+    {
+      "newLayerId": "453",
+      "oldLayerId": "1518",
+      "state": "done"
+    },
+    {
+      "newLayerId": "454",
+      "oldLayerId": "1521",
+      "state": "done"
+    },
+    {
+      "newLayerId": "455",
+      "oldLayerId": "188",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "456",
+      "oldLayerId": "187",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "457",
+      "oldLayerId": "448",
+      "state": "done"
+    },
+    {
+      "newLayerId": "458",
+      "oldLayerId": "1243",
+      "state": "done"
+    },
+    {
+      "newLayerId": "459",
+      "oldLayerId": "1508",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1182",
+      "oldLayerId": "2126",
+      "state": "done"
+    },
+    {
+      "newLayerId": "460",
+      "oldLayerId": "1796",
+      "state": "done",
+      "oldGroupSlug": "ispra-ges4seas",
+      "newGroupId": 21
+    },
+    {
+      "newLayerId": "461",
+      "oldLayerId": "1798",
+      "state": "done"
+    },
+    {
+      "newLayerId": "462",
+      "oldLayerId": "1797",
+      "state": "done",
+      "oldGroupSlug": "ispra-ges4seas",
+      "newGroupId": 21
+    },
+    {
+      "newLayerId": "463",
+      "oldLayerId": "1986",
+      "state": "done"
+    },
+    {
+      "newLayerId": "464",
+      "oldLayerId": "1501",
+      "state": "done"
+    },
+    {
+      "newLayerId": "465",
+      "oldLayerId": "1502",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1048",
+      "oldLayerId": "185",
+      "state": "done",
+      "oldGroupSlug": "bridgebs",
+      "newGroupId": 10
+    },
+    {
+      "newLayerId": "1049",
+      "oldLayerId": "610",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1050",
+      "oldLayerId": "605",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1051",
+      "oldLayerId": "607",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1052",
+      "oldLayerId": "606",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1053",
+      "oldLayerId": "608",
+      "state": "done"
+    },
+    {
+      "newLayerId": "479",
+      "oldLayerId": "1965",
+      "state": "done"
+    },
+    {
+      "newLayerId": "480",
+      "oldLayerId": "1966",
+      "state": "done"
+    },
+    {
+      "newLayerId": "481",
+      "oldLayerId": "1978",
+      "state": "done"
+    },
+    {
+      "newLayerId": "482",
+      "oldLayerId": "1548",
+      "state": "done"
+    },
+    {
+      "newLayerId": "483",
+      "oldLayerId": "1542",
+      "state": "done"
+    },
+    {
+      "newLayerId": "484",
+      "oldLayerId": "1541",
+      "state": "done"
+    },
+    {
+      "newLayerId": "485",
+      "oldLayerId": "1549",
+      "state": "done"
+    },
+    {
+      "newLayerId": "486",
+      "oldLayerId": "1540",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1183",
+      "oldLayerId": "2261",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1184",
+      "oldLayerId": "2262",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1185",
+      "oldLayerId": "2266",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1186",
+      "oldLayerId": "2264",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1187",
+      "oldLayerId": "2265",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1188",
+      "oldLayerId": "2263",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1189",
+      "oldLayerId": "2258",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1190",
+      "oldLayerId": "2259",
+      "state": "done"
+    },
+    {
+      "newLayerId": "1191",
+      "oldLayerId": "2260",
+      "state": "done"
+    }
+  ]
+}

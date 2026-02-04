@@ -35,11 +35,13 @@ const main = async () => {
   // await rasterLayers.upload()
   // await rasterLayers.comparePlatformStates()
   // await rasterLayers.fixKeywords()
+  // await rasterLayers.fixGroups()
 
   // await vectorLayers.download()
   // await vectorLayers.upload()
   // await vectorLayers.comparePlatformStates()
   // await vectorLayers.fixKeywords()
+  // await vectorLayers.fixGroups()
 
   // await remoteLayers.fixKeywords()
 }
