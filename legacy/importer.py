@@ -18,20 +18,121 @@ app = typer.Typer()
 
 @app.callback()
 def main_callback(ctx: typer.Context, verbose: bool = False):
+    """Utilities for importing maps on to the new platform.
+
+    The main functionality of this script is executed by calling the commands:
+
+    1. store-current-datasets
+    2. import-maps-from-directory
+
+    Check their own help for more details.
+    """
     logging.basicConfig(level=logging.INFO if verbose else logging.WARNING)
     logging.getLogger("httpx").setLevel(logging.WARNING)
 
 
 @app.command()
+def import_maps_from_directory(
+        current_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_USERNAME")
+        ],
+        current_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
+        ],
+        base_url: str = "https://dev.geoplatform.tools4msp.eu",
+        legacy_base_dir: Annotated[
+            Path,
+            typer.Option(
+                help=(
+                    "Base directory that contains the files exported from the "
+                    "legacy platform, as a result of running the "
+                    "'exporter.py' script."
+                )
+            )
+        ] = Path(__file__).parent / "legacy-data",
+        current_base_dir: Annotated[
+            Path,
+            typer.Option(
+                help=(
+                        "Base directory that contains the files exported from the "
+                        "current platform, as a result of running the "
+                        "'store-current-datasets' command"
+                )
+            )
+        ] = Path(__file__).parent / "current-data",
+        use_imported_prefix: Annotated[
+            bool,
+            typer.Option(
+                help=(
+                        "Whether to add the 'imported__' prefix to all "
+                        "imported maps or not. Note that any imported dataset "
+                        "styles are not renamed"
+                )
+            )
+        ] = True,
+):
+    """Imports all maps found from a previous export operation onto the new platform
+
+    In order to run this command successfully you must have previously:
+
+    1. Ran the `exporter.py` script to produce a local copy of the legacy system's maps and
+       related information (layers, styles)
+    2. Ran this script with the `store-current-datasets` command, in order to produce
+       a local copy of all the datasets contained in the new platform
+
+    So the whole export+import procedure must be something like this:
+
+    ```shell
+    export LEGACY_GEONODE_USERNAME="some-legacy-username"
+    export LEGACY_GEONODE_PASSWORD="some-legacy-password"
+
+    python exporter.py store-legacy-map-data
+
+    export CURRENT_GEONODE_USERNAME="some-current-username"
+    export CURRENT_GEONODE_PASSWORD="some-current-password"
+
+    python importer.py store-current-datasets
+
+    python importer.py import-maps-from-directory --no-use-imported-prefix
+    ```
+
+
+    """
+    legacy_maps_dir = legacy_base_dir / "maps"
+    if not legacy_maps_dir.exists():
+        print(f"Could not find 'maps' subdir inside {legacy_base_dir}")
+        raise typer.Abort()
+    for legacy_map_file in legacy_maps_dir.glob("*.json"):
+        print(f"Processing file {legacy_map_file}...")
+        legacy_map_id = legacy_map_file.stem
+        import_map(
+            current_geonode_username=current_geonode_username,
+            current_geonode_password=current_geonode_password,
+            legacy_map_id=legacy_map_id,
+            perform_map_import=True,
+            perform_styles_import=True,
+            base_url=base_url,
+            legacy_base_dir=legacy_base_dir,
+            current_base_dir=current_base_dir,
+            imported_prefix="imported__" if use_imported_prefix else "",
+            print_request_payload=False,
+            print_response_payload=False
+        )
+    print("Done!")
+
+
+@app.command()
 def import_map(
         legacy_map_id: str,
-        geonode_username: Annotated[
+        current_geonode_username: Annotated[
             str,
-            typer.Argument(envvar="GEONODE_USERNAME")
+            typer.Argument(envvar="CURRENT_GEONODE_USERNAME")
         ],
-        geonode_password: Annotated[
+        current_geonode_password: Annotated[
             str,
-            typer.Argument(envvar="GEONODE_PASSWORD")
+            typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
         ],
         perform_map_import: bool = False,
         perform_styles_import: bool = False,
@@ -43,6 +144,7 @@ def import_map(
         print_response_payload: bool = False
 
 ):
+    """Testing command that imports a single map onto the new platform."""
     legacy_maps_dir = legacy_base_dir / "maps"
     legacy_map_path = legacy_maps_dir / f"{legacy_map_id}.json"
     matched_datasets, not_matched = _get_matched_dataset_ids(
@@ -108,7 +210,7 @@ def import_map(
         return
 
     http_client = _login_to_geonode(
-        geonode_username, geonode_password, base_url)
+        current_geonode_username, current_geonode_password, base_url)
     access_token = _get_geoserver_access_token(http_client, base_url)
     logger.info(f"{access_token=}")
 
@@ -390,13 +492,21 @@ def store_dataset_api_responses(
             typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
         ],
         base_url: str = "https://dev.geoplatform.tools4msp.eu",
+        target_directory: Path = Path(__file__).parent / "current-data"
 ):
+    """Export currently existing datasets onto a local directory.
+
+    This command downloads a JSON representation of all datasets that exist on
+    the new platform. It creates the following files:
+
+    - `<target_directory>/datasets/<dataset_id>.json` - contains the exported
+      representation of each GeoNode dataset that exist on the new platform.
+    """
     http_client = httpx.Client(
         auth=(current_geonode_username, current_geonode_password)
     )
-    base_target_dir = Path(__file__).parent / "current-data"
-    base_target_dir.mkdir(parents=True, exist_ok=True)
-    target_datasets_dir = base_target_dir / "datasets"
+    target_directory.mkdir(parents=True, exist_ok=True)
+    target_datasets_dir = target_directory / "datasets"
     target_datasets_dir.mkdir(parents=True, exist_ok=True)
     detail_generator = gather_datasets_details_via_api(
         http_client, base_url, page_size=20)

@@ -1,5 +1,3 @@
-"""Export items from the legacy v3.3.4 GeoNode platform to a file system location."""
-
 import json
 import logging
 from pathlib import Path
@@ -25,6 +23,14 @@ BASEMAP_LAYER_NAMES = (
     "empty",
 )
 
+@app.callback()
+def main_callback():
+    """Export items from the legacy tools4msp-geoplatform system.
+
+    The main functionality of this script is executed by calling the
+    store-legacy-map-data command. Check its own help for more detail.
+    """
+
 
 @app.command(name="store-legacy-map-data")
 def store_api_responses(
@@ -37,13 +43,36 @@ def store_api_responses(
             typer.Argument(envvar="LEGACY_GEONODE_PASSWORD")
         ],
         base_url: str = "https://geoplatform.tools4msp.eu",
+        target_directory: Path = Path(__file__).parent / "legacy-data",
 ):
+    """Download all GeoNode maps from the legacy system
+
+    This command uses the legacy system's GeoNode APIs to retrieve JSON
+    representations of maps and also the layers and styles used in the maps.
+
+    This command generates the following files:
+
+    - `<target_directory>/maps/<map_id>.json` - contains the exported representation
+      of each map
+
+    - `<target_directory>/layers/<layer_id>.json` - contains the exported
+      representation of each layer that is used in a map, including all the
+      layer's styles
+
+    - `<target_directory>/ignored_layers.txt` - contains a listing of layers
+      which could not be exported and were ignored
+
+    - `<target_directory>/ignored_styles.txt` - contains a listing of styles
+      which could not be exported and were ignored
+
+    The output of this command can be used by the `importer.py` script to
+    import the maps on to the new system.
+    """
     http_client = httpx.Client()
-    base_target_dir = Path(__file__).parent / "legacy-data"
-    base_target_dir.mkdir(parents=True, exist_ok=True)
-    target_maps_dir = base_target_dir / "maps"
+    target_directory.mkdir(parents=True, exist_ok=True)
+    target_maps_dir = target_directory / "maps"
     target_maps_dir.mkdir(parents=True, exist_ok=True)
-    target_layers_dir = base_target_dir / "layers"
+    target_layers_dir = target_directory / "layers"
     target_layers_dir.mkdir(parents=True, exist_ok=True)
     detail_generator = gather_map_details_via_api(
         http_client=http_client,
@@ -59,7 +88,7 @@ def store_api_responses(
             target_layers_file = target_layers_dir / f"{layer_id}.json"
             target_layers_file.write_text(json.dumps(layer_details, indent=2))
         if len(ignored_layers) > 0:
-            target_ignored_layers_file = base_target_dir / "ignored_layers.txt"
+            target_ignored_layers_file = target_directory / "ignored_layers.txt"
             serialized_ignored_layers = ""
             for map_id, map_layer_index, layer_name, detail in ignored_layers:
                 serialized_line = f"{map_id}; {map_layer_index}; {layer_name}; {detail}\n"
@@ -67,7 +96,7 @@ def store_api_responses(
             with target_ignored_layers_file.open(mode="a", encoding="utf-8") as ignored_layers_fh:
                 ignored_layers_fh.write(serialized_ignored_layers + "\n")
         if len(ignored_styles) > 0:
-            target_ignored_styles_file = base_target_dir / "ignored_styles.txt"
+            target_ignored_styles_file = target_directory / "ignored_styles.txt"
             serialized_ignored_styles = ""
             for ignored_layer_id, ignored_style_id, ignore_detail in ignored_styles:
                 serialized_line = f"{ignored_layer_id}; {ignored_style_id}; {ignore_detail}\n"
