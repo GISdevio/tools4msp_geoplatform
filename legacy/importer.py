@@ -1,5 +1,7 @@
 import json
 import logging
+import shlex
+import subprocess
 import uuid
 from pathlib import Path
 from typing import (
@@ -104,23 +106,47 @@ def import_maps_from_directory(
     if not legacy_maps_dir.exists():
         print(f"Could not find 'maps' subdir inside {legacy_base_dir}")
         raise typer.Abort()
-    for legacy_map_file in legacy_maps_dir.glob("*.json"):
-        print(f"Processing file {legacy_map_file}...")
-        legacy_map_id = legacy_map_file.stem
-        import_map(
-            current_geonode_username=current_geonode_username,
-            current_geonode_password=current_geonode_password,
-            legacy_map_id=legacy_map_id,
-            perform_map_import=True,
-            perform_styles_import=True,
-            base_url=base_url,
-            legacy_base_dir=legacy_base_dir,
-            current_base_dir=current_base_dir,
-            imported_prefix="imported__" if use_imported_prefix else "",
-            print_request_payload=False,
-            print_response_payload=False
-        )
+    import_errors_path = Path(__file__).parent / "import-errors.txt"
+    with import_errors_path.open("w") as fh:
+        for legacy_map_file in legacy_maps_dir.glob("*.json"):
+            print(f"Processing file {legacy_map_file}...")
+            legacy_map_id = legacy_map_file.stem
+            try:
+                import_map(
+                    current_geonode_username=current_geonode_username,
+                    current_geonode_password=current_geonode_password,
+                    legacy_map_id=legacy_map_id,
+                    perform_map_import=True,
+                    perform_styles_import=True,
+                    base_url=base_url,
+                    legacy_base_dir=legacy_base_dir,
+                    current_base_dir=current_base_dir,
+                    imported_prefix="imported__" if use_imported_prefix else "",
+                    print_request_payload=False,
+                    print_response_payload=False
+                )
+            except Exception as err:
+                print(f"Could not process map with legacy id: {legacy_map_id!r} - {str(err)}")
+                fh.write(f"{legacy_map_id!r} - {str(err)}\n\n")
     print("Done!")
+
+
+def _find_map_by_title(
+        title: str,
+        http_client: httpx.Client,
+        base_url: str,
+) -> dict | None:
+    """Uses the old GeoNode API to find a map by its title"""
+    response = http_client.get(
+        f"{base_url}/api/maps/",
+        params={"title": title}
+    )
+    response.raise_for_status()
+    payload = response.json()
+    try:
+        return payload.get("objects", [])[0]
+    except IndexError:
+        return None
 
 
 @app.command()
@@ -142,7 +168,6 @@ def import_map(
         imported_prefix: str = "imported__",
         print_request_payload: bool = False,
         print_response_payload: bool = False
-
 ):
     """Testing command that imports a single map onto the new platform."""
     legacy_maps_dir = legacy_base_dir / "maps"
@@ -153,12 +178,23 @@ def import_map(
     )
     legacy_map_details = json.loads(legacy_map_path.read_text())
 
-    new_map_repr, new_extra_map_layers_details = _convert_legacy_map_representation_to_current(
-        legacy_map_details, matched_datasets,
-        current_datasets_dir=current_base_dir / "datasets",
-    )
+    try:
+        new_map_repr, new_extra_map_layers_details = _convert_legacy_map_representation_to_current(
+            legacy_map_details, matched_datasets,
+            current_datasets_dir=current_base_dir / "datasets",
+            legacy_layers_dir=legacy_base_dir / "layers",
+        )
+    except RuntimeError as err:
+        logger.error(f"Cannot import map: {legacy_map_id!r} - {str(err)}")
+        return
 
     map_title = f"{imported_prefix}{legacy_map_details['title']}"
+    http_client = _login_to_geonode(
+        current_geonode_username, current_geonode_password, base_url)
+    if _find_map_by_title(map_title, http_client, base_url):
+        print(f"Map with title {map_title!r} already exists - skipping")
+        return
+
     new_map_details = {
         "abstract": legacy_map_details.get("abstract") or map_title,
         "title": map_title,
@@ -173,9 +209,15 @@ def import_map(
     # gather styles that are used in this map, to be created
     styles_to_create = []
     for layer_repr in new_map_repr["layers"]:
-        if style_name := layer_repr.get("style"):
+        if style_info := layer_repr.get("style"):
+
+            # style_info is either a string, identifying a GeoServer style or
+            # a dict with embedded style config
+            if isinstance(style_info, dict):
+                continue
+
+            style_name_fragment = style_info.replace("geonode:", "")
             new_pk = layer_repr.get("extendedParams", {}).get("mapLayer", {}).get("pk")
-            style_name_fragment = style_name.replace("geonode:", "")
             try:
                 legacy_pk = [k for k, v in matched_datasets.items() if v == new_pk][0]
             except IndexError:
@@ -194,28 +236,28 @@ def import_map(
                 logger.info(f"got legacy style: {bool(legacy_style)!r}")
             except TypeError:
                 logger.warning(
-                    f"Could not retrieve legacy style {style_name!r} from layer "
+                    f"Could not retrieve legacy style {style_info!r} from layer "
                     f"with pk {legacy_pk!r} - skipping ..."
                 )
                 continue
 
-            styles_to_create.append(
-                (
-                    style_name_fragment,
-                    _convert_style_properties_to_lowercase(legacy_style)
+            logger.info(f"{legacy_style=}")
+            if legacy_style:
+                styles_to_create.append(
+                    (
+                        style_name_fragment,
+                        _convert_style_properties_to_lowercase(legacy_style)
+                    )
                 )
-            )
 
     if not any((perform_map_import, perform_styles_import)):
         return
 
-    http_client = _login_to_geonode(
-        current_geonode_username, current_geonode_password, base_url)
     access_token = _get_geoserver_access_token(http_client, base_url)
     logger.info(f"{access_token=}")
 
     if perform_map_import:
-        print("Importing map...")
+        print(f"Importing map with legacy id {legacy_map_id!r} with title {map_title!r}...")
         new_map_creation_result = http_client.post(
             f"{base_url}/api/v2/maps/",
             json=new_map_details,
@@ -225,7 +267,7 @@ def import_map(
                 "x-csrftoken": _get_csrf_token(http_client),
                 "referer": f"{base_url}/catalogue"
             },
-            timeout=3 * 60.0
+            timeout=5 * 60.0
         )
         try:
             new_map_creation_result.raise_for_status()
@@ -238,15 +280,18 @@ def import_map(
 
     if perform_styles_import:
         print(f"Importing styles...")
-        for style_name, style_sld in styles_to_create:
-            logger.info(f"Creating style {style_name!r}...")
-            _create_geonode_style(
-                http_client,
-                access_token,
-                style_name,
-                style_sld,
-                base_url
-            )
+        for style_info, style_sld in styles_to_create:
+            logger.info(f"Creating style {style_info!r}...")
+            try:
+                _create_geonode_style(
+                    http_client,
+                    access_token,
+                    style_info,
+                    style_sld,
+                    base_url
+                )
+            except httpx.HTTPStatusError as err:
+                logger.warning(f"Failed to create style {style_info!r} - {err}")
 
     print("Done!")
 
@@ -301,14 +346,40 @@ def generate_layers_representation(
     return result
 
 
+def _find_layer_by_scanning_dir(
+        look_for: str,
+        layers_dir: Path,
+) -> str | None:
+    """Look for a layer by doing a full-text search with grep"""
+    layer_files = [str(f) for f in layers_dir.iterdir() if f.is_file()]
+    search_result = subprocess.run(
+        shlex.split(f"grep --files-with-matches --word-regexp {look_for}") + layer_files,
+        capture_output=True,
+    )
+    if search_result.returncode != 0:
+        return None
+
+    found_files = search_result.stdout.strip().splitlines()
+    if len(found_files) > 1:
+        logger.warning(f"Found more than one possible file for {look_for!r}")
+        return None
+
+    raw_contents = Path(found_files[0].decode()).read_text()
+    parsed = json.loads(raw_contents)
+    return parsed.get("raw_layer_result", {}).get("id")
+
+
 def _convert_legacy_map_representation_to_current(
         full_map_config: dict,
         matched_layers: dict[int, int],
         current_datasets_dir: Path,
+        legacy_layers_dir: Path,
         old_domain: str = "geoplatform.tools4msp.eu",
         new_domain: str = "dev.geoplatform.tools4msp.eu",
 ) -> tuple[dict | None, list[dict]]:
     ui_map_config = full_map_config.get("ui_map_config", {})
+    if ui_map_config is None:
+        raise RuntimeError("map config is not available")
     serialized_ui_map_config = json.dumps(ui_map_config)
     new_ui_map_config = json.loads(
         serialized_ui_map_config.replace(old_domain, new_domain))
@@ -319,29 +390,41 @@ def _convert_legacy_map_representation_to_current(
 
         if layer_info.get("group") == "background":
             continue
+        if layer_info.get("type") == "vector":
+            continue
+
+        if (
+                layer_info.get("catalogURL") is None
+                and layer_info.get("type") == "wms"
+                and old_domain not in layer_info.get("url")
+        ):
+            # external layer
+            continue
 
         try:
             map_layer_details = [
                 la for la in full_map_config["layers"] if la["name"] == layer_info["name"]
             ][0]
         except IndexError:
-            logger.warning(f"Could not find details for layer {layer_info['name']!r}")
-            to_remove.append(idx)
-            continue
+            internal_id = _find_layer_by_scanning_dir(layer_info["name"], legacy_layers_dir)
+            if not internal_id:
+                logger.warning(f"Could not find details for layer {layer_info['name']!r}")
+                to_remove.append(idx)
+                continue
+        else:
+            if not map_layer_details.get("local"):
+                logger.info(f"layer {layer_info['name']!r} is not a local layer, skipping...")
+                # to_remove.append(idx)
+                continue
 
-        if not map_layer_details.get("local"):
-            logger.info(f"layer {layer_info['name']!r} is not a local layer, skipping...")
-            # to_remove.append(idx)
-            continue
-
-        try:
-            internal_id = map_layer_details["geonode_internal_layer_id"]
-        except KeyError:
-            logger.warning(
-                f"Could not determine internal id for local layer {layer_info['name']} - ignoring this layer"
-            )
-            to_remove.append(idx)
-            continue
+            try:
+                internal_id = map_layer_details["geonode_internal_layer_id"]
+            except KeyError:
+                logger.warning(
+                    f"Could not determine internal id for local layer {layer_info['name']} - ignoring this layer"
+                )
+                to_remove.append(idx)
+                continue
         logger.debug(f"{internal_id=}")
         if not (dataset_id := matched_layers.get(internal_id)):
             logger.info(f"Could not find new dataset_id for layer_id {internal_id!r} - skipping...")
@@ -375,12 +458,6 @@ def _convert_legacy_map_representation_to_current(
             }
         }
         new_map_layers.append(new_layer)
-        if "osmose" in new_layer["name"].lower() and "bonito" in new_layer["title"].lower():
-            print(json.dumps(layer_info, indent=2))
-            print("-------------------")
-            print(new_layer)
-            print("-------------------")
-            print("-------------------")
 
 
     new_layer_list = [la for index, la in enumerate(new_ui_map_config.get("layers", [])) if index not in to_remove]

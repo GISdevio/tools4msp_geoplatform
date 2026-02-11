@@ -202,6 +202,115 @@ def gather_map_details_via_api(
         yield maps_processed, layers_processed, layers_ignored, styles_ignored
 
 
+@app.command()
+def store_legacy_layer_data(
+        legacy_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_USERNAME")
+        ],
+        legacy_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_PASSWORD")
+        ],
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        target_directory: Path = Path(__file__).parent / "legacy-data/new-layers-export",
+        overwrite: bool = False,
+        only_process: int = 3,
+):
+    _write_layers_to_file(
+        target_directory,
+        http_client = httpx.Client(),
+        base_url=base_url,
+        geonode_auth=(legacy_geonode_username, legacy_geonode_password),
+        overwrite=overwrite,
+        only_process=only_process if only_process > 0 else None,
+    )
+
+
+def _write_layers_to_file(
+        target_dir: Path,
+        *,
+        http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        geonode_auth: tuple[str, str] | None = None,
+        overwrite: bool = False,
+        only_process: int | None = None,
+):
+    total_layers_response = http_client.get(
+        f"{base_url}/api/layers/", params={"limit": 1}
+    )
+    total_layers_response.raise_for_status()
+    num_total_layers = total_layers_response.json()["meta"]["total_count"]
+    seen_layers = (
+        [int(p.stem) for p in target_dir.glob("*.json")]
+        if not overwrite else None
+    )
+    layer_detail_generator = _gather_layer_details_via_api(
+        http_client=http_client,
+        base_url=base_url,
+        geonode_auth=geonode_auth,
+        seen_layers=seen_layers
+    )
+    for idx, layer_detail in enumerate(layer_detail_generator):
+        if only_process and idx >= only_process:
+            break
+        id_ = layer_detail["id"]
+        target_path = target_dir / f"{id_}.json"
+        logger.info(f"Processing layer [{idx+1}/{num_total_layers}]...")
+        if target_path.exists() and not overwrite:
+            logger.info(f"Layer {id_!r} already present - skipping...")
+            continue
+        try:
+            layer_styles, ignored_styles = _gather_layer_styles_via_api(
+                id_,
+                http_client=http_client,
+                base_url=base_url,
+                geonode_auth=geonode_auth
+            )
+        except RuntimeError:
+            layer_styles = []
+            pass
+        to_write = {
+            "raw_layer_result": layer_detail,
+            "styles": layer_styles
+        }
+        target_dir.mkdir(parents=True, exist_ok=True)
+        target_path.write_text(json.dumps(to_write, indent=2))
+        logger.info(f"Wrote {target_path!r}")
+    print("Done!")
+
+
+def _gather_layer_details_via_api(
+        *,
+        http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        limit: int = 20,
+        geonode_auth: tuple[str, str] | None = None,
+        seen_layers: list[int] | None = None,
+) -> Iterator[dict]:
+    """Iterator that gathers details for all layers, one at a time"""
+    next_url = f"{base_url}/api/layers/?limit={limit}&offset=0"
+    while next_url:
+        response = http_client.get(next_url, auth=geonode_auth)
+        response.raise_for_status()
+        payload = response.json()
+        for layer_list_item in payload["objects"]:
+            if layer_list_item["id"] in seen_layers or []:
+                logger.debug(f"skipping layer {layer_list_item['id']!r}...")
+                continue
+            detail_url = f"{base_url}{layer_list_item['resource_uri']}"
+            layer_detail_response = http_client.get(
+                detail_url, auth=geonode_auth
+            )
+            layer_detail_response.raise_for_status()
+            yield layer_detail_response.json()
+        next_url = (
+            f"{base_url}{next_}" if (next_ := payload["meta"]["next"]) else None
+        )
+        logger.info(f"next_url: {next_url}")
+
+
+
 def _gather_layer_styles_via_api(
         layer_id: int,
         *,
