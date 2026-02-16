@@ -558,6 +558,25 @@ def _get_extra_maplayers_key(id_: str, name: str) -> dict:
     }
 
 
+@app.command()
+def store_maps(
+    current_geonode_username: Annotated[
+        str,
+        typer.Argument(envvar="CURRENT_GEONODE_USERNAME")
+    ],
+    current_geonode_password: Annotated[
+        str,
+        typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
+    ],
+    base_url: str = "https://dev.geoplatform.tools4msp.eu",
+    target_directory: Path = Path(__file__).parent / "current-data"
+):
+    """Export currently existing maps onto a local directory."""
+    http_client = httpx.Client(
+        auth=(current_geonode_username, current_geonode_password)
+    )
+
+
 @app.command(name="store-current-datasets")
 def store_dataset_api_responses(
         current_geonode_username: Annotated[

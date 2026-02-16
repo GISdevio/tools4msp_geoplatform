@@ -203,6 +203,76 @@ def gather_map_details_via_api(
 
 
 @app.command()
+def export_legacy_geostories(
+        legacy_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_USERNAME")
+        ],
+        legacy_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_PASSWORD")
+        ],
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        target_directory: Path = Path(__file__).parent / "legacy-data/geostories",
+        overwrite: bool = False,
+        only_process: int = 3,
+):
+    _write_geostories_to_file(
+        target_directory,
+        http_client=httpx.Client(),
+        base_url=base_url,
+        geonode_auth=(legacy_geonode_username, legacy_geonode_password),
+        overwrite=overwrite,
+        only_process=only_process if only_process > 0 else None,
+    )
+
+
+def _write_geostories_to_file(
+        target_dir: Path,
+        *,
+        http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        geonode_auth: tuple[str, str] | None = None,
+        overwrite: bool = False,
+        only_process: int | None = None,
+):
+    """Export geostories.
+
+    Gos through every geostory reported in the API and exports it via the payload sent
+    when rendering with the UI
+    """
+    total_geostories_response = http_client.get(
+        f"{base_url}/api/v2/geostories/",
+        auth=geonode_auth
+    )
+    total_geostories_response.raise_for_status()
+    num_total_geostories = total_geostories_response.json().get("total", 0)
+    seen_geostories = (
+        [int(p.stem) for p in target_dir.glob("*.json")]
+        if not overwrite else None
+    )
+    geostory_detail_generator = _gather_geostory_details(
+        http_client=http_client,
+        base_url=base_url,
+        geonode_auth=geonode_auth,
+        seen_geostories=seen_geostories
+    )
+    for idx, geostory_detail in enumerate(geostory_detail_generator):
+        id_, details = geostory_detail
+        if only_process and idx >= only_process:
+            break
+        target_path = target_dir / f"{id_}.json"
+        logger.info(f"Processing geostory [{idx+1}/{num_total_geostories}]...")
+        if target_path.exists() and not overwrite:
+            logger.info(f"geostory {id_!r} already present - skipping...")
+            continue
+        target_dir.mkdir(parents=True, exist_ok=True)
+        target_path.write_text(json.dumps(geostory_detail, indent=2))
+        logger.info(f"Wrote {target_path!r}")
+    print("Done!")
+
+
+@app.command()
 def store_legacy_layer_data(
         legacy_geonode_username: Annotated[
             str,
@@ -278,6 +348,35 @@ def _write_layers_to_file(
         target_path.write_text(json.dumps(to_write, indent=2))
         logger.info(f"Wrote {target_path!r}")
     print("Done!")
+
+
+def _gather_geostory_details(
+        *,
+        http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        limit: int = 20,
+        geonode_auth: tuple[str, str] | None = None,
+        seen_geostories: list[int] | None = None,
+) -> Iterator[tuple[int, dict]]:
+    next_url = f"{base_url}/api/v2/geostories/?page_size={limit}"
+    while next_url:
+        response = http_client.get(next_url, auth=geonode_auth)
+        response.raise_for_status()
+        payload = response.json()
+        for geostory_list_item in payload["geostories"]:
+            id_ = int(geostory_list_item["pk"])
+            if id_ in (seen_geostories or []):
+                logger.debug(f"skipping geostory {id_!r}...")
+                continue
+            geostory_details = _extract_geostory_details_from_ui(
+                id_,
+                username=geonode_auth[0] if geonode_auth else None,
+                password=geonode_auth[1] if geonode_auth else None,
+            )
+            if geostory_details is not None:
+                yield geostory_details
+        next_url = payload["links"].get("next")
+        logger.info(f"{next_url!r}")
 
 
 def _gather_layer_details_via_api(
@@ -370,6 +469,34 @@ def export_map_details_from_ui(
     map_config = _extract_map_details_from_ui(
         map_id, base_url=base_url, username=legacy_geonode_username, password=legacy_geonode_password)
     print(map_config)
+
+
+def _extract_geostory_details_from_ui(
+        geostory_id: int,
+        *,
+        username: str | None = None,
+        password: str | None = None,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+) -> tuple[int, dict] | None:
+    """Uses playwright to emulate a browser session and extract geostory-related info."""
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        context = browser.new_context()
+        page = context.new_page()
+        if username and password:
+            page.goto(f"{base_url}/account/login/")
+            page.fill("input[name='login']", username)
+            page.fill("input[name='password']", password)
+            page.click("button[type='submit']")
+
+        page.goto(f"{base_url}/apps/{geostory_id}/view#/")
+        geonode_config = page.evaluate("() => window.__GEONODE_CONFIG__")
+        try:
+            geostory_config = geonode_config["resourceConfig"]
+            return geostory_id, geostory_config
+        except KeyError:
+            logger.warning("Could not extract geostory details from UI")
+            return None
 
 
 def _extract_map_details_from_ui(
