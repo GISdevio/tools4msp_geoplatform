@@ -569,12 +569,81 @@ def store_maps(
         typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
     ],
     base_url: str = "https://dev.geoplatform.tools4msp.eu",
-    target_directory: Path = Path(__file__).parent / "current-data"
+    target_directory: Path = Path(__file__).parent / "current-data/maps",
+    overwrite: bool = False,
+    only_process: int = 3,
 ):
     """Export currently existing maps onto a local directory."""
-    http_client = httpx.Client(
-        auth=(current_geonode_username, current_geonode_password)
+    _write_maps_to_file(
+        target_directory,
+        http_client=httpx.Client(
+            auth=(current_geonode_username, current_geonode_password),
+            timeout=30,
+        ),
+        base_url=base_url,
+        overwrite=overwrite,
+        only_process=only_process if only_process > 0 else None,
     )
+
+
+def _write_maps_to_file(
+        target_dir: Path,
+        *,
+        http_client: httpx.Client,
+        base_url: str,
+        overwrite: bool = False,
+        only_process: int | None = None,
+):
+    total_maps_response = http_client.get(
+        f"{base_url}/api/v2/maps/",
+        params={"page_size": 1}
+    )
+    total_maps_response.raise_for_status()
+    num_total_maps = total_maps_response.json().get("total", 0)
+    seen_maps = (
+        [int(p.stem) for p in target_dir.glob("*.json")]
+        if not overwrite else None
+    )
+    map_detail_generator = _gather_maps_via_api(
+        http_client=http_client,
+        base_url=base_url,
+        seen_maps=seen_maps
+    )
+    for idx, map_list_item in enumerate(map_detail_generator):
+        if only_process and idx >= only_process:
+            break
+        id_ = int(map_list_item["pk"])
+        target_path = target_dir / f"{id_}.json"
+        logger.info(f"Processing map [{idx+1}/{num_total_maps}]...")
+        if target_path.exists() and not overwrite:
+            logger.info(f"Map {id_!r} already present - skipping...")
+            continue
+        target_dir.mkdir(parents=True, exist_ok=True)
+        target_path.write_text(json.dumps(map_list_item, indent=2))
+        logger.info(f"Wrote {target_path!r}")
+    print("Done!")
+
+
+def _gather_maps_via_api(
+        *,
+        http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        page_size: int = 10,
+        seen_maps: list[int] | None = None,
+) -> Iterator[dict]:
+    next_url = f"{base_url}/api/v2/maps/?page_size={page_size}"
+    while next_url:
+        response = http_client.get(next_url)
+        response.raise_for_status()
+        payload = response.json()
+        for map_list_item in payload["maps"]:
+            id_ = int(map_list_item["pk"])
+            if id_ in (seen_maps or []):
+                logger.debug(f"skipping map {id_!r}...")
+                continue
+            yield map_list_item
+        next_url = payload["links"].get("next")
+        logger.info(f"{next_url!r}")
 
 
 @app.command(name="store-current-datasets")
