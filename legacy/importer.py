@@ -150,6 +150,33 @@ def _find_map_by_title(
 
 
 @app.command()
+def import_geostory(
+        legacy_geostory_id: int,
+        current_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_USERNAME")
+        ],
+        current_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
+        ],
+        perform_geostory_import: bool = False,
+        base_url: str = "https://dev.geoplatform.tools4msp.eu",
+        legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
+        current_base_dir: Path = Path(__file__).parent / "current-data",
+        imported_prefix: str = "imported__",
+        print_request_payload: bool = False,
+        print_response_payload: bool = False
+):
+    legacy_geostories_dir = legacy_base_dir / "geostories"
+    legacy_geostory_path = legacy_geostories_dir / f"{legacy_geostory_id}.json"
+    legacy_geostory_details = json.loads(legacy_geostory_path.read_text())[1]
+    # will need to map old ids to new ones for:
+    # - maps
+    # - documents
+
+
+@app.command()
 def import_map(
         legacy_map_id: str,
         current_geonode_username: Annotated[

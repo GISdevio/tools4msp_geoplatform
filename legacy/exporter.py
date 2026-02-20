@@ -203,6 +203,76 @@ def gather_map_details_via_api(
 
 
 @app.command()
+def export_legacy_documents(
+        legacy_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_USERNAME")
+        ],
+        legacy_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="LEGACY_GEONODE_PASSWORD")
+        ],
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        target_directory: Path = Path(__file__).parent / "legacy-data/documents",
+        overwrite: bool = False,
+        only_process: int = 3,
+):
+    _write_documents_to_file(
+        target_directory,
+        http_client=httpx.Client(
+            auth=(legacy_geonode_username, legacy_geonode_password),
+        ),
+        base_url=base_url,
+        overwrite=overwrite,
+        only_process=only_process if only_process > 0 else None,
+    )
+
+
+def _write_documents_to_file(
+        target_dir: Path,
+        *,
+        http_client: httpx.Client,
+        base_url: str,
+        overwrite: bool,
+        only_process: int | None,
+):
+    """Export documents.
+
+    Goes through every document reported in the API and exports it via the payload sent
+    by the v2 API.
+    """
+    total_documents_response = http_client.get(
+        f"{base_url}/api/v2/documents/",
+        params={"page_size": 1}
+    )
+    total_documents_response.raise_for_status()
+    num_total_documents = total_documents_response.json().get("total", 0)
+    seen_documents = (
+        [int(p.stem) for p in target_dir.glob("*.json")]
+        if not overwrite else None
+    )
+    document_detail_generator = _gather_document_details(
+        http_client=http_client,
+        base_url=base_url,
+        page_size=20,
+        already_seen=seen_documents
+    )
+    for idx, document_detail in enumerate(document_detail_generator):
+        if only_process and idx >= only_process:
+            break
+        document_id = int(document_detail["pk"])
+        target_path = target_dir / f"{document_id}.json"
+        logger.info(f"Processing document [{idx+1}/{num_total_documents}]...")
+        if target_path.exists() and not overwrite:
+            logger.info(f"document {document_id!r} already present - skipping...")
+            continue
+        target_dir.mkdir(parents=True, exist_ok=True)
+        target_path.write_text(json.dumps(document_detail, indent=2))
+        logger.info(f"Wrote {target_path!r}")
+    print("Done!")
+
+
+@app.command()
 def export_legacy_geostories(
         legacy_geonode_username: Annotated[
             str,
@@ -377,6 +447,32 @@ def _gather_geostory_details(
                 yield geostory_details
         next_url = payload["links"].get("next")
         logger.info(f"{next_url!r}")
+
+
+def _gather_document_details(
+        *,
+        http_client: httpx.Client,
+        base_url: str,
+        page_size: int,
+        already_seen: list[int] | None,
+) -> Iterator[dict]:
+    """Iterator that gathers details for all documents, one at a time"""
+    next_url = f"{base_url}/api/v2/documents/?page_size={page_size}"
+    while next_url:
+        response = http_client.get(next_url)
+        response.raise_for_status()
+        payload = response.json()
+        for list_item in payload["documents"]:
+            item_id = int(list_item["pk"])
+            if item_id in already_seen or []:
+                logger.debug(f"skipping {item_id!r}...")
+                continue
+            detail_url = f"{base_url}/api/v2/documents/{item_id}/"
+            detail_response = http_client.get(detail_url)
+            detail_response.raise_for_status()
+            yield detail_response.json()["document"]
+        next_url = payload["links"]["next"]
+        logger.info(f"next_url: {next_url}")
 
 
 def _gather_layer_details_via_api(
