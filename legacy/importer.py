@@ -1,5 +1,7 @@
+import copy
 import json
 import logging
+import re
 import shlex
 import subprocess
 import uuid
@@ -12,6 +14,7 @@ from xml.etree import ElementTree as etree
 
 import httpx
 import typer
+from playwright.sync_api import sync_playwright
 
 logger = logging.getLogger(__name__)
 
@@ -150,6 +153,50 @@ def _find_map_by_title(
 
 
 @app.command()
+def import_geostories_from_directory(
+        current_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_USERNAME")
+        ],
+        current_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
+        ],
+        current_domain: str = "dev.geoplatform.tools4msp.eu",
+        legacy_domain: str = "geoplatform.tools4msp.eu",
+        legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
+        current_base_dir: Path = Path(__file__).parent / "current-data",
+        use_imported_prefix: bool = True,
+):
+    if not (legacy_geostories_dir := legacy_base_dir / "geostories").exists():
+        print(f"Could not find 'geostories' subdir inside {legacy_base_dir}")
+        raise typer.Abort()
+    files_to_process = sorted(
+        list(i for i in legacy_geostories_dir.iterdir() if i.is_file()),
+        key=lambda f: int(f.stem)
+    )
+    for index, legacy_geostory_file in enumerate(files_to_process):
+        print(f"- [{index+1}/{len(files_to_process)}] Processing file {legacy_geostory_file.name!r}...")
+        legacy_geostory_id = int(legacy_geostory_file.stem)
+        try:
+            import_geostory(
+                legacy_geostory_id=legacy_geostory_id,
+                current_geonode_username=current_geonode_username,
+                current_geonode_password=current_geonode_password,
+                current_domain=current_domain,
+                legacy_domain=legacy_domain,
+                current_base_dir=current_base_dir,
+                legacy_base_dir=legacy_base_dir,
+                imported_prefix="imported__" if use_imported_prefix else "",
+                print_request_payload=False,
+                print_response_payload=False
+            )
+        except Exception as err:
+            print(f"Could not process legacy geostory with id {legacy_geostory_id}")
+            print(err)
+
+
+@app.command()
 def import_geostory(
         legacy_geostory_id: int,
         current_geonode_username: Annotated[
@@ -161,7 +208,8 @@ def import_geostory(
             typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
         ],
         perform_geostory_import: bool = False,
-        base_url: str = "https://dev.geoplatform.tools4msp.eu",
+        current_domain: str = "dev.geoplatform.tools4msp.eu",
+        legacy_domain: str = "geoplatform.tools4msp.eu",
         legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
         current_base_dir: Path = Path(__file__).parent / "current-data",
         imported_prefix: str = "imported__",
@@ -171,9 +219,162 @@ def import_geostory(
     legacy_geostories_dir = legacy_base_dir / "geostories"
     legacy_geostory_path = legacy_geostories_dir / f"{legacy_geostory_id}.json"
     legacy_geostory_details = json.loads(legacy_geostory_path.read_text())[1]
-    # will need to map old ids to new ones for:
-    # - maps
-    # - documents
+    new_geostory = copy.deepcopy(legacy_geostory_details)
+    resources_to_process = new_geostory.get("resources", [])
+    print("Processing geostory resources...")
+    for index, story_resource in enumerate(resources_to_process):
+        logger.info(
+            f"[{index+1}/{len(resources_to_process)}] Processing "
+            f"resource {story_resource['id']!r}({story_resource.get('type')!r})..."
+        )
+        _modify_geostory_resource(
+            story_resource,
+            legacy_domain=legacy_domain,
+            current_domain=current_domain,
+            legacy_base_dir=legacy_base_dir,
+            current_base_dir=current_base_dir,
+        )
+
+    sections_to_process = new_geostory.get("sections", [])
+    print("Processing geostory sections...")
+    for index, section in enumerate(sections_to_process):
+        logger.info(
+            f"[{index+1}/{len(sections_to_process)}] Processing "
+            f"section {section['id']!r}({section.get('type')!r})..."
+        )
+        _modify_geostory_section(
+            section,
+            legacy_domain=legacy_domain,
+            current_domain=current_domain,
+            legacy_base_dir=legacy_base_dir,
+            current_base_dir=current_base_dir,
+        )
+
+
+def _modify_geostory_resource(
+        resource: dict,
+        *,
+        legacy_domain: str,
+        current_domain: str,
+        legacy_base_dir: Path,
+        current_base_dir: Path,
+) -> None:
+    if (resource_type := resource.get("type")) in ("image", "video"):
+        if legacy_domain in (
+                legacy_src := resource.get("data", {}).get("src", "")
+        ):
+            new_src = legacy_src.replace(legacy_domain, current_domain)
+            try:
+                legacy_id = int(legacy_src.split("/")[-2])
+            except ValueError:
+                logger.warning(f"Could not extract id from {legacy_src!r}")
+                resource.get("data", {})["src"] = new_src
+                return None
+
+            if not (
+                    current_resource := match_resources(
+                        legacy_id,
+                        legacy_base_dir / "documents",
+                        current_base_dir / "documents"
+                    )
+            ):
+                logger.warning(
+                    f"Could not find resource {legacy_src} in the current "
+                    f"documents"
+                )
+                resource.get("data", {})["src"] = new_src
+                return None
+
+            new_src = (
+                f"https://{current_domain}/documents/{current_resource['pk']}/download"
+            )
+            resource.get("data", {})["src"] = new_src
+
+        logger.info(f"{resource['data']['src']=}")
+
+    elif resource_type == "map":
+        legacy_map_id = int(resource["id"])
+        if not (
+                current_map := match_resources(
+                    legacy_map_id,
+                    legacy_base_dir / "maps",
+                    current_base_dir / "maps"
+                )
+        ):
+            logger.warning(
+                f"Could not find map with id {legacy_map_id} in the current maps"
+            )
+            return None
+
+        resource["id"] = current_map["pk"]
+        resource["data"]["id"] = current_map["pk"]
+        logger.info(f"{resource['id']}")
+    else:
+        raise NotImplementedError(f"Unknown resource type: {resource_type!r}")
+
+
+def _modify_geostory_section(
+        section: dict,
+        *,
+        legacy_domain: str,
+        current_domain: str,
+        legacy_base_dir: Path,
+        current_base_dir: Path,
+) -> None:
+    for content in section.get("contents", []):
+        _modify_geostory_content(
+            content,
+            legacy_domain=legacy_domain,
+            current_domain=current_domain,
+            legacy_base_dir=legacy_base_dir,
+            current_base_dir=current_base_dir,
+        )
+
+
+def _modify_geostory_content(
+        content: dict,
+        *,
+        legacy_domain: str,
+        current_domain: str,
+        legacy_base_dir: Path,
+        current_base_dir: Path,
+) -> None:
+    if (type_ := content["type"]) in ("text", "image",):
+        return None
+    elif type_ == "webPage":
+        if legacy_domain in (src := content.get("src")):
+            if "/maps" in src:
+                try:
+                    legacy_map_id = re.search(r"/maps/(\d+)", src).group(1)
+                except AttributeError:
+                    logger.warning(f"Could not extract map id from {src!r}, ignoring...")
+                    return None
+                if not (
+                    current_map := match_resources(
+                        legacy_map_id,
+                        legacy_base_dir / "maps",
+                        current_base_dir / "maps",
+                    )
+                ):
+                    logger.warning(
+                        f"Could not get current map from legacy map, ignoring...")
+                    return None
+
+                content["src"] = (
+                    f"https://{current_domain}/maps/{current_map['pk']}/embed#/")
+        return None
+    elif type_ == "column":
+        for sub_content in content["contents"]:
+            _modify_geostory_content(
+                sub_content,
+                legacy_domain=legacy_domain,
+                current_domain=current_domain,
+                legacy_base_dir=legacy_base_dir,
+                current_base_dir=current_base_dir
+            )
+        return None
+    else:
+        raise NotImplementedError(f"Unknown content type: {type_!r}")
 
 
 @app.command()
@@ -323,14 +524,6 @@ def import_map(
     print("Done!")
 
 
-def _find_legacy_layer_id(map_layers_config: list[dict], layer_name: str) -> int | None:
-    for idx, layer_config in enumerate(map_layers_config):
-        if layer_config.get("name") == layer_name:
-            return layer_config.get("geonode_internal_layer_id")
-    else:
-        return None
-
-
 def generate_layers_representation(
         new_map_layers: list[dict],
         legacy_map_layers: list[dict],
@@ -371,6 +564,32 @@ def generate_layers_representation(
             }
         )
     return result
+
+
+def grep_for_files(pattern: str, target_dir: Path) -> list[Path] | None:
+    existing_files = [str(f) for f in target_dir.iterdir() if f.is_file()]
+    search_result = subprocess.run(
+        shlex.split(f"grep --files-with-matches --word-regexp {pattern!r}") + existing_files,
+        capture_output=True,
+        )
+    if search_result.returncode != 0:
+        logger.info(f"grep failed with {search_result.stdout} - {search_result.stderr}")
+        return None
+    return [
+        target_dir / i
+        for i in search_result.stdout.decode().strip().splitlines()
+    ]
+
+
+def _get_resource_by_scanning_dir(
+        look_for: str,
+        target_dir: Path,
+) -> dict | None:
+    if matched_files := grep_for_files(look_for, target_dir):
+        raw_contents = matched_files[0].read_text()
+        return json.loads(raw_contents)
+    else:
+        return None
 
 
 def _find_layer_by_scanning_dir(
@@ -586,6 +805,94 @@ def _get_extra_maplayers_key(id_: str, name: str) -> dict:
 
 
 @app.command()
+def store_documents(
+        current_geonode_username: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_USERNAME")
+        ],
+        current_geonode_password: Annotated[
+            str,
+            typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
+        ],
+        base_url: str = "https://dev.geoplatform.tools4msp.eu",
+        target_directory: Path = Path(__file__).parent / "current-data/documents",
+        overwrite: bool = False,
+        only_process: int = 3,
+):
+    """Export currently existing documents onto a local directory."""
+    _write_documents_to_file(
+        target_directory,
+        http_client=httpx.Client(
+            auth=(current_geonode_username, current_geonode_password),
+            timeout=30,
+        ),
+        base_url=base_url,
+        overwrite=overwrite,
+        only_process=only_process if only_process > 0 else None,
+    )
+
+
+def _write_documents_to_file(
+        target_dir: Path,
+        *,
+        http_client: httpx.Client,
+        base_url: str,
+        overwrite: bool = False,
+        only_process: int | None = None,
+):
+    total_documents_response = http_client.get(
+        f"{base_url}/api/v2/documents/",
+        params={"page_size": 1}
+    )
+    total_documents_response.raise_for_status()
+    num_total_documents = total_documents_response.json().get("total", 0)
+    seen_documents = (
+        [int(p.stem) for p in target_dir.glob("*.json")]
+        if not overwrite else None
+    )
+    document_detail_generator = _gather_documents_via_api(
+        http_client=http_client,
+        base_url=base_url,
+        seen_documents=seen_documents
+    )
+    for idx, document_list_item in enumerate(document_detail_generator):
+        if only_process and idx >= only_process:
+            break
+        id_ = int(document_list_item["pk"])
+        target_path = target_dir / f"{id_}.json"
+        logger.info(f"Processing document [{idx+1}/{num_total_documents}]...")
+        if target_path.exists() and not overwrite:
+            logger.info(f"document {id_!r} already present - skipping...")
+            continue
+        target_dir.mkdir(parents=True, exist_ok=True)
+        target_path.write_text(json.dumps(document_list_item, indent=2))
+        logger.info(f"Wrote {target_path!r}")
+    print("Done!")
+
+
+def _gather_documents_via_api(
+        *,
+        http_client: httpx.Client,
+        base_url: str = "https://geoplatform.tools4msp.eu",
+        page_size: int = 10,
+        seen_documents: list[int] | None = None,
+) -> Iterator[dict]:
+    next_url = f"{base_url}/api/v2/documents/?page_size={page_size}"
+    while next_url:
+        response = http_client.get(next_url)
+        response.raise_for_status()
+        payload = response.json()
+        for document_list_item in payload["documents"]:
+            id_ = int(document_list_item["pk"])
+            if id_ in (seen_documents or []):
+                logger.debug(f"skipping document {id_!r}...")
+                continue
+            yield document_list_item
+        next_url = payload["links"].get("next")
+        logger.info(f"{next_url!r}")
+
+
+@app.command()
 def store_maps(
     current_geonode_username: Annotated[
         str,
@@ -607,6 +914,8 @@ def store_maps(
             auth=(current_geonode_username, current_geonode_password),
             timeout=30,
         ),
+        username=current_geonode_username,
+        password=current_geonode_password,
         base_url=base_url,
         overwrite=overwrite,
         only_process=only_process if only_process > 0 else None,
@@ -793,6 +1102,51 @@ def _get_matched_dataset_ids(
             no_match_found.append((legacy_id, legacy_matched_key))
             logger.debug(f"No match found for legacy layer {legacy_id} - {legacy_matched_key!r}")
     return match_found, no_match_found
+
+
+def get_resource_by_id(
+        id_: int,
+        target_dir: Path
+) -> dict | None:
+    target_path = target_dir / f"{id_}.json"
+    if not target_path.exists():
+        return None
+    return json.loads(target_path.read_text())
+
+
+def match_resources(
+        legacy_resource_id: int,
+        legacy_resources_dir: Path,
+        current_resources_dir: Path,
+        legacy_match_key: str = "title",
+        current_match_key: str | None = None,
+) -> dict | None:
+    """Matches a legacy resource to its current counterpart"""
+    # first find the legacy resource and get its match key, then use it
+    # to look for the new resource
+    if not (
+            legacy_resource := get_resource_by_id(
+                legacy_resource_id, legacy_resources_dir)
+    ):
+        logger.info(
+            f"Could not find legacy resource with "
+            f"id {legacy_resource_id!r} at {legacy_resources_dir}"
+        )
+        return None
+
+    match_value = legacy_resource.get(legacy_match_key)
+    # match_pattern = match_value
+    match_pattern = f'"{current_match_key or legacy_match_key}": "{match_value}"'
+    if not (
+            matched_current_resources := grep_for_files(
+                match_pattern, current_resources_dir)
+    ):
+        logger.info(
+            f"Could not find the pattern {match_pattern!r} in any of the "
+            f"files in {current_resources_dir}"
+        )
+        return None
+    return json.loads(matched_current_resources[0].read_text())
 
 
 @app.command()
