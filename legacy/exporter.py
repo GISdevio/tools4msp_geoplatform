@@ -313,6 +313,7 @@ def _write_geostories_to_file(
     """
     total_geostories_response = http_client.get(
         f"{base_url}/api/v2/geostories/",
+        params={"page_size": 1},
         auth=geonode_auth
     )
     total_geostories_response.raise_for_status()
@@ -328,16 +329,21 @@ def _write_geostories_to_file(
         seen_geostories=seen_geostories
     )
     for idx, geostory_detail in enumerate(geostory_detail_generator):
-        id_, details = geostory_detail
+        list_item, details = geostory_detail
         if only_process and idx >= only_process:
             break
+        id_ = list_item["pk"]
         target_path = target_dir / f"{id_}.json"
         logger.info(f"Processing geostory [{idx+1}/{num_total_geostories}]...")
         if target_path.exists() and not overwrite:
             logger.info(f"geostory {id_!r} already present - skipping...")
             continue
         target_dir.mkdir(parents=True, exist_ok=True)
-        target_path.write_text(json.dumps(geostory_detail, indent=2))
+        to_write = {
+            "list_item": list_item,
+            "details": details,
+        }
+        target_path.write_text(json.dumps(to_write, indent=2))
         logger.info(f"Wrote {target_path!r}")
     print("Done!")
 
@@ -427,7 +433,7 @@ def _gather_geostory_details(
         limit: int = 20,
         geonode_auth: tuple[str, str] | None = None,
         seen_geostories: list[int] | None = None,
-) -> Iterator[tuple[int, dict]]:
+) -> Iterator[tuple[dict, dict]]:
     next_url = f"{base_url}/api/v2/geostories/?page_size={limit}"
     while next_url:
         response = http_client.get(next_url, auth=geonode_auth)
@@ -444,7 +450,7 @@ def _gather_geostory_details(
                 password=geonode_auth[1] if geonode_auth else None,
             )
             if geostory_details is not None:
-                yield geostory_details
+                yield geostory_list_item, geostory_details
         next_url = payload["links"].get("next")
         logger.info(f"{next_url!r}")
 
@@ -573,7 +579,7 @@ def _extract_geostory_details_from_ui(
         username: str | None = None,
         password: str | None = None,
         base_url: str = "https://geoplatform.tools4msp.eu",
-) -> tuple[int, dict] | None:
+) -> dict | None:
     """Uses playwright to emulate a browser session and extract geostory-related info."""
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -588,8 +594,7 @@ def _extract_geostory_details_from_ui(
         page.goto(f"{base_url}/apps/{geostory_id}/view#/")
         geonode_config = page.evaluate("() => window.__GEONODE_CONFIG__")
         try:
-            geostory_config = geonode_config["resourceConfig"]
-            return geostory_id, geostory_config
+            return geonode_config["resourceConfig"]
         except KeyError:
             logger.warning("Could not extract geostory details from UI")
             return None

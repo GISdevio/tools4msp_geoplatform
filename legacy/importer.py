@@ -134,6 +134,24 @@ def import_maps_from_directory(
     print("Done!")
 
 
+def _find_geostory_by_title(
+        title: str,
+        http_client: httpx.Client,
+        base_url: str,
+) -> dict | None:
+    """Uses the old GeoNode API to find a geostory by its title"""
+    response = http_client.get(
+        f"{base_url}/api/geoapps/",
+        params={"title": title}
+    )
+    response.raise_for_status()
+    payload = response.json()
+    try:
+        return payload.get("objects", [])[0]
+    except IndexError:
+        return None
+
+
 def _find_map_by_title(
         title: str,
         http_client: httpx.Client,
@@ -189,7 +207,8 @@ def import_geostories_from_directory(
                 legacy_base_dir=legacy_base_dir,
                 imported_prefix="imported__" if use_imported_prefix else "",
                 print_request_payload=False,
-                print_response_payload=False
+                print_response_payload=False,
+                perform_import=True,
             )
         except Exception as err:
             print(f"Could not process legacy geostory with id {legacy_geostory_id}")
@@ -207,8 +226,9 @@ def import_geostory(
             str,
             typer.Argument(envvar="CURRENT_GEONODE_PASSWORD")
         ],
-        perform_geostory_import: bool = False,
+        perform_import: bool = False,
         current_domain: str = "dev.geoplatform.tools4msp.eu",
+        base_url: str = "https://dev.geoplatform.tools4msp.eu",
         legacy_domain: str = "geoplatform.tools4msp.eu",
         legacy_base_dir: Path = Path(__file__).parent / "legacy-data",
         current_base_dir: Path = Path(__file__).parent / "current-data",
@@ -218,9 +238,10 @@ def import_geostory(
 ):
     legacy_geostories_dir = legacy_base_dir / "geostories"
     legacy_geostory_path = legacy_geostories_dir / f"{legacy_geostory_id}.json"
-    legacy_geostory_details = json.loads(legacy_geostory_path.read_text())[1]
-    new_geostory = copy.deepcopy(legacy_geostory_details)
-    resources_to_process = new_geostory.get("resources", [])
+    legacy_geostory = json.loads(legacy_geostory_path.read_text())
+    legacy_geostory_list_item = legacy_geostory["list_item"]
+    new_geostory_details = copy.deepcopy(legacy_geostory["details"])
+    resources_to_process = new_geostory_details.get("resources", [])
     print("Processing geostory resources...")
     for index, story_resource in enumerate(resources_to_process):
         logger.info(
@@ -235,7 +256,7 @@ def import_geostory(
             current_base_dir=current_base_dir,
         )
 
-    sections_to_process = new_geostory.get("sections", [])
+    sections_to_process = new_geostory_details.get("sections", [])
     print("Processing geostory sections...")
     for index, section in enumerate(sections_to_process):
         logger.info(
@@ -249,6 +270,54 @@ def import_geostory(
             legacy_base_dir=legacy_base_dir,
             current_base_dir=current_base_dir,
         )
+    title = imported_prefix + legacy_geostory_list_item.get("title", "")
+    payload = {
+        "abstract": legacy_geostory_list_item.get("abstract") or title,
+        "name": f"{str(uuid.uuid4())} {title}",
+        "resource_type": "geostory",
+        "title": title,
+        "data": new_geostory_details,
+    }
+    if print_request_payload:
+        print(json.dumps(payload, indent=2))
+    http_client = _login_to_geonode(
+        current_geonode_username, current_geonode_password, base_url)
+    if _find_geostory_by_title(title, http_client, base_url):
+        print(f"Geostory with title {title!r} already exists - skipping")
+        return
+    if not perform_import:
+        print("Exiting without actually importing the geostory")
+        return
+
+    access_token = _get_geoserver_access_token(http_client, base_url)
+    logger.info(f"{access_token=}")
+    print(
+        f"Importing geostory with legacy id {legacy_geostory_id!r} "
+        f"with title {title!r}..."
+    )
+    creation_result = http_client.post(
+        f"{base_url}/api/v2/geoapps/",
+        params={"include": "data[]"},
+        json=payload,
+        headers={
+            "content-type": "application/json",
+            "authorization": f"Bearer {access_token}",
+            "x-csrftoken": _get_csrf_token(http_client),
+            "referer": f"{base_url}/catalogue"
+        },
+        timeout=5 * 60.0
+    )
+    try:
+        creation_result.raise_for_status()
+    except httpx.HTTPStatusError as err:
+        print(
+            f"Geostory creation failed with "
+            f"{creation_result.status_code} - {creation_result.content}"
+        )
+        print(err)
+    response_payload = creation_result.json()
+    if print_response_payload:
+        print(response_payload)
 
 
 def _modify_geostory_resource(
@@ -286,7 +355,7 @@ def _modify_geostory_resource(
                 return None
 
             new_src = (
-                f"https://{current_domain}/documents/{current_resource['pk']}/download"
+                f"https://{current_domain}/documents/{current_resource['pk']}/link"
             )
             resource.get("data", {})["src"] = new_src
 
