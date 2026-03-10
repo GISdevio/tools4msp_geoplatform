@@ -134,6 +134,42 @@ def import_maps_from_directory(
     print("Done!")
 
 
+def _find_geostory_by_title_and_abstract(
+        title: str,
+        abstract: str,
+        http_client: httpx.Client,
+        base_url: str,
+) -> dict | None:
+    """Uses the old GeoNode API to find a geostory by its title and abstract"""
+    response = http_client.get(
+        f"{base_url}/api/geoapps/",
+        params={"title": title}
+    )
+    response.raise_for_status()
+    payload = response.json()
+    found = payload.get("objects", [])
+    if num_found := (len(found)) == 1:
+        return found[0]
+    elif num_found > 1:
+        matched_abstract = [i for i in found if i.get("abstract", "") == abstract]
+        if (num_abstract := len(matched_abstract)) == 1:
+            return matched_abstract[0]
+        elif num_abstract > 1:
+            logger.warning(
+                f"There are multiple geostories ({num_abstract}) that have the same "
+                f"title ({title!r}) and the same abstract ({abstract!r}) - cannot match"
+            )
+            return None
+        else:
+            logger.warning(
+                f"Could not match geostory with title {title!r} because there "
+                f"are none with the same abstract ({abstract!r})"
+            )
+            return None
+    else:
+        return None
+
+
 def _find_geostory_by_title(
         title: str,
         http_client: httpx.Client,
@@ -209,6 +245,7 @@ def import_geostories_from_directory(
                 print_request_payload=False,
                 print_response_payload=False,
                 perform_import=True,
+                overwrite=True,
             )
         except Exception as err:
             print(f"Could not process legacy geostory with id {legacy_geostory_id}")
@@ -234,7 +271,8 @@ def import_geostory(
         current_base_dir: Path = Path(__file__).parent / "current-data",
         imported_prefix: str = "imported__",
         print_request_payload: bool = False,
-        print_response_payload: bool = False
+        print_response_payload: bool = False,
+        overwrite: bool = False,
 ):
     legacy_geostories_dir = legacy_base_dir / "geostories"
     legacy_geostory_path = legacy_geostories_dir / f"{legacy_geostory_id}.json"
@@ -280,13 +318,15 @@ def import_geostory(
     }
     if print_request_payload:
         print(json.dumps(payload, indent=2))
-    http_client = _login_to_geonode(
-        current_geonode_username, current_geonode_password, base_url)
-    if _find_geostory_by_title(title, http_client, base_url):
-        print(f"Geostory with title {title!r} already exists - skipping")
-        return
     if not perform_import:
         print("Exiting without actually importing the geostory")
+        return
+    http_client = _login_to_geonode(
+        current_geonode_username, current_geonode_password, base_url)
+
+    if not overwrite and _find_geostory_by_title_and_abstract(
+            title, payload["abstract"], http_client, base_url):
+        print(f"Geostory with title {title!r} and abstract {payload['abstract']!r} already exists - skipping")
         return
 
     access_token = _get_geoserver_access_token(http_client, base_url)
@@ -408,7 +448,8 @@ def _modify_geostory_content(
         legacy_base_dir: Path,
         current_base_dir: Path,
 ) -> None:
-    if (type_ := content["type"]) in ("text", "image",):
+    #logger.info(f"{content=}")
+    if (type_ := content.get("type")) in (None, "text", "image", "video", "map"):
         return None
     elif type_ == "webPage":
         if legacy_domain in (src := content.get("src")):
