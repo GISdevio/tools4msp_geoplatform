@@ -281,18 +281,21 @@ def import_geostory(
     new_geostory_details = copy.deepcopy(legacy_geostory["details"])
     resources_to_process = new_geostory_details.get("resources", [])
     print("Processing geostory resources...")
+    all_mapped_resources = {}
     for index, story_resource in enumerate(resources_to_process):
         logger.info(
             f"[{index+1}/{len(resources_to_process)}] Processing "
             f"resource {story_resource['id']!r}({story_resource.get('type')!r})..."
         )
-        _modify_geostory_resource(
+        mapped_resource = _modify_geostory_resource(
             story_resource,
             legacy_domain=legacy_domain,
             current_domain=current_domain,
             legacy_base_dir=legacy_base_dir,
             current_base_dir=current_base_dir,
         )
+        if mapped_resource:
+            all_mapped_resources[mapped_resource[0]] = mapped_resource[1]
 
     sections_to_process = new_geostory_details.get("sections", [])
     print("Processing geostory sections...")
@@ -307,6 +310,7 @@ def import_geostory(
             current_domain=current_domain,
             legacy_base_dir=legacy_base_dir,
             current_base_dir=current_base_dir,
+            all_mapped_resources=all_mapped_resources,
         )
     title = imported_prefix + legacy_geostory_list_item.get("title", "")
     payload = {
@@ -367,7 +371,7 @@ def _modify_geostory_resource(
         current_domain: str,
         legacy_base_dir: Path,
         current_base_dir: Path,
-) -> None:
+) -> tuple[str, str] | None:
     if (resource_type := resource.get("type")) in ("image", "video"):
         if legacy_domain in (
                 legacy_src := resource.get("data", {}).get("src", "")
@@ -398,8 +402,10 @@ def _modify_geostory_resource(
                 f"https://{current_domain}/documents/{current_resource['pk']}/link"
             )
             resource.get("data", {})["src"] = new_src
+            return str(legacy_id), current_resource["pk"]
 
         logger.info(f"{resource['data']['src']=}")
+        return None
 
     elif resource_type == "map":
         legacy_map_id = int(resource["id"])
@@ -418,6 +424,7 @@ def _modify_geostory_resource(
         resource["id"] = current_map["pk"]
         resource["data"]["id"] = current_map["pk"]
         logger.info(f"{resource['id']}")
+        return str(legacy_map_id), current_map["pk"]
     else:
         raise NotImplementedError(f"Unknown resource type: {resource_type!r}")
 
@@ -429,6 +436,7 @@ def _modify_geostory_section(
         current_domain: str,
         legacy_base_dir: Path,
         current_base_dir: Path,
+        all_mapped_resources: dict[str, str],
 ) -> None:
     for content in section.get("contents", []):
         _modify_geostory_content(
@@ -437,6 +445,7 @@ def _modify_geostory_section(
             current_domain=current_domain,
             legacy_base_dir=legacy_base_dir,
             current_base_dir=current_base_dir,
+            all_mapped_resources=all_mapped_resources
         )
 
 
@@ -447,9 +456,24 @@ def _modify_geostory_content(
         current_domain: str,
         legacy_base_dir: Path,
         current_base_dir: Path,
+        all_mapped_resources: dict[str, str],
 ) -> None:
     #logger.info(f"{content=}")
-    if (type_ := content.get("type")) in (None, "text", "image", "video", "map"):
+    # try to process whatever background may be defined for this content piece first
+    if background := content.get("background"):
+        _modify_geostory_content_background(
+            background,
+            all_mapped_resources=all_mapped_resources,
+        )
+    if (type_ := content.get("type")) in (None, "text", "image", "video"):
+        return None
+    elif type_ == "map":
+        if legacy_id := content.get("resourceId"):
+            new_id = all_mapped_resources.get(str(legacy_id))
+            if new_id is not None:
+                content["resourceId"] = new_id
+            else:
+                logger.warning(f"Could not map id from {legacy_id!r}")
         return None
     elif type_ == "webPage":
         if legacy_domain in (src := content.get("src")):
@@ -480,11 +504,30 @@ def _modify_geostory_content(
                 legacy_domain=legacy_domain,
                 current_domain=current_domain,
                 legacy_base_dir=legacy_base_dir,
-                current_base_dir=current_base_dir
+                current_base_dir=current_base_dir,
+                all_mapped_resources=all_mapped_resources
             )
         return None
     else:
         raise NotImplementedError(f"Unknown content type: {type_!r}")
+
+
+def _modify_geostory_content_background(
+        background: dict,
+        *,
+        all_mapped_resources: dict[str, str],
+) -> None:
+    if (background_type := background.get("type")) is None:
+        return
+    elif background_type in ("map", "image",):
+        if legacy_id := background.get("resourceId"):
+            new_id = all_mapped_resources.get(str(legacy_id))
+            if new_id is not None:
+                background["resourceId"] = new_id
+            else:
+                logger.warning(f"Could not convert background id from {legacy_id!r}")
+    else:
+        raise NotImplementedError(f"Unknown background type: {background!r}")
 
 
 @app.command()
