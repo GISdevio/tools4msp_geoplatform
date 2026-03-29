@@ -396,4 +396,10 @@ FACET_PROVIDERS = [
     {"class": "geonode.facets.providers.region.RegionFacetProvider", "config": {"order": 7, "type": "select"}},
     {"class": "geonode.facets.providers.users.OwnerFacetProvider", "config": {"order": 8, "type": "select"}},
     {"class": "geonode.facets.providers.group.GroupFacetProvider", "config": {"order": 9, "type": "select"}},
-    {"class": "tools4msp_geoplatform.facets.providers.ThesaurusFacetProvider", "config": {"type": "select"}},]
+    {"class": "tools4msp_geoplatform.facets.providers.ThesaurusFacetProvider", "config": {"type": "select"}},
+]
+
+SOCIALACCOUNT_PROVIDERS[SOCIALACCOUNT_OIDC_PROVIDER]["APP"] = {
+    "client_id": os.environ.get("SOCIALACCOUNT_CLIENT_ID", ""),
+    "secret": os.environ.get("SOCIALACCOUNT_SECRET", ""),
+}
