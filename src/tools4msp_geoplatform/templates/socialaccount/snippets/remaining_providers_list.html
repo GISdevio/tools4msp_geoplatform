@@ -8,17 +8,17 @@
 {% endif %}
 
 {% for provider in providers_with_apps %}
-    <div class="form-group text-left">
-        <a class="btn btn-default btn-xs social-btn" title="{{ provider.name }}" href="{{ provider.login_url }}">
-            <i class="fa fa-{{ provider.name|lower }}-square fa-2x" aria-hidden="true"></i>
-            {% if process == "login" %}
-                {% trans "Sign in with" %}
-            {% elif process == "connect" %}
-                {% trans "Connect with" %}
-            {% else %}
-                {% trans "Sign up with" %}
-            {% endif %}
-            {{ provider.name }}
-        </a>
-    </div>
+<div class="form-group text-left">
+    <a class="btn btn-default btn-xs social-btn" title="{{ provider.name }}" href="{{ provider.login_url }}">
+        <i class="fa fa-{{ provider.name|lower }}-square fa-2x" aria-hidden="true"></i>
+        {% if process == "login" %}
+        {% trans "Sign in with" %}
+        {% elif process == "connect" %}
+        {% trans "Connect with" %}
+        {% else %}
+        {% trans "Sign up with" %}
+        {% endif %}
+        {{ provider.name }}
+    </a>
+</div>
 {% endfor %}
