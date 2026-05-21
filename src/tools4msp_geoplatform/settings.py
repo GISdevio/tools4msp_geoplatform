@@ -302,6 +302,16 @@ LOGGING['loggers']['casestudies'] = {
 }
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
+ACCOUNT_UNIQUE_EMAIL = ast.literal_eval(os.getenv("ACCOUNT_UNIQUE_EMAIL", str(globals().get("ACCOUNT_UNIQUE_EMAIL", True))))
+SOCIALACCOUNT_EMAIL_AUTHENTICATION = ast.literal_eval(
+    os.getenv("SOCIALACCOUNT_EMAIL_AUTHENTICATION", str(globals().get("SOCIALACCOUNT_EMAIL_AUTHENTICATION", False)))
+)
+SOCIALACCOUNT_EMAIL_AUTHENTICATION_AUTO_CONNECT = ast.literal_eval(
+    os.getenv(
+        "SOCIALACCOUNT_EMAIL_AUTHENTICATION_AUTO_CONNECT",
+        str(globals().get("SOCIALACCOUNT_EMAIL_AUTHENTICATION_AUTO_CONNECT", False)),
+    )
+)
 
 TINYMCE_DEFAULT_CONFIG = {
     "theme": "silver",
