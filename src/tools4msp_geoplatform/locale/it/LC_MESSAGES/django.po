@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tools4msp_geoplatform\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Data search"
+msgstr "Ricerca dati"
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "Advanced Search"
+msgstr "Ricerca avanzata"
+
+msgid "Latest updates"
+msgstr "Ultime novità"
+
+msgid "Discover the latest datasets, maps, and apps on the platform"
+msgstr "Scopri i dataset, le mappe e le app più recenti sulla piattaforma"
+
+msgid "Explore"
+msgstr "Esplora"
+
+msgid "Statistics"
+msgstr "Statistiche"
+
+msgid "Discover key platform statistics"
+msgstr "Scopri i numeri chiave della piattaforma"
+
+msgid "Datasets"
+msgstr "Dataset"
+
+msgid "Maps"
+msgstr "Mappe"
+
+msgid "Apps"
+msgstr "App"
+
+msgid "Users"
+msgstr "Utenti"
+
+msgid "No image available"
+msgstr "Nessuna immagine disponibile"
+
+msgid "No description available"
+msgstr "Nessuna descrizione disponibile"
+
+msgid "Untitled"
+msgstr "Senza titolo"

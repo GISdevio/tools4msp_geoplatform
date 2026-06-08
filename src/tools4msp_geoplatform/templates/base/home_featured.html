@@ -1,8 +1,8 @@
 {% load i18n %}
 <section class="home-featured">
   <div class="container text-center">
-    <h2>{% trans "Ultime novità" %}</h2>
-    <p>{% trans "Scopri i dataset, le mappe e le app più recenti sulla piattaforma" %}</p>
+    <h2>{% trans "Latest updates" %}</h2>
+    <p>{% trans "Discover the latest datasets, maps, and apps on the platform" %}</p>
 
     <!-- DEBUG: featured_items count = {{ featured_items|length|default:"0" }} -->
     <div class="row g-4 justify-content-center">
@@ -16,7 +16,7 @@
                 <img src="{{ item.thumbnail_url }}" alt="{{ item.title }}">
               {% else %}
                 <div class="no-thumb">
-                  <span>{% trans "Nessuna immagine disponibile" %}</span>
+                  <span>{% trans "No image available" %}</span>
                 </div>
               {% endif %}
 
@@ -28,9 +28,9 @@
                   {{ item.title }}
                 </h5>
 
-                <p>{{ item.description|default:_("Abstract non disponibile")|truncatewords:20 }}</p>
+                <p>{{ item.description|default:_("No description available")|truncatewords:20 }}</p>
 
-                <span class="btn btn-outline-primary btn-sm">{% trans "Esplora" %}</span>
+                <span class="btn btn-outline-primary btn-sm">{% trans "Explore" %}</span>
               </div>
 
             </a>

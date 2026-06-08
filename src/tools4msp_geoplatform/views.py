@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 from django.core.cache import cache
 from django.urls import reverse
+from django.utils.translation import gettext, gettext_noop
 
 from geonode.themes.models import GeoNodeThemeCustomization, THEME_CACHE_KEY
 from geonode.layers.models import Dataset
@@ -41,7 +42,7 @@ class HomePageView(TemplateView):
                 url = reverse('dataset_detail', args=[latest_dataset.alternate]) if latest_dataset.alternate else '#'
 
             featured_items.append({
-                'title': latest_dataset.title or 'Senza titolo',
+                'title': latest_dataset.title or gettext('Untitled'),
                 'description': latest_dataset.abstract or '',
                 'thumbnail_url': latest_dataset.thumbnail_url or '',
                 'url': url,
@@ -58,7 +59,7 @@ class HomePageView(TemplateView):
                 url = reverse('map_detail', args=[latest_map.id])
 
             featured_items.append({
-                'title': latest_map.title or 'Senza titolo',
+                'title': latest_map.title or gettext('Untitled'),
                 'description': latest_map.abstract or '',
                 'thumbnail_url': latest_map.thumbnail_url or '',
                 'url': url,
@@ -86,7 +87,7 @@ class HomePageView(TemplateView):
                 label = "App"
                 
             featured_items.append({
-                'title': latest_geoapp.title or 'Senza titolo',
+                'title': latest_geoapp.title or gettext('Untitled'),
                 'description': latest_geoapp.abstract or '',
                 'thumbnail_url': latest_geoapp.thumbnail_url or '',
                 'url': url,
@@ -103,10 +104,10 @@ class HomePageView(TemplateView):
         geoapp_count = GeoApp.objects.filter(is_published=True).count() 
 
         context['counters'] = [
-            ('fa-database', layers_count, 'Dataset', '/catalogue/#/?f=dataset'),
-            ('fa-map', maps_count, 'Mappe', '/catalogue/#/?f=map'),
-            ('fa-gears', geoapp_count, 'App', '/catalogue/#/all?f=geostory&f=dashboard'),
-            ('fa-users', users_count, 'Utenti', '/people/?limit=5&offset=0'),
+            ('fa-database', layers_count, gettext_noop('Datasets'), '/catalogue/#/?f=dataset'),
+            ('fa-map', maps_count, gettext_noop('Maps'), '/catalogue/#/?f=map'),
+            ('fa-gears', geoapp_count, gettext_noop('Apps'), '/catalogue/#/all?f=geostory&f=dashboard'),
+            ('fa-users', users_count, gettext_noop('Users'), '/people/?limit=5&offset=0'),
         ]
 
         return context
